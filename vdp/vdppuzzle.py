@@ -10,13 +10,13 @@ class VDPPuzzle:
         self.candidate_models = candidate_models
 
     # Setter methods for puzzle attributes
-    def __set_vocabulary(self, vocabulary):
+    def _set_vocabulary(self, vocabulary):
         self.vocabulary = vocabulary
 
-    def __set_training_models(self, training_models):
+    def _set_training_models(self, training_models):
         self.training_models = training_models
 
-    def __set_candidate_models(self, candidate_models):
+    def _set_candidate_models(self, candidate_models):
         self.candidate_models = candidate_models
 
     # Getter methods for puzzle attributes

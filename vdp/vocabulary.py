@@ -79,7 +79,7 @@ class FOFunction(Symbol):
         super().__init__(name, 'FOFunction')
 
     # Getter methods for attributes
-    def get_relation_symbol_signature(self):
+    def get_function_symbol_signature(self):
         return self.signature
 
 

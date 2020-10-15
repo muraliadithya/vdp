@@ -1,5 +1,5 @@
 import vdp.exceptions as vdpexceptions
-from vdp.vocabulary import *
+from vdp.vocabulary import Symbol, FOSort
 
 
 class FOElement(Symbol):
@@ -39,29 +39,28 @@ class FOModel:
         self.interpretation = interpretation
 
     # Setter methods for model attributes
-    def __set_vocabulary(self, vocabulary):
+    def _set_vocabulary(self, vocabulary):
         self.vocabulary = vocabulary
 
-    def __set_elements(self, elements):
+    def _set_elements(self, elements):
         self.elements = elements
 
-    def __set_interpretation(self, interpretation):
+    def _set_interpretation(self, interpretation):
         self.interpretation = interpretation
 
     # Getter methods for model attributes
     def get_vocabulary(self):
         return self.vocabulary
 
-    def get_elements(self):
+    def _get_elements(self):
         return self.elements
 
-    # Usage NOT recommended. Use function to query particular the interpretation of a particular term instead.
-    def get_interpretation(self):
+    def _get_interpretation(self):
         return self.interpretation
 
     # Lookup a single entry in the interpretation.
     # TODO (medium-low): consider improving design by not having two interpretation functions
-    def lookup_interpretation(self, function, arguments, interpretation_extension=None):
+    def _lookup_interpretation(self, function, arguments, interpretation_extension=None):
         original_valuation = self.interpretation.get(function, None)
         extended_valuation = interpretation_extension.get(function, None) if interpretation_extension is not None else None
         if arguments is None:
@@ -69,19 +68,19 @@ class FOModel:
             # Valuation 'extensions' override the originally provided valuation.
             valuation = original_valuation if extended_valuation is None else extended_valuation
             if valuation is None:
-                raise vdpexceptions.PartialInterpretationException(
+                raise vdpexceptions.PartialInterpretationError(
                     "The term {} you want is not interpreted by the model.".format(function.get_name()))
             return valuation
         else:
             # Valuation 'extensions' override the originally provided valuation if there is a clash. Otherwise a union.
             if original_valuation is None and extended_valuation is None:
-                raise vdpexceptions.PartialInterpretationException(
+                raise vdpexceptions.PartialInterpretationError(
                     "The function {} you want is not interpreted by the model.".format(function.get_name()))
             valuation = {**({} if original_valuation is None else original_valuation),
                          **({} if extended_valuation is None else extended_valuation)}
             value = valuation.get(arguments, None)
             if value is None:
-                raise vdpexceptions.PartialInterpretationException(
+                raise vdpexceptions.PartialInterpretationError(
                     "Function {} does not interpret the given arguments {}.".format(
                                                                             function.get_name(), arguments.get_name()))
             return value
@@ -93,7 +92,7 @@ class FOModel:
     def interpret(self, term, interpretation_extension=None):
         if len(term) == 1:
             # Constant/variable symbol
-            return self.lookup_interpretation(term[0], None, interpretation_extension)
+            return self._lookup_interpretation(term[0], None, interpretation_extension)
         else:
             eval_term_rec = [self.interpret(subterm, interpretation_extension) for subterm in term[1:]]
-            return self.lookup_interpretation(term[0], tuple(eval_term_rec), interpretation_extension)
+            return self._lookup_interpretation(term[0], tuple(eval_term_rec), interpretation_extension)

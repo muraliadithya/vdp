@@ -11,10 +11,10 @@ import unittest
 
 from vdp.vocabulary import FOSort, FOFunction
 from vdp.fomodel import FOElement, FOModel
-from vdp.exceptions import PartialInterpretationException
+from vdp.exceptions import PartialInterpretationError
 
 
-class FOModelTest(unittest.TestCase):
+class FOModelTest1(unittest.TestCase):
 
     def setUp(self):
         # Create the vocabulary
@@ -82,7 +82,7 @@ class FOModelTest(unittest.TestCase):
         # a variable, as can be seen from the other tests.
         # Variables
         x = FOElement('x', self.vdpobject)
-        with self.assertRaises(PartialInterpretationException):
+        with self.assertRaises(PartialInterpretationError):
             self.model.interpret(term=[self.on, [self.o1], [x]], interpretation_extension={x: self.o2})
 
     def test_invalid_term(self):

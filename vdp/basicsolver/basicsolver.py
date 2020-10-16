@@ -1,6 +1,7 @@
 from z3 import *
 from vdp.vocabulary import FOSort
 import vdp.exceptions as vdpexceptions
+from vdp.basicsolver.formula import Formula
 
 
 class BasicSolver:
@@ -45,9 +46,35 @@ class BasicSolver:
             quantified_sort = _determine_quantified_sort(fosorts)
         # Filter all the relations that only quantify over the quantified sort
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
-        # (1) Initialise the formula representation.
-        # (2) Construct a function that will determine the SMT query to be phrased for each model.
-        # (3) Ask for discrimination using (2)
+        # Initialise the formula representation class.
+        ctx = Context()
+        sol = Solver(ctx=ctx)
+        discriminator = Formula(ctx)
+        representation_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations)
+        sol.add(representation_constraints)
+        # Add the SMT constraints for each model.
+        training_models = vdppuzzle.get_training_models()
+        for training_model in training_models:
+            constraint = discriminator.satisfaction_constraint(training_model)
+            sol.add(constraint)
+        candidate_models = vdppuzzle.get_candidate_models()
+        num_candidates = len(candidate_models)
+        candidate_vars = Bools(names=['c{}'.format(str(i)) for i in range(num_candidates)], ctx=ctx)
+        # Constrain that only one candidate can be chosen.
+        sol.add(Or([candidate_var for candidate_var in candidate_vars]))
+        sol.add(And([Not(And(candidate_vars[i], candidate_vars[j]))
+                     for i in range(num_candidates) for j in range(num_candidates) if i != j]))
+        for i in range(num_candidates):
+            constraint = discriminator.satisfaction_constraint(candidate_models[i])
+            sol.add(Implies(candidate_vars[i], constraint))
+        # Ask for discrimination
+        soluble = sol.check()
+        if soluble == z3.unsat:
+            raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
+        smt_model = sol.model()
+        discriminant = discriminator.pretty(smt_model)
+        candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
+        print('Candidate: {}\nConcept: {}\n'.format(str(candidate), discriminant))
 
 
 # Below are some functions that are used in the body of the VDPBasicConjunctiveSolver class above.
@@ -105,5 +132,5 @@ def _filter_relevant_relations(fofunctions, quantified_sort):
         # Output must be Bool
         output_signature_check = (output_signature == FOSort('Bool'))
         if input_signature_check and output_signature_check:
-            forelations = forelations + [fofunction]
+            forelations = forelations | {fofunction}
     return forelations

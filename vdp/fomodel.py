@@ -58,6 +58,13 @@ class FOModel:
     def _get_interpretation(self):
         return self.interpretation
 
+    # Returns a set of elements of the given sort if it exists in the model. Otherwise returns None.
+    def get_universe(self, fosort):
+        if not isinstance(fosort, FOSort) or fosort not in self.vocabulary[0]:
+            return None
+        else:
+            return self.elements[fosort]
+
     # Lookup a single entry in the interpretation.
     # TODO (medium-low): consider improving design by not having two interpretation functions
     def _lookup_interpretation(self, function, arguments, interpretation_extension=None):

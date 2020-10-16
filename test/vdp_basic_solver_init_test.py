@@ -7,7 +7,7 @@ from vdp.basicsolver.basicsolver import *
 from vdp.exceptions import NonsenseSolverConfigurationError
 
 
-class VDPBasicSolverTest(unittest.TestCase):
+class VDPBasicSolverInitTest(unittest.TestCase):
     def setUp(self):
         self.longMessage = True
 

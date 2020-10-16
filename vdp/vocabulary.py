@@ -1,8 +1,8 @@
 class Symbol:
     """
     This class defines the concept of a generic 'symbol'. Symbols have a 'name' which is a string and a 'symbol_type'
-    which denotes what part of the vocabulary they constitute, say object, relation, or label.
-    Symbols will be used to represent elements in models as well as labels and relations.
+    which denotes what part of the logic vocabulary they constitute, say object, relation, or label. Symbols
+    are meant to be immutable.
     """
 
     def __init__(self, name, symbol_type=None):

@@ -53,6 +53,7 @@ class BasicSolver:
         representation_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations)
         sol.add(representation_constraints)
         # Add the SMT constraints for each model.
+        # All training models must satisfy the discriminator.
         training_models = vdppuzzle.get_training_models()
         for training_model in training_models:
             constraint = discriminator.satisfaction_constraint(training_model)
@@ -60,26 +61,25 @@ class BasicSolver:
         candidate_models = vdppuzzle.get_candidate_models()
         num_candidates = len(candidate_models)
         candidate_vars = Bools(names=['c{}'.format(str(i)) for i in range(num_candidates)], ctx=ctx)
-        # Constrain that only one candidate can be chosen.
+        # One and only one candidate can be chosen.
         sol.add(Or([candidate_var for candidate_var in candidate_vars]))
         sol.add(And([Not(And(candidate_vars[i], candidate_vars[j]))
                      for i in range(num_candidates) for j in range(num_candidates) if i != j]))
+        # A candidate is chosen if and only if it satisfies the discriminator.
         for i in range(num_candidates):
             constraint = discriminator.satisfaction_constraint(candidate_models[i])
-            sol.add(Implies(candidate_vars[i], constraint))
-        # Ask for discrimination
+            sol.add(candidate_vars[i] == constraint)
+        # Ask for discrimination.
         soluble = sol.check()
         if soluble == z3.unsat:
             raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
         smt_model = sol.model()
         discriminant = discriminator.pretty(smt_model)
         candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
-        print('Candidate: {}\nConcept: {}\n'.format(str(candidate), discriminant))
+        print('Candidate: {}\nConcept: {}\n'.format(candidate.sexpr(), discriminant))
 
 
-# Below are some functions that are used in the body of the VDPBasicConjunctiveSolver class above.
-# These are written outside the class so as to not make the body of the class itself no longer than it needs to be.
-
+# Some functions that are used in the body of the VDPBasicConjunctiveSolver class.
 # Function to sanitise the given puzzle.
 def _normalise_puzzle(vdppuzzle):
     """

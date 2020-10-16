@@ -68,7 +68,7 @@ class Formula:
     def _satisfaction_constraint_aux(self, fomodel, quantifier_depth, interpretation_extension):
         if quantifier_depth == 0:
             matrix_constraints = []
-            for key, value in self.relvardict:
+            for key, value in self.relvardict.items():
                 relational_atom = _construct_relational_atom(key, self.forelations, self.qvars)
                 atom_value = fomodel.interpret(relational_atom, interpretation_extension)
                 matrix_constraints = matrix_constraints + [Implies(value, atom_value)]
@@ -130,7 +130,7 @@ def _relational_atom_name(forelation, args):
 # Inverse of _relational_atom_name: given a name it will use the encoding defined by _relational_atom_name to construct
 # the corresponding relational atom.
 def _construct_relational_atom(name, forelations, qvars):
-    forelation_name, subterm_ids = name.split('_')
+    forelation_name, *subterm_ids = name.split('_')
     forelation = next((forelation for forelation in forelations if forelation.get_name() == forelation_name), None)
     subterms = [[qvars[int(subterm_id)]] for subterm_id in subterm_ids]
     term = [forelation, *subterms]

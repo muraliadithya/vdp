@@ -17,19 +17,19 @@ class BasicSolver:
             raise vdpexceptions.NonsenseSolverConfigurationError("Number of quantified variables must be a positive "
                                                                  "integer but was {} instead.".format(str(num_vars)))
         self.num_quantified_vars = num_vars
-        self.additional_constraints = {}
+        self.options = {}
 
     # Setter methods for solver attributes
     def _set_num_vars(self, num_vars):
         self.num_quantified_vars = num_vars
 
-    def set_additional_constraints(self, constraint_type, constraint_value):
+    def set_options(self, constraint_type, constraint_value):
         """
-        This is a generic function that adds to a dictionary of constraints. The key is a string representing the type
+        This is a generic function that adds to a dictionary of options. The key is a string representing the type
         of constraint and the value is any value.
-        The constraint type and values are interpreted by the particular solver class implementation.
+        The option type and values are interpreted by the particular solver class implementation.
         """
-        self.additional_constraints[constraint_type] = constraint_value
+        self.options[constraint_type] = constraint_value
 
     def solve(self, vdppuzzle):
         """
@@ -38,20 +38,21 @@ class BasicSolver:
         """
         # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
         vdppuzzle = _normalise_puzzle(vdppuzzle)
-        (fosorts, fofunctions) = vdppuzzle.get_vocabulary()
+        vocabulary = vdppuzzle.get_vocabulary()
+        fosorts, fofunctions = vocabulary.fosorts, vocabulary.fofunctions
         # Determine the sort to quantify over.
-        quantified_sort = self.additional_constraints.get('quantified_sort', None)
+        quantified_sort = self.options.get('quantified_sort', None)
         # The quantified sort has to be one among fosorts
         if quantified_sort is None or quantified_sort not in fosorts:
             quantified_sort = _determine_quantified_sort(fosorts)
-        # Filter all the relations that only quantify over the quantified sort
+        # Filter all the relations with arguments only from the quantified sort
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
         # Initialise the formula representation class.
         ctx = Context()
         sol = Solver(ctx=ctx)
         discriminator = Formula(ctx)
-        representation_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations)
-        sol.add(representation_constraints)
+        repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, {})
+        sol.add(repr_constraints)
         # Add the SMT constraints for each model.
         # All training models must satisfy the discriminator.
         training_models = vdppuzzle.get_training_models()
@@ -72,7 +73,9 @@ class BasicSolver:
         # Ask for discrimination.
         soluble = sol.check()
         if soluble == z3.unsat:
-            raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
+            print('No discriminator found for puzzle {}.'.format(vdppuzzle.puzzle_name))
+            exit(0)
+            # raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
         smt_model = sol.model()
         discriminant = discriminator.pretty(smt_model)
         candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
@@ -134,3 +137,4 @@ def _filter_relevant_relations(fofunctions, quantified_sort):
         if input_signature_check and output_signature_check:
             forelations = forelations | {fofunction}
     return forelations
+

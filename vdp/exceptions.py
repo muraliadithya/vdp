@@ -2,6 +2,15 @@
 # ill-conditioned input. Classes ending in 'Exception' represent cases that are outside of the scope of the
 # particular logic but can ideally be handled by a better or more specific (subclass) implementation.
 
+
+class MalformedVocabularyError(Exception):
+    """
+    This exception is raised when a Vocabulary object or an object of any other vocabulary classes that derive from
+    Vocabulary does not make sense as a real First-Order vocabulary of that type.
+    """
+    pass
+
+
 class PartialInterpretationError(Exception):
     """
     This exception is raised when a model is queried for an interpretation that is absent. One way of ensuring this

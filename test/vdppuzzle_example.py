@@ -2,7 +2,7 @@
 # It is used to test vdp solvers for simple bugs.
 # The intended discriminator is 'pen is on table'
 
-from vdp.vocabulary import FOSort, FOFunction
+from vdp.vocabulary import FOSort, FOFunction, GuardedVocabulary
 from vdp.fomodel import FOElement, FOModel
 from vdp.vdppuzzle import VDPPuzzle
 
@@ -18,7 +18,7 @@ table = FOFunction('Table', (vdpobject, vdpbool))
 on = FOFunction('On', (vdpobject, vdpobject, vdpbool))
 # No constants or functions in this signature.
 # Make the vocabulary as a pair: ({set of sorts},{set of constants/functions/relations}).
-vocabulary = ({vdpobject}, {pen, book, table, on})
+vocabulary = GuardedVocabulary({vdpobject}, {pen, book, table, on}, {pen, book, table})
 
 # training_model_1
 # Create the elements of each sort

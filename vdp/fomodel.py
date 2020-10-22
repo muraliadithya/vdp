@@ -1,5 +1,6 @@
 import vdp.exceptions as vdpexceptions
-from vdp.vocabulary import Symbol, FOSort
+from vdp.symbol import Symbol
+from vdp.vocabulary import FOSort
 
 
 class FOElement(Symbol):
@@ -26,8 +27,7 @@ class FOModel:
     """
 
     def __init__(self, vocabulary, elements, interpretation):
-        # Vocabulary is a pair (fosorts, fofunctions) where 'fosorts' is a set of FOSort objects, and 'fofunctions'
-        # is a set of FOFunction objects.
+        # Vocabulary is a Vocabulary object
         self.vocabulary = vocabulary
         # Elements is a dictionary fosort -> set_of_elements, where fosort is an FOSort object in self.vocabulary and
         # set_of_elements is a set of Symbol objects whose
@@ -60,7 +60,7 @@ class FOModel:
 
     # Returns a set of elements of the given sort if it exists in the model. Otherwise returns None.
     def get_universe(self, fosort):
-        if not isinstance(fosort, FOSort) or fosort not in self.vocabulary[0]:
+        if not isinstance(fosort, FOSort) or fosort not in self.vocabulary.fosorts:
             return None
         else:
             return self.elements[fosort]

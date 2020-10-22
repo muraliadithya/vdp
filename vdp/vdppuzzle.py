@@ -8,6 +8,7 @@ class VDPPuzzle:
         self.vocabulary = vocabulary
         self.training_models = training_models
         self.candidate_models = candidate_models
+        self.puzzle_name = ""
 
     # Setter methods for puzzle attributes
     def _set_vocabulary(self, vocabulary):

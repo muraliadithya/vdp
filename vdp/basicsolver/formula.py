@@ -23,8 +23,9 @@ class Formula:
     FO formula in prenex form quantifying over a single sort. The matrix is a conjunction of
     relations and the number of quantifiers is predetermined. The number of conjunctions is arbitrary and cannot be
     specified. There are no constants in the formula.
-    phi := Forall x_1,x_2...x_n. psi_n
-    psi_n := psi AND RelationSymbol(x_i_1,x_i_2,...x_i_m), 1 <= i_j <= n for 1 <= j <= m
+    phi :=  Q x_0,Q x_1...Q x_n. psi_n
+    psi_n := psi AND RelationSymbol(x_i_1,x_i_2,...x_i_m), 0 <= i_j <= n for 1 <= j <= m
+    where Q is either 'All' or 'Exists'.
     """
 
     def __init__(self, context):
@@ -34,9 +35,10 @@ class Formula:
         self.forelations = None
         self.qvars = []
         self.relvardict = {}
+        self.options = {}
 
     # Using boolean variables for now.
-    def initialise(self, num_quantified_vars, quantified_sort, forelations):
+    def initialise(self, num_quantified_vars, quantified_sort, forelations, options):
         """
         Initialises the representation by defining SMT variables of appropriate types.
         These are maintained in an internal dictionary.
@@ -44,11 +46,13 @@ class Formula:
         :param quantified_sort: FOSort object
         :param num_quantified_vars: positive integer
         :param forelations: list of FOFunction objects that correspond to relations
-        :return: constraints on the SMT variables that ensure a well-defined representation
+        :param options: dictionary of string-indexed optional constraints that can be placed on the class of formulae
+        :return: list of constraints on the SMT variables that ensure a well-defined representation
         """
         self.num_vars = num_quantified_vars
         self.quantified_sort = quantified_sort
         self.forelations = list(forelations)
+        self.options = options
         q = _quantifier_variable_prefix()
         quantified_variables = Bools(names=' '.join(['{}{}'.format(q, str(i)) for i in range(self.num_vars)]),
                                      ctx=self.ctx)

@@ -1,57 +1,5 @@
-class Symbol:
-    """
-    This class defines the concept of a generic 'symbol'. Symbols have a 'name' which is a string and a 'symbol_type'
-    which denotes what part of the logic vocabulary they constitute, say object, relation, or label. Symbols
-    are meant to be immutable.
-    """
-
-    def __init__(self, name, symbol_type=None):
-        self.name = name
-        self.symbol_type = symbol_type
-
-    def symbol_is_instance(self, instance):
-        """
-        Function to check whether the current Symbol object is an instance of another Symbol kind
-        higher in the hierarchy.
-        It takes either a string or another Symbol object to check against the current object. If the argument is of
-        neither type, it returns None.
-        NOTE: The Symbol object to be compared against must be the object that represents the symbol_type class of
-        objects, not another object whose symbol_type is the same as the current object.
-        :param instance: string or Symbol
-        :return: bool or None
-        """
-        if isinstance(instance, str):
-            return self.symbol_type == instance
-        elif isinstance(instance, Symbol):
-            return self.symbol_type == instance.get_name()
-
-    # Symbols with the same name must be considered equal.
-    # To enforce symbol equality only when BOTH name and signature are equal, change __eq__ and __hash__ appropriately.
-    # TODO (low): allow signature to determine equality as well.
-    #  This change will generalise the model, but will have effects on the way that interpretations are keyed in
-    #  VDPFOModel objects.
-    def __eq__(self, other):
-        """Overrides the default implementation"""
-        if isinstance(other, Symbol):
-            return self.name == other.name
-        return NotImplemented
-
-    # Custom symbol equality defined above must extend to usage as elements of mutable entities such as sets.
-    # NOTE: IMPORTANT! In general implementation only makes sense if the symbol (or classes that inherit from it)
-    #   DO NOT have mutable entities in their attributes.
-    # TODO (low): opt for a different design to obtain persistent symbol identities that is more general.
-    def __hash__(self):
-        """Overrides the default implementation"""
-        return hash(self.name)
-
-    # Getter methods for attributes
-    def get_name(self):
-        return self.name
-
-    def get_symbol_type(self):
-        return self.symbol_type
-
-    # No setter methods as we want Symbols to be immutable
+from vdp.symbol import Symbol
+import vdp.exceptions as vdpexceptions
 
 
 class FOSort(Symbol):
@@ -85,3 +33,36 @@ class FOFunction(Symbol):
 
 # NOTE: classes representing the actual label-type or object-type elements
 #  of an FO model are present in fomodel.py
+
+
+class Vocabulary:
+    """
+    This class defines a simple vocabulary that contains a set of sorts and a set of functions. The sorts are FOSort
+    objects and the functions are FOFunction objects.
+    """
+
+    def __init__(self, fosorts, fofunctions):
+        self.fosorts = fosorts
+        self.fofunctions = fofunctions
+
+    # No getter or setter methods. Vocabulary objects are just meant to be immutable tuples of sets of symbols.
+
+
+class GuardedVocabulary(Vocabulary):
+    """
+    This class defines the vocabulary for a 'guarded' FO fragment, i.e., one where all quantifiers have so-called
+    'guard' formulae. The guard 'G' of a guarded universal quantifier Forall x. G: phi is interpreted as
+    Forall x. (G => phi) in the non-guarded sense. Similarly, a guarded existential quantifier Exists x. G: phi is to
+    be interpreted as Exists x. (G && phi).
+    The fofunctions that constitute the guard have to be a subset of all fofunctions.
+    """
+
+    # In addition to a regular vocabulary a guarded vocabulary also has functions that induce a definition of
+    # guard terms/relational atoms in a guarded FO formula.
+    def __init__(self, fosorts, fofunctions, guard_fofunctions):
+        if not guard_fofunctions.issubset(fofunctions):
+            raise vdpexceptions.MalformedVocabularyError("Guard functions must be in the set of all functions. Try "
+                                                         "setting fofunctions = SetUnion(fofunctions,"
+                                                         "guard_fofunctions).")
+        self.guard_fofunctions = guard_fofunctions
+        super().__init__(fosorts, fofunctions)

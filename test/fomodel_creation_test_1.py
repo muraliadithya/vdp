@@ -9,7 +9,7 @@ import unittest
 # Tuples not specified are false
 
 
-from vdp.vocabulary import FOSort, FOFunction
+from vdp.vocabulary import FOSort, FOFunction, Vocabulary
 from vdp.fomodel import FOElement, FOModel
 from vdp.exceptions import PartialInterpretationError
 
@@ -31,7 +31,7 @@ class FOModelTest1(unittest.TestCase):
         labelof = FOFunction('LabelOf', (vdpobject, vdplabel, vdpbool))
         # No functions in this signature.
         # Make the vocabulary as a pair: ({set of sorts},{set of constants/functions/relations}).
-        vocabulary = ({vdpobject, vdplabel}, {cat, sofa, on, labelof})
+        vocabulary = Vocabulary({vdpobject, vdplabel}, {cat, sofa, on, labelof})
 
         # Create the elements of each sort
         o1 = FOElement('o1', vdpobject)

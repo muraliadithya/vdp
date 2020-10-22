@@ -1,5 +1,6 @@
 from z3 import *
-from vdp.vocabulary import FOSort
+
+from vdp.vocabulary import FOSort, GuardedVocabulary
 import vdp.exceptions as vdpexceptions
 from vdp.guardedconjunctivesolver.formula import Formula
 
@@ -7,9 +8,10 @@ from vdp.guardedconjunctivesolver.formula import Formula
 class GuardedConjunctiveSolver:
     """
     This is a restricted solver that looks for an FO formula in prenex form quantifying over a single sort. Usually
-    this is a special sort called 'Object'. The matrix is a conjunction of relations and the number of quantifiers is
-    predetermined. The number of conjunctions is arbitrary and cannot be specified. There are no constants
-    in the formula.
+    this is a special sort called 'Object'. The quantifiers are guarded. The guards are single relations from a given
+    distinguished list of guard relations.
+    The matrix is a conjunction of relations and the number of quantifiers is predetermined. The number of conjunctions
+    is arbitrary and cannot be specified. There are no constants in the formula.
     """
 
     def __init__(self, num_vars=1):
@@ -17,19 +19,19 @@ class GuardedConjunctiveSolver:
             raise vdpexceptions.NonsenseSolverConfigurationError("Number of quantified variables must be a positive "
                                                                  "integer but was {} instead.".format(str(num_vars)))
         self.num_quantified_vars = num_vars
-        self.additional_constraints = {}
+        self.options = {}
 
     # Setter methods for solver attributes
     def _set_num_vars(self, num_vars):
         self.num_quantified_vars = num_vars
 
-    def set_additional_constraints(self, constraint_type, constraint_value):
+    def set_options(self, constraint_type, constraint_value):
         """
-        This is a generic function that adds to a dictionary of constraints. The key is a string representing the type
+        This is a generic function that adds to a dictionary of options. The key is a string representing the type
         of constraint and the value is any value.
-        The constraint type and values are interpreted by the particular solver class implementation.
+        The options type and values are interpreted by the particular solver class implementation.
         """
-        self.additional_constraints[constraint_type] = constraint_value
+        self.options[constraint_type] = constraint_value
 
     def solve(self, vdppuzzle):
         """
@@ -38,20 +40,27 @@ class GuardedConjunctiveSolver:
         """
         # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
         vdppuzzle = _normalise_puzzle(vdppuzzle)
-        (fosorts, fofunctions) = vdppuzzle.get_vocabulary()
+        vocabulary = vdppuzzle.get_vocabulary()
+        # Check that the vocabulary is a guarded vocabulary
+        if not isinstance(vocabulary, GuardedVocabulary):
+            raise vdpexceptions.MalformedPuzzleException("The given puzzle needs to have a guarded vocabulary.")
+        fosorts, fofunctions, guard_fofunctions = vocabulary.fosorts, vocabulary.fofunctions, vocabulary.guard_fofunctions
         # Determine the sort to quantify over.
-        quantified_sort = self.additional_constraints.get('quantified_sort', None)
+        quantified_sort = self.options.get('quantified_sort', None)
         # The quantified sort has to be one among fosorts
         if quantified_sort is None or quantified_sort not in fosorts:
             quantified_sort = _determine_quantified_sort(fosorts)
-        # Filter all the relations that only quantify over the quantified sort
+        # Filter all the guard relations with arguments only from the quantified sort
+        guard_forelations = _filter_relevant_guards(guard_fofunctions, quantified_sort)
+        # Filter all the relations similarly, with the exception of those in guard_forelations
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
+        forelations = [forelation for forelation in forelations if forelation not in guard_forelations]
         # Initialise the formula representation class.
         ctx = Context()
         sol = Solver(ctx=ctx)
         discriminator = Formula(ctx)
-        representation_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations)
-        sol.add(representation_constraints)
+        repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, guard_forelations, {})
+        sol.add(repr_constraints)
         # Add the SMT constraints for each model.
         # All training models must satisfy the discriminator.
         training_models = vdppuzzle.get_training_models()
@@ -72,7 +81,9 @@ class GuardedConjunctiveSolver:
         # Ask for discrimination.
         soluble = sol.check()
         if soluble == z3.unsat:
-            raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
+            print('No discriminator found for puzzle {}.'.format(vdppuzzle.puzzle_name))
+            exit(0)
+            # raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
         smt_model = sol.model()
         discriminant = discriminator.pretty(smt_model)
         candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
@@ -134,3 +145,20 @@ def _filter_relevant_relations(fofunctions, quantified_sort):
         if input_signature_check and output_signature_check:
             forelations = forelations | {fofunction}
     return forelations
+
+
+# Function to construct the set of guards that will appear next to a quantifier.
+# Currently possesses the same implementation as that of _filter_relevant_relations
+def _filter_relevant_guards(guard_fofunctions, quantified_sort):
+    guard_forelations = set()
+    for guard_fofunction in guard_fofunctions:
+        signature = guard_fofunction.get_function_symbol_signature()
+        input_signature = signature[:-1]
+        output_signature = signature[-1]
+        # Inputs must all be of sort quantified_sort
+        input_signature_check = ((quantified_sort,) * len(input_signature) == input_signature)
+        # Output must be Bool
+        output_signature_check = (output_signature == FOSort('Bool'))
+        if input_signature_check and output_signature_check:
+            guard_forelations = guard_forelations | {guard_fofunction}
+    return guard_forelations

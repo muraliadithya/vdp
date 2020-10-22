@@ -129,11 +129,11 @@ class Formula:
                     guard_relational_atom = _construct_guard_relational_atom(key, self.guard_forelations, self.qvars)
                     atom_value = fomodel.interpret(guard_relational_atom, sub_interp_extn)
                     guard_constraints = guard_constraints + [Implies(value, atom_value)]
-                guard_constraint = And(guard_constraints)
+                guard_expression = And(guard_constraints)
 
                 sub_quantifier_depth = quantifier_depth - 1
                 sub_constraint = self._satisfaction_constraint_aux(fomodel, sub_quantifier_depth, sub_interp_extn)
-                sub_constraints = sub_constraints + [Cneg(qvar, Implies(guard_constraint, Cneg(qvar, sub_constraint)))]
+                sub_constraints = sub_constraints + [Cneg(qvar, Implies(guard_expression, Cneg(qvar, sub_constraint)))]
             constraint = Cneg(qvar, And([Cneg(qvar, sub_constraint) for sub_constraint in sub_constraints]))
             return constraint
 

@@ -3,4 +3,6 @@
 **/.vscode/**
 html/**
 data/**
+notebooks/**
+collate_results/**
 

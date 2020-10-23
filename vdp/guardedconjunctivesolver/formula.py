@@ -36,7 +36,7 @@ class Formula:
         self.guard_forelations = None
         self.qvars = []
         self.relvardict = {}
-        self.guard_nested_relvardict = {}
+        self.guard_level_relvardict = {}
         self.options = {}
 
     # Using boolean variables for now.
@@ -77,32 +77,36 @@ class Formula:
                 relational_atom_name = _relational_atom_name(forelation, arg)
                 self.relvardict[relational_atom_name] = Bool(name=relational_atom_name, ctx=self.ctx)
         # Variables for guards
-        # Only one relation can be a guard. Accumulate constraints for the same.
+        # Only one relation can be a guard. Accumulate constraints enforcing that.
         representation_constraints = []
         for i in range(self.num_vars):
-            # Variables for the guard of the i^th outermost quantifier.
-            quantifier_level_dict = {}
+            # Variables for the guard of the i^th outermost level quantifier.
+            curr_qvar = self.qvars[i]
+            level_guard_dict = {}
             for j in range(len(self.guard_forelations)):
                 guard_forelation = self.guard_forelations[j]
                 arity = len(guard_forelation.get_function_symbol_signature()) - 1
                 # TODO (medium-high): Consider replacing itertools.product with numpy products for speedup.
                 args = itertools.product(range(i + 1), repeat=arity)
                 for arg in args:
-                    guard_relational_atom_name = _guard_relational_atom_name(i, guard_forelation, arg)
-                    quantifier_level_dict[guard_relational_atom_name] = Bool(guard_relational_atom_name, self.ctx)
-            # The structure for maintaining guard atom variables at each level is a dict indexed by the level.
-            self.guard_nested_relvardict[self.qvars[i]] = quantifier_level_dict
+                    guard_relational_atom_name = _guard_relational_atom_name(curr_qvar, guard_forelation, arg)
+                    level_guard_dict[guard_relational_atom_name] = Bool(guard_relational_atom_name, self.ctx)
+            # The structure for maintaining guard relation variables at each level is a dict indexed by the
+            # corresponding quantified variable.
+            self.guard_level_relvardict[curr_qvar] = level_guard_dict
             # Add representation constraints for this level.
             # One and only one of the guard variables must be true.
-            one_guard_constraint = Or([guard_var for guard_var in quantifier_level_dict.values()])
+            one_guard_constraint = Or([guard_var for guard_var in level_guard_dict.values()])
             # TODO (medium-low): include an option for no guard to be present for some quantifiers.
-            unique_guard_constraints = [Not(And(quantifier_level_dict[key1], quantifier_level_dict[key2]))
-                                        for key1 in quantifier_level_dict.keys()
-                                        for key2 in quantifier_level_dict.keys()
+            unique_guard_constraints = [Not(And(level_guard_dict[key1], level_guard_dict[key2]))
+                                        for key1 in level_guard_dict.keys()
+                                        for key2 in level_guard_dict.keys()
                                         if key1 != key2]
-            representation_constraint = And([one_guard_constraint] + unique_guard_constraints)
-            representation_constraints = representation_constraints + [representation_constraint]
-        # End of loop over quantifier levels. Return representation constraints.
+            level_representation_constraint = And([one_guard_constraint] + unique_guard_constraints)
+            representation_constraints = representation_constraints + [level_representation_constraint]
+        # End of loop over quantifier levels.
+        # End of variable declarations.
+        # Return representation constraints.
         return representation_constraints
 
     def _satisfaction_constraint_aux(self, fomodel, quantifier_depth, interpretation_extension):
@@ -123,9 +127,9 @@ class Formula:
             for elem in quantified_universe:
                 sub_interp_extn = {**interpretation_extension, qvar: elem}
 
-                guard_var_dict = self.guard_nested_relvardict[qvar]
+                level_guard_dict = self.guard_level_relvardict[qvar]
                 guard_constraints = []
-                for key, value in guard_var_dict.items():
+                for key, value in level_guard_dict.items():
                     guard_relational_atom = _construct_guard_relational_atom(key, self.guard_forelations, self.qvars)
                     atom_value = fomodel.interpret(guard_relational_atom, sub_interp_extn)
                     guard_constraints = guard_constraints + [Implies(value, atom_value)]
@@ -156,7 +160,7 @@ class Formula:
         quantifier_string = ''
         for qvar in self.qvars:
             quantifier = 'Forall' if smt_model.eval(qvar) else 'Exists'
-            level_guard_dict = self.guard_nested_relvardict[qvar]
+            level_guard_dict = self.guard_level_relvardict[qvar]
             guard_var_name = next((key for key, value in level_guard_dict.items() if smt_model.eval(value)))
             guard_term = '_'.join(guard_var_name.split('_')[2:])
             quantifier_string = quantifier_string + '{} {}: {}. '.format(quantifier, qvar.sexpr(), guard_term)
@@ -207,8 +211,8 @@ def _construct_relational_atom(name, forelations, qvars):
 
 
 # Variables that denote relational atoms in the guard will have this name.
-def _guard_relational_atom_name(level, forelation, args):
-    guard_variable_prefix = 'guard_{}_'.format(str(level))
+def _guard_relational_atom_name(qvar, forelation, args):
+    guard_variable_prefix = 'guard_{}_'.format(qvar.sexpr())
     return guard_variable_prefix + forelation.get_name() + '_' + '_'.join([str(i) for i in args])
 
 

@@ -33,10 +33,12 @@ class FOModel:
         # set_of_elements is a set of Symbol objects whose
         # name denotes the name of the element and symbol_type is name of the fosort.
         self.elements = elements
-        # Interpretation is a dictionary of (possible) dictionaries: relation/function -> (argument_tuple ->
+        # Interpretation is a dictionary of dictionaries: relation/function -> (argument_tuple ->
         # valuation). For constants the structure is constant -> value The relations/functions/constants are objects
         # in the vocabulary
         self.interpretation = interpretation
+        # Generic id/name attribute
+        self.model_name = ""
 
     # Setter methods for model attributes
     def _set_vocabulary(self, vocabulary):

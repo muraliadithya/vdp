@@ -87,7 +87,8 @@ class GuardedConjunctiveSolver:
         smt_model = sol.model()
         discriminant = discriminator.pretty(smt_model)
         candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
-        print('Candidate: {}\nConcept: {}\n'.format(candidate.sexpr(), discriminant))
+        candidate_number = int(candidate.sexpr()[1])
+        print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate.sexpr(), discriminant, candidate_models[candidate_number].model_name))
 
 
 # Some functions that are used in the body of the VDPBasicConjunctiveSolver class.

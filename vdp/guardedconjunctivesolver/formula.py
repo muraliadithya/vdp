@@ -164,9 +164,9 @@ class Formula:
             guard_var_name = next((key for key, value in level_guard_dict.items() if smt_model.eval(value)))
             guard_term = '_'.join(guard_var_name.split('_')[2:])
             quantifier_string = quantifier_string + '{} {}: {}. '.format(quantifier, qvar.sexpr(), guard_term)
-        matrix_atoms = [key if smt_model.eval(value) else '' for key, value in self.relvardict.items()]
-        matrix_string = ' '.join(matrix_atoms)
-        formula_string = '{}And({})'.format(quantifier_string, matrix_string)
+        matrix_atoms = [key for key, value in self.relvardict.items() if smt_model.eval(value)]
+        matrix_string = 'And({})'.format(' '.join(matrix_atoms)) if matrix_atoms != [] else 'True'
+        formula_string = '{}{}'.format(quantifier_string, matrix_string)
         return formula_string
 
 

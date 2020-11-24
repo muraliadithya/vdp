@@ -21,7 +21,7 @@ def get_puzzle_files(puzzle_folder):
     return train_list, candidate_list
 
 
-def load_vdppuzzle(training_models_files, candidate_models_files, name):
+def load_vdppuzzle(training_models_files, candidate_models_files, puzzlename=""):
     raw_training_models = []
     for training_file in training_models_files:
         training_model_dict = load_ir(training_file)
@@ -38,7 +38,7 @@ def load_vdppuzzle(training_models_files, candidate_models_files, name):
         raw_candidate_models = raw_candidate_models + [candidate_model_dict]
 
     guarded_vocabulary, training_models, candidate_models = normalise_dicts(raw_training_models, raw_candidate_models)
-    vdp_puzzle_object = mk_vdppuzzle(guarded_vocabulary, training_models, candidate_models, name)
+    vdp_puzzle_object = mk_vdppuzzle(guarded_vocabulary, training_models, candidate_models, name=puzzlename)
     return vdp_puzzle_object
 
 
@@ -47,14 +47,6 @@ if __name__ == '__main__':
     if puzzle_folder_path.endswith('/'):
         puzzle_folder_path = puzzle_folder_path[:-1]
     training_files, candidate_files = get_puzzle_files(puzzle_folder_path)
-    vdp_puzzle = load_vdppuzzle(training_files, candidate_files, name=puzzle_folder_path)
+    vdp_puzzle = load_vdppuzzle(training_files, candidate_files, puzzlename=puzzle_folder_path)
     solver = GuardedConjunctiveSolver(num_vars=2)
     solver.solve(vdp_puzzle)
-
-
-
-
-
-
-
-

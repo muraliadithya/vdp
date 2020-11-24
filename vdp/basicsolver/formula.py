@@ -112,9 +112,9 @@ class Formula:
         for qvar in self.qvars:
             quantifier = 'Forall' if smt_model.eval(qvar) else 'Exists'
             quantifier_string = quantifier_string + '{} {}. '.format(quantifier, qvar.sexpr())
-        matrix_atoms = [key if smt_model.eval(value) else '' for key, value in self.relvardict.items()]
-        matrix_string = ' '.join(matrix_atoms)
-        formula_string = '{}And({})'.format(quantifier_string, matrix_string)
+        matrix_atoms = [key for key, value in self.relvardict.items() if smt_model.eval(value)]
+        matrix_string = 'And({})'.format(' '.join(matrix_atoms)) if matrix_atoms != [] else 'True'
+        formula_string = '{}{}'.format(quantifier_string, matrix_string)
         return formula_string
 
 

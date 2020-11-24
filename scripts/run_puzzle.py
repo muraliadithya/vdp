@@ -44,6 +44,8 @@ def load_vdppuzzle(training_models_files, candidate_models_files, name):
 
 if __name__ == '__main__':
     puzzle_folder_path = sys.argv[1]
+    if puzzle_folder_path.endswith('/'):
+        puzzle_folder_path = puzzle_folder_path[:-1]
     training_files, candidate_files = get_puzzle_files(puzzle_folder_path)
     vdp_puzzle = load_vdppuzzle(training_files, candidate_files, name=puzzle_folder_path)
     solver = GuardedConjunctiveSolver(num_vars=2)

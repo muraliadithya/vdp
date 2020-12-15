@@ -1,3 +1,8 @@
+"""
+Module for creating a VDPPuzzle object over a guarded vocabulary (refer vdp.vocabulary.GuardedVocabulary).  
+
+Refer to the package description to learn more about the role of this module.  
+"""
 import itertools
 import copy
 
@@ -6,7 +11,14 @@ from vdp.fomodel import FOElement, FOModel
 from vdp.vdppuzzle import VDPPuzzle
 
 
-def mk_vdppuzzle(guarded_vocabulary, training_model_dicts, candidate_model_dicts, name=""):
+def mk_vdppuzzle(training_model_dicts, candidate_model_dicts, guarded_vocabulary, puzzlename=""):
+    """
+    Creates a VDPPuzzle object in the obvious way from given 'clean' normalised training and candidate models over a 
+    common vocabulary given by the guarded_vocabulary parameter.  
+    The parameter guarded_vocablary is expected to be a triple consisting of all the sorts in the vocabulary, the 
+    predicates in the vocabulary and their signatures, and those predicates among all predicates that are allowed to 
+    appear as guards.  
+    """
     # Maintain a symbol table to keep track of items declared already
     symbol_table = {}
     # Construct the vocabulary object
@@ -26,7 +38,7 @@ def mk_vdppuzzle(guarded_vocabulary, training_model_dicts, candidate_model_dicts
         symbol_table = copy.deepcopy(basic_symbol_table_cache)
     # Make the vdp puzzle object
     vdp_puzzle = VDPPuzzle(guarded_vocabulary_object, training_models, candidate_models)
-    vdp_puzzle.puzzle_name = name
+    vdp_puzzle.puzzle_name = puzzlename
     return vdp_puzzle
 
 

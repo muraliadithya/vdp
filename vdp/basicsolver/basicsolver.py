@@ -37,7 +37,8 @@ class BasicSolver:
         discriminator in the hypothesis class represented by the solver.
         """
         # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
-        vdppuzzle = _normalise_puzzle(vdppuzzle)
+        # Disabling normalisation in favour of shifting the task to the ir package
+        # vdppuzzle = _normalise_puzzle(vdppuzzle)
         vocabulary = vdppuzzle.get_vocabulary()
         fosorts, fofunctions = vocabulary.fosorts, vocabulary.fofunctions
         # Determine the sort to quantify over.

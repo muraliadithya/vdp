@@ -54,6 +54,7 @@ on_interpretation = {on: {(o1, o2): False, (o2, o3): False, (o1, o3): True,
 interpretation = {**pen_interpretation, **book_interpretation, **table_interpretation, **on_interpretation}
 # Create the FO Model
 candidate_model_1 = FOModel(vocabulary, elements, interpretation)
+candidate_model_1.model_name = 'candidate_model_1'
 
 # candidate_model_2
 # same as candidate_model_1 except the book is on the table and the pen is not
@@ -72,6 +73,7 @@ on_interpretation = {on: {(o1, o2): False, (o2, o3): True, (o1, o3): False,
 interpretation = {**pen_interpretation, **book_interpretation, **table_interpretation, **on_interpretation}
 # Create the FO Model
 candidate_model_2 = FOModel(vocabulary, elements, interpretation)
+candidate_model_2.model_name = 'candidate_model_2'
 
 # candidate_model_3
 # same as candidate_model_1 except the pen is on the book and neither of them are on the table
@@ -90,7 +92,7 @@ on_interpretation = {on: {(o1, o2): True, (o2, o3): False, (o1, o3): False,
 interpretation = {**pen_interpretation, **book_interpretation, **table_interpretation, **on_interpretation}
 # Create the FO Model
 candidate_model_3 = FOModel(vocabulary, elements, interpretation)
-
+candidate_model_3.model_name = 'candidate_model_3'
 
 training_models = [training_model_1]
 candidate_models = [candidate_model_1, candidate_model_2, candidate_model_3]

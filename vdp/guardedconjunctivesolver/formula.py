@@ -62,13 +62,15 @@ class Formula:
         self.guard_forelations = list(guard_forelations)
         self.options = options
         q = _quantifier_variable_prefix()
+        # Intention: True corresponds to universal quantifier, False corresponds to existential
         quantified_variables = Bools(names=' '.join(['{}{}'.format(q, str(i)) for i in range(self.num_vars)]),
                                      ctx=self.ctx)
         # Variables corresponding to choice of quantifier.
         self.qvars = quantified_variables
         # Variables to indicate which relational terms are included in the matrix
+        # Intention: if the variable corresponding to a relational term is True, then it will appear in the matrix
         for i in range(len(self.forelations)):
-            # TODO (medium-high): Consider looping over relations sorted by arity so arguments can be replaced.
+            # TODO (medium-high): Consider looping over relations sorted by arity so arguments can be reused.
             forelation = self.forelations[i]
             arity = len(forelation.get_function_symbol_signature()) - 1
             # TODO (medium-high): Consider replacing itertools.product with numpy products for speedup.
@@ -77,6 +79,7 @@ class Formula:
                 relational_atom_name = _relational_atom_name(forelation, arg)
                 self.relvardict[relational_atom_name] = Bool(name=relational_atom_name, ctx=self.ctx)
         # Variables for guards
+        # Intention: if a variable corresponding to a term is True, then that is the term that will be the guard
         # Only one relation can be a guard. Accumulate constraints enforcing that.
         representation_constraints = []
         for i in range(self.num_vars):
@@ -107,7 +110,7 @@ class Formula:
         # End of loop over quantifier levels.
         # End of variable declarations.
         # Support for option of constraining number of conjunctions
-        num_conjuncts_bound = options.get('num_conjuncts_bound', None)
+        num_conjuncts_bound = self.options.get('num_conjuncts_bound', None)
         if num_conjuncts_bound is not None:
             if num_conjuncts_bound < 0:
                 raise vdpexceptions.NonsenseSolverConfigurationError('The number of conjunctions must be \u2265 0.')
@@ -121,6 +124,15 @@ class Formula:
                 conjunction_bound_constraints.add(And([Not(negated_relvar) for negated_relvar in negated_relvars]))
             conjunction_bound_constraint = Or(list(conjunction_bound_constraints))
             representation_constraints = representation_constraints + [Or(conjunction_bound_constraint)]
+        # Support for option of fixing quantifier shape
+        quantifier_shape = self.options.get('quantifier_shape', None)
+        if quantifier_shape is not None:
+            len_qshape = len(quantifier_shape)
+            for i in range(len_qshape):
+                if quantifier_shape[i] == 'a':
+                    representation_constraints = representation_constraints + [self.qvars[i]]
+                elif quantifier_shape[i] == 'e':
+                    representation_constraints = representation_constraints + [Not(self.qvars[i])]
         # Return representation constraints.
         return representation_constraints
 
@@ -139,6 +151,7 @@ class Formula:
                 raise vdpexceptions.NonsenseSolverConfigurationError("The given model does not interpret"
                                                                      " {} sort".format(str(self.quantified_sort)))
             sub_constraints = []
+            guard_satisfaction_constraints = []
             for elem in quantified_universe:
                 sub_interp_extn = {**interpretation_extension, qvar: elem}
 
@@ -149,11 +162,18 @@ class Formula:
                     atom_value = fomodel.interpret(guard_relational_atom, sub_interp_extn)
                     guard_constraints = guard_constraints + [Implies(value, atom_value)]
                 guard_expression = And(guard_constraints)
+                guard_satisfaction_constraints = guard_satisfaction_constraints + [guard_expression]
 
                 sub_quantifier_depth = quantifier_depth - 1
                 sub_constraint = self._satisfaction_constraint_aux(fomodel, sub_quantifier_depth, sub_interp_extn)
                 sub_constraints = sub_constraints + [Cneg(qvar, Implies(guard_expression, Cneg(qvar, sub_constraint)))]
             constraint = Cneg(qvar, And([Cneg(qvar, sub_constraint) for sub_constraint in sub_constraints]))
+            no_vacuity = self.options.get('no_vacuity', None)
+            if no_vacuity:
+                # If the quantifier is universal (qvar = True), then atleast one element in the universe
+                # must satisfy the guard. Otherwise the quantifier will be true vacuously.
+                vacuity_constraint = And(guard_satisfaction_constraints)
+                constraint = And(constraint, Implies(qvar, vacuity_constraint))
             return constraint
 
     def satisfaction_constraint(self, fomodel):

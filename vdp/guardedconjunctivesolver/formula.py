@@ -106,6 +106,21 @@ class Formula:
             representation_constraints = representation_constraints + [level_representation_constraint]
         # End of loop over quantifier levels.
         # End of variable declarations.
+        # Support for option of constraining number of conjunctions
+        num_conjuncts_bound = options.get('num_conjuncts_bound', None)
+        if num_conjuncts_bound is not None:
+            if num_conjuncts_bound < 0:
+                raise vdpexceptions.NonsenseSolverConfigurationError('The number of conjunctions must be \u2265 0.')
+            # If there must be at most 'k' conjunctions, then atleast 'total-k' conjuncts must not appear.
+            relvars = self.relvardict.values()
+            num_total_relvars = len(relvars)
+            # TODO (medium-high): Consider replacing with numpy products for speedup.
+            possible_negated_relvars = itertools.combinations(relvars, r=(num_total_relvars - num_conjuncts_bound))
+            conjunction_bound_constraints = set()
+            for negated_relvars in possible_negated_relvars:
+                conjunction_bound_constraints.add(And([Not(negated_relvar) for negated_relvar in negated_relvars]))
+            conjunction_bound_constraint = Or(list(conjunction_bound_constraints))
+            representation_constraints = representation_constraints + [Or(conjunction_bound_constraint)]
         # Return representation constraints.
         return representation_constraints
 

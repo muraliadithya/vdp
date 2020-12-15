@@ -39,7 +39,8 @@ class GuardedConjunctiveSolver:
         discriminator in the hypothesis class represented by the solver.
         """
         # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
-        vdppuzzle = _normalise_puzzle(vdppuzzle)
+        # Disabling normalisation in favour of shifting the task to the ir package
+        # vdppuzzle = _normalise_puzzle(vdppuzzle)
         vocabulary = vdppuzzle.get_vocabulary()
         # Check that the vocabulary is a guarded vocabulary
         if not isinstance(vocabulary, GuardedVocabulary):
@@ -59,7 +60,7 @@ class GuardedConjunctiveSolver:
         ctx = Context()
         sol = Solver(ctx=ctx)
         discriminator = Formula(ctx)
-        repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, guard_forelations, {})
+        repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, guard_forelations, self.options)
         sol.add(repr_constraints)
         # Add the SMT constraints for each model.
         # All training models must satisfy the discriminator.

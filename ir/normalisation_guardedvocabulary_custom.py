@@ -5,7 +5,7 @@ Refer to the package description to learn more about the role of this module.
 """
 
 
-def normalise(training_dicts_raw, candidate_dicts_raw):
+def normalise(training_dicts_raw, candidate_dicts_raw, ir_args):
     """
     Normalisation is specifically tailored to the logic used in the first version of the paper 
     https://arxiv.org/abs/1907.05878 and involves the following steps:  

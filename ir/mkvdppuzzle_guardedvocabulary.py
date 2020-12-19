@@ -11,7 +11,7 @@ from vdp.fomodel import FOElement, FOModel
 from vdp.vdppuzzle import VDPPuzzle
 
 
-def mk_vdppuzzle(training_model_dicts, candidate_model_dicts, guarded_vocabulary, puzzlename=""):
+def mk_vdppuzzle(training_model_dicts, candidate_model_dicts, guarded_vocabulary, ir_args):
     """
     Creates a VDPPuzzle object in the obvious way from given 'clean' normalised training and candidate models over a 
     common vocabulary given by the guarded_vocabulary parameter.  
@@ -38,6 +38,10 @@ def mk_vdppuzzle(training_model_dicts, candidate_model_dicts, guarded_vocabulary
         symbol_table = copy.deepcopy(basic_symbol_table_cache)
     # Make the vdp puzzle object
     vdp_puzzle = VDPPuzzle(guarded_vocabulary_object, training_models, candidate_models)
+    if ir_args.puzzlename is None:
+        puzzlename = ir_args.puzzle_folder_path
+    else:
+        puzzlename = ir_args.puzzlename
     vdp_puzzle.puzzle_name = puzzlename
     return vdp_puzzle
 

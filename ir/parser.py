@@ -3,6 +3,7 @@ Argument parser for configuring various IR handling options.
 """
 
 import argparse
+import importlib_resources
 
 import utils.argparse_extend as argparse_extend
 
@@ -19,11 +20,13 @@ _irgroup.add_argument('puzzle_folder_path', metavar='puzzlepath',
                       help='Folder containing IRs for training and candidate models')
 
 # Optional arguments to configure IR loading
-_irgroup.add_argument('--ir-config', choices=['UnaryGuardedConjunctive'], default='UnaryGuardedConjunctive', 
+_irgroup.add_argument('--ir-config', choices=['UnaryGuardedConjunctive', 'FilteredUnaryGuardedConjunctive'], 
+                      default='UnaryGuardedConjunctive', 
                       dest='ir_config', 
                       help='[Experts only] Configure loading VDP puzzle from IR')
 # Other optional arguments
-_irgroup.add_argument('--puzzlename', default=None, help='[Logging] Name of the puzzle. Same as puzzlepath by default.')
-
-# TODO (high): add option and support to load ir filtered through a given file 
-#  containing pre-approved objects and relations.
+_irgroup.add_argument('--puzzlename', default=None, dest='puzzlename', 
+                      help='[Logging] Name of the puzzle. Same as puzzlepath by default.')
+_irgroup.add_argument('--vocabfilter', default=None, dest='vocabulary_filter_filepath', 
+                      help='[Experts only] JSON file restricting vocabulary of objects and relationships. '
+                           'To be used with --ir-config FilteredUnaryGuardedConjunctive option.')

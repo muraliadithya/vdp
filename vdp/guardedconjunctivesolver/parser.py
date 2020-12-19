@@ -38,7 +38,7 @@ quantifier_group.add_argument('--quantifier-shape', type=lambda shp: all(s in ['
 
 # Arguments for choosing specific semantics of the discriminator
 argparser.add_argument('--no-vacuity', action='store_true', dest='no_vacuity', 
-                       default=None, 
+                       default=True, 
                        help=' [Experts only] Do not choose formulae that '
                             'satisfy the dsicriminator constraints vacuously')
 

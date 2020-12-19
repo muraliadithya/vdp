@@ -20,7 +20,8 @@ Informal requirements on modules in this package:
 - Each irload_*.py module must define a 'load_ir' function.  
 - Each normalisation_*.py module must define a 'normalise' function.  
 - Each mkvdppuzzle_*.py module must define a 'mk_vdppuzzle' function.  
-There are no particular restrictions on the form of the inputs and outputs for any of these functions, but it is 
-expected that the 'mk_vdppuzzle' functions will take a named string argument called 'puzzlename' denoting the name of the 
-puzzle usually written as the last argument.  
+The outputs from each stage become the inputs for the next apart from the last argument. All these function must 
+necessarily have their last argument be a argparse.Namespace object in order to facilitate functionality that 
+depends on arguments provided at runtime. There are no other particular restrictions on the form of 
+the inputs and outputs for any of these functions.  
 """

@@ -57,7 +57,7 @@ class GuardedConjunctiveSolver:
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
         forelations = [forelation for forelation in forelations if forelation not in guard_forelations]
         # Initialise the formula representation class.
-        ctx = Context()
+        ctx = main_ctx() #Context()
         sol = Solver(ctx=ctx)
         discriminator = Formula(ctx)
         repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, guard_forelations, self.options)

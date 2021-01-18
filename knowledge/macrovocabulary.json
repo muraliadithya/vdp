@@ -1,0 +1,30 @@
+{
+"labels":[
+  "dog",
+  "cat",
+  "sofa", 
+  "bed",
+  "pillow",
+  "chair",
+  "seat",
+  "table",
+  "person",
+  "man",
+  "woman",
+  "tie",
+  "car",
+  "animal",
+  "furniture",
+  "seating"
+],
+
+"predicates":[
+  "at",
+  "behind",
+  "in",
+  "of",
+  "has_label",
+  "wearing",
+  "within"
+]
+}

@@ -1,5 +1,10 @@
 """
 Basic ir load functionality.  
+CAUTION: IMPORTANT: Do not modify this module as it has several extensions built upon it.
+List of known extensions:
+- ir.irload_filtered_vocabulary
+- ir.irload_structured_labels
+
 Refer to the package description to learn more about the role of this module.  
 
 Expected folder structure for puzzles:  
@@ -29,18 +34,20 @@ def load_ir(ir_args):
 def _get_raw_models(training_models_filepaths, candidate_models_filepaths):
     raw_training_models = []
     for training_file in training_models_filepaths:
-        training_model_dict = _read_json(training_file)
-        # Assign the full filename as the name of the model
-        # TODO (very low): consider better naming conventions
-        training_model_dict['model_name'] = training_file
-        raw_training_models = raw_training_models + [training_model_dict]
+        with open(training_file) as trf:
+            training_model_dict = json.load(trf)
+            # Assign the full filename as the name of the model
+            # TODO (very low): consider better naming conventions
+            training_model_dict['model_name'] = training_file
+            raw_training_models = raw_training_models + [training_model_dict]
     raw_candidate_models = []
     for candidate_file in candidate_models_filepaths:
-        candidate_model_dict = _read_json(candidate_file)
-        # Assign the full filename as the name of the model
-        # TODO (very low): consider better naming conventions
-        candidate_model_dict['model_name'] = candidate_file
-        raw_candidate_models = raw_candidate_models + [candidate_model_dict]
+        with open(candidate_file) as canf:
+            candidate_model_dict = json.load(canf)
+            # Assign the full filename as the name of the model
+            # TODO (very low): consider better naming conventions
+            candidate_model_dict['model_name'] = candidate_file
+            raw_candidate_models = raw_candidate_models + [candidate_model_dict]
     return raw_training_models, raw_candidate_models
 
 
@@ -57,9 +64,3 @@ def _get_puzzle_filepaths(puzzle_folder):
         else:
             continue
     return train_list, candidate_list
-
-
-def _read_json(filename):
-    with open(filename) as f:
-        model_dict = json.load(f)
-        return model_dict

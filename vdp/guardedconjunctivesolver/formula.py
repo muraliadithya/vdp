@@ -28,8 +28,7 @@ class Formula:
     where Q is either 'All' or 'Exists', Ri is a relational atom over x0, x2, ... xi.
     """
 
-    def __init__(self, context):
-        self.ctx = context
+    def __init__(self):
         self.num_vars = None
         self.quantified_sort = None
         self.forelations = None
@@ -63,8 +62,7 @@ class Formula:
         self.options = options
         q = _quantifier_variable_prefix()
         # Intention: True corresponds to universal quantifier, False corresponds to existential
-        quantified_variables = Bools(names=' '.join(['{}{}'.format(q, str(i)) for i in range(self.num_vars)]),
-                                     ctx=self.ctx)
+        quantified_variables = Bools(names=' '.join(['{}{}'.format(q, str(i)) for i in range(self.num_vars)]))
         # Variables corresponding to choice of quantifier.
         self.qvars = quantified_variables
         # Variables to indicate which relational terms are included in the matrix
@@ -77,7 +75,7 @@ class Formula:
             args = itertools.product(range(self.num_vars), repeat=arity)
             for arg in args:
                 relational_atom_name = _relational_atom_name(forelation, arg)
-                self.relvardict[relational_atom_name] = Bool(name=relational_atom_name, ctx=self.ctx)
+                self.relvardict[relational_atom_name] = Bool(name=relational_atom_name)
         # Variables for guards
         # Intention: if a variable corresponding to a term is True, then that is the term that will be the guard
         # Only one relation can be a guard. Accumulate constraints enforcing that.
@@ -93,7 +91,7 @@ class Formula:
                 args = itertools.product(range(i + 1), repeat=arity)
                 for arg in args:
                     guard_relational_atom_name = _guard_relational_atom_name(curr_qvar, guard_forelation, arg)
-                    level_guard_dict[guard_relational_atom_name] = Bool(guard_relational_atom_name, self.ctx)
+                    level_guard_dict[guard_relational_atom_name] = Bool(guard_relational_atom_name)
             # The structure for maintaining guard relation variables at each level is a dict indexed by the
             # corresponding quantified variable.
             self.guard_level_relvardict[curr_qvar] = level_guard_dict

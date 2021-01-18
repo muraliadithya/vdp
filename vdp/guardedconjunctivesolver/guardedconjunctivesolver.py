@@ -57,9 +57,8 @@ class GuardedConjunctiveSolver:
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
         forelations = [forelation for forelation in forelations if forelation not in guard_forelations]
         # Initialise the formula representation class.
-        ctx = main_ctx() #Context()
-        sol = Solver(ctx=ctx)
-        discriminator = Formula(ctx)
+        sol = Solver()
+        discriminator = Formula()
         repr_constraints = discriminator.initialise(self.num_quantified_vars, quantified_sort, forelations, guard_forelations, self.options)
         sol.add(repr_constraints)
         # Add the SMT constraints for each model.
@@ -70,7 +69,7 @@ class GuardedConjunctiveSolver:
             sol.add(constraint)
         candidate_models = vdppuzzle.get_candidate_models()
         num_candidates = len(candidate_models)
-        candidate_vars = Bools(names=['c{}'.format(str(i)) for i in range(num_candidates)], ctx=ctx)
+        candidate_vars = Bools(names=['c{}'.format(str(i)) for i in range(num_candidates)])
         # One and only one candidate can be chosen.
         sol.add(Or([candidate_var for candidate_var in candidate_vars]))
         sol.add(And([Not(And(candidate_vars[i], candidate_vars[j]))

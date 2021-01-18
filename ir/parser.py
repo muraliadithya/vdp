@@ -20,13 +20,19 @@ _irgroup.add_argument('puzzle_folder_path', metavar='puzzlepath',
                       help='Folder containing IRs for training and candidate models')
 
 # Optional arguments to configure IR loading
-_irgroup.add_argument('--ir-config', choices=['UnaryGuardedConjunctive', 'FilteredUnaryGuardedConjunctive'], 
-                      default='UnaryGuardedConjunctive', 
+_irgroup.add_argument('--ir-config', choices=['Simple', 'ObjRelFilter', 'StructuredLabelDomain'], 
+                      default='Simple', 
                       dest='ir_config', 
                       help='[Experts only] Configure loading VDP puzzle from IR')
 # Other optional arguments
 _irgroup.add_argument('--puzzlename', default=None, dest='puzzlename', 
                       help='[Logging] Name of the puzzle. Same as puzzlepath by default.')
-_irgroup.add_argument('--vocabfilter', default=None, dest='vocabulary_filter_filepath', 
-                      help='[Experts only] JSON file restricting vocabulary of objects and relationships. '
-                           'To be used with --ir-config FilteredUnaryGuardedConjunctive option.')
+
+# Options temporarily disabled in favour of default files specified within each ir_loader/normaliser/puzzle maker
+# TODO (medium-high): Replace all arguments to get files with one argument or a single config file (say in YAML)
+# _irgroup.add_argument('--vocabfilter', default=None, dest='vocabulary_filter_filepath', 
+#                       help='[Experts only] JSON file restricting vocabulary of objects and relationships. '
+#                            'To be used with --ir-config ObjRelFilter option.')
+# _irgroup.add_argument('--labeldomain', default=None, dest='label_domain_filepath', 
+#                       help='[Experts only] JSON file containing additional structure about the domain of labels. '
+#                            'To be used with --ir-config StructuredLabelDomain option.')

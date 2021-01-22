@@ -78,17 +78,30 @@ class GuardedConjunctiveSolver:
         for i in range(num_candidates):
             constraint = discriminator.satisfaction_constraint(candidate_models[i])
             sol.add(candidate_vars[i] == constraint)
-        # Ask for discrimination.
-        soluble = sol.check()
-        if soluble == z3.unsat:
-            print('No discriminator found for puzzle {}.'.format(vdppuzzle.puzzle_name))
-            exit(0)
-            # raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
-        smt_model = sol.model()
-        discriminant = discriminator.pretty(smt_model)
-        candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
-        candidate_number = int(candidate.sexpr()[1])
-        print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate.sexpr(), discriminant, candidate_models[candidate_number].model_name))
+        # Ask for discrimination for as many times as required.
+        num_discriminators = self.options.get('num_discriminators', 1)
+        previous_solution_constraints = []
+        sol_number = 0
+        while sol_number < num_discriminators:
+            # Add constraints about not giving any previous solutions
+            # TODO (medium-low): Earlier constraints already present. Only add the last one.
+            sol.add(previous_solution_constraints)
+            soluble = sol.check()
+            if soluble == z3.unsat:
+                print('No discriminator found for puzzle {}.'.format(vdppuzzle.puzzle_name))
+                exit(0)
+                # raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
+            smt_model = sol.model()
+            # Add a constraint negating the given solution for the next round
+            # Only boolean variables to negate
+            previous_solution_constraints.append(Or([var_decl() != smt_model[var_decl] for var_decl in smt_model]))
+            discriminant = discriminator.pretty(smt_model)
+            candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
+            candidate_number = int(candidate.sexpr()[1])
+            print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate.sexpr(), discriminant,
+                                                                            candidate_models[
+                                                                                candidate_number].model_name))
+            sol_number = sol_number + 1
 
 
 # Some functions that are used in the body of the VDPBasicConjunctiveSolver class.

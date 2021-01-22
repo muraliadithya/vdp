@@ -42,5 +42,10 @@ argparser.add_argument('--no-vacuity', action='store_true', dest='no_vacuity',
                        help=' [Experts only] Do not choose formulae that '
                             'satisfy the dsicriminator constraints vacuously')
 
+# Arguments for number of discriminator
+argparser.add_argument('-N', '--num-discriminators', type=int, dest='num_discriminators', default=1, 
+                       help='Find multiple discriminators')
+
+
 # Put positionals at the beginning of usage text for clarity
 argparse_extend.positionals_beginning_usage_text(argparser)

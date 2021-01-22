@@ -33,6 +33,8 @@ def solve_puzzle(vdp_puzzle, solver_args):
     no_vacuity = solver_args.no_vacuity
     if no_vacuity:
         solver.options['no_vacuity'] = True
+    # Number of discriminators
+    solver.options['num_discriminators'] = solver_args.num_discriminators
 
     # Solve puzzle
     solver.solve(vdp_puzzle)

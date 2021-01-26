@@ -53,6 +53,8 @@ def _transform_dict(model_dict):
     new_dict = {}
     # Sorts: remove anything that's not an object sort
     new_sorts = {old_sort for old_sort in sorts if old_sort.lower() == 'object'}
+    if len(new_sorts) != 1:
+        raise ValueError('Must have a unique sort called object or Object')
     new_dict['sorts'] = new_sorts
     # Elements: remove elements for all removed sorts. Extract labels in particular.
     guard_predicate_names = set(elements.pop('label', None))

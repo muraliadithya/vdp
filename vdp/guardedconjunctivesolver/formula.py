@@ -212,7 +212,7 @@ class Formula:
             quantifier = 'Forall' if smt_model.eval(qvar) else 'Exists'
             level_guard_dict = self.guard_level_relvardict[qvar]
             guard_var_name = next((key for key, value in level_guard_dict.items() if smt_model.eval(value)))
-            guard_term = '_'.join(guard_var_name.split('_')[2:])
+            guard_term = _compond_name_separator_.join(guard_var_name.split(_compond_name_separator_)[2:])
             quantifier_string = quantifier_string + '{} {}: {}. '.format(quantifier, qvar.sexpr(), guard_term)
         matrix_atoms = [key for key, value in self.relvardict.items() if smt_model.eval(value, model_completion=True)]
         matrix_string = 'And({})'.format(' '.join(matrix_atoms)) if matrix_atoms != [] else 'True'
@@ -240,6 +240,10 @@ def Cneg(boolvar, expr):
     return Implies(expr, boolvar)
 
 
+# This symbol will be used to create compound names
+_compond_name_separator_ = '!'
+
+
 # Variables that denote quantifiers will have this prefix.
 def _quantifier_variable_prefix():
     return 'q'
@@ -247,13 +251,13 @@ def _quantifier_variable_prefix():
 
 # Variables that denote relational atoms will have this name.
 def _relational_atom_name(forelation, args):
-    return forelation.get_name() + '_' + '_'.join([str(i) for i in args])
+    return forelation.get_name() + _compond_name_separator_ + _compond_name_separator_.join([str(i) for i in args])
 
 
 # Inverse of _relational_atom_name: given a name it will use the encoding defined by _relational_atom_name to construct
 # the corresponding relational atom.
 def _construct_relational_atom(name, forelations, qvars):
-    forelation_name, *subterm_ids = name.split('_')
+    forelation_name, *subterm_ids = name.split(_compond_name_separator_)
     forelation = next((forelation for forelation in forelations if forelation.get_name() == forelation_name), None)
     subterms = [[qvars[int(subterm_id)]] for subterm_id in subterm_ids]
     term = [forelation, *subterms]
@@ -262,13 +266,14 @@ def _construct_relational_atom(name, forelations, qvars):
 
 # Variables that denote relational atoms in the guard will have this name.
 def _guard_relational_atom_name(qvar, forelation, args):
-    guard_variable_prefix = 'guard_{}_'.format(qvar.sexpr())
-    return guard_variable_prefix + forelation.get_name() + '_' + '_'.join([str(i) for i in args])
+    guard_variable_prefix = 'guard{}{}{}'.format(_compond_name_separator_, qvar.sexpr(), _compond_name_separator_)
+    argument_string = _compond_name_separator_.join([str(i) for i in args])
+    return guard_variable_prefix + forelation.get_name() + _compond_name_separator_ + argument_string
 
 
 # Inverse of _guard_relational_atom_name as above for relational atoms.
 def _construct_guard_relational_atom(name, guard_forelations, qvars):
-    guard_variable_prefix, level, forelation_name, *subterm_ids = name.split('_')
+    guard_variable_prefix, level, forelation_name, *subterm_ids = name.split(_compond_name_separator_)
     forelation = next((forelation for forelation in guard_forelations if forelation.get_name() == forelation_name),
                       None)
     subterms = [[qvars[int(subterm_id)]] for subterm_id in subterm_ids]

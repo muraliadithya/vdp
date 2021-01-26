@@ -183,9 +183,22 @@ class Formula:
         """
         return self._satisfaction_constraint_aux(fomodel, self.num_vars, {})
 
+    def valuation_as_formula(self, smt_model):
+        """
+        Returns the represented formula as an SMT formula over the representation variables. This can be used to 
+        negate the given solution and query for a different one.
+        :param smt_model: Z3Py ModelRef object
+        :return: Z3Py formula
+        """
+        all_boolvars = self.qvars
+        all_boolvars = all_boolvars + list(self.relvardict.values())
+        all_boolvars = all_boolvars + [var for level_guard_dict in self.guard_level_relvardict.values() 
+                                       for var in level_guard_dict.values()]
+        return And([b == smt_model.eval(b, model_completion=True) for b in all_boolvars])
+
     def pretty(self, smt_model):
         """
-        Prettyprint for the represented formula given an assignment to the variables. Fails if no such assignment is
+        Prettyprinter for the represented formula given an assignment to the variables. Fails if no such assignment is
         provided.
         :param smt_model: Z3Py ModelRef object
         :return: string

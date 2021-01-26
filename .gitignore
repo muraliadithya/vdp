@@ -2,7 +2,7 @@
 **/__pycache__/**
 **/.vscode/**
 html/**
-data/**
+data*/**
 notebooks/**
 collate_results/**
 

@@ -52,7 +52,7 @@ def _filter_raw_model(model, filter_dict):
             model['interpretation'].pop(model_predicate, None)
     good_labels = filter_dict['labels']
     # Remove all labels not in good_labels from the domain of labels
-    model['elements']['label'] = [label for label in model['elements']['label'] if label not in good_labels]
+    model['elements']['label'] = [label for label in model['elements']['label'] if label in good_labels]
     # Delete objects any of whose labels are extraneous
     extraneous_objects = {entry[0] for entry in model['interpretation']['has_label'] if entry[1] not in good_labels}
     model['elements']['object'] = [obj for obj in model['elements']['object'] if obj not in extraneous_objects]

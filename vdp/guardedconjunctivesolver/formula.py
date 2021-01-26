@@ -90,6 +90,10 @@ class Formula:
                 # TODO (medium-high): Consider replacing itertools.product with numpy products for speedup.
                 args = itertools.product(range(i + 1), repeat=arity)
                 for arg in args:
+                    # Guard has to atleast contain the variable being quantified
+                    # Skip if arg does not contain i
+                    if i not in arg:
+                        continue
                     guard_relational_atom_name = _guard_relational_atom_name(curr_qvar, guard_forelation, arg)
                     level_guard_dict[guard_relational_atom_name] = Bool(guard_relational_atom_name)
             # The structure for maintaining guard relation variables at each level is a dict indexed by the

@@ -31,6 +31,22 @@ def load_ir(ir_args):
     return raw_training_models, raw_candidate_models
 
 
+# Helper functions
+def _get_puzzle_filepaths(puzzle_folder):
+    train_list = None
+    candidate_list = None
+    for (path, dirnames, filenames) in os.walk(puzzle_folder):
+        if path == puzzle_folder + '/train':
+            # training models ir files
+            train_list = [path + '/' + name for name in filenames if name.endswith('.json')]
+        elif path == puzzle_folder + '/test':
+            # candidate models ir files
+            candidate_list = [path + '/' + name for name in filenames if name.endswith('.json')]
+        else:
+            continue
+    return train_list, candidate_list
+
+
 def _get_raw_models(training_models_filepaths, candidate_models_filepaths):
     raw_training_models = []
     for training_file in training_models_filepaths:
@@ -51,16 +67,15 @@ def _get_raw_models(training_models_filepaths, candidate_models_filepaths):
     return raw_training_models, raw_candidate_models
 
 
-def _get_puzzle_filepaths(puzzle_folder):
-    train_list = None
-    candidate_list = None
-    for (path, dirnames, filenames) in os.walk(puzzle_folder):
-        if path == puzzle_folder + '/train':
-            # training models ir files
-            train_list = [path + '/' + name for name in filenames if name.startswith('train_') and name.endswith('.json')]
-        elif path == puzzle_folder + '/test':
-            # candidate models ir files
-            candidate_list = [path + '/' + name for name in filenames if name.startswith('test_') and name.endswith('.json')]
-        else:
-            continue
-    return train_list, candidate_list
+# Helper function to fix the way predicate signatures are represented in the IR
+# def _correct_raw_model(model):
+#     predicate_dict = model.get('predicates', None)
+#     for predicate in predicate_dict:
+#         signature_str = predicate_dict[predicate]
+#         # Replace all delimiters with a uniform one and then split
+#         uniform_delimiter = '!!'
+#         for delimiter in {'(', ')', ' ', ','}:
+#             signature_str = signature_str.replace(delimiter, uniform_delimiter)
+#         signature = ' '.join(signature_str.split(uniform_delimiter)).split()
+#         predicate_dict[predicate] = signature
+#     return model

@@ -3,6 +3,7 @@
 **/.vscode/**
 html/**
 data*/**
+logs*/**
 notebooks/**
 collate_results/**
 

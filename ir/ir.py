@@ -34,16 +34,19 @@ _irload_json_with_structured_labels = 'irload_structured_labels'
 _normalisation_guardedvocabulary_vdppaper = 'normalisation_guardedvocabulary_custom'
 # vdp puzzle creation
 _mkvdppuzzle_guardedvocabulary = 'mkvdppuzzle_guardedvocabulary'
+_mkvdppuzzle_guardedvocabulary_separated_guards = 'mkvdppuzzle_guardedvocabulary_separated_guards'
 
 
 # Helper function to delineate combinations for various config options
 def _ir_handler_triple(ir_args):
     config = ir_args.ir_config
     if config == 'Simple':
-        return _irload_json_simple, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary
+        return _irload_json_simple, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary_separated_guards
     elif config == 'ObjRelFilter':
-        return _irload_json_with_vocabulary_filter, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary
+        return _irload_json_with_vocabulary_filter, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary_separated_guards
     elif config == 'StructuredLabelDomain':
-        return _irload_json_with_structured_labels, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary
+        return _irload_json_with_structured_labels, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary_separated_guards
+    elif config == 'Clevr':
+        return _irload_json_simple, _normalisation_guardedvocabulary_vdppaper, _mkvdppuzzle_guardedvocabulary
     else:
         raise ValueError('Configuration {} unsupported.'.format(config))

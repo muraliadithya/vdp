@@ -20,7 +20,7 @@ _irgroup.add_argument('puzzle_folder_path', metavar='puzzlepath',
                       help='Folder containing IRs for training and candidate models')
 
 # Optional arguments to configure IR loading
-_irgroup.add_argument('--ir-config', choices=['Simple', 'ObjRelFilter', 'StructuredLabelDomain'], 
+_irgroup.add_argument('--ir-config', choices=['Simple', 'ObjRelFilter', 'StructuredLabelDomain', 'Clevr'], 
                       default='Simple', 
                       dest='ir_config', 
                       help='[Experts only] Configure loading VDP puzzle from IR')

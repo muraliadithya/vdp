@@ -53,9 +53,8 @@ class GuardedConjunctiveSolver:
             quantified_sort = _determine_quantified_sort(fosorts)
         # Filter all the guard relations with arguments only from the quantified sort
         guard_forelations = _filter_relevant_guards(guard_fofunctions, quantified_sort)
-        # Filter all the relations similarly, with the exception of those in guard_forelations
+        # Filter all the relations similarly
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
-        forelations = [forelation for forelation in forelations if forelation not in guard_forelations]
         # Initialise the formula representation class.
         sol = Solver()
         discriminator = Formula()

@@ -174,7 +174,7 @@ class Formula:
             if no_vacuity:
                 # If the quantifier is universal (qvar = True), then atleast one element in the universe
                 # must satisfy the guard. Otherwise the quantifier will be true vacuously.
-                vacuity_constraint = And(guard_satisfaction_constraints)
+                vacuity_constraint = Or(guard_satisfaction_constraints)
                 constraint = And(constraint, Implies(qvar, vacuity_constraint))
             return constraint
 

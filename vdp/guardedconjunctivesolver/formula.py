@@ -237,7 +237,7 @@ def Cneg(boolvar, expr):
     :param expr: formula
     :return: formula
     """
-    return Implies(expr, boolvar)
+    return If(boolvar, expr, Not(expr))
 
 
 # This symbol will be used to create compound names

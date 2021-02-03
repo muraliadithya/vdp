@@ -26,6 +26,7 @@ _irgroup.add_argument('--ir-config', choices=['Simple', 'ObjRelFilter', 'Structu
                       default='Simple', 
                       dest='ir_config', 
                       help='[Experts only] Configure loading VDP puzzle from IR')
+
 # Other optional arguments
 _irgroup.add_argument('--puzzlename', default=None, dest='puzzlename', 
                       help='[Logging] Name of the puzzle. Same as puzzlepath by default.')

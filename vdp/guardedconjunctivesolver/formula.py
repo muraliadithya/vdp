@@ -195,7 +195,9 @@ class Formula:
         :return: Z3Py formula
         """
         all_boolvars = self.qvars
-        all_boolvars = all_boolvars + list(self.relvardict.values())
+        # Only include those relations that are true. This allows for a tighter representation of the solution
+        all_boolvars = all_boolvars + [relvar for relvar in self.relvardict.values() 
+                                       if smt_model.eval(relvar, model_completion=True)]
         all_boolvars = all_boolvars + [var for level_guard_dict in self.guard_level_relvardict.values() 
                                        for var in level_guard_dict.values()]
         return And([b == smt_model.eval(b, model_completion=True) for b in all_boolvars])
@@ -217,6 +219,12 @@ class Formula:
         matrix_atoms = [key for key, value in self.relvardict.items() if smt_model.eval(value, model_completion=True)]
         matrix_string = 'And({})'.format(' '.join(matrix_atoms)) if matrix_atoms != [] else 'True'
         formula_string = '{}{}'.format(quantifier_string, matrix_string)
+        # Post-processing
+        no_vacuity = self.options.get('no_vacuity', None)
+        if matrix_atoms == [] and no_vacuity:
+            # If the conjunction is empty then a universal quantifier is the same as an existential quantifier
+            # This only holds when the universal quantifier is non-vacuous
+            formula_string.replace('Forall', 'Exists')
         return formula_string
 
 

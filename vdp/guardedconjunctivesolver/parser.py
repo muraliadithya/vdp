@@ -19,16 +19,23 @@ argparser.add_argument('-C', '--num-conjuncts', type=int, dest='num_conjuncts',
                        default=None, 
                        help='Maximum number of conjuncts in the matrix')
 
+
 # Arguments for specifying parts of the formula
 # Quantifiers
+# Helper function for detecting valid quantifier_shape arguments
+def quantifier_pattern(shp):
+    if not all(s in ['a', 'e', '?'] for s in shp):
+        raise argparse.ArgumentTypeError('quantifier_shape must be a string containing only '
+                                         'a (forall), e (exists), or ? (any)')
+    return shp
+
+
 quantifier_group = argparser.add_mutually_exclusive_group()
-quantifier_group.add_argument('-E', '--existential-only', action='store_false', dest='quantifier_shape', 
-                              default=None, 
+quantifier_group.add_argument('-E', '--existential-only', action='store_true', dest='existential_only', 
                               help='Force all quantifiers to be existential.')
-quantifier_group.add_argument('-A', '--universal-only', action='store_true', dest='quantifier_shape', 
-                              default=None, 
+quantifier_group.add_argument('-A', '--universal-only', action='store_true', dest='universal_only', 
                               help='Force all quantifiers to be universal.')
-quantifier_group.add_argument('--quantifier-shape', type=lambda shp: all(s in ['a', 'e', '?'] for s in shp), 
+quantifier_group.add_argument('--quantifier-shape', type=quantifier_pattern, 
                               dest='quantifier_shape', 
                               default=None, 
                               help='Specify the quantifiers from outermost to innermost (left to right) as a string'

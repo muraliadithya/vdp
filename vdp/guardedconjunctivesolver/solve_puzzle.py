@@ -21,14 +21,12 @@ def solve_puzzle(vdp_puzzle, solver_args):
     if num_conjuncts_bound is not None:
         solver.options['num_conjuncts_bound'] = num_conjuncts_bound
     # Quantifier shape
-    qshape = solver_args.quantifier_shape
-    if qshape is not None:
-        if isinstance(qshape, bool):
-            solver.options['quantifier_shape'] = ('a' if qshape else 'e')*num_vars
-        elif isinstance(qshape, str):
-            solver.options['quantifier_shape'] = qshape
-        else:
-            raise TypeError('Quantifier shape format unsuported')
+    if solver_args.existential_only:
+        solver.options['quantifier_shape'] = 'e' * num_vars
+    elif solver_args.universal_only:
+        solver.options['quantifier_shape'] = 'a' * num_vars
+    elif solver_args.quantifier_shape is not None:
+        solver.options['quantifier_shape'] = solver_args.quantifier_shape
     # Vcauity
     no_vacuity = solver_args.no_vacuity
     if no_vacuity:

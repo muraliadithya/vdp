@@ -10,3 +10,15 @@
 [submodule "darknet"]
 	path = darknet
 	url = https://github.com/atharvas/darknet
+[submodule "clevr-experiments/clevr_generate"]
+	path = clevr-experiments/clevr_generate
+	url = https://github.com/atharvas/clevr-dataset-gen
+[submodule "clevr-experiments/clevr_inference"]
+	path = clevr-experiments/clevr_inference
+	url = https://github.com/atharvas/ns-vqa.git
+[submodule "clevr-experiments/baseline_1"]
+	path = clevr-experiments/baseline_1
+	url = https://github.com/atharvas/Image-Similarity-Deep-Ranking
+[submodule "clevr-experiments/baseline_2"]
+	path = clevr-experiments/baseline_2
+	url = https://github.com/atharvas/image-similarity-using-deep-ranking

@@ -1,0 +1,12 @@
+[submodule "cocoapi"]
+	path = cocoapi
+	url = https://github.com/atharvas/cocoapi.git
+[submodule "apex"]
+	path = apex
+	url = https://github.com/atharvas/apex
+[submodule "sg"]
+	path = sg
+	url = https://github.com/atharvas/Scene-Graph-Benchmark.pytorch.git
+[submodule "darknet"]
+	path = darknet
+	url = https://github.com/atharvas/darknet

@@ -95,7 +95,8 @@ class GuardedConjunctiveSolver:
             # Only boolean variables to negate
             previous_solution_constraints.append(Not(discriminator.valuation_as_formula(smt_model)))
             discriminant = discriminator.pretty(smt_model)
-            candidate = next((candidate_var for candidate_var in candidate_vars if smt_model.eval(candidate_var)), None)
+            candidate = next((candidate_var for candidate_var in candidate_vars 
+                              if smt_model.eval(candidate_var, model_completion=True)), None)
             candidate_number = int(candidate.sexpr()[1])
             print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate.sexpr(), discriminant,
                                                                             candidate_models[

@@ -1,0 +1,200 @@
+data/yolo_ir/alldogsonsofas_1
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_1/test/36.json
+
+
+real	0m2.108s
+user	0m2.058s
+sys	0m0.025s
+
+data/yolo_ir/alldogsonsofas_10
+Candidate: c1
+Concept: Exists q0: dog!0. Exists q1: sofa!1. And(left!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_10/test/30.json
+
+
+real	0m1.688s
+user	0m1.665s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_11
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_11/test/33.json
+
+
+real	0m2.114s
+user	0m2.056s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_12
+Candidate: c1
+Concept: Forall q0: sofa!0. Exists q1: dog!1. And(left!1!0)
+Candidate Name: data/yolo_ir/alldogsonsofas_12/test/30.json
+
+
+real	0m2.762s
+user	0m2.720s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_13
+Candidate: c0
+Concept: Exists q0: dog!0. Forall q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_13/test/30.json
+
+
+real	0m2.231s
+user	0m2.187s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_14
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_14/test/33.json
+
+
+real	0m2.155s
+user	0m2.030s
+sys	0m0.032s
+
+data/yolo_ir/alldogsonsofas_15
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_15/test/33.json
+
+
+real	0m3.122s
+user	0m2.997s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_16
+Candidate: c1
+Concept: Forall q0: sofa!0. Exists q1: dog!1. And(left!1!0)
+Candidate Name: data/yolo_ir/alldogsonsofas_16/test/30.json
+
+
+real	0m3.116s
+user	0m3.078s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_17
+Candidate: c2
+Concept: Exists q0: sofa!0. Exists q1: dog!1. And(within!1!0)
+Candidate Name: data/yolo_ir/alldogsonsofas_17/test/33.json
+
+
+real	0m3.071s
+user	0m3.030s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_18
+Candidate: c0
+Concept: Exists q0: sofa!0. Forall q1: dog!1. And(within!1!0)
+Candidate Name: data/yolo_ir/alldogsonsofas_18/test/32.json
+
+
+real	0m3.154s
+user	0m3.111s
+sys	0m0.032s
+
+data/yolo_ir/alldogsonsofas_19
+Candidate: c0
+Concept: Exists q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_19/test/32.json
+
+
+real	0m3.515s
+user	0m3.369s
+sys	0m0.028s
+
+data/yolo_ir/alldogsonsofas_2
+Candidate: c1
+Concept: Exists q0: dog!0. Forall q1: sofa!1. And(right!1!0)
+Candidate Name: data/yolo_ir/alldogsonsofas_2/test/30.json
+
+
+real	0m1.909s
+user	0m1.796s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_20
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_20/test/33.json
+
+
+real	0m3.694s
+user	0m3.592s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_3
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_3/test/36.json
+
+
+real	0m3.086s
+user	0m3.047s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_4
+Candidate: c2
+Concept: Exists q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_4/test/36.json
+
+
+real	0m3.476s
+user	0m3.371s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_5
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_5/test/38.json
+
+
+real	0m3.272s
+user	0m3.152s
+sys	0m0.008s
+
+data/yolo_ir/alldogsonsofas_6
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_6/test/36.json
+
+
+real	0m3.074s
+user	0m3.018s
+sys	0m0.032s
+
+data/yolo_ir/alldogsonsofas_7
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_7/test/33.json
+
+
+real	0m3.679s
+user	0m3.536s
+sys	0m0.044s
+
+data/yolo_ir/alldogsonsofas_8
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_8/test/38.json
+
+
+real	0m1.945s
+user	0m1.820s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_9
+Candidate: c2
+Concept: Forall q0: dog!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/yolo_ir/alldogsonsofas_9/test/36.json
+
+
+real	0m3.440s
+user	0m3.316s
+sys	0m0.032s
+

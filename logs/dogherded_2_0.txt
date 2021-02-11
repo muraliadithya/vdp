@@ -1,0 +1,200 @@
+data/yolo_ir/dogherded_1
+Candidate: c2
+Concept: Exists q0: sheep!0. Forall q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_1/test/84.json
+
+
+real	0m3.945s
+user	0m3.888s
+sys	0m0.028s
+
+data/yolo_ir/dogherded_10
+Candidate: c2
+Concept: Forall q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_10/test/79.json
+
+
+real	0m4.397s
+user	0m4.339s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_11
+Candidate: c2
+Concept: Exists q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_11/test/79.json
+
+
+real	0m4.909s
+user	0m4.850s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_12
+Candidate: c2
+Concept: Exists q0: sheep!0. Forall q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_12/test/85.json
+
+
+real	0m3.187s
+user	0m3.133s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_13
+Candidate: c1
+Concept: Forall q0: dog!0. Exists q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_13/test/79.json
+
+
+real	0m4.273s
+user	0m4.196s
+sys	0m0.040s
+
+data/yolo_ir/dogherded_14
+Candidate: c1
+Concept: Forall q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_14/test/84.json
+
+
+real	0m3.828s
+user	0m3.762s
+sys	0m0.036s
+
+data/yolo_ir/dogherded_15
+Candidate: c2
+Concept: Exists q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_15/test/84.json
+
+
+real	0m3.400s
+user	0m3.351s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_16
+Candidate: c3
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_16/test/79.json
+
+
+real	0m3.646s
+user	0m3.572s
+sys	0m0.032s
+
+data/yolo_ir/dogherded_17
+Candidate: c3
+Concept: Forall q0: sheep!0. Forall q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_17/test/79.json
+
+
+real	0m3.775s
+user	0m3.713s
+sys	0m0.012s
+
+data/yolo_ir/dogherded_18
+Candidate: c2
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_18/test/84.json
+
+
+real	0m3.841s
+user	0m3.789s
+sys	0m0.016s
+
+data/yolo_ir/dogherded_19
+Candidate: c1
+Concept: Forall q0: sheep!0. Forall q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_19/test/84.json
+
+
+real	0m3.743s
+user	0m3.671s
+sys	0m0.041s
+
+data/yolo_ir/dogherded_2
+Candidate: c2
+Concept: Forall q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_2/test/84.json
+
+
+real	0m4.066s
+user	0m3.981s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_20
+Candidate: c3
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_20/test/85.json
+
+
+real	0m3.779s
+user	0m3.699s
+sys	0m0.052s
+
+data/yolo_ir/dogherded_3
+Candidate: c1
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_3/test/84.json
+
+
+real	0m3.815s
+user	0m3.723s
+sys	0m0.036s
+
+data/yolo_ir/dogherded_4
+Candidate: c2
+Concept: Exists q0: sheep!0. Forall q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_4/test/79.json
+
+
+real	0m3.233s
+user	0m3.186s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_5
+Candidate: c1
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_5/test/79.json
+
+
+real	0m3.433s
+user	0m3.372s
+sys	0m0.044s
+
+data/yolo_ir/dogherded_6
+Candidate: c2
+Concept: Exists q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_6/test/85.json
+
+
+real	0m3.390s
+user	0m3.312s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_7
+Candidate: c3
+Concept: Forall q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_7/test/85.json
+
+
+real	0m4.403s
+user	0m4.334s
+sys	0m0.044s
+
+data/yolo_ir/dogherded_8
+Candidate: c1
+Concept: Exists q0: dog!0. Forall q1: sheep!1. True
+Candidate Name: data/yolo_ir/dogherded_8/test/84.json
+
+
+real	0m4.012s
+user	0m3.960s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_9
+Candidate: c2
+Concept: Exists q0: sheep!0. Exists q1: dog!1. True
+Candidate Name: data/yolo_ir/dogherded_9/test/79.json
+
+
+real	0m3.356s
+user	0m3.294s
+sys	0m0.044s
+

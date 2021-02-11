@@ -1,0 +1,200 @@
+data/yolo_ir/populatedbus_1
+Candidate: c2
+Concept: Exists q0: bus!0. Exists q1: person!1. And(left!1!0)
+Candidate Name: data/yolo_ir/populatedbus_1/test/130.json
+
+
+real	0m3.449s
+user	0m3.415s
+sys	0m0.008s
+
+data/yolo_ir/populatedbus_10
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_10/test/128.json
+
+
+real	0m5.555s
+user	0m5.488s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_11
+Candidate: c0
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_11/test/128.json
+
+
+real	0m3.466s
+user	0m3.425s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_12
+Candidate: c2
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_12/test/132.json
+
+
+real	0m6.622s
+user	0m6.521s
+sys	0m0.044s
+
+data/yolo_ir/populatedbus_13
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_13/test/128.json
+
+
+real	0m5.701s
+user	0m5.627s
+sys	0m0.040s
+
+data/yolo_ir/populatedbus_14
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_14/test/128.json
+
+
+real	0m3.567s
+user	0m3.498s
+sys	0m0.040s
+
+data/yolo_ir/populatedbus_15
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_15/test/128.json
+
+
+real	0m3.360s
+user	0m3.310s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_16
+Candidate: c2
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_16/test/132.json
+
+
+real	0m5.208s
+user	0m5.130s
+sys	0m0.036s
+
+data/yolo_ir/populatedbus_17
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_17/test/127.json
+
+
+real	0m5.292s
+user	0m5.219s
+sys	0m0.040s
+
+data/yolo_ir/populatedbus_18
+Candidate: c1
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_18/test/127.json
+
+
+real	0m3.028s
+user	0m2.993s
+sys	0m0.012s
+
+data/yolo_ir/populatedbus_19
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_19/test/132.json
+
+
+real	0m2.726s
+user	0m2.698s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_2
+Candidate: c1
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_2/test/128.json
+
+
+real	0m6.407s
+user	0m6.357s
+sys	0m0.032s
+
+data/yolo_ir/populatedbus_20
+Candidate: c1
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_20/test/132.json
+
+
+real	0m4.869s
+user	0m4.791s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_3
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_3/test/132.json
+
+
+real	0m3.309s
+user	0m3.249s
+sys	0m0.032s
+
+data/yolo_ir/populatedbus_4
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_4/test/127.json
+
+
+real	0m2.577s
+user	0m2.522s
+sys	0m0.040s
+
+data/yolo_ir/populatedbus_5
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_5/test/132.json
+
+
+real	0m2.726s
+user	0m2.698s
+sys	0m0.008s
+
+data/yolo_ir/populatedbus_6
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_6/test/128.json
+
+
+real	0m2.906s
+user	0m2.867s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_7
+Candidate: c0
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_7/test/128.json
+
+
+real	0m5.249s
+user	0m5.194s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_8
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: bus!1. And(within!0!1)
+Candidate Name: data/yolo_ir/populatedbus_8/test/132.json
+
+
+real	0m5.215s
+user	0m5.145s
+sys	0m0.032s
+
+data/yolo_ir/populatedbus_9
+Candidate: c0
+Concept: Exists q0: bus!0. Exists q1: person!1. And(within!1!0)
+Candidate Name: data/yolo_ir/populatedbus_9/test/127.json
+
+
+real	0m4.748s
+user	0m4.697s
+sys	0m0.024s
+

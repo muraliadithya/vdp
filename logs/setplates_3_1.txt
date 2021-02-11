@@ -1,0 +1,185 @@
+data/new_yolo_ir/setplates_1
+Candidate: c2
+Concept: Forall q0: wine glass!0. Forall q1: knife!1. Forall q2: fork!2. True
+Candidate Name: data/new_yolo_ir/setplates_1/test/fork18.json
+
+
+real	0m24.868s
+user	0m24.593s
+sys	0m0.060s
+
+data/new_yolo_ir/setplates_10
+No discriminator found for puzzle data/new_yolo_ir/setplates_10.
+
+real	0m24.697s
+user	0m24.395s
+sys	0m0.064s
+
+data/new_yolo_ir/setplates_11
+No discriminator found for puzzle data/new_yolo_ir/setplates_11.
+
+real	0m23.917s
+user	0m23.693s
+sys	0m0.056s
+
+data/new_yolo_ir/setplates_12
+Candidate: c1
+Concept: Exists q0: spoon!0. Forall q1: diningtable!1. Forall q2: diningtable!2. True
+Candidate Name: data/new_yolo_ir/setplates_12/test/fork4.json
+
+
+real	0m26.833s
+user	0m26.540s
+sys	0m0.060s
+
+data/new_yolo_ir/setplates_13
+Candidate: c1
+Concept: Forall q0: spoon!0. Forall q1: diningtable!1. Forall q2: fork!2. And(left!2!0)
+Candidate Name: data/new_yolo_ir/setplates_13/test/fork3.json
+
+
+real	0m26.059s
+user	0m25.746s
+sys	0m0.096s
+
+data/new_yolo_ir/setplates_14
+Candidate: c1
+Concept: Forall q0: fork!0. Exists q1: spoon!1. Exists q2: spoon!2. And(left!0!2)
+Candidate Name: data/new_yolo_ir/setplates_14/test/fork2.json
+
+
+real	0m31.020s
+user	0m30.626s
+sys	0m0.092s
+
+data/new_yolo_ir/setplates_15
+Candidate: c1
+Concept: Forall q0: spoon!0. Forall q1: spoon!1. Forall q2: fork!2. And(left!2!0)
+Candidate Name: data/new_yolo_ir/setplates_15/test/fork4.json
+
+
+real	0m42.993s
+user	0m42.560s
+sys	0m0.100s
+
+data/new_yolo_ir/setplates_16
+Candidate: c2
+Concept: Forall q0: spoon!0. Exists q1: wine glass!1. Forall q2: fork!2. And(right!0!2)
+Candidate Name: data/new_yolo_ir/setplates_16/test/fork18.json
+
+
+real	0m24.479s
+user	0m24.282s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_17
+Candidate: c2
+Concept: Exists q0: fork!0. Forall q1: spoon!1. Forall q2: wine glass!2. True
+Candidate Name: data/new_yolo_ir/setplates_17/test/fork18.json
+
+
+real	0m19.276s
+user	0m19.155s
+sys	0m0.036s
+
+data/new_yolo_ir/setplates_18
+Candidate: c1
+Concept: Forall q0: spoon!0. Exists q1: fork!1. Exists q2: fork!2. And(right!0!1)
+Candidate Name: data/new_yolo_ir/setplates_18/test/fork2.json
+
+
+real	0m20.735s
+user	0m20.559s
+sys	0m0.060s
+
+data/new_yolo_ir/setplates_19
+Candidate: c3
+Concept: Forall q0: diningtable!0. Exists q1: diningtable!1. Exists q2: knife!2. And(within!2!0)
+Candidate Name: data/new_yolo_ir/setplates_19/test/fork19.json
+
+
+real	0m25.678s
+user	0m25.415s
+sys	0m0.084s
+
+data/new_yolo_ir/setplates_2
+Candidate: c2
+Concept: Forall q0: spoon!0. Forall q1: spoon!1. Forall q2: fork!2. And(left!2!1)
+Candidate Name: data/new_yolo_ir/setplates_2/test/fork3.json
+
+
+real	0m25.304s
+user	0m24.867s
+sys	0m0.100s
+
+data/new_yolo_ir/setplates_20
+Candidate: c1
+Concept: Forall q0: spoon!0. Forall q1: knife!1. Forall q2: knife!2. And(left!2!0)
+Candidate Name: data/new_yolo_ir/setplates_20/test/fork3.json
+
+
+real	0m28.610s
+user	0m28.293s
+sys	0m0.088s
+
+data/new_yolo_ir/setplates_3
+Candidate: c3
+Concept: Forall q0: diningtable!0. Exists q1: fork!1. Forall q2: knife!2. And(left!1!2)
+Candidate Name: data/new_yolo_ir/setplates_3/test/fork12.json
+
+
+real	0m20.094s
+user	0m19.904s
+sys	0m0.064s
+
+data/new_yolo_ir/setplates_4
+Candidate: c1
+Concept: Exists q0: fork!0. Forall q1: fork!1. Forall q2: spoon!2. And(left!1!2)
+Candidate Name: data/new_yolo_ir/setplates_4/test/fork3.json
+
+
+real	0m28.776s
+user	0m28.422s
+sys	0m0.104s
+
+data/new_yolo_ir/setplates_5
+No discriminator found for puzzle data/new_yolo_ir/setplates_5.
+
+real	0m25.886s
+user	0m25.574s
+sys	0m0.080s
+
+data/new_yolo_ir/setplates_6
+No discriminator found for puzzle data/new_yolo_ir/setplates_6.
+
+real	0m26.515s
+user	0m26.095s
+sys	0m0.132s
+
+data/new_yolo_ir/setplates_7
+Candidate: c2
+Concept: Exists q0: fork!0. Forall q1: knife!1. Forall q2: wine glass!2. True
+Candidate Name: data/new_yolo_ir/setplates_7/test/fork18.json
+
+
+real	0m40.241s
+user	0m39.846s
+sys	0m0.112s
+
+data/new_yolo_ir/setplates_8
+No discriminator found for puzzle data/new_yolo_ir/setplates_8.
+
+real	0m37.094s
+user	0m36.711s
+sys	0m0.080s
+
+data/new_yolo_ir/setplates_9
+Candidate: c3
+Concept: Forall q0: diningtable!0. Forall q1: spoon!1. Forall q2: knife!2. And(left!2!1)
+Candidate Name: data/new_yolo_ir/setplates_9/test/fork1.json
+
+
+real	0m25.449s
+user	0m25.007s
+sys	0m0.136s
+

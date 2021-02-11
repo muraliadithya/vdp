@@ -1,0 +1,155 @@
+data/yolo_ir/catontv_1
+No discriminator found for puzzle data/yolo_ir/catontv_1.
+
+real	0m2.587s
+user	0m2.535s
+sys	0m0.028s
+
+data/yolo_ir/catontv_10
+No discriminator found for puzzle data/yolo_ir/catontv_10.
+
+real	0m2.494s
+user	0m2.452s
+sys	0m0.024s
+
+data/yolo_ir/catontv_11
+Candidate: c2
+Concept: Exists q0: cat!0. Exists q1: cat!1. Exists q2: cat!2. And(left!2!0)
+Candidate Name: data/yolo_ir/catontv_11/test/44.json
+
+
+real	0m2.531s
+user	0m2.517s
+sys	0m0.012s
+
+data/yolo_ir/catontv_12
+No discriminator found for puzzle data/yolo_ir/catontv_12.
+
+real	0m2.892s
+user	0m2.863s
+sys	0m0.028s
+
+data/yolo_ir/catontv_13
+No discriminator found for puzzle data/yolo_ir/catontv_13.
+
+real	0m2.645s
+user	0m2.585s
+sys	0m0.044s
+
+data/yolo_ir/catontv_14
+No discriminator found for puzzle data/yolo_ir/catontv_14.
+
+real	0m5.953s
+user	0m5.862s
+sys	0m0.036s
+
+data/yolo_ir/catontv_15
+No discriminator found for puzzle data/yolo_ir/catontv_15.
+
+real	0m6.178s
+user	0m6.120s
+sys	0m0.032s
+
+data/yolo_ir/catontv_16
+No discriminator found for puzzle data/yolo_ir/catontv_16.
+
+real	0m2.496s
+user	0m2.446s
+sys	0m0.032s
+
+data/yolo_ir/catontv_17
+No discriminator found for puzzle data/yolo_ir/catontv_17.
+
+real	0m2.607s
+user	0m2.584s
+sys	0m0.016s
+
+data/yolo_ir/catontv_18
+Candidate: c2
+Concept: Exists q0: tvmonitor!0. Forall q1: cat!1. Exists q2: cat!2. And(within!2!0)
+Candidate Name: data/yolo_ir/catontv_18/test/44.json
+
+
+real	0m2.438s
+user	0m2.396s
+sys	0m0.036s
+
+data/yolo_ir/catontv_19
+No discriminator found for puzzle data/yolo_ir/catontv_19.
+
+real	0m2.647s
+user	0m2.605s
+sys	0m0.028s
+
+data/yolo_ir/catontv_2
+No discriminator found for puzzle data/yolo_ir/catontv_2.
+
+real	0m2.632s
+user	0m2.592s
+sys	0m0.016s
+
+data/yolo_ir/catontv_20
+No discriminator found for puzzle data/yolo_ir/catontv_20.
+
+real	0m2.769s
+user	0m2.728s
+sys	0m0.024s
+
+data/yolo_ir/catontv_3
+No discriminator found for puzzle data/yolo_ir/catontv_3.
+
+real	0m5.877s
+user	0m5.857s
+sys	0m0.016s
+
+data/yolo_ir/catontv_4
+Candidate: c1
+Concept: Exists q0: tvmonitor!0. Forall q1: cat!1. Exists q2: cat!2. And(within!2!0)
+Candidate Name: data/yolo_ir/catontv_4/test/44.json
+
+
+real	0m5.609s
+user	0m5.515s
+sys	0m0.056s
+
+data/yolo_ir/catontv_5
+Candidate: c0
+Concept: Forall q0: cat!0. Forall q1: cat!1. Forall q2: cat!2. True
+Candidate Name: data/yolo_ir/catontv_5/test/41.json
+
+
+real	0m2.822s
+user	0m2.775s
+sys	0m0.032s
+
+data/yolo_ir/catontv_6
+Candidate: c1
+Concept: Exists q0: tvmonitor!0. Forall q1: tvmonitor!1. Exists q2: cat!2. And(left!1!2 right!2!1)
+Candidate Name: data/yolo_ir/catontv_6/test/44.json
+
+
+real	0m2.462s
+user	0m2.437s
+sys	0m0.016s
+
+data/yolo_ir/catontv_7
+No discriminator found for puzzle data/yolo_ir/catontv_7.
+
+real	0m2.760s
+user	0m2.739s
+sys	0m0.020s
+
+data/yolo_ir/catontv_8
+No discriminator found for puzzle data/yolo_ir/catontv_8.
+
+real	0m2.854s
+user	0m2.820s
+sys	0m0.020s
+
+data/yolo_ir/catontv_9
+No discriminator found for puzzle data/yolo_ir/catontv_9.
+
+real	0m2.689s
+user	0m2.641s
+sys	0m0.032s
+

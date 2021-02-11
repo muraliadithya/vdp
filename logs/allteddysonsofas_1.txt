@@ -1,0 +1,140 @@
+data/new_yolo_ir/allteddysonsofas_1
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_1.
+
+real	0m0.391s
+user	0m0.330s
+sys	0m0.060s
+
+data/new_yolo_ir/allteddysonsofas_10
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_10.
+
+real	0m0.342s
+user	0m0.315s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_11
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_11.
+
+real	0m0.341s
+user	0m0.310s
+sys	0m0.024s
+
+data/new_yolo_ir/allteddysonsofas_12
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_12.
+
+real	0m0.371s
+user	0m0.352s
+sys	0m0.016s
+
+data/new_yolo_ir/allteddysonsofas_13
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_13.
+
+real	0m0.461s
+user	0m0.439s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_14
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_14.
+
+real	0m0.399s
+user	0m0.369s
+sys	0m0.028s
+
+data/new_yolo_ir/allteddysonsofas_15
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_15.
+
+real	0m0.510s
+user	0m0.480s
+sys	0m0.024s
+
+data/new_yolo_ir/allteddysonsofas_16
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_16.
+
+real	0m0.483s
+user	0m0.435s
+sys	0m0.040s
+
+data/new_yolo_ir/allteddysonsofas_17
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_17.
+
+real	0m0.479s
+user	0m0.450s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_18
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_18.
+
+real	0m0.442s
+user	0m0.432s
+sys	0m0.008s
+
+data/new_yolo_ir/allteddysonsofas_19
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_19.
+
+real	0m0.370s
+user	0m0.357s
+sys	0m0.012s
+
+data/new_yolo_ir/allteddysonsofas_2
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_2.
+
+real	0m0.331s
+user	0m0.305s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_20
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_20.
+
+real	0m0.328s
+user	0m0.309s
+sys	0m0.012s
+
+data/new_yolo_ir/allteddysonsofas_3
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_3.
+
+real	0m0.316s
+user	0m0.298s
+sys	0m0.016s
+
+data/new_yolo_ir/allteddysonsofas_4
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_4.
+
+real	0m0.304s
+user	0m0.285s
+sys	0m0.016s
+
+data/new_yolo_ir/allteddysonsofas_5
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_5.
+
+real	0m0.329s
+user	0m0.321s
+sys	0m0.008s
+
+data/new_yolo_ir/allteddysonsofas_6
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_6.
+
+real	0m0.325s
+user	0m0.300s
+sys	0m0.024s
+
+data/new_yolo_ir/allteddysonsofas_7
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_7.
+
+real	0m0.317s
+user	0m0.275s
+sys	0m0.032s
+
+data/new_yolo_ir/allteddysonsofas_8
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_8.
+
+real	0m0.299s
+user	0m0.278s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_9
+No discriminator found for puzzle data/new_yolo_ir/allteddysonsofas_9.
+
+real	0m0.345s
+user	0m0.313s
+sys	0m0.032s
+

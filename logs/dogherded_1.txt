@@ -1,0 +1,140 @@
+data/yolo_ir/dogherded_1
+No discriminator found for puzzle data/yolo_ir/dogherded_1.
+
+real	0m0.447s
+user	0m0.402s
+sys	0m0.040s
+
+data/yolo_ir/dogherded_10
+No discriminator found for puzzle data/yolo_ir/dogherded_10.
+
+real	0m0.378s
+user	0m0.336s
+sys	0m0.040s
+
+data/yolo_ir/dogherded_11
+No discriminator found for puzzle data/yolo_ir/dogherded_11.
+
+real	0m0.387s
+user	0m0.357s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_12
+No discriminator found for puzzle data/yolo_ir/dogherded_12.
+
+real	0m0.376s
+user	0m0.359s
+sys	0m0.016s
+
+data/yolo_ir/dogherded_13
+No discriminator found for puzzle data/yolo_ir/dogherded_13.
+
+real	0m0.387s
+user	0m0.376s
+sys	0m0.008s
+
+data/yolo_ir/dogherded_14
+No discriminator found for puzzle data/yolo_ir/dogherded_14.
+
+real	0m0.379s
+user	0m0.371s
+sys	0m0.008s
+
+data/yolo_ir/dogherded_15
+No discriminator found for puzzle data/yolo_ir/dogherded_15.
+
+real	0m0.366s
+user	0m0.353s
+sys	0m0.012s
+
+data/yolo_ir/dogherded_16
+No discriminator found for puzzle data/yolo_ir/dogherded_16.
+
+real	0m0.375s
+user	0m0.360s
+sys	0m0.012s
+
+data/yolo_ir/dogherded_17
+No discriminator found for puzzle data/yolo_ir/dogherded_17.
+
+real	0m0.372s
+user	0m0.362s
+sys	0m0.008s
+
+data/yolo_ir/dogherded_18
+No discriminator found for puzzle data/yolo_ir/dogherded_18.
+
+real	0m0.362s
+user	0m0.326s
+sys	0m0.036s
+
+data/yolo_ir/dogherded_19
+No discriminator found for puzzle data/yolo_ir/dogherded_19.
+
+real	0m0.364s
+user	0m0.337s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_2
+No discriminator found for puzzle data/yolo_ir/dogherded_2.
+
+real	0m0.373s
+user	0m0.357s
+sys	0m0.016s
+
+data/yolo_ir/dogherded_20
+No discriminator found for puzzle data/yolo_ir/dogherded_20.
+
+real	0m0.377s
+user	0m0.331s
+sys	0m0.040s
+
+data/yolo_ir/dogherded_3
+No discriminator found for puzzle data/yolo_ir/dogherded_3.
+
+real	0m0.368s
+user	0m0.340s
+sys	0m0.028s
+
+data/yolo_ir/dogherded_4
+No discriminator found for puzzle data/yolo_ir/dogherded_4.
+
+real	0m0.372s
+user	0m0.370s
+sys	0m0.000s
+
+data/yolo_ir/dogherded_5
+No discriminator found for puzzle data/yolo_ir/dogherded_5.
+
+real	0m0.370s
+user	0m0.348s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_6
+No discriminator found for puzzle data/yolo_ir/dogherded_6.
+
+real	0m0.359s
+user	0m0.335s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_7
+No discriminator found for puzzle data/yolo_ir/dogherded_7.
+
+real	0m0.360s
+user	0m0.340s
+sys	0m0.020s
+
+data/yolo_ir/dogherded_8
+No discriminator found for puzzle data/yolo_ir/dogherded_8.
+
+real	0m0.376s
+user	0m0.347s
+sys	0m0.024s
+
+data/yolo_ir/dogherded_9
+No discriminator found for puzzle data/yolo_ir/dogherded_9.
+
+real	0m0.364s
+user	0m0.345s
+sys	0m0.016s
+

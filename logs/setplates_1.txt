@@ -1,0 +1,152 @@
+data/new_yolo_ir/setplates_1
+No discriminator found for puzzle data/new_yolo_ir/setplates_1.
+
+real	0m0.368s
+user	0m0.341s
+sys	0m0.025s
+
+data/new_yolo_ir/setplates_10
+No discriminator found for puzzle data/new_yolo_ir/setplates_10.
+
+real	0m0.339s
+user	0m0.317s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_11
+No discriminator found for puzzle data/new_yolo_ir/setplates_11.
+
+real	0m0.389s
+user	0m0.368s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_12
+No discriminator found for puzzle data/new_yolo_ir/setplates_12.
+
+real	0m0.378s
+user	0m0.357s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_13
+No discriminator found for puzzle data/new_yolo_ir/setplates_13.
+
+real	0m0.338s
+user	0m0.321s
+sys	0m0.016s
+
+data/new_yolo_ir/setplates_14
+No discriminator found for puzzle data/new_yolo_ir/setplates_14.
+
+real	0m0.359s
+user	0m0.351s
+sys	0m0.008s
+
+data/new_yolo_ir/setplates_15
+No discriminator found for puzzle data/new_yolo_ir/setplates_15.
+
+real	0m0.362s
+user	0m0.343s
+sys	0m0.016s
+
+data/new_yolo_ir/setplates_16
+Candidate: c2
+Concept: Forall q0: wine glass!0. True
+Candidate Name: data/new_yolo_ir/setplates_16/test/fork18.json
+
+
+real	0m0.339s
+user	0m0.327s
+sys	0m0.012s
+
+data/new_yolo_ir/setplates_17
+Candidate: c2
+Concept: Exists q0: wine glass!0. True
+Candidate Name: data/new_yolo_ir/setplates_17/test/fork18.json
+
+
+real	0m0.344s
+user	0m0.313s
+sys	0m0.028s
+
+data/new_yolo_ir/setplates_18
+No discriminator found for puzzle data/new_yolo_ir/setplates_18.
+
+real	0m0.330s
+user	0m0.318s
+sys	0m0.012s
+
+data/new_yolo_ir/setplates_19
+Candidate: c1
+Concept: Exists q0: wine glass!0. True
+Candidate Name: data/new_yolo_ir/setplates_19/test/fork13.json
+
+
+real	0m0.337s
+user	0m0.326s
+sys	0m0.008s
+
+data/new_yolo_ir/setplates_2
+No discriminator found for puzzle data/new_yolo_ir/setplates_2.
+
+real	0m0.340s
+user	0m0.327s
+sys	0m0.012s
+
+data/new_yolo_ir/setplates_20
+No discriminator found for puzzle data/new_yolo_ir/setplates_20.
+
+real	0m0.341s
+user	0m0.329s
+sys	0m0.012s
+
+data/new_yolo_ir/setplates_3
+No discriminator found for puzzle data/new_yolo_ir/setplates_3.
+
+real	0m0.349s
+user	0m0.325s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_4
+No discriminator found for puzzle data/new_yolo_ir/setplates_4.
+
+real	0m0.349s
+user	0m0.323s
+sys	0m0.024s
+
+data/new_yolo_ir/setplates_5
+No discriminator found for puzzle data/new_yolo_ir/setplates_5.
+
+real	0m0.361s
+user	0m0.338s
+sys	0m0.020s
+
+data/new_yolo_ir/setplates_6
+No discriminator found for puzzle data/new_yolo_ir/setplates_6.
+
+real	0m0.345s
+user	0m0.320s
+sys	0m0.024s
+
+data/new_yolo_ir/setplates_7
+Candidate: c2
+Concept: Forall q0: wine glass!0. True
+Candidate Name: data/new_yolo_ir/setplates_7/test/fork18.json
+
+
+real	0m0.370s
+user	0m0.356s
+sys	0m0.012s
+
+data/new_yolo_ir/setplates_8
+No discriminator found for puzzle data/new_yolo_ir/setplates_8.
+
+real	0m0.402s
+user	0m0.374s
+sys	0m0.028s
+
+data/new_yolo_ir/setplates_9
+No discriminator found for puzzle data/new_yolo_ir/setplates_9.
+
+real	0m0.349s
+user	0m0.309s
+sys	0m0.040s
+

@@ -1,0 +1,200 @@
+data/yolo_ir/personball_1
+Candidate: c1
+Concept: Forall q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_1/test/116.json
+
+
+real	0m2.516s
+user	0m2.485s
+sys	0m0.028s
+
+data/yolo_ir/personball_10
+Candidate: c1
+Concept: Exists q0: person!0. Forall q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_10/test/121.json
+
+
+real	0m3.583s
+user	0m3.521s
+sys	0m0.024s
+
+data/yolo_ir/personball_11
+Candidate: c1
+Concept: Forall q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_11/test/116.json
+
+
+real	0m2.267s
+user	0m2.218s
+sys	0m0.032s
+
+data/yolo_ir/personball_12
+Candidate: c1
+Concept: Forall q0: sports ball!0. Forall q1: person!1. True
+Candidate Name: data/yolo_ir/personball_12/test/121.json
+
+
+real	0m3.460s
+user	0m3.424s
+sys	0m0.024s
+
+data/yolo_ir/personball_13
+Candidate: c0
+Concept: Exists q0: sports ball!0. Forall q1: person!1. True
+Candidate Name: data/yolo_ir/personball_13/test/121.json
+
+
+real	0m3.604s
+user	0m3.539s
+sys	0m0.024s
+
+data/yolo_ir/personball_14
+Candidate: c1
+Concept: Exists q0: person!0. Forall q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_14/test/116.json
+
+
+real	0m2.304s
+user	0m2.277s
+sys	0m0.024s
+
+data/yolo_ir/personball_15
+Candidate: c0
+Concept: Forall q0: person!0. Forall q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_15/test/116.json
+
+
+real	0m2.469s
+user	0m2.419s
+sys	0m0.036s
+
+data/yolo_ir/personball_16
+Candidate: c2
+Concept: Exists q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_16/test/115.json
+
+
+real	0m3.469s
+user	0m3.422s
+sys	0m0.036s
+
+data/yolo_ir/personball_17
+Candidate: c0
+Concept: Forall q0: person!0. Exists q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_17/test/116.json
+
+
+real	0m2.447s
+user	0m2.416s
+sys	0m0.012s
+
+data/yolo_ir/personball_18
+Candidate: c1
+Concept: Exists q0: person!0. Forall q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_18/test/115.json
+
+
+real	0m3.915s
+user	0m3.859s
+sys	0m0.024s
+
+data/yolo_ir/personball_19
+Candidate: c0
+Concept: Exists q0: sports ball!0. Forall q1: person!1. True
+Candidate Name: data/yolo_ir/personball_19/test/121.json
+
+
+real	0m3.487s
+user	0m3.439s
+sys	0m0.024s
+
+data/yolo_ir/personball_2
+Candidate: c2
+Concept: Forall q0: person!0. Exists q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_2/test/115.json
+
+
+real	0m3.502s
+user	0m3.464s
+sys	0m0.020s
+
+data/yolo_ir/personball_20
+Candidate: c1
+Concept: Forall q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_20/test/115.json
+
+
+real	0m3.689s
+user	0m3.580s
+sys	0m0.061s
+
+data/yolo_ir/personball_3
+Candidate: c0
+Concept: Forall q0: person!0. Exists q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_3/test/116.json
+
+
+real	0m2.466s
+user	0m2.397s
+sys	0m0.024s
+
+data/yolo_ir/personball_4
+Candidate: c1
+Concept: Forall q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_4/test/116.json
+
+
+real	0m3.086s
+user	0m3.006s
+sys	0m0.024s
+
+data/yolo_ir/personball_5
+Candidate: c1
+Concept: Forall q0: sports ball!0. Forall q1: person!1. True
+Candidate Name: data/yolo_ir/personball_5/test/115.json
+
+
+real	0m4.417s
+user	0m4.365s
+sys	0m0.032s
+
+data/yolo_ir/personball_6
+Candidate: c1
+Concept: Forall q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_6/test/115.json
+
+
+real	0m4.088s
+user	0m3.986s
+sys	0m0.028s
+
+data/yolo_ir/personball_7
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_7/test/121.json
+
+
+real	0m3.630s
+user	0m3.539s
+sys	0m0.064s
+
+data/yolo_ir/personball_8
+Candidate: c0
+Concept: Forall q0: person!0. Exists q1: sports ball!1. True
+Candidate Name: data/yolo_ir/personball_8/test/116.json
+
+
+real	0m2.409s
+user	0m2.376s
+sys	0m0.016s
+
+data/yolo_ir/personball_9
+Candidate: c2
+Concept: Exists q0: sports ball!0. Exists q1: person!1. True
+Candidate Name: data/yolo_ir/personball_9/test/121.json
+
+
+real	0m3.807s
+user	0m3.743s
+sys	0m0.036s
+

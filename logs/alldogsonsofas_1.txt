@@ -1,0 +1,140 @@
+data/yolo_ir/alldogsonsofas_1
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_1.
+
+real	0m0.346s
+user	0m0.305s
+sys	0m0.036s
+
+data/yolo_ir/alldogsonsofas_10
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_10.
+
+real	0m0.262s
+user	0m0.251s
+sys	0m0.008s
+
+data/yolo_ir/alldogsonsofas_11
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_11.
+
+real	0m0.305s
+user	0m0.280s
+sys	0m0.025s
+
+data/yolo_ir/alldogsonsofas_12
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_12.
+
+real	0m0.300s
+user	0m0.285s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_13
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_13.
+
+real	0m0.261s
+user	0m0.257s
+sys	0m0.004s
+
+data/yolo_ir/alldogsonsofas_14
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_14.
+
+real	0m0.255s
+user	0m0.242s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_15
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_15.
+
+real	0m0.283s
+user	0m0.246s
+sys	0m0.037s
+
+data/yolo_ir/alldogsonsofas_16
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_16.
+
+real	0m0.286s
+user	0m0.259s
+sys	0m0.025s
+
+data/yolo_ir/alldogsonsofas_17
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_17.
+
+real	0m0.284s
+user	0m0.274s
+sys	0m0.008s
+
+data/yolo_ir/alldogsonsofas_18
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_18.
+
+real	0m0.308s
+user	0m0.291s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_19
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_19.
+
+real	0m0.461s
+user	0m0.433s
+sys	0m0.024s
+
+data/yolo_ir/alldogsonsofas_2
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_2.
+
+real	0m0.335s
+user	0m0.318s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_20
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_20.
+
+real	0m0.501s
+user	0m0.480s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_3
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_3.
+
+real	0m0.332s
+user	0m0.310s
+sys	0m0.020s
+
+data/yolo_ir/alldogsonsofas_4
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_4.
+
+real	0m0.326s
+user	0m0.313s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_5
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_5.
+
+real	0m0.304s
+user	0m0.289s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_6
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_6.
+
+real	0m0.300s
+user	0m0.288s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_7
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_7.
+
+real	0m0.327s
+user	0m0.307s
+sys	0m0.016s
+
+data/yolo_ir/alldogsonsofas_8
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_8.
+
+real	0m0.280s
+user	0m0.267s
+sys	0m0.012s
+
+data/yolo_ir/alldogsonsofas_9
+No discriminator found for puzzle data/yolo_ir/alldogsonsofas_9.
+
+real	0m0.316s
+user	0m0.306s
+sys	0m0.008s
+

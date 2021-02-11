@@ -1,0 +1,158 @@
+data/yolo_ir/kitchen_1
+Candidate: c2
+Concept: Exists q0: sink!0. Forall q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_1/test/92.json
+
+
+real	0m1.852s
+user	0m1.791s
+sys	0m0.048s
+
+data/yolo_ir/kitchen_10
+No discriminator found for puzzle data/yolo_ir/kitchen_10.
+
+real	0m1.418s
+user	0m1.403s
+sys	0m0.008s
+
+data/yolo_ir/kitchen_11
+No discriminator found for puzzle data/yolo_ir/kitchen_11.
+
+real	0m1.977s
+user	0m1.930s
+sys	0m0.024s
+
+data/yolo_ir/kitchen_12
+Candidate: c1
+Concept: Forall q0: oven!0. Forall q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_12/test/92.json
+
+
+real	0m3.221s
+user	0m3.170s
+sys	0m0.020s
+
+data/yolo_ir/kitchen_13
+Candidate: c2
+Concept: Exists q0: sink!0. Forall q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_13/test/92.json
+
+
+real	0m3.659s
+user	0m3.610s
+sys	0m0.016s
+
+data/yolo_ir/kitchen_14
+No discriminator found for puzzle data/yolo_ir/kitchen_14.
+
+real	0m3.658s
+user	0m3.635s
+sys	0m0.008s
+
+data/yolo_ir/kitchen_15
+No discriminator found for puzzle data/yolo_ir/kitchen_15.
+
+real	0m3.258s
+user	0m3.222s
+sys	0m0.004s
+
+data/yolo_ir/kitchen_16
+No discriminator found for puzzle data/yolo_ir/kitchen_16.
+
+real	0m3.169s
+user	0m3.125s
+sys	0m0.028s
+
+data/yolo_ir/kitchen_17
+Candidate: c1
+Concept: Forall q0: oven!0. Forall q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_17/test/92.json
+
+
+real	0m2.179s
+user	0m2.160s
+sys	0m0.008s
+
+data/yolo_ir/kitchen_18
+No discriminator found for puzzle data/yolo_ir/kitchen_18.
+
+real	0m3.759s
+user	0m3.718s
+sys	0m0.020s
+
+data/yolo_ir/kitchen_19
+No discriminator found for puzzle data/yolo_ir/kitchen_19.
+
+real	0m2.253s
+user	0m2.232s
+sys	0m0.008s
+
+data/yolo_ir/kitchen_2
+No discriminator found for puzzle data/yolo_ir/kitchen_2.
+
+real	0m2.451s
+user	0m2.420s
+sys	0m0.016s
+
+data/yolo_ir/kitchen_20
+Candidate: c1
+Concept: Forall q0: oven!0. Forall q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_20/test/92.json
+
+
+real	0m1.822s
+user	0m1.804s
+sys	0m0.012s
+
+data/yolo_ir/kitchen_3
+No discriminator found for puzzle data/yolo_ir/kitchen_3.
+
+real	0m3.480s
+user	0m3.427s
+sys	0m0.024s
+
+data/yolo_ir/kitchen_4
+No discriminator found for puzzle data/yolo_ir/kitchen_4.
+
+real	0m2.388s
+user	0m2.367s
+sys	0m0.008s
+
+data/yolo_ir/kitchen_5
+No discriminator found for puzzle data/yolo_ir/kitchen_5.
+
+real	0m1.798s
+user	0m1.775s
+sys	0m0.016s
+
+data/yolo_ir/kitchen_6
+Candidate: c0
+Concept: Exists q0: sink!0. Exists q1: oven!1. True
+Candidate Name: data/yolo_ir/kitchen_6/test/92.json
+
+
+real	0m2.296s
+user	0m2.271s
+sys	0m0.012s
+
+data/yolo_ir/kitchen_7
+No discriminator found for puzzle data/yolo_ir/kitchen_7.
+
+real	0m2.055s
+user	0m2.023s
+sys	0m0.020s
+
+data/yolo_ir/kitchen_8
+No discriminator found for puzzle data/yolo_ir/kitchen_8.
+
+real	0m2.082s
+user	0m2.043s
+sys	0m0.024s
+
+data/yolo_ir/kitchen_9
+No discriminator found for puzzle data/yolo_ir/kitchen_9.
+
+real	0m2.196s
+user	0m2.157s
+sys	0m0.028s
+

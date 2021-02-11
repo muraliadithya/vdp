@@ -1,0 +1,146 @@
+data/yolo_ir/allcatsonsofas_1
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_1.
+
+real	0m0.363s
+user	0m0.328s
+sys	0m0.028s
+
+data/yolo_ir/allcatsonsofas_10
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_10.
+
+real	0m0.282s
+user	0m0.270s
+sys	0m0.012s
+
+data/yolo_ir/allcatsonsofas_11
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_11.
+
+real	0m0.288s
+user	0m0.268s
+sys	0m0.020s
+
+data/yolo_ir/allcatsonsofas_12
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_12.
+
+real	0m0.262s
+user	0m0.240s
+sys	0m0.016s
+
+data/yolo_ir/allcatsonsofas_13
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_13.
+
+real	0m0.262s
+user	0m0.233s
+sys	0m0.024s
+
+data/yolo_ir/allcatsonsofas_14
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_14.
+
+real	0m0.281s
+user	0m0.265s
+sys	0m0.016s
+
+data/yolo_ir/allcatsonsofas_15
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_15.
+
+real	0m0.293s
+user	0m0.289s
+sys	0m0.004s
+
+data/yolo_ir/allcatsonsofas_16
+Candidate: c0
+Concept: Forall q0: sofa!0. True
+Candidate Name: data/yolo_ir/allcatsonsofas_16/test/18.json
+
+
+real	0m0.262s
+user	0m0.242s
+sys	0m0.020s
+
+data/yolo_ir/allcatsonsofas_17
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_17.
+
+real	0m0.305s
+user	0m0.297s
+sys	0m0.008s
+
+data/yolo_ir/allcatsonsofas_18
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_18.
+
+real	0m0.258s
+user	0m0.234s
+sys	0m0.024s
+
+data/yolo_ir/allcatsonsofas_19
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_19.
+
+real	0m0.259s
+user	0m0.237s
+sys	0m0.020s
+
+data/yolo_ir/allcatsonsofas_2
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_2.
+
+real	0m0.290s
+user	0m0.283s
+sys	0m0.004s
+
+data/yolo_ir/allcatsonsofas_20
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_20.
+
+real	0m0.264s
+user	0m0.238s
+sys	0m0.020s
+
+data/yolo_ir/allcatsonsofas_3
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_3.
+
+real	0m0.259s
+user	0m0.233s
+sys	0m0.024s
+
+data/yolo_ir/allcatsonsofas_4
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_4.
+
+real	0m0.286s
+user	0m0.270s
+sys	0m0.016s
+
+data/yolo_ir/allcatsonsofas_5
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_5.
+
+real	0m0.261s
+user	0m0.233s
+sys	0m0.028s
+
+data/yolo_ir/allcatsonsofas_6
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_6.
+
+real	0m0.266s
+user	0m0.254s
+sys	0m0.012s
+
+data/yolo_ir/allcatsonsofas_7
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_7.
+
+real	0m0.255s
+user	0m0.243s
+sys	0m0.012s
+
+data/yolo_ir/allcatsonsofas_8
+No discriminator found for puzzle data/yolo_ir/allcatsonsofas_8.
+
+real	0m0.263s
+user	0m0.225s
+sys	0m0.033s
+
+data/yolo_ir/allcatsonsofas_9
+Candidate: c0
+Concept: Forall q0: sofa!0. True
+Candidate Name: data/yolo_ir/allcatsonsofas_9/test/18.json
+
+
+real	0m0.264s
+user	0m0.250s
+sys	0m0.012s
+

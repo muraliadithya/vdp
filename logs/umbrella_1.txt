@@ -1,0 +1,200 @@
+data/yolo_ir/umbrella_1
+Candidate: c1
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_1/test/208.json
+
+
+real	0m0.703s
+user	0m0.568s
+sys	0m0.048s
+
+data/yolo_ir/umbrella_10
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_10/test/209.json
+
+
+real	0m0.550s
+user	0m0.529s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_11
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_11/test/209.json
+
+
+real	0m0.581s
+user	0m0.539s
+sys	0m0.036s
+
+data/yolo_ir/umbrella_12
+Candidate: c2
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_12/test/208.json
+
+
+real	0m0.576s
+user	0m0.553s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_13
+Candidate: c1
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_13/test/208.json
+
+
+real	0m0.534s
+user	0m0.501s
+sys	0m0.028s
+
+data/yolo_ir/umbrella_14
+Candidate: c2
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_14/test/208.json
+
+
+real	0m0.528s
+user	0m0.489s
+sys	0m0.032s
+
+data/yolo_ir/umbrella_15
+Candidate: c0
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_15/test/208.json
+
+
+real	0m0.494s
+user	0m0.445s
+sys	0m0.044s
+
+data/yolo_ir/umbrella_16
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_16/test/209.json
+
+
+real	0m0.537s
+user	0m0.519s
+sys	0m0.012s
+
+data/yolo_ir/umbrella_17
+Candidate: c1
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_17/test/208.json
+
+
+real	0m0.521s
+user	0m0.498s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_18
+Candidate: c3
+Concept: Exists q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_18/test/209.json
+
+
+real	0m0.557s
+user	0m0.531s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_19
+Candidate: c1
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_19/test/208.json
+
+
+real	0m0.453s
+user	0m0.431s
+sys	0m0.020s
+
+data/yolo_ir/umbrella_2
+Candidate: c1
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_2/test/208.json
+
+
+real	0m0.529s
+user	0m0.507s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_20
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_20/test/209.json
+
+
+real	0m0.504s
+user	0m0.471s
+sys	0m0.024s
+
+data/yolo_ir/umbrella_3
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_3/test/209.json
+
+
+real	0m0.492s
+user	0m0.468s
+sys	0m0.020s
+
+data/yolo_ir/umbrella_4
+Candidate: c3
+Concept: Exists q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_4/test/209.json
+
+
+real	0m0.564s
+user	0m0.523s
+sys	0m0.036s
+
+data/yolo_ir/umbrella_5
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_5/test/209.json
+
+
+real	0m0.551s
+user	0m0.528s
+sys	0m0.020s
+
+data/yolo_ir/umbrella_6
+Candidate: c2
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_6/test/208.json
+
+
+real	0m0.504s
+user	0m0.477s
+sys	0m0.016s
+
+data/yolo_ir/umbrella_7
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_7/test/209.json
+
+
+real	0m0.473s
+user	0m0.459s
+sys	0m0.008s
+
+data/yolo_ir/umbrella_8
+Candidate: c1
+Concept: Exists q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_8/test/208.json
+
+
+real	0m0.503s
+user	0m0.475s
+sys	0m0.024s
+
+data/yolo_ir/umbrella_9
+Candidate: c3
+Concept: Forall q0: umbrella!0. True
+Candidate Name: data/yolo_ir/umbrella_9/test/209.json
+
+
+real	0m0.533s
+user	0m0.504s
+sys	0m0.024s
+

@@ -1,0 +1,170 @@
+data/yolo_ir/pplwearingties_1
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_1/test/152.json
+
+
+real	0m0.350s
+user	0m0.323s
+sys	0m0.024s
+
+data/yolo_ir/pplwearingties_10
+Candidate: c2
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_10/test/152.json
+
+
+real	0m0.308s
+user	0m0.283s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_11
+No discriminator found for puzzle data/yolo_ir/pplwearingties_11.
+
+real	0m0.366s
+user	0m0.332s
+sys	0m0.032s
+
+data/yolo_ir/pplwearingties_12
+No discriminator found for puzzle data/yolo_ir/pplwearingties_12.
+
+real	0m0.421s
+user	0m0.407s
+sys	0m0.012s
+
+data/yolo_ir/pplwearingties_13
+No discriminator found for puzzle data/yolo_ir/pplwearingties_13.
+
+real	0m0.316s
+user	0m0.292s
+sys	0m0.021s
+
+data/yolo_ir/pplwearingties_14
+Candidate: c3
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_14/test/153.json
+
+
+real	0m0.461s
+user	0m0.431s
+sys	0m0.024s
+
+data/yolo_ir/pplwearingties_15
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_15/test/152.json
+
+
+real	0m0.301s
+user	0m0.283s
+sys	0m0.016s
+
+data/yolo_ir/pplwearingties_16
+Candidate: c3
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_16/test/153.json
+
+
+real	0m0.421s
+user	0m0.395s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_17
+No discriminator found for puzzle data/yolo_ir/pplwearingties_17.
+
+real	0m0.364s
+user	0m0.335s
+sys	0m0.024s
+
+data/yolo_ir/pplwearingties_18
+Candidate: c3
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_18/test/153.json
+
+
+real	0m0.416s
+user	0m0.402s
+sys	0m0.012s
+
+data/yolo_ir/pplwearingties_19
+No discriminator found for puzzle data/yolo_ir/pplwearingties_19.
+
+real	0m0.335s
+user	0m0.316s
+sys	0m0.016s
+
+data/yolo_ir/pplwearingties_2
+Candidate: c2
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_2/test/152.json
+
+
+real	0m0.361s
+user	0m0.338s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_20
+Candidate: c2
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_20/test/152.json
+
+
+real	0m0.441s
+user	0m0.389s
+sys	0m0.044s
+
+data/yolo_ir/pplwearingties_3
+No discriminator found for puzzle data/yolo_ir/pplwearingties_3.
+
+real	0m0.301s
+user	0m0.278s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_4
+No discriminator found for puzzle data/yolo_ir/pplwearingties_4.
+
+real	0m0.311s
+user	0m0.286s
+sys	0m0.024s
+
+data/yolo_ir/pplwearingties_5
+No discriminator found for puzzle data/yolo_ir/pplwearingties_5.
+
+real	0m0.311s
+user	0m0.281s
+sys	0m0.028s
+
+data/yolo_ir/pplwearingties_6
+No discriminator found for puzzle data/yolo_ir/pplwearingties_6.
+
+real	0m0.411s
+user	0m0.388s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_7
+No discriminator found for puzzle data/yolo_ir/pplwearingties_7.
+
+real	0m0.301s
+user	0m0.279s
+sys	0m0.020s
+
+data/yolo_ir/pplwearingties_8
+Candidate: c2
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_8/test/152.json
+
+
+real	0m0.334s
+user	0m0.321s
+sys	0m0.012s
+
+data/yolo_ir/pplwearingties_9
+Candidate: c3
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplwearingties_9/test/153.json
+
+
+real	0m0.418s
+user	0m0.388s
+sys	0m0.028s
+

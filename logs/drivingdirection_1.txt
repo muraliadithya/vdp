@@ -1,0 +1,140 @@
+data/new_yolo_ir/drivingdirection_1
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_1.
+
+real	0m0.349s
+user	0m0.312s
+sys	0m0.032s
+
+data/new_yolo_ir/drivingdirection_10
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_10.
+
+real	0m0.334s
+user	0m0.309s
+sys	0m0.021s
+
+data/new_yolo_ir/drivingdirection_11
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_11.
+
+real	0m0.308s
+user	0m0.272s
+sys	0m0.032s
+
+data/new_yolo_ir/drivingdirection_12
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_12.
+
+real	0m0.335s
+user	0m0.310s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_13
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_13.
+
+real	0m0.385s
+user	0m0.352s
+sys	0m0.028s
+
+data/new_yolo_ir/drivingdirection_14
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_14.
+
+real	0m0.478s
+user	0m0.463s
+sys	0m0.008s
+
+data/new_yolo_ir/drivingdirection_15
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_15.
+
+real	0m0.398s
+user	0m0.354s
+sys	0m0.036s
+
+data/new_yolo_ir/drivingdirection_16
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_16.
+
+real	0m0.480s
+user	0m0.445s
+sys	0m0.032s
+
+data/new_yolo_ir/drivingdirection_17
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_17.
+
+real	0m0.490s
+user	0m0.468s
+sys	0m0.017s
+
+data/new_yolo_ir/drivingdirection_18
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_18.
+
+real	0m0.389s
+user	0m0.357s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_19
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_19.
+
+real	0m0.352s
+user	0m0.344s
+sys	0m0.008s
+
+data/new_yolo_ir/drivingdirection_2
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_2.
+
+real	0m0.382s
+user	0m0.354s
+sys	0m0.020s
+
+data/new_yolo_ir/drivingdirection_20
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_20.
+
+real	0m0.369s
+user	0m0.333s
+sys	0m0.028s
+
+data/new_yolo_ir/drivingdirection_3
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_3.
+
+real	0m0.331s
+user	0m0.311s
+sys	0m0.020s
+
+data/new_yolo_ir/drivingdirection_4
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_4.
+
+real	0m0.364s
+user	0m0.335s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_5
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_5.
+
+real	0m0.361s
+user	0m0.332s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_6
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_6.
+
+real	0m0.368s
+user	0m0.351s
+sys	0m0.016s
+
+data/new_yolo_ir/drivingdirection_7
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_7.
+
+real	0m0.342s
+user	0m0.315s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_8
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_8.
+
+real	0m0.312s
+user	0m0.283s
+sys	0m0.024s
+
+data/new_yolo_ir/drivingdirection_9
+No discriminator found for puzzle data/new_yolo_ir/drivingdirection_9.
+
+real	0m0.341s
+user	0m0.305s
+sys	0m0.032s
+

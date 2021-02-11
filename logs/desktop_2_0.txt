@@ -1,0 +1,200 @@
+data/yolo_ir/desktop_1
+Candidate: c0
+Concept: Forall q0: keyboard!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_1/test/57.json
+
+
+real	0m2.386s
+user	0m2.347s
+sys	0m0.024s
+
+data/yolo_ir/desktop_10
+Candidate: c0
+Concept: Exists q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_10/test/57.json
+
+
+real	0m4.089s
+user	0m4.028s
+sys	0m0.016s
+
+data/yolo_ir/desktop_11
+Candidate: c0
+Concept: Exists q0: mouse!0. Exists q1: mouse!1. True
+Candidate Name: data/yolo_ir/desktop_11/test/57.json
+
+
+real	0m4.203s
+user	0m4.145s
+sys	0m0.036s
+
+data/yolo_ir/desktop_12
+Candidate: c0
+Concept: Exists q0: mouse!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_12/test/58.json
+
+
+real	0m9.257s
+user	0m9.215s
+sys	0m0.020s
+
+data/yolo_ir/desktop_13
+Candidate: c0
+Concept: Exists q0: mouse!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_13/test/58.json
+
+
+real	0m9.353s
+user	0m9.267s
+sys	0m0.036s
+
+data/yolo_ir/desktop_14
+Candidate: c0
+Concept: Forall q0: keyboard!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_14/test/57.json
+
+
+real	0m2.414s
+user	0m2.393s
+sys	0m0.020s
+
+data/yolo_ir/desktop_15
+Candidate: c0
+Concept: Forall q0: mouse!0. Exists q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_15/test/57.json
+
+
+real	0m4.486s
+user	0m4.426s
+sys	0m0.020s
+
+data/yolo_ir/desktop_16
+Candidate: c0
+Concept: Exists q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_16/test/58.json
+
+
+real	0m9.808s
+user	0m9.725s
+sys	0m0.040s
+
+data/yolo_ir/desktop_17
+Candidate: c0
+Concept: Exists q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_17/test/58.json
+
+
+real	0m12.298s
+user	0m12.243s
+sys	0m0.016s
+
+data/yolo_ir/desktop_18
+Candidate: c0
+Concept: Forall q0: mouse!0. Forall q1: mouse!1. True
+Candidate Name: data/yolo_ir/desktop_18/test/57.json
+
+
+real	0m2.546s
+user	0m2.515s
+sys	0m0.024s
+
+data/yolo_ir/desktop_19
+Candidate: c1
+Concept: Forall q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_19/test/58.json
+
+
+real	0m10.180s
+user	0m10.131s
+sys	0m0.024s
+
+data/yolo_ir/desktop_2
+Candidate: c1
+Concept: Exists q0: mouse!0. Exists q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_2/test/58.json
+
+
+real	0m10.310s
+user	0m10.292s
+sys	0m0.016s
+
+data/yolo_ir/desktop_20
+Candidate: c0
+Concept: Exists q0: mouse!0. Exists q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_20/test/57.json
+
+
+real	0m2.474s
+user	0m2.458s
+sys	0m0.008s
+
+data/yolo_ir/desktop_3
+Candidate: c0
+Concept: Exists q0: mouse!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_3/test/57.json
+
+
+real	0m4.579s
+user	0m4.562s
+sys	0m0.016s
+
+data/yolo_ir/desktop_4
+Candidate: c1
+Concept: Exists q0: keyboard!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_4/test/58.json
+
+
+real	0m12.278s
+user	0m12.207s
+sys	0m0.028s
+
+data/yolo_ir/desktop_5
+Candidate: c0
+Concept: Exists q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_5/test/57.json
+
+
+real	0m2.404s
+user	0m2.361s
+sys	0m0.020s
+
+data/yolo_ir/desktop_6
+Candidate: c0
+Concept: Exists q0: mouse!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_6/test/57.json
+
+
+real	0m4.536s
+user	0m4.502s
+sys	0m0.016s
+
+data/yolo_ir/desktop_7
+Candidate: c0
+Concept: Forall q0: keyboard!0. Forall q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_7/test/57.json
+
+
+real	0m2.366s
+user	0m2.337s
+sys	0m0.012s
+
+data/yolo_ir/desktop_8
+Candidate: c0
+Concept: Exists q0: tvmonitor!0. Forall q1: keyboard!1. True
+Candidate Name: data/yolo_ir/desktop_8/test/57.json
+
+
+real	0m4.348s
+user	0m4.280s
+sys	0m0.028s
+
+data/yolo_ir/desktop_9
+Candidate: c0
+Concept: Exists q0: mouse!0. Exists q1: tvmonitor!1. True
+Candidate Name: data/yolo_ir/desktop_9/test/58.json
+
+
+real	0m9.659s
+user	0m9.569s
+sys	0m0.036s
+

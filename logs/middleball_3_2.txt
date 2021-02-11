@@ -1,0 +1,200 @@
+data/new_yolo_ir/middleball_1
+Candidate: c3
+Concept: Exists q0: sports ball!0. Exists q1: person!1. Exists q2: person!2. And(left!0!2 left!1!0)
+Candidate Name: data/new_yolo_ir/middleball_1/test/middleball2.json
+
+
+real	0m3.441s
+user	0m3.375s
+sys	0m0.037s
+
+data/new_yolo_ir/middleball_10
+Candidate: c3
+Concept: Exists q0: sports ball!0. Exists q1: person!1. Exists q2: person!2. And(right!1!0 left!2!1)
+Candidate Name: data/new_yolo_ir/middleball_10/test/middleball2.json
+
+
+real	0m3.242s
+user	0m3.177s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_11
+Candidate: c0
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(left!1!0 right!1!2)
+Candidate Name: data/new_yolo_ir/middleball_11/test/middleball4.json
+
+
+real	0m2.865s
+user	0m2.837s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_12
+Candidate: c2
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(left!0!2 left!2!1)
+Candidate Name: data/new_yolo_ir/middleball_12/test/middleball3.json
+
+
+real	0m2.917s
+user	0m2.808s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_13
+Candidate: c1
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: sports ball!2. And(right!0!2)
+Candidate Name: data/new_yolo_ir/middleball_13/test/middleball1.json
+
+
+real	0m2.977s
+user	0m2.945s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_14
+Candidate: c3
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(right!2!1 left!2!0)
+Candidate Name: data/new_yolo_ir/middleball_14/test/middleball2.json
+
+
+real	0m1.772s
+user	0m1.736s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_15
+Candidate: c3
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(right!2!1 left!2!0)
+Candidate Name: data/new_yolo_ir/middleball_15/test/middleball2.json
+
+
+real	0m1.715s
+user	0m1.698s
+sys	0m0.016s
+
+data/new_yolo_ir/middleball_16
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(left!0!1 right!1!2)
+Candidate Name: data/new_yolo_ir/middleball_16/test/middleball4.json
+
+
+real	0m1.405s
+user	0m1.385s
+sys	0m0.016s
+
+data/new_yolo_ir/middleball_17
+Candidate: c1
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(left!1!2 right!1!0)
+Candidate Name: data/new_yolo_ir/middleball_17/test/middleball1.json
+
+
+real	0m2.968s
+user	0m2.924s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_18
+Candidate: c3
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(left!1!2 right!1!0)
+Candidate Name: data/new_yolo_ir/middleball_18/test/middleball2.json
+
+
+real	0m1.384s
+user	0m1.351s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_19
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(left!1!2 right!0!2)
+Candidate Name: data/new_yolo_ir/middleball_19/test/middleball4.json
+
+
+real	0m3.400s
+user	0m3.384s
+sys	0m0.012s
+
+data/new_yolo_ir/middleball_2
+Candidate: c3
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(right!1!2 left!0!2)
+Candidate Name: data/new_yolo_ir/middleball_2/test/middleball3.json
+
+
+real	0m1.852s
+user	0m1.806s
+sys	0m0.016s
+
+data/new_yolo_ir/middleball_20
+Candidate: c3
+Concept: Exists q0: sports ball!0. Forall q1: person!1. Exists q2: person!2. And(right!2!0)
+Candidate Name: data/new_yolo_ir/middleball_20/test/middleball2.json
+
+
+real	0m3.372s
+user	0m3.293s
+sys	0m0.048s
+
+data/new_yolo_ir/middleball_3
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(left!1!2 left!2!0)
+Candidate Name: data/new_yolo_ir/middleball_3/test/middleball4.json
+
+
+real	0m2.176s
+user	0m2.106s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_4
+Candidate: c0
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(right!0!1 right!1!2)
+Candidate Name: data/new_yolo_ir/middleball_4/test/middleball4.json
+
+
+real	0m1.402s
+user	0m1.368s
+sys	0m0.032s
+
+data/new_yolo_ir/middleball_5
+Candidate: c3
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(right!1!0 left!1!2)
+Candidate Name: data/new_yolo_ir/middleball_5/test/middleball3.json
+
+
+real	0m2.190s
+user	0m2.179s
+sys	0m0.008s
+
+data/new_yolo_ir/middleball_6
+Candidate: c2
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(left!0!2 right!2!1)
+Candidate Name: data/new_yolo_ir/middleball_6/test/middleball3.json
+
+
+real	0m2.862s
+user	0m2.785s
+sys	0m0.032s
+
+data/new_yolo_ir/middleball_7
+Candidate: c3
+Concept: Exists q0: person!0. Forall q1: sports ball!1. Exists q2: person!2. And(left!0!1 right!2!1)
+Candidate Name: data/new_yolo_ir/middleball_7/test/middleball2.json
+
+
+real	0m2.780s
+user	0m2.679s
+sys	0m0.032s
+
+data/new_yolo_ir/middleball_8
+Candidate: c1
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(left!1!2 left!2!0)
+Candidate Name: data/new_yolo_ir/middleball_8/test/middleball1.json
+
+
+real	0m1.661s
+user	0m1.644s
+sys	0m0.016s
+
+data/new_yolo_ir/middleball_9
+Candidate: c0
+Concept: Exists q0: person!0. Exists q1: person!1. Forall q2: sports ball!2. And(right!1!0 left!2!1)
+Candidate Name: data/new_yolo_ir/middleball_9/test/middleball4.json
+
+
+real	0m2.438s
+user	0m2.411s
+sys	0m0.020s
+

@@ -1,0 +1,140 @@
+data/yolo_ir/populatedbus_1
+No discriminator found for puzzle data/yolo_ir/populatedbus_1.
+
+real	0m0.378s
+user	0m0.338s
+sys	0m0.037s
+
+data/yolo_ir/populatedbus_10
+No discriminator found for puzzle data/yolo_ir/populatedbus_10.
+
+real	0m0.323s
+user	0m0.313s
+sys	0m0.008s
+
+data/yolo_ir/populatedbus_11
+No discriminator found for puzzle data/yolo_ir/populatedbus_11.
+
+real	0m0.295s
+user	0m0.276s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_12
+No discriminator found for puzzle data/yolo_ir/populatedbus_12.
+
+real	0m0.367s
+user	0m0.357s
+sys	0m0.004s
+
+data/yolo_ir/populatedbus_13
+No discriminator found for puzzle data/yolo_ir/populatedbus_13.
+
+real	0m0.348s
+user	0m0.328s
+sys	0m0.020s
+
+data/yolo_ir/populatedbus_14
+No discriminator found for puzzle data/yolo_ir/populatedbus_14.
+
+real	0m0.293s
+user	0m0.282s
+sys	0m0.008s
+
+data/yolo_ir/populatedbus_15
+No discriminator found for puzzle data/yolo_ir/populatedbus_15.
+
+real	0m0.284s
+user	0m0.268s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_16
+No discriminator found for puzzle data/yolo_ir/populatedbus_16.
+
+real	0m0.306s
+user	0m0.278s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_17
+No discriminator found for puzzle data/yolo_ir/populatedbus_17.
+
+real	0m0.306s
+user	0m0.294s
+sys	0m0.012s
+
+data/yolo_ir/populatedbus_18
+No discriminator found for puzzle data/yolo_ir/populatedbus_18.
+
+real	0m0.269s
+user	0m0.230s
+sys	0m0.035s
+
+data/yolo_ir/populatedbus_19
+No discriminator found for puzzle data/yolo_ir/populatedbus_19.
+
+real	0m0.272s
+user	0m0.264s
+sys	0m0.008s
+
+data/yolo_ir/populatedbus_2
+No discriminator found for puzzle data/yolo_ir/populatedbus_2.
+
+real	0m0.357s
+user	0m0.338s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_20
+No discriminator found for puzzle data/yolo_ir/populatedbus_20.
+
+real	0m0.346s
+user	0m0.330s
+sys	0m0.012s
+
+data/yolo_ir/populatedbus_3
+No discriminator found for puzzle data/yolo_ir/populatedbus_3.
+
+real	0m0.334s
+user	0m0.318s
+sys	0m0.012s
+
+data/yolo_ir/populatedbus_4
+No discriminator found for puzzle data/yolo_ir/populatedbus_4.
+
+real	0m0.278s
+user	0m0.257s
+sys	0m0.020s
+
+data/yolo_ir/populatedbus_5
+No discriminator found for puzzle data/yolo_ir/populatedbus_5.
+
+real	0m0.275s
+user	0m0.253s
+sys	0m0.020s
+
+data/yolo_ir/populatedbus_6
+No discriminator found for puzzle data/yolo_ir/populatedbus_6.
+
+real	0m0.284s
+user	0m0.258s
+sys	0m0.024s
+
+data/yolo_ir/populatedbus_7
+No discriminator found for puzzle data/yolo_ir/populatedbus_7.
+
+real	0m0.334s
+user	0m0.326s
+sys	0m0.004s
+
+data/yolo_ir/populatedbus_8
+No discriminator found for puzzle data/yolo_ir/populatedbus_8.
+
+real	0m0.335s
+user	0m0.319s
+sys	0m0.016s
+
+data/yolo_ir/populatedbus_9
+No discriminator found for puzzle data/yolo_ir/populatedbus_9.
+
+real	0m0.310s
+user	0m0.287s
+sys	0m0.020s
+

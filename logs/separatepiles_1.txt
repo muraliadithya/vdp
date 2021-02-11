@@ -1,0 +1,140 @@
+data/new_yolo_ir/separatepiles_1
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_1.
+
+real	0m0.280s
+user	0m0.264s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_10
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_10.
+
+real	0m0.336s
+user	0m0.260s
+sys	0m0.012s
+
+data/new_yolo_ir/separatepiles_11
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_11.
+
+real	0m0.247s
+user	0m0.219s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_12
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_12.
+
+real	0m0.257s
+user	0m0.244s
+sys	0m0.012s
+
+data/new_yolo_ir/separatepiles_13
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_13.
+
+real	0m0.238s
+user	0m0.217s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_14
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_14.
+
+real	0m0.256s
+user	0m0.248s
+sys	0m0.004s
+
+data/new_yolo_ir/separatepiles_15
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_15.
+
+real	0m0.241s
+user	0m0.224s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_16
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_16.
+
+real	0m0.254s
+user	0m0.241s
+sys	0m0.012s
+
+data/new_yolo_ir/separatepiles_17
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_17.
+
+real	0m0.289s
+user	0m0.258s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_18
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_18.
+
+real	0m0.354s
+user	0m0.335s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_19
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_19.
+
+real	0m0.402s
+user	0m0.381s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_2
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_2.
+
+real	0m0.556s
+user	0m0.512s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_20
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_20.
+
+real	0m0.490s
+user	0m0.463s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_3
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_3.
+
+real	0m0.317s
+user	0m0.296s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_4
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_4.
+
+real	0m0.415s
+user	0m0.386s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_5
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_5.
+
+real	0m0.276s
+user	0m0.266s
+sys	0m0.008s
+
+data/new_yolo_ir/separatepiles_6
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_6.
+
+real	0m0.321s
+user	0m0.289s
+sys	0m0.032s
+
+data/new_yolo_ir/separatepiles_7
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_7.
+
+real	0m0.268s
+user	0m0.242s
+sys	0m0.024s
+
+data/new_yolo_ir/separatepiles_8
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_8.
+
+real	0m0.310s
+user	0m0.290s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_9
+No discriminator found for puzzle data/new_yolo_ir/separatepiles_9.
+
+real	0m0.270s
+user	0m0.250s
+sys	0m0.020s
+

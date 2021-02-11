@@ -1,0 +1,200 @@
+data/yolo_ir/parkmeter_1
+Candidate: c2
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_1/test/105.json
+
+
+real	0m0.452s
+user	0m0.427s
+sys	0m0.020s
+
+data/yolo_ir/parkmeter_10
+Candidate: c0
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_10/test/108.json
+
+
+real	0m0.392s
+user	0m0.370s
+sys	0m0.016s
+
+data/yolo_ir/parkmeter_11
+Candidate: c2
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_11/test/104.json
+
+
+real	0m0.421s
+user	0m0.387s
+sys	0m0.028s
+
+data/yolo_ir/parkmeter_12
+Candidate: c1
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_12/test/105.json
+
+
+real	0m0.347s
+user	0m0.337s
+sys	0m0.008s
+
+data/yolo_ir/parkmeter_13
+Candidate: c1
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_13/test/105.json
+
+
+real	0m0.339s
+user	0m0.326s
+sys	0m0.008s
+
+data/yolo_ir/parkmeter_14
+Candidate: c0
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_14/test/108.json
+
+
+real	0m0.478s
+user	0m0.427s
+sys	0m0.044s
+
+data/yolo_ir/parkmeter_15
+Candidate: c1
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/parkmeter_15/test/102.json
+
+
+real	0m0.451s
+user	0m0.409s
+sys	0m0.032s
+
+data/yolo_ir/parkmeter_16
+Candidate: c1
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_16/test/105.json
+
+
+real	0m0.426s
+user	0m0.395s
+sys	0m0.024s
+
+data/yolo_ir/parkmeter_17
+Candidate: c0
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_17/test/108.json
+
+
+real	0m0.405s
+user	0m0.383s
+sys	0m0.016s
+
+data/yolo_ir/parkmeter_18
+Candidate: c0
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_18/test/108.json
+
+
+real	0m0.401s
+user	0m0.357s
+sys	0m0.036s
+
+data/yolo_ir/parkmeter_19
+Candidate: c0
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/parkmeter_19/test/102.json
+
+
+real	0m0.371s
+user	0m0.361s
+sys	0m0.004s
+
+data/yolo_ir/parkmeter_2
+Candidate: c2
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_2/test/105.json
+
+
+real	0m0.389s
+user	0m0.350s
+sys	0m0.033s
+
+data/yolo_ir/parkmeter_20
+Candidate: c3
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_20/test/104.json
+
+
+real	0m0.430s
+user	0m0.420s
+sys	0m0.008s
+
+data/yolo_ir/parkmeter_3
+Candidate: c2
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_3/test/105.json
+
+
+real	0m0.393s
+user	0m0.379s
+sys	0m0.012s
+
+data/yolo_ir/parkmeter_4
+Candidate: c2
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_4/test/105.json
+
+
+real	0m0.403s
+user	0m0.363s
+sys	0m0.032s
+
+data/yolo_ir/parkmeter_5
+Candidate: c2
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_5/test/104.json
+
+
+real	0m0.408s
+user	0m0.383s
+sys	0m0.016s
+
+data/yolo_ir/parkmeter_6
+Candidate: c0
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_6/test/108.json
+
+
+real	0m0.379s
+user	0m0.353s
+sys	0m0.020s
+
+data/yolo_ir/parkmeter_7
+Candidate: c1
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/parkmeter_7/test/106.json
+
+
+real	0m0.383s
+user	0m0.359s
+sys	0m0.020s
+
+data/yolo_ir/parkmeter_8
+Candidate: c2
+Concept: Forall q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_8/test/104.json
+
+
+real	0m0.357s
+user	0m0.330s
+sys	0m0.024s
+
+data/yolo_ir/parkmeter_9
+Candidate: c0
+Concept: Exists q0: parking meter!0. True
+Candidate Name: data/yolo_ir/parkmeter_9/test/108.json
+
+
+real	0m0.383s
+user	0m0.356s
+sys	0m0.024s
+

@@ -1,0 +1,200 @@
+data/yolo_ir/sleeping_1
+Candidate: c0
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_1/test/174.json
+
+
+real	0m0.346s
+user	0m0.303s
+sys	0m0.037s
+
+data/yolo_ir/sleeping_10
+Candidate: c2
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_10/test/173.json
+
+
+real	0m0.290s
+user	0m0.278s
+sys	0m0.012s
+
+data/yolo_ir/sleeping_11
+Candidate: c0
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_11/test/174.json
+
+
+real	0m0.295s
+user	0m0.283s
+sys	0m0.012s
+
+data/yolo_ir/sleeping_12
+Candidate: c2
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_12/test/179.json
+
+
+real	0m0.337s
+user	0m0.320s
+sys	0m0.012s
+
+data/yolo_ir/sleeping_13
+Candidate: c2
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_13/test/179.json
+
+
+real	0m0.305s
+user	0m0.274s
+sys	0m0.029s
+
+data/yolo_ir/sleeping_14
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_14/test/179.json
+
+
+real	0m0.353s
+user	0m0.324s
+sys	0m0.016s
+
+data/yolo_ir/sleeping_15
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_15/test/173.json
+
+
+real	0m0.330s
+user	0m0.321s
+sys	0m0.008s
+
+data/yolo_ir/sleeping_16
+Candidate: c0
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_16/test/174.json
+
+
+real	0m0.295s
+user	0m0.278s
+sys	0m0.016s
+
+data/yolo_ir/sleeping_17
+Candidate: c0
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_17/test/174.json
+
+
+real	0m0.331s
+user	0m0.295s
+sys	0m0.033s
+
+data/yolo_ir/sleeping_18
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_18/test/173.json
+
+
+real	0m0.292s
+user	0m0.246s
+sys	0m0.044s
+
+data/yolo_ir/sleeping_19
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_19/test/173.json
+
+
+real	0m0.305s
+user	0m0.277s
+sys	0m0.024s
+
+data/yolo_ir/sleeping_2
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_2/test/179.json
+
+
+real	0m0.312s
+user	0m0.275s
+sys	0m0.032s
+
+data/yolo_ir/sleeping_20
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_20/test/173.json
+
+
+real	0m0.338s
+user	0m0.311s
+sys	0m0.024s
+
+data/yolo_ir/sleeping_3
+Candidate: c0
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_3/test/174.json
+
+
+real	0m0.303s
+user	0m0.273s
+sys	0m0.020s
+
+data/yolo_ir/sleeping_4
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_4/test/173.json
+
+
+real	0m0.285s
+user	0m0.266s
+sys	0m0.016s
+
+data/yolo_ir/sleeping_5
+Candidate: c0
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_5/test/174.json
+
+
+real	0m0.271s
+user	0m0.253s
+sys	0m0.016s
+
+data/yolo_ir/sleeping_6
+Candidate: c2
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_6/test/179.json
+
+
+real	0m0.298s
+user	0m0.266s
+sys	0m0.028s
+
+data/yolo_ir/sleeping_7
+Candidate: c0
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_7/test/174.json
+
+
+real	0m0.314s
+user	0m0.280s
+sys	0m0.020s
+
+data/yolo_ir/sleeping_8
+Candidate: c2
+Concept: Forall q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_8/test/179.json
+
+
+real	0m0.304s
+user	0m0.283s
+sys	0m0.020s
+
+data/yolo_ir/sleeping_9
+Candidate: c0
+Concept: Exists q0: person!0. True
+Candidate Name: data/yolo_ir/sleeping_9/test/174.json
+
+
+real	0m0.317s
+user	0m0.295s
+sys	0m0.012s
+

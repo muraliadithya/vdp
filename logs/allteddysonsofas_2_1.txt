@@ -1,0 +1,200 @@
+data/new_yolo_ir/allteddysonsofas_1
+Candidate: c0
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_1/test/teddy2.json
+
+
+real	0m2.710s
+user	0m2.644s
+sys	0m0.048s
+
+data/new_yolo_ir/allteddysonsofas_10
+Candidate: c2
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_10/test/teddy12.json
+
+
+real	0m2.760s
+user	0m2.716s
+sys	0m0.032s
+
+data/new_yolo_ir/allteddysonsofas_11
+Candidate: c0
+Concept: Forall q0: teddy bear!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_11/test/teddy1.json
+
+
+real	0m2.701s
+user	0m2.677s
+sys	0m0.012s
+
+data/new_yolo_ir/allteddysonsofas_12
+Candidate: c1
+Concept: Forall q0: teddy bear!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_12/test/teddy8.json
+
+
+real	0m2.686s
+user	0m2.655s
+sys	0m0.028s
+
+data/new_yolo_ir/allteddysonsofas_13
+Candidate: c1
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_13/test/teddy7.json
+
+
+real	0m2.598s
+user	0m2.561s
+sys	0m0.028s
+
+data/new_yolo_ir/allteddysonsofas_14
+Candidate: c1
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_14/test/teddy4.json
+
+
+real	0m2.611s
+user	0m2.554s
+sys	0m0.016s
+
+data/new_yolo_ir/allteddysonsofas_15
+Candidate: c0
+Concept: Forall q0: teddy bear!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_15/test/teddy1.json
+
+
+real	0m2.352s
+user	0m2.288s
+sys	0m0.044s
+
+data/new_yolo_ir/allteddysonsofas_16
+Candidate: c0
+Concept: Forall q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_16/test/teddy4.json
+
+
+real	0m2.339s
+user	0m2.267s
+sys	0m0.028s
+
+data/new_yolo_ir/allteddysonsofas_17
+Candidate: c2
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_17/test/teddy11.json
+
+
+real	0m2.715s
+user	0m2.664s
+sys	0m0.032s
+
+data/new_yolo_ir/allteddysonsofas_18
+Candidate: c3
+Concept: Exists q0: teddy bear!0. Forall q1: sofa!1. And(left!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_18/test/teddy13.json
+
+
+real	0m2.406s
+user	0m2.342s
+sys	0m0.028s
+
+data/new_yolo_ir/allteddysonsofas_19
+Candidate: c0
+Concept: Forall q0: teddy bear!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_19/test/teddy2.json
+
+
+real	0m2.615s
+user	0m2.544s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_2
+Candidate: c0
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_2/test/teddy1.json
+
+
+real	0m2.669s
+user	0m2.587s
+sys	0m0.032s
+
+data/new_yolo_ir/allteddysonsofas_20
+Candidate: c0
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_20/test/teddy1.json
+
+
+real	0m2.885s
+user	0m2.840s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_3
+Candidate: c0
+Concept: Forall q0: teddy bear!0. Forall q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_3/test/teddy8.json
+
+
+real	0m2.776s
+user	0m2.721s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_4
+Candidate: c2
+Concept: Forall q0: teddy bear!0. Forall q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_4/test/teddy10.json
+
+
+real	0m2.371s
+user	0m2.339s
+sys	0m0.032s
+
+data/new_yolo_ir/allteddysonsofas_5
+Candidate: c2
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_5/test/teddy11.json
+
+
+real	0m2.597s
+user	0m2.558s
+sys	0m0.020s
+
+data/new_yolo_ir/allteddysonsofas_6
+Candidate: c0
+Concept: Exists q0: sofa!0. Forall q1: teddy bear!1. And(within!1!0)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_6/test/teddy8.json
+
+
+real	0m2.548s
+user	0m2.490s
+sys	0m0.036s
+
+data/new_yolo_ir/allteddysonsofas_7
+Candidate: c1
+Concept: Forall q0: teddy bear!0. Exists q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_7/test/teddy12.json
+
+
+real	0m2.331s
+user	0m2.312s
+sys	0m0.012s
+
+data/new_yolo_ir/allteddysonsofas_8
+Candidate: c0
+Concept: Forall q0: teddy bear!0. Forall q1: sofa!1. And(within!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_8/test/teddy3.json
+
+
+real	0m2.130s
+user	0m2.116s
+sys	0m0.008s
+
+data/new_yolo_ir/allteddysonsofas_9
+Candidate: c3
+Concept: Exists q0: teddy bear!0. Exists q1: sofa!1. And(left!0!1)
+Candidate Name: data/new_yolo_ir/allteddysonsofas_9/test/teddy13.json
+
+
+real	0m2.670s
+user	0m2.644s
+sys	0m0.024s
+

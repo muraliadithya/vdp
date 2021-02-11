@@ -1,0 +1,155 @@
+data/yolo_ir/2on1_1
+Candidate: c3
+Concept: Exists q0: cat!0. Forall q1: sofa!1. And(left!1!0)
+Candidate Name: data/yolo_ir/2on1_1/test/6.json
+
+
+real	0m0.513s
+user	0m0.472s
+sys	0m0.027s
+
+data/yolo_ir/2on1_10
+No discriminator found for puzzle data/yolo_ir/2on1_10.
+
+real	0m0.470s
+user	0m0.455s
+sys	0m0.012s
+
+data/yolo_ir/2on1_11
+No discriminator found for puzzle data/yolo_ir/2on1_11.
+
+real	0m0.451s
+user	0m0.421s
+sys	0m0.024s
+
+data/yolo_ir/2on1_12
+Candidate: c1
+Concept: Exists q0: cat!0. Forall q1: sofa!1. And(right!0!1)
+Candidate Name: data/yolo_ir/2on1_12/test/8.json
+
+
+real	0m0.463s
+user	0m0.429s
+sys	0m0.032s
+
+data/yolo_ir/2on1_13
+No discriminator found for puzzle data/yolo_ir/2on1_13.
+
+real	0m0.450s
+user	0m0.425s
+sys	0m0.020s
+
+data/yolo_ir/2on1_14
+No discriminator found for puzzle data/yolo_ir/2on1_14.
+
+real	0m0.457s
+user	0m0.418s
+sys	0m0.036s
+
+data/yolo_ir/2on1_15
+No discriminator found for puzzle data/yolo_ir/2on1_15.
+
+real	0m0.448s
+user	0m0.415s
+sys	0m0.024s
+
+data/yolo_ir/2on1_16
+No discriminator found for puzzle data/yolo_ir/2on1_16.
+
+real	0m0.452s
+user	0m0.429s
+sys	0m0.020s
+
+data/yolo_ir/2on1_17
+Candidate: c1
+Concept: Exists q0: cat!0. Forall q1: sofa!1. And(right!0!1)
+Candidate Name: data/yolo_ir/2on1_17/test/8.json
+
+
+real	0m0.479s
+user	0m0.453s
+sys	0m0.016s
+
+data/yolo_ir/2on1_18
+No discriminator found for puzzle data/yolo_ir/2on1_18.
+
+real	0m0.442s
+user	0m0.403s
+sys	0m0.036s
+
+data/yolo_ir/2on1_19
+Candidate: c3
+Concept: Exists q0: cat!0. Forall q1: sofa!1. And(left!1!0)
+Candidate Name: data/yolo_ir/2on1_19/test/6.json
+
+
+real	0m0.531s
+user	0m0.479s
+sys	0m0.048s
+
+data/yolo_ir/2on1_2
+No discriminator found for puzzle data/yolo_ir/2on1_2.
+
+real	0m0.506s
+user	0m0.485s
+sys	0m0.016s
+
+data/yolo_ir/2on1_20
+Candidate: c3
+Concept: Exists q0: cat!0. Forall q1: sofa!1. And(left!1!0)
+Candidate Name: data/yolo_ir/2on1_20/test/6.json
+
+
+real	0m0.481s
+user	0m0.454s
+sys	0m0.024s
+
+data/yolo_ir/2on1_3
+No discriminator found for puzzle data/yolo_ir/2on1_3.
+
+real	0m0.480s
+user	0m0.447s
+sys	0m0.024s
+
+data/yolo_ir/2on1_4
+No discriminator found for puzzle data/yolo_ir/2on1_4.
+
+real	0m0.461s
+user	0m0.420s
+sys	0m0.032s
+
+data/yolo_ir/2on1_5
+No discriminator found for puzzle data/yolo_ir/2on1_5.
+
+real	0m0.459s
+user	0m0.441s
+sys	0m0.016s
+
+data/yolo_ir/2on1_6
+No discriminator found for puzzle data/yolo_ir/2on1_6.
+
+real	0m0.464s
+user	0m0.430s
+sys	0m0.024s
+
+data/yolo_ir/2on1_7
+No discriminator found for puzzle data/yolo_ir/2on1_7.
+
+real	0m0.540s
+user	0m0.517s
+sys	0m0.020s
+
+data/yolo_ir/2on1_8
+No discriminator found for puzzle data/yolo_ir/2on1_8.
+
+real	0m0.478s
+user	0m0.446s
+sys	0m0.028s
+
+data/yolo_ir/2on1_9
+No discriminator found for puzzle data/yolo_ir/2on1_9.
+
+real	0m0.464s
+user	0m0.438s
+sys	0m0.024s
+

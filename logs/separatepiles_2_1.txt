@@ -1,0 +1,200 @@
+data/new_yolo_ir/separatepiles_1
+Candidate: c2
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_1/test/apple2.json
+
+
+real	0m1.554s
+user	0m1.536s
+sys	0m0.017s
+
+data/new_yolo_ir/separatepiles_10
+Candidate: c2
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(right!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_10/test/apple4.json
+
+
+real	0m1.531s
+user	0m1.512s
+sys	0m0.008s
+
+data/new_yolo_ir/separatepiles_11
+Candidate: c0
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(right!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_11/test/apple5.json
+
+
+real	0m1.578s
+user	0m1.543s
+sys	0m0.024s
+
+data/new_yolo_ir/separatepiles_12
+Candidate: c1
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_12/test/apple4.json
+
+
+real	0m1.555s
+user	0m1.543s
+sys	0m0.008s
+
+data/new_yolo_ir/separatepiles_13
+Candidate: c0
+Concept: Exists q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_13/test/apple5.json
+
+
+real	0m1.211s
+user	0m1.189s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_14
+Candidate: c0
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(left!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_14/test/apple5.json
+
+
+real	0m1.230s
+user	0m1.199s
+sys	0m0.025s
+
+data/new_yolo_ir/separatepiles_15
+Candidate: c0
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_15/test/apple1.json
+
+
+real	0m1.231s
+user	0m1.207s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_16
+Candidate: c0
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_16/test/apple5.json
+
+
+real	0m1.563s
+user	0m1.547s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_17
+Candidate: c0
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_17/test/apple1.json
+
+
+real	0m1.486s
+user	0m1.467s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_18
+Candidate: c0
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_18/test/apple1.json
+
+
+real	0m1.507s
+user	0m1.479s
+sys	0m0.024s
+
+data/new_yolo_ir/separatepiles_19
+Candidate: c0
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(left!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_19/test/apple1.json
+
+
+real	0m1.147s
+user	0m1.121s
+sys	0m0.024s
+
+data/new_yolo_ir/separatepiles_2
+Candidate: c1
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_2/test/apple2.json
+
+
+real	0m1.557s
+user	0m1.519s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_20
+Candidate: c1
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_20/test/apple4.json
+
+
+real	0m1.169s
+user	0m1.161s
+sys	0m0.008s
+
+data/new_yolo_ir/separatepiles_3
+Candidate: c0
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_3/test/apple3.json
+
+
+real	0m1.213s
+user	0m1.181s
+sys	0m0.024s
+
+data/new_yolo_ir/separatepiles_4
+Candidate: c1
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_4/test/apple3.json
+
+
+real	0m1.517s
+user	0m1.497s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_5
+Candidate: c1
+Concept: Exists q0: orange!0. Forall q1: apple!1. And(left!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_5/test/apple3.json
+
+
+real	0m1.214s
+user	0m1.182s
+sys	0m0.028s
+
+data/new_yolo_ir/separatepiles_6
+Candidate: c1
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(right!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_6/test/apple3.json
+
+
+real	0m1.545s
+user	0m1.520s
+sys	0m0.020s
+
+data/new_yolo_ir/separatepiles_7
+Candidate: c1
+Concept: Forall q0: orange!0. Forall q1: apple!1. And(right!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_7/test/apple2.json
+
+
+real	0m1.265s
+user	0m1.240s
+sys	0m0.016s
+
+data/new_yolo_ir/separatepiles_8
+Candidate: c2
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/separatepiles_8/test/apple2.json
+
+
+real	0m1.227s
+user	0m1.215s
+sys	0m0.012s
+
+data/new_yolo_ir/separatepiles_9
+Candidate: c2
+Concept: Forall q0: apple!0. Forall q1: orange!1. And(left!0!1)
+Candidate Name: data/new_yolo_ir/separatepiles_9/test/apple4.json
+
+
+real	0m1.316s
+user	0m1.300s
+sys	0m0.016s
+

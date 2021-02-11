@@ -1,0 +1,140 @@
+data/yolo_ir/personball_1
+No discriminator found for puzzle data/yolo_ir/personball_1.
+
+real	0m0.417s
+user	0m0.360s
+sys	0m0.053s
+
+data/yolo_ir/personball_10
+No discriminator found for puzzle data/yolo_ir/personball_10.
+
+real	0m0.397s
+user	0m0.374s
+sys	0m0.020s
+
+data/yolo_ir/personball_11
+No discriminator found for puzzle data/yolo_ir/personball_11.
+
+real	0m0.342s
+user	0m0.323s
+sys	0m0.016s
+
+data/yolo_ir/personball_12
+No discriminator found for puzzle data/yolo_ir/personball_12.
+
+real	0m0.393s
+user	0m0.363s
+sys	0m0.028s
+
+data/yolo_ir/personball_13
+No discriminator found for puzzle data/yolo_ir/personball_13.
+
+real	0m0.432s
+user	0m0.399s
+sys	0m0.024s
+
+data/yolo_ir/personball_14
+No discriminator found for puzzle data/yolo_ir/personball_14.
+
+real	0m0.360s
+user	0m0.338s
+sys	0m0.020s
+
+data/yolo_ir/personball_15
+No discriminator found for puzzle data/yolo_ir/personball_15.
+
+real	0m0.370s
+user	0m0.354s
+sys	0m0.016s
+
+data/yolo_ir/personball_16
+No discriminator found for puzzle data/yolo_ir/personball_16.
+
+real	0m0.398s
+user	0m0.383s
+sys	0m0.012s
+
+data/yolo_ir/personball_17
+No discriminator found for puzzle data/yolo_ir/personball_17.
+
+real	0m0.360s
+user	0m0.349s
+sys	0m0.008s
+
+data/yolo_ir/personball_18
+No discriminator found for puzzle data/yolo_ir/personball_18.
+
+real	0m0.400s
+user	0m0.378s
+sys	0m0.016s
+
+data/yolo_ir/personball_19
+No discriminator found for puzzle data/yolo_ir/personball_19.
+
+real	0m0.409s
+user	0m0.370s
+sys	0m0.036s
+
+data/yolo_ir/personball_2
+No discriminator found for puzzle data/yolo_ir/personball_2.
+
+real	0m0.390s
+user	0m0.376s
+sys	0m0.008s
+
+data/yolo_ir/personball_20
+No discriminator found for puzzle data/yolo_ir/personball_20.
+
+real	0m0.383s
+user	0m0.367s
+sys	0m0.016s
+
+data/yolo_ir/personball_3
+No discriminator found for puzzle data/yolo_ir/personball_3.
+
+real	0m0.354s
+user	0m0.317s
+sys	0m0.031s
+
+data/yolo_ir/personball_4
+No discriminator found for puzzle data/yolo_ir/personball_4.
+
+real	0m0.346s
+user	0m0.327s
+sys	0m0.016s
+
+data/yolo_ir/personball_5
+No discriminator found for puzzle data/yolo_ir/personball_5.
+
+real	0m0.394s
+user	0m0.370s
+sys	0m0.024s
+
+data/yolo_ir/personball_6
+No discriminator found for puzzle data/yolo_ir/personball_6.
+
+real	0m0.383s
+user	0m0.341s
+sys	0m0.040s
+
+data/yolo_ir/personball_7
+No discriminator found for puzzle data/yolo_ir/personball_7.
+
+real	0m0.411s
+user	0m0.389s
+sys	0m0.020s
+
+data/yolo_ir/personball_8
+No discriminator found for puzzle data/yolo_ir/personball_8.
+
+real	0m0.350s
+user	0m0.329s
+sys	0m0.016s
+
+data/yolo_ir/personball_9
+No discriminator found for puzzle data/yolo_ir/personball_9.
+
+real	0m0.385s
+user	0m0.368s
+sys	0m0.016s
+

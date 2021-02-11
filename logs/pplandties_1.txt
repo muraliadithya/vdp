@@ -1,0 +1,200 @@
+data/yolo_ir/pplandties_1
+Candidate: c1
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_1/test/139.json
+
+
+real	0m0.370s
+user	0m0.330s
+sys	0m0.040s
+
+data/yolo_ir/pplandties_10
+Candidate: c0
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_10/test/145.json
+
+
+real	0m0.291s
+user	0m0.278s
+sys	0m0.012s
+
+data/yolo_ir/pplandties_11
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_11/test/139.json
+
+
+real	0m0.331s
+user	0m0.305s
+sys	0m0.021s
+
+data/yolo_ir/pplandties_12
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_12/test/140.json
+
+
+real	0m0.293s
+user	0m0.274s
+sys	0m0.016s
+
+data/yolo_ir/pplandties_13
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_13/test/139.json
+
+
+real	0m0.306s
+user	0m0.296s
+sys	0m0.008s
+
+data/yolo_ir/pplandties_14
+Candidate: c0
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_14/test/140.json
+
+
+real	0m0.298s
+user	0m0.277s
+sys	0m0.020s
+
+data/yolo_ir/pplandties_15
+Candidate: c0
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_15/test/140.json
+
+
+real	0m0.308s
+user	0m0.294s
+sys	0m0.012s
+
+data/yolo_ir/pplandties_16
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_16/test/140.json
+
+
+real	0m0.300s
+user	0m0.269s
+sys	0m0.028s
+
+data/yolo_ir/pplandties_17
+Candidate: c0
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_17/test/140.json
+
+
+real	0m0.285s
+user	0m0.263s
+sys	0m0.020s
+
+data/yolo_ir/pplandties_18
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_18/test/145.json
+
+
+real	0m0.341s
+user	0m0.322s
+sys	0m0.016s
+
+data/yolo_ir/pplandties_19
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_19/test/139.json
+
+
+real	0m0.313s
+user	0m0.282s
+sys	0m0.028s
+
+data/yolo_ir/pplandties_2
+Candidate: c1
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_2/test/145.json
+
+
+real	0m0.345s
+user	0m0.314s
+sys	0m0.028s
+
+data/yolo_ir/pplandties_20
+Candidate: c2
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_20/test/139.json
+
+
+real	0m0.308s
+user	0m0.282s
+sys	0m0.020s
+
+data/yolo_ir/pplandties_3
+Candidate: c2
+Concept: Exists q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_3/test/145.json
+
+
+real	0m0.322s
+user	0m0.307s
+sys	0m0.012s
+
+data/yolo_ir/pplandties_4
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_4/test/140.json
+
+
+real	0m0.288s
+user	0m0.276s
+sys	0m0.012s
+
+data/yolo_ir/pplandties_5
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_5/test/145.json
+
+
+real	0m0.310s
+user	0m0.292s
+sys	0m0.012s
+
+data/yolo_ir/pplandties_6
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_6/test/139.json
+
+
+real	0m0.311s
+user	0m0.277s
+sys	0m0.028s
+
+data/yolo_ir/pplandties_7
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_7/test/140.json
+
+
+real	0m0.293s
+user	0m0.259s
+sys	0m0.033s
+
+data/yolo_ir/pplandties_8
+Candidate: c1
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_8/test/145.json
+
+
+real	0m0.291s
+user	0m0.264s
+sys	0m0.024s
+
+data/yolo_ir/pplandties_9
+Candidate: c0
+Concept: Forall q0: tie!0. True
+Candidate Name: data/yolo_ir/pplandties_9/test/140.json
+
+
+real	0m0.344s
+user	0m0.303s
+sys	0m0.036s
+

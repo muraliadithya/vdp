@@ -1,0 +1,149 @@
+data/new_yolo_ir/middleball_1
+No discriminator found for puzzle data/new_yolo_ir/middleball_1.
+
+real	0m0.591s
+user	0m0.563s
+sys	0m0.021s
+
+data/new_yolo_ir/middleball_10
+No discriminator found for puzzle data/new_yolo_ir/middleball_10.
+
+real	0m0.524s
+user	0m0.491s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_11
+No discriminator found for puzzle data/new_yolo_ir/middleball_11.
+
+real	0m0.511s
+user	0m0.499s
+sys	0m0.012s
+
+data/new_yolo_ir/middleball_12
+No discriminator found for puzzle data/new_yolo_ir/middleball_12.
+
+real	0m0.514s
+user	0m0.480s
+sys	0m0.020s
+
+data/new_yolo_ir/middleball_13
+Candidate: c1
+Concept: Exists q0: sports ball!0. Exists q1: person!1. And(right!1!0)
+Candidate Name: data/new_yolo_ir/middleball_13/test/middleball1.json
+
+
+real	0m0.561s
+user	0m0.532s
+sys	0m0.024s
+
+data/new_yolo_ir/middleball_14
+No discriminator found for puzzle data/new_yolo_ir/middleball_14.
+
+real	0m0.463s
+user	0m0.440s
+sys	0m0.020s
+
+data/new_yolo_ir/middleball_15
+No discriminator found for puzzle data/new_yolo_ir/middleball_15.
+
+real	0m0.453s
+user	0m0.429s
+sys	0m0.024s
+
+data/new_yolo_ir/middleball_16
+No discriminator found for puzzle data/new_yolo_ir/middleball_16.
+
+real	0m0.417s
+user	0m0.389s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_17
+No discriminator found for puzzle data/new_yolo_ir/middleball_17.
+
+real	0m0.519s
+user	0m0.499s
+sys	0m0.020s
+
+data/new_yolo_ir/middleball_18
+No discriminator found for puzzle data/new_yolo_ir/middleball_18.
+
+real	0m0.409s
+user	0m0.373s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_19
+No discriminator found for puzzle data/new_yolo_ir/middleball_19.
+
+real	0m0.569s
+user	0m0.533s
+sys	0m0.021s
+
+data/new_yolo_ir/middleball_2
+No discriminator found for puzzle data/new_yolo_ir/middleball_2.
+
+real	0m0.448s
+user	0m0.407s
+sys	0m0.036s
+
+data/new_yolo_ir/middleball_20
+Candidate: c3
+Concept: Exists q0: person!0. Exists q1: sports ball!1. And(right!0!1 left!1!0)
+Candidate Name: data/new_yolo_ir/middleball_20/test/middleball2.json
+
+
+real	0m0.514s
+user	0m0.472s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_3
+No discriminator found for puzzle data/new_yolo_ir/middleball_3.
+
+real	0m0.454s
+user	0m0.434s
+sys	0m0.008s
+
+data/new_yolo_ir/middleball_4
+No discriminator found for puzzle data/new_yolo_ir/middleball_4.
+
+real	0m0.396s
+user	0m0.384s
+sys	0m0.008s
+
+data/new_yolo_ir/middleball_5
+No discriminator found for puzzle data/new_yolo_ir/middleball_5.
+
+real	0m0.439s
+user	0m0.415s
+sys	0m0.024s
+
+data/new_yolo_ir/middleball_6
+Candidate: c2
+Concept: Exists q0: person!0. Exists q1: sports ball!1. And(right!0!1)
+Candidate Name: data/new_yolo_ir/middleball_6/test/middleball3.json
+
+
+real	0m0.536s
+user	0m0.520s
+sys	0m0.016s
+
+data/new_yolo_ir/middleball_7
+No discriminator found for puzzle data/new_yolo_ir/middleball_7.
+
+real	0m0.498s
+user	0m0.469s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_8
+No discriminator found for puzzle data/new_yolo_ir/middleball_8.
+
+real	0m0.435s
+user	0m0.403s
+sys	0m0.028s
+
+data/new_yolo_ir/middleball_9
+No discriminator found for puzzle data/new_yolo_ir/middleball_9.
+
+real	0m0.444s
+user	0m0.418s
+sys	0m0.020s
+

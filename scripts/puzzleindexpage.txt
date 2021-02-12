@@ -1,0 +1,6 @@
+<h1 style="color: #5e9ca0;">Index for {puzzleclass} puzzle class</h1>
+
+Each of these links will lead to a different puzzle.
+<dir>
+{puzzle_list}
+</dir>

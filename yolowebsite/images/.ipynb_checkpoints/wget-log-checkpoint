@@ -1,0 +1,11 @@
+--2021-02-01 01:41:01--  https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thetruthaboutcars.com%2Fwp-content%2Fuploads%2F2019%2F01%2F800px-Montague-pedestrians-610x458.png
+Resolving external-content.duckduckgo.com (external-content.duckduckgo.com)... 52.149.246.247
+Connecting to external-content.duckduckgo.com (external-content.duckduckgo.com)|52.149.246.247|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [image/png]
+Saving to: ‘index.html?u=https:%2F%2Fwww.thetruthaboutcars.com%2Fwp-content%2Fuploads%2F2019%2F01%2F800px-Montague-pedestrians-610x458.png’
+
+                   index.html?u=https     [<=>                                                                       ]       0  --.-KB/s               index.html?u=https:%2F%2Fwww.thetruth     [ <=>                                                                      ] 436.28K  --.-KB/s    in 0.06s   
+
+2021-02-01 01:41:02 (7.36 MB/s) - ‘index.html?u=https:%2F%2Fwww.thetruthaboutcars.com%2Fwp-content%2Fuploads%2F2019%2F01%2F800px-Montague-pedestrians-610x458.png’ saved [446750]
+

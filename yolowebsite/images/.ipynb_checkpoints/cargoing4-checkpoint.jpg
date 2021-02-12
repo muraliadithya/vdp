@@ -1,0 +1,13 @@
+--2021-02-01 01:56:31--  http://www.pedbikesafe.org/pedsafe/cm_images/sidwal1.jpg
+Resolving www.pedbikesafe.org (www.pedbikesafe.org)... 152.2.187.210
+Connecting to www.pedbikesafe.org (www.pedbikesafe.org)|152.2.187.210|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 108225 (106K) [image/jpeg]
+Saving to: ‘sidwal1.jpg’
+
+     0K .......... .......... .......... .......... .......... 47%  604K 0s
+    50K .......... .......... .......... .......... .......... 94%  903K 0s
+   100K .....                                                 100%  109M=0.1s
+
+2021-02-01 01:56:31 (765 KB/s) - ‘sidwal1.jpg’ saved [108225/108225]
+

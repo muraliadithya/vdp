@@ -56,6 +56,26 @@ def postprocess():
     for f in os.listdir('./config'):
         if not os.path.exists(f'./ann_config/{f}'):
             shutil.copy(f'./config/{f}', f'./ann_config/{f}')
+    with open('./scripts/intent.json', 'r') as intentfile:
+        intent_dict = json.load(intentfile)
+    with open('./scripts/within_relation_replacement.json') as withinrelreplacefile:
+        within_relation_replacedict = json.load(withinrelreplacefile)
+    for f in os.listdir('./ann_config'):
+        with open(f'./ann_config/{f}', 'r') as infile:
+            d = json.load(infile)
+        for key in intent_dict:
+            if f.startswith(key):
+                d['intended'] = intent_dict[key]
+                concept = d.get('concept', None)
+                if concept is not None:
+                    if 'within' in concept:
+                        if within_relation_replacedict[key] == '':
+                            raise ValueError(f'Corrupt file {f}')
+                        else:
+                            concept = concept.replace('within', within_relation_replacedict[key])
+                            d['concept'] = concept
+        with open(f'./ann_config/{f}', 'w') as outfile:
+            json.dump(d, outfile, indent=4)
 
 
 puzzle_config = []

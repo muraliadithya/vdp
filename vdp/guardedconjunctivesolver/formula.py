@@ -145,7 +145,7 @@ class Formula:
                 relational_atom = _construct_relational_atom(key, self.forelations, self.qvars)
                 atom_value = fomodel.interpret(relational_atom, interpretation_extension)
                 matrix_constraints = matrix_constraints + [Implies(value, atom_value)]
-            return And(matrix_constraints)
+            return And(matrix_constraints), set()
         else:
             qvar = self.qvars[-quantifier_depth]
             quantified_universe = fomodel.get_universe(self.quantified_sort)
@@ -154,6 +154,7 @@ class Formula:
                                                                      " {} sort".format(str(self.quantified_sort)))
             sub_constraints = []
             guard_satisfaction_constraints = []
+            conditional_constraints = set()
             for elem in quantified_universe:
                 sub_interp_extn = {**interpretation_extension, qvar: elem}
 
@@ -167,25 +168,29 @@ class Formula:
                 guard_satisfaction_constraints = guard_satisfaction_constraints + [guard_expression]
 
                 sub_quantifier_depth = quantifier_depth - 1
-                sub_constraint = self._satisfaction_constraint_aux(fomodel, sub_quantifier_depth, sub_interp_extn)
+                sub_constraint, local_conditional_constraints = self._satisfaction_constraint_aux(fomodel, 
+                                                                                                  sub_quantifier_depth, 
+                                                                                                  sub_interp_extn)
+                conditional_constraints.update(local_conditional_constraints)
                 sub_constraints = sub_constraints + [Cneg(qvar, Implies(guard_expression, Cneg(qvar, sub_constraint)))]
             constraint = Cneg(qvar, And([Cneg(qvar, sub_constraint) for sub_constraint in sub_constraints]))
             no_vacuity = self.options.get('no_vacuity', None)
             if no_vacuity:
                 # If the quantifier is universal (qvar = True), then atleast one element in the universe
                 # must satisfy the guard. Otherwise the quantifier will be true vacuously.
-                vacuity_constraint = Or(guard_satisfaction_constraints)
-                constraint = And(constraint, Implies(qvar, vacuity_constraint))
-            return constraint
+                vacuity_constraint = Implies(qvar, Or(guard_satisfaction_constraints))
+                conditional_constraints.add(vacuity_constraint)
+            return constraint, conditional_constraints
 
     def satisfaction_constraint(self, fomodel):
         """
-        'Evaluates' the formula representation with respect to the given model and returns a constraint that indicates
-        that the model satisfies the represented formula.
+        'Evaluates' the formula representation with respect to the given model and returns a pair of constraints:
+        one that indicates when the represented formula is satisfied on the model and one for when it fails to hold.
         :param fomodel: FOModel object
-        :return: Z3Py formula
+        :return: (Z3Py formula, Z3Py formula)
         """
-        return self._satisfaction_constraint_aux(fomodel, self.num_vars, {})
+        satisfaction_constraint, conditional_constraints = self._satisfaction_constraint_aux(fomodel, self.num_vars, {})
+        return And(satisfaction_constraint, *conditional_constraints), Not(satisfaction_constraint)
 
     def valuation_as_formula(self, smt_model):
         """

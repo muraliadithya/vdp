@@ -64,8 +64,8 @@ class GuardedConjunctiveSolver:
         # All training models must satisfy the discriminator.
         training_models = vdppuzzle.get_training_models()
         for training_model in training_models:
-            constraint = discriminator.satisfaction_constraint(training_model)
-            sol.add(constraint)
+            pos_constraint, neg_constraint = discriminator.satisfaction_constraint(training_model)
+            sol.add(pos_constraint)
         candidate_models = vdppuzzle.get_candidate_models()
         num_candidates = len(candidate_models)
         candidate_vars = Bools(names=['c{}'.format(str(i)) for i in range(num_candidates)])
@@ -75,8 +75,8 @@ class GuardedConjunctiveSolver:
                      for i in range(num_candidates) for j in range(num_candidates) if i != j]))
         # A candidate is chosen if and only if it satisfies the discriminator.
         for i in range(num_candidates):
-            constraint = discriminator.satisfaction_constraint(candidate_models[i])
-            sol.add(candidate_vars[i] == constraint)
+            pos_constraint, neg_constraint = discriminator.satisfaction_constraint(candidate_models[i])
+            sol.add(If(candidate_vars[i], pos_constraint, neg_constraint))
         # Ask for discrimination for as many times as required.
         num_discriminators = self.options.get('num_discriminators', 1)
         previous_solution_constraints = []

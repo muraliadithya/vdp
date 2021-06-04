@@ -219,10 +219,15 @@ class Formula:
             quantifier = 'Forall' if smt_model.eval(qvar) else 'Exists'
             level_guard_dict = self.guard_level_relvardict[qvar]
             guard_var_name = next((key for key, value in level_guard_dict.items() if smt_model.eval(value)))
-            guard_term = _compond_name_separator_.join(guard_var_name.split(_compond_name_separator_)[2:])
+            guard_term = guard_var_name.split(_compond_name_separator_)[2]
             quantifier_string = quantifier_string + '{} {}: {}. '.format(quantifier, qvar.sexpr(), guard_term)
         matrix_atoms = [key for key, value in self.relvardict.items() if smt_model.eval(value, model_completion=True)]
-        matrix_string = 'And({})'.format(' '.join(matrix_atoms)) if matrix_atoms != [] else 'True'
+        pretty_matrix_atoms = []
+        for m in matrix_atoms:
+            split_m = m.split(_compond_name_separator_)
+            pretty_m = f"{split_m[0]}({','.join(['q' + sm for sm in split_m[1:]])})"
+            pretty_matrix_atoms += [pretty_m]
+        matrix_string = '{}'.format(' AND '.join(pretty_matrix_atoms)) if matrix_atoms != [] else 'True'
         formula_string = '{}{}'.format(quantifier_string, matrix_string)
         # Post-processing
         no_vacuity = self.options.get('no_vacuity', None)

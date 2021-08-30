@@ -21,14 +21,20 @@ class GuardedConjunctiveSolver:
         self.num_quantified_vars = num_vars
         self.options = {}
 
-    def solve(self, vdppuzzle):
+    # Setter methods for solver attributes
+    def _set_num_vars(self, num_vars):
+        self.num_quantified_vars = num_vars
+
+    def set_options(self, constraint_type, constraint_value):
         """
-        This represents the core functionality of the solver class. It takes a VDPPuzzle object and finds a
-        discriminator in the hypothesis class represented by the solver.
+        This is a generic function that adds to a dictionary of options. The key is a string representing the type
+        of constraint and the value is any value.
+        The options type and values are interpreted by the particular solver class implementation.
         """
-        # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
-        # Disabling normalisation in favour of shifting the task to the ir package
-        # vdppuzzle = _normalise_puzzle(vdppuzzle)
+        self.options[constraint_type] = constraint_value
+
+    # Auxiliary function to process the given vocabulary and extract info such as guard relations
+    def _process_vocabulary(self, vdppuzzle):
         vocabulary = vdppuzzle.get_vocabulary()
         # Check that the vocabulary is a guarded vocabulary
         if not isinstance(vocabulary, GuardedVocabulary):
@@ -43,6 +49,19 @@ class GuardedConjunctiveSolver:
         guard_forelations = _filter_relevant_guards(guard_fofunctions, quantified_sort)
         # Filter all the relations similarly
         forelations = _filter_relevant_relations(fofunctions, quantified_sort)
+        return quantified_sort, forelations, guard_forelations
+
+    def solve(self, vdppuzzle):
+        """
+        This represents the core functionality of the solver class. It takes a VDPPuzzle object and finds a
+        discriminator in the hypothesis class represented by the solver.
+        """
+        # Throws exception if puzzle cannot be normalised. Returns the normalised puzzle otherwise.
+        # Disabling normalisation in favour of shifting the task to the ir package
+        # vdppuzzle = _normalise_puzzle(vdppuzzle)
+
+        # Call auxiliary function to extract relations, guards, etc for the guarded fragment
+        quantified_sort, forelations, guard_forelations = self._process_vocabulary(vdppuzzle)
         # Initialise the formula representation class.
         sol = Solver()
         discriminator = Formula()
@@ -93,29 +112,29 @@ class GuardedConjunctiveSolver:
 
 # Some functions that are used in the body of the VDPBasicConjunctiveSolver class.
 # Function to sanitise the given puzzle.
-def _normalise_puzzle(vdppuzzle):
-    """
-    This is a generic function that takes a vdppuzzle and 'normalises' it.
-    Current choice: no normalisation. Take the vocabulary across models and check that they're the same. Returns: bool
-    """
-    # NOTE: Other choices: (i) union of vocabulary + extending missing interpretations (ii) intersection of
-    # vocabulary + restricting interpretations. These choices would return a new normalised puzzle.
-
-    training_models = vdppuzzle.get_training_models()
-    candidate_models = vdppuzzle.get_candidate_models()
-    if not training_models:
-        # training_models is an empty set/list
-        raise vdpexceptions.MalformedPuzzleException("The set of training models is empty.")
-    if not candidate_models:
-        # candidate_models is an empty set/list
-        raise vdpexceptions.MalformedPuzzleException("The set of candidate models is empty.")
-
-    vocabulary = training_models[0].get_vocabulary()
-    for model in training_models + candidate_models:
-        if vocabulary != model.get_vocabulary():
-            raise vdpexceptions.MalformedPuzzleException("Vocabulary must be the same across all training and "
-                                                         "candidate models.")
-    return vdppuzzle
+# def _normalise_puzzle(vdppuzzle):
+#     """
+#     This is a generic function that takes a vdppuzzle and 'normalises' it.
+#     Current choice: no normalisation. Take the vocabulary across models and check that they're the same. Returns: bool
+#     """
+#     # NOTE: Other choices: (i) union of vocabulary + extending missing interpretations (ii) intersection of
+#     # vocabulary + restricting interpretations. These choices would return a new normalised puzzle.
+# 
+#     training_models = vdppuzzle.get_training_models()
+#     candidate_models = vdppuzzle.get_candidate_models()
+#     if not training_models:
+#         # training_models is an empty set/list
+#         raise vdpexceptions.MalformedPuzzleException("The set of training models is empty.")
+#     if not candidate_models:
+#         # candidate_models is an empty set/list
+#         raise vdpexceptions.MalformedPuzzleException("The set of candidate models is empty.")
+# 
+#     vocabulary = training_models[0].get_vocabulary()
+#     for model in training_models + candidate_models:
+#         if vocabulary != model.get_vocabulary():
+#             raise vdpexceptions.MalformedPuzzleException("Vocabulary must be the same across all training and "
+#                                                          "candidate models.")
+#     return vdppuzzle
 
 
 # Function to determine the quantified sort in the discriminator formula.

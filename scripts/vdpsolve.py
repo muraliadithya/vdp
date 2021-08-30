@@ -25,7 +25,8 @@ import ir.parser as irparser
 
 # Supported vdp solvers
 guarded_conjunctive_solver = 'GuardedConjunctiveSolver'
-vdpsolver_choices = [guarded_conjunctive_solver]
+guarded_conjunctive_altpuzzle_solver = 'GuardedConjunctiveAltpuzzleSolver'
+vdpsolver_choices = [guarded_conjunctive_solver, guarded_conjunctive_altpuzzle_solver]
 default_vdpsolver = guarded_conjunctive_solver
 
 ##############################

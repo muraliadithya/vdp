@@ -81,14 +81,14 @@ class GuardedConjunctiveSolver:
         num_discriminators = self.options.get('num_discriminators', 1)
         previous_solution_constraints = []
         sol_number = 0
+        list_of_solutions = []
         while sol_number < num_discriminators:
             # Add constraints about not giving any previous solutions
             # TODO (medium-low): Earlier constraints already present. Only add the last one.
             sol.add(previous_solution_constraints)
             soluble = sol.check()
             if soluble == z3.unsat:
-                print('No discriminator found for puzzle {}.'.format(vdppuzzle.puzzle_name))
-                exit(0)
+                return list_of_solutions
                 # raise vdpexceptions.MalformedPuzzleException("The given puzzle could not be solved by this solver.")
             smt_model = sol.model()
             # Add a constraint negating the given solution for the next round
@@ -98,10 +98,9 @@ class GuardedConjunctiveSolver:
             candidate = next((candidate_var for candidate_var in candidate_vars 
                               if smt_model.eval(candidate_var, model_completion=True)), None)
             candidate_number = int(candidate.sexpr()[1])
-            print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate.sexpr(), discriminant,
-                                                                            candidate_models[
-                                                                                candidate_number].model_name))
+            list_of_solutions.append((candidate.sexpr(), discriminant, candidate_models[candidate_number].model_name))
             sol_number = sol_number + 1
+        return list_of_solutions
 
 
 # Some functions that are used in the body of the VDPBasicConjunctiveSolver class.

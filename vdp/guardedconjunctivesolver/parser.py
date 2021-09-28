@@ -47,8 +47,8 @@ search_attributes.add_argument('-N', '--num-discriminators', type=int, dest='num
                                default=1,
                                help='Find multiple discriminators')
 search_attributes.add_argument('--autotune', action='store_true', dest='autotune',
-                               help='Search for the simplest discriminator with at most q quantifiers '
-                                    ', c conjuncts (if given), and pattern pat (if given).')
+                               help='Search for the simplest discriminator with at most q quantifiers and c conjuncts '
+                                    '(if given), and pattern pat (if given).')
 
 # Arguments for choosing specific semantics of the discriminator
 argparser.add_argument('--no-vacuity', action='store_true', dest='no_vacuity',

@@ -1,0 +1,7 @@
+<h1 style="color: #5e9ca0;">Natural Scenes Visual Discrimination Puzzle Dataset</h1>
+
+Classes of puzzles: each link leads to a class of puzzles with similar intended solutions.
+<dir>
+{puzzle_class_list}
+</dir>
+

@@ -1,0 +1,18 @@
+{
+    "agreement":                ["color", "material"],
+    "alternation":              ["color", "size", "material"],
+    "alternate-color":          ["color", "material"],
+    "aphaeresis":               ["color", "size", "material"],
+    "apocope":                  ["color", "material"],
+    "assimilation":             ["color", "material"],
+    "groundtruth":              ["color", "shape", "material"],
+    "breaking":                 ["color", "size", "material"],
+    "circle-at-ends":           ["color", "material"],
+    "devoicing":                ["color", "material"],
+    "spy":                      ["color", "size", "material"],
+    "shield":                   ["color", "size"],
+    "surround":                 ["color"],
+    "threepack":                ["color", "shape", "material"],
+    "meeussen":                 ["color", "material"],
+    "train":                    ["color", "size"]
+}

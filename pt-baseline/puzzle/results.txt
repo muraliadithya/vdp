@@ -1,0 +1,6 @@
+dist b/w pplwearinghats5.jpeg & pplwearinghats2.jpeg = 0.6534202510884753
+dist b/w pplwearinghats5.jpeg & manwithoutshirt3.jpeg = 1.3644771664535287
+dist b/w pplwearinghats1.jpeg & pplwearinghats2.jpeg = 1.0312150461848113
+dist b/w pplwearinghats1.jpeg & manwithoutshirt3.jpeg = 1.0267972771797838
+dist b/w pplwearinghats3.jpeg & pplwearinghats2.jpeg = 0.7678668234821121
+dist b/w pplwearinghats3.jpeg & manwithoutshirt3.jpeg = 1.238388072039314

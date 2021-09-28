@@ -16,7 +16,7 @@ _irgroup = argparser.add_argument_group('IR handling arguments')
 
 _irgroup.add_argument('puzzle_folder_path', metavar='puzzlepath', 
                       type=lambda x: argparse_extend.dir_path_type(x, 'puzzlepath'), 
-                      help='Folder containing IRs for training and candidate models')
+                      help='Folder containing IRs for example and candidate models')
 
 # Optional arguments to configure IR loading
 _irgroup.add_argument('--ir-config', choices=['Simple', 'ObjRelFilter', 'StructuredLabelDomain', 

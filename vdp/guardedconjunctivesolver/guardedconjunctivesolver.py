@@ -21,18 +21,6 @@ class GuardedConjunctiveSolver:
         self.num_quantified_vars = num_vars
         self.options = {}
 
-    # Setter methods for solver attributes
-    def _set_num_vars(self, num_vars):
-        self.num_quantified_vars = num_vars
-
-    def set_options(self, constraint_type, constraint_value):
-        """
-        This is a generic function that adds to a dictionary of options. The key is a string representing the type
-        of constraint and the value is any value.
-        The options type and values are interpreted by the particular solver class implementation.
-        """
-        self.options[constraint_type] = constraint_value
-
     def solve(self, vdppuzzle):
         """
         This represents the core functionality of the solver class. It takes a VDPPuzzle object and finds a

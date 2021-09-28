@@ -13,11 +13,10 @@ import utils.argparse_extend as argparse_extend
 argparser = argparse.ArgumentParser(prog='guardedconjunctivesolver/solve_puzzle',
                                     description='Help for solver that searches guarded conjunctive prenex formulas.')
 
-# Arguments for formula shape
-argparser.add_argument('num_vars', type=int, metavar='N', help='Number of quantifiers')
-argparser.add_argument('-C', '--num-conjuncts', type=int, dest='num_conjuncts', 
-                       default=None, 
-                       help='Maximum number of conjuncts in the matrix')
+# Arguments for formula size
+argparser.add_argument('size', nargs='+', type=int, action=argparse_extend.variable_length(1, 2),
+                       help='Size of discriminator q [c], where q is a bound on the number of quantifiers '
+                            'and c is an optional bound on the number of conjuncts for formulae with q quantifiers.')
 
 
 # Arguments for specifying parts of the formula
@@ -59,4 +58,5 @@ argparser.add_argument('--no-vacuity', action='store_true', dest='no_vacuity',
 
 
 # Put positionals at the beginning of usage text for clarity
-argparse_extend.positionals_beginning_usage_text(argparser)
+# Suppressing currently existing way to do this as it does not work when positionals have nargs=+
+# argparse_extend.positionals_beginning_usage_text(argparser)

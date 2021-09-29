@@ -332,7 +332,7 @@ def cli_main(args=None):
     seed_everything(0)
     dm = VDPDataModule()
     height = 320
-    model = VAE(input_height=height)
+    model = VAE(input_height=height).from_pretrained("cifar10-resnet18")
     model_str = f"puzzle-pretrained-{height}-vae"
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="val_loss",

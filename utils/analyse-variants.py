@@ -1,4 +1,4 @@
-import os, re, json, subprocess, shlex, sys, shutil
+import os, re, json, subprocess, shlex, sys, shutil, pickle
 from glob import glob
 from copy import deepcopy
 from common import *
@@ -22,7 +22,7 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-variants"
+in_pth  = "data/clevr-cleaned-variants"
 
 def exec_cmd(cmd):
     print(f"LOG: exec_cmd({cmd})")
@@ -46,12 +46,13 @@ if __name__ == '__main__':
     assert os.path.exists(in_pth), f"Path not found: {in_pth}"
     if len(sys.argv) > 1: to_run = [sys.argv[1]]
     puzzles = []
-    pred_solver, pred_base = list(), list()
+    
+    preds, pred_solver, pred_base = list(), list(), list()
     for (absdir, folders, files) in os.walk(in_pth, followlinks=False):
         if absdir == in_pth:
             puzzles = [os.path.join(in_pth, p) for p in folders]
         if absdir in puzzles:
-            print(absdir)
+            # print(absdir)
             puzzle_name = os.path.basename(absdir)
             if ("*" in puzzle_name) or (puzzle_name not in to_run):
                 continue
@@ -64,7 +65,7 @@ if __name__ == '__main__':
                 gen_pth = os.path.join(v_dir, f"{full_v_name}.json")
                 out_pth = os.path.join(v_dir, f"{full_v_name}.out")
                 
-                print("RUNNING", gt_pth)
+                # print("RUNNING", gt_pth)
                 if not os.path.exists(out_pth):
                     print("BAD", gt_pth)
                     continue
@@ -76,9 +77,14 @@ if __name__ == '__main__':
                 baseline_pred = concepts[-1]['bcandidate'].groups()[0]
                 pred_base.append(int(baseline_pred))
                 pred_solver.append(int(solver_pred))
-                
+                preds.append((puzzle_name, v_name, v_dir, int(baseline_pred), int(solver_pred)))
+
+
     pred_base   = np.array(pred_base)
     pred_solver = np.array(pred_solver)
+
+    with open("analysis/baseline_solver_preds.pkl", "wb") as fp:
+        pickle.dump(preds, fp)
 
     print(f"SOLVER   ACCURACY: {(pred_solver == 0).sum() / len(pred_solver)}")
     print(f"BASELINE ACCURACY: {(pred_base == 0).sum()   / len(pred_base)  }")

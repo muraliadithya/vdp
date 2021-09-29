@@ -55,23 +55,7 @@ yolo_rx_dict = {
 
 img_template = '%s%%0%dd.png' % ('CLEVR_val_', 6)
 
-flags = {
-    'agreement' :           "- 3 -N 100 -C 2",
-    'alternate-color' :     "- 2 -N 100 -C 2",
-    'alternation' :         "- 2 -N 100 -C 1",
-    'aphaeresis' :          "- 3 -N 100 -C 1",
-    'apocope' :             "- 2 -N 100 -C 1",
-    'assimilation' :        "- 2 -N 100 -C 1", 
-    'breaking' :            "- 2 -N 100 -C 2",
-    'circle-at-ends' :      "- 3 -N 100 -C 2",
-    'threepack' :           "- 3 -N 100 -C 2",
-    'train' :               "- 2 -N 100 -C 2",
-    'partition':            "- 2 -N 100 -C 2",
-    'spy' :                 "- 2 -N 100 -C 2",
-    'shield' :              "- 2 -N 100 -C 1",
-    'devoicing' :           "- 3 -N 100",     # -C 3 
-    'meeussen' :            "- 2 -N 100 -C 2",
-}
+flags = {('agreement', False): [0, 24], ('alternate-color', False): [25, 49], ('alternation', False): [50, 146], ('alternation', True): [51, 149], ('aphaeresis', False): [150, 174], ('apocope', False): [175, 247], ('apocope', True): [176, 249], ('assimilation', False): [250, 346], ('assimilation', True): [251, 349], ('breaking', False): [350, 398], ('breaking', True): [351, 399], ('circle-at-ends', False): [400, 448], ('circle-at-ends', True): [401, 449], ('devoicing', False): [450, 498], ('devoicing', True): [451, 499], ('meeussen', False): [500, 524], ('partition', False): [525, 549], ('shield', False): [550, 646], ('shield', True): [551, 649], ('spy', False): [650, 722], ('spy', True): [651, 724], ('threepack', False): [725, 773], ('threepack', True): [726, 774], ('train', False): [775, 823], ('train', True): [776, 824]}
 
 
 swap_list = {

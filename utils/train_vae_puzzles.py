@@ -46,6 +46,61 @@ to_run = [
     # "cones*",
 ]
 
+# key = (puzzle, is_swap)
+pz_partition = {
+                ('agreement', False): [0, 24],
+                ('alternate-color', False): [25, 49],
+                ('alternation', False): [50, 74],
+                ('alternation', True): [375, 449],
+                ('aphaeresis', False): [75, 99],
+                ('apocope', False): [100, 124],
+                ('apocope', True): [450, 499],
+                ('assimilation', False): [125, 149],
+                ('assimilation', True): [500, 574],
+                ('breaking', False): [150, 174],
+                ('breaking', True): [575, 599],
+                ('circle-at-ends', False): [175, 199],
+                ('circle-at-ends', True): [600, 624],
+                ('devoicing', False): [200, 224],
+                ('devoicing', True): [625, 649],
+                ('meeussen', False): [225, 249],
+                ('partition', False): [250, 274],
+                ('shield', False): [275, 299],
+                ('shield', True): [650, 724],
+                ('spy', False): [300, 324],
+                ('spy', True): [725, 774],
+                ('threepack', False): [325, 349],
+                ('threepack', True): [775, 799],
+                ('train', False): [350, 374],
+                ('train', True): [800, 824]
+}
+
+            
+train_on = [
+    ('apocope',     False),
+    ('circle-at-ends', False),
+    ('devoicing',      False),
+    ('spy',            False),
+]
+
+test_on = [
+    ('agreement',      False),
+    ('alternate-color',False),
+    ('alternation',    False),
+    ('aphaeresis',     False),
+    # ('apocope',        False),
+    ('assimilation',   False),
+    ('breaking',       False),
+    # ('circle-at-ends', False),
+    # ('devoicing',      False),
+    ('meeussen',       False),
+    ('partition',      False),
+    ('shield',         False),
+    # ('spy',            False),
+    ('threepack',      False),
+    ('train',          False),
+]
+
 pz_pth = "data/clevr-cleaned-variants/"
 
 
@@ -183,7 +238,7 @@ class VAE(LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
         lrs = {
         'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, threshold=0.001),
-        'monitor' : 'val_loss'}
+        'monitor' : 'train_loss'}
         return {"optimizer": optimizer, "lr_scheduler": lrs}
 
     @staticmethod
@@ -210,28 +265,36 @@ class VAE(LightningModule):
 
         return parser
 
-class CLEVR(torch.utils.data.Dataset):
-    def __init__(self, pz_pth, split):
+class VDPImage(torch.utils.data.Dataset):
+    def __init__(self, pz_pth, puzzles, filter_set):
         self.all_imgs = list()
-        self.all_imgs += glob( os.path.join(pz_pth, split, "*.png") )
-        # for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
-        #     if absdir == pz_pth:
-        #         puzzles = [os.path.join(pz_pth, p) for p in folders]
-        #     if absdir in puzzles:
-        #         puzzle_name = os.path.basename(absdir)
-        #         if ("*" in puzzle_name) or (puzzle_name not in to_run):
-        #             continue
-        #         for v_dir in glob(os.path.join(absdir, "*")):
-        #             if "swap" in v_dir:
-        #                 continue
-        #             v_name = os.path.basename(v_dir)
-        #             images = sorted(glob(os.path.join(v_dir, f"CLEVR_{puzzle_name}-{v_name}_*.png")))
-        #             self.all_imgs.extend(images)
-        #             # puzzle_name, variant_number = os.path.basename(absdir).split("-fovariant-")
-        #             # if ("*" in puzzle_name) or (puzzle_name not in to_run):
-        #             #     continue
-        #             # pth = os.path.join(absdir, "filter-1.pkl")
-        #             # self.all_pths.append(pth)
+        self.all_swaps = list()
+        for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
+            if absdir == pz_pth:
+                puzzles = [os.path.join(pz_pth, p) for p in folders]
+            if absdir in puzzles:
+                puzzle_name = os.path.basename(absdir)
+                if ("*" in puzzle_name) or (puzzle_name not in to_run):
+                    continue
+                for v_dir in glob(os.path.join(absdir, "*")):
+                    if ".pkl" in v_dir or '.json' in v_dir:
+                        continue
+                    if (puzzle_name, 'swap' in v_dir) not in filter_set:
+                        continue
+                    v_name = os.path.basename(v_dir)
+                    images = sorted(glob(os.path.join(v_dir, f"CLEVR_{puzzle_name}-{v_name}_*.png")))
+                    if "swap" in v_dir:
+                        self.all_swaps.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
+                        continue
+                    self.all_imgs.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
+                    # puzzle_name, variant_number = os.path.basename(absdir).split("-fovariant-")
+                    # if ("*" in puzzle_name) or (puzzle_name not in to_run):
+                    #     continue
+                    # pth = os.path.join(absdir, "filter-1.pkl")
+                    # self.all_pths.append(pth)
+        
+        self.all_imgs.extend(self.all_swaps)
+        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: ('swap' in x[2], x[2])))
 
         transform_list = [transforms.ToPILImage(),
                         transforms.Resize((320, 320)),
@@ -239,36 +302,38 @@ class CLEVR(torch.utils.data.Dataset):
                         transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])]
         self.transform = transforms.Compose(transform_list)
 
+
     def __len__(self):
-        return len(self.all_imgs)
+        return len(self.all_imgs) * N_IMG_PER_PUZZLE
 
-    def __getitem__(self, idx):
-        img_pth   = self.all_imgs[idx]
-        img       = cv2.imread(img_pth)
-        img_procd = self.transform(img)
-        return img_procd
+    def __getitem__(self, img_idx):
+        pz_idx = img_idx // N_IMG_PER_PUZZLE
+        img_off = img_idx % N_IMG_PER_PUZZLE
+        imgs, label, v_dir = self.all_imgs[pz_idx]
+        img = self.transform(cv2.imread(imgs[img_off]))
+        return img
 
 
-class CLEVRDataModule(pl.LightningDataModule):
+class VDPDataModule(pl.LightningDataModule):
     def setup(self, stage):
-        pz_pth = "data/clevr/CLEVR_v1.0/images"
-        self.train_set = CLEVR(pz_pth, 'train')
-        self.val_set   = CLEVR(pz_pth, 'val')
-        # self.train_set = torch.utils.data.Subset(self.allset, list(range(0, 200 * 6)))
-        # self.test_set  = torch.utils.data.Subset(self.allset, list(range(300 * 6, 375 * 6)))
+        self.train_set   = VDPImage(pz_pth, to_run, train_on)
+        self.testing_set = VDPImage(pz_pth, to_run, test_on)
 
     def train_dataloader(self):
         return DataLoader(self.train_set, batch_size=4, num_workers=4, pin_memory=True)
 
     def val_dataloader(self):
-        return DataLoader(self.val_set, batch_size=4, num_workers=1, pin_memory=True)
+        return DataLoader(self.testing_set, batch_size=4, num_workers=4, pin_memory=True)
+
+
+
 
 def cli_main(args=None):
     seed_everything(0)
-    dm = CLEVRDataModule()
+    dm = VDPDataModule()
     height = 320
     model = VAE(input_height=height)
-    model_str = f"clevr-pretrained-{height}-vae"
+    model_str = f"puzzle-pretrained-{height}-vae"
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="val_loss",
             dirpath="data/prototype/",

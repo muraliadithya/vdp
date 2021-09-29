@@ -61,36 +61,43 @@ pz_partition = {
 
             
 train_on = [
-    ('aphaeresis',     False),
-    ('circle-at-ends', False),
-    ('devoicing',      False),
-    ('spy',            False),
+    ('agreement',   False),
+    ('threepack',   False),
+    ('assimilation',False),
+    ('breaking',    False),
 ]
 
 test_on = [
-    ('agreement',      False),
-    ('alternate-color',False),
-    ('alternation',    False),
-    # ('aphaeresis',     False),
-    ('apocope',        False),
-    ('assimilation',   False),
-    ('breaking',       False),
-    # ('circle-at-ends', False),
-    # ('devoicing',      False),
-    ('meeussen',       False),
-    ('partition',      False),
-    ('shield',         False),
-    # ('spy',            False),
-    ('threepack',      False),
-    ('train',          False),
+    # ('agreement', False),
+    ('alternate-color', False),
+    ('alternation', False),
+    ('alternation', True),
+    ('aphaeresis', False),
+    # # ('apocope', False),
+    ('apocope', True),
+    # ('assimilation', False),
+    ('assimilation', True),
+    # ('breaking', False),
+    ('breaking', True),
+    # # ('circle-at-ends', False),
+    ('circle-at-ends', True),
+    # # ('devoicing', False),
+    ('devoicing', True),
+    ('meeussen', False),
+    ('partition', False),
+    ('shield', False),
+    ('shield', True),
+    # # ('spy', False),
+    ('spy', True),
+    # ('threepack', False),
+    ('threepack', True),
+    ('train', False),
+    ('train', True),
 ]
 
 pz_pth = "data/clevr-cleaned-variants/"
 
-
-pz_pth = "data/clevr-cleaned-variants/"
-
-LATENT_DIM = 1024
+LATENT_DIM = 512
 LR         = 3e-3
 
 ############### CONSTANTS END ###############
@@ -105,7 +112,7 @@ class PrototypeVAE(pl.LightningModule):
             param.requires_grad = False
 
         # self.net = MLPEncoder(dict(input_dim=LATENT_DIM, hidden_dim=MLP_DIM, output_dim=LATENT_DIM))
-        self.net = torch.nn.Sequential(torch.nn.Linear(512, self.dim), torch.nn.ReLU(), torch.nn.Linear(self.dim, 512))
+        self.net = torch.nn.Sequential(torch.nn.Linear(LATENT_DIM, self.dim), torch.nn.ReLU(), torch.nn.Linear(self.dim, LATENT_DIM))
         # self.save_hyperparameters()
 
 
@@ -113,14 +120,23 @@ class PrototypeVAE(pl.LightningModule):
         '''L2 norm'''
         return torch.norm(diff, p=2, dim=axis)
 
-    def forward_naive(self, x, candidate_idx):
-        x = x.squeeze(0).view(6, -1)
-        img_embedding = self.pt_net(x)
-        embeddings    = self.net(img_embedding)
-        query         = embeddings[candidate_idx]    # (3, 512)
-        support       = embeddings[~candidate_idx]   # (3, 512)
-        prototype     = torch.norm(support, dim=0)
-        return F.softmax(self.dist(query - prototype), dim=0)
+    def forward_naive(self, batch):
+        x, y = batch
+        y = y.squeeze(0)
+        candidate_mask   = (y == 0) | (y == 1) | (y == 2)
+        target_mask      = (y[candidate_mask] == 0)
+        embeddings       = self.forward(x)
+
+        candidates       = embeddings[candidate_mask]
+        pos              = torch.norm(embeddings[~candidate_mask], dim=0)
+        candidate_scores = self.dist(candidates - pos)
+        chosen_candidate = torch.argmax(candidate_scores)
+        return chosen_candidate
+
+        return torch.argmax(candidate_scores) == torch.argmax(target_mask.long())
+        loss = self.eval_loss(embeddings, target, candidates)
+
+
 
     def forward(self, x):
         x = x.squeeze(0)
@@ -129,9 +145,9 @@ class PrototypeVAE(pl.LightningModule):
         return embeddings
 
     def training_loss(self, embeddings, target_mask, neg_mask, pos_mask):
-        query = embeddings[target_mask]                    # (512)
-        neg   = embeddings[neg_mask]                       # (2, 512)
-        pos   = torch.norm(embeddings[pos_mask], dim=0)    # (512)
+        query = embeddings[target_mask]                    # (LATENT_DIM)
+        neg   = embeddings[neg_mask]                       # (2, LATENT_DIM)
+        pos   = torch.norm(embeddings[pos_mask], dim=0)    # (LATENT_DIM)
         
         q_neg = self.dist(neg - query)
         q_pos = self.dist(pos - query).squeeze(0)
@@ -140,6 +156,8 @@ class PrototypeVAE(pl.LightningModule):
         score = (q_pos + torch.log( torch.sum(torch.exp(-1 * q_neg)) +  torch.exp(-1 * q_pos) )) / 2
         return score
    
+
+    
     def eval_loss(self, embeddings, target_mask, candidate_mask):
         candidates = embeddings[candidate_mask]
         pos        = torch.norm(embeddings[~candidate_mask], dim=0)
@@ -153,7 +171,8 @@ class PrototypeVAE(pl.LightningModule):
         target     = (y == 0)
         embeddings = self.forward(x)
         loss = self.training_loss(embeddings, target, target ^ candidates, ~candidates)
-        self.log('train_loss', loss, prog_bar=True)
+        logs = {'loss' : loss}
+        self.log_dict({f"train_{k}": v for k, v in logs.items()}, on_step=True, on_epoch=False)
         return loss
 
     def validation_step(self, val_batch, batch_idx):
@@ -163,14 +182,17 @@ class PrototypeVAE(pl.LightningModule):
         target     = (y[candidates] == 0)
         embeddings = self.forward(x)
         loss = self.eval_loss(embeddings, target, candidates)
-        self.log('accuracy', loss, prog_bar=True)
+        logs = {'accuracy' : loss}
+        self.log_dict({f"val_{k}": v for k, v in logs.items()})
+        return loss
+
 
     def configure_optimizers(self):
         optimizer = torch.optim.Adam(self.parameters(), lr=LR)
         lrs = {
         'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, threshold=0.01),
-        'monitor' : 'train_loss',
-    }
+        'monitor' : 'train_loss'}
+
         return {"optimizer": optimizer, "lr_scheduler": lrs}
 
 
@@ -203,7 +225,7 @@ class VDPImage(torch.utils.data.Dataset):
         
         self.all_imgs.extend(self.all_swaps)
 
-        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: x[2]))
+        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: ('swap' in x[2], x[2])))
 
         transform_list = [transforms.ToPILImage(),
                         transforms.Resize((320, 320)),
@@ -217,7 +239,6 @@ class VDPImage(torch.utils.data.Dataset):
 
     def __getitem__(self, pz_idx):
         imgs, label, v_dir = self.all_imgs[pz_idx]
-        assert len(imgs),  f"{imgs}"
         img_procd = torch.stack([self.transform(cv2.imread(img)) for img in imgs])
         return img_procd, label
 
@@ -227,10 +248,7 @@ class VDPDataModule(pl.LightningDataModule):
         self.allset = VDPImage(pz_pth, to_run)
         training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : pz_partition[x], train_on)]))
         testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : pz_partition[x], test_on)]))
-
         self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
-        # self.test_set  = torch.utils.data.Subset(self.allset, list(range(300, 325)))
-        # self.test_set  = torch.utils.data.Subset(self.allset, list(range(325, 350)))
         self.test_set  = torch.utils.data.Subset(self.allset, testing_idxs)
 
     def train_dataloader(self):
@@ -240,20 +258,17 @@ class VDPDataModule(pl.LightningDataModule):
         return DataLoader(self.test_set, batch_size=1, num_workers=4, pin_memory=True)
 
 
-
 if __name__ == "__main__":
     seed_everything(0, workers=True)
     data_module = VDPDataModule()
     height = 320
-    model = VAE(input_height=height)
-    model_str = f"prototype-{height}-net"
-
+    model_str = f"puzzle-prototype-{height}-net"
     model_vae = VAE(height)
-    model_vae = model_vae.load_from_checkpoint(f"data/prototype/pretrained-{height}-vae-final.ckpt", strict=False, input_height=height)
+    model_vae = model_vae.load_from_checkpoint(f"data/prototype/puzzle-pretrained-{height}-vae-final.ckpt", strict=False, input_height=height)
     model = PrototypeVAE(model_vae)
     
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
-            monitor="train_loss",
+            monitor="accuracy",
             dirpath="data/prototype/",
             filename= model_str + "-{epoch:02d}-{accuracy:.2f}",
             save_top_k=1,
@@ -263,15 +278,18 @@ if __name__ == "__main__":
 
     trainer = pl.Trainer(
         gpus=1,
-        check_val_every_n_epoch=5,
-        logger=csv_logger,
         callbacks=[checkpoint_callback, lr_monitor],
-        max_epochs=50)
+        logger=csv_logger,
+        max_epochs=50,
+        check_val_every_n_epoch=5
+        )
 
-    trainer.fit(model, data_module)
+    trainer.fit(model, datamodule=data_module)
     trainer.save_checkpoint(f"data/prototype/{model_str}-final.ckpt")
     print("Saved ckpt!")
 
-    pt_model = model.load_from_checkpoint(f"data/prototype/{model_str}-final.ckpt", pretrained_vae=model_vae)
+    pt_model = PrototypeVAE(model_vae)
+    pt_model = pt_model.load_from_checkpoint(f"data/prototype/{model_str}-final.ckpt", pretrained_vae=model_vae)
     data_module.setup(None)
     trainer.validate(pt_model, val_dataloaders=data_module.val_dataloader())
+

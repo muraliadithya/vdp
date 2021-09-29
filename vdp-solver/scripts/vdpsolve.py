@@ -17,8 +17,7 @@ relevant outputs be returned in a form that can be used to initialise a logging 
 
 import argparse
 import importlib
-import os, sys
-sys.path.append("/home/ubuntu/vdp-tool-chain-repo/vdp-solver")
+
 import utils.argparse_extend as argparse_extend
 import utils.importlib_extend as importlib_extend
 import ir.ir as irmodule

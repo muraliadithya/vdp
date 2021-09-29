@@ -26,7 +26,7 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-n_variants = 50
+n_variants = 25
 # PERCENT_SIMPLE = 0.5
 out_dir = 'data/clevr-variants/'
 pz_pth  = "data/clevr-cleaned-puzzles"
@@ -54,15 +54,15 @@ def collect_attr(scene, i):
 
 def jitter(pos, scene_x, scene_y):
     x, y, z = pos
-    rx = x + np.random.uniform(-0.05, 0.05)
-    ry = y + np.random.uniform(-0.05, 0.05)
+    rx = x + np.random.uniform(-0.02, 0.02)
+    ry = y + np.random.uniform(-0.02, 0.02)
 
     return [round(rx + scene_x, 3), round(ry + scene_y, 3), z]
 
 def publish_attr(i, in_scene, properties):
     out_scene = deepcopy(in_scene)
-    scene_x_jitter = np.random.uniform(-0.1, 0.1)
-    scene_y_jitter = np.random.uniform(-0.1, 0.1)
+    scene_x_jitter = np.random.uniform(-0.05, 0.05)
+    scene_y_jitter = np.random.uniform(-0.05, 0.05)
     for j, obj in enumerate(in_scene['objects']):
         out_scene['objects'][j] = {
             'shape': properties['shape'][(i,j)],

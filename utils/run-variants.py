@@ -4,6 +4,7 @@ from copy import deepcopy
 import numpy as np
 from common import *
 ############### CONSTANTS START ###############
+# start on Tue Sep 28 16:42:43 UTC 2021
 to_run = [
         "agreement",
         "alternate-color",
@@ -13,17 +14,17 @@ to_run = [
         "assimilation",
         "breaking",
         "circle-at-ends",
-        "threepack",
-        "train",
-        "partition",
-        "spy",
-        "shield",
-        "devoicing",
-        "meeussen",
+        # "threepack",
+        # "train",
+        # "partition",
+        # "spy",
+        # "shield",
+        # "devoicing",
+        # "meeussen",
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-variants"
+in_pth  = "data/clevr-cleaned-variants"
 
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############

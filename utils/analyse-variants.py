@@ -22,7 +22,18 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-cleaned-variants"
+in_pth  = "data/clevr-variants"
+
+def exec_cmd(cmd):
+    print(f"LOG: exec_cmd({cmd})")
+    try:
+        raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True)
+        output = raw_output.split("\n")
+        return output
+    except subprocess.CalledProcessError as e:
+        print(f"LOG: exec_cmd({cmd}) failed with err: {e.returncode}", f"\n{e.output}")
+        return None
+
 
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -45,13 +56,22 @@ if __name__ == '__main__':
             if ("*" in puzzle_name) or (puzzle_name not in to_run):
                 continue
             for v_dir in glob(os.path.join(absdir, "*")):
+                if ('.json' in v_dir) or ('.pkl' in v_dir):
+                    continue
                 v_name = os.path.basename(v_dir)
                 full_v_name = f"{puzzle_name}-{v_name}"
                 gt_pth = os.path.join(v_dir, f"{full_v_name}-gt.json")
                 gen_pth = os.path.join(v_dir, f"{full_v_name}.json")
                 out_pth = os.path.join(v_dir, f"{full_v_name}.out")
+                
                 print("RUNNING", gt_pth)
+                if not os.path.exists(out_pth):
+                    print("BAD", gt_pth)
+                    continue
                 concepts = out_parser(out_pth)
+                if 'candidate' not in concepts[0]:
+                    print("BAD", gt_pth)
+                    continue
                 solver_pred = os.path.basename(concepts[0]['candidate'].groups()[0]).split(".json")[0]
                 baseline_pred = concepts[-1]['bcandidate'].groups()[0]
                 pred_base.append(int(baseline_pred))

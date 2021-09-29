@@ -271,8 +271,14 @@ def parse_solver_output(out):
     return concepts
 
 def out_parser(out_pth):
+    # if 'swap' in out_pth:
+    #     pz_pth = os.path.dirname(out_pth)
+    #     pzname, swap_ext = os.path.basename(out_pth).split("-swap")
+    #     swap, ext = os.path.splitext(swap_ext)
+    #     out_pth = os.path.join(pz_pth, pzname +  ext)
     assert os.path.exists(out_pth), f"path not found w.r.t {os.getcwd()}"
     out = read_txt(out_pth)
+
 
     concepts = []
     gen = get_rx_lines(out, rx_dict)

@@ -221,7 +221,6 @@ class VDPOnlyImageModule(pl.LightningDataModule):
         self.allset = common.VDPImage(pz_pth=pz_pth, to_run=to_run, images_only=True)
         training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.vae_train_on)]))
         # testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_train_on)]))
-
         self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
         self.test_set  = torch.utils.data.Subset(self.allset, list(range(300, 325)) )
 

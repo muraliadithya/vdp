@@ -366,8 +366,9 @@ proto_test_on_large = list( set(list(pz_partition.keys())) - set(proto_train_on)
 
 ###### PYTORCH STUFF    ##########
 class VDPImage(torch.utils.data.Dataset):
-    def __init__(self, pz_pth, to_run, images_only=False):
+    def __init__(self, pz_pth, to_run, images_only=False, emit_path=False):
         self.images_only = images_only
+        self.emit_path = emit_path
         self.all_imgs = list()
         self.all_swaps = list()
         for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
@@ -393,8 +394,7 @@ class VDPImage(torch.utils.data.Dataset):
                     # self.all_pths.append(pth)
         
         self.all_imgs.extend(self.all_swaps)
-
-        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: x[2]))
+        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: ('swap' in x[2], x[2]) ))
         
         transform_list = [
                             transforms.ToPILImage(),
@@ -418,4 +418,6 @@ class VDPImage(torch.utils.data.Dataset):
             return img_procd
         imgs, label, v_dir = self.all_imgs[pz_idx]
         img_procd = torch.stack([self.transform(cv2.imread(img)) for img in imgs])
+        if self.emit_path:
+            return img_procd, label, v_dir
         return img_procd, label

@@ -101,7 +101,8 @@ LR         = 3e-4
 ############### CONSTANTS END ###############
 
 class VDPImage(torch.utils.data.Dataset):
-    def __init__(self, pz_pth, to_run):
+    def __init__(self, pz_pth, to_run, images_only=False):
+        self.images_only = images_only
         self.all_imgs = list()
         self.all_swaps = list()
         for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
@@ -128,7 +129,8 @@ class VDPImage(torch.utils.data.Dataset):
         
         self.all_imgs.extend(self.all_swaps)
 
-        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: x[2]))
+        # self.all_imgs = list(sorted(self.all_imgs, key=lambda x: x[2]))
+        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: ('swap' in x[2], x[2]) ))
         
         transform_list = [
                             transforms.ToPILImage(),
@@ -140,9 +142,16 @@ class VDPImage(torch.utils.data.Dataset):
 
 
     def __len__(self):
+        if self.images_only:
+            return len(self.all_imgs) * 6
         return len(self.all_imgs)
 
     def __getitem__(self, pz_idx):
+        if self.images_only:
+            imgs, label, v_dir = self.all_imgs[pz_idx // 6]
+            img = imgs[pz_idx % 6]
+            img_procd = self.transform(cv2.imread(img))
+            return img_procd
         imgs, label, v_dir = self.all_imgs[pz_idx]
         img_procd = torch.stack([self.transform(cv2.imread(img)) for img in imgs])
         return img_procd, label, v_dir

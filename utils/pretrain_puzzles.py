@@ -1,6 +1,3 @@
-"""train the vae on puzzles instead of clevr domain images"""
-"""From https://github.com/PyTorchLightning/lightning-bolts/blob/master/pl_bolts/models/autoencoders/basic_vae/basic_vae_module.py """
-from pickle import FALSE
 import urllib.parse
 from argparse import ArgumentParser
 import os, cv2
@@ -11,10 +8,12 @@ from torch.utils.data import DataLoader
 from pytorch_lightning import LightningModule, Trainer, seed_everything
 from torch import nn
 from torch.nn import functional as F
+from pytorch_lightning.loggers import CSVLogger
 from pytorch_lightning.callbacks import LearningRateMonitor
 from pl_bolts import _HTTPS_AWS_HUB
+import common
+import itertools
 from pl_bolts.datamodules.vision_datamodule import VisionDataModule
-from pytorch_lightning.loggers import CSVLogger
 from pl_bolts.models.autoencoders.components import (
     resnet18_decoder,
     resnet18_encoder,
@@ -22,9 +21,7 @@ from pl_bolts.models.autoencoders.components import (
     resnet50_encoder,
 )
 import torchvision.transforms as transforms
-import itertools
 
-############### CONSTANTS START ###############
 ############### CONSTANTS START ###############
 to_run = [
     "agreement",
@@ -47,13 +44,22 @@ to_run = [
 ]
 
 pz_pth = "data/clevr-cleaned-variants/"
-
-
-N_IMG_PER_PUZZLE = 6
+LATENT_DIM = 512
 
 ############### CONSTANTS END ###############
 
 class VAE(LightningModule):
+    """Standard VAE with Gaussian Prior and approx posterior.
+    Model is available pretrained on different datasets:
+    Example::
+        # not pretrained
+        vae = VAE()
+        # pretrained on cifar10
+        vae = VAE(input_height=32).from_pretrained('cifar10-resnet18')
+        # pretrained on stl10
+        vae = VAE(input_height=32).from_pretrained('stl10-resnet18')
+    """
+
     pretrained_urls = {
         "cifar10-resnet18": urllib.parse.urljoin(_HTTPS_AWS_HUB, "vae/vae-cifar10/checkpoints/epoch%3D89.ckpt"),
         "stl10-resnet18": urllib.parse.urljoin(_HTTPS_AWS_HUB, "vae/vae-stl10/checkpoints/epoch%3D89.ckpt"),
@@ -124,7 +130,7 @@ class VAE(LightningModule):
         if checkpoint_name not in VAE.pretrained_urls:
             raise KeyError(str(checkpoint_name) + " not present in pretrained weights.")
 
-        return self.load_from_checkpoint(VAE.pretrained_urls[checkpoint_name], strict=False)
+        return self.load_from_checkpoint(VAE.pretrained_urls[checkpoint_name], strict=False, input_height=self.input_height)
 
     def forward(self, x):
         x = self.encoder(x)
@@ -183,7 +189,7 @@ class VAE(LightningModule):
         optimizer = torch.optim.Adam(self.parameters(), lr=self.lr)
         lrs = {
         'scheduler': torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=5, threshold=0.001),
-        'monitor' : 'val_loss'}
+        'monitor' : 'train_loss'}
         return {"optimizer": optimizer, "lr_scheduler": lrs}
 
     @staticmethod
@@ -210,89 +216,48 @@ class VAE(LightningModule):
 
         return parser
 
-class CLEVR(torch.utils.data.Dataset):
-    def __init__(self, pz_pth, split):
-        self.all_imgs = list()
-        self.all_imgs += glob( os.path.join(pz_pth, split, "*.png") )
-        # for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
-        #     if absdir == pz_pth:
-        #         puzzles = [os.path.join(pz_pth, p) for p in folders]
-        #     if absdir in puzzles:
-        #         puzzle_name = os.path.basename(absdir)
-        #         if ("*" in puzzle_name) or (puzzle_name not in to_run):
-        #             continue
-        #         for v_dir in glob(os.path.join(absdir, "*")):
-        #             if "swap" in v_dir:
-        #                 continue
-        #             v_name = os.path.basename(v_dir)
-        #             images = sorted(glob(os.path.join(v_dir, f"CLEVR_{puzzle_name}-{v_name}_*.png")))
-        #             self.all_imgs.extend(images)
-        #             # puzzle_name, variant_number = os.path.basename(absdir).split("-fovariant-")
-        #             # if ("*" in puzzle_name) or (puzzle_name not in to_run):
-        #             #     continue
-        #             # pth = os.path.join(absdir, "filter-1.pkl")
-        #             # self.all_pths.append(pth)
-
-        transform_list = [transforms.ToPILImage(),
-                        transforms.Resize((320, 320)),
-                        transforms.ToTensor(),
-                        transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])]
-        self.transform = transforms.Compose(transform_list)
-
-    def __len__(self):
-        return len(self.all_imgs)
-
-    def __getitem__(self, idx):
-        img_pth   = self.all_imgs[idx]
-        img       = cv2.imread(img_pth)
-        img_procd = self.transform(img)
-        return img_procd
-
-
-class CLEVRDataModule(pl.LightningDataModule):
+class ConvDataModule(pl.LightningDataModule):
     def setup(self, stage):
-        pz_pth = "data/clevr/CLEVR_v1.0/images"
-        self.train_set = CLEVR(pz_pth, 'train')
-        self.val_set   = CLEVR(pz_pth, 'val')
-        # self.train_set = torch.utils.data.Subset(self.allset, list(range(0, 200 * 6)))
-        # self.test_set  = torch.utils.data.Subset(self.allset, list(range(300 * 6, 375 * 6)))
+        self.allset = common.VDPImage(pz_pth=pz_pth, to_run=to_run, images_only=True)
+        training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.vae_train_on)]))
+        # testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_train_on)]))
+
+        self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
+        self.test_set  = torch.utils.data.Subset(self.allset, list(range(300, 325)) )
 
     def train_dataloader(self):
         return DataLoader(self.train_set, batch_size=4, num_workers=4, pin_memory=True)
 
     def val_dataloader(self):
-        return DataLoader(self.val_set, batch_size=4, num_workers=1, pin_memory=True)
+        return DataLoader(self.test_set, batch_size=4, num_workers=1, pin_memory=True)
 
 def cli_main(args=None):
     seed_everything(0)
-    dm = CLEVRDataModule()
+    dm = ConvDataModule()
     height = 320
-    model = VAE(input_height=height)
-    model_str = f"clevr-pretrained-{height}-vae"
+    model = VAE(height).from_pretrained("cifar10-resnet18")
+    model_str = f"puzzle-pretrained-vae-{height}"
+    csv_logger = CSVLogger(f"lightning_logs/{model_str}", )
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="val_loss",
-            dirpath="data/prototype/",
+            dirpath="/home/ubuntu/vdp-tool-chain-repo/data/prototype/",
             filename= model_str + "-{epoch:02d}-{val_loss:.2f}",
             save_top_k=2,
             mode="min",)
     lr_monitor = LearningRateMonitor(logging_interval='step')
-    csv_logger = CSVLogger(f"lightning_logs/{model_str}", )
     trainer = pl.Trainer(
         gpus=1,
-        callbacks=[checkpoint_callback, lr_monitor],
         logger=csv_logger,
+        callbacks=[checkpoint_callback, lr_monitor],
         max_epochs=50,
-        check_val_every_n_epoch=5
         )
 
     trainer.fit(model, datamodule=dm)
-    trainer.save_checkpoint(f"data/prototype/{model_str}-final.ckpt")
+    trainer.save_checkpoint(f"/home/ubuntu/vdp-tool-chain-repo/data/prototype/{model_str}-final.ckpt")
     print("Saved ckpt!")
 
-    pt_model = VAE(input_height=height)
-    pt_model = pt_model.load_from_checkpoint(f"data/prototype/{model_str}-final.ckpt", input_height=height)
-    trainer.validate(pt_model, val_dataloaders=dm.val_dataloader())
-
+    dm.setup(None)
+    trainer.validate(model, val_dataloaders=dm.val_dataloader())
     return dm, model, trainer
 
 

@@ -1,5 +1,14 @@
 import json, pickle, os, re
 import numpy as np
+
+from glob import glob
+import pytorch_lightning as pl
+import torch, itertools
+import torchvision.transforms as transforms
+from torch.utils.data import DataLoader
+import cv2
+
+
 def read_json(pth):
     assert os.path.exists(pth), f"Path Not found: {pth} relative to {os.getcwd()}"
     with open(pth, 'r') as f:
@@ -36,6 +45,7 @@ def get_rx_lines(lines : list = [], rx_dict : dict = {}):
                 yield (key, match)
 
 
+
 rx_dict = {
     'candidate_num' : re.compile(r"Candidate: c(?P<candidate_num>\d)"),
     'concept' : re.compile(r"Concept: (?P<concept>.*)"),
@@ -55,8 +65,23 @@ yolo_rx_dict = {
 
 img_template = '%s%%0%dd.png' % ('CLEVR_val_', 6)
 
-flags = {('agreement', False): [0, 24], ('alternate-color', False): [25, 49], ('alternation', False): [50, 146], ('alternation', True): [51, 149], ('aphaeresis', False): [150, 174], ('apocope', False): [175, 247], ('apocope', True): [176, 249], ('assimilation', False): [250, 346], ('assimilation', True): [251, 349], ('breaking', False): [350, 398], ('breaking', True): [351, 399], ('circle-at-ends', False): [400, 448], ('circle-at-ends', True): [401, 449], ('devoicing', False): [450, 498], ('devoicing', True): [451, 499], ('meeussen', False): [500, 524], ('partition', False): [525, 549], ('shield', False): [550, 646], ('shield', True): [551, 649], ('spy', False): [650, 722], ('spy', True): [651, 724], ('threepack', False): [725, 773], ('threepack', True): [726, 774], ('train', False): [775, 823], ('train', True): [776, 824]}
-
+flags = {
+    'agreement' :           "- 3 -N 100 -C 2",
+    'alternate-color' :     "- 2 -N 100 -C 2",
+    'alternation' :         "- 2 -N 100 -C 1",
+    'aphaeresis' :          "- 3 -N 100 -C 1",
+    'apocope' :             "- 2 -N 100 -C 1",
+    'assimilation' :        "- 2 -N 100 -C 1", 
+    'breaking' :            "- 2 -N 100 -C 2",
+    'circle-at-ends' :      "- 3 -N 100 -C 2",
+    'devoicing' :           "- 3 -N 100",     # -C 3 
+    'meeussen' :            "- 2 -N 100 -C 2",
+    'partition':            "- 2 -N 100 -C 2",
+    'shield' :              "- 2 -N 100 -C 1",
+    'spy' :                 "- 2 -N 100 -C 2",
+    'threepack' :           "- 3 -N 100 -C 2",
+    'train' :               "- 2 -N 100 -C 2",
+}
 
 swap_list = {
     'agreement' :           [0],
@@ -287,3 +312,107 @@ def out_parser(out_pth):
         concept[key] = line
 
     return concepts
+
+
+pz_partition = {
+                ('agreement', False): [0, 24],
+                ('alternate-color', False): [25, 49],
+                ('alternation', False): [50, 74],
+                ('alternation', True): [375, 449],
+                ('aphaeresis', False): [75, 99],
+                ('apocope', False): [100, 124],
+                ('apocope', True): [450, 499],
+                ('assimilation', False): [125, 149],
+                ('assimilation', True): [500, 574],
+                ('breaking', False): [150, 174],
+                ('breaking', True): [575, 599],
+                ('circle-at-ends', False): [175, 199],
+                ('circle-at-ends', True): [600, 624],
+                ('devoicing', False): [200, 224],
+                ('devoicing', True): [625, 649],
+                ('meeussen', False): [225, 249],
+                ('partition', False): [250, 274],
+                ('shield', False): [275, 299],
+                ('shield', True): [650, 724],
+                ('spy', False): [300, 324],
+                ('spy', True): [725, 774],
+                ('threepack', False): [325, 349],
+                ('threepack', True): [775, 799],
+                ('train', False): [350, 374],
+                ('train', True): [800, 824]
+}
+
+
+vae_train_on = [
+    ('alternation', False),
+    ('apocope', False),
+    ('shield', False),
+    ('spy', False),
+]
+
+proto_train_on = [
+    ('assimilation', False),
+    ('breaking', False),
+    ('circle-at-ends', False),
+    ('threepack', False),
+]
+
+proto_test_on_small = list( set(list(pz_partition.keys())) - set(proto_train_on + vae_train_on) )
+proto_test_on_large = list( set(list(pz_partition.keys())) - set(proto_train_on) )
+
+
+###### PYTORCH STUFF    ##########
+class VDPImage(torch.utils.data.Dataset):
+    def __init__(self, pz_pth, to_run, images_only=False):
+        self.images_only = images_only
+        self.all_imgs = list()
+        self.all_swaps = list()
+        for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
+            if absdir == pz_pth:
+                puzzles = [os.path.join(pz_pth, p) for p in folders]
+            if absdir in puzzles:
+                puzzle_name = os.path.basename(absdir)
+                if ("*" in puzzle_name) or (puzzle_name not in to_run):
+                    continue
+                for v_dir in glob(os.path.join(absdir, "*")):
+                    if ".pkl" in v_dir or '.json' in v_dir:
+                        continue
+                    v_name = os.path.basename(v_dir)
+                    images = sorted(glob(os.path.join(v_dir, f"CLEVR_{puzzle_name}-{v_name}_*.png")))
+                    if "swap" in v_dir:
+                        self.all_swaps.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
+                        continue
+                    self.all_imgs.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
+                    # puzzle_name, variant_number = os.path.basename(absdir).split("-fovariant-")
+                    # if ("*" in puzzle_name) or (puzzle_name not in to_run):
+                    #     continue
+                    # pth = os.path.join(absdir, "filter-1.pkl")
+                    # self.all_pths.append(pth)
+        
+        self.all_imgs.extend(self.all_swaps)
+
+        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: x[2]))
+        
+        transform_list = [
+                            transforms.ToPILImage(),
+                            transforms.Resize((320, 320)),
+                            transforms.ToTensor(),
+                            transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])
+                        ]
+        self.transform = transforms.Compose(transform_list)
+
+
+    def __len__(self):
+        if self.images_only:
+            return len(self.all_imgs) * 6
+        return len(self.all_imgs)
+
+    def __getitem__(self, pz_idx):
+        if self.images_only:
+            imgs, label, v_dir = self.all_imgs[pz_idx // 6]
+            img = imgs[pz_idx % 6]
+            img_procd = self.transform(cv2.imread(img))
+            return img_procd
+        imgs, label, v_dir = self.all_imgs[pz_idx]
+        img_procd = torch.stack([self.transform(cv2.imread(img)) for img in imgs])
+        return img_procd, label

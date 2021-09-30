@@ -16,7 +16,7 @@ class MLPEncoder(nn.Sequential):
             act1 = nn.ReLU(),
             fc2  = nn.Linear(hidden_dim, hidden_dim),
             ln   = nn.LayerNorm(hidden_dim),
-            act2 = nn.Sigmoid(),
+            act2 = nn.ReLU(),
             fc3  = nn.Linear(hidden_dim, output_dim)
         ))
 

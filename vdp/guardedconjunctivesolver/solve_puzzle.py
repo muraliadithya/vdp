@@ -15,7 +15,7 @@ def solve_puzzle(vdp_puzzle, solver_args):
     # Declare solver variable
     solver = None
     # Extract args from solver_args parameter and configure solver appropriately
-    size = solver_args.size
+    size = [int(x) for x in solver_args.size[0].strip().split()]
     num_vars_bound = size[0]
     # Maximum number of conjuncts in the matrix
     if len(size) == 1:

@@ -354,9 +354,12 @@ proto_train_on = [
     ('assimilation', False),
     ('breaking', False),
     ('circle-at-ends', False),
+    ('meeussen', False),
     ('threepack', False),
+    ('train', False),
 ]
 
+proto_test_on_tiny  = list( set(list(filter(lambda x: not x[1], pz_partition.keys()))) - set(proto_train_on + vae_train_on) )
 proto_test_on_small = list( set(list(pz_partition.keys())) - set(proto_train_on + vae_train_on) )
 proto_test_on_large = list( set(list(pz_partition.keys())) - set(proto_train_on) )
 

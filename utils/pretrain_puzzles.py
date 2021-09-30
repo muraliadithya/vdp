@@ -216,7 +216,7 @@ class VAE(LightningModule):
 
         return parser
 
-class ConvDataModule(pl.LightningDataModule):
+class VDPOnlyImageModule(pl.LightningDataModule):
     def setup(self, stage):
         self.allset = common.VDPImage(pz_pth=pz_pth, to_run=to_run, images_only=True)
         training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.vae_train_on)]))
@@ -233,7 +233,7 @@ class ConvDataModule(pl.LightningDataModule):
 
 def cli_main(args=None):
     seed_everything(0)
-    dm = ConvDataModule()
+    dm = VDPOnlyImageModule()
     height = 320
     model = VAE(height).from_pretrained("cifar10-resnet18")
     model_str = f"puzzle-pretrained-vae-{height}"

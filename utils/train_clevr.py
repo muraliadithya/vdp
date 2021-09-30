@@ -113,7 +113,7 @@ class PrototypeVAE(pl.LightningModule):
         loss = self.eval_loss(embeddings, target, candidates)
         # logs = {'loss' : loss}
         # self.log_dict({f"accuracy": v for k, v in logs.items()}, prog_bar=True)
-        self.log('accuracy', loss.float().mean().item(), prog_bar=True, on_step=True, on_epoch=True)
+        self.log('accuracy', loss.float().mean().item(), prog_bar=True)
         return loss
 
     def configure_optimizers(self):
@@ -131,7 +131,7 @@ class VDPDataModule(pl.LightningDataModule):
     def setup(self, stage):
         self.allset = common.VDPImage(pz_pth=pz_pth, to_run=to_run)
         training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_train_on)]))
-        testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_test_on_small)]))
+        testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_test_on_tiny)]))
         self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
         self.test_set  = torch.utils.data.Subset(self.allset, testing_idxs)
 
@@ -149,9 +149,9 @@ if __name__ == "__main__":
     seed_everything(0, workers=True)
     data_module = VDPDataModule()
     height = 320
-    model_str = f"puzzle-prototype-{height}-net"
+    model_str = f"clevr-prototype-net-{height}"
     model_vae = VAE(height)
-    model_vae = model_vae.load_from_checkpoint(f"data/prototype/puzzle-pretrained-{height}-vae-final.ckpt", strict=False, input_height=height)
+    model_vae = model_vae.load_from_checkpoint(f"data/prototype/clevr-pretrained-vae-{height}-final.ckpt", strict=False, input_height=height)
     model = PrototypeVAE(vae_model=model_vae)
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="accuracy",
@@ -167,7 +167,7 @@ if __name__ == "__main__":
         # check_val_every_n_epoch=5,
         logger=csv_logger,
         callbacks=[checkpoint_callback, lr_monitor],
-        max_epochs=50)
+        max_epochs=10)
 
     trainer.fit(model, data_module)
     trainer.save_checkpoint(f"data/prototype/{model_str}-final.ckpt")

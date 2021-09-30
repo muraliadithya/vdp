@@ -14,7 +14,7 @@ argparser = argparse.ArgumentParser(prog='guardedconjunctivesolver/solve_puzzle'
                                     description='Help for solver that searches guarded conjunctive prenex formulas.')
 
 # Arguments for formula size
-argparser.add_argument('size', nargs='+', type=int, action=argparse_extend.variable_length(1, 2),
+argparser.add_argument('size', nargs='+', action=argparse_extend.variable_length(1, 2),
                        help='Size of discriminator q [c], where q is a bound on the number of quantifiers '
                             'and c is an optional bound on the number of conjuncts for formulae with q quantifiers.')
 

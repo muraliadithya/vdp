@@ -188,7 +188,8 @@ yolo_pzname_to_name = {
     'catontv' :             "Cat on TV",
     '2on1' :                "2 cats on 1 couch",
     'alldogsonsofas' :      "All dogs on sofas",
-    'personball' :          "Person playing with ball"
+    'personball' :          "Person playing with ball",
+    'tvon' :                "Television switched on"
 }
 clevr_pzname2name = {
     'agreement' :           "Agreement",

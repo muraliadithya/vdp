@@ -57,6 +57,10 @@ argparser.add_argument('--no-vacuity', action='store_true', dest='no_vacuity',
                             'satisfy the dsicriminator constraints vacuously')
 
 
+# Temporarily adding argument for running CLEVR dataset puzzles which need unique solutions
+argparser.add_argument('--unique-minimal-solution', action='store_true', dest='uniqueness_check',
+                       help='Reports if chosen candidate is unique in the first 100 solutions')
+
 # Put positionals at the beginning of usage text for clarity
 # Suppressing currently existing way to do this as it does not work when positionals have nargs=+
 # argparse_extend.positionals_beginning_usage_text(argparser)

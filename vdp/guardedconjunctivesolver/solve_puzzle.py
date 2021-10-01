@@ -92,13 +92,24 @@ def _solve_puzzle_aux(vdp_puzzle, SolverClass, solver_args):
     while not solutions:
         solver.options['num_conjuncts_bound'] = num_conjuncts
         # Number of discriminators
-        solver.options['num_discriminators'] = solver_args.num_discriminators
+        if solver_args.uniqueness_check:
+            # Need to check if the chosen candidate is unique in the top 100 discriminators
+            solver.options['num_discriminators'] = 100
+        else:
+            solver.options['num_discriminators'] = solver_args.num_discriminators
         solutions = solver.solve(vdp_puzzle)
         num_conjuncts = num_conjuncts + 1
     # Adjust num_conjuncts to the correct value
     num_conjuncts = num_conjuncts - 1
 
     # Final and minimised solutions found within given formula size bounds
+    # Handle uniqueness check if solver_args.uniqueness_check
+    is_unique = None
+    if solver_args.uniqueness_check:
+        is_unique = len(set(candidate_id for candidate_id, _, _ in solutions)) == 1
+        solutions = [solutions[0]]
     for solution in solutions:
         candidate_id, discriminant, model_name = solution
         print('Candidate: {}\nConcept: {}\nCandidate Name: {}\n'.format(candidate_id, discriminant, model_name))
+    if solver_args.uniqueness_check:
+        print(f'Uniqueness check for candidate in top 100 solutions: {str(is_unique)}')

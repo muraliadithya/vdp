@@ -83,6 +83,25 @@ flags = {
     'train' :               "- 2 -N 100 -C 2",
 }
 
+ooo_flags = {
+    'agreement' :           "- 3 2",
+    'alternate-color' :     "- 2 2",
+    'alternation' :         "- 2 1",
+    'aphaeresis' :          "- 3 1",
+    'apocope' :             "- 2 1",
+    'assimilation' :        "- 2 1", 
+    'breaking' :            "- 2 2",
+    'circle-at-ends' :      "- 3 2",
+    'devoicing' :           "- 3  ",     # -C 3 
+    'meeussen' :            "- 2 2",
+    'partition':            "- 2 2",
+    'shield' :              "- 2 1",
+    'spy' :                 "- 2 2",
+    'threepack' :           "- 3 2",
+    'train' :               "- 2 2",
+}
+
+
 swap_list = {
     'agreement' :           [0],
     'alternate-color' :     [0],

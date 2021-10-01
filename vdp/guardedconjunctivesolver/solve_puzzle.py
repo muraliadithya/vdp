@@ -12,6 +12,11 @@ from vdp.guardedconjunctivesolver.guardedconjunctivesolver import GuardedConjunc
 
 
 def solve_puzzle(vdp_puzzle, solver_args):
+    SolverClass = GuardedConjunctiveSolver
+    _solve_puzzle_aux(vdp_puzzle, SolverClass, solver_args)
+
+
+def _solve_puzzle_aux(vdp_puzzle, SolverClass, solver_args):
     # Declare solver variable
     solver = None
     # Extract args from solver_args parameter and configure solver appropriately
@@ -33,8 +38,7 @@ def solve_puzzle(vdp_puzzle, solver_args):
     # PHASE 1: find the minimum quantifier size within restrictions
     solutions = []
     while curr_num_vars <= num_vars_bound and not solutions:
-        solver = GuardedConjunctiveSolver(num_vars=curr_num_vars)
-        solver.options = dict()
+        solver = SolverClass(num_vars=curr_num_vars)
         # Enforce conjuncts bound at curr_num_vars == num_vars
         if curr_num_vars == num_vars_bound and num_conjuncts_bound is not None:
             solver.options['num_conjuncts_bound'] = num_conjuncts_bound

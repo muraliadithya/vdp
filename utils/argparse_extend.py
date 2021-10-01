@@ -25,3 +25,16 @@ def dir_path_type(path_str, metavar_or_name=""):
         return path_str
     else:
         raise argparse.ArgumentTypeError('Argument \'{}\' must be a valid path.'.format(metavar_or_name))
+
+
+# Action type to mimic specifying the nargs attribute as a range on number of arguments
+def variable_length(nmin, nmax):
+    class VariableLength(argparse.Action):
+        def __call__(self, parser, args, values, option_string=None):
+            if not nmin <= len(values) <= nmax:
+                msg = 'argument "{f}" requires between {nmin} and {nmax} arguments'.format(f=self.dest,
+                                                                                           nmin=nmin,
+                                                                                           nmax=nmax)
+                raise argparse.ArgumentTypeError(msg)
+            setattr(args, self.dest, values)
+    return VariableLength

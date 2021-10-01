@@ -126,15 +126,17 @@ class Formula:
                 conjunction_bound_constraints.add(And([Not(negated_relvar) for negated_relvar in negated_relvars]))
             conjunction_bound_constraint = Or(list(conjunction_bound_constraints))
             representation_constraints = representation_constraints + [Or(conjunction_bound_constraint)]
-        # Support for option of fixing quantifier shape
-        quantifier_shape = self.options.get('quantifier_shape', None)
-        if quantifier_shape is not None:
-            len_qshape = len(quantifier_shape)
-            for i in range(len_qshape):
-                if quantifier_shape[i] == 'a':
-                    representation_constraints = representation_constraints + [self.qvars[i]]
-                elif quantifier_shape[i] == 'e':
-                    representation_constraints = representation_constraints + [Not(self.qvars[i])]
+        # Support for option of fixing quantifier pattern
+        quantifier_pattern = self.options.get('quantifier_pattern', None)
+        if quantifier_pattern is not None:
+            len_qpat = len(quantifier_pattern)
+            qvar_index = 0
+            while qvar_index < len_qpat and qvar_index < self.num_vars:
+                if quantifier_pattern[qvar_index] == 'a':
+                    representation_constraints = representation_constraints + [self.qvars[qvar_index]]
+                elif quantifier_pattern[qvar_index] == 'e':
+                    representation_constraints = representation_constraints + [Not(self.qvars[qvar_index])]
+                qvar_index = qvar_index + 1
         # Return representation constraints.
         return representation_constraints
 

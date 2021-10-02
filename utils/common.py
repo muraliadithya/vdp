@@ -53,7 +53,8 @@ rx_dict = {
     'end' : re.compile(r"No discriminator found for puzzle (?P<cpath>.*)"),
     'bscores' : re.compile(r"The scores were (?P<score_list>\[[\d., e-]+\])."),
     'bcandidate' : re.compile(r"Best concept is @ idx (\d) ie: (?P<bcpath>.*)"),
-    'path_match' : re.compile(r"([\w-]+)-(\d+).json")
+    'path_match' : re.compile(r"([\w-]+)-(\d+).json"),
+    'uniqueness' : re.compile(r"Uniqueness check for candidate in top 100 solutions: (?P<check>.*)"),
 }
 
 yolo_rx_dict = {
@@ -423,6 +424,21 @@ class VDPImage(torch.utils.data.Dataset):
                             transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])
                         ]
         self.transform = transforms.Compose(transform_list)
+
+    @staticmethod
+    def process_image(imgs):
+        transform_list = [
+                            transforms.ToPILImage(),
+                            transforms.Resize((320, 320)),
+                            transforms.ToTensor(),
+                            transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])
+                        ]
+        transform = transforms.Compose(transform_list)
+
+        img_procd = torch.stack([transform(cv2.imread(img)) for img in imgs])
+        return img_procd
+
+        
 
 
     def __len__(self):

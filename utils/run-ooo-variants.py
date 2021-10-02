@@ -25,8 +25,8 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-inputs/"
-out_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs/"
+in_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/inference-outputs/"
+out_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/"
 solver_dir = "/home/ubuntu/ooo-tool-chain-repo/vdp-repo"
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -45,47 +45,8 @@ def exec_cmd(cmd, cwd=None):
         print(f"LOG: exec_cmd({cmd}) failed with err: {e.returncode}", f"\n{e.output}")
         return None
 
-
-def generate_swap(swap, v_dir, v_name, full_v_name):
-    # copy puzzle into swap puzzle.
-    swap_pz_pth = os.path.join(os.path.dirname(v_dir), v_name + f'-swap{swap}')
-    img_dir_pth = os.path.join("data/output/images/", full_v_name + f'-swap{swap}')
-    scenes_pth  = os.path.join("data/output/", f'CLEVR_{full_v_name}-swap{swap}_scenes.json')
-    swap_gen_pth = os.path.join(swap_pz_pth, f"{full_v_name}.json")
-
-    if os.path.exists(swap_pz_pth):
-        shutil.rmtree(swap_pz_pth)
-
-    if os.path.exists(img_dir_pth):
-        shutil.rmtree(img_dir_pth)
-
-    if os.path.exists(scenes_pth):
-        os.remove(scenes_pth)
-
-    shutil.copytree(os.path.join(v_dir), swap_pz_pth)
-
-    shutil.copytree(os.path.join("data/output/images/", full_v_name), img_dir_pth)
-    for f in glob(img_dir_pth + "/*"):
-        shutil.move(f, f.replace(full_v_name + "_0", full_v_name + f'-swap{swap}_0'))
-    # shutil.copy(f"data/output/CLEVR_{full_v_name}_scenes.json" , scenes_pth)
-    with open(f"data/output/CLEVR_{full_v_name}_scenes.json", "r") as fin:
-        with open(scenes_pth, "w") as fout:
-            for line in fin:
-                fout.write(line.replace(full_v_name, full_v_name + f'-swap{swap}'))
-
-
-    # move image
-    izero = os.path.join("data/output/images/", full_v_name, f"CLEVR_{full_v_name}_000000.png")
-    iswap = os.path.join("data/output/images/", full_v_name, f"CLEVR_{full_v_name}_00000{str(swap)}.png")
-    itemp = os.path.join("data/output/images/", full_v_name, "temp.png")
-    shutil.copy(izero, itemp)
-    shutil.copy(iswap, izero)
-    shutil.move(itemp, iswap)
-    
-    return swap_gen_pth, swap_pz_pth
-
-
 get_split = lambda pth: "train" if os.path.splitext(pth)[0] in ['3', '4', '5'] else "test"
+
 
 def run_solver(full_pz_name, pz_name, num, ooo_puzzle):
     pz_pth       = os.path.join(out_pth, pz_name, f"{pz_name}-fovariant-{num}-shuffle-{ooo_puzzle['idx']}")
@@ -104,41 +65,53 @@ def run_solver(full_pz_name, pz_name, num, ooo_puzzle):
 
     to_json(ooo_puzzle, os.path.join(pz_pth, "ooo_config.json"))
 
-    cmd = f"python scripts/vdpsolve.py --solver GuardedConjunctiveAltpuzzleSolver {os.path.abspath(pz_pth)} {ooo_flags[pz_name]} --autotune"
+    cmd = f"python scripts/vdpsolve.py --solver GuardedConjunctiveAltpuzzleSolver {os.path.abspath(pz_pth)} {ooo_flags[pz_name]} --autotune --unique-minimal-solution"
     output = exec_cmd(cmd=cmd, cwd=solver_dir)
     to_txt(output, os.path.join(pz_pth, "solver_output.txt")  )
     to_pickle(output, os.path.join(pz_pth, "solver_output.pkl") )
+    # output = read_pickle(os.path.join(pz_pth, "solver_output.pkl"))
+    # output2 = read_pickle(os.path.join(pz_pth, "baseline_output.pkl"))
+    # # return (output2['answer_idx'] == 0)
+    # return (os.path.basename(output[2].replace("Candidate Name: ", "")) == "0.json")
+    return ((output[-2].split(": ")[1]) == 'True')
+    
 
 ############### HELPERS END ###############
-
+from collections import defaultdict
 if __name__ == '__main__':
     assert os.path.exists(in_pth), f"Path not found: {in_pth}"
     if len(sys.argv) > 1: to_run = [sys.argv[1]]
     puzzles = []
-    for (absdir, folders, files) in os.walk(in_pth, followlinks=False):
-        for puzzle in folders:
-            pz_name, num = puzzle.split("-fovariant-")
-            swap_num = None
-            if "swap" in num:
-                continue
-                # num, swap_num = num.split("-swap")
-            # print(pz_name, num)
+    preds = defaultdict(list)
+    folders = sorted(glob(os.path.join(in_pth, "*")))
+    # for (absdir, folders, files) in os.walk(in_pth, followlinks=False):
+    for puzzle in map(os.path.basename, folders):
+        pz_name, num = puzzle.split("-fovariant-")
+        swap_num = None
+        if "swap" in num or int(num) >= 25:
+            continue
+            # num, swap_num = num.split("-swap")
+        # print(pz_name, num)
 
-            example_set   = [0, 3, 4, 5]
-            candidate_set = [1, 2]
+        example_set   = [0, 3, 4, 5]
+        candidate_set = [1, 2]
 
-            idx = 0
-            for ex_exclude in range(4):
-                for candidate_sel in range(2):
-                    examples = sorted(list(set(example_set) - {example_set[ex_exclude]} ))
-                    candidate = candidate_set[candidate_sel]
-                    # print(idx, examples, candidate_sel)
-                    ooo_puzzle = {"examples" : [f"{eg}.json" for eg in examples ], "candidate" : [f"{candidate}.json"], "idx" : idx }
-                    run_solver(puzzle, pz_name, num, ooo_puzzle)
-                    idx += 1
-            
+        idx = 0
+        for ex_exclude in range(4):
+            for candidate_sel in range(2):
+                examples = sorted(list(set(example_set) - {example_set[ex_exclude]} ))
+                candidate = candidate_set[candidate_sel]
+                # print(idx, examples, candidate_sel)
+                ooo_puzzle = {"examples" : [f"{eg}.json" for eg in examples ], "candidate" : [f"{candidate}.json"], "idx" : idx }
+                preds[pz_name].append(run_solver(puzzle, pz_name, num, ooo_puzzle))
+                idx += 1
 
-
+    x = 0
+    for k, v in preds.items():
+        x += sum(v)
+        print(sum(v)/ len(v))
+    
+    print(x)
         # if absdir == in_pth:
         #     puzzles = [os.path.join(in_pth, p) for p in folders]
         # if absdir in puzzles:

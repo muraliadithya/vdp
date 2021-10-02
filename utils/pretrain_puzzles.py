@@ -221,8 +221,9 @@ class VDPOnlyImageModule(pl.LightningDataModule):
         self.allset = common.VDPImage(pz_pth=pz_pth, to_run=to_run, images_only=True)
         training_idxs = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.vae_train_on)]))
         # testing_idxs  = list(itertools.chain(*[list(range(l, h + 1)) for l, h in map(lambda x : common.pz_partition[x], common.proto_train_on)]))
-        self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
-        self.test_set  = torch.utils.data.Subset(self.allset, list(range(300, 325)) )
+        self.train_set = torch.utils.data.Subset(self.allset, list(range(0, len(self.allset))))
+        # self.train_set = torch.utils.data.Subset(self.allset, training_idxs)
+        self.test_set  = torch.utils.data.Subset(self.allset, list(range(800, 825)) )
 
     def train_dataloader(self):
         return DataLoader(self.train_set, batch_size=4, num_workers=4, pin_memory=True)
@@ -235,7 +236,7 @@ def cli_main(args=None):
     dm = VDPOnlyImageModule()
     height = 320
     model = VAE(height).from_pretrained("cifar10-resnet18")
-    model_str = f"puzzle-pretrained-vae-{height}"
+    model_str = f"allpuzzle-pretrained-vae-{height}"
     csv_logger = CSVLogger(f"lightning_logs/{model_str}", )
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="val_loss",

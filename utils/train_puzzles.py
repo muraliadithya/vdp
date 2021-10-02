@@ -1,5 +1,6 @@
 from pytorch_lightning.core import datamodule
 import torch
+import torch.nn
 import pytorch_lightning as pl
 from torch._C import import_ir_module
 from torch.utils.data import DataLoader
@@ -37,6 +38,7 @@ pz_pth = "data/clevr-cleaned-variants/"
 
 LATENT_DIM = 512
 LR         = 3e-4
+CONTINUE_TRAINING = True
 
 ############### CONSTANTS END ###############
 
@@ -51,20 +53,50 @@ class PrototypeVAE(pl.LightningModule):
         # self.save_hyperparameters()
 
     def dist(self, diff, axis=1):
-        '''L2 norm'''
-        return torch.norm(diff, p=2, dim=axis)
+        '''L2 mean'''
+        return torch.mean(diff, dim=axis)
 
     def forward_naive(self, batch):
         x, y = batch
         y = y.squeeze(0)
         candidate_mask   = (y == 0) | (y == 1) | (y == 2)
+        example_mask     = ~candidate_mask
         target_mask      = (y[candidate_mask] == 0)
         embeddings       = self.forward(x)
         candidates       = embeddings[candidate_mask]
-        pos              = torch.norm(embeddings[~candidate_mask], dim=0)
-        candidate_scores = self.dist(candidates - pos)
+        pos              = torch.mean(embeddings[example_mask], dim=0)
+        # candidate_scores = self.dist(candidates - pos)
+
+        e1 = embeddings[(y == 0)]
+        e2 = embeddings[(y == 1)]
+        e3 = embeddings[(y == 2)]
+
+        # F.softmax(self.dist(tensor - e1))
+
+        score_fn = lambda  t : torch.exp(-1 * self.dist(t))
+
+        candidate_scores = torch.Tensor([
+            score_fn(e1 - pos) /  ( score_fn(e1 - pos) + score_fn(e1 - e2) + score_fn(e1 - e3) ),
+            score_fn(e2 - pos) /  ( score_fn(e2 - pos) + score_fn(e2 - e1) + score_fn(e2 - e3) ),
+            score_fn(e3 - pos) /  ( score_fn(e3 - pos) + score_fn(e3 - e1) + score_fn(e3 - e2) ),
+        ])
+
         chosen_candidate = torch.argmax(candidate_scores)
         return chosen_candidate
+
+    def score_fn(self, t):
+        return torch.exp(-1 * t)
+
+    def forward_naive_ooo(self, batch):
+        x, y = batch
+        embeddings = self.forward(x) # (4, 512)
+        pos = torch.stack([torch.mean(embeddings[(y != float(q))], dim=0)
+                            for q, q_em in enumerate(embeddings)])
+        numer = self.dist(embeddings - pos)
+        return numer.tolist()
+
+        # denom = torch.sum(torch.exp(-1 * torch.cdist(embeddings, embeddings)) + torch.diag(numer) , dim=0)
+        # return (numer / denom).tolist()
     
     def forward(self, x):
         img_embedding = self.pt_net.encoder(x)
@@ -74,19 +106,19 @@ class PrototypeVAE(pl.LightningModule):
     def training_loss(self, embeddings, target_mask, neg_mask, pos_mask):
         query = embeddings[target_mask]                    # (512)
         neg   = embeddings[neg_mask]                       # (2, 512)
-        pos   = torch.norm(embeddings[pos_mask], dim=0)    # (512)
+        pos   = torch.mean(embeddings[pos_mask], dim=0)    # (512)
         
         q_neg = self.dist(neg - query)
         q_pos = self.dist(pos - query).squeeze(0)
         
         # score = -1 * (torch.log( torch.exp(q_pos) / (torch.exp(q_neg).sum() + torch.exp(q_pos)) ))
-        score = (q_pos + torch.log( torch.sum(torch.exp(-1 * q_neg)) +  torch.exp(-1 * q_pos) )) / 2
-        return score
+        loss  = (q_pos + torch.log( torch.sum(torch.exp(-1 * q_neg)) +  torch.exp(-1 * q_pos) )) / 2
+        return loss
    
     def eval_loss(self, embeddings, target_mask, candidate_mask):
         bs, ncandidates = target_mask.shape
         candidates = embeddings[candidate_mask].view(bs, ncandidates, -1)
-        pos        = torch.norm(embeddings[~candidate_mask].view(bs, ncandidates, -1), dim=1)
+        pos        = torch.mean(embeddings[~candidate_mask].view(bs, ncandidates, -1), dim=1)
         for b in range(bs):
             candidates[b] = candidates[b] - pos[b]
         candidate_scores =  self.dist(candidates, axis=2)
@@ -149,10 +181,13 @@ if __name__ == "__main__":
     seed_everything(0, workers=True)
     data_module = VDPDataModule()
     height = 320
-    model_str = f"cifar-puzzle-prototype-net-{height}"
+    model_str = f"again3-cifar-puzzle-prototype-net-{height}"
     model_vae = VAE(height).from_pretrained("cifar10-resnet18")
     # model_vae = model_vae.load_from_checkpoint(f"data/prototype/puzzle-pretrained-vae-{height}-final.ckpt", strict=False, input_height=height)
     model = PrototypeVAE(vae_model=model_vae)
+    if CONTINUE_TRAINING:
+        old_model_str = model_str.replace("again3-", "again2-")
+        model = model.load_from_checkpoint(f"data/prototype/{old_model_str}-final.ckpt", vae_model=model_vae)
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="accuracy",
             dirpath="data/prototype/",
@@ -167,7 +202,7 @@ if __name__ == "__main__":
         # check_val_every_n_epoch=5,
         logger=csv_logger,
         callbacks=[checkpoint_callback, lr_monitor],
-        max_epochs=10)
+        max_epochs=50)
 
     trainer.fit(model, data_module)
     trainer.save_checkpoint(f"data/prototype/{model_str}-final.ckpt")

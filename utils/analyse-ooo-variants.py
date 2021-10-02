@@ -26,7 +26,7 @@ to_run = [
         # "cones*",
         ]
 in_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/inference-outputs/"
-out_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/"
+out_pth  = "/home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs/"
 solver_dir = "/home/ubuntu/ooo-tool-chain-repo/vdp-repo"
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -56,9 +56,10 @@ def run_solver(full_pz_name, pz_name, num, ooo_puzzle):
         output = read_pickle(pkl_pth)
         if ((output[-2].split(": ")[1]) == 'True'):
             output2 = read_pickle(os.path.join(pz_pth, "baseline_output.pkl"))
-            return (output2['answer_idx'] == 0)
-            # output2 = read_pickle(os.path.join(pz_pth, "prototype_output.pkl"))
-            # return (output2['answer_idx'] == 0)
+            baseline_ans = (output2['answer_idx'] == 0)
+            output3 = read_pickle(os.path.join(pz_pth, "prototype_output.pkl"))
+            proto_ans = (output3['answer_idx'] == 0)
+            return (baseline_ans, proto_ans)
         # return (os.path.basename(output[2].replace("Candidate Name: ", "")) == "0.json")
     return None
 
@@ -69,7 +70,7 @@ if __name__ == '__main__':
     assert os.path.exists(in_pth), f"Path not found: {in_pth}"
     if len(sys.argv) > 1: to_run = [sys.argv[1]]
     puzzles = []
-    preds = defaultdict(list)
+    preds = list()
     folders = sorted(glob(os.path.join(in_pth, "*")))
     for puzzle in map(os.path.basename, folders):
         pz_name, num = puzzle.split("-fovariant-")
@@ -86,17 +87,23 @@ if __name__ == '__main__':
                 examples = sorted(list(set(example_set) - {example_set[ex_exclude]} ))
                 candidate = candidate_set[candidate_sel]
                 ooo_puzzle = {"examples" : [f"{eg}.json" for eg in examples ], "candidate" : [f"{candidate}.json"], "idx" : idx }
+                print(puzzle, num, idx)
                 a = run_solver(puzzle, pz_name, num, ooo_puzzle)
                 if a is not None:
-                    preds[pz_name].append(a)
+                    a1, a2 = a
+                    preds.append((puzzle, pz_name, num, idx, a1, a2, True))
+                preds.append((puzzle, pz_name, num, idx, False, False, False))
                 idx += 1
+        
+    to_pickle(preds, "analysis/ooo_baseline_proto_preds.pkl")
 
-    x = 0
-    for k, v in preds.items():
-        x += sum(v)
-        print(k, sum(v), '/', len(v))
+
+    # x = 0
+    # for k, v in preds.items():
+    #     x += sum(v)
+    #     print(k, sum(v), '/', len(v))
     
-    print(x)
+    # print(x)
         # if absdir == in_pth:
         #     puzzles = [os.path.join(in_pth, p) for p in folders]
         # if absdir in puzzles:

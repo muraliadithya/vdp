@@ -149,9 +149,9 @@ if __name__ == "__main__":
     seed_everything(0, workers=True)
     data_module = VDPDataModule()
     height = 320
-    model_str = f"clevr-prototype-net-{height}"
+    model_str = f"oldclevr-prototype-net-{height}"
     model_vae = VAE(height)
-    model_vae = model_vae.load_from_checkpoint(f"data/prototype/clevr-pretrained-vae-{height}-final.ckpt", strict=False, input_height=height)
+    model_vae = model_vae.load_from_checkpoint(f"data/prototype/clevr-pretrained-{height}-vae-final.ckpt", strict=False, input_height=height)
     model = PrototypeVAE(vae_model=model_vae)
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="accuracy",

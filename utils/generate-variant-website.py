@@ -32,10 +32,10 @@ to_run = [
         ]
 
 skip_list = [
-        'devoicing'
+        # 'devoicing'
         ]
 
-in_dir  = "/home/ubuntu/vdp-website/static/clevr-variants"
+in_dir  = "/home/ubuntu/vdp-website/static/clevr-cleaned-variants"
 md_dir  = "/home/ubuntu/vdp-website/content/docs/clevr-md"
 img_dir = "/home/ubuntu/vdp-website/static/output/images"
 
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         puzzle_dir = os.path.join(in_dir, puzzle_name, f"fovariant-{variant_num}")
         swapped = 'swap' in variant_num
         if ("*" in puzzle_name) or (puzzle_name not in to_run) or swapped:
-            print("SKIPPING", puzzle_name)
+            print("SKIPPING", puzzle_name, variant_num)
             continue
         full_name = f"{puzzle_name}-fovariant-{variant_num}"
         if puzzle_name not in pz2count:
@@ -205,7 +205,7 @@ if __name__ == '__main__':
         baseline_out = f"Baseline selected candidate at idx {raw_baseline_out['bcandidate'].groups()[0]}.\nie: selected [{raw_baseline_out['bcandidate'].groups()[1]}]"
         english_desc = intended_concept[puzzle_name]
 
-        variant_logs = os.path.join(f"data/clevr-variants/{puzzle_name}/full-run-variants.json")
+        variant_logs = os.path.join(f"data/clevr-cleaned-variants/{puzzle_name}/full-run-variants.json")
         variants = read_json(variant_logs).values()
 
         curr_variant = read_json(out_pth.replace(".out", "-gt.json"))
@@ -236,8 +236,7 @@ if __name__ == '__main__':
             if curr_idx == 0:
                 actual_ans = i 
 
-        
-    
+
         if swapped:
             md_str = get_md(pz2count[puzzle_name], variant_num, train_imgs, test_imgs, english_desc, pipeline_ans, pipeline_discriminator, baseline_ans, actual_ans)
         else:

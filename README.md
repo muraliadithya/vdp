@@ -46,6 +46,18 @@ This repository contains all the code for running the `vdp` project. The (genera
 └── vdp-solver                                        # See ## VDP for details.
 └── vdp                                               # See ## VDP for details.
 ```
+
+## Running the entire pipeline
+
+
+1. Start a `p2.xlarge` AWS instance (what was used for all these experiments).
+1. Download `data.zip` from the link given and extract in the project directory.
+1. Initialize the conda environments in from `data/conda_envs` with `conda env create -f {conda_env.yaml}`
+1. `(base) $ python utils/generate-variants.py` will run the pipeline on the variants @ `data/clevr-cleaned-variants` (~5-8 hours).
+1. `(torch) $ python utils/train_puzzles.py` will train the prototype network with the correct hyperparameters.
+1. Other code used to aggregate the data can be found under `analysis/`. Also, `utils/` has a lot of misc. utilities that I found helpful!
+
+
 ## Driver
 The `driver.sh` file is the central file to run an experiment through the vdp-tool-chain. The help menu provides more details:
 ```bash

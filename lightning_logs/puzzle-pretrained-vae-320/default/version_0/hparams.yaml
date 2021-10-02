@@ -1,0 +1,16 @@
+batch_size: 256
+data_dir: .
+dataset: cifar10
+enc_out_dim: 512
+enc_type: resnet18
+fast_dev_run: false
+first_conv: false
+gpus: 1
+input_height: 320
+kl_coeff: 0.1
+latent_dim: 256
+lr: 0.0001
+max_epochs: 100
+max_steps: null
+maxpool1: false
+num_workers: 8

@@ -1,0 +1,2 @@
+The scores were [2.1212964599735153, 2.547844135012415, 2.1875104079186936, 3.0150130772271266].
+Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/assimilation-fovariant-15/CLEVR_assimilation-fovariant-15_000005.png')

@@ -1,0 +1,2 @@
+The scores were [0.1507614403963089, 0.2598005533218384, 0.09403041750192642, 0.14518168568611145].
+Best concept is @ idx 1 ie: (1, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/circle-at-ends-fovariant-4/CLEVR_circle-at-ends-fovariant-4_000000.png')

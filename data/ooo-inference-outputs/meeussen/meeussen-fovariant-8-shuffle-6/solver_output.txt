@@ -1,0 +1,6 @@
+Candidate: c3
+Concept: Exists q0: sphere. purple(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/meeussen/meeussen-fovariant-8-shuffle-6/train/0.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

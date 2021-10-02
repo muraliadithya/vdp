@@ -1,0 +1,6 @@
+Candidate: c2
+Concept: Forall q0: cube. Forall q1: sphere. front(q1,q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/shield/shield-fovariant-5-shuffle-0/train/1.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

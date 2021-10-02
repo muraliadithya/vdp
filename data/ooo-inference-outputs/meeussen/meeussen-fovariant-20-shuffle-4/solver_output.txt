@@ -1,0 +1,6 @@
+Candidate: c1
+Concept: Exists q0: sphere. red(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/meeussen/meeussen-fovariant-20-shuffle-4/train/2.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

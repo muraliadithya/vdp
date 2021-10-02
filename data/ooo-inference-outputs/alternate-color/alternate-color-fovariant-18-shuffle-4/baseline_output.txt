@@ -1,0 +1,2 @@
+The scores were [0.5785838411065986, 0.913109071668266, 0.9476561378825881, 0.597784310465298].
+Best concept is @ idx 2 ie: (2, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/alternate-color-fovariant-18/CLEVR_alternate-color-fovariant-18_000003.png')

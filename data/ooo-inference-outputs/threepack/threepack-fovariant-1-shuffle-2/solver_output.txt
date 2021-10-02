@@ -1,0 +1,6 @@
+Candidate: c0
+Concept: Exists q0: sphere. large(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/threepack/threepack-fovariant-1-shuffle-2/train/3.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

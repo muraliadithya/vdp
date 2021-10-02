@@ -1,0 +1,6 @@
+Candidate: c3
+Concept: Exists q0: cube. True
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/alternate-color/alternate-color-fovariant-20-shuffle-3/train/0.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

@@ -1,0 +1,2 @@
+The scores were [0.20644539594650269, 0.2788747549057007, 0.06869887560606003, 0.11396348476409912].
+Best concept is @ idx 1 ie: (1, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/meeussen-fovariant-6/CLEVR_meeussen-fovariant-6_000000.png')

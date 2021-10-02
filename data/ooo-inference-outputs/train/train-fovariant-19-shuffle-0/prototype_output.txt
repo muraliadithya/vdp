@@ -1,0 +1,2 @@
+The scores were [0.06322607398033142, 0.06543780863285065, 0.2967761158943176, 0.22280476987361908].
+Best concept is @ idx 2 ie: (2, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/train-fovariant-19/CLEVR_train-fovariant-19_000004.png')

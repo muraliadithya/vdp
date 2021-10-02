@@ -1,0 +1,6 @@
+Candidate: c2
+Concept: Exists q0: cube. large(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/assimilation/assimilation-fovariant-8-shuffle-1/train/1.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

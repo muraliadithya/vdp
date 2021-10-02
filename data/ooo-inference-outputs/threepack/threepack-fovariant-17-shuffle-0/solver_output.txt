@@ -1,0 +1,6 @@
+Candidate: c3
+Concept: Exists q0: cube. small(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/threepack/threepack-fovariant-17-shuffle-0/train/0.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

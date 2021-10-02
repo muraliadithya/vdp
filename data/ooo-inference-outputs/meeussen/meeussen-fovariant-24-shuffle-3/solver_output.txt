@@ -1,0 +1,6 @@
+Candidate: c0
+Concept: Exists q0: sphere. small(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/meeussen/meeussen-fovariant-24-shuffle-3/train/3.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

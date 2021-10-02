@@ -1,0 +1,6 @@
+Candidate: c3
+Concept: Exists q0: cube. large(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/aphaeresis/aphaeresis-fovariant-10-shuffle-5/train/0.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

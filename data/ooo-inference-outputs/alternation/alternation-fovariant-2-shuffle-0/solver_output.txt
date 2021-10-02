@@ -1,0 +1,6 @@
+Candidate: c0
+Concept: Exists q0: sphere. metal(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/alternation/alternation-fovariant-2-shuffle-0/train/3.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

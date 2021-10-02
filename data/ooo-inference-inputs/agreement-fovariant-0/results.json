@@ -1,1 +1,272 @@
-{"info": "clevr derendered scene", "scenes": [{"image_index": 0, "image_filename": "CLEVR_val_000000.png", "objects": [{"shape": "cube", "size": "small", "material": "metal", "color": "gray", "position": [0.12725959718227386, -0.18990206718444824, 0.351071298122406]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [-1.3173781633377075, -0.21580028533935547, 0.3530030846595764]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [-2.7790608406066895, -0.4408014714717865, 0.34989094734191895]}]}, {"image_index": 1, "image_filename": "CLEVR_val_000001.png", "objects": [{"shape": "cube", "size": "small", "material": "metal", "color": "gray", "position": [1.3815950155258179, 0.05423408001661301, 0.354663610458374]}, {"shape": "cube", "size": "small", "material": "metal", "color": "gray", "position": [-2.977870464324951, -0.172789067029953, 0.3484838604927063]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [-0.06433356553316116, -0.06112711504101753, 0.35086601972579956]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [2.83152437210083, 0.13524091243743896, 0.36388593912124634]}]}, {"image_index": 2, "image_filename": "CLEVR_val_000002.png", "objects": [{"shape": "cube", "size": "small", "material": "metal", "color": "gray", "position": [-1.3356930017471313, -0.15396270155906677, 0.3525855243206024]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [0.12850484251976013, 0.004853283986449242, 0.35051971673965454]}, {"shape": "cylinder", "size": "small", "material": "metal", "color": "gray", "position": [-2.7473487854003906, -0.2489193081855774, 0.3499736785888672]}]}, {"image_index": 3, "image_filename": "CLEVR_val_000003.png", "objects": [{"shape": "cylinder", "size": "large", "material": "metal", "color": "blue", "position": [-3.4400577545166016, -0.3578028678894043, 0.6901616454124451]}, {"shape": "cube", "size": "large", "material": "metal", "color": "gray", "position": [-0.5408239364624023, -0.1979159116744995, 0.6934234499931335]}, {"shape": "cylinder", "size": "large", "material": "metal", "color": "red", "position": [2.2540202140808105, 0.015297021716833115, 0.6978597640991211]}]}, {"image_index": 4, "image_filename": "CLEVR_val_000004.png", "objects": [{"shape": "cylinder", "size": "small", "material": "rubber", "color": "gray", "position": [3.6410489082336426, 0.17556285858154297, 0.3556249737739563]}, {"shape": "cube", "size": "small", "material": "metal", "color": "gray", "position": [0.8251429796218872, -0.057080212980508804, 0.3515416979789734]}, {"shape": "cylinder", "size": "large", "material": "metal", "color": "gray", "position": [-1.9093633890151978, -0.17592152953147888, 0.6940973997116089]}]}, {"image_index": 5, "image_filename": "CLEVR_val_000005.png", "objects": [{"shape": "cube", "size": "large", "material": "metal", "color": "blue", "position": [1.1679023504257202, 0.14414533972740173, 0.6935246586799622]}, {"shape": "sphere", "size": "small", "material": "metal", "color": "blue", "position": [-1.9635318517684937, 0.023581258952617645, 0.34880197048187256]}, {"shape": "cylinder", "size": "small", "material": "rubber", "color": "gray", "position": [-0.5960752367973328, 0.04611516371369362, 0.35456788539886475]}, {"shape": "cylinder", "size": "small", "material": "rubber", "color": "red", "position": [2.993422031402588, 0.3469533324241638, 0.3493083119392395]}, {"shape": "sphere", "size": "small", "material": "metal", "color": "red", "position": [-3.427290439605713, -0.1852080523967743, 0.35475412011146545]}]}]}
+{
+    "info": "clevr derendered scene",
+    "scenes": [
+        {
+            "image_index": 0,
+            "image_filename": "CLEVR_val_000000.png",
+            "objects": [
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        0.048138927668333054,
+                        -0.009195495396852493,
+                        0.34871214628219604
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -2.8584370613098145,
+                        -0.24114802479743958,
+                        0.34707072377204895
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -1.345656394958496,
+                        -0.04568510130047798,
+                        0.34851402044296265
+                    ]
+                }
+            ]
+        },
+        {
+            "image_index": 1,
+            "image_filename": "CLEVR_val_000001.png",
+            "objects": [
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        0.034961454570293427,
+                        -0.012023702263832092,
+                        0.34913870692253113
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        2.8441755771636963,
+                        0.18596595525741577,
+                        0.35398152470588684
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -2.9377620220184326,
+                        -0.1358965039253235,
+                        0.34774112701416016
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        1.4591563940048218,
+                        0.09242747724056244,
+                        0.35161399841308594
+                    ]
+                }
+            ]
+        },
+        {
+            "image_index": 2,
+            "image_filename": "CLEVR_val_000002.png",
+            "objects": [
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -1.2575024366378784,
+                        -0.19222688674926758,
+                        0.3509169816970825
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -2.7468998432159424,
+                        -0.21265974640846252,
+                        0.34796541929244995
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        0.1395023763179779,
+                        0.03362712636590004,
+                        0.34787875413894653
+                    ]
+                }
+            ]
+        },
+        {
+            "image_index": 3,
+            "image_filename": "CLEVR_val_000003.png",
+            "objects": [
+                {
+                    "shape": "cube",
+                    "size": "large",
+                    "material": "metal",
+                    "color": "brown",
+                    "position": [
+                        -3.480297803878784,
+                        -0.267016738653183,
+                        0.6973264217376709
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "large",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -0.6469132900238037,
+                        -0.055483460426330566,
+                        0.6946750283241272
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "large",
+                    "material": "metal",
+                    "color": "red",
+                    "position": [
+                        2.0014185905456543,
+                        0.1528342366218567,
+                        0.6983880400657654
+                    ]
+                }
+            ]
+        },
+        {
+            "image_index": 4,
+            "image_filename": "CLEVR_val_000004.png",
+            "objects": [
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "rubber",
+                    "color": "purple",
+                    "position": [
+                        3.5643577575683594,
+                        0.17544370889663696,
+                        0.3489958941936493
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "large",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        -2.056427478790283,
+                        -0.21641305088996887,
+                        0.6925567984580994
+                    ]
+                },
+                {
+                    "shape": "cylinder",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "purple",
+                    "position": [
+                        0.6934675574302673,
+                        0.07128599286079407,
+                        0.3481728434562683
+                    ]
+                }
+            ]
+        },
+        {
+            "image_index": 5,
+            "image_filename": "CLEVR_val_000005.png",
+            "objects": [
+                {
+                    "shape": "cylinder",
+                    "size": "large",
+                    "material": "metal",
+                    "color": "brown",
+                    "position": [
+                        0.9321132302284241,
+                        0.09960083663463593,
+                        0.6987138390541077
+                    ]
+                },
+                {
+                    "shape": "sphere",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "brown",
+                    "position": [
+                        -2.2691233158111572,
+                        -0.05526193231344223,
+                        0.35620516538619995
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "rubber",
+                    "color": "purple",
+                    "position": [
+                        -0.7861174941062927,
+                        -0.06037773936986923,
+                        0.3545483946800232
+                    ]
+                },
+                {
+                    "shape": "cube",
+                    "size": "small",
+                    "material": "rubber",
+                    "color": "red",
+                    "position": [
+                        2.738525629043579,
+                        0.19886460900306702,
+                        0.3550899922847748
+                    ]
+                },
+                {
+                    "shape": "sphere",
+                    "size": "small",
+                    "material": "metal",
+                    "color": "red",
+                    "position": [
+                        -3.643892765045166,
+                        -0.24814653396606445,
+                        0.3519843816757202
+                    ]
+                }
+            ]
+        }
+    ]
+}

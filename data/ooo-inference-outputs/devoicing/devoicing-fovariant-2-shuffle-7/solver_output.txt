@@ -1,0 +1,6 @@
+Candidate: c1
+Concept: Exists q0: sphere. blue(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/devoicing/devoicing-fovariant-2-shuffle-7/train/2.json
+
+Uniqueness check for candidate in top 100 solutions: False
+

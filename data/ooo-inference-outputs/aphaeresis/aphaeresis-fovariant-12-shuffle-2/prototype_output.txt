@@ -1,0 +1,2 @@
+The scores were [0.1532135307788849, 0.06867946684360504, 0.1746947020292282, 0.1853635311126709].
+Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/aphaeresis-fovariant-12/CLEVR_aphaeresis-fovariant-12_000005.png')

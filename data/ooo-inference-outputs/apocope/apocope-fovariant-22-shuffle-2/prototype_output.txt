@@ -1,0 +1,2 @@
+The scores were [0.22394704818725586, 0.17370904982089996, 0.14443308115005493, 0.14341403543949127].
+Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/apocope-fovariant-22/CLEVR_apocope-fovariant-22_000001.png')

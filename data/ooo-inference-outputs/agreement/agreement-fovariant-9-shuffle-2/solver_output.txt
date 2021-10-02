@@ -1,0 +1,6 @@
+Candidate: c0
+Concept: Exists q0: cylinder. metal(q0)
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/agreement/agreement-fovariant-9-shuffle-2/train/3.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

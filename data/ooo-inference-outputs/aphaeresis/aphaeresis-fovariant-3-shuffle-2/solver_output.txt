@@ -1,0 +1,6 @@
+Candidate: c3
+Concept: Exists q0: cylinder. True
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/aphaeresis/aphaeresis-fovariant-3-shuffle-2/train/0.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

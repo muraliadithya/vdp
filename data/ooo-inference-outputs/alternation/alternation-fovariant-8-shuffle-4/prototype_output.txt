@@ -1,0 +1,2 @@
+The scores were [0.08967674523591995, 0.2388889491558075, 0.12285870313644409, 0.1504780501127243].
+Best concept is @ idx 1 ie: (1, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/alternation-fovariant-8/CLEVR_alternation-fovariant-8_000000.png')

@@ -1,0 +1,6 @@
+Candidate: c2
+Concept: Exists q0: cylinder. True
+Candidate Name: /home/ubuntu/ooo-tool-chain-repo/data/ooo-inference-outputs-2/spy/spy-fovariant-7-shuffle-3/train/1.json
+
+Uniqueness check for candidate in top 100 solutions: True
+

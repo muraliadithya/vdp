@@ -26,7 +26,7 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-n_variants = 25
+n_variants = 50
 # PERCENT_SIMPLE = 0.5
 out_dir = 'data/clevr-variants/'
 pz_pth  = "data/clevr-cleaned-puzzles"

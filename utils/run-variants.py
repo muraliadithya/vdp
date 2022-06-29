@@ -4,7 +4,10 @@ from copy import deepcopy
 import numpy as np
 from common import *
 ############### CONSTANTS START ###############
-# start on Tue Sep 28 16:42:43 UTC 2021
+# start on
+# Wed Jan 12 02:04:44 UTC 2022
+# end on?
+# 
 to_run = [
         "agreement",
         "alternate-color",
@@ -14,17 +17,17 @@ to_run = [
         "assimilation",
         "breaking",
         "circle-at-ends",
-        # "threepack",
-        # "train",
-        # "partition",
-        # "spy",
-        # "shield",
-        # "devoicing",
-        # "meeussen",
+        "threepack",
+        "train",
+        "partition",
+        "spy",
+        "shield",
+        "devoicing",
+        "meeussen",
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-cleaned-variants"
+in_pth  = "data/clevr-variants"
 
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -140,5 +143,5 @@ if __name__ == '__main__':
                     shutil.copy(img, v_dir)
 
                 print("OUT:", output)
-                cmd = f"python utils/visualize-inference.py {gt_pth}"
-                output = exec_cmd(cmd=cmd)
+                # cmd = f"python utils/visualize-inference.py {gt_pth}"
+                # output = exec_cmd(cmd=cmd)

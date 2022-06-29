@@ -38,7 +38,7 @@ pz_pth = "data/clevr-cleaned-variants/"
 
 LATENT_DIM = 512
 LR         = 3e-4
-CONTINUE_TRAINING = True
+CONTINUE_TRAINING = False
 
 ############### CONSTANTS END ###############
 
@@ -181,12 +181,12 @@ if __name__ == "__main__":
     seed_everything(0, workers=True)
     data_module = VDPDataModule()
     height = 320
-    model_str = f"again3-cifar-puzzle-prototype-net-{height}"
+    model_str = f"cifar-puzzle-prototype-net-{height}"
     model_vae = VAE(height).from_pretrained("cifar10-resnet18")
     # model_vae = model_vae.load_from_checkpoint(f"data/prototype/puzzle-pretrained-vae-{height}-final.ckpt", strict=False, input_height=height)
     model = PrototypeVAE(vae_model=model_vae)
     if CONTINUE_TRAINING:
-        old_model_str = model_str.replace("again3-", "again2-")
+        old_model_str = model_str.replace("version2-", "")
         model = model.load_from_checkpoint(f"data/prototype/{old_model_str}-final.ckpt", vae_model=model_vae)
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="accuracy",
@@ -202,7 +202,7 @@ if __name__ == "__main__":
         # check_val_every_n_epoch=5,
         logger=csv_logger,
         callbacks=[checkpoint_callback, lr_monitor],
-        max_epochs=50)
+        max_epochs=100)
 
     trainer.fit(model, data_module)
     trainer.save_checkpoint(f"data/prototype/{model_str}-final.ckpt")

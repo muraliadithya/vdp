@@ -43,7 +43,7 @@ def save_output(output, puzzle_dict, out_pth, puzzle_pth):
         concept          = None
         candidate        = None
         return
-    candidate_rel_path = os.path.join("images", os.path.relpath(candidate, "/home/ubuntu/vdp-tool-chain-repo/data/clevr-irs"))
+    candidate_rel_path = os.path.join("images", os.path.relpath(candidate, "/home/ubuntu/vdp-tool-chain/data/clevr-irs"))
     puzzle_dict['candidate'] = candidate_rel_path
     puzzle_dict['concept'] = concept
     print(f"LOG: Saving {puzzle_dict['name']} @ {os.path.join(out_pth, puzzle_pth)}")
@@ -66,7 +66,7 @@ if __name__ == '__main__':
             continue
         puzzle_flags = flags[puzzle]
         cmd = f"python scripts/vdpsolve.py {os.path.abspath(ir_dir)} {puzzle_flags}"
-        raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True, cwd="vdp-solver")
+        raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True, cwd="vdp_solver")
         output = raw_output.split("\n")
         save_output(output, puzzle_dict, out_pth, puzzle_pth)
 

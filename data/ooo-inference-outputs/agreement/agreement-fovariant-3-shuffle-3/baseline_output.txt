@@ -1,2 +1,2 @@
 The scores were [0.6820930708747566, 0.6575558720427133, 0.7874684321564276, 1.0682714509437359].
-Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/agreement-fovariant-3/CLEVR_agreement-fovariant-3_000005.png')
+Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain/data/output/images/agreement-fovariant-3/CLEVR_agreement-fovariant-3_000005.png')

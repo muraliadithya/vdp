@@ -7,7 +7,7 @@ import numpy as np
 from common import *
 import scipy.linalg as la
 
-collate_pth = "/home/ubuntu/vdp-tool-chain-repo/clevr-inference/"
+collate_pth = "/home/ubuntu/vdp-tool-chain/clevr_inference/"
 assert os.path.exists(collate_pth), f"Check `collate_pth` constant."
 sys.path.append(collate_pth)
 sys.path.append(os.path.join(collate_pth, "reason"))
@@ -28,14 +28,14 @@ def collate_gt_results(in_pth, train_split, test_split):
 
 def run_solver(in_pth, puzzle_flags, print_out=True):
     cmd = f"python scripts/vdpsolve.py {os.path.abspath(in_pth)} {puzzle_flags}"
-    raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True, cwd="vdp-solver")
+    raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True, cwd="vdp_solver")
     if print_out: print(raw_output)
     return raw_output
 
 ############### HELPERS END ###############
 
 if __name__ == '__main__':
-    assert os.path.basename(os.getcwd()) == 'vdp-tool-chain-repo', "getcwd() was not found to be project_dir"
+    assert os.path.basename(os.getcwd()) == 'vdp-tool-chain', "getcwd() was not found to be project_dir"
     assert len(sys.argv) > 3, "Usage\n$ python utils/gt-to-solver.py {gt-path} \"{train_split}\" \"{test_split}\" \"{solver_flags=optional}\""
     in_pth = sys.argv[1]
     assert os.path.exists(in_pth), f"{in_pth} not found @ {os.getcwd()}"

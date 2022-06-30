@@ -12,9 +12,9 @@ class BaseOptions():
         self.initialized = False
         
     def initialize(self):
-        self.parser.add_argument('--ir_dir', default='/home/ubuntu/vdp-tool-chain-repo/data/intermediate-inference-outputs/', type=str, help='experiment directory')
-        self.parser.add_argument('--gt_dir', default='/home/ubuntu/vdp-tool-chain-repo/data/clevr-single-variant/', type=str, help='groundtruth directory')
-        self.parser.add_argument('--run_dir', default='/home/ubuntu/vdp-tool-chain-repo/data/baseline-data/', type=str, help='output directory')
+        self.parser.add_argument('--ir_dir', default='/home/ubuntu/vdp-tool-chain/data/intermediate-inference-outputs/', type=str, help='experiment directory')
+        self.parser.add_argument('--gt_dir', default='/home/ubuntu/vdp-tool-chain/data/clevr-single-variant/', type=str, help='groundtruth directory')
+        self.parser.add_argument('--run_dir', default='/home/ubuntu/vdp-tool-chain/data/baseline-data/', type=str, help='output directory')
         self.parser.add_argument('--load_checkpoint_path', default=None, type=str, help='load checkpoint path')
         self.parser.add_argument('--gpu_ids', default='0', type=str, help='ids of gpu to be used')
         self.parser.add_argument('--train_ratio', default=0.60, type=float, help='train to val ratio')
@@ -77,8 +77,8 @@ class TestOptions(BaseOptions):
         BaseOptions.initialize(self)
         self.parser.add_argument('--split', default='val')
         self.parser.add_argument('--output_path', default='result.json', type=str, help='save path for derendered scene annotation')
-        self.parser.add_argument('--clevr_val_ann_path', default='/home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/attr_net/objects/clevr_val_objs.json', type=str, help='clevr val objects annotation file')
-        self.parser.add_argument('--clevr_val_img_dir', default='/home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/raw/CLEVR_v1.0/images/val', type=str, help='clevr val image directory')
+        self.parser.add_argument('--clevr_val_ann_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_val_objs.json', type=str, help='clevr val objects annotation file')
+        self.parser.add_argument('--clevr_val_img_dir', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/images/val', type=str, help='clevr val image directory')
         self.parser.add_argument('--shuffle_data', default=0, type=int, help='shuffle dataloader')
         self.parser.add_argument('--name', default="", type=str, help='name of puzzle')
         self.is_train = False

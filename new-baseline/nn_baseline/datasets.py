@@ -76,8 +76,8 @@ def seed_worker(worker_id):
 
 
 def main():
-    ir_loc = "/home/ubuntu/vdp-tool-chain-repo/data/intermediate-inference-outputs/"
-    gt_loc = "/home/ubuntu/vdp-tool-chain-repo/data/clevr-single-variant/"
+    ir_loc = "/home/ubuntu/vdp-tool-chain/data/intermediate-inference-outputs/"
+    gt_loc = "/home/ubuntu/vdp-tool-chain/data/clevr-single-variant/"
     dataset = IRDataset(ir_loc, gt_loc, "circle-at-ends")
     dataloader = DataLoader(dataset, batch_size=5, shuffle=True, num_workers=0, worker_init_fn=seed_worker)
     for i_batch, sample_batched in enumerate(dataloader):

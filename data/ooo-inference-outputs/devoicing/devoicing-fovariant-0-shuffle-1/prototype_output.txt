@@ -1,2 +1,2 @@
 The scores were [0.2476838231086731, 0.06690824031829834, 0.24096086621284485, 0.06795050203800201].
-Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/devoicing-fovariant-0/CLEVR_devoicing-fovariant-0_000002.png')
+Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain/data/output/images/devoicing-fovariant-0/CLEVR_devoicing-fovariant-0_000002.png')

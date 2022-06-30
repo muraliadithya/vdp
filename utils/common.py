@@ -1,13 +1,16 @@
-import json, pickle, os, re
+import json, pickle, os, re, subprocess, shlex
 import numpy as np
-
 from glob import glob
-import pytorch_lightning as pl
-import torch, itertools
-import torchvision.transforms as transforms
-from torch.utils.data import DataLoader
-import cv2
 
+def exec_cmd(cmd):
+    print(f"LOG: exec_cmd({cmd})")
+    try:
+        raw_output = subprocess.check_output(shlex.split(cmd), universal_newlines=True)
+        output = raw_output.split("\n")
+        return output
+    except subprocess.CalledProcessError as e:
+        print(f"LOG: exec_cmd({cmd}) failed with err: {e.returncode}", f"\n{e.output}")
+        return None
 
 def read_json(pth):
     assert os.path.exists(pth), f"Path Not found: {pth} relative to {os.getcwd()}"
@@ -37,6 +40,11 @@ def to_txt(lines, pth):
         for l in lines:
             fp.write("%s\n" % l)
 
+def append_to_txt(lines, pth):
+    with open(pth, 'a') as fp:
+        for l in lines:
+            fp.write("%s\n" % l)
+
 def get_rx_lines(lines : list = [], rx_dict : dict = {}):
     for line in lines:
         for key, rx in rx_dict.items():
@@ -45,6 +53,7 @@ def get_rx_lines(lines : list = [], rx_dict : dict = {}):
                 yield (key, match)
 
 
+PROJECT_PATH = "/home/asehgal/personal/SPRING2022/vdp_camera_ready"
 
 rx_dict = {
     'candidate_num' : re.compile(r"Candidate: c(?P<candidate_num>\d)"),
@@ -383,77 +392,3 @@ proto_train_on = [
 proto_test_on_tiny  = list( set(list(filter(lambda x: not x[1], pz_partition.keys()))) - set(proto_train_on + vae_train_on) )
 proto_test_on_small = list( set(list(pz_partition.keys())) - set(proto_train_on + vae_train_on) )
 proto_test_on_large = list( set(list(pz_partition.keys())) - set(proto_train_on) )
-
-
-###### PYTORCH STUFF    ##########
-class VDPImage(torch.utils.data.Dataset):
-    def __init__(self, pz_pth, to_run, images_only=False, emit_path=False):
-        self.images_only = images_only
-        self.emit_path = emit_path
-        self.all_imgs = list()
-        self.all_swaps = list()
-        for (absdir, folders, files) in os.walk(pz_pth, followlinks=False):
-            if absdir == pz_pth:
-                puzzles = [os.path.join(pz_pth, p) for p in folders]
-            if absdir in puzzles:
-                puzzle_name = os.path.basename(absdir)
-                if ("*" in puzzle_name) or (puzzle_name not in to_run):
-                    continue
-                for v_dir in glob(os.path.join(absdir, "*")):
-                    if ".pkl" in v_dir or '.json' in v_dir:
-                        continue
-                    v_name = os.path.basename(v_dir)
-                    images = sorted(glob(os.path.join(v_dir, f"CLEVR_{puzzle_name}-{v_name}_*.png")))
-                    if "swap" in v_dir:
-                        self.all_swaps.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
-                        continue
-                    self.all_imgs.append((images, torch.Tensor([0, 1, 2, 3, 4, 5]), v_dir))
-                    # puzzle_name, variant_number = os.path.basename(absdir).split("-fovariant-")
-                    # if ("*" in puzzle_name) or (puzzle_name not in to_run):
-                    #     continue
-                    # pth = os.path.join(absdir, "filter-1.pkl")
-                    # self.all_pths.append(pth)
-        
-        self.all_imgs.extend(self.all_swaps)
-        self.all_imgs = list(sorted(self.all_imgs, key=lambda x: ('swap' in x[2], x[2]) ))
-        
-        transform_list = [
-                            transforms.ToPILImage(),
-                            transforms.Resize((320, 320)),
-                            transforms.ToTensor(),
-                            transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])
-                        ]
-        self.transform = transforms.Compose(transform_list)
-
-    @staticmethod
-    def process_image(imgs):
-        transform_list = [
-                            transforms.ToPILImage(),
-                            transforms.Resize((320, 320)),
-                            transforms.ToTensor(),
-                            transforms.Normalize(mean = [0.485, 0.456, 0.406], std = [0.229, 0.224, 0.225])
-                        ]
-        transform = transforms.Compose(transform_list)
-
-        img_procd = torch.stack([transform(cv2.imread(img)) for img in imgs])
-        return img_procd
-
-        
-
-
-    def __len__(self):
-        if self.images_only:
-            return len(self.all_imgs) * 6
-        return len(self.all_imgs)
-
-    def __getitem__(self, pz_idx):
-        if self.images_only:
-            imgs, label, v_dir = self.all_imgs[pz_idx // 6]
-            img = imgs[pz_idx % 6]
-            img_procd = self.transform(cv2.imread(img))
-            return img_procd
-        imgs, label, v_dir = self.all_imgs[pz_idx]
-        img_procd = torch.stack([self.transform(cv2.imread(img)) for img in imgs])
-        if self.emit_path:
-            return img_procd, label, v_dir
-        return img_procd, label

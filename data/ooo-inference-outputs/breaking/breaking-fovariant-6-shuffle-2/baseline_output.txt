@@ -1,2 +1,2 @@
 The scores were [0.8377540080196699, 0.7491110968295808, 1.2390329332762604, 0.811588516791945].
-Best concept is @ idx 2 ie: (2, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/breaking-fovariant-6/CLEVR_breaking-fovariant-6_000004.png')
+Best concept is @ idx 2 ie: (2, '/home/ubuntu/vdp-tool-chain/data/output/images/breaking-fovariant-6/CLEVR_breaking-fovariant-6_000004.png')

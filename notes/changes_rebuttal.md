@@ -33,5 +33,5 @@ What to do in this case:
 ```
     Candidate: c0
     Concept: Forall q0: cylinder!0. Forall q1: cylinder!1. True
-    Candidate Name: /home/ubuntu/vdp-tool-chain/clevr-inference/outputs/aatest/test/0.json
+    Candidate Name: /home/ubuntu/vdp-tool-chain/clevr_inference/outputs/aatest/test/0.json
  ```

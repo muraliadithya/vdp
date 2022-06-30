@@ -1,5 +1,4 @@
 #!/bin/bash -i
-
 display_usage() { 
 	echo "This script must be run with the following arguments." 
 	echo -e "Usage:\n$0 {PUZZLE_PATH} {PUZZLE_NAME} {TRAIN_SET} {TEST_SET} {VDPFLAGS}" 
@@ -22,20 +21,20 @@ TEST_SET="${4:-"0 1 2"}"
 VDPFLAGS="${5}"
 OUTFILE=${GTNAME/"json"/"out"}
 LOGFILE=${GTNAME/"json"/"log"}
-ABSPATH="/home/ubuntu/vdp-tool-chain-repo"
+ABSPATH="/home/ubuntu/vdp-tool-chain"
 echo $PUZZLE $OUTFILE $LOGFILE
-cd ${ABSPATH}/clevr-generate/image_generation/ &&
-rm -v ${ABSPATH}/data/output/scenes/CLEVR_"$NAME"_scenes/* &> $LOGFILE
-rm -v ${ABSPATH}/data/output/images/"$NAME"/* &> $LOGFILE
-blender --background --python gen_render_uconfig.py -- --input_puzzle_path "$PUZZLE" --use_gpu 1 --split "$NAME" --output_scene_file ${ABSPATH}/data/output/CLEVR_"$NAME"_scenes.json --output_scene_dir ${ABSPATH}/data/output/scenes/CLEVR_"$NAME"_scenes/  --output_image_dir ${ABSPATH}/data/output/images/"$NAME" &> $LOGFILE &&
-cd ${ABSPATH}/clevr-generate/ &&
-bash ./transfer.sh $NAME &>> $LOGFILE &&
-cd ${ABSPATH}/clevr-inference &&
+# cd ${ABSPATH}/clevr_generate/ &&
+# rm -v ${ABSPATH}/data/output/scenes/CLEVR_"$NAME"_scenes/* &> $LOGFILE
+# rm -v ${ABSPATH}/data/output/images/"$NAME"/* &> $LOGFILE
+# /home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glibc219-x86_64/blender --background --python gen_render_uconfig.py -- --input_puzzle_path "$PUZZLE" --use_gpu 1 --split "$NAME" --output_scene_file ${ABSPATH}/data/output/CLEVR_"$NAME"_scenes.json --output_scene_dir ${ABSPATH}/data/output/scenes/CLEVR_"$NAME"_scenes/  --output_image_dir ${ABSPATH}/data/output/images/"$NAME" &> $LOGFILE &&
+# cd ${ABSPATH}/clevr_generate/ &&
+# bash ./transfer.sh $NAME &>> $LOGFILE &&
+cd ${ABSPATH}/clevr_inference &&
 bash -i ./driver.sh $NAME "$TRAIN_SET" "$TEST_SET" &>> $LOGFILE &&
-cd ${ABSPATH}/vdp-solver && 
+cd ${ABSPATH}/vdp_solver && 
 python scripts/vdpsolve.py ${ABSPATH}/data/inference-outputs/"$NAME" $VDPFLAGS > $OUTFILE 2>> $LOGFILE &&
-cd ${ABSPATH}/pt-baseline &&
+cd ${ABSPATH}/triplet_loss_baseline &&
 bash -i ./driver.sh $NAME >> $OUTFILE 2>> $LOGFILE &&
-# cd ${ABSPATH} &&
-# rsync -a ${ABSPATH}/data/output/images/* ${ABSPATH}/data/clevr-cleaned-puzzles/ &&
+cd ${ABSPATH} &&
+rsync -a ${ABSPATH}/data/output/images/* ${ABSPATH}/data/clevr-cleaned-puzzles/ &&
 echo "DONE!"

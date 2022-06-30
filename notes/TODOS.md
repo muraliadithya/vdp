@@ -4,7 +4,7 @@ Transition off of AWS.
     -    Make a new github repo for the `vdp-tool-chain` + `yolo` and upload as much code as possible there.
     -    VDP account should have all the code necessary to rerun the experiments.
 * Show updated puzzles (if time)
-* clevr-inference 
+* clevr_inference 
 * clevr-ref check
 
 

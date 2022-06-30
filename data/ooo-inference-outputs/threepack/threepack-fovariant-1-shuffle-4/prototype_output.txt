@@ -1,2 +1,2 @@
 The scores were [0.2524164021015167, 0.17463064193725586, 0.09834635257720947, 0.12651176750659943].
-Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain-repo/data/output/images/threepack-fovariant-1/CLEVR_threepack-fovariant-1_000001.png')
+Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain/data/output/images/threepack-fovariant-1/CLEVR_threepack-fovariant-1_000001.png')

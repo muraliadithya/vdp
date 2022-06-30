@@ -263,7 +263,7 @@ def cli_main(args=None):
     csv_logger = CSVLogger(f"lightning_logs/{model_str}", )
     checkpoint_callback = pl.callbacks.ModelCheckpoint(
             monitor="val_loss",
-            dirpath="/home/ubuntu/vdp-tool-chain-repo/data/prototype/",
+            dirpath="/home/ubuntu/vdp-tool-chain/data/prototype/",
             filename= model_str + "-{epoch:02d}-{val_loss:.2f}",
             save_top_k=2,
             mode="min",)
@@ -276,7 +276,7 @@ def cli_main(args=None):
         )
 
     trainer.fit(model, datamodule=dm)
-    trainer.save_checkpoint(f"/home/ubuntu/vdp-tool-chain-repo/data/prototype/{model_str}-final.ckpt")
+    trainer.save_checkpoint(f"/home/ubuntu/vdp-tool-chain/data/prototype/{model_str}-final.ckpt")
     print("Saved ckpt!")
 
     dm.setup(None)

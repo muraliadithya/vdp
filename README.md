@@ -11,6 +11,7 @@ This repository contains all the code for running the `vdp` project. The (genera
 ```bash
 .
 ├── driver.sh                                         # See ## Driver for details.
+├── driver.sh                                         # See ## Driver for details.
 ├── README.md                                         # This file.
 ├── clevr_generate                                    # Code for generating custom CLEVR-domain images.
 │   ├── image_generation                              # (Code to regenerate clevr-instances)
@@ -49,7 +50,7 @@ This repository contains all the code for running the `vdp` project. The (genera
 
 ## Installation
 
-1. Setup a Amazon AWS `p2.xlarge` instance. We used the `Deep Learning AMI (Ubuntu 16.04) Version 38.0 (ami-067cf9e6ac97cfb53) ` Amazon Machine Image with 105 GiB gp2 storage volume. Running all the experiments from scratch takes about 24-30 hours of compute time (less than $50). I was able to get everything other than the `clevr_inference` repository running on a non-16.04 linux machine. So if you don't care about the CLEVR domain feel free to use your own machine.
+1. Setup a Amazon AWS `p2.xlarge` instance. We used the `Deep Learning AMI (Ubuntu 16.04) Version 38.0 (ami-067cf9e6ac97cfb53) ` Amazon Machine Image with 105 GiB gp2 storage volume. Running all the experiments from scratch takes about 24-30 hours of compute time (or less than $25). You can avoid this step by running on a local machine. However, we weren't able to setup the `clevr_inference` repository on a non-ubuntu-16.04 machine.
 2. Clone this git repository. The homepath should look like `/home/ubuntu/vdp-tool-chain` (this *exact string* has been hardcoded in a lot of places. If you prefer running this on a local machine then you'll need to group-replace-all this path with the project path).
 3. Install the conda environments. There should be 4 `*-spec.txt` files in the `data/conda-envs` folder. Create a conda environment from these. That is:
 ```bash
@@ -58,10 +59,20 @@ $ conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt
 $ conda create --name torch --file data/conda-envs/torch-spec.txt
 $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
-4. Download the `data.zip` data bundle and extract the directory to `~/vdp-tool-chain/data`.
-5. The data.zip file contains basically all the extra files needed to run the VDP model in one convenient spot.
+4. Download the `data.zip` data bundle merge this with the contents of `vdp-tool-chain/data`.
+5. The data.zip file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
+6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ makde clean && make` in `./darknet` should suffice. I'd suggest reading the readme in the darknet directory for setting up a particular GPU. 
 
-No action is needed for generating the `vdp` and `gqa` datasets. The data bundle should have these datasets nicely formatted for the inference stage.
+
+## Running a CLEVR puzzle.
+
+Make sure you don't have any environment activated with `conda deactivate`!
+
+```bash
+$ python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+```
+
+No action is needed to generating the `vdp` and `gqa` datasets. The data bundle should have these datasets nicely formatted for the inference stage.
 
 For the CLEVR dataset we need to setup blender and add a link to the CLEVR shapefile data.
 

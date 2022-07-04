@@ -1,3 +1,0 @@
-Unindent the `position` tag in `*-gt.json`'s.
-Regex: \[[\s\n]+([\-\d\.]+),[\s\n]+([\-\d\.]+),[\s\n]+([\-\d\.]+)[\s\n]+[\s\n]+\]
-Replace: [$1, $2, $3]

@@ -1,0 +1,9 @@
+**/.idea/**
+**/__pycache__/**
+**/.vscode/**
+html/**
+data*/**
+logs*/**
+notebooks/**
+collate_results/**
+

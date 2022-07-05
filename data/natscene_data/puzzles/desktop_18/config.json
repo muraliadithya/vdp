@@ -1,0 +1,1 @@
+{"name": "desktop_18", "train": ["data/natscene_data/images/51.jpg", "data/natscene_data/images/52.jpg", "data/natscene_data/images/53.jpg"], "test": ["data/natscene_data/images/54.jpg", "data/natscene_data/images/61.jpg", "data/natscene_data/images/59.jpg", "data/natscene_data/images/57.jpg"]}

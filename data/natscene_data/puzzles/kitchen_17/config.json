@@ -1,0 +1,1 @@
+{"name": "kitchen_17", "train": ["data/natscene_data/images/86.jpg", "data/natscene_data/images/87.jpg", "data/natscene_data/images/88.jpg"], "test": ["data/natscene_data/images/89.jpg", "data/natscene_data/images/90.jpg", "data/natscene_data/images/92.jpg"]}

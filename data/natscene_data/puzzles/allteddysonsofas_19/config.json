@@ -1,0 +1,1 @@
+{"name": "allteddysonsofas_19", "train": ["data/natscene_data/images/teddy1.jpg", "data/natscene_data/images/teddy3.jpg", "data/natscene_data/images/teddy10.jpg", "data/natscene_data/images/teddy12.jpg"], "test": ["data/natscene_data/images/teddy2.jpg", "data/natscene_data/images/teddy6.jpg", "data/natscene_data/images/teddy9.jpg", "data/natscene_data/images/teddy13.jpg"]}

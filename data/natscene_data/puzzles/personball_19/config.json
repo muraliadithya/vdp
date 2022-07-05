@@ -1,0 +1,1 @@
+{"name": "personball_19", "train": ["data/natscene_data/images/110.jpg", "data/natscene_data/images/111.jpg", "data/natscene_data/images/120.jpg"], "test": ["data/natscene_data/images/119.jpg", "data/natscene_data/images/117.jpg", "data/natscene_data/images/121.jpg"]}

@@ -1,0 +1,1 @@
+{"name": "separatepiles_6", "train": ["data/natscene_data/images/apple1.jpg", "data/natscene_data/images/apple2.jpg", "data/natscene_data/images/apple4.jpg", "data/natscene_data/images/apple5.jpg"], "test": ["data/natscene_data/images/apple3.jpg", "data/natscene_data/images/apple6.jpg", "data/natscene_data/images/apple8.jpg", "data/natscene_data/images/apple9.jpg"]}

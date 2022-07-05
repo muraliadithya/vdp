@@ -1,0 +1,1 @@
+{"name": "alldogsonsofas_16", "train": ["data/natscene_data/images/27.jpg", "data/natscene_data/images/28.jpg", "data/natscene_data/images/37.jpg"], "test": ["data/natscene_data/images/30.jpg", "data/natscene_data/images/34.jpg", "data/natscene_data/images/32.jpg"]}

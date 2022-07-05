@@ -1,0 +1,1 @@
+{"name": "parkmeter_2", "train": ["data/natscene_data/images/98.jpg", "data/natscene_data/images/99.jpg", "data/natscene_data/images/107.jpg"], "test": ["data/natscene_data/images/101.jpg", "data/natscene_data/images/102.jpg", "data/natscene_data/images/106.jpg", "data/natscene_data/images/105.jpg"]}

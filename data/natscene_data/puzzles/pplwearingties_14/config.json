@@ -1,0 +1,1 @@
+{"name": "pplwearingties_14", "train": ["data/natscene_data/images/146.jpg", "data/natscene_data/images/147.jpg", "data/natscene_data/images/148.jpg"], "test": ["data/natscene_data/images/157.jpg", "data/natscene_data/images/150.jpg", "data/natscene_data/images/214.jpg", "data/natscene_data/images/153.jpg"]}

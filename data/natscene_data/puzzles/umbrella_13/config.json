@@ -1,0 +1,1 @@
+{"name": "umbrella_13", "train": ["data/natscene_data/images/202.jpg", "data/natscene_data/images/203.jpg", "data/natscene_data/images/204.jpg"], "test": ["data/natscene_data/images/207.jpg", "data/natscene_data/images/210.jpg", "data/natscene_data/images/211.jpg", "data/natscene_data/images/208.jpg"]}

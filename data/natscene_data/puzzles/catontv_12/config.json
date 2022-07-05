@@ -1,0 +1,1 @@
+{"name": "catontv_12", "train": ["data/natscene_data/images/39.jpg", "data/natscene_data/images/40.jpg"], "test": ["data/natscene_data/images/41.jpg", "data/natscene_data/images/42.jpg", "data/natscene_data/images/43.jpg"]}

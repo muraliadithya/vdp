@@ -1,0 +1,1 @@
+{"name": "pplandties_3", "train": ["data/natscene_data/images/134.jpg", "data/natscene_data/images/135.jpg", "data/natscene_data/images/144.jpg"], "test": ["data/natscene_data/images/137.jpg", "data/natscene_data/images/138.jpg", "data/natscene_data/images/145.jpg"]}

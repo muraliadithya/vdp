@@ -1,0 +1,1 @@
+{"name": "allcatsonsofas_16", "train": ["data/natscene_data/images/14.jpg", "data/natscene_data/images/15.jpg", "data/natscene_data/images/16.jpg"], "test": ["data/natscene_data/images/23.jpg", "data/natscene_data/images/18.jpg", "data/natscene_data/images/20.jpg"]}

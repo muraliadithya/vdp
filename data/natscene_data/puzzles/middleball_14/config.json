@@ -1,0 +1,1 @@
+{"name": "middleball_14", "train": ["data/natscene_data/images/middleball1.jpg", "data/natscene_data/images/middleball3.jpg", "data/natscene_data/images/middleball4.jpg"], "test": ["data/natscene_data/images/middleball2.jpg", "data/natscene_data/images/middleball5.jpg", "data/natscene_data/images/middleball8.jpg", "data/natscene_data/images/middleball9.jpg"]}

@@ -1,0 +1,1 @@
+{"name": "setplates_16", "train": ["data/natscene_data/images/fork2.jpg", "data/natscene_data/images/fork3.jpg", "data/natscene_data/images/fork4.jpg"], "test": ["data/natscene_data/images/fork1.jpg", "data/natscene_data/images/fork11.jpg", "data/natscene_data/images/fork16.jpg", "data/natscene_data/images/fork18.jpg"]}

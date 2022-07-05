@@ -1,0 +1,1 @@
+{"name": "dogherded_1", "train": ["data/natscene_data/images/73.jpg", "data/natscene_data/images/74.jpg", "data/natscene_data/images/83.jpg"], "test": ["data/natscene_data/images/82.jpg", "data/natscene_data/images/77.jpg", "data/natscene_data/images/78.jpg", "data/natscene_data/images/84.jpg"]}

@@ -1,0 +1,1 @@
+{"name": "2on1_18", "train": ["data/natscene_data/images/1.jpg", "data/natscene_data/images/2.jpg", "data/natscene_data/images/7.jpg"], "test": ["data/natscene_data/images/3.jpg", "data/natscene_data/images/4.jpg", "data/natscene_data/images/5.jpg", "data/natscene_data/images/13.jpg"]}

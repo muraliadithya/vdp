@@ -1,0 +1,1 @@
+{"name": "sleeping_9", "train": ["data/natscene_data/images/168.jpg", "data/natscene_data/images/169.jpg", "data/natscene_data/images/170.jpg"], "test": ["data/natscene_data/images/177.jpg", "data/natscene_data/images/172.jpg", "data/natscene_data/images/174.jpg"]}

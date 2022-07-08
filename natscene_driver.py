@@ -6,7 +6,7 @@ from natscene_inference import vdp
 from natscene_inference.vdp.config import YOLOConfig
 
 class NatSceneConstants:
-    yolo_porject_dir : str = "/home/ubuntu/vdp-tool-chain/darknet/"
+    yolo_porject_dir : str = "/home/ubuntu/vdp-tool-chain/natscene_inference/darknet/"
     yolo_weights : str = 'data/yolo_data/yolov4.weights'
     coco_classes : str = 'data/yolo_data/coco.names'
     configs_dir : str = "data/natscene_data/puzzles/"
@@ -47,22 +47,27 @@ def generate_pipeline(use_cache : bool, converter_config, generator_config, ir_c
         vdp.ir.YOLOIR(use_cache=use_cache, **ir_config)
     ])
 
-def run_pipeline(pipeline : vdp.pipeline.Pipeline, configs : list, constants : NatSceneConstants):
+def run_pipeline(pipeline : vdp.pipeline.Pipeline, configs : list, constants : NatSceneConstants, args : argparse.Namespace):
     for pth in configs:
         print("running:", pth)
         vdp_params = read_json(pth)
         puzzle_name = vdp_params["name"]
-        # config = pipeline.run(vdp_params)
-        # config_out_pth = os.path.join(constants.output_dir, os.path.basename(pth))
-        # if not os.path.exists(os.path.dirname(config_out_pth)):
-        #     os.makedirs(os.path.dirname(config_out_pth))
-        # to_json(config.__dict__, config_out_pth)
+        config = pipeline.run(vdp_params)
+        config_out_pth = os.path.join(constants.output_dir, os.path.basename(pth))
+        if not os.path.exists(os.path.dirname(config_out_pth)):
+            os.makedirs(os.path.dirname(config_out_pth))
+        to_json(config.__dict__, config_out_pth)
         solver_out_path = os.path.join(constants.output_dir, puzzle_name + ".out")
         inference_path = os.path.join(constants.ir_output_dir, puzzle_name)
-        n_quantifiers = yolo_threshold[puzzle_name.split("_")[0]][0]
-        if puzzle_name.split("_")[0] == "setplates":
-            n_quantifiers = "3 -E"
-        run_solver(vdp_flags=f"- {n_quantifiers} --autotune", inference_result=inference_path, output_file=solver_out_path, constants=constants)
+        if puzzle_name in yolo_threshold:
+            n_quantifiers = yolo_threshold[puzzle_name.split("_")[0]][0]
+            if puzzle_name.split("_")[0] == "setplates": n_quantifiers = "3 -E"
+            vdp_flags = f"- {n_quantifiers} --autotune"
+        else:
+            assert args.vdp_flags is not None, "--vdp_flags must be specified for custom puzzle: " + puzzle_name
+            vdp_flags = args.vdp_flags
+
+        run_solver(vdp_flags=vdp_flags, inference_result=inference_path, output_file=solver_out_path, constants=constants)
 
 
 
@@ -70,6 +75,7 @@ if __name__ == "__main__":
     main_parser = argparse.ArgumentParser()
     main_parser.add_argument("--debug", action="store_true", help="Debug mode. NN is not run.", default=False)
     main_parser.add_argument("--regenerate", action="store_true", help="If enabled, regenerate all data instead of using cached copies.", default=False)
+    main_parser.add_argument("--vdp_flags", default=None, type=str, help="Flags to pass onto solver. Required if user generated config.")
     main_parser.add_argument("--config", default="", type=str, help="Path to config gile containing a vdp puzzle.")
     args = main_parser.parse_args()
     constants = NatSceneConstants()
@@ -87,6 +93,5 @@ if __name__ == "__main__":
     )
 
     configs = [args.config] if len(args.config) else get_configs(NatSceneConstants.configs_dir)
-    # pipeline = generate_pipeline(use_cache=not args.regenerate, converter_config=converter_config, generator_config=generator_config, ir_config=ir_config)
-    # print(pipeline)
-    run_pipeline(None, configs, constants)
+    pipeline = generate_pipeline(use_cache=not args.regenerate, converter_config=converter_config, generator_config=generator_config, ir_config=ir_config)
+    run_pipeline(pipeline, configs, constants, args)

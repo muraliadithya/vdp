@@ -18,8 +18,6 @@ This repository contains all the code for running the `vdp` project. The (genera
 │   └── ...
 ├── clevr_inference     # Module for inferring scene location of CLEVR images. Based on nsvqa.csail.mit.edu
 │   └── ...
-├── darknet             # Module for inferring scene location for natural scenes images. Based on github.com/pjreddie/darknet 
-│   └── ...
 ├── data                # Data bundle
 │   ├── blender-2.78c-linux-glibc219-x86_64
 │   ├── clevr-cleaned-puzzles
@@ -38,6 +36,7 @@ This repository contains all the code for running the `vdp` project. The (genera
 ├── lightning_logs          # Logs for training protonet baseline.      
 │   └── ...
 ├── natscene_inference      # Supporting code for running natural scenes data.
+│   ├── darknet             # Module for inferring scene location for natural scenes images. Based on github.com/pjreddie/darknet 
 │   └── ...
 ├── new-baseline            # code for Prototypical network baseline.
 │   └── ...
@@ -65,7 +64,7 @@ $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
 4. Download the `data.zip` data bundle merge this with the contents of `vdp-tool-chain/data`.
 5. The data.zip file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
-6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` in `./darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU.
+6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU.
 
 
 ## Running a CLEVR puzzle.

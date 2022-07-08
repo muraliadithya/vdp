@@ -6,7 +6,7 @@ from natscene_inference import vdp
 from natscene_inference.vdp.config import YOLOConfig
 
 class NatSceneConstants:
-    yolo_porject_dir : str = "/home/ubuntu/vdp-tool-chain/natscene_inference/darknet/"
+    yolo_porject_dir : str = "natscene_inference/darknet/"
     yolo_weights : str = 'data/yolo_data/yolov4.weights'
     coco_classes : str = 'data/yolo_data/coco.names'
     configs_dir : str = "data/natscene_data/puzzles/"
@@ -76,7 +76,7 @@ if __name__ == "__main__":
     main_parser.add_argument("--debug", action="store_true", help="Debug mode. NN is not run.", default=False)
     main_parser.add_argument("--regenerate", action="store_true", help="If enabled, regenerate all data instead of using cached copies.", default=False)
     main_parser.add_argument("--vdp_flags", default=None, type=str, help="Flags to pass onto solver. Required if user generated config.")
-    main_parser.add_argument("--config", default="", type=str, help="Path to config gile containing a vdp puzzle.")
+    main_parser.add_argument("--config", default="", type=str, help="Path to config file containing a vdp puzzle.")
     args = main_parser.parse_args()
     constants = NatSceneConstants()
     generator_config = YOLOConfig(

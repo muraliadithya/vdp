@@ -9,8 +9,11 @@ def exec_cmd(cmd):
         output = raw_output.split("\n")
         return output
     except subprocess.CalledProcessError as e:
-        print(f"LOG: exec_cmd({cmd}) failed with err: {e.returncode}", f"\n{e.output}")
-        return None
+        if (e.returncode == 124): # Special case for bash timeout command.
+            return ['timeout']
+        else:
+            print(f"LOG: exec_cmd({cmd}) failed with err: {e.returncode}", f"\n{e.output}")
+            return None
 
 def read_json(pth):
     assert os.path.exists(pth), f"Path Not found: {pth} relative to {os.getcwd()}"

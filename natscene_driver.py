@@ -34,6 +34,8 @@ def run_solver(vdp_flags : str, inference_result : str =None, output_file : str 
         {vdp_flags}
         """.strip()
         cmd = cmd.replace("\n", " ")
+        if os.path.exists(output_file):
+            return
         solver_logs = exec_cmd(cmd)
         to_txt(solver_logs, output_file)
 
@@ -50,15 +52,17 @@ def run_pipeline(pipeline : vdp.pipeline.Pipeline, configs : list, constants : N
         print("running:", pth)
         vdp_params = read_json(pth)
         puzzle_name = vdp_params["name"]
-        config = pipeline.run(vdp_params)
-        config_out_pth = os.path.join(constants.output_dir, os.path.basename(pth))
-        if not os.path.exists(os.path.dirname(config_out_pth)):
-            os.makedirs(os.path.dirname(config_out_pth))
-        to_json(config.__dict__, config_out_pth)
-        # solver_out_path = os.path.join(constants.output_dir, puzzle_name + ".out")
-        # inference_path = config.ir_path
-        # n_quantifiers = yolo_threshold[puzzle_name.split("_")[0]][0]
-        # run_solver(vdp_flags=f"- {n_quantifiers} --autotune", inference_result=inference_path, output_file=solver_out_path, constants=constants)
+        # config = pipeline.run(vdp_params)
+        # config_out_pth = os.path.join(constants.output_dir, os.path.basename(pth))
+        # if not os.path.exists(os.path.dirname(config_out_pth)):
+        #     os.makedirs(os.path.dirname(config_out_pth))
+        # to_json(config.__dict__, config_out_pth)
+        solver_out_path = os.path.join(constants.output_dir, puzzle_name + ".out")
+        inference_path = os.path.join(constants.ir_output_dir, puzzle_name)
+        n_quantifiers = yolo_threshold[puzzle_name.split("_")[0]][0]
+        if puzzle_name.split("_")[0] == "setplates":
+            n_quantifiers = "3 -E"
+        run_solver(vdp_flags=f"- {n_quantifiers} --autotune", inference_result=inference_path, output_file=solver_out_path, constants=constants)
 
 
 
@@ -83,6 +87,6 @@ if __name__ == "__main__":
     )
 
     configs = [args.config] if len(args.config) else get_configs(NatSceneConstants.configs_dir)
-    pipeline = generate_pipeline(use_cache=not args.regenerate, converter_config=converter_config, generator_config=generator_config, ir_config=ir_config)
-    print(pipeline)
-    run_pipeline(pipeline, configs, constants)
+    # pipeline = generate_pipeline(use_cache=not args.regenerate, converter_config=converter_config, generator_config=generator_config, ir_config=ir_config)
+    # print(pipeline)
+    run_pipeline(None, configs, constants)

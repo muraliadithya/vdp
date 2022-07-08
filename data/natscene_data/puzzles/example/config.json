@@ -1,1 +1,0 @@
-{"name": "example", "train": ["data/natscene_data/images/rhs1.jpg", "data/natscene_data/images/rhs2.jpg", "data/natscene_data/images/rhs3.jpg"], "test": ["data/natscene_data/images/rhs4.jpg", "data/natscene_data/images/rhs5.jpg", "data/natscene_data/images/rhs6.jpg"]}

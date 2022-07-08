@@ -65,80 +65,88 @@ $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
 4. Download the `data.zip` data bundle merge this with the contents of `vdp-tool-chain/data`.
 5. The data.zip file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
-6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ makde clean && make` in `./darknet` should suffice. I'd suggest reading the readme in the darknet directory for setting up a particular GPU.
+6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` in `./darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU.
 
 
 ## Running a CLEVR puzzle.
 
-1. Start by making a directory `data/clevr-cleaned-puzzles/top
-Make sure you don't have any environment activated with `conda deactivate`!
-
-```bash
-$ python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+Start by making a directory `data/clevr-cleaned-puzzles/test_puzzle`. Make a file `scene_file.json` that follows this format:
 ```
+[
+    { # Image 0   
+        "objects": [
+            {
+                "x": -2.0,          # [-3, 3]
+                "y": -2.0,          # [-3, 3]
+                "z": 0.0,           # Ideally use 0. The inference engine isn't trained for >0.
+                "size": "small",    # ["small", "large"]
+                "shape": "sphere",  # ["cube", "sphere", "cylinder"]
+                "color": "yellow",  # ["gray", "red", "blue", "green", "brown", "purple", "cyan", "yellow"]
+                "orientation": 0.0, # [0, 360)
+                "material": "rubber" # ["rubber", "metal"]
+            },
+            ...
+        ]
 
-
-
-## Running a VDP puzzle.
-
-
-<!-- No action is needed to generating the `vdp` and `gqa` datasets. The data bundle should have these datasets nicely formatted for the inference stage.
-
-For the CLEVR dataset we need to setup blender and add a link to the CLEVR shapefile data.
-
-* Download and extract Blender 2.78c from [here](https://download.blender.org/release/Blender2.78/blender-2.78c-linux-glibc219-x86_64.tar.bz2).
-* Extract Blender to `{project_dir}/data/blender-2.78c-linux-glibc219-x86_64.tar.bz2`
-* Alias the Blender Binary.
-* Add the directory containing CLEVR shapefiles data. echo $PWD/image_generation >> /home/ubuntu/clevr/blender-2.78c-linux-glibc219-x86_64/2.78/python/lib/python3.5/site-packages/clevr.pth`
-* Run blender using `blender --background --python render_images.py -- --num_images 10 --use_gpu 1`
-* THe file that needs to be edited is @ `/home/ubuntu/clevr/clevr-dataset-gen/image_generation/render_images.py`
-
-```
-# Setup CLEVR Dataset. Replace {} with appropriate string.
-$ cd data
-$ wget https://download.blender.org/release/Blender2.78/blender-2.78c-linux-glibc219-x86_64.tar.bz2
-$ tar xf blender-2.78c-linux-glibc219-x86_64.tar.bz2
-$ alias blender='$PWD/blender-2.78c-linux-glibc219-x86_64/blender
-$ echo "$PWD/__generate/clevr/" > blender-2.78c-linux-glibc219-x86_64/2.78/python/lib/python3.5/site-packages/clevr.pth
+    },
+    ...
+]
 ```
  -->
 
-
-
-<!-- ## Running the entire pipeline
-
-
-1. Start a `p2.xlarge` AWS instance (what was used for all these experiments).
-1. Download `data.zip` from the link given and extract in the project directory.
-1. Initialize the conda environments in from `data/conda_envs` with `conda env create -f {conda_env.yaml}`
-1. `(base) $ python utils/generate-variants.py` will run the pipeline on the variants @ `data/clevr-cleaned-variants` (~5-8 hours).
-1. `(torch) $ python utils/train_puzzles.py` will train the prototype network with the correct hyperparameters.
-1. Other code used to aggregate the data can be found under `analysis/`. Also, `utils/` has a lot of misc. utilities that I found helpful!
- -->
-
-<!-- ## Driver
-The `driver.sh` file is the central file to run an experiment through the vdp-tool-chain. The help menu provides more details:
+To run the CLEVR puzzle:
 ```bash
-$ ./driver.sh -h
-This script must be run with the following arguments.
-Usage:
-./driver.sh {PUZZLE_PATH} {PUZZLE_NAME} {TRAIN_SET} {TEST_SET} {VDPFLAGS}
-Example Usage:
-./driver.sh data/clevr-puzzles/alternate-color.json test "3 4 5 6" "0 1 2" "- 2 -N 100 -C 2"
-``` 
-Internally, the `driver.sh` file runs the corresponding "driver" script for each directory. A broad overview is presented below:
-![pipeline.svg](notes/vdp-pipeline-fig.svg) -->
+$ python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/test_puzzle --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+```
+More information about `vdp_flags` can be found by running `python vdp_solver/scripts/vdpsolve.py --help`. Also, make sure you don't have any environment activated with `conda deactivate` before running this!
+
+## Running a Natural scenes puzzle.
+
+1. Assume we want to process a puzzle defined by `eg1.png, eg2.png, eg3.png, cand1.png, cand2.png`.
+1. Put the images in `data/natscene_data/images/`.
+1. Create a directory `data/natscene_data/puzzles/test_puzzle`. Make a file `config.json` with the follow format:
+    ```
+    {
+        "name": "test_puzzle",
+        "train": [
+            "data/natscene_data/images/eg1.png",
+            "data/natscene_data/images/eg2.png",
+            "data/natscene_data/images/eg3.png"
+        ],
+        "test": [
+            "data/natscene_data/images/cand1.png",
+            "data/natscene_data/images/cand2.png",
+            "data/natscene_data/images/cand3.png"
+        ]
+    }
+    ```
+1. Run the natural scenes puzzles with the default YOLO bounding box detector:
+    ```
+    $ python natscene_driver.py --config "data/natscene_data/puzzles/test_puzzle/config.json" --vdp_flags "- 3 --autotune" --regenerate
+    ```
+1. The output of the solver will be written to `data/natscene_data/processed/test_puzzle.out`.
+
+
+## Running a GQA scenes puzzle.
+
+1. This requires access to the GQA dataset.
+
 
 ## Data
 
-The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded from here (5.6 GB): `TODO:PROVIDE DRIVE LINK`
+The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded from here and is subject to a fair use in research agreement (5.6 GB): `TODO:PROVIDE LINK`. 
 
+
+
+## Communication
+
+The fastest way to reach the authors for any debugging help is by opening a GitHub issue. This also helps us document and address potential "gotchas." For data related issues, please email the authors directly.
+
+
+## Common Gotcha's (Known Issues)
+
+1. The triplet_loss_baseline is written in Tensorflow/Keras. Keras documents default behavior in `~/.keras/keras.json`. The default behavior of `image_dim_ordering` is different for the triplet loss baseline so if you run into batch dimension errors, messing with the `image_dim_ordering` will help.
 
 ## Citations
 
 TODO (check website for now)
-<!-- ## VDP
-
-The `vdp_solver` folder is a bare-bones version of the symbolic solver that is available here: `https://github.com/anonymousocean/vdpicml2021/tree/master/satbasedsolver`
-
-The `vdp` folder contains the code to generate the IR from the VDP images using the YOLO model.   -->

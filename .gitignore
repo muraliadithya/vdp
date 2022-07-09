@@ -3,9 +3,7 @@
 *.h5
 data/
 .vscode
-screenlog.0
-vdp
-vdpicml2021
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

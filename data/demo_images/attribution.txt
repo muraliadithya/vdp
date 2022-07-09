@@ -1,0 +1,7 @@
+I got these images from Flickr. To the best of my knowledge, these images are CC w/ attribution. Here are the original links for the images:
+example_1.jpg : https://live.staticflickr.com/7150/6709476717_e647405668_o_d.jpg
+example_2.jpg : https://live.staticflickr.com/4108/5092146297_fc6a86d33a_o_d.jpg
+example_3.jpg : https://live.staticflickr.com/2384/2368652249_1837100994_o_d.jpg
+candidate_1.jpg :  https://live.staticflickr.com/7108/7462266002_e6fd27d3b9_o_d.jpg
+candidate_2.jpg :  https://live.staticflickr.com/7448/27718297791_8c4dc16c43_o_d.jpg
+candidate_3.jpg :  https://live.staticflickr.com/8144/7462268640_f9b52c1f2d_o_d.jpg

@@ -27,7 +27,7 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-variants"
+in_pth  = "data/clevr-cleaned-variants"
 
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -90,7 +90,6 @@ def generate_swap(swap, v_dir, v_name, full_v_name):
 
 if __name__ == '__main__':
     assert os.path.exists(in_pth), f"Path not found: {in_pth}"
-    if len(sys.argv) > 1: to_run = [sys.argv[1]]
     puzzles = []
     for (absdir, folders, files) in os.walk(in_pth, followlinks=False):
         if absdir == in_pth:
@@ -107,40 +106,37 @@ if __name__ == '__main__':
                 full_v_name = f"{puzzle_name}-{v_name}"
                 gt_pth = os.path.join(v_dir, f"{full_v_name}-gt.json")
                 gen_pth = os.path.join(v_dir, f"{full_v_name}.json")
+                scene_pth = os.path.join(v_dir, "scene_file.json")
                 print("RUNNING", gt_pth)
-                cmd = f"python utils/gt-to-gen.py {gt_pth} True"
+                cmd = f"cp {gen_pth} {scene_pth}"
                 output = exec_cmd(cmd=cmd)
                 if (not output):
                     print("SKIPPING", full_v_name)
                     continue
                 print("OUT:", output)
 
-                pz_flags = flags[puzzle_name] if puzzle_name in flags else "- 2 -N 100"
-                cmd = f"./driver.sh {gen_pth} {full_v_name} \"3 4 5\" \"0 1 2\" \"{pz_flags}\" "
+                pz_flags = flags[puzzle_name] if puzzle_name in flags else "- 2 --autotune"
+                cmd = f"python clevr_driver.py --puzzle_dir {v_dir} --examples \"3 4 5\" --candidates \"0 1 2\" --vdp_flags \"{pz_flags}\" --use_gpu"
                 output = exec_cmd(cmd=cmd)
                 if (not output): 
                     print("SKIPPING", full_v_name)
                     continue
 
-                if len(swap_list[puzzle_name]) > 1: 
+                if len(swap_list[puzzle_name]) > 1:
                     sl = set(swap_list[puzzle_name]) - set([0])
                     # swap = np.random.choice(list(sl))
                     for swap in list(sl):
-                        swap_gen_pth, swap_pz_pth = generate_swap(swap, v_dir, v_name, full_v_name)
-                        # reeexecute command, no generation needed.
-                        cmd = f"./driver-no-gen.sh {swap_gen_pth} {full_v_name + f'-swap{swap}'} \"3 4 5\" \"0 1 2\" \"{pz_flags}\" "
+                        examples = "3 4 5".replace(str(swap), "0")
+                        candidates = "0 1 2".replace("0", str(swap))
+                        swapped_v_dir = v_dir + "-swap" + str(swap)
+                        shutil.rmtree(swapped_v_dir)
+                        shutil.copytree(v_dir, swapped_v_dir)
+                        
+                        cmd = f"python clevr_driver.py --puzzle_dir {swapped_v_dir} --examples \"{examples}\" --candidates \"{candidates}\" --vdp_flags \"{pz_flags}\" --use_gpu"
                         output = exec_cmd(cmd=cmd)
                         if (not output): 
                             print("SKIPPING", full_v_name)
                             continue
-                        
-                        for img in glob(f"data/output/images/{full_v_name}-swap{swap}/*.png"):
-                            print("MOVE", img, "->", swap_pz_pth)
-                            shutil.copy(img, swap_pz_pth)
-
-                for img in glob(f"data/output/images/{full_v_name}/*.png"):
-                    print("MOVE", img, "->", v_dir)
-                    shutil.copy(img, v_dir)
 
                 print("OUT:", output)
                 # cmd = f"python utils/visualize-inference.py {gt_pth}"

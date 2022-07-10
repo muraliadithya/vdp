@@ -134,11 +134,10 @@ class ClevrPipeline:
         self.append_logs(infer_logs)
         return clevr_val_ann_path
 
-    def parse_scene_attrnet(self, clevr_val_ann_path, results_dir):
+    def parse_scene_attrnet(self, clevr_val_ann_path, results_path, results_dir):
         """
         Run the attribute network.
         """
-        resuls_path = os.path.join(results_dir, "results.json")
         cmd = f"""
         conda run -n ns-vqa
         python
@@ -146,13 +145,12 @@ class ClevrPipeline:
         --dataset clevr
         --clevr_val_ann_path {clevr_val_ann_path}
         --load_checkpoint_path {self.constants.attrnet_weights}
-        --output_path {resuls_path}
+        --output_path {results_path}
         --run_dir {results_dir}
         --name {self.puzzle_name}
         """.strip().replace("\n", " ")
         infer_logs = exec_cmd(cmd)
         self.append_logs(infer_logs)
-        return resuls_path
 
 
     def infer_puzzle(self, render_images_dir: str =None, render_summary_path: str =None):
@@ -169,18 +167,30 @@ class ClevrPipeline:
         else:
             self.render_images_dir = render_images_dir
             self.render_summary_path = render_summary_path
-        self.inference_result = os.path.join(self.puzzle_dir, "infer/processed")
-        if os.path.exists(os.path.join(self.inference_result, "results.json")):
+        self.inference_result = os.path.join(self.puzzle_dir, "solver_ir")
+        self.raw_results_pth = os.path.join(self.inference_result, "results.json")
+        if os.path.exists(os.path.join(self.inference_result, "test")):
             print("Inference already done. Skipping.")
             return
         bounding_boxes_dir = self.parse_scene_maskrcnn(self.render_images_dir, self.render_summary_path)
         clevr_val_ann_path = self.process_scene_attrnet(bounding_boxes_dir)
-        raw_results_pth = self.parse_scene_attrnet(clevr_val_ann_path, self.inference_result)
+        self.parse_scene_attrnet(clevr_val_ann_path, self.raw_results_pth, self.inference_result)
+
+
+    def collate_puzzle(self, raw_results_pth : str =None, inference_result : str =None):
+
+        if raw_results_pth is None or inference_result is None:
+            assert self.inference_result is not None, "Inference not done."
+            assert self.raw_results_pth is not None, "Inference not done."
+        else:
+            self.raw_results_pth = raw_results_pth
+            self.inference_result = inference_result
+
         # instead of rewrite collate with logging, just redirecting stdout
         # https://stackoverflow.com/a/7152903
         with open(self.log_path, "a") as f:
             with redirect_stdout(f):
-                collate(train_split=self.examples, test_split=self.candidates, results_pth=raw_results_pth, out_pth=self.inference_result)
+                collate(train_split=self.examples, test_split=self.candidates, results_pth=self.raw_results_pth, out_pth=self.inference_result)
 
     def run_solver(self, vdp_flags : str, inference_result : str =None):
         """
@@ -191,6 +201,8 @@ class ClevrPipeline:
         else:
             self.inference_result = inference_result
         cmd = f"""
+        timeout
+        60
         python
         {self.constants.solver_path}
         {self.inference_result}
@@ -226,6 +238,7 @@ def main(args):
     config.start_logfile()
     config.generate_puzzle()
     config.infer_puzzle()
+    config.collate_puzzle()
     config.run_solver(vdp_flags=args.vdp_flags)
     config.run_triplet_loss_baseline()
 

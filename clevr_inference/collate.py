@@ -4,8 +4,8 @@ from typing import List
 sys.path.append( os.path.dirname(__file__) )
 import json
 import numpy as np
-import reason.executors.clevr_executor as exe
-import reason.utils.utils as utils
+from reason.executors import clevr_executor as exe
+from reason.utils import utils
 from collections import defaultdict
 import shutil
 

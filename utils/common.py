@@ -66,7 +66,7 @@ rx_dict = {
     'bscores' : re.compile(r"The scores were (?P<score_list>\[[\d., e-]+\])."),
     'bcandidate' : re.compile(r"Best concept is @ idx (\d) ie: (?P<bcpath>.*)"),
     'path_match' : re.compile(r"([\w-]+)-(\d+).json"),
-    'uniqueness' : re.compile(r"Uniqueness check for candidate in top 100 solutions: (?P<check>.*)"),
+    'uniqueness' : re.compile(r"Uniqueness check for candidatwe in top 100 solutions: (?P<check>.*)"),
 }
 
 yolo_rx_dict = {
@@ -79,21 +79,21 @@ yolo_rx_dict = {
 img_template = '%s%%0%dd.png' % ('CLEVR_val_', 6)
 
 flags = {
-    'agreement' :           "- 3 -N 100 -C 2",
-    'alternate-color' :     "- 2 -N 100 -C 2",
-    'alternation' :         "- 2 -N 100 -C 1",
-    'aphaeresis' :          "- 3 -N 100 -C 1",
-    'apocope' :             "- 2 -N 100 -C 1",
-    'assimilation' :        "- 2 -N 100 -C 1", 
-    'breaking' :            "- 2 -N 100 -C 2",
-    'circle-at-ends' :      "- 3 -N 100 -C 2",
-    'devoicing' :           "- 3 -N 100",     # -C 3 
-    'meeussen' :            "- 2 -N 100 -C 2",
-    'partition':            "- 2 -N 100 -C 2",
-    'shield' :              "- 2 -N 100 -C 1",
-    'spy' :                 "- 2 -N 100 -C 2",
-    'threepack' :           "- 3 -N 100 -C 2",
-    'train' :               "- 2 -N 100 -C 2",
+    'agreement' :           "- 3 --autotune",
+    'alternate-color' :     "- 2 --autotune",
+    'alternation' :         "- 2 --autotune",
+    'aphaeresis' :          "- 3 --autotune",
+    'apocope' :             "- 2 --autotune",
+    'assimilation' :        "- 2 --autotune", 
+    'breaking' :            "- 2 --autotune",
+    'circle-at-ends' :      "- 3 --autotune",
+    'devoicing' :           "- 3",     # --autotune 
+    'meeussen' :            "- 2 --autotune",
+    'partition':            "- 2 --autotune",
+    'shield' :              "- 2 --autotune",
+    'spy' :                 "- 2 --autotune",
+    'threepack' :           "- 3 --autotune",
+    'train' :               "- 2 --autotune",
 }
 
 ooo_flags = {

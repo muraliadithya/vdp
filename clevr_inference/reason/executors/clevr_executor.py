@@ -523,7 +523,7 @@ def count( scene, _):
     return 'error'
 
 def equal_color( color1, color2):
-    if type(color1) == str and color1 in colors and type(color2) == str and color2 in colors:
+    if type(color1) == str and color1 in CLEVR_COLORS and type(color2) == str and color2 in CLEVR_COLORS:
         if color1 == color2:
             return 'yes'
         else:
@@ -539,7 +539,7 @@ def equal_integer( integer1, integer2):
     return 'error'
 
 def equal_material( material1, material2):
-    if type(material1) == str and material1 in materials and type(material2) == str and material2 in materials:
+    if type(material1) == str and material1 in CLEVR_MATERIALS and type(material2) == str and material2 in CLEVR_MATERIALS:
         if material1 == material2:
             return 'yes'
         else:
@@ -547,7 +547,7 @@ def equal_material( material1, material2):
     return 'error'
 
 def equal_shape( shape1, shape2):
-    if type(shape1) == str and shape1 in shapes and type(shape2) == str and shape2 in shapes:
+    if type(shape1) == str and shape1 in CLEVR_SHAPES and type(shape2) == str and shape2 in CLEVR_SHAPES:
         if shape1 == shape2:
             return 'yes'
         else:
@@ -555,7 +555,7 @@ def equal_shape( shape1, shape2):
     return 'error'
 
 def equal_size( size1, size2):
-    if type(size1) == str and size1 in sizes and type(size2) == str and size2 in sizes:
+    if type(size1) == str and size1 in CLEVR_SIZES and type(size2) == str and size2 in CLEVR_SIZES:
         if size1 == size2:
             return 'yes'
         else:

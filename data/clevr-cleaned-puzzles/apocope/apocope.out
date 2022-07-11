@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: cylinder. Exists q1: sphere. same_material(q1,q0) AND right(q0,q1)
+Candidate Name: data/clevr-cleaned-puzzles/apocope/solver_ir/test/1.json
+
+
+The scores were [0.009597477947809937, 0.01259128388790442, 0.013435793738307061].
+Best concept is @ idx 0 ie: data/clevr-cleaned-puzzles/apocope/render/images/CLEVR_val_000000.png
+
+

@@ -1,0 +1,122 @@
+{
+  "directions": {
+    "behind": [
+      -0.754490315914154,
+      0.6563112735748291,
+      0.0
+    ],
+    "above": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "right": [
+      0.6563112735748291,
+      0.7544902563095093,
+      -0.0
+    ],
+    "below": [
+      -0.0,
+      -0.0,
+      -1.0
+    ],
+    "left": [
+      -0.6563112735748291,
+      -0.7544902563095093,
+      0.0
+    ],
+    "front": [
+      0.754490315914154,
+      -0.6563112735748291,
+      -0.0
+    ]
+  },
+  "image_filename": "CLEVR_val_000000.png",
+  "image_index": 0,
+  "split": "val",
+  "objects": [
+    {
+      "3d_coords": [
+        -2.0,
+        -2.0,
+        0.3499999940395355
+      ],
+      "size": "small",
+      "material": "rubber",
+      "rotation": 0.0,
+      "shape": "sphere",
+      "pixel_coords": [
+        109,
+        141,
+        11.270532608032227
+      ],
+      "color": "yellow"
+    },
+    {
+      "3d_coords": [
+        -1.0,
+        -1.0,
+        0.3499999940395355
+      ],
+      "size": "small",
+      "material": "rubber",
+      "rotation": 0.0,
+      "shape": "cylinder",
+      "pixel_coords": [
+        174,
+        143,
+        11.18410587310791
+      ],
+      "color": "yellow"
+    },
+    {
+      "3d_coords": [
+        0.0,
+        0.0,
+        0.3499999940395355
+      ],
+      "size": "small",
+      "material": "rubber",
+      "rotation": 0.0,
+      "shape": "sphere",
+      "pixel_coords": [
+        240,
+        145,
+        11.097678184509277
+      ],
+      "color": "yellow"
+    }
+  ],
+  "relationships": {
+    "behind": [
+      [],
+      [],
+      []
+    ],
+    "left": [
+      [],
+      [
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "front": [
+      [],
+      [],
+      []
+    ],
+    "right": [
+      [
+        1,
+        2
+      ],
+      [
+        2
+      ],
+      []
+    ]
+  }
+}

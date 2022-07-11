@@ -63,6 +63,7 @@ rx_dict = {
     'concept' : re.compile(r"Concept: (?P<concept>.*)"),
     'candidate' : re.compile(r"Candidate Name: (?P<candidate>.*)"),
     'end' : re.compile(r"No discriminator found for puzzle (?P<cpath>.*)"),
+    'timeout_end' : re.compile(r"timeout"),
     'bscores' : re.compile(r"The scores were (?P<score_list>\[[\d., e-]+\])."),
     'bcandidate' : re.compile(r"Best concept is @ idx (\d) ie: (?P<bcpath>.*)"),
     'path_match' : re.compile(r"([\w-]+)-(\d+).json"),
@@ -298,7 +299,7 @@ properties = {
 def parse_solver_output(out):
     concepts = []
     for (key, line) in get_rx_lines(out.split("\n"), rx_dict):
-        if key == 'end':
+        if key == 'end' or key == 'timeout_end':
             return concepts
 
         if key == 'candidate_num':
@@ -321,11 +322,16 @@ def out_parser(out_pth):
     assert os.path.exists(out_pth), f"path not found w.r.t {os.getcwd()}"
     out = read_txt(out_pth)
 
-
     concepts = []
     gen = get_rx_lines(out, rx_dict)
     for (key, line) in gen:
+        # print(key, line)
+        # input()
         if key == 'end':
+            break
+        if key == 'timeout_end':
+            concept = {key : line}
+            concepts.append(concept)
             break
 
         if key == 'candidate_num':

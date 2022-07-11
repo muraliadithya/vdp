@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Exists q1: cube. Forall q2: cube. left(q0,q2)
+Candidate Name: data/clevr-cleaned-puzzles/aphaeresis/solver_ir/test/0.json
+
+
+The scores were [0.7776646974332313, 0.634708816087469, 0.059577705146016416].
+Best concept is @ idx 2 ie: data/clevr-cleaned-puzzles/aphaeresis/render/images/CLEVR_val_000002.png
+
+

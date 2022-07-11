@@ -27,7 +27,7 @@ to_run = [
         # "neutralization",
         # "cones*",
         ]
-in_pth  = "data/clevr-cleaned-variants"
+in_pth  = "data/clevr-cleaned-puzzles"
 
 ############### CONSTANTS END ###############
 ############### HELPERS START ###############
@@ -95,49 +95,43 @@ if __name__ == '__main__':
         if absdir == in_pth:
             puzzles = [os.path.join(in_pth, p) for p in folders]
         if absdir in puzzles:
-            print(absdir)
             puzzle_name = os.path.basename(absdir)
             if ("*" in puzzle_name) or (puzzle_name not in to_run):
                 continue
-            for v_dir in glob(os.path.join(absdir, "*")):
-                if "swap" in v_dir:
-                    continue
-                v_name = os.path.basename(v_dir)
-                full_v_name = f"{puzzle_name}-{v_name}"
-                gt_pth = os.path.join(v_dir, f"{full_v_name}-gt.json")
-                gen_pth = os.path.join(v_dir, f"{full_v_name}.json")
-                scene_pth = os.path.join(v_dir, "scene_file.json")
-                print("RUNNING", gt_pth)
-                cmd = f"cp {gen_pth} {scene_pth}"
-                output = exec_cmd(cmd=cmd)
-                if (not output):
-                    print("SKIPPING", full_v_name)
-                    continue
-                print("OUT:", output)
+            print(absdir)
+            gt_pth = os.path.join(absdir, f"{puzzle_name}-gt.json")
+            gen_pth = os.path.join(absdir, f"{puzzle_name}.json")
+            scene_pth = os.path.join(absdir, "scene_file.json")
+            print("RUNNING", gt_pth)
+            cmd = f"cp {gen_pth} {scene_pth}"
+            output = exec_cmd(cmd=cmd)
+            if (not output):
+                print("SKIPPING", puzzle_name)
+                continue
+            print("OUT:", output) 
+            pz_flags = flags[puzzle_name] if puzzle_name in flags else "- 2 --autotune"
+            cmd = f"python clevr_driver.py --puzzle_dir {absdir} --examples \"3 4 5\" --candidates \"0 1 2\" --vdp_flags \"{pz_flags}\" --use_gpu"
+            output = exec_cmd(cmd=cmd)
+            if (not output): 
+                print("SKIPPING", puzzle_name)
+                continue
 
-                pz_flags = flags[puzzle_name] if puzzle_name in flags else "- 2 --autotune"
-                cmd = f"python clevr_driver.py --puzzle_dir {v_dir} --examples \"3 4 5\" --candidates \"0 1 2\" --vdp_flags \"{pz_flags}\" --use_gpu"
-                output = exec_cmd(cmd=cmd)
-                if (not output): 
-                    print("SKIPPING", full_v_name)
-                    continue
-
-                if len(swap_list[puzzle_name]) > 1:
-                    sl = set(swap_list[puzzle_name]) - set([0])
-                    # swap = np.random.choice(list(sl))
-                    for swap in list(sl):
-                        examples = "3 4 5".replace(str(swap), "0")
-                        candidates = "0 1 2".replace("0", str(swap))
-                        swapped_v_dir = v_dir + "-swap" + str(swap)
-                        shutil.rmtree(swapped_v_dir)
-                        shutil.copytree(v_dir, swapped_v_dir)
+        #         if len(swap_list[puzzle_name]) > 1:
+        #             sl = set(swap_list[puzzle_name]) - set([0])
+        #             # swap = np.random.choice(list(sl))
+        #             for swap in list(sl):
+        #                 examples = "3 4 5".replace(str(swap), "0")
+        #                 candidates = "0 1 2".replace("0", str(swap))
+        #                 swapped_v_dir = v_dir + "-swap" + str(swap)
+        #                 shutil.rmtree(swapped_v_dir)
+        #                 shutil.copytree(v_dir, swapped_v_dir)
                         
-                        cmd = f"python clevr_driver.py --puzzle_dir {swapped_v_dir} --examples \"{examples}\" --candidates \"{candidates}\" --vdp_flags \"{pz_flags}\" --use_gpu"
-                        output = exec_cmd(cmd=cmd)
-                        if (not output): 
-                            print("SKIPPING", full_v_name)
-                            continue
+        #                 cmd = f"python clevr_driver.py --puzzle_dir {swapped_v_dir} --examples \"{examples}\" --candidates \"{candidates}\" --vdp_flags \"{pz_flags}\" --use_gpu"
+        #                 output = exec_cmd(cmd=cmd)
+        #                 if (not output): 
+        #                     print("SKIPPING", full_v_name)
+        #                     continue
 
-                print("OUT:", output)
-                # cmd = f"python utils/visualize-inference.py {gt_pth}"
-                # output = exec_cmd(cmd=cmd)
+            print("OUT:", output)
+        #         # cmd = f"python utils/visualize-inference.py {gt_pth}"
+        #         # output = exec_cmd(cmd=cmd)

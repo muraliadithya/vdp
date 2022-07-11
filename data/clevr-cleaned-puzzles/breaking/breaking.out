@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Forall q0: sphere. Exists q1: sphere. same_color(q0,q1)
+Candidate Name: data/clevr-cleaned-puzzles/breaking/solver_ir/test/0.json
+
+
+The scores were [0.011166719625321399, 0.011245221316801545, 0.019624733291554227].
+Best concept is @ idx 0 ie: data/clevr-cleaned-puzzles/breaking/render/images/CLEVR_val_000000.png
+
+

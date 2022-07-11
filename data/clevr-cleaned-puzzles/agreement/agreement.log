@@ -1,0 +1,971 @@
+Started Logging. 2022-07-10 05:21:32.988040
+
+found bundled python: /home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glibc219-x86_64/2.78/python
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:17.34M (0.00M, Peak 17.34M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:25.35M (0.00M, Peak 26.33M) | Time:00:00.01 | Preparing Scene data
+Fra:1 Mem:25.35M (0.00M, Peak 26.33M) | Time:00:00.01 | Creating Shadowbuffers
+Fra:1 Mem:25.35M (0.00M, Peak 26.33M) | Time:00:00.01 | Raytree.. preparing
+Fra:1 Mem:34.17M (0.00M, Peak 34.17M) | Time:00:00.02 | Raytree.. building
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Raytree finished
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Creating Environment maps
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Caching Point Densities
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Loading voxel datasets
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Volume preprocessing
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.69M (0.00M, Peak 47.46M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:38.04M (0.00M, Peak 47.46M) | Time:00:00.17 | Scene, Part 3-4
+Fra:1 Mem:37.72M (0.00M, Peak 47.46M) | Time:00:00.17 | Scene, Part 4-4
+Fra:1 Mem:36.79M (0.00M, Peak 47.46M) | Time:00:00.17 | Scene, Part 2-4
+Fra:1 Mem:34.95M (0.00M, Peak 47.46M) | Time:00:00.18 | Scene, Part 1-4
+Fra:1 Mem:17.23M (0.00M, Peak 47.46M) | Time:00:00.19 | Sce: Scene Ve:66054 Fa:64259 La:1
+Saved: '/tmp/tmpgo_axtck.png'
+ Time: 00:00.23 (Saving: 00:00.04)
+
+Fra:1 Mem:17.26M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:17.26M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:17.33M (0.00M, Peak 17.86M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:18.59M (0.00M, Peak 20.09M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:21.37M (0.00M, Peak 24.59M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:22.63M (0.00M, Peak 24.59M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:22.63M (0.00M, Peak 24.59M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:22.63M (0.00M, Peak 25.33M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:22.63M (0.00M, Peak 25.33M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:22.63M (0.00M, Peak 25.33M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:23.13M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:25.10M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:25.10M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:25.10M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:25.10M (0.00M, Peak 25.33M) | Time:00:00.16 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:32.48M (0.00M, Peak 32.48M) | Time:00:00.26 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:39.37M (0.00M, Peak 39.37M) | Time:00:00.26 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:35.51M (0.00M, Peak 41.41M) | Time:00:00.27 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:36.00M (0.00M, Peak 41.41M) | Time:00:00.27 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:40.48M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:39.99M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:40.03M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.18M, Peak:15.18M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:40.04M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.18M, Peak:15.18M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.04M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:40.04M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:40.04M (0.00M, Peak 41.41M) | Time:00:00.28 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:42.29M (0.00M, Peak 43.54M) | Time:00:00.28 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:42.29M (0.00M, Peak 44.54M) | Time:00:01.29 | Remaining:00:10.82 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 102/512
+Fra:1 Mem:42.29M (0.00M, Peak 44.54M) | Time:00:02.29 | Remaining:00:09.79 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 204/512
+Fra:1 Mem:42.29M (0.00M, Peak 44.54M) | Time:00:03.29 | Remaining:00:08.78 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 306/512
+Fra:1 Mem:42.29M (0.00M, Peak 44.54M) | Time:00:04.29 | Remaining:00:07.78 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 408/512
+Fra:1 Mem:42.29M (0.00M, Peak 44.54M) | Time:00:05.29 | Remaining:00:06.80 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 509/512
+Fra:1 Mem:40.04M (0.00M, Peak 44.54M) | Time:00:05.32 | Remaining:00:06.77 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:42.01M (0.00M, Peak 44.54M) | Time:00:05.33 | Remaining:00:06.78 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:42.01M (0.00M, Peak 44.54M) | Time:00:06.30 | Remaining:00:05.60 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 125/512
+Fra:1 Mem:42.01M (0.00M, Peak 44.54M) | Time:00:07.30 | Remaining:00:04.45 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 254/512
+Fra:1 Mem:42.01M (0.00M, Peak 44.54M) | Time:00:08.31 | Remaining:00:03.35 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 382/512
+Fra:1 Mem:42.01M (0.00M, Peak 44.54M) | Time:00:09.31 | Remaining:00:02.28 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 509/512
+Fra:1 Mem:40.04M (0.00M, Peak 44.54M) | Time:00:09.34 | Remaining:00:02.26 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:40.60M (0.00M, Peak 44.54M) | Time:00:09.34 | Remaining:00:02.26 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.60M (0.00M, Peak 44.54M) | Time:00:10.31 | Remaining:00:01.78 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 235/512
+Fra:1 Mem:40.60M (0.00M, Peak 44.54M) | Time:00:11.32 | Remaining:00:01.24 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 474/512
+Fra:1 Mem:40.04M (0.00M, Peak 44.54M) | Time:00:11.48 | Remaining:00:01.15 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.53M (0.00M, Peak 44.54M) | Time:00:11.48 | Remaining:00:01.15 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.53M (0.00M, Peak 44.54M) | Time:00:12.32 | Remaining:00:00.67 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 220/512
+Fra:1 Mem:40.53M (0.00M, Peak 44.54M) | Time:00:13.32 | Remaining:00:00.07 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 479/512
+Fra:1 Mem:40.04M (0.00M, Peak 44.54M) | Time:00:13.45 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.04M (0.00M, Peak 44.54M) | Time:00:13.45 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Finished
+Fra:1 Mem:17.51M (0.00M, Peak 44.54M) | Time:00:13.53 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000000.png'
+ Time: 00:13.57 (Saving: 00:00.03)
+
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:21.90M (0.00M, Peak 21.90M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:33.99M (0.00M, Peak 34.97M) | Time:00:00.02 | Preparing Scene data
+Fra:1 Mem:33.99M (0.00M, Peak 34.97M) | Time:00:00.02 | Creating Shadowbuffers
+Fra:1 Mem:33.99M (0.00M, Peak 34.97M) | Time:00:00.02 | Raytree.. preparing
+Fra:1 Mem:47.37M (0.00M, Peak 47.37M) | Time:00:00.03 | Raytree.. building
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Raytree finished
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Creating Environment maps
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Caching Point Densities
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Sce: Scene Ve:101384 Fa:97411 La:1
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Loading voxel datasets
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Sce: Scene Ve:101384 Fa:97411 La:1
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Sce: Scene Ve:101384 Fa:97411 La:1
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Volume preprocessing
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Sce: Scene Ve:101384 Fa:97411 La:1
+Fra:1 Mem:46.64M (0.00M, Peak 67.53M) | Time:00:00.25 | Sce: Scene Ve:101384 Fa:97411 La:1
+Fra:1 Mem:50.99M (0.00M, Peak 67.53M) | Time:00:00.26 | Scene, Part 3-4
+Fra:1 Mem:50.68M (0.00M, Peak 67.53M) | Time:00:00.26 | Scene, Part 4-4
+Fra:1 Mem:49.65M (0.00M, Peak 67.53M) | Time:00:00.27 | Scene, Part 1-4
+Fra:1 Mem:47.74M (0.00M, Peak 67.53M) | Time:00:00.27 | Scene, Part 2-4
+Fra:1 Mem:21.75M (0.00M, Peak 67.53M) | Time:00:00.27 | Sce: Scene Ve:101384 Fa:97411 La:1
+Saved: '/tmp/tmp16nb7lnb.png'
+ Time: 00:00.29 (Saving: 00:00.01)
+
+Fra:1 Mem:21.78M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:21.78M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:21.85M (0.00M, Peak 22.38M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:24.63M (0.00M, Peak 27.85M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:25.89M (0.00M, Peak 27.85M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_1
+Fra:1 Mem:28.67M (0.00M, Peak 31.89M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:29.93M (0.00M, Peak 31.89M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:29.93M (0.00M, Peak 31.89M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:29.93M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:29.93M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:29.93M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:30.19M (0.00M, Peak 32.63M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:33.16M (0.00M, Peak 33.16M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:33.17M (0.00M, Peak 33.17M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:33.16M (0.00M, Peak 33.17M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:33.16M (0.00M, Peak 33.17M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:44.33M (0.00M, Peak 44.33M) | Time:00:00.23 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:54.74M (0.00M, Peak 54.74M) | Time:00:00.24 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:48.94M (0.00M, Peak 57.87M) | Time:00:00.26 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:49.69M (0.00M, Peak 57.87M) | Time:00:00.26 | Mem:15.78M, Peak:15.78M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:56.49M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:15.78M, Peak:15.78M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.59M, Peak:22.59M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.84M, Peak:22.84M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.84M, Peak:22.84M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.84M, Peak:22.84M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.84M, Peak:22.84M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:55.75M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.84M, Peak:22.84M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:55.79M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.88M, Peak:22.88M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:55.80M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.88M, Peak:22.88M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:55.80M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.89M, Peak:22.89M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:55.80M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.89M, Peak:22.89M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:55.80M (0.00M, Peak 57.87M) | Time:00:00.27 | Mem:22.89M, Peak:22.89M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:58.05M (0.00M, Peak 59.30M) | Time:00:00.27 | Mem:25.14M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:58.05M (0.00M, Peak 60.30M) | Time:00:01.28 | Remaining:00:10.48 | Mem:25.14M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 105/512
+Fra:1 Mem:58.05M (0.00M, Peak 60.30M) | Time:00:02.28 | Remaining:00:09.43 | Mem:25.14M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 211/512
+Fra:1 Mem:58.05M (0.00M, Peak 60.30M) | Time:00:03.28 | Remaining:00:08.43 | Mem:25.14M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 316/512
+Fra:1 Mem:58.05M (0.00M, Peak 60.30M) | Time:00:04.29 | Remaining:00:07.43 | Mem:25.14M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 421/512
+Fra:1 Mem:55.80M (0.00M, Peak 60.30M) | Time:00:05.17 | Remaining:00:06.57 | Mem:22.89M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:05.17 | Remaining:00:06.58 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:05.30 | Remaining:00:06.46 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 15/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:06.30 | Remaining:00:05.50 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 132/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:07.31 | Remaining:00:04.53 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 249/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:08.31 | Remaining:00:03.56 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 365/512
+Fra:1 Mem:57.76M (0.00M, Peak 60.30M) | Time:00:09.31 | Remaining:00:02.58 | Mem:24.85M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 481/512
+Fra:1 Mem:55.80M (0.00M, Peak 60.30M) | Time:00:09.59 | Remaining:00:02.32 | Mem:22.89M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:56.36M (0.00M, Peak 60.30M) | Time:00:09.59 | Remaining:00:02.32 | Mem:23.45M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:56.36M (0.00M, Peak 60.30M) | Time:00:10.31 | Remaining:00:01.96 | Mem:23.45M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 174/512
+Fra:1 Mem:56.36M (0.00M, Peak 60.30M) | Time:00:11.32 | Remaining:00:01.42 | Mem:23.45M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 413/512
+Fra:1 Mem:55.80M (0.00M, Peak 60.30M) | Time:00:11.74 | Remaining:00:01.18 | Mem:22.89M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:56.29M (0.00M, Peak 60.30M) | Time:00:11.74 | Remaining:00:01.18 | Mem:23.38M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:56.29M (0.00M, Peak 60.30M) | Time:00:12.32 | Remaining:00:00.85 | Mem:23.38M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 150/512
+Fra:1 Mem:56.29M (0.00M, Peak 60.30M) | Time:00:13.32 | Remaining:00:00.25 | Mem:23.38M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 406/512
+Fra:1 Mem:55.80M (0.00M, Peak 60.30M) | Time:00:13.74 | Mem:22.89M, Peak:25.14M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:55.80M (0.00M, Peak 60.30M) | Time:00:13.74 | Mem:22.89M, Peak:25.14M | Scene, RenderLayer | Finished
+Fra:1 Mem:21.78M (0.00M, Peak 60.30M) | Time:00:13.82 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000001.png'
+ Time: 00:13.86 (Saving: 00:00.03)
+
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:17.62M (0.00M, Peak 17.62M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:25.62M (0.00M, Peak 27.77M) | Time:00:00.01 | Preparing Scene data
+Fra:1 Mem:25.62M (0.00M, Peak 27.77M) | Time:00:00.01 | Creating Shadowbuffers
+Fra:1 Mem:25.62M (0.00M, Peak 27.77M) | Time:00:00.01 | Raytree.. preparing
+Fra:1 Mem:34.45M (0.00M, Peak 34.45M) | Time:00:00.02 | Raytree.. building
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Raytree finished
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Creating Environment maps
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Caching Point Densities
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Loading voxel datasets
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Volume preprocessing
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64259 La:1
+Fra:1 Mem:38.04M (0.00M, Peak 47.74M) | Time:00:00.17 | Scene, Part 3-4
+Fra:1 Mem:38.00M (0.00M, Peak 47.74M) | Time:00:00.17 | Scene, Part 4-4
+Fra:1 Mem:37.07M (0.00M, Peak 47.74M) | Time:00:00.17 | Scene, Part 2-4
+Fra:1 Mem:35.22M (0.00M, Peak 47.74M) | Time:00:00.18 | Scene, Part 1-4
+Fra:1 Mem:17.50M (0.00M, Peak 47.74M) | Time:00:00.18 | Sce: Scene Ve:66054 Fa:64259 La:1
+Saved: '/tmp/tmpblobz__v.png'
+ Time: 00:00.20 (Saving: 00:00.01)
+
+Fra:1 Mem:17.53M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:17.53M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:17.60M (0.00M, Peak 18.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:18.86M (0.00M, Peak 20.36M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:20.12M (0.00M, Peak 21.62M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:22.90M (0.00M, Peak 26.12M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:22.90M (0.00M, Peak 26.12M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:22.90M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:22.90M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:22.90M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:23.16M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:25.13M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:25.13M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:25.13M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:25.13M (0.00M, Peak 26.12M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:32.51M (0.00M, Peak 32.51M) | Time:00:00.17 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:39.40M (0.00M, Peak 39.40M) | Time:00:00.18 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:35.53M (0.00M, Peak 41.44M) | Time:00:00.19 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:36.02M (0.00M, Peak 41.44M) | Time:00:00.19 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:40.51M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:14.89M, Peak:14.89M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:40.02M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.14M, Peak:15.14M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:40.06M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.18M, Peak:15.18M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:40.06M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.18M, Peak:15.18M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.06M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:40.06M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:40.06M (0.00M, Peak 41.44M) | Time:00:00.20 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:42.31M (0.00M, Peak 43.56M) | Time:00:00.20 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:42.31M (0.00M, Peak 44.56M) | Time:00:01.21 | Remaining:00:10.88 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 102/512
+Fra:1 Mem:42.31M (0.00M, Peak 44.56M) | Time:00:02.22 | Remaining:00:09.84 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 204/512
+Fra:1 Mem:42.31M (0.00M, Peak 44.56M) | Time:00:03.22 | Remaining:00:08.82 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 306/512
+Fra:1 Mem:42.31M (0.00M, Peak 44.56M) | Time:00:04.23 | Remaining:00:07.82 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 408/512
+Fra:1 Mem:42.31M (0.00M, Peak 44.56M) | Time:00:05.23 | Remaining:00:06.83 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 509/512
+Fra:1 Mem:40.06M (0.00M, Peak 44.56M) | Time:00:05.27 | Remaining:00:06.80 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:42.03M (0.00M, Peak 44.56M) | Time:00:05.27 | Remaining:00:06.81 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:42.03M (0.00M, Peak 44.56M) | Time:00:06.23 | Remaining:00:05.63 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 124/512
+Fra:1 Mem:42.03M (0.00M, Peak 44.56M) | Time:00:07.24 | Remaining:00:04.47 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 253/512
+Fra:1 Mem:42.03M (0.00M, Peak 44.56M) | Time:00:08.24 | Remaining:00:03.37 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 381/512
+Fra:1 Mem:42.03M (0.00M, Peak 44.56M) | Time:00:09.24 | Remaining:00:02.30 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 508/512
+Fra:1 Mem:40.06M (0.00M, Peak 44.56M) | Time:00:09.28 | Remaining:00:02.26 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:40.62M (0.00M, Peak 44.56M) | Time:00:09.28 | Remaining:00:02.26 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.62M (0.00M, Peak 44.56M) | Time:00:10.24 | Remaining:00:01.79 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 232/512
+Fra:1 Mem:40.62M (0.00M, Peak 44.56M) | Time:00:11.24 | Remaining:00:01.25 | Mem:15.75M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 471/512
+Fra:1 Mem:40.06M (0.00M, Peak 44.56M) | Time:00:11.42 | Remaining:00:01.15 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.55M (0.00M, Peak 44.56M) | Time:00:11.42 | Remaining:00:01.15 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.55M (0.00M, Peak 44.56M) | Time:00:12.24 | Remaining:00:00.68 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 216/512
+Fra:1 Mem:40.55M (0.00M, Peak 44.56M) | Time:00:13.24 | Remaining:00:00.09 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 474/512
+Fra:1 Mem:40.06M (0.00M, Peak 44.56M) | Time:00:13.39 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.06M (0.00M, Peak 44.56M) | Time:00:13.39 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Finished
+Fra:1 Mem:17.53M (0.00M, Peak 44.56M) | Time:00:13.47 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000002.png'
+ Time: 00:13.51 (Saving: 00:00.03)
+
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:17.62M (0.00M, Peak 17.62M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:25.63M (0.00M, Peak 26.61M) | Time:00:00.01 | Preparing Scene data
+Fra:1 Mem:25.63M (0.00M, Peak 26.61M) | Time:00:00.01 | Creating Shadowbuffers
+Fra:1 Mem:25.63M (0.00M, Peak 26.61M) | Time:00:00.01 | Raytree.. preparing
+Fra:1 Mem:34.45M (0.00M, Peak 34.45M) | Time:00:00.02 | Raytree.. building
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Raytree finished
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Creating Environment maps
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Caching Point Densities
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64251 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Loading voxel datasets
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64251 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64251 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Volume preprocessing
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64251 La:1
+Fra:1 Mem:33.97M (0.00M, Peak 47.74M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64251 La:1
+Fra:1 Mem:38.04M (0.00M, Peak 47.74M) | Time:00:00.16 | Scene, Part 3-4
+Fra:1 Mem:38.01M (0.00M, Peak 47.74M) | Time:00:00.16 | Scene, Part 4-4
+Fra:1 Mem:37.07M (0.00M, Peak 47.74M) | Time:00:00.18 | Scene, Part 2-4
+Fra:1 Mem:35.23M (0.00M, Peak 47.74M) | Time:00:00.18 | Scene, Part 1-4
+Fra:1 Mem:17.51M (0.00M, Peak 47.74M) | Time:00:00.19 | Sce: Scene Ve:66054 Fa:64251 La:1
+Saved: '/tmp/tmpr5xfjk9m.png'
+ Time: 00:00.20 (Saving: 00:00.01)
+
+Fra:1 Mem:17.54M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:17.54M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:18.87M (0.00M, Peak 20.37M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:21.65M (0.00M, Peak 24.87M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:22.91M (0.00M, Peak 24.87M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:22.91M (0.00M, Peak 24.87M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:22.91M (0.00M, Peak 25.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:22.91M (0.00M, Peak 25.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:22.91M (0.00M, Peak 25.61M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:23.16M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:23.16M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:23.16M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:23.16M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:23.16M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:23.17M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:23.17M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:25.13M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:25.13M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:25.13M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:25.13M (0.00M, Peak 25.61M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:32.51M (0.00M, Peak 32.51M) | Time:00:00.17 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:39.40M (0.00M, Peak 39.40M) | Time:00:00.18 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:35.54M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:36.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:40.52M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:10.41M, Peak:10.41M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:14.90M, Peak:14.90M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.15M, Peak:15.15M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.15M, Peak:15.15M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.15M, Peak:15.15M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.15M, Peak:15.15M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:40.03M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.15M, Peak:15.15M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:40.07M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:40.07M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.07M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:40.07M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:40.07M (0.00M, Peak 41.45M) | Time:00:00.19 | Mem:15.19M, Peak:15.19M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:42.32M (0.00M, Peak 43.57M) | Time:00:00.20 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:42.32M (0.00M, Peak 44.57M) | Time:00:01.20 | Remaining:00:12.92 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 87/512
+Fra:1 Mem:42.32M (0.00M, Peak 44.57M) | Time:00:02.21 | Remaining:00:11.89 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 174/512
+Fra:1 Mem:42.32M (0.00M, Peak 44.57M) | Time:00:03.22 | Remaining:00:10.88 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 261/512
+Fra:1 Mem:42.32M (0.00M, Peak 44.57M) | Time:00:04.23 | Remaining:00:09.88 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 348/512
+Fra:1 Mem:42.32M (0.00M, Peak 44.57M) | Time:00:05.24 | Remaining:00:08.87 | Mem:17.44M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 435/512
+Fra:1 Mem:40.07M (0.00M, Peak 44.57M) | Time:00:06.14 | Remaining:00:07.99 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:06.14 | Remaining:00:07.99 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:06.25 | Remaining:00:07.87 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 11/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:07.26 | Remaining:00:06.73 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 117/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:08.26 | Remaining:00:05.62 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 223/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:09.27 | Remaining:00:04.55 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 328/512
+Fra:1 Mem:42.04M (0.00M, Peak 44.57M) | Time:00:10.28 | Remaining:00:03.49 | Mem:17.16M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 433/512
+Fra:1 Mem:40.07M (0.00M, Peak 44.57M) | Time:00:11.03 | Remaining:00:02.71 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:40.64M (0.00M, Peak 44.57M) | Time:00:11.04 | Remaining:00:02.71 | Mem:15.76M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.64M (0.00M, Peak 44.57M) | Time:00:11.28 | Remaining:00:02.57 | Mem:15.76M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 56/512
+Fra:1 Mem:40.64M (0.00M, Peak 44.57M) | Time:00:12.28 | Remaining:00:01.96 | Mem:15.76M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 288/512
+Fra:1 Mem:40.07M (0.00M, Peak 44.57M) | Time:00:13.25 | Remaining:00:01.34 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:40.57M (0.00M, Peak 44.57M) | Time:00:13.25 | Remaining:00:01.34 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.57M (0.00M, Peak 44.57M) | Time:00:13.28 | Remaining:00:01.32 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 6/512
+Fra:1 Mem:40.57M (0.00M, Peak 44.57M) | Time:00:14.28 | Remaining:00:00.69 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 255/512
+Fra:1 Mem:40.57M (0.00M, Peak 44.57M) | Time:00:15.28 | Remaining:00:00.02 | Mem:15.68M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 502/512
+Fra:1 Mem:40.07M (0.00M, Peak 44.57M) | Time:00:15.32 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.07M (0.00M, Peak 44.57M) | Time:00:15.32 | Mem:15.19M, Peak:17.44M | Scene, RenderLayer | Finished
+Fra:1 Mem:17.54M (0.00M, Peak 44.57M) | Time:00:15.40 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000003.png'
+ Time: 00:15.44 (Saving: 00:00.03)
+
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:17.63M (0.00M, Peak 17.63M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:25.64M (0.00M, Peak 26.62M) | Time:00:00.01 | Preparing Scene data
+Fra:1 Mem:25.64M (0.00M, Peak 26.62M) | Time:00:00.01 | Creating Shadowbuffers
+Fra:1 Mem:25.64M (0.00M, Peak 26.62M) | Time:00:00.01 | Raytree.. preparing
+Fra:1 Mem:34.46M (0.00M, Peak 34.46M) | Time:00:00.02 | Raytree.. building
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Raytree finished
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Creating Environment maps
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Caching Point Densities
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64260 La:1
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Loading voxel datasets
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64260 La:1
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64260 La:1
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Volume preprocessing
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64260 La:1
+Fra:1 Mem:33.98M (0.00M, Peak 47.75M) | Time:00:00.16 | Sce: Scene Ve:66054 Fa:64260 La:1
+Fra:1 Mem:38.05M (0.00M, Peak 47.75M) | Time:00:00.16 | Scene, Part 3-4
+Fra:1 Mem:38.01M (0.00M, Peak 47.75M) | Time:00:00.17 | Scene, Part 4-4
+Fra:1 Mem:36.99M (0.00M, Peak 47.75M) | Time:00:00.18 | Scene, Part 1-4
+Fra:1 Mem:35.08M (0.00M, Peak 47.75M) | Time:00:00.18 | Scene, Part 2-4
+Fra:1 Mem:17.52M (0.00M, Peak 47.75M) | Time:00:00.19 | Sce: Scene Ve:66054 Fa:64260 La:1
+Saved: '/tmp/tmp3u1hp0rl.png'
+ Time: 00:00.20 (Saving: 00:00.01)
+
+Fra:1 Mem:17.55M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:17.55M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:17.61M (0.00M, Peak 18.14M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:18.87M (0.00M, Peak 20.37M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:21.66M (0.00M, Peak 24.88M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:23.15M (0.00M, Peak 24.88M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:23.15M (0.00M, Peak 24.88M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:23.15M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:23.15M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:23.15M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:23.40M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:25.37M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:25.61M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:25.61M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.24M, Peak:0.24M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:25.61M (0.00M, Peak 25.85M) | Time:00:00.08 | Mem:0.24M, Peak:0.24M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:32.99M (0.00M, Peak 32.99M) | Time:00:00.17 | Mem:0.24M, Peak:0.24M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:39.88M (0.00M, Peak 39.88M) | Time:00:00.17 | Mem:0.24M, Peak:0.24M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:36.01M (0.00M, Peak 41.92M) | Time:00:00.18 | Mem:0.24M, Peak:0.24M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:36.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:10.64M, Peak:10.64M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:40.99M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:10.64M, Peak:10.64M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.13M, Peak:15.13M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.38M, Peak:15.38M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.38M, Peak:15.38M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.38M, Peak:15.38M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.38M, Peak:15.38M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:40.50M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.38M, Peak:15.38M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:40.54M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.42M, Peak:15.42M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:40.54M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.42M, Peak:15.42M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:40.54M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.42M, Peak:15.42M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:40.54M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.42M, Peak:15.42M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:40.54M (0.00M, Peak 41.92M) | Time:00:00.19 | Mem:15.42M, Peak:15.42M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:42.79M (0.00M, Peak 44.04M) | Time:00:00.19 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:42.79M (0.00M, Peak 45.04M) | Time:00:01.20 | Remaining:00:11.48 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 97/512
+Fra:1 Mem:42.79M (0.00M, Peak 45.04M) | Time:00:02.21 | Remaining:00:10.45 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 194/512
+Fra:1 Mem:42.79M (0.00M, Peak 45.04M) | Time:00:03.21 | Remaining:00:09.44 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 291/512
+Fra:1 Mem:42.79M (0.00M, Peak 45.04M) | Time:00:04.22 | Remaining:00:08.43 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 388/512
+Fra:1 Mem:42.79M (0.00M, Peak 45.04M) | Time:00:05.23 | Remaining:00:07.43 | Mem:17.67M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 485/512
+Fra:1 Mem:40.54M (0.00M, Peak 45.04M) | Time:00:05.52 | Remaining:00:07.16 | Mem:15.42M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:42.51M (0.00M, Peak 45.04M) | Time:00:05.52 | Remaining:00:07.16 | Mem:17.39M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:42.51M (0.00M, Peak 45.04M) | Time:00:06.23 | Remaining:00:06.35 | Mem:17.39M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 83/512
+Fra:1 Mem:42.51M (0.00M, Peak 45.04M) | Time:00:07.23 | Remaining:00:05.25 | Mem:17.39M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 200/512
+Fra:1 Mem:42.51M (0.00M, Peak 45.04M) | Time:00:08.24 | Remaining:00:04.18 | Mem:17.39M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 317/512
+Fra:1 Mem:42.51M (0.00M, Peak 45.04M) | Time:00:09.24 | Remaining:00:03.14 | Mem:17.39M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 433/512
+Fra:1 Mem:40.54M (0.00M, Peak 45.04M) | Time:00:09.93 | Remaining:00:02.43 | Mem:15.42M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:41.10M (0.00M, Peak 45.04M) | Time:00:09.93 | Remaining:00:02.43 | Mem:15.98M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:41.10M (0.00M, Peak 45.04M) | Time:00:10.24 | Remaining:00:02.27 | Mem:15.98M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 75/512
+Fra:1 Mem:41.10M (0.00M, Peak 45.04M) | Time:00:11.25 | Remaining:00:01.72 | Mem:15.98M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 313/512
+Fra:1 Mem:40.54M (0.00M, Peak 45.04M) | Time:00:12.09 | Remaining:00:01.22 | Mem:15.42M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:41.03M (0.00M, Peak 45.04M) | Time:00:12.09 | Remaining:00:01.22 | Mem:15.91M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:41.03M (0.00M, Peak 45.04M) | Time:00:12.25 | Remaining:00:01.13 | Mem:15.91M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 40/512
+Fra:1 Mem:41.03M (0.00M, Peak 45.04M) | Time:00:13.25 | Remaining:00:00.53 | Mem:15.91M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 296/512
+Fra:1 Mem:40.54M (0.00M, Peak 45.04M) | Time:00:14.10 | Mem:15.42M, Peak:17.67M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:40.54M (0.00M, Peak 45.04M) | Time:00:14.10 | Mem:15.42M, Peak:17.67M | Scene, RenderLayer | Finished
+Fra:1 Mem:17.54M (0.00M, Peak 45.04M) | Time:00:14.18 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000004.png'
+ Time: 00:14.22 (Saving: 00:00.03)
+
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+convertViewVec: called in an invalid context
+Fra:1 Mem:18.69M (0.00M, Peak 18.69M) | Time:00:00.00 | Preparing Scene data
+Fra:1 Mem:28.06M (0.00M, Peak 29.04M) | Time:00:00.01 | Preparing Scene data
+Fra:1 Mem:28.06M (0.00M, Peak 29.04M) | Time:00:00.01 | Creating Shadowbuffers
+Fra:1 Mem:28.06M (0.00M, Peak 29.04M) | Time:00:00.01 | Raytree.. preparing
+Fra:1 Mem:38.15M (0.00M, Peak 38.15M) | Time:00:00.02 | Raytree.. building
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Raytree finished
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Creating Environment maps
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Caching Point Densities
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Sce: Scene Ve:73558 Fa:73507 La:1
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Loading voxel datasets
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Sce: Scene Ve:73558 Fa:73507 La:1
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Sce: Scene Ve:73558 Fa:73507 La:1
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Volume preprocessing
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Sce: Scene Ve:73558 Fa:73507 La:1
+Fra:1 Mem:37.61M (0.00M, Peak 53.36M) | Time:00:00.19 | Sce: Scene Ve:73558 Fa:73507 La:1
+Fra:1 Mem:41.95M (0.00M, Peak 53.36M) | Time:00:00.19 | Scene, Part 3-4
+Fra:1 Mem:41.64M (0.00M, Peak 53.36M) | Time:00:00.19 | Scene, Part 4-4
+Fra:1 Mem:40.61M (0.00M, Peak 53.36M) | Time:00:00.21 | Scene, Part 1-4
+Fra:1 Mem:38.70M (0.00M, Peak 53.36M) | Time:00:00.21 | Scene, Part 2-4
+Fra:1 Mem:18.51M (0.00M, Peak 53.36M) | Time:00:00.21 | Sce: Scene Ve:73558 Fa:73507 La:1
+Saved: '/tmp/tmp6bbgd5t6.png'
+ Time: 00:00.23 (Saving: 00:00.01)
+
+Fra:1 Mem:18.54M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Area
+Fra:1 Mem:18.54M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Ground
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Empty
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Back
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Fill
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Lamp_Key
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Camera
+Fra:1 Mem:18.61M (0.00M, Peak 19.13M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCube_v2_0
+Fra:1 Mem:18.91M (0.00M, Peak 19.28M) | Time:00:00.04 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCube_v2_1
+Fra:1 Mem:19.22M (0.00M, Peak 19.59M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_0
+Fra:1 Mem:20.72M (0.00M, Peak 22.16M) | Time:00:00.05 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | SmoothCylinder_0
+Fra:1 Mem:23.50M (0.00M, Peak 26.72M) | Time:00:00.06 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Synchronizing object | Sphere_1
+Fra:1 Mem:24.99M (0.00M, Peak 26.72M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Initializing
+Fra:1 Mem:24.99M (0.00M, Peak 26.72M) | Time:00:00.07 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Loading render kernels (may take a few minutes the first time)
+Fra:1 Mem:24.99M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Waiting for render to start
+Fra:1 Mem:24.99M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Scene
+Fra:1 Mem:24.99M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Shaders
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Background
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Camera
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes Flags
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Copying Transformations to device
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Objects | Applying Static Transformations
+Fra:1 Mem:25.25M (0.00M, Peak 27.69M) | Time:00:00.08 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Meshes
+Fra:1 Mem:27.45M (0.00M, Peak 27.69M) | Time:00:00.09 | Mem:0.00M, Peak:0.00M | Scene, RenderLayer | Updating Mesh | Computing attributes
+Fra:1 Mem:27.92M (0.00M, Peak 27.92M) | Time:00:00.09 | Mem:0.01M, Peak:0.01M | Scene, RenderLayer | Updating Mesh | Copying Attributes to device
+Fra:1 Mem:27.92M (0.00M, Peak 28.38M) | Time:00:00.09 | Mem:0.47M, Peak:0.47M | Scene, RenderLayer | Updating Scene BVH | Building
+Fra:1 Mem:27.92M (0.00M, Peak 28.38M) | Time:00:00.09 | Mem:0.47M, Peak:0.47M | Scene, RenderLayer | Updating Scene BVH | Building BVH
+Fra:1 Mem:36.16M (0.00M, Peak 36.16M) | Time:00:00.19 | Mem:0.47M, Peak:0.47M | Scene, RenderLayer | Updating Scene BVH | Packing BVH triangles and strands
+Fra:1 Mem:43.85M (0.00M, Peak 43.85M) | Time:00:00.20 | Mem:0.47M, Peak:0.47M | Scene, RenderLayer | Updating Scene BVH | Packing BVH nodes
+Fra:1 Mem:39.52M (0.00M, Peak 46.11M) | Time:00:00.21 | Mem:0.47M, Peak:0.47M | Scene, RenderLayer | Updating Scene BVH | Copying BVH to device
+Fra:1 Mem:40.07M (0.00M, Peak 46.11M) | Time:00:00.21 | Mem:12.07M, Peak:12.07M | Scene, RenderLayer | Updating Mesh | Computing normals
+Fra:1 Mem:45.07M (0.00M, Peak 46.11M) | Time:00:00.21 | Mem:12.07M, Peak:12.07M | Scene, RenderLayer | Updating Mesh | Copying Mesh to device
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Objects Flags
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Images
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Camera Volume
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Hair Systems
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Hair settings | Copying Hair settings to device
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.08M, Peak:17.08M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.33M, Peak:17.33M | Scene, RenderLayer | Updating Lights
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.33M, Peak:17.33M | Scene, RenderLayer | Updating Lights | Computing distribution
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.33M, Peak:17.33M | Scene, RenderLayer | Updating Particle Systems
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.33M, Peak:17.33M | Scene, RenderLayer | Updating Particle Systems | Copying Particles to device
+Fra:1 Mem:44.52M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.33M, Peak:17.33M | Scene, RenderLayer | Updating Integrator
+Fra:1 Mem:44.56M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.37M, Peak:17.37M | Scene, RenderLayer | Updating Film
+Fra:1 Mem:44.56M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.37M, Peak:17.37M | Scene, RenderLayer | Updating Lookup Tables
+Fra:1 Mem:44.56M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.37M, Peak:17.37M | Scene, RenderLayer | Updating Baking
+Fra:1 Mem:44.56M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.37M, Peak:17.37M | Scene, RenderLayer | Updating Device | Writing constant memory
+Fra:1 Mem:44.56M (0.00M, Peak 46.11M) | Time:00:00.22 | Mem:17.37M, Peak:17.37M | Scene, RenderLayer | Path Tracing Tile 0/4, Sample 0/512
+Fra:1 Mem:46.81M (0.00M, Peak 48.06M) | Time:00:00.22 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 0/512
+Fra:1 Mem:46.81M (0.00M, Peak 49.06M) | Time:00:01.22 | Remaining:00:11.58 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 96/512
+Fra:1 Mem:46.81M (0.00M, Peak 49.06M) | Time:00:02.23 | Remaining:00:10.56 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 192/512
+Fra:1 Mem:46.81M (0.00M, Peak 49.06M) | Time:00:03.23 | Remaining:00:09.55 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 288/512
+Fra:1 Mem:46.81M (0.00M, Peak 49.06M) | Time:00:04.24 | Remaining:00:08.55 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 384/512
+Fra:1 Mem:46.81M (0.00M, Peak 49.06M) | Time:00:05.25 | Remaining:00:07.54 | Mem:19.62M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 480/512
+Fra:1 Mem:44.56M (0.00M, Peak 49.06M) | Time:00:05.59 | Remaining:00:07.22 | Mem:17.37M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 1/4, Sample 512/512
+Fra:1 Mem:46.53M (0.00M, Peak 49.06M) | Time:00:05.59 | Remaining:00:07.22 | Mem:19.34M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:46.53M (0.00M, Peak 49.06M) | Time:00:06.25 | Remaining:00:06.54 | Mem:19.34M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 73/512
+Fra:1 Mem:46.53M (0.00M, Peak 49.06M) | Time:00:07.26 | Remaining:00:05.51 | Mem:19.34M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 184/512
+Fra:1 Mem:46.53M (0.00M, Peak 49.06M) | Time:00:08.27 | Remaining:00:04.49 | Mem:19.34M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 295/512
+Fra:1 Mem:46.53M (0.00M, Peak 49.06M) | Time:00:09.28 | Remaining:00:03.48 | Mem:19.34M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 405/512
+Fra:1 Mem:44.56M (0.00M, Peak 49.06M) | Time:00:10.26 | Remaining:00:02.51 | Mem:17.37M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 2/4, Sample 512/512
+Fra:1 Mem:45.13M (0.00M, Peak 49.06M) | Time:00:10.26 | Remaining:00:02.51 | Mem:17.93M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:45.13M (0.00M, Peak 49.06M) | Time:00:10.28 | Remaining:00:02.50 | Mem:17.93M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 4/512
+Fra:1 Mem:45.13M (0.00M, Peak 49.06M) | Time:00:11.28 | Remaining:00:01.94 | Mem:17.93M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 241/512
+Fra:1 Mem:45.13M (0.00M, Peak 49.06M) | Time:00:12.28 | Remaining:00:01.35 | Mem:17.93M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 476/512
+Fra:1 Mem:44.56M (0.00M, Peak 49.06M) | Time:00:12.43 | Remaining:00:01.25 | Mem:17.37M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 3/4, Sample 512/512
+Fra:1 Mem:45.05M (0.00M, Peak 49.06M) | Time:00:12.43 | Remaining:00:01.25 | Mem:17.86M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:45.05M (0.00M, Peak 49.06M) | Time:00:13.28 | Remaining:00:00.74 | Mem:17.86M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 217/512
+Fra:1 Mem:45.05M (0.00M, Peak 49.06M) | Time:00:14.28 | Remaining:00:00.10 | Mem:17.86M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 472/512
+Fra:1 Mem:44.56M (0.00M, Peak 49.06M) | Time:00:14.44 | Mem:17.37M, Peak:19.62M | Scene, RenderLayer | Path Tracing Tile 4/4, Sample 512/512
+Fra:1 Mem:44.56M (0.00M, Peak 49.06M) | Time:00:14.44 | Mem:17.37M, Peak:19.62M | Scene, RenderLayer | Finished
+Fra:1 Mem:18.53M (0.00M, Peak 49.06M) | Time:00:14.52 | Sce: Scene Ve:0 Fa:0 La:0
+Saved: 'data/clevr-cleaned-puzzles/agreement/render/images/CLEVR_val_000005.png'
+ Time: 00:14.56 (Saving: 00:00.03)
+
+
+Blender quit
+
+INFO test_net.py:  81: Called with args:
+INFO test_net.py:  82: Namespace(cfg_file='clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml', clevr_comp_cat=1, dataset='clevr_original_val', grab_conv=False, images_dir='data/clevr-cleaned-puzzles/agreement/render/images', load_ckpt='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt', load_detectron=None, multi_gpu_testing=False, name=None, output_dir='data/clevr-cleaned-puzzles/agreement/infer/mask_rcnn', range=None, rendersummary_path='data/clevr-cleaned-puzzles/agreement/render/summary.json', set_cfgs=[], vis=False)
+INFO test_net.py: 125: Testing with config:
+INFO test_net.py: 126: {'BBOX_XFORM_CLIP': 4.135166556742356,
+ 'CLEVR': {'COMP_CAT': True},
+ 'CROP_RESIZE_WITH_MAX_POOL': True,
+ 'CUDA': False,
+ 'DATA_DIR': '/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/mask_rcnn',
+ 'DATA_LOADER': {'NUM_THREADS': 4},
+ 'DEBUG': False,
+ 'DEDUP_BOXES': 0.0625,
+ 'EPS': 1e-14,
+ 'EXPECTED_RESULTS': [],
+ 'EXPECTED_RESULTS_ATOL': 0.005,
+ 'EXPECTED_RESULTS_EMAIL': '',
+ 'EXPECTED_RESULTS_RTOL': 0.1,
+ 'FAST_RCNN': {'CONV_HEAD_DIM': 256,
+               'MLP_HEAD_DIM': 1024,
+               'NUM_STACKED_CONVS': 4,
+               'ROI_BOX_HEAD': 'fast_rcnn_heads.roi_2mlp_head',
+               'ROI_XFORM_METHOD': 'RoIAlign',
+               'ROI_XFORM_RESOLUTION': 7,
+               'ROI_XFORM_SAMPLING_RATIO': 2},
+ 'FPN': {'COARSEST_STRIDE': 32,
+         'DIM': 256,
+         'EXTRA_CONV_LEVELS': False,
+         'FPN_ON': True,
+         'MULTILEVEL_ROIS': True,
+         'MULTILEVEL_RPN': True,
+         'ROI_CANONICAL_LEVEL': 4,
+         'ROI_CANONICAL_SCALE': 224,
+         'ROI_MAX_LEVEL': 5,
+         'ROI_MIN_LEVEL': 2,
+         'RPN_ANCHOR_START_SIZE': 32,
+         'RPN_ASPECT_RATIOS': (0.5, 1, 2),
+         'RPN_COLLECT_SCALE': 1,
+         'RPN_MAX_LEVEL': 6,
+         'RPN_MIN_LEVEL': 2,
+         'USE_GN': False,
+         'ZERO_INIT_LATERAL': False},
+ 'GROUP_NORM': {'DIM_PER_GP': -1, 'EPSILON': 1e-05, 'NUM_GROUPS': 32},
+ 'KRCNN': {'CONV_HEAD_DIM': 256,
+           'CONV_HEAD_KERNEL': 3,
+           'CONV_INIT': 'GaussianFill',
+           'DECONV_DIM': 256,
+           'DECONV_KERNEL': 4,
+           'DILATION': 1,
+           'HEATMAP_SIZE': -1,
+           'INFERENCE_MIN_SIZE': 0,
+           'KEYPOINT_CONFIDENCE': 'bbox',
+           'LOSS_WEIGHT': 1.0,
+           'MIN_KEYPOINT_COUNT_FOR_VALID_MINIBATCH': 20,
+           'NMS_OKS': False,
+           'NORMALIZE_BY_VISIBLE_KEYPOINTS': True,
+           'NUM_KEYPOINTS': -1,
+           'NUM_STACKED_CONVS': 8,
+           'ROI_KEYPOINTS_HEAD': '',
+           'ROI_XFORM_METHOD': 'RoIAlign',
+           'ROI_XFORM_RESOLUTION': 7,
+           'ROI_XFORM_SAMPLING_RATIO': 0,
+           'UP_SCALE': -1,
+           'USE_DECONV': False,
+           'USE_DECONV_OUTPUT': False},
+ 'MATLAB': 'matlab',
+ 'MODEL': {'BBOX_REG_WEIGHTS': (10.0, 10.0, 5.0, 5.0),
+           'CLS_AGNOSTIC_BBOX_REG': False,
+           'CONV_BODY': 'FPN.fpn_ResNet50_conv5_body',
+           'FASTER_RCNN': True,
+           'KEYPOINTS_ON': False,
+           'LOAD_IMAGENET_PRETRAINED_WEIGHTS': True,
+           'MASK_ON': True,
+           'NUM_CLASSES': 49,
+           'RPN_ONLY': False,
+           'SHARE_RES5': False,
+           'TYPE': 'generalized_rcnn',
+           'UNSUPERVISED_POSE': False},
+ 'MRCNN': {'CLS_SPECIFIC_MASK': True,
+           'CONV_INIT': 'MSRAFill',
+           'DILATION': 1,
+           'DIM_REDUCED': 256,
+           'MEMORY_EFFICIENT_LOSS': True,
+           'RESOLUTION': 28,
+           'ROI_MASK_HEAD': 'mask_rcnn_heads.mask_rcnn_fcn_head_v1up4convs',
+           'ROI_XFORM_METHOD': 'RoIAlign',
+           'ROI_XFORM_RESOLUTION': 14,
+           'ROI_XFORM_SAMPLING_RATIO': 2,
+           'THRESH_BINARIZE': 0.5,
+           'UPSAMPLE_RATIO': 1,
+           'USE_FC_OUTPUT': False,
+           'WEIGHT_LOSS_MASK': 1.0},
+ 'NUM_GPUS': 8,
+ 'OUTPUT_DIR': 'Outputs',
+ 'PIXEL_MEANS': array([[[102.9801, 115.9465, 122.7717]]]),
+ 'POOLING_MODE': 'crop',
+ 'POOLING_SIZE': 7,
+ 'PYTORCH_VERSION_LESS_THAN_040': False,
+ 'RESNETS': {'FREEZE_AT': 2,
+             'IMAGENET_PRETRAINED_WEIGHTS': 'pretrained_model/resnet50_caffe.pth',
+             'NUM_GROUPS': 1,
+             'RES5_DILATION': 1,
+             'SHORTCUT_FUNC': 'basic_bn_shortcut',
+             'STEM_FUNC': 'basic_bn_stem',
+             'STRIDE_1X1': True,
+             'TRANS_FUNC': 'bottleneck_transformation',
+             'USE_GN': False,
+             'WIDTH_PER_GROUP': 64},
+ 'RETINANET': {'ANCHOR_SCALE': 4,
+               'ASPECT_RATIOS': (0.5, 1.0, 2.0),
+               'BBOX_REG_BETA': 0.11,
+               'BBOX_REG_WEIGHT': 1.0,
+               'CLASS_SPECIFIC_BBOX': False,
+               'INFERENCE_TH': 0.05,
+               'LOSS_ALPHA': 0.25,
+               'LOSS_GAMMA': 2.0,
+               'NEGATIVE_OVERLAP': 0.4,
+               'NUM_CONVS': 4,
+               'POSITIVE_OVERLAP': 0.5,
+               'PRE_NMS_TOP_N': 1000,
+               'PRIOR_PROB': 0.01,
+               'RETINANET_ON': False,
+               'SCALES_PER_OCTAVE': 3,
+               'SHARE_CLS_BBOX_TOWER': False,
+               'SOFTMAX': False},
+ 'RFCN': {'PS_GRID_SIZE': 3},
+ 'RNG_SEED': 3,
+ 'ROOT_DIR': '/home/ubuntu/vdp-tool-chain/clevr_inference/scene_parse/mask_rcnn',
+ 'RPN': {'ASPECT_RATIOS': (0.5, 1, 2),
+         'CLS_ACTIVATION': 'sigmoid',
+         'OUT_DIM': 512,
+         'OUT_DIM_AS_IN_DIM': True,
+         'RPN_ON': True,
+         'SIZES': (64, 128, 256, 512),
+         'STRIDE': 16},
+ 'SOLVER': {'BASE_LR': 0.02,
+            'BIAS_DOUBLE_LR': True,
+            'BIAS_WEIGHT_DECAY': False,
+            'GAMMA': 0.1,
+            'LOG_LR_CHANGE_THRESHOLD': 1.1,
+            'LRS': [],
+            'LR_POLICY': 'steps_with_decay',
+            'MAX_ITER': 30000,
+            'MOMENTUM': 0.9,
+            'SCALE_MOMENTUM': True,
+            'SCALE_MOMENTUM_THRESHOLD': 1.1,
+            'STEPS': [0, 20000, 26000],
+            'STEP_SIZE': 30000,
+            'TYPE': 'SGD',
+            'WARM_UP_FACTOR': 0.3333333333333333,
+            'WARM_UP_ITERS': 500,
+            'WARM_UP_METHOD': 'linear',
+            'WEIGHT_DECAY': 0.0001,
+            'WEIGHT_DECAY_GN': 0.0},
+ 'TEST': {'BBOX_AUG': {'AREA_TH_HI': 32400,
+                       'AREA_TH_LO': 2500,
+                       'ASPECT_RATIOS': (),
+                       'ASPECT_RATIO_H_FLIP': False,
+                       'COORD_HEUR': 'UNION',
+                       'ENABLED': False,
+                       'H_FLIP': False,
+                       'MAX_SIZE': 4000,
+                       'SCALES': (),
+                       'SCALE_H_FLIP': False,
+                       'SCALE_SIZE_DEP': False,
+                       'SCORE_HEUR': 'UNION'},
+          'BBOX_REG': True,
+          'BBOX_VOTE': {'ENABLED': False,
+                        'SCORING_METHOD': 'ID',
+                        'SCORING_METHOD_BETA': 1.0,
+                        'VOTE_TH': 0.8},
+          'COMPETITION_MODE': True,
+          'DATASETS': ('custom(data/clevr-cleaned-puzzles/agreement/render/images, '
+                       'data/clevr-cleaned-puzzles/agreement/render/summary.json)',),
+          'DETECTIONS_PER_IM': 100,
+          'FORCE_JSON_DATASET_EVAL': False,
+          'KPS_AUG': {'AREA_TH': 32400,
+                      'ASPECT_RATIOS': (),
+                      'ASPECT_RATIO_H_FLIP': False,
+                      'ENABLED': False,
+                      'HEUR': 'HM_AVG',
+                      'H_FLIP': False,
+                      'MAX_SIZE': 4000,
+                      'SCALES': (),
+                      'SCALE_H_FLIP': False,
+                      'SCALE_SIZE_DEP': False},
+          'MASK_AUG': {'AREA_TH': 32400,
+                       'ASPECT_RATIOS': (),
+                       'ASPECT_RATIO_H_FLIP': False,
+                       'ENABLED': False,
+                       'HEUR': 'SOFT_AVG',
+                       'H_FLIP': False,
+                       'MAX_SIZE': 4000,
+                       'SCALES': (),
+                       'SCALE_H_FLIP': False,
+                       'SCALE_SIZE_DEP': False},
+          'MAX_SIZE': 1333,
+          'NMS': 0.5,
+          'PRECOMPUTED_PROPOSALS': False,
+          'PROPOSAL_FILES': (),
+          'PROPOSAL_LIMIT': 2000,
+          'RPN_MIN_SIZE': 0,
+          'RPN_NMS_THRESH': 0.7,
+          'RPN_POST_NMS_TOP_N': 1000,
+          'RPN_PRE_NMS_TOP_N': 1000,
+          'SCALE': 800,
+          'SCORE_THRESH': 0.05,
+          'SOFT_NMS': {'ENABLED': False, 'METHOD': 'linear', 'SIGMA': 0.5}},
+ 'TRAIN': {'ASPECT_CROPPING': False,
+           'ASPECT_GROUPING': True,
+           'ASPECT_HI': 2,
+           'ASPECT_LO': 0.5,
+           'BATCH_SIZE_PER_IM': 512,
+           'BBOX_INSIDE_WEIGHTS': (1.0, 1.0, 1.0, 1.0),
+           'BBOX_NORMALIZE_MEANS': (0.0, 0.0, 0.0, 0.0),
+           'BBOX_NORMALIZE_STDS': (0.1, 0.1, 0.2, 0.2),
+           'BBOX_NORMALIZE_TARGETS': True,
+           'BBOX_NORMALIZE_TARGETS_PRECOMPUTED': False,
+           'BBOX_THRESH': 0.5,
+           'BG_THRESH_HI': 0.5,
+           'BG_THRESH_LO': 0.0,
+           'CROWD_FILTER_THRESH': 0.7,
+           'DATASETS': (),
+           'FG_FRACTION': 0.25,
+           'FG_THRESH': 0.5,
+           'FREEZE_CONV_BODY': False,
+           'GT_MIN_AREA': -1,
+           'IMS_PER_BATCH': 2,
+           'MAX_SIZE': 1333,
+           'PROPOSAL_FILES': (),
+           'RPN_BATCH_SIZE_PER_IM': 256,
+           'RPN_FG_FRACTION': 0.5,
+           'RPN_MIN_SIZE': 0,
+           'RPN_NEGATIVE_OVERLAP': 0.3,
+           'RPN_NMS_THRESH': 0.7,
+           'RPN_POSITIVE_OVERLAP': 0.7,
+           'RPN_POST_NMS_TOP_N': 2000,
+           'RPN_PRE_NMS_TOP_N': 2000,
+           'RPN_STRADDLE_THRESH': 0,
+           'SCALES': (800,),
+           'SNAPSHOT_ITERS': 20000,
+           'USE_FLIPPED': False},
+ 'VIS': False,
+ 'VIS_TH': 0.9}
+INFO test_engine.py: 352: loading checkpoint /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt
+INFO test_engine.py: 286: im_detect: range [1, 6] of 6: 1/6 1.099s + 0.003s (eta: 0:00:05)
+INFO test_engine.py: 336: Wrote detections to: /home/ubuntu/vdp-tool-chain/data/clevr-cleaned-puzzles/agreement/infer/mask_rcnn/detections.pkl
+INFO test_engine.py: 164: Total inference time: 5.506s
+
+
+| processing proposals 1 / 6 images
+| processing proposals 2 / 6 images
+| processing proposals 3 / 6 images
+| processing proposals 4 / 6 images
+| processing proposals 5 / 6 images
+| processing proposals 6 / 6 images
+| saving object annotations to data/clevr-cleaned-puzzles/agreement/infer/attrnet/predictions.json
+
+
+| options
+run_dir: data/clevr-cleaned-puzzles/agreement/solver_ir
+dataset: clevr
+load_checkpoint_path: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/attribute_net.pt
+gpu_ids: [0]
+clevr_mini_img_dir: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_mini/images
+clevr_mini_ann_path: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_mini_objs.json
+concat_img: 1
+split_id: 3500
+batch_size: 50
+num_workers: 4
+learning_rate: 0.002
+split: val
+output_path: data/clevr-cleaned-puzzles/agreement/solver_ir/results.json
+clevr_val_ann_path: data/clevr-cleaned-puzzles/agreement/infer/attrnet/predictions.json
+clevr_val_img_dir: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/images/val
+shuffle_data: 0
+use_cat_label: 1
+name: agreement
+| loading checkpoint from /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/attribute_net.pt
+clevr_object.py: CLEVR_val_000000.png val 0 0
+clevr_object.py: CLEVR_val_000000.png val 0 1
+clevr_object.py: CLEVR_val_000000.png val 0 2
+clevr_object.py: CLEVR_val_000001.png val 1 3
+clevr_object.py: CLEVR_val_000001.png val 1 4
+clevr_object.py: CLEVR_val_000001.png val 1 5
+clevr_object.py: CLEVR_val_000001.png val 1 6
+clevr_object.py: CLEVR_val_000002.png val 2 7
+clevr_object.py: CLEVR_val_000002.png val 2 8
+clevr_object.py: CLEVR_val_000002.png val 2 9
+clevr_object.py: CLEVR_val_000003.png val 3 10
+clevr_object.py: CLEVR_val_000003.png val 3 11
+clevr_object.py: CLEVR_val_000003.png val 3 12
+clevr_object.py: CLEVR_val_000004.png val 4 13
+clevr_object.py: CLEVR_val_000004.png val 4 14
+clevr_object.py: CLEVR_val_000004.png val 4 15
+clevr_object.py: CLEVR_val_000005.png val 5 16
+clevr_object.py: CLEVR_val_000005.png val 5 17
+clevr_object.py: CLEVR_val_000005.png val 5 18
+clevr_object.py: CLEVR_val_000005.png val 5 19
+clevr_object.py: CLEVR_val_000005.png val 5 20
+21 / 21 objects processed
+| saving annotation file to data/clevr-cleaned-puzzles/agreement/solver_ir/results.json
+
+
+0.json in test
+THRESHOLD relate_behind objs = {'id': '0-0', 'position': [-1.3838558197021484, -0.06453986465930939, 0.35022884607315063], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '0-1', 'position': [-2.7370262145996094, -0.10240521281957626, 0.34885984659194946], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '0-0', 'position': [-1.3838558197021484, -0.06453986465930939, 0.35022884607315063], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '0-2', 'position': [0.00014457106590270996, 0.010661166161298752, 0.3532758355140686], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '0-1', 'position': [-2.7370262145996094, -0.10240521281957626, 0.34885984659194946], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '0-0', 'position': [-1.3838558197021484, -0.06453986465930939, 0.35022884607315063], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '0-1', 'position': [-2.7370262145996094, -0.10240521281957626, 0.34885984659194946], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '0-2', 'position': [0.00014457106590270996, 0.010661166161298752, 0.3532758355140686], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '0-2', 'position': [0.00014457106590270996, 0.010661166161298752, 0.3532758355140686], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '0-0', 'position': [-1.3838558197021484, -0.06453986465930939, 0.35022884607315063], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '0-2', 'position': [0.00014457106590270996, 0.010661166161298752, 0.3532758355140686], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '0-1', 'position': [-2.7370262145996094, -0.10240521281957626, 0.34885984659194946], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+1.json in test
+THRESHOLD relate_front objs = {'id': '1-0', 'position': [-2.8300952911376953, -0.21350669860839844, 0.34731167554855347], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '1-0', 'position': [-2.8300952911376953, -0.21350669860839844, 0.34731167554855347], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '1-0', 'position': [-2.8300952911376953, -0.21350669860839844, 0.34731167554855347], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '1-3', 'position': [2.881201982498169, 0.2833927273750305, 0.36468538641929626], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '1-0', 'position': [-2.8300952911376953, -0.21350669860839844, 0.34731167554855347], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '1-3', 'position': [2.881201982498169, 0.2833927273750305, 0.36468538641929626], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '1-3', 'position': [2.881201982498169, 0.2833927273750305, 0.36468538641929626], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '1-1', 'position': [1.3774871826171875, 0.14914754033088684, 0.34749966859817505], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '1-3', 'position': [2.881201982498169, 0.2833927273750305, 0.36468538641929626], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '1-2', 'position': [-0.015160806477069855, 0.08427749574184418, 0.34851527214050293], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+2.json in test
+THRESHOLD relate_behind objs = {'id': '2-0', 'position': [0.042818162590265274, 0.06559395045042038, 0.3433188796043396], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '2-1', 'position': [-2.85806941986084, -0.15748661756515503, 0.3440275192260742], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '2-0', 'position': [0.042818162590265274, 0.06559395045042038, 0.3433188796043396], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '2-2', 'position': [-1.4212285280227661, -0.053803395479917526, 0.3502063751220703], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '2-1', 'position': [-2.85806941986084, -0.15748661756515503, 0.3440275192260742], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '2-0', 'position': [0.042818162590265274, 0.06559395045042038, 0.3433188796043396], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '2-1', 'position': [-2.85806941986084, -0.15748661756515503, 0.3440275192260742], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '2-2', 'position': [-1.4212285280227661, -0.053803395479917526, 0.3502063751220703], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '2-2', 'position': [-1.4212285280227661, -0.053803395479917526, 0.3502063751220703], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '2-1', 'position': [-2.85806941986084, -0.15748661756515503, 0.3440275192260742], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '2-2', 'position': [-1.4212285280227661, -0.053803395479917526, 0.3502063751220703], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'small'}, {'id': '2-0', 'position': [0.042818162590265274, 0.06559395045042038, 0.3433188796043396], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+3.json in train
+THRESHOLD relate_behind objs = {'id': '3-0', 'position': [2.117601156234741, 0.13670295476913452, 0.6978785395622253], 'color': 'blue', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}, {'id': '3-1', 'position': [-3.5490450859069824, -0.24375659227371216, 0.7005761861801147], 'color': 'red', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}
+THRESHOLD relate_behind objs = {'id': '3-0', 'position': [2.117601156234741, 0.13670295476913452, 0.6978785395622253], 'color': 'blue', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}, {'id': '3-2', 'position': [-0.7046468257904053, -0.026925772428512573, 0.6887280941009521], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '3-1', 'position': [-3.5490450859069824, -0.24375659227371216, 0.7005761861801147], 'color': 'red', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}, {'id': '3-0', 'position': [2.117601156234741, 0.13670295476913452, 0.6978785395622253], 'color': 'blue', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '3-1', 'position': [-3.5490450859069824, -0.24375659227371216, 0.7005761861801147], 'color': 'red', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}, {'id': '3-2', 'position': [-0.7046468257904053, -0.026925772428512573, 0.6887280941009521], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}
+THRESHOLD relate_behind objs = {'id': '3-2', 'position': [-0.7046468257904053, -0.026925772428512573, 0.6887280941009521], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '3-1', 'position': [-3.5490450859069824, -0.24375659227371216, 0.7005761861801147], 'color': 'red', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '3-2', 'position': [-0.7046468257904053, -0.026925772428512573, 0.6887280941009521], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '3-0', 'position': [2.117601156234741, 0.13670295476913452, 0.6978785395622253], 'color': 'blue', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}
+4.json in train
+THRESHOLD relate_behind objs = {'id': '4-0', 'position': [0.7432874441146851, 0.06897708028554916, 0.3509097099304199], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '4-1', 'position': [-2.072232484817505, -0.17258772253990173, 0.6959093809127808], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '4-0', 'position': [0.7432874441146851, 0.06897708028554916, 0.3509097099304199], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}, {'id': '4-2', 'position': [3.445016860961914, 0.3279631435871124, 0.3576647639274597], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '4-1', 'position': [-2.072232484817505, -0.17258772253990173, 0.6959093809127808], 'color': 'yellow', 'material': 'rubber', 'shape': 'sphere', 'size': 'large'}, {'id': '4-0', 'position': [0.7432874441146851, 0.06897708028554916, 0.3509097099304199], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '4-2', 'position': [3.445016860961914, 0.3279631435871124, 0.3576647639274597], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '4-0', 'position': [0.7432874441146851, 0.06897708028554916, 0.3509097099304199], 'color': 'yellow', 'material': 'rubber', 'shape': 'cylinder', 'size': 'small'}
+5.json in train
+THRESHOLD relate_front objs = {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-1', 'position': [2.810384511947632, 0.34168657660484314, 0.35324734449386597], 'color': 'blue', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}
+THRESHOLD relate_behind objs = {'id': '5-1', 'position': [2.810384511947632, 0.34168657660484314, 0.35324734449386597], 'color': 'blue', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}
+THRESHOLD relate_front objs = {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}, {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}, {'id': '5-1', 'position': [2.810384511947632, 0.34168657660484314, 0.35324734449386597], 'color': 'blue', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-0', 'position': [-3.432901382446289, -0.2688251733779907, 0.3716675043106079], 'color': 'blue', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_behind objs = {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-2', 'position': [-2.1144304275512695, -0.10187451541423798, 0.3528521656990051], 'color': 'red', 'material': 'rubber', 'shape': 'cube', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-1', 'position': [2.810384511947632, 0.34168657660484314, 0.35324734449386597], 'color': 'blue', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}
+THRESHOLD relate_front objs = {'id': '5-4', 'position': [-0.6925067901611328, -0.02250393107533455, 0.3495026230812073], 'color': 'yellow', 'material': 'metal', 'shape': 'sphere', 'size': 'small'}, {'id': '5-3', 'position': [1.0881081819534302, 0.0964779481291771, 0.693143904209137], 'color': 'red', 'material': 'rubber', 'shape': 'cylinder', 'size': 'large'}

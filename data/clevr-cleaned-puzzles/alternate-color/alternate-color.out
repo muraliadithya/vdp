@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: sphere. Exists q1: sphere. red(q1) AND right(q0,q1)
+Candidate Name: data/clevr-cleaned-puzzles/alternate-color/solver_ir/test/0.json
+
+
+The scores were [0.026980729884896647, 0.13896329755618386, 0.044951573644999146].
+Best concept is @ idx 0 ie: data/clevr-cleaned-puzzles/alternate-color/render/images/CLEVR_val_000000.png
+
+

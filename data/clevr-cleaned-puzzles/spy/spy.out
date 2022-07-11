@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Exists q1: cube. front(q0,q1)
+Candidate Name: data/clevr-cleaned-puzzles/spy/solver_ir/test/0.json
+
+
+The scores were [0.13685792637526226, 0.2595991967438853, 0.13447573188001785].
+Best concept is @ idx 2 ie: data/clevr-cleaned-puzzles/spy/render/images/CLEVR_val_000002.png
+
+

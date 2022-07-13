@@ -1,59 +1,57 @@
-# VDP Tool Chain
+# Composing Neural Learning and Symbolic Reasoning with an Application to Visual Discrimination
 
-TODOS:
-* ~~Annotate `tree` output~~
-* ~~Add figures.~~
-* ~~Add ## subsections.~~
-* Add link to data (Email authors or open an issue if not available).
+This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started with understanding VDP's:
 
-This repository contains all the code for running the `vdp` project. The (general) organization and key scripts are detailed below:
+* Read our paper here!
+* Try the demo notebook to run/make your own natural scenes VDP puzzles in <5 minutes here!
+* To replicate our results and make vdp's, check out the installation instructions in `## Install` section.
+
+
+## Structure
+
+This repository is organized generally based on the generation/inference module used for our evaluation datasets. These modules are adapted versions of pre-existing tools. For attributions, we recommend looking at the `##Citations` section.
 
 ```bash
 .
-├── analysis            # Code to process results for paper.
-│   └── ...
-├── clevr_driver.py     # Entry point for generating/running/testing CLEVR images.
-├── natscene_driver.py  # Entry point for generating/running/testing natural scenes images.
-├── clevr_generate      # Module for generating CLEVR images based on github.com/facebookresearch/clevr-dataset-gen 
-│   └── ...
-├── clevr_inference     # Module for inferring scene location of CLEVR images. Based on nsvqa.csail.mit.edu
-│   └── ...
-├── data                # Data bundle
-│   ├── blender-2.78c-linux-glibc219-x86_64
-│   ├── clevr-cleaned-puzzles
-│   ├── clevr_scene_data
-│   ├── conda-envs
-│   ├── inference-outputs
-│   ├── intermediate-inference-outputs
-│   ├── natscene_data
-│   ├── ns-vqa-data
-│   ├── ooo-inference-inputs
-│   ├── ooo-inference-outputs
-│   ├── output
-│   ├── temp.pkl
+├── analysis                # Code to reproduce the figures.
+│   ├── analysis.ipynb
+│   └── utils.py
+├── clevr_driver.py         # Entry point into making CLEVR VDPs.
+├── clevr_generate          # CLEVR Generation script.
+│   └── gen_render_uconfig.py   # CLEVR rendering for custom scenes.
+├── clevr_inference
+│   ├── collate.py          # Collate inference results to solver's input.
+│   ├── ns-vqa-readme.md    # Original instructions for installation.
+│   ├── reason
+│   └── scene_parse
+├── data                    # Data bundle. Available at Box/Email authors.
+│   ├── blender-2.78c-linux-glibc219-x86_64 # Compatible blender version
+│   ├── clevr-cleaned-puzzles               # CLEVR domain puzzles (+images/IR/solver_output)
+│   ├── clevr-cleaned-variants              # Variants of CLEVR puzzles              
+│   ├── clevr_scene_data                    # CLEVR Generation files 
+│   ├── conda-envs                          # Environment replication file
+│   ├── demo_images                         # Demo attribution + CC domain images
+│   ├── natscene_data                       # Data for natural scenes dataset. Please contact authors for access to this dataset!
+│   ├── ns-vqa-data                         # Setup files for natural scenes inference engine.
 │   ├── triplet_loss_baseline-data
-│   └── yolo_data
-├── lightning_logs          # Logs for training protonet baseline.      
-│   └── ...
-├── natscene_inference      # Supporting code for running natural scenes data.
-│   ├── darknet             # Module for inferring scene location for natural scenes images. Based on github.com/pjreddie/darknet 
-│   └── ...
-├── new-baseline            # code for Prototypical network baseline.
-│   └── ...
-├── README.md
-├── triplet_loss_baseline   # code for triplet loss baseline (check citations).
-│   ├── ...
-├── utils                   # Uncategorized data cleaning / processing scripts.
-│   └── ...
-├── vdp_solver              # The Z3 solver code for solving a VDP.
-│   └── ...
-└── website_stuff           # Utilities for generating the vdp_website.
-    └── ...
+│   └── yolo_data                           # Setup files for darknet.
+├── demo_vdp.ipynb
+├── natscene_driver.py      # Entry point to making/processing natural scenes images.
+├── natscene_inference
+├── protonet-baseline       # Protonet baseline
+├── README.md               # This file!
+├── triplet_loss_baseline   # Triplet loss baseline
+├── utils                   # Miscellaneous aggregation/processing scripts.
+├── vdp_solver              # Our First Order Scene Logic solver (based on Z3!)
+└── vdp_website             # Data/Code to remake the hugo website!
+61 directories, 89 files
 ```
 
-## Running from scratch
+## Installation
 
-1. Setup a Amazon AWS `p2.xlarge` instance. We used the `Deep Learning AMI (Ubuntu 16.04) Version 38.0 (ami-067cf9e6ac97cfb53) ` Amazon Machine Image with 105 GiB gp2 storage volume. Running all the experiments from scratch takes about 24-30 hours of compute time (less than $30). We were able to replicate all our experiments on a different server with a different GPU. However, we found it almost-impossible to setup the `clevr_inference`  on a non-ubuntu-16.04 machine.
+Our instructions are specifically tuned to make it easy to replicate our results with minimal setup errors. A lot of these steps can be avoided in case of resource constraints.
+
+1. Setup a Amazon AWS `p2.xlarge` instance. We used the `Deep Learning AMI (Ubuntu 16.04) Version 38.0 (ami-067cf9e6ac97cfb53) ` Amazon Machine Image with 105 GiB gp2 storage volume. Running all the experiments from scratch takes about 24-30 hours of compute time (less than $30). We were able to replicate all our experiments on a different server with a different GPU. However, running the `clevr_inference` module *requires* a Ubuntu 16.04 machine.
 2. Clone this git repository. The homepath should look like `/home/ubuntu/vdp-tool-chain` (this *exact string* has been hardcoded in a lot of places. If you prefer running this on a local machine then you'll need to group-replace this path with your the project path).
 3. Install the conda environments. There should be 4 `*-spec.txt` files in the `data/conda-envs` folder. Create a conda environment from these. That is:
 ```bash

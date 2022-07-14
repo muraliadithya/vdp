@@ -3,7 +3,8 @@
 This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started with understanding VDP's:
 
 * Read our paper here!
-* Try the demo notebook to run/make your own natural scenes VDP puzzles in <5 minutes here!
+* Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/anonymousocean/anonymousocean.github.io/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+!
 * To replicate our results and make vdp's, check out the installation instructions in `## Install` section.
 
 
@@ -61,12 +62,12 @@ $ conda create --name torch --file data/conda-envs/torch-spec.txt
 $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
 4. Download the `data.zip` data bundle merge this with the contents of `vdp-tool-chain/data`.
-5. The data.zip file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
+5. The `data.zip` file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
 6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU.
 
 
 ## Running a CLEVR puzzle.
-
+cd
 Start by making a directory `data/clevr-cleaned-puzzles/test_puzzle`. Make a file `scene_file.json` that follows this format:
 ```
 [
@@ -99,7 +100,7 @@ More information about `vdp_flags` can be found by running `python vdp_solver/sc
 
 ## Running a Natural scenes puzzle.
 
-1. Assume we want to process a puzzle defined by `eg1.png, eg2.png, eg3.png, cand1.png, cand2.png`.
+1. Assume we want to process a puzzle defined by `eg1.png, eg2.png, eg3.png, cand1.png, cand2.png, cand3.png`.
 1. Put the images in `data/natscene_data/images/`.
 1. Create a directory `data/natscene_data/puzzles/test_puzzle`. Make a file `config.json` with the follow format:
     ```
@@ -124,15 +125,9 @@ More information about `vdp_flags` can be found by running `python vdp_solver/sc
 1. The output of the solver will be written to `data/natscene_data/processed/test_puzzle.out`.
 
 
-## Running a GQA scenes puzzle.
-
-1. This requires access to the GQA dataset.
-
-
 ## Data
 
-The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded from here and is subject to a fair use in research agreement (5.6 GB): `TODO:PROVIDE LINK`. 
-
+The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded here and is subject to a fair use in research agreement (5.6 GB): `TODO:PROVIDE LINK`. 
 
 
 ## Communication
@@ -142,8 +137,89 @@ The fastest way to reach the authors for any debugging help is by opening a GitH
 
 ## Common Gotcha's (Known Issues)
 
-1. The triplet_loss_baseline is written in Tensorflow/Keras. Keras documents default behavior in `~/.keras/keras.json`. The default behavior of `image_dim_ordering` is different for the triplet loss baseline so if you run into batch dimension errors, messing with the `image_dim_ordering` will help.
+* The triplet_loss_baseline is written in Tensorflow/Keras. Keras documents default behavior in `~/.keras/keras.json`. The default behavior of `image_dim_ordering` is different for the triplet loss baseline so if you run into batch dimension errors, messing with the `image_dim_ordering` will help.
 
 ## Citations
 
-TODO (check website for now)
+The following external tools were used for this project:
+
+* GQA Dataset
+    ```plaintext
+    @article{hudson2018gqa,
+        title={GQA: A New Dataset for Real-World Visual Reasoning 
+        and Compositional Question Answering},
+        author={Hudson, Drew A and Manning, Christopher D},
+        journal={Conference on Computer Vision and Pattern Recognition (CVPR)},
+        year={2019}
+    }
+    ```
+
+* NS-VQA inference pipeline
+
+    Link: [`https://github.com/kexinyi/ns-vqa`](https://github.com/kexinyi/ns-vqa)
+    ```plaintext
+    @inproceedings{yi2018neural,
+    title={Neural-symbolic vqa: Disentangling reasoning from vision and language understanding},
+    author={Yi, Kexin and Wu, Jiajun and Gan, Chuang and Torralba, Antonio and Kohli, Pushmeet and Tenenbaum, Joshua B.},
+    booktitle={Advances in Neural Information Processing Systems},
+    pages={1039--1050},
+    year={2018}
+    }
+    ```
+
+* CLEVR dataset generator 
+
+    Link: [`https://github.com/facebookresearch/clevr-dataset-gen`](https://github.com/facebookresearch/clevr-dataset-gen)
+    ```plaintext
+    @inproceedings{johnson2017clevr,
+      title={CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning},
+      author={Johnson, Justin and Hariharan, Bharath and van der Maaten, Laurens
+              and Fei-Fei, Li and Zitnick, C Lawrence and Girshick, Ross},
+      booktitle={CVPR},
+      year={2017}
+    }
+    ```
+* Deep Ranking Similarity Baseline
+
+    Link: [`https://github.com/USCDataScience/Image-Similarity-Deep-Ranking`](https://github.com/USCDataScience/Image-Similarity-Deep-Ranking)
+    - Code
+        ```plaintext
+        Dr. Chris Mattmann, JPL.
+        Purvak Lapsiya, USC.
+        ```
+    - Paper
+        ```plaintext
+        @article{DBLP:journals/corr/WangSLRWPCW14,
+          author    = {Jiang Wang and Yang Song and Thomas Leung and Chuck Rosenberg and Jingbin Wang and James Philbin and Bo Chen and Ying Wu},
+          title     = {Learning Fine-grained Image Similarity with Deep Ranking},
+          journal   = {CoRR},
+          volume    = {abs/1404.4661},
+          year      = {2014},
+          url       = {http://arxiv.org/abs/1404.4661},
+          archivePrefix = {arXiv},
+          eprint    = {1404.4661},
+          timestamp = {Tue, 08 Sep 2020 16:29:29 +0200},
+          biburl    = {https://dblp.org/rec/journals/corr/WangSLRWPCW14.bib},
+          bibsource = {dblp computer science bibliography, https://dblp.org}
+        }
+        ```
+* YOLOv4
+
+    Link: [`https://github.com/pjreddie/darknet`](https://github.com/pjreddie/darknet)
+    ```plaintext
+    @article{DBLP:journals/corr/abs-2011-08036,
+      author    = {Chien{-}Yao Wang and
+                   Alexey Bochkovskiy and
+                   Hong{-}Yuan Mark Liao},
+      title     = {Scaled-YOLOv4: Scaling Cross Stage Partial Network},
+      journal   = {CoRR},
+      volume    = {abs/2011.08036},
+      year      = {2020},
+      url       = {https://arxiv.org/abs/2011.08036},
+      archivePrefix = {arXiv},
+      eprint    = {2011.08036},
+      timestamp = {Wed, 18 Nov 2020 16:48:35 +0100},
+      biburl    = {https://dblp.org/rec/journals/corr/abs-2011-08036.bib},
+      bibsource = {dblp computer science bibliography, https://dblp.org}
+    }
+    ```

@@ -17,8 +17,6 @@ relevant outputs be returned in a form that can be used to initialise a logging 
 
 import argparse
 import importlib
-import sys, os
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import utils.argparse_extend as argparse_extend
 import utils.importlib_extend as importlib_extend

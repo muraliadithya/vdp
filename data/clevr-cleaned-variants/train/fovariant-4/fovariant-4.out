@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Forall q1: sphere. right(q1,q0) AND metal(q0)
+Candidate Name: data/clevr-cleaned-variants/train/fovariant-4/solver_ir/test/0.json
+
+
+The scores were [0.004437874176336769, 0.0037319259799624407, 0.004871885590672218].
+Best concept is @ idx 1 ie: data/clevr-cleaned-variants/train/fovariant-4/render/images/CLEVR_val_000001.png
+
+

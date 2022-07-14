@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: sphere. Exists q1: cube. green(q0) AND left(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/apocope/fovariant-4-swap5/solver_ir/test/1.json
+
+
+The scores were [0.01780151888962608, 0.022448341772856904, 0.016856411736425693].
+Best concept is @ idx 2 ie: data/clevr-cleaned-variants/apocope/fovariant-4-swap5/render/images/CLEVR_val_000002.png
+
+

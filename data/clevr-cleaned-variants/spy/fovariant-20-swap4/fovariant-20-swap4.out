@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: sphere. Exists q1: cylinder. front(q0,q1)
+Candidate Name: data/clevr-cleaned-variants/spy/fovariant-20-swap4/solver_ir/test/4.json
+
+
+The scores were [0.00247632867356929, 0.0036292042462020002, 0.0024366308771672433].
+Best concept is @ idx 2 ie: data/clevr-cleaned-variants/spy/fovariant-20-swap4/render/images/CLEVR_val_000002.png
+
+

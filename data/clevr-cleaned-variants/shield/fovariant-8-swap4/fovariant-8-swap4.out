@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: cylinder. Forall q1: cube. right(q0,q1)
+Candidate Name: data/clevr-cleaned-variants/shield/fovariant-8-swap4/solver_ir/test/4.json
+
+
+The scores were [0.12240472020879278, 0.3397036372860863, 0.1452649394804327].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/shield/fovariant-8-swap4/render/images/CLEVR_val_000000.png
+
+

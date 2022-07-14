@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: cylinder. Exists q1: cube. behind(q0,q1)
+Candidate Name: data/clevr-cleaned-variants/spy/fovariant-16-swap4/solver_ir/test/4.json
+
+
+The scores were [0.8903122736361704, 0.07476333953877944, 0.7516659760598611].
+Best concept is @ idx 1 ie: data/clevr-cleaned-variants/spy/fovariant-16-swap4/render/images/CLEVR_val_000001.png
+
+

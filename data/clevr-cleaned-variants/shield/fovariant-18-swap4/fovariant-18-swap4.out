@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: sphere. Forall q1: cube. left(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/shield/fovariant-18-swap4/solver_ir/test/4.json
+
+
+The scores were [1.264439799264598, 1.143147326710831, 0.9014489407757714].
+Best concept is @ idx 2 ie: data/clevr-cleaned-variants/shield/fovariant-18-swap4/render/images/CLEVR_val_000002.png
+
+

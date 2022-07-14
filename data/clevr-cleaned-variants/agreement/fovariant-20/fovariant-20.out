@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cube. Exists q1: cube. Forall q2: sphere. right(q1,q2) AND left(q0,q2)
+Candidate Name: data/clevr-cleaned-variants/agreement/fovariant-20/solver_ir/test/0.json
+
+
+The scores were [0.16247113768110985, 0.9350929357480334, 0.989116871087943].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/agreement/fovariant-20/render/images/CLEVR_val_000000.png
+
+

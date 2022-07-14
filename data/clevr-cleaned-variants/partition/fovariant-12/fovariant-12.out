@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Forall q0: sphere. Forall q1: cube. left(q0,q1)
+Candidate Name: data/clevr-cleaned-variants/partition/fovariant-12/solver_ir/test/0.json
+
+
+The scores were [0.06774956739550608, 0.06420128081544156, 0.10467500238584883].
+Best concept is @ idx 1 ie: data/clevr-cleaned-variants/partition/fovariant-12/render/images/CLEVR_val_000001.png
+
+

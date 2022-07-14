@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Forall q0: cube. Forall q1: sphere. same_color(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/assimilation/fovariant-15/solver_ir/test/0.json
+
+
+The scores were [0.08052677272627673, 0.03141410971437939, 0.051860045438325224].
+Best concept is @ idx 1 ie: data/clevr-cleaned-variants/assimilation/fovariant-15/render/images/CLEVR_val_000001.png
+
+

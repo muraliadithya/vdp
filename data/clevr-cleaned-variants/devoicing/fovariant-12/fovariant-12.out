@@ -1,0 +1,9 @@
+Candidate: c0
+Concept: Exists q0: cube. Exists q1: cylinder. Exists q2: cylinder. front(q0,q1) AND metal(q0)
+Candidate Name: data/clevr-cleaned-variants/devoicing/fovariant-12/solver_ir/test/2.json
+
+
+The scores were [0.003804282983686709, 0.0046150253067044535, 0.00424456773260392].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/devoicing/fovariant-12/render/images/CLEVR_val_000000.png
+
+

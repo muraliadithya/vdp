@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Forall q0: cube. Exists q1: cube. same_color(q0,q1)
+Candidate Name: data/clevr-cleaned-variants/breaking/fovariant-7/solver_ir/test/0.json
+
+
+The scores were [0.0024533128789270475, 0.002700946881757498, 0.005268254326208717].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/breaking/fovariant-7/render/images/CLEVR_val_000000.png
+
+

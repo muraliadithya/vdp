@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Exists q1: cylinder. Forall q2: cube. right(q1,q2) AND right(q2,q0)
+Candidate Name: data/clevr-cleaned-variants/agreement/fovariant-13/solver_ir/test/0.json
+
+
+The scores were [0.014320097823856306, 0.016347632369883142, 0.014476790278099644].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/agreement/fovariant-13/render/images/CLEVR_val_000000.png
+
+

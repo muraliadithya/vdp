@@ -1,0 +1,9 @@
+Candidate: c1
+Concept: Exists q0: sphere. Forall q1: cylinder. left(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/apocope/fovariant-7-swap4/solver_ir/test/4.json
+
+
+The scores were [0.011734939248848053, 0.0076380867125922704, 0.012616641116216678].
+Best concept is @ idx 1 ie: data/clevr-cleaned-variants/apocope/fovariant-7-swap4/render/images/CLEVR_val_000001.png
+
+

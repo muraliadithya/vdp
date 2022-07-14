@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cube. Exists q1: cube. cyan(q1) AND left(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/alternate-color/fovariant-0/solver_ir/test/0.json
+
+
+The scores were [0.022176277135467153, 0.033540472220967614, 0.03994853831526938].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/alternate-color/fovariant-0/render/images/CLEVR_val_000000.png
+
+

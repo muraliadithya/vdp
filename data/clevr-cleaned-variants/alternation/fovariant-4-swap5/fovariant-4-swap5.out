@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Exists q1: cube. same_size(q1,q0) AND left(q1,q0)
+Candidate Name: data/clevr-cleaned-variants/alternation/fovariant-4-swap5/solver_ir/test/1.json
+
+
+The scores were [0.03466918178678285, 0.07242393950826354, 0.07370291036094342].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/alternation/fovariant-4-swap5/render/images/CLEVR_val_000000.png
+
+

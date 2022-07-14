@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: cylinder. Exists q1: sphere. Forall q2: cylinder. left(q1,q2)
+Candidate Name: data/clevr-cleaned-variants/aphaeresis/fovariant-23/solver_ir/test/0.json
+
+
+The scores were [0.7570674630597933, 0.38131510480687164, 0.02218399169722547].
+Best concept is @ idx 2 ie: data/clevr-cleaned-variants/aphaeresis/fovariant-23/render/images/CLEVR_val_000002.png
+
+

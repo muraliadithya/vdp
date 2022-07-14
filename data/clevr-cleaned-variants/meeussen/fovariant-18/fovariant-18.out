@@ -1,0 +1,9 @@
+Candidate: c2
+Concept: Exists q0: sphere. Forall q1: cylinder. left(q1,q0) AND red(q0)
+Candidate Name: data/clevr-cleaned-variants/meeussen/fovariant-18/solver_ir/test/0.json
+
+
+The scores were [0.04079349336575614, 0.044270644375506055, 0.06504715753072576].
+Best concept is @ idx 0 ie: data/clevr-cleaned-variants/meeussen/fovariant-18/render/images/CLEVR_val_000000.png
+
+

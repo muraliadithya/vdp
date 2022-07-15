@@ -63,7 +63,7 @@ $ conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt
 $ conda create --name torch --file data/conda-envs/torch-spec.txt
 $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
-4. Download the `data.zip` data bundle [here]() and merge this with the contents of `vdp/data`.
+4. Download the `data.zip` data bundle [here](https://utexas.box.com/s/rxd0fqoqya721bo3uqaaikpp9a7uk8v8) and merge this with the contents of `vdp/data`.
 5. The `data.zip` file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
 6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU. The repo is setup to handle atleast the `NVIDIA K80`.
 

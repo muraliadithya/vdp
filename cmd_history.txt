@@ -1,0 +1,1350 @@
+ll
+git clone https://github.com/anonymousocean/vdp-tool-chain
+ls
+cd vdp-tool-chain/
+ls
+git status
+cd clevr-generate/
+ls
+cd ../
+ls
+cd analysis/
+ls
+cd ../
+ls
+git status
+cd data/
+ls
+cd ../
+conda env create data/conda-envs/ns-vqa.yaml 
+conda env create -f data/conda-envs/ns-vqa.yaml 
+code -r .
+nvidia-smi
+CUDA
+cuda
+nvcc --version
+cd ../
+ls
+cd tools/
+ls
+cd ../
+ls
+conda env list
+conda activate pytorch_p36
+nvcc --veriosn
+nvcc --version
+condea deactivate
+conda deacitvate
+conda deactivate
+conda remove --help
+ls
+du -hd1 .
+conda env install -f data/conda-envs/torch.yml 
+conda env create -f data/conda-envs/torch.yml 
+conda activate torch
+ls
+conda deactivate
+git fetch
+git fetch --all
+git branch
+git fetch --origin
+git fetch --all
+pwd
+ls
+git pull origin master
+conda create --name ns-vqa --file data/conda-envs/ns-vqa-spec.txt 
+conda create --ntorcdeep-ranking ile data/conda-envs/deep-ranking
+conda create --name deep-ranking -f data/conda-envs/deep-ranking
+conda create --name deep-ranking -f data/conda-envs/deep-ranking-spec.txt 
+conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt 
+du -hd1 .
+cd ../
+du -hd1 .
+ls
+conda env list
+conda remove --name tensorflow* --all
+conda remove --name amazonei_mxnet_p36 --all
+ls
+git status
+du -hd1
+conda clean --all
+conda remove -y --name amazonei_mxnet_p36 --all && \      
+conda remove -y --name amazonei_pytorch_p36  --all && conda remove -y --name amazonei_tensorflow2_p36 --all && conda remove -y --name amazonei_tensorflow_p36 --all && conda remove -y --name aws_neuron_mxnet_p36 --all && conda remove -y --name aws_neuron_pytorch_p36 --all && conda remove -y --name aws_neuron_tensorflow_p36 --all && conda remove -y --name mxnet_latest_p37 --all && conda remove -y --name mxnet_p36 --all && conda remove -y --name python3 --all && conda remove -y --name pytorch_latest_p37 --all && conda remove -y --name pytorch_p36 --all && conda remove -y --name tensorflow2_latest_p37 --all && conda remove -y --name tensorflow2_p36 --all && conda remove -y --name tensorflow_p37 --all && \
+nvidia-smi
+df
+df -h
+conda env list
+conda remove -y --name amazonei_pytorch_p36  --all && conda remove -y --name amazonei_tensorflow2_p36 --all && conda remove -y --name amazonei_tensorflow_p36 --all && conda remove -y --name aws_neuron_mxnet_p36 --all && conda remove -y --name aws_neuron_pytorch_p36 --all && conda remove -y --name aws_neuron_tensorflow_p36 --all && conda remove -y --name mxnet_latest_p37 --all && conda remove -y --name mxnet_p36 --all && conda remove -y --name python3 --all && conda remove -y --name pytorch_latest_p37 --all && conda remove -y --name pytorch_p36 --all && conda remove -y --name tensorflow2_latest_p37 --all && conda remove -y --name tensorflow2_p36 --all && conda remove -y --name tensorflow_p37 --all && conda clean --all
+ls
+ll
+ls
+ll
+ls
+pwd
+ls
+pwd
+cd vdp-tool-chain/
+conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt 
+ls
+pwd
+ll
+pwd
+htop
+top
+./driver.sh -h
+./driver.sh data/clevr-cleaned-puzzles/alternate-color/alternate-color.json alternate-color "3 4 5 6" "0 1 2" "- 2 -C 2"
+cd data/
+ls
+cd ../
+ls
+cd data/
+ls
+df -h
+df -hls
+ls
+conda clean --all
+ls
+..
+cd data/
+ls
+cd../
+ls
+cd da
+ls
+cd ../
+rm -rf data/
+ls
+cd ..
+ls
+touch driver.py
+code driver.py 
+cd data/
+ls
+mkdir blender
+ls
+rm -rf blender* 2.78/ LICENSE-* icons/ jemalloc-license.txt  lib GPL* Python-license.txt 
+ls
+rm -rf ocio-license.txt  readme.html  copyright.txt 
+cd ..
+ls
+cd data/
+ls
+rm LICENSE-* GPL* Python-license.txt * icons lib/ 2.78/
+rm -rf LICENSE-* GPL* Python-license.txt * icons lib/ 2.78/
+ls
+ll
+cd ..
+ls
+cd data/
+git checkout .
+ls
+rm -rf ../__generate/
+cd 
+cd blender-2.78c-linux-glibc219-x86_64/2.78/python/lib/python3.5/site-packages
+ls
+code clevr.pth 
+pwd
+cd /home/ubuntu/vdp-tool-chain/data/clevr_scene_data
+ls
+cd ../../
+ls
+python driver.py 
+cp -r data/clevr-cleaned-puzzles/apocope apocope-bak
+rm -rf data/clevr-cleaned-puzzles/apocope/apocope.out 
+rm -rf data/clevr-cleaned-puzzles/apocope/apocope.log
+rm -rf data/clevr-cleaned-puzzles/apocope/infer
+rm -rf data/clevr-cleaned-puzzles/apocope/render
+rm -rf data/clevr-cleaned-puzzles/apocope/log.txt 
+ls data/clevr-cleaned-puzzles/apocope/
+conda activate ns-vqa
+/home/ubuntu/anaconda3/envs/ns-vqa/bin/python
+mv data/clevr-cleaned-puzzles/apocope/apocope.json data/clevr-cleaned-puzzles/apocope/scene_file.json
+python driver.py 
+ls
+cd clevr-generate/
+ls
+rm -rf question_generation/ sandbox.py  process-clevr-variants-for-website.py  notebooks/
+mv image_generation/* .
+ls
+rmdir image_generation/
+cd image_generation/
+ls
+ll
+cd ../
+rm -rf image_generation/
+ls
+rm variant_maker.py variants.sh variants2.sh position.png proc_*
+rm test 
+ls
+rm gen_baseline.sh 
+ls
+cd ..
+git add clevr_generate/
+ls
+python driver.py 
+ls clevr_generate/gen_config.py /home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glibc219-x86_64/blender --background --python clevr_generate/gen_render_uconfig.py -- --use_gpu 1 --input_puzzle_dir data/clevr-cleaned-puzzles/apocope/scenefile.json --split val --output_scene_file data/clevr-cleaned-puzzles/apocope/render/summary.json --output_scene_dir data/clevr-cleaned-puzzles/apocope/render/logs/ --output_image_dir data/clevr-cleaned-puzzles/apocope/render/images
+/home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glibc219-x86_64/blender --background --python clevr_generate/gen_render_uconfig.py -- --use_gpu 1 --input_puzzle_dir data/clevr-cleaned-puzzles/apocope/scenefile.json --split val --output_scene_file data/clevr-cleaned-puzzles/apocope/render/summary.json --output_scene_dir data/clevr-cleaned-puzzles/apocope/render/logs/ --output_image_dir data/clevr-cleaned-puzzles/apocope/render/images
+python driver.py 
+rm -rf clevr_inference/
+mv clevr-inference/ clevr_inference/
+ls
+rm -rf data/ns-vqa-data/
+python tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images
+python tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images     --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json     --dataset clevr_original_val     --cfg configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml     --load_ckpt /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/pretrained/object_detector.pt     --output_dir /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained
+python clevr_inference/scene_parse/mask_rcnn/tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images     --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json     --dataset clevr_original_val     --cfg configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml     --load_ckpt /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/pretrained/object_detector.pt     --output_dir /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained
+python clevr_inference/scene_parse/mask_rcnn/tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images     --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json     --dataset clevr_original_val     --cfg clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml     --load_ckpt /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/pretrained/object_detector.pt     --output_dir /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained
+grep -rnw . -e 'vdp-tool-chain-repo'
+python clevr_inference/scene_parse/mask_rcnn/tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images     --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json     --dataset clevr_original_val     --cfg clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml     --load_ckpt /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/pretrained/object_detector.pt     --output_dir /home/ubuntu/vdp-tool-chain-repo/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained
+python clevr_inference/scene_parse/mask_rcnn/tools/test_net.py     --images_dir data/clevr-cleaned-puzzles/apocope/render/images     --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json     --dataset clevr_original_val     --cfg clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml     --load_ckpt /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt     --output_dir /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained/
+python tools/process_proposals.py     --dataset clevr     --proposal_path /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained/detections.pkl     --output_path /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_val_objs_pretrained.json &&
+python clevr_inference/scene_parse/attr_net/tools/process_proposals.py     --dataset clevr     --proposal_path /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/mask_rcnn/results/clevr_val_pretrained/detections.pkl     --output_path /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_val_objs_pretrained.json
+cd clevr_inference/
+ls
+touch infer.sh
+chmod +x infer.sh 
+code infer.sh 
+cd ../
+python driver.py 
+ls /home/ubuntu/vdp-tool-chain/clevr_inference/reason/
+cd clevr_
+cd clevr_inference/
+ls
+touch __init__.py
+cd ../
+python driver.py 
+conda init bash
+python driver.py 
+$CONDA_PREFIX
+cat         self.render_summary_path = render_summary_path
+echo $CONDA_PREFIX
+python driver.py 
+conda run -n ns-vqa         python         clevr_inference/scene_parse/attr_net/tools/process_proposals.py         --dataset clevr         --proposal_path data/clevr-cleaned-puzzles/apocope/infer/mask_rcnn/bounding_boxes/detections.pkl         --output_path data/clevr-cleaned-puzzles/apocope/infer/attrnet/predictions.json
+python         clevr_inference/scene_parse/attr_net/tools/process_proposals.py         --dataset clevr         --proposal_path data/clevr-cleaned-puzzles/apocope/infer/mask_rcnn/bounding_boxes/detections.pkl         --output_path data/clevr-cleaned-puzzles/apocope/infer/attrnet/predictions.json
+cd clevr_inference/scene_parse/
+ls
+touch __init__.py
+cd attr_net/
+ls
+touch __init__.py
+ls
+cd../..././
+cd ../../..
+python         clevr_inference/scene_parse/attr_net/tools/process_proposals.py         --dataset clevr         --proposal_path data/clevr-cleaned-puzzles/apocope/infer/mask_rcnn/bounding_boxes/detections.pkl         --output_path data/clevr-cleaned-puzzles/apocope/infer/attrnet/predictions.json
+python driver.py 
+code data/clevr-cleaned-puzzles/apocope/log.txt 
+python driver.py 
+mv vdp-solver/ vdp_solver
+pip install z3-solver==4.8.9.0
+rm -rf data/clevr-cleaned-puzzles/apocope/render/
+rm -rf data/clevr-cleaned-puzzles/apocope/infer/
+rm -rf data/clevr-cleaned-puzzles/apocope/log.txt 
+rm -rf data/clevr-cleaned-puzzles/apocope/results.json 
+python driver.py 
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-puzzles/apocope/infer/processed         --vdp_flags - 2 -N 100 -C 2
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-puzzles/apocope/infer/processed --vdp_flags - 2 -N 100 -C 2
+python driver.py 
+cd vdp_solver/
+ls
+cd ../
+ls
+cd vdp_solver/
+ls
+python scripts/vdpsolve.py ../data/clevr-cleaned-puzzles/apocope/infer/processed - 2 -N 100 -C 2
+ls
+touch __init__.py
+python scripts/vdpsolve.py ../data/clevr-cleaned-puzzles/apocope/infer/processed - 2 -N 100 -C 2
+rm __init__.py 
+ls
+mv ../vdp-solver/vdp/ .
+mv vdp ../vdp-solver/
+cd ../
+ls
+rm -rf vdp_solver/
+mv vdp-solver/ vdp_solver/
+python scripts/vdpsolve.py ../data/clevr-cleaned-puzzles/apocope/infer/processed - 2 -N 100 -C 2
+python driver.py 
+ls
+mv pt-baseline triplet_loss_baseline
+cd triplet_loss_baseline/
+ls
+touch __init__.py
+cd ../
+cd triplet_loss_baseline/
+ls
+touch test_clevr_cleaned.py
+code test_
+code test_clevr_cleaned.py 
+cd ../
+python driver.py 
+python driver.py data/clevr-cleaned-puzzles/apocope "3 4 5" "0 1 2" "- 2 -N 200"
+python driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200"
+python driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu --regenerate
+pwd
+mv pt-baseline-data/ data/triplet_loss_baseline-data
+cd data/triplet_loss_baseline-data/
+cd ../../
+python driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu --regenerate
+python driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+ls
+ls data/blender-2.78c-linux-glibc219-x86_64/blender
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+data/blender-2.78c-linux-glibc219-x86_64/blender
+data/blender-2.78c-linux-glibc219-x86_64/blender --background
+data/blender-2.78c-linux-glibc219-x86_64/blender --background --help
+pwd
+data/blender-2.78c-linux-glibc219-x86_64/blender --background --help
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+conda deactivate
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+conda create --name base --file data/conda-envs/base-spec.txt 
+conda create --name vdp --file data/conda-envs/vdp-spec.txt 
+mv data/conda-envs/base-spec.txt data/conda-envs/vdp-spec.txt
+conda create --name vdp --file data/conda-envs/vdp-spec.txt 
+conda activate vdp
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+conda deactivate
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+pip install z3-solver==4.8.9.0
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+pip install z3-solver==4.8.9.0
+./driver.sh data/clevr-cleaned-puzzles/apocope/apocope.json apocope "3 4 5 6" "0 1 2" "- 2 -N 200"
+rm -rf apocope-bak/
+git status
+git add .
+git status
+git add data/conda-envs/*-spec.txt -f
+git push origin master
+code ~/.ssh/config
+git push origin master
+code ~/.ssh/id_rsa_git_anon
+git push origin master
+git remote remove origin
+git remote add origin git@github.com:anonymousocean/vdp-tool-chain.git
+git push origin master
+chmod 400 ~/.ssh/id_rsa_git_anon
+git push origin master
+ls
+cd data/
+ls
+cd ..
+ls
+mv driver.py clevr_driver.py
+ls
+cd data/
+ls
+sudo poweroff
+l
+ls
+touch vdp_driver.py
+code vdp_driver.py 
+ls
+pwd
+ll
+ls
+pwd
+du -hd1 .
+cd ../
+ls
+conda clean --al
+conda clean --alll
+conda clean --all
+ls
+cd vdp-tool-chain-repo/
+ls
+cd data/
+ls
+cd ns-vqa-data/
+ls
+cd ../../
+ls
+cd ../vdp-tool-chain
+ls
+cd data/
+ls
+cd ../
+ls
+rm -rf ../vdp-tool-chain-repo/
+ls
+cd natscene_inference/
+ls
+mv vdp/* .
+ls
+cd vdp
+ls
+cd vdp/
+ls
+cd ../
+ls
+mv vdp/* .
+ls
+rmdir vdp
+ls
+cd ../
+ls
+code main.py 
+ls
+rmdir config-redo/
+mv config/ ../data/natscene_configs
+ls
+cd da
+ls
+cd data/
+ls
+ls cleaned_images/
+ls images/
+ls
+pwd
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+ls
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+cd vdp_solver/
+cd ../
+ls /home/ubuntu/vdp-tool-chain/natscene_inference/vdp/
+cd /home/ubuntu/vdp-tool-chain/natscene_inference/vdp/
+ls
+cd -
+ls
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+pwd
+ls
+pwd
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+pwd
+sudo poweroff
+pwd
+ls
+python natscene_driver.py 
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+ls /home/ubuntu/vdp-tool-chain/data/images/middleball1.jpg
+ls
+cd data/
+ls
+cd natscene_data/
+ls
+cp -r ../../natscene_inference/data/images .
+ls
+rm -rf interim/
+cd ../../
+ls
+python natscene_driver.py 
+rm -rf data/natscene_data/puzzles/allcatsonsofas_18/config.json
+python natscene_driver.py 
+rm -rf data/natscene_data/puzzles/
+python natscene_driver.py 
+python natscene_driver.py --config data/natscene_configs/middleball_1.json --regenerate
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+ls
+mv natscene_inference/darknet .
+cd da
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+cd data/
+mkdir yolo_data
+cd yolo_data/
+cp -r ../../darknet/yolov4.weights .
+ls
+cp -r ../../darknet/cfg/coco.names .
+ls
+cd ../../
+ls
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+ls
+cd darknet/
+ls
+make
+make clean
+make
+cd ../
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+cd natscene_inference/
+ls
+cd data/
+ls
+rm -rf sg_processed/
+cd ../../
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+ls data/natscene_data/bounding_boxes/run_on_2022_07_04_00_37/run.log 
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/processed/config.json         3 --autotune
+python         vdp_solver/scripts/vdpsolve.py         data/         3 --autotune
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/processed/config.json         - 3 --autotune
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-puzzles/apocope/infer/processed         - 2 -N 100 -C 2
+python vdp_solver/scripts/vdpsolve.py data/clevr-cleaned-puzzles/apocope/infer/processed - 2 -N 100 -C 2
+python scripts/vdpsolve.py ~/clevr_inference/outputs/alternate-color/ - 2
+python vdp_solver/scripts/vdpsolve.py ~/clevr_inference/outputs/alternate-color/ - 2
+python vdp_solver/scripts/vdpsolve.py ./data/clevr_inference/outputs/alternate-color/ - 2
+ls data/clevr-cleaned-puzzles/apocope/infer/processed
+ls
+python driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+conda activate vdp
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+conda activate ns-vqa
+conda deacivate
+conda deactivate
+ls /home/ubuntu/anaconda3/envs/vdp/envs/ns-vqa
+conda deactivate
+ls
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+condaconda run -n ns-vqa         python         clevr_inference/scene_parse/mask_rcnn/tools/test_net.py         --images_dir data/clevr-cleaned-puzzles/apocope/render/images         --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json         --dataset clevr_original_val         --cfg clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml         --load_ckpt /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt         --output_dir data/clevr-cleaned-puzzles/apocope/infer/mask_rcnn
+conda run -n ns-vqa         python         clevr_inference/scene_parse/mask_rcnn/tools/test_net.py         --images_dir data/clevr-cleaned-puzzles/apocope/render/images         --rendersummary_path data/clevr-cleaned-puzzles/apocope/render/summary.json         --dataset clevr_original_val         --cfg clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml         --load_ckpt /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt         --output_dir data/clevr-cleaned-puzzles/apocope/infer/mask_rcnn
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-puzzles/apocope --examples "3 4 5 6" --candidates "0 1 2" --vdp_flags "- 2 -N 200" --use_gpu
+python vdp_solver/scripts/vdpsolve.py ./data/clevr_inference/outputs/alternate-color/ - 2
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-puzzles/apocope/infer/processed         - 2 -N 200
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+cd ..
+git clone https://github.com/muraliadithya/vdp.git
+cd vdp
+ls
+rm -rf vdp_smt
+du -hd1 .
+rm -rf .git
+ls
+cd ../
+diff -bur vdp vdp-tool-chain/vdp_solver/
+diff -qr vdp vdp-tool-chain/vdp_solver/  | sort
+meld
+sudo apt install meld
+meld vdp vdp-tool-chain/vdp_solver/
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+meld vdp vdp-tool-chain/vdp_solver/
+l
+ls
+cd vdp-tool-chain/
+mv vdp_solver/ vdp_solver_old
+mv ../vdp vdp_solver
+conda activate ns-vqa
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+conda deactivate
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+screen -S runner
+ls
+cd da
+ls
+cd data/
+ls
+cd natscene_data/
+ls
+rm -rf bounding_boxes/ interim/ ir/ processed/ natscene_configs/
+rm temp.pkl 
+cd ../
+screen -r
+timeout
+timeout 5 ping 1.1.1.1
+man timeout
+timeout 5 ping 1.1.1.1
+man timeout
+timeout 5 -S SIGTERM ping 1.1.1.1
+timeout 5 -s SIGTERM ping 1.1.1.1
+timeout -s SIGTERM 5 ping 1.1.1.1
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/processed/config.json         - 3 -E --autotune
+screen -r
+screen -ls
+screen 0r
+screen -r
+ls
+rm driver.sh driver-no-log.sh driver-no-gen.sh driver-debug.sh 
+ls
+rm -rf notes
+rm -rf vdp_solver_old
+ls
+tree -D 1
+tree -L1
+l
+git status
+git add .
+git reset
+git add -u
+ls
+git status
+git add natscene_driver.py
+ls
+cd natscene_inference/
+ls
+rm -rf apex/ cocoapi/ imagemap.txt  clean.sh all_imgs.json  sgrun.log vdp.pem vdp_smt/ notebooks/ sg cats.jpg yolorun.log script.py 
+ls
+rm training.txt test collate_results testconfig.json  run.sh  main.py  bifurcation.txt 
+rm -rf training.txt test collate_results testconfig.json  run.sh  main.py  bifurcation.txt 
+ls
+code README.md 
+rm README.md 
+code INSTRUCTIONS.md 
+ls
+cd data/
+ls
+cd ../
+ls
+cd ../
+ls
+git add -u
+git commit -m "updating modified files. The next couple of commits add natscene infereence functionality"
+git status
+git add clevr_driver.py natscene_inference/ vdp_solver/ darknet/
+git status
+git commit -m "updating vdp_solver and darknet to latest branch"
+git status
+git push origin master
+sudo apt install tree
+git status
+tree -D 1
+tree -D 2
+tree -L1
+tree -L 1
+tree -L 2
+ls
+cd data/
+ls
+cd clevr-cleaned-puzzles/
+ls
+cd shield/
+ls
+cat shield.json 
+ls
+cd ../
+ls
+cd partition/
+ls
+cat partition
+cat partition.json 
+ls
+cd ../
+ls
+cd apocope/
+ls
+cd infer/
+ls
+cd processed/
+ls
+cd ../ren
+ls
+cd ..
+ls
+cd ..
+ls
+cd render/
+ls
+cd images/
+ls
+cd ../
+ls
+cd ..
+ls
+git add data/natscene_data/puzzles -f
+git commit -m "adding raw config for natscene puzzles"
+git push origin master
+screen -r
+cd /home/ubuntu/vdp-tool-chain/data/clevr-cleaned-variants/devoicing/fovariant-0-swap4
+code devoicing-fovariant-0.json 
+pwd
+ll
+ls
+cd ..
+ls
+cd ../clevr-cleaned-puzzles/
+ls
+rm -rf neutralization\*
+rm -rf devoicing-strict/val
+ls
+cd ../clevr-cleaned-variants/
+ls
+ls data/clevr-cleaned-puzzles/apocope/apocope.json
+cd ../../
+ls data/clevr-cleaned-puzzles/apocope/apocope.json
+ls data//clevr-cleaned-variants/apocope/fovariant-5-swap5/fovariant-5.json
+ls data/clevr-cleaned-variants/apocope/fovariant-5-swap5/fovariant-5.json
+ls data/clevr-cleaned-variants/apocope/fovariant-5-swap5
+ls data/clevr-cleaned-variants/apocope/fovariant-5-swap5/apocope-fovariant-5.json
+python     clevr_driver.py     --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-1     --examples "3 4 5 6"     --candidates "0 1 2"     --vdp_flags "- 2 --autotune"     --use_gpu
+ls data/clevr-cleaned-variants/apocope/fovariant-1/scene_file.json
+ls
+du -hd1 .
+ls
+cd ../
+ls
+sudo poweroff
+cd da
+cd ..
+ls
+rm -rf clevr-variants/ clevr-cleaned-puzzles/
+ls
+cd clevr-cleaned-puzzles/
+ls
+cd ../clevr-cleaned-variants/agreement/
+ls
+cd fovariant-0/
+ls
+cd ../../devoicing/
+ls
+cd fovariant-0-swap4/
+ls
+code devoicing-fovariant-0.json 
+pwd
+python natscene_driver.py --regenerate
+python natscene_driver.py --config data/natscene_data/puzzles/middleball_1/config.json --regenerate
+python natscene_driver.py --regenerate
+python natscene_driver.py --regenerate | less
+python natscene_driver.py --regenerate
+python natscene_driver.py  --regenerate
+ipython
+python natscene_driver.py  --regenerate
+python natscene_driver.py
+python natscene_driver.py
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 --autotune
+timeout 60 python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 --autotune
+timeout 60 python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 --autotune || echo "timeout or error"
+python natscene_driver.py
+timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/parkmeter_17         - 1 --autotune         ||         echo "timeout"
+(timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/parkmeter_17         - 1 --autotune)         ||         echo "timeout"
+python natscene_driver.py
+ls
+find gqa_website.json
+find . gqa_website.json
+man find
+git status
+ls
+cd da
+ls
+cd data/
+ls
+cd natscene_data/
+ls
+cd ../
+du -hd1 .
+zip -r natscene_data.zip natscene_data/
+sudo apt install zip
+zip -r natscene_data.zip natscene_data/
+ls
+ls -lash natscene_data
+ls -lash natscene_data.zip 
+ls
+rm natscene_data.zip 
+cd natscene_data/
+ls
+screen -r
+screen -S clevr_runner
+ls
+cd vdp-tool-chain/
+ls
+code -r .
+grep -rl vdp-tool-chain-repo
+grep -rl "/home/ubuntu/vdp-tool-chain-repo"
+grep -rl "/home/ubuntu/vdp-tool-chain-repo" | xargs sed -i 's/vdp-tool-chain-repo/vdp-tool-chain/g'
+git status
+git add .
+git status
+git commit -m "renamed old path in files"
+git push orign master
+git remote -v
+git push origin master
+git pull origin master
+git add README.md 
+git commit -m "fixed README merge conflicts. Keeping incoming changes."
+git push origin master
+ls
+mv darknet/ natscene_inference/
+cd natscene_inference/
+cd darknet/
+make clean
+ls
+rm yolov4.weights 
+rm predictions.jpg 
+make clean
+coe darknet_images.py 
+code darknet_images.py
+ls
+cd ../../
+git add -u
+git add natscene_inference/darknet
+git status
+ls
+cd natscene_inference/
+ls
+cd darknet/
+./build.sh
+./darknet --help
+cd ../
+ls
+cd ../
+cp -r data/natscene_data/puzzles/2on1_11 data/natscene_data/puzzles/test
+python natscene_driver.py --config data/natscene_data/puzzles/test/config.json --regenerate --vdp_flags "- 3 --autotune"
+ls /home/asehgal/personal/SPRING2022/vdp_camera_ready_repo/natscene_inference/darknet/
+pwd
+python natscene_driver.py --config data/natscene_data/puzzles/test/config.json --regenerate --vdp_flags "- 3 --autotune"
+git status
+ls
+touch gqa_driver.py
+code gqa_driver.py 
+rm gqa_driver.py 
+touch demo_vdp.ipynb
+code demo_vdp.ipynb 
+git add .
+git status
+git commit -m "small changes + starting demo notebook"
+git push origin master
+git add natscene_inference/darknet/cfg/ -f
+git commit -m "added darknet cfg files"
+git push origin master
+ls
+ls data/demo_images/
+wget -O data/demo_images/ https://live.staticflickr.com/7150/6709476717_e647405668_o_d.jpg
+wget -O data/demo_images/example_0.jpg https://live.staticflickr.com/7150/6709476717_e647405668_o_d.jpg
+wget -O data/demo_images/example_1.jpg https://live.staticflickr.com/4108/5092146297_fc6a86d33a_o_d.jpg
+wget -O data/demo_images/example_2.jpg https://live.staticflickr.com/2384/2368652249_1837100994_o_d.jpg
+wget -O data/demo_images/candidate_0.jpg https://live.staticflickr.com/7108/7462266002_e6fd27d3b9_o_d.jpg
+wget -O data/demo_images/candidate_1.jpg https://live.staticflickr.com/7448/27718297791_8c4dc16c43_o_d.jpg
+wget -O data/demo_images/candidate_2.jpg https://live.staticflickr.com/8144/7462268640_f9b52c1f2d_o_d.jpg
+wget --help
+wget -O=data/demo_images/example_0.jpg https://live.staticflickr.com/7150/6709476717_e647405668_o_d.jpg
+rm -rf data/demo_images/
+ls data/demo_images/
+wget -O=data/demo_images/example_0.jpg https://live.staticflickr.com/7150/6709476717_e647405668_o_d.jpg
+cd data/demo_images/
+touch attribution.tx
+touch attribution.txt
+rm attribution.txt
+rm attribution.tx
+touch attribution.txt
+code attribution.txt 
+git add . -f
+git status
+git commit -m "adding demo images and attribution"
+git push origin master
+pwd
+ls
+pwd
+git add natscene_inference/darknet/data -f
+git commit -m "adding natscene data"
+git push origin master
+ls natscene_inference/darknet/
+pwd
+cd natscene_inference/
+ls
+rm -rf data
+git add vdp -f
+git add vdp/* -f
+git add vdp/*
+cd vdp
+ls
+rm -rf .git
+cd ../
+git add vdp
+git add vdp-f
+git add vdp -f
+git status
+git reset
+git status
+ls-lash
+ls -lash
+ls vdp
+ls -lash vdp
+gitadd vdp
+git add vdp
+git add vdp -f
+git status
+git reset vdp/__pycache__/
+git reset vdp/__pycache__/ -f
+git reset vdp/__pycache__/
+git status
+git reset vdp/.ipynb_checkpoints/
+git reset vdp/.DS_Store
+git status
+git commit -m "added vdp module"
+git push origin master
+cd vdp_sol
+cd vdp_solver
+ls
+cd ../vdp_solver/
+ls
+cd vdp/
+ls
+cd ../
+git add vdp_solver/
+git status
+git add .gitignore 
+git commit -m "removed vdp from gitignore"
+git push origin master
+git add natscene_inference/vdp/__init__.py 
+git add natscene_inference/vdp/__init__.py -f
+git status
+conda activate ns-vqa
+/home/ubuntu/anaconda3/envs/ns-vqa/bin/python
+conda activate ns-vqa
+conda deactivate
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-1-swap5 --examples "3 4 0" --candidates "5 1 2" --vdp_flags "- 2 --autotune" --use_gpu --regenerate
+git pull origin master
+ll
+code demo_vdp.ipynb 
+rm demo_vdp.ipynb 
+git pull origin master
+ls
+screen -S clevr_runner
+ls
+cd data/
+ls
+cp -r clevr-cleaned-variants/ clevr-cleaned-variants-bak
+cd ..
+python clevr_driver.py --help
+python clevr_driver.py -h
+python clevr_driver.py askldasld
+python clevr_driver.py -askldasld
+python clevr_driver.py 
+find /usr -name '*.pyc' -delete
+python clevr_driver.py 
+pip install --upgrade --force-reinstall setuptools
+python clevr_driver.py 
+conda activate vdp
+python clevr_driver.py 
+conda deactivate
+python clevr_driver.py 
+pwd
+python clevr_driver.py 
+python -B clevr_driver.py 
+ls
+ls clevr_inference/
+ls clevr_inference/__pycache__/
+rm -rf clevr_inference/__pycache__/
+python -B clevr_driver.py 
+python clevr_driver.py 
+find . | grep -E "(/__pycache__$|\.pyc$|\.pyo$)" | xargs rm -rf
+python clevr_driver.py 
+python clevr_driver.py -h
+python clevr_driver.py
+python utils/run-variants.py 
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 -C 1" --regenerate --use_gpu
+/home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glib
+c219-x86_64/blender         --background         --python         clevr
+_generate/gen_render_uconfig.py         --         --use_gpu 1         
+--input_puzzle_path data/clevr-cleaned-variants/apocope/fovariant-0/sce
+ne_file.json         --split val         --output_scene_file data/clevr
+-cleaned-variants/apocope/fovariant-0/render/summary.json         --out
+put_scene_dir data/clevr-cleaned-variants/apocope/fovariant-0/render/lo
+gs/         --output_image_dir data/clevr-cleaned-variants/apocope/fova
+ls data/clevr-cleaned-variants/apocope/fovariant-0/scene_file.json
+code data/clevr-cleaned-variants/apocope/fovariant-0/scene_file.json
+python utils/run-variants.py 
+collate
+timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed         - 2 -C 1
+timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed/         - 2 -C 1
+ls data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed/
+ls data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed/test_opt.txt 
+python utils/run-variants.py 
+timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed         - 2 -C 1
+timeout         60         python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed - 2 -C 1
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed         - 2 -C 1
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant-1/infer/processed         -2 -C 1
+python         vdp_solver/scripts/vdpsolve.py         data/clevr-cleaned-variants/apocope/fovariant\-1/infer/processed         - 2 -C 1
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 --autotune
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 -C 1
+python         vdp_solver/scripts/vdpsolve.py         data/natscene_data/ir/2on1_14         - 3 --autotune
+python utils/run-variants.py 
+python utils/run-variants.py
+ls data/output/images/apocope-fovariant-1
+python utils/run-variants.py
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+ls self.infer
+ls data/clevr-cleaned-variants/apocope/fovariant-0/infer/processed/results.json
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "0 4 5" --candidates "3 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+python utils/run-variants.py
+python utils/run-variants.py ; sudo poweroff
+mv website_stuff/ vdp_website
+cd vdp_website/
+ls
+cat natscenes_website.json 
+ls
+cd vdp_data/
+ls
+cd ../
+rm -rf vdp_data/
+ls
+mkdir gqa_images
+mkdir clevr_puzzles
+rm -rf ./*
+ls
+cd ../../
+wget https://github.com/gohugoio/hugo/releases/download/v0.101.0/hugo_0.101.0_Linux-64bit.deb
+dpkg -i hugo_0.101.0_Linux-64bit.deb 
+sudo dpkg -i hugo_0.101.0_Linux-64bit.deb 
+ls
+rm hugo_0.101.0_Linux-64bit.deb 
+hugo
+ls
+cd vdp-tool-chain/
+ls
+cd vdp_website/
+ls
+cd ../
+touch TODOs.md
+code TODOs.md 
+cd data/
+cp -r clevr-cleaned-variants/ clevr-cleaned-variants-bak
+cd ../
+python utils/run-variants.py 
+git status
+git add -u
+git status
+git commit -m "ran clevr puzzles again"
+git push origin master
+python utils/run-variants.py 
+sls data/clevr-cleaned-puzzles/apocope
+ls data/clevr-cleaned-puzzles/apocope
+screen -S runner
+screen -r runner
+python utils/run-variants.py 
+ls
+cd vdp_website/
+ls
+rm sandbox.ipynb 
+code sandbox.ipynb 
+ls
+cd static/
+ls
+cd ../../
+git add data/clevr-cleaned-puzzles/ data/clevr-cleaned-variants -f
+git reset data/clevr-cleaned-variants
+git add utils
+git status
+mv static/ vdp_website/
+cd vdp_website/
+ls
+rm -rf ../static/
+cd static/
+ls
+rm -rf clevr-cleaned-variants/ natscene_imll
+ls
+rm natscenes_images/
+rm -rf natscenes_images/
+sudo poweroff
+pwd
+ls
+python vdp_website/gen_clevr.py 
+touch utils/__init__.y
+touch utils/__init__.py
+rm utils/__init__.y
+python vdp_website/gen_clevr.py 
+pwd
+python vdp_website/gen_clevr.py 
+ls /home/ubuntu/vdp-tool-chain/vdp-website/static/clevr-cleaned-variants
+ls /home/ubuntu/vdp-tool-chain/vdp-website/static/c
+ls /home/ubuntu/vdp-tool-chain/vdp_website/
+python vdp_website/gen_clevr.py 
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/apocope/fovariant-5-swap5/fovariant-5-swap5.out
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/apocope/fovarian5/
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/apocope/fovariant-5/
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/apocope/fovariant-5/render/
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/apocope/fovariant-5/render/images/
+python vdp_website/gen_clevr.py 
+python utils/gen-to-gt.py data/clevr-cleaned-puzzles/spy/scene_file.json True
+rm -rf data/clevr-cleaned-puzzles/cones\*/
+rm -rf data/clevr-cleaned-puzzles/devoicing-strict/
+rm -rf data/clevr-cleaned-puzzles/val
+python vdp_website/gen_clevr.py 
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/devoicing/fovariant-1/fovariant-1.out
+cat /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/devoicing/fovariant-1/fovariant-1.out
+python vdp_website/gen_clevr.py 
+sudo poweroff
+code vdp_website/gen_natscene.py 
+ython vdp_website/gen_natscene.py 
+python vdp_website/gen_natscene.py
+cat vdp_website/content/docs/clevr-md/puzzle_0/variant_0/_index.md 
+cat vdp_website/content/docs/gqa-md/Solved\ Puzzles/Are\ the\ pants\ blue\?/_index.md 
+code utils/generate-yolo-website-jsonl.py 
+ls /home/ubuntu/vdp-tool-chain/vdp-website/static/
+ls home/ubuntu/vdp-tool-chain/vdp_website/static/
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/
+ls
+ls vdp_website/static/natscene-data/processed/
+python vdp_website/gen_natscene.py
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/natscene-data/puzzles/processed/parkmeter_17.out
+python vdp_website/gen_natscene.py
+htop 
+conda activate vdp
+top
+pwd
+python vdp_website/gen_natscene.py
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/natscene-data/puzzles/test
+rm -rf         if not os.path.isdir(out_pth): continue
+ls /home/ubuntu/vdp-tool-chain/vdp_website/static/natscene-data/puzzles/test
+rm -rf /home/ubuntu/vdp-tool-chain/vdp_website/static/natscene-data/puzzles/test
+python vdp_website/gen_natscene.py
+ls
+cd vdp_website/
+ls
+hugo --minify
+ls
+cd public/
+python -m http.server
+cd ../../
+ls
+git status
+git add -u
+git commit -m "updated clevr cleande puzzles"
+git push origin master
+ls
+pwd
+ls
+pwd
+ls
+cd vdp_website/
+ls
+rm gen_gqa.py 
+ls
+cd static/
+ls
+cd gqa_images/
+ls
+cd ../
+s
+cd ../
+ls
+git branch
+git checkout master
+pwd
+ll
+pwd
+ll
+cd public/
+python -m http.server
+ls
+cd ../
+git clone https://github.com/anonymousocean/anonymousocean.github.io.git public_big
+ll
+cd public_big/
+ls
+cp gqa_website.json ../static/
+ls
+cd ../
+ls
+hugo --minify
+mv public_big/demo_vdp.ipynb ../
+ls
+pwd
+ls
+git status
+ls
+cp ../utils/generate-gqa-website-jsonl.py gen_gqa.py
+code gen_gqa.py 
+cp -r public_big/gqa_images static/
+cd static/
+ls
+cd ../
+python vdp_website/gen_gqa.py 
+ls read_json
+python vdp_website/gen_gqa.py 
+ls
+git status
+hugo --minify 
+cd vdp_website/
+hugo --minify 
+ls
+rm -rf public_big/
+cd ../
+ls
+ls ~/.ssh/
+cd ~/.ssh/
+ls
+nano id_rsa_ut
+chmod 400 id_rsa_ut
+cd ../
+ls
+code ~/.ssh/config 
+git clone 
+git clone one git@atharvas.github.com:muraliadithya/vdp.git
+git clone git@atharvas.github.com:muraliadithya/vdp.git
+cd vdp
+ls
+rm -rf vdp_smt
+git fetch --all
+git branch
+git fetch --all
+git branch -r
+git branch -d origin/aws-pipe
+git push origin -d gcp-cluster
+git pus -d origin gcp-cluster
+git push -d origin gcp-cluster
+git push --delete origin gcp-cluster
+git branch -r
+git push --delete origin cl-cluster
+git push --delete origin refactor
+git push --delete origin old_master
+ls
+git status
+sudo poweroff
+git status
+cd vdp_website/
+ls
+rm -rf website_repo/
+cd static/
+ls
+pwd
+ll
+cd ../
+ls
+cd public/
+ls
+python -m http.server
+cd ../
+tree -D 1
+tree -D 2
+cd ../
+tree -L2
+tree -L 2
+tree -L 1
+tree -L 2
+ls
+mv new-baseline/ protonet-baseline
+git status
+git add -u
+git add data/conda-envs/ -f
+git status
+git add protonet-baseline/
+git add demo_vdp.ipynb 
+git add protonet-baseline/
+git commit -m "updating code"
+git push origin master
+sudo poweroff
+conda activate vdp
+git status
+git add README.md 
+rm TODOs.md 
+cd vdp_website/
+ls
+cd data
+ls
+cat image-changer.sh 
+cd ../..
+ls
+rm -rf data
+git checkout -- data
+ls
+cd data/
+ls
+cp -r ../vdp_website/static/clevr-variants .
+cp -r natscene_data/puzzles/ ../data/natscene_data/puzzles
+cp -r natscene_data/puzzles/ ../data/natscene_data
+ls
+cp -r ../vdp_website/static/natscene-data .
+cp -r ../vdp_website/static/gqa_images .
+cp -r ../vdp_website/static/gqa_website.json .
+ls
+cd natscene-data/
+ls
+cd ..
+cd natscene_data/
+ls
+cd ../
+rm -rf natscene_data/
+mv natscene-data/ natscene_data/
+ls
+cd conda-envs/
+ls
+rm *.yml
+ls
+rm *.yaml
+ls
+cd ..
+ls
+pwd
+git status
+git add -u
+mv pt-baseline-data/ triplet_loss_baseline-data
+ls
+cd yolo_data/
+ls
+cd ../
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+cd ..
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+cd data/
+ls
+mv clevr-variants/ clevr-cleaned-variants
+ls
+cd ../
+python clevr_driver.py --puzzle_dir data/clevr-cleaned-variants/apocope/fovariant-0 --examples "3 4 5" --candidates "0 1 2" --vdp_flags "- 2 --autotune" --use_gpu
+git status
+cd vdp_website/
+ls
+rm .gitmodules 
+git status
+cd ../
+ls
+git status
+git push origin master
+code ~/.ssh/config
+git remote add origin2 git@github.com:muraliadithya/vdp.git
+git remote add origin2 git@atharvas.github.com:muraliadithya/vdp.git
+git remote remove origin2
+git remote add origin2 git@atharvas.github.com:muraliadithya/vdp.git
+git push origin2 master
+cd ../
+cd vdp-tool-chain/
+git pull origin2 master
+rm -rf vdp_smt
+mv test/ vdp_solver/
+cp -r test vdp_solver/
+rm -rf test
+cp -r scripts vdp_solver/
+rm -rf scripts/
+cp -r knowledge vdp_solver/
+rm -rf knowledge/
+cp -r ir/ vdp_solver/
+rm -rf ir
+git status
+rm -rf vdp_smt
+git status
+git add -u
+git commit -m "merged tool chain"
+git status
+cd vdp_solver/
+ls
+rm -rf knowledge/
+git add -u
+git status
+cd ../
+ls
+cd data/
+ls
+git add -f clevr-cleaned-variants natscene_data/puzzles/ clevr-cleaned-variants/ clevr_scene_data/
+git add gqa_website.json 
+git add gqa_website.json -f
+git commit -m "updated some data elements"
+git psuh ls -lash
+ls -lash gqa_website.json 
+git push origin master
+java
+cd ../../
+wget https://repo1.maven.org/maven2/com/madgag/bfg/1.14.0/bfg-1.14.0.jar
+mv bfg-1.14.0.jar vdp-tool-chain/
+cd vdp-tool-chain/
+ls
+java -jar bfg-1.14.0.jar --delete-files vdp_smt/*
+java -jar bfg-1.14.0.jar --delete-files vdp_smt
+java -jar bfg-1.14.0.jar --delete-folders "{vdp_smt}"
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+ll
+git add -u
+git status
+git commit -m "removed duplicate vdp folder"
+git push origin master
+git push origin master -f
+git status
+git push origin master2
+git push origin2 master
+git push origin2 master -f
+ls
+cd vdp_website/
+ls
+cd public/
+ls
+git init
+ls
+git add .
+git reset natscene_images
+git reset
+sudo poweroff
+conda activate vdp
+du -hd1 .
+ll
+unzip -l data.zip 

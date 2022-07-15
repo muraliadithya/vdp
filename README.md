@@ -1,11 +1,13 @@
-# Composing Neural Learning and Symbolic Reasoning with an Application to Visual Discrimination
+Composing Neural Learning and Symbolic Reasoning with an Application to Visual Discrimination
+==============
+**Adithya Murali, Atharva Sehgal, Paul Krogmeier, P. Madhusudan**
 
-This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started with understanding VDP's:
+This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started:
 
-* Read our paper here!
+* Read our paper [here](https://atharvas.github.io/static/VDP22.pdf)!
 * Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/muraliadithya/vdp/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 !
-* To replicate our results and make vdp's, check out the installation instructions in `## Install` section.
+* To replicate our results and use a wide dispora of object detectors, follow the instructions in `## Installation` section.
 
 
 ## Structure
@@ -61,9 +63,9 @@ $ conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt
 $ conda create --name torch --file data/conda-envs/torch-spec.txt
 $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
-4. Download the `data.zip` data bundle merge this with the contents of `vdp-tool-chain/data`.
+4. Download the `data.zip` data bundle [here]() and merge this with the contents of `vdp-tool-chain/data`.
 5. The `data.zip` file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
-6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU.
+6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU. The repo is setup to handle atleast the `NVIDIA K80`.
 
 
 ## Running a CLEVR puzzle.

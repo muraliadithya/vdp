@@ -7,7 +7,7 @@ This repository serves as an entry point into processing/running visual discrimi
 * Read our paper [here](https://atharvas.github.io/static/VDP22.pdf)!
 * Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/muraliadithya/vdp/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 !
-* To replicate our results and use a wide dispora of object detectors, follow the instructions in `## Installation` section.
+* To replicate our results and use a wide selection of object detectors, follow the instructions in `## Installation` section.
 
 
 ## Structure
@@ -69,7 +69,7 @@ $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 
 
 ## Running a CLEVR puzzle.
-cd
+
 Start by making a directory `data/clevr-cleaned-puzzles/test_puzzle`. Make a file `scene_file.json` that follows this format:
 ```
 [
@@ -129,12 +129,13 @@ More information about `vdp_flags` can be found by running `python vdp_solver/sc
 
 ## Data
 
-The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded here and is subject to a fair use in research agreement (8.6 GB): `TODO:PROVIDE LINK`. 
+The `data/` folder contains all data used by the tool chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded here and is subject to a fair use in research agreement (8.6 GB): `https://utexas.box.com/s/rxd0fqoqya721bo3uqaaikpp9a7uk8v8`. This does not include the natural scenes images because we weren't able to track the licences for some of the files. Please email us directly about this.
+
 
 
 ## Communication
 
-The fastest way to reach the authors for any debugging help is by opening a GitHub issue. This also helps us document and address potential "gotchas." For data related issues, please email the authors directly.
+The fastest way to reach the authors for any debugging help is by opening a GitHub issue. This also helps us document and address potential "gotchas." For data related issues, please email the authors directly at `adithya5@illinois.edu` or `atharvas@utexas.edu`.
 
 
 ## Common Gotcha's (Known Issues)

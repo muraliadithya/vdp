@@ -5,6 +5,7 @@ data/
 .vscode
 .DS_Store
 vdp_website/public
+vdp_website/public_w_natscene
 vdp_website/static
 vdp_website/data
 

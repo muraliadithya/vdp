@@ -3,7 +3,7 @@
 This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started with understanding VDP's:
 
 * Read our paper here!
-* Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/anonymousocean/anonymousocean.github.io/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+* Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/muraliadithya/vdp/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 !
 * To replicate our results and make vdp's, check out the installation instructions in `## Install` section.
 

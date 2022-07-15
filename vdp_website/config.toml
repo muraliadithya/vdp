@@ -2,5 +2,3 @@ baseURL = ""
 languageCode = "en-us"
 title = "VDP"
 theme="book"
-
-

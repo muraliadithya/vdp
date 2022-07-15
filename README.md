@@ -127,7 +127,7 @@ More information about `vdp_flags` can be found by running `python vdp_solver/sc
 
 ## Data
 
-The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded here and is subject to a fair use in research agreement (5.6 GB): `TODO:PROVIDE LINK`. 
+The `data/` folder contains all data used by the tool-chain. This includes pretrained models, csv files, json configuration files, etc. The data directory can be downloaded here and is subject to a fair use in research agreement (8.6 GB): `TODO:PROVIDE LINK`. 
 
 
 ## Communication

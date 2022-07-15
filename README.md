@@ -133,7 +133,7 @@ The `data/` folder contains all data used by the tool chain. This includes pretr
 
 
 
-## Communication
+## Contact Us
 
 The fastest way to reach the authors for any debugging help is by opening a GitHub issue. This also helps us document and address potential "gotchas." For data related issues, please email the authors directly at `adithya5@illinois.edu` or `atharvas@utexas.edu`.
 

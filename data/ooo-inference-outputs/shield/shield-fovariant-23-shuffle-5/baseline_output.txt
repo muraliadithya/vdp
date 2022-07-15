@@ -1,2 +1,2 @@
 The scores were [1.373839174108872, 2.32848453631751, 1.2324505757304371, 1.3236697976204148].
-Best concept is @ idx 1 ie: (1, '/home/ubuntu/vdp-tool-chain/data/output/images/shield-fovariant-23/CLEVR_shield-fovariant-23_000000.png')
+Best concept is @ idx 1 ie: (1, '/home/ubuntu/vdp/data/output/images/shield-fovariant-23/CLEVR_shield-fovariant-23_000000.png')

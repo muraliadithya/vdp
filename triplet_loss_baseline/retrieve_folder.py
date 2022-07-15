@@ -73,6 +73,6 @@ def dataset_loader(query):
 
 if __name__ == "__main__":
 
-    triplets_url = dataset_loader("/home/ubuntu/vdp-tool-chain/triplet_loss_baseline/query_and_triplets.txt")
+    triplets_url = dataset_loader("/home/ubuntu/vdp/triplet_loss_baseline/query_and_triplets.txt")
     download_files(triplets_url)
     print("Triplets downloaded!")

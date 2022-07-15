@@ -14,9 +14,9 @@ parser.add_argument('--max_sample', default=2000,
                     type=int, help='size of split, effective only when random is true')
 parser.add_argument('--n_questions_per_family', default=5, 
                     type=int, help='number of questions per family, effective when random is false')
-parser.add_argument('--input_question_h5', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/reason/clevr_h5/clevr_train_questions.h5',
+parser.add_argument('--input_question_h5', default='/home/ubuntu/vdp/data/ns-vqa-data/reason/clevr_h5/clevr_train_questions.h5',
                     type=str, help='path to input question h5 file')
-parser.add_argument('--output_dir', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/reason/clevr_h5',
+parser.add_argument('--output_dir', default='/home/ubuntu/vdp/data/ns-vqa-data/reason/clevr_h5',
                     type=str, help='output dir')
 parser.add_argument('--output_index', default=None,
                     type=int, help='output repeat id')

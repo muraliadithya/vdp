@@ -1,6 +1,6 @@
 # Running the ns-vqa inference.
 
-1. Goto `/home/ubuntu/vdp-tool-chain/clevr_inference` and inspect the `./output` folder. Look for the `val` training set and make sure the images and the `CLEVR_val_scenes.json` reflect the required data.
+1. Goto `/home/ubuntu/vdp/clevr_inference` and inspect the `./output` folder. Look for the `val` training set and make sure the images and the `CLEVR_val_scenes.json` reflect the required data.
 2. Run `transfer.sh`. This will transfer the `val` partition into the appropriate location in the ns-vqa folder.
 3. Now navigate to the ns-vqa project directory (`/home/ubuntu/ns-vqa`).
 4. Run the following commands:

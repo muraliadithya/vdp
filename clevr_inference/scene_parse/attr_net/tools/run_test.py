@@ -1,7 +1,7 @@
 import os
 import glob
 import sys
-sys.path.append('/home/ubuntu/vdp-tool-chain/clevr_inference/scene_parse/attr_net')
+sys.path.append('/home/ubuntu/vdp/clevr_inference/scene_parse/attr_net')
 import json
 
 from options import get_options
@@ -9,7 +9,7 @@ from datasets import get_dataloader
 from model import get_model
 import utils
 
-COMP_CAT_DICT_PATH = '/home/ubuntu/vdp-tool-chain/clevr_inference/scene_parse/attr_net/tools/clevr_comp_cat_dict.json'
+COMP_CAT_DICT_PATH = '/home/ubuntu/vdp/clevr_inference/scene_parse/attr_net/tools/clevr_comp_cat_dict.json'
 
 opt = get_options('test')
 test_loader = get_dataloader(opt, 'test')

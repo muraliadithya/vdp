@@ -76,7 +76,7 @@ def deep_rank_model():
 
 model = deep_rank_model()
 
-model.load_weights("/home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
+model.load_weights("/home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
 
 
 
@@ -102,8 +102,8 @@ def get_test_score(test_img, train_set):
     return prod
 
 puzzle_name = args['puzzle']
-puzzles = sorted(glob(f"/home/ubuntu/vdp-tool-chain/data/output/images/{puzzle_name}/*"))
-assert len(puzzles), f"Puzzle not found @ /home/ubuntu/vdp-tool-chain/data/output/images/{puzzle_name}/"
+puzzles = sorted(glob(f"/home/ubuntu/vdp/data/output/images/{puzzle_name}/*"))
+assert len(puzzles), f"Puzzle not found @ /home/ubuntu/vdp/data/output/images/{puzzle_name}/"
 
 test_set = [0, 1, 2]
 train_set = [3, 4, 5, 6]

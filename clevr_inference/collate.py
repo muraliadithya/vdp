@@ -113,6 +113,6 @@ def collate(train_split : List[str], test_split : List[str], results_pth : str, 
 if __name__ == "__main__":
     train_split = sys.argv[1].split(" ")
     test_split = sys.argv[2].split(" ")
-    results_pth = sys.argv[3] if len(sys.argv) > 1 else '/home/ubuntu/vdp-tool-chain/data/inference-outputs/results.json'
-    out_pth =  sys.argv[4] if len(sys.argv) > 2 else '/home/ubuntu/vdp-tool-chain/data/inference-outputs/'
+    results_pth = sys.argv[3] if len(sys.argv) > 1 else '/home/ubuntu/vdp/data/inference-outputs/results.json'
+    out_pth =  sys.argv[4] if len(sys.argv) > 2 else '/home/ubuntu/vdp/data/inference-outputs/'
     collate(train_split, test_split, results_pth, out_pth)    

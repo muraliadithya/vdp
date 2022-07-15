@@ -5,7 +5,7 @@ import re, json, subprocess, shlex, shutil
 from copy import deepcopy
 from collections import defaultdict
 import numpy as np
-import sys; sys.path.append("/home/ubuntu/vdp-tool-chain/")
+import sys; sys.path.append("/home/ubuntu/vdp/")
 from utils.common import *
 import importlib  
 import random
@@ -15,9 +15,9 @@ from nltk.corpus import wordnet as wn
 
 # nouns = {x.name().split('.', 1)[0] for x in wn.all_synsets('n')}
 
-jsonl_pth = "/home/ubuntu/vdp-tool-chain/vdp_website/static/gqa_website.json"
-md_dir  = "/home/ubuntu/vdp-tool-chain/vdp_website/content/docs/gqa-md"
-img_dir = "/home/ubuntu/vdp-tool-chain/vdp_website/static/gqa_images"
+jsonl_pth = "/home/ubuntu/vdp/vdp_website/static/gqa_website.json"
+md_dir  = "/home/ubuntu/vdp/vdp_website/content/docs/gqa-md"
+img_dir = "/home/ubuntu/vdp/vdp_website/static/gqa_images"
 
 get_float = lambda img_pths, is_train: ("\n<--->\n".join(
     [f"`{'Example' if is_train else 'Candidate'} {i}`![{os.path.basename(x).split('_')[-1]}]({x})"

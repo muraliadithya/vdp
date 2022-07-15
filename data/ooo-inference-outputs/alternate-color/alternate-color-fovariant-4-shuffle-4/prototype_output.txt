@@ -1,2 +1,2 @@
 The scores were [0.25151920318603516, 0.13778284192085266, 0.08067838847637177, 0.13451358675956726].
-Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp-tool-chain/data/output/images/alternate-color-fovariant-4/CLEVR_alternate-color-fovariant-4_000001.png')
+Best concept is @ idx 0 ie: (0, '/home/ubuntu/vdp/data/output/images/alternate-color-fovariant-4/CLEVR_alternate-color-fovariant-4_000001.png')

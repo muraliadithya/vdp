@@ -5,17 +5,17 @@ import re, json, subprocess, shlex, shutil
 from copy import deepcopy
 from collections import defaultdict
 import numpy as np
-import sys; sys.path.append("/home/ubuntu/vdp-tool-chain")
+import sys; sys.path.append("/home/ubuntu/vdp")
 from utils.common import *
 import bs4
 from bs4 import BeautifulSoup
 import random
 
 ############### CONSTANTS START ###############
-in_dir  = "/home/ubuntu/vdp-tool-chain/vdp_website/static/natscene-data/"
-md_dir  = "/home/ubuntu/vdp-tool-chain/vdp_website/content/docs/yolo-md"
-img_dir = "/home/ubuntu/vdp-tool-chain/vdp_website/static/output/natscene_images"
-html_dir = "/home/ubuntu/vdp-tool-chain/vdp_website/static/naturalscenesdataset/"
+in_dir  = "/home/ubuntu/vdp/vdp_website/static/natscene-data/"
+md_dir  = "/home/ubuntu/vdp/vdp_website/content/docs/yolo-md"
+img_dir = "/home/ubuntu/vdp/vdp_website/static/output/natscene_images"
+html_dir = "/home/ubuntu/vdp/vdp_website/static/naturalscenesdataset/"
 
 get_float = lambda img_pths, is_train: ("\n<--->\n".join(
     [f"`{'Example' if is_train else 'Candidate'} {i}`![{os.path.basename(x).split('_')[-1]}]({x})"

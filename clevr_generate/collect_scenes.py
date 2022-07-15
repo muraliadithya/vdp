@@ -16,8 +16,8 @@ and license to the output file.
 """
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--input_dir', default='/home/ubuntu/vdp-tool-chain/data/output/scenes')
-parser.add_argument('--output_file', default='/home/ubuntu/vdp-tool-chain/data/output/CLEVR_misc_scenes.json')
+parser.add_argument('--input_dir', default='/home/ubuntu/vdp/data/output/scenes')
+parser.add_argument('--output_file', default='/home/ubuntu/vdp/data/output/CLEVR_misc_scenes.json')
 parser.add_argument('--version', default='1.0')
 parser.add_argument('--date', default='7/8/2017')
 parser.add_argument('--license',

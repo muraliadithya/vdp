@@ -7,7 +7,7 @@ class Config:
     name: str                                   # name of puzzle
     train: list                                 # image paths belonging to 'train' set
     test: list                                  # image paths belonging to 'test' set
-    interim_dir: str = "/home/ubuntu/vdp-tool-chain/data/natscene_data/interim"        # path of collated results. Defaults to "{project dir}/data/interim"
+    interim_dir: str = "/home/ubuntu/vdp/data/natscene_data/interim"        # path of collated results. Defaults to "{project dir}/data/interim"
     interim_path: str = None                    # path of nn input. 
     processed_path: str = None                  # path of nn output. 
     ir_path : str = None                        # path of ir output.

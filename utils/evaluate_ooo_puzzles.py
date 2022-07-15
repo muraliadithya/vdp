@@ -48,7 +48,7 @@ def get_model():
 
 def run_prototype(full_pz_name, pz_name, num, ooo_puzzle, model):
     pz_pth       = os.path.join(out_pth, pz_name, f"{pz_name}-fovariant-{num}-shuffle-{ooo_puzzle['idx']}")
-    image_path = f"/home/ubuntu/vdp-tool-chain/data/output/images/{puzzle}"
+    image_path = f"/home/ubuntu/vdp/data/output/images/{puzzle}"
     pkl_pth = os.path.join(pz_pth, "solver_output.pkl")
     output = read_pickle(pkl_pth)
     if ((output[-2].split(": ")[1]) == 'True'):

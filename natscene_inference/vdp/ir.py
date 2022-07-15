@@ -13,7 +13,7 @@ class SGIR(Pipe):
         Pipe.__init__(self, use_cache=use_cache)
         self.output_path = output_path
         self.use_cache = use_cache
-        self.cache = _read_pickle("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")) else dict()
+        self.cache = _read_pickle("/home/ubuntu/vdp/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp/data/natscene_data/cache.pkl")) else dict()
 
 
     def _construct_normalized_model(self, rel_labels, var_const_map=None):
@@ -124,17 +124,17 @@ class SGIR(Pipe):
         print(f"IR outputs written to @ `{self.output_path}`")
 
         if self.use_cache: 
-            _to_pickle(self.cache, "/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")
+            _to_pickle(self.cache, "/home/ubuntu/vdp/data/natscene_data/cache.pkl")
         else:
             os.makedirs("./data", exist_ok=True)
-            _to_pickle(self.cache, "/home/ubuntu/vdp-tool-chain/data/natscene_data/temp.pkl")
+            _to_pickle(self.cache, "/home/ubuntu/vdp/data/natscene_data/temp.pkl")
 
 class YOLOIR(Pipe):
     def __init__(self, output_path, coco_names, use_cache=True):
         Pipe.__init__(self, use_cache=use_cache)
         self.output_path = output_path
         self.use_cache = use_cache
-        self.cache = _read_pickle("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")) else dict()
+        self.cache = _read_pickle("/home/ubuntu/vdp/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp/data/natscene_data/cache.pkl")) else dict()
         self.idx2coco = {str(i) : c for i, c in enumerate( coco_names )}
         self.dirs = ['left', 'right', 'within']
         self.query = ['has_label']
@@ -270,10 +270,10 @@ class YOLOIR(Pipe):
         print(f"IR outputs written to @ `{self.config.ir_path}`")
 
         if self.use_cache: 
-            _to_pickle(self.cache, "/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")
+            _to_pickle(self.cache, "/home/ubuntu/vdp/data/natscene_data/cache.pkl")
         else:
             os.makedirs("./data", exist_ok=True)
-            _to_pickle(self.cache, "/home/ubuntu/vdp-tool-chain/data/natscene_data/temp.pkl")
+            _to_pickle(self.cache, "/home/ubuntu/vdp/data/natscene_data/temp.pkl")
 
 
 

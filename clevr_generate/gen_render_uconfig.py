@@ -50,19 +50,19 @@ if INSIDE_BLENDER:
 parser = argparse.ArgumentParser()
 
 # Input options
-parser.add_argument('--base_scene_blendfile', default='/home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend',
+parser.add_argument('--base_scene_blendfile', default='/home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend',
     help="Base blender file on which all scenes are based; includes " +
           "ground plane, lights, and camera.")
-parser.add_argument('--properties_json', default='/home/ubuntu/vdp-tool-chain/data/clevr_scene_data/properties.json',
+parser.add_argument('--properties_json', default='/home/ubuntu/vdp/data/clevr_scene_data/properties.json',
     help="JSON file defining objects, materials, sizes, and colors. " +
          "The \"colors\" field maps from CLEVR color names to RGB values; " +
          "The \"sizes\" field maps from CLEVR size names to scalars used to " +
          "rescale object models; the \"materials\" and \"shapes\" fields map " +
          "from CLEVR material and shape names to .blend files in the " +
          "--object_material_dir and --shape_dir directories respectively.")
-parser.add_argument('--shape_dir', default='/home/ubuntu/vdp-tool-chain/data/clevr_scene_data/shapes',
+parser.add_argument('--shape_dir', default='/home/ubuntu/vdp/data/clevr_scene_data/shapes',
     help="Directory where .blend files for object models are stored")
-parser.add_argument('--material_dir', default='/home/ubuntu/vdp-tool-chain/data/clevr_scene_data/materials',
+parser.add_argument('--material_dir', default='/home/ubuntu/vdp/data/clevr_scene_data/materials',
     help="Directory where .blend files for materials are stored")
 parser.add_argument('--shape_color_combos_json', default=None,
     help="Optional path to a JSON file mapping shape names to a list of " +
@@ -101,15 +101,15 @@ parser.add_argument('--split', default='new',
     help="Name of the split for which we are rendering. This will be added to " +
          "the names of rendered images, and will also be stored in the JSON " +
          "scene structure for each image.")
-parser.add_argument('--output_image_dir', default='/home/ubuntu/vdp-tool-chain/data/output/images/',
+parser.add_argument('--output_image_dir', default='/home/ubuntu/vdp/data/output/images/',
     help="The directory where output images will be stored. It will be " +
          "created if it does not exist.")
-parser.add_argument('--output_scene_dir', default='/home/ubuntu/vdp-tool-chain/data/output/scenes/',
+parser.add_argument('--output_scene_dir', default='/home/ubuntu/vdp/data/output/scenes/',
     help="The directory where output JSON scene structures will be stored. " +
          "It will be created if it does not exist.")
-parser.add_argument('--output_scene_file', default='/home/ubuntu/vdp-tool-chain/data/output/CLEVR_scenes.json',
+parser.add_argument('--output_scene_file', default='/home/ubuntu/vdp/data/output/CLEVR_scenes.json',
     help="Path to write a single JSON file containing all scene information")
-parser.add_argument('--output_blend_dir', default='/home/ubuntu/vdp-tool-chain/data/output/blendfiles',
+parser.add_argument('--output_blend_dir', default='/home/ubuntu/vdp/data/output/blendfiles',
     help="The directory where blender scene files will be stored, if the " +
          "user requested that these files be saved using the " +
          "--save_blendfiles flag; in this case it will be created if it does " +

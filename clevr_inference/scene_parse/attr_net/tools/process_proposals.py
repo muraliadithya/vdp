@@ -1,6 +1,6 @@
 import os
 import sys
-# sys.path.append('/home/ubuntu/vdp-tool-chain/clevr_inference/scene_parse/w_net')
+# sys.path.append('/home/ubuntu/vdp/clevr_inference/scene_parse/w_net')
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # Equivalent to above line.
 import json
 import argparse

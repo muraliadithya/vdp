@@ -75,7 +75,7 @@ def deep_rank_model():
 
 model = deep_rank_model()
 
-model.load_weights("/home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
+model.load_weights("/home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
 
 
 
@@ -89,7 +89,7 @@ def get_embed(pth):
 
     return embed1
 
-get_path = lambda puzzle_name, i :f"/home/ubuntu/vdp-tool-chain/data/output/images/{puzzle_name}/CLEVR_{puzzle_name}_00000{i}.png"
+get_path = lambda puzzle_name, i :f"/home/ubuntu/vdp/data/output/images/{puzzle_name}/CLEVR_{puzzle_name}_00000{i}.png"
 
 
 def l2_norm(embed1, embed2):
@@ -114,7 +114,7 @@ def to_json(obj, pth):
         json.dump(obj, f)
 
 
-for puzzle_path in glob("/home/ubuntu/vdp-tool-chain/vdp_solver/outputs/*"):
+for puzzle_path in glob("/home/ubuntu/vdp/vdp_solver/outputs/*"):
     puzzle_name = os.path.basename(puzzle_path)
 
     test_set = list(sorted(glob(os.path.join(puzzle_path, "test", "*"))))

@@ -21,15 +21,15 @@ class BaseOptions():
         self.parser.add_argument('--visualize', default=0, type=int, help='visualize experiment')
         # Dataset catalog
         # - CLEVR
-        self.parser.add_argument('--clevr_train_scene_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/scenes/CLEVR_train_scenes.json',
+        self.parser.add_argument('--clevr_train_scene_path', default='/home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_v1.0/scenes/CLEVR_train_scenes.json',
                                  type=str, help='path to clevr train scenes')
-        self.parser.add_argument('--clevr_val_scene_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/scenes/CLEVR_val_scenes.json',
+        self.parser.add_argument('--clevr_val_scene_path', default='/home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_v1.0/scenes/CLEVR_val_scenes.json',
                                  type=str, help='path to clevr val scenes')
-        self.parser.add_argument('--clevr_train_question_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/reason/clevr_h5/clevr_train_questions.h5',
+        self.parser.add_argument('--clevr_train_question_path', default='/home/ubuntu/vdp/data/ns-vqa-data/reason/clevr_h5/clevr_train_questions.h5',
                                  type=str, help='path to clevr train questions')
-        self.parser.add_argument('--clevr_val_question_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/reason/clevr_h5/clevr_val_questions.h5',
+        self.parser.add_argument('--clevr_val_question_path', default='/home/ubuntu/vdp/data/ns-vqa-data/reason/clevr_h5/clevr_val_questions.h5',
                                  type=str, help='path to clevr val questions')
-        self.parser.add_argument('--clevr_vocab_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/reason/clevr_h5/clevr_vocab.json',
+        self.parser.add_argument('--clevr_vocab_path', default='/home/ubuntu/vdp/data/ns-vqa-data/reason/clevr_h5/clevr_vocab.json',
                                  type=str, help='path to clevr vocab')
 
     def parse(self):

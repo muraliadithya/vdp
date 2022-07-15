@@ -43,7 +43,7 @@ def save_output(output, puzzle_dict, out_pth, puzzle_pth):
         concept          = None
         candidate        = None
         return
-    candidate_rel_path = os.path.join("images", os.path.relpath(candidate, "/home/ubuntu/vdp-tool-chain/data/clevr-irs"))
+    candidate_rel_path = os.path.join("images", os.path.relpath(candidate, "/home/ubuntu/vdp/data/clevr-irs"))
     puzzle_dict['candidate'] = candidate_rel_path
     puzzle_dict['concept'] = concept
     print(f"LOG: Saving {puzzle_dict['name']} @ {os.path.join(out_pth, puzzle_pth)}")

@@ -1,2 +1,2 @@
 The scores were [0.7458786692863946, 0.6273922110263013, 0.7447813158486669, 1.0727055781563306].
-Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain/data/output/images/partition-fovariant-3/CLEVR_partition-fovariant-3_000005.png')
+Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp/data/output/images/partition-fovariant-3/CLEVR_partition-fovariant-3_000005.png')

@@ -24,9 +24,9 @@ for i1 in train:
 
 
 out_file.close()
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats1.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/1to2.log;
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats1.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/1to0.log;
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats3.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/3to2.log;
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats3.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/3to0.log;
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats5.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/5to2.log;
-# python get_distance.py --model /home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats5.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/5to0.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats1.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/1to2.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats1.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/1to0.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats3.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/3to2.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats3.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/3to0.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats5.jpeg --image2 ./puzzle/test/pplwearinghats2.jpeg    > ./logs/5to2.log;
+# python get_distance.py --model /home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5 --image1 ./puzzle/train/pplwearinghats5.jpeg --image2 ./puzzle/test/manwithoutshirt3.jpeg   > ./logs/5to0.log;

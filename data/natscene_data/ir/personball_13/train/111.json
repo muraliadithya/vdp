@@ -742,7 +742,7 @@
     "raw": {
         "scene": {
             "frame_id": 2,
-            "filename": "/home/ubuntu/vdp-tool-chain/data/natscene_data/images/111.jpg",
+            "filename": "/home/ubuntu/vdp/data/natscene_data/images/111.jpg",
             "objects": [
                 {
                     "class_id": 74,

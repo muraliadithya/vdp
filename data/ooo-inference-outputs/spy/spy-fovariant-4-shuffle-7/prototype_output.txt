@@ -1,2 +1,2 @@
 The scores were [0.098544642329216, 0.13820235431194305, 0.10240251570940018, 0.22845669090747833].
-Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp-tool-chain/data/output/images/spy-fovariant-4/CLEVR_spy-fovariant-4_000004.png')
+Best concept is @ idx 3 ie: (3, '/home/ubuntu/vdp/data/output/images/spy-fovariant-4/CLEVR_spy-fovariant-4_000004.png')

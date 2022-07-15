@@ -10,7 +10,7 @@ class SGGenerate(Pipe):
         Pipe.__init__(self, use_cache=use_cache)
         self.sg_config = config
         self.use_cache = use_cache
-        self.cache = _read_pickle("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")) else dict()
+        self.cache = _read_pickle("/home/ubuntu/vdp/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp/data/natscene_data/cache.pkl")) else dict()
             
     def run_sg(self, input_path, output_path, glove_path, model_path, log_path, sg_tools_rel_path="tools/relation_test_net.py", sg_config_path="configs/e2e_relation_X_101_32_8_FPN_1x.yaml", cuda_device_port=0, n_proc=1, dry=True):
         """
@@ -86,7 +86,7 @@ class YOLOGenerate(Pipe):
         Pipe.__init__(self, use_cache=use_cache)
         self.yolo_config = config
         self.use_cache = use_cache
-        self.cache = _read_pickle("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp-tool-chain/data/natscene_data/cache.pkl")) else dict()
+        self.cache = _read_pickle("/home/ubuntu/vdp/data/natscene_data/cache.pkl") if (use_cache and os.path.exists("/home/ubuntu/vdp/data/natscene_data/cache.pkl")) else dict()
             
             
     def run_yolo(self, input_path, output_path, model_path, log_path, yoloargs, dry=True):

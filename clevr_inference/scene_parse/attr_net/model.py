@@ -115,7 +115,7 @@ class _Net(nn.Module):
             for i, embed in enumerate(embedding):
                 embedding_mat[i, :d] = embed
                 embedding_mat[i, d + idxs[i]] = 1
-            ir_dir = f"/home/ubuntu/vdp-tool-chain/data/intermediate-inference-outputs"
+            ir_dir = f"/home/ubuntu/vdp/data/intermediate-inference-outputs"
             os.makedirs(ir_dir, exist_ok=True)
             np.save(f"{ir_dir}/{name}.npy", embedding_mat)
 

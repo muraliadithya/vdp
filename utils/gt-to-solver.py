@@ -7,7 +7,7 @@ import numpy as np
 from common import *
 import scipy.linalg as la
 
-collate_pth = "/home/ubuntu/vdp-tool-chain/clevr_inference/"
+collate_pth = "/home/ubuntu/vdp/clevr_inference/"
 assert os.path.exists(collate_pth), f"Check `collate_pth` constant."
 sys.path.append(collate_pth)
 sys.path.append(os.path.join(collate_pth, "reason"))
@@ -35,7 +35,7 @@ def run_solver(in_pth, puzzle_flags, print_out=True):
 ############### HELPERS END ###############
 
 if __name__ == '__main__':
-    assert os.path.basename(os.getcwd()) == 'vdp-tool-chain', "getcwd() was not found to be project_dir"
+    assert os.path.basename(os.getcwd()) == 'vdp', "getcwd() was not found to be project_dir"
     assert len(sys.argv) > 3, "Usage\n$ python utils/gt-to-solver.py {gt-path} \"{train_split}\" \"{test_split}\" \"{solver_flags=optional}\""
     in_pth = sys.argv[1]
     assert os.path.exists(in_pth), f"{in_pth} not found @ {os.getcwd()}"

@@ -5,16 +5,16 @@ import re, json, subprocess, shlex, shutil
 from copy import deepcopy
 from collections import defaultdict
 import numpy as np
-import sys; sys.path.append("/home/ubuntu/vdp-tool-chain")
+import sys; sys.path.append("/home/ubuntu/vdp")
 from utils.common import *
 import importlib  
 import random
 # solver = importlib.import_module("gt-to-solver")
 
 ############### CONSTANTS START ###############
-in_dir  = "/home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants"
-md_dir  = "/home/ubuntu/vdp-tool-chain/vdp_website/content/docs/clevr-md"
-img_dir = "/home/ubuntu/vdp-tool-chain/vdp_website/static/output/clevr_images"
+in_dir  = "/home/ubuntu/vdp/vdp_website/static/clevr-variants"
+md_dir  = "/home/ubuntu/vdp/vdp_website/content/docs/clevr-md"
+img_dir = "/home/ubuntu/vdp/vdp_website/static/output/clevr_images"
 
 get_float = lambda img_pths, is_train: ("\n<--->\n".join(
     [f"`{'Example' if is_train else 'Candidate'} {i}`![{os.path.basename(x).split('_')[-1]}]({x})"
@@ -153,7 +153,7 @@ if __name__ == '__main__':
         shutil.rmtree(md_dir)
 
     for out_pth in glob(os.path.join(in_dir, "*/*/*.out")):
-        # out_pth of form /home/ubuntu/vdp-tool-chain/vdp_website/static/clevr-variants/{puzzle_name}/{fovariant_name}/{fovariant_name}.out
+        # out_pth of form /home/ubuntu/vdp/vdp_website/static/clevr-variants/{puzzle_name}/{fovariant_name}/{fovariant_name}.out
         puzzle_name = osp.basename(osp.dirname(osp.dirname(out_pth)))
         variant_num = osp.basename(osp.dirname(out_pth)).split("fovariant-")[1]
 

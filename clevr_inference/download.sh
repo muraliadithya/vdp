@@ -1,5 +1,5 @@
-mkdir -p /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw
-cd /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw
+mkdir -p /home/ubuntu/vdp/data/ns-vqa-data/raw
+cd /home/ubuntu/vdp/data/ns-vqa-data/raw
 
 echo "Downloading CLEVR dataset..."
 wget https://s3-us-west-1.amazonaws.com/clevr/CLEVR_v1.0.zip

@@ -55,7 +55,7 @@ This repository is organized generally based on the generation/inference module 
 Our instructions are specifically tuned to make it easy to replicate our results with minimal setup errors. A lot of these steps can be avoided in case of resource constraints.
 
 1. Setup a Amazon AWS `p2.xlarge` instance. We used the `Deep Learning AMI (Ubuntu 16.04) Version 38.0 (ami-067cf9e6ac97cfb53) ` Amazon Machine Image with 105 GiB gp2 storage volume. Running all the experiments from scratch takes about 24-30 hours of compute time (less than $30). We were able to replicate all our experiments on a different server with a different GPU. However, running the `clevr_inference` module *requires* a Ubuntu 16.04 machine.
-2. Clone this git repository. The homepath should look like `/home/ubuntu/vdp-tool-chain` (this *exact string* has been hardcoded in a lot of places. If you prefer running this on a local machine then you'll need to group-replace this path with your the project path).
+2. Clone this git repository. The homepath should look like `/home/ubuntu/vdp` (this *exact string* has been hardcoded in a lot of places. If you prefer running this on a local machine then you'll need to group-replace this path with your the project path).
 3. Install the conda environments. There should be 4 `*-spec.txt` files in the `data/conda-envs` folder. Create a conda environment from these. That is:
 ```bash
 $ conda create --name ns-vqa --file data/conda-envs/ns-vqa-spec.txt
@@ -63,7 +63,7 @@ $ conda create --name deep-ranking --file data/conda-envs/deep-ranking-spec.txt
 $ conda create --name torch --file data/conda-envs/torch-spec.txt
 $ conda create --name vdp --file data/conda-envs/vdp-spec.txt
 ```
-4. Download the `data.zip` data bundle [here]() and merge this with the contents of `vdp-tool-chain/data`.
+4. Download the `data.zip` data bundle [here]() and merge this with the contents of `vdp/data`.
 5. The `data.zip` file contains all the extra datafiles/configs/pretrained_models needed to replicate our results.
 6. Setup darknet for getting bounding boxes from YOLOv4. Running `$ make clean && make` OR `$ ./build.sh` in `natscene_inference/darknet` should suffice. I suggest reading the readme in the darknet directory for setting up a particular GPU. The repo is setup to handle atleast the `NVIDIA K80`.
 

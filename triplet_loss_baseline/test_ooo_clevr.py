@@ -41,8 +41,8 @@ def get_rx_lines(lines : list = [], rx_dict : dict = {}):
                 yield (key, match)
 
 
-in_pth  = "/home/ubuntu/vdp-tool-chain/data/inference-outputs/"
-out_pth  = "/home/ubuntu/vdp-tool-chain/data/ooo-inference-outputs-2/"
+in_pth  = "/home/ubuntu/vdp/data/inference-outputs/"
+out_pth  = "/home/ubuntu/vdp/data/ooo-inference-outputs-2/"
 
 get_split = lambda pth: "train" if os.path.splitext(pth)[0] in ['3', '4', '5'] else "test"
 
@@ -109,7 +109,7 @@ def deep_rank_model():
 
 model = deep_rank_model()
 
-model.load_weights("/home/ubuntu/vdp-tool-chain/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
+model.load_weights("/home/ubuntu/vdp/data/triplet_loss_baseline-data/deepranking-v2-150000.h5")
 
 
 
@@ -135,8 +135,8 @@ def get_test_score(test_img, train_set):
     return prod
 
 # puzzle_name = args['puzzle']
-# puzzles = sorted(glob(f"/home/ubuntu/vdp-tool-chain/data/output/images/{puzzle_name}/*"))
-# assert len(puzzles), f"Puzzle not found @ /home/ubuntu/vdp-tool-chain/data/output/images/{puzzle_name}/"
+# puzzles = sorted(glob(f"/home/ubuntu/vdp/data/output/images/{puzzle_name}/*"))
+# assert len(puzzles), f"Puzzle not found @ /home/ubuntu/vdp/data/output/images/{puzzle_name}/"
 
 # test_set = [0, 1, 2]
 # train_set = [3, 4, 5, 6]
@@ -180,7 +180,7 @@ def run_baseline(puzzle, pz_name, num, ooo_puzzle):
     pkl_pth = os.path.join(pz_pth, "solver_output.pkl")
     output = read_pickle(pkl_pth)
     if ((output[-2].split(": ")[1]) == 'True'):
-        image_path = f"/home/ubuntu/vdp-tool-chain/data/output/images/{puzzle}"
+        image_path = f"/home/ubuntu/vdp/data/output/images/{puzzle}"
         examples = list(map(lambda x : os.path.join(image_path, f'CLEVR_{puzzle}_{x.replace(".json", ".png").zfill(10)}') , ooo_puzzle['examples']))
         candidate = list(map(lambda x : os.path.join(image_path, f'CLEVR_{puzzle}_{x.replace(".json", ".png").zfill(10)}') , ooo_puzzle['candidate']))
         

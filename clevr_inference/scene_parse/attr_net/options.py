@@ -16,8 +16,8 @@ class BaseOptions():
         self.parser.add_argument('--load_checkpoint_path', default=None, type=str, help='load checkpoint path')
         self.parser.add_argument('--gpu_ids', default='0', type=str, help='ids of gpu to be used')
 
-        self.parser.add_argument('--clevr_mini_img_dir', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_mini/images', type=str, help='clevr-mini image directory')
-        self.parser.add_argument('--clevr_mini_ann_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_mini_objs.json', type=str, help='clevr-mini objects annotation file')
+        self.parser.add_argument('--clevr_mini_img_dir', default='/home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_mini/images', type=str, help='clevr-mini image directory')
+        self.parser.add_argument('--clevr_mini_ann_path', default='/home/ubuntu/vdp/data/ns-vqa-data/attr_net/objects/clevr_mini_objs.json', type=str, help='clevr-mini objects annotation file')
         
         self.parser.add_argument('--concat_img', default=1, type=int, help='concatenate original image when sent to network')
         self.parser.add_argument('--split_id', default=3500, type=int, help='splitting index between train and val images')
@@ -81,8 +81,8 @@ class TestOptions(BaseOptions):
         BaseOptions.initialize(self)
         self.parser.add_argument('--split', default='val')
         self.parser.add_argument('--output_path', default='result.json', type=str, help='save path for derendered scene annotation')
-        self.parser.add_argument('--clevr_val_ann_path', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_val_objs.json', type=str, help='clevr val objects annotation file')
-        self.parser.add_argument('--clevr_val_img_dir', default='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/images/val', type=str, help='clevr val image directory')
+        self.parser.add_argument('--clevr_val_ann_path', default='/home/ubuntu/vdp/data/ns-vqa-data/attr_net/objects/clevr_val_objs.json', type=str, help='clevr val objects annotation file')
+        self.parser.add_argument('--clevr_val_img_dir', default='/home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_v1.0/images/val', type=str, help='clevr val image directory')
         self.parser.add_argument('--shuffle_data', default=0, type=int, help='shuffle dataloader')
         self.parser.add_argument('--use_cat_label', default=1, type=int, help='use object detector class label')
         self.parser.add_argument('--name', default="", type=str, help='name of puzzle')

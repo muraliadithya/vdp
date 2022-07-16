@@ -127,14 +127,13 @@ More information about `vdp_flags` can be found by running `python vdp_solver/sc
 1. The output of the solver will be written to `data/natscene_data/processed/test_puzzle.out`.
 
 
-# Discriminator Synthesis Tutorial
+## Discriminator Synthesis Tutorial
 
 The command to use our solver is
-
 ```bash
 $ python vdp_solver/scripts/vdpsolve.py /path/to/puzzle/IR  - <arguments>
 ```
-Say your puzzle IR generated after the inference step is at `/content/processed` and the target discriminator is $$\exists\, person_1.\,\exists\, person_2.\, \exists\, ball.\, left(person_1,\,ball) \land right(person_2,\, ball)$$ which says that there is a ball in between two people. Then, run the following command to see what our tool finds
+Say your puzzle IR generated after the inference step is at `/path/to/puzzle/IR` and the target discriminator is $$\exists\, person_1.\,\exists\, person_2.\, \exists\, ball.\, left(person_1,\,ball) \land right(person_2,\, ball)$$ which says that there is a ball in between two people. Then, run the following command to see what our tool finds
 
 ```bash
 $ python vdp_solver/scripts/vdpsolve.py /content/processed  - 3 2
@@ -147,7 +146,7 @@ To find the smallest formula, use
 $ python vdp_solver/scripts/vdpsolve.py /path/to/puzzle/IR  - 3 --autotune
 ```
 
-This command will treat the number of quantifiers as an upper bound and return the smallest formula within the specified parameters. The order it uses is a lexicographic one with the following hierarchy: formulas are smaller if they have (1) lesser number of quantifiers (2) existentially quantified rather than universally (3) outer quantifiers are existential (so $$\exists\forall$$ is smaller than $$\forall\exists$$) (4) lesser conjuncts, if the quantification pattern is the same.
+This command will treat the number of quantifiers as an upper bound and return the smallest formula within the specified parameters. The order it uses is a lexicographic one with the following hierarchy: formulas are smaller if they have (1) lesser number of quantifiers (2) existentially quantified rather than universally (3) outer quantifiers are existential (so $\exists\forall$ is smaller than $\forall\exists$) (4) lesser conjuncts, if the quantification pattern is the same.
 
 Some other helpful arguments:
 - `-E` find a discriminator that is purely existentially quantified

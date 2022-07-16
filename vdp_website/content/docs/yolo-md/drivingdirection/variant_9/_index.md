@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
+`Example 0`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
 <--->
-`Example 1`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
+`Example 1`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
 <--->
 `Example 2`![cargoing2.jpg](/natscene_data/images/cargoing2.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
+`Candidate 0`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
 <--->
-`Candidate 1`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
+`Candidate 1`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
 <--->
 `Candidate 2`![cargoing4.jpg](/natscene_data/images/cargoing4.jpg)
 {{< /columns >}}

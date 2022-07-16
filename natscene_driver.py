@@ -22,22 +22,17 @@ def get_configs(configs_dir : str):
     return [os.path.join(configs_dir, f, 'config.json') for f in os.listdir(configs_dir)]
 
 def run_solver(vdp_flags : str, inference_result : str =None, output_file : str =None, constants : NatSceneConstants = None):
-        """
-        Run the solver.
-        """
-        cmd = f"""
-        timeout
-        60
-        python
-        {constants.solver_path}
-        {inference_result}
-        {vdp_flags}
-        """.strip()
-        cmd = cmd.replace("\n", " ")
-        if os.path.exists(output_file):
-            return
-        solver_logs = exec_cmd(cmd)
-        to_txt(solver_logs, output_file)
+    cmd = f"""
+    timeout
+    60
+    python
+    {constants.solver_path}
+    {inference_result}
+    {vdp_flags}
+    """.strip()
+    cmd = cmd.replace("\n", " ")
+    solver_logs = exec_cmd(cmd)
+    to_txt(solver_logs, output_file)
 
 
 def generate_pipeline(use_cache : bool, converter_config, generator_config, ir_config):
@@ -53,7 +48,7 @@ def run_pipeline(pipeline : vdp.pipeline.Pipeline, configs : list, constants : N
         vdp_params = read_json(pth)
         puzzle_name = vdp_params["name"]
         config = pipeline.run(vdp_params)
-        config_out_pth = os.path.join(constants.output_dir, os.path.basename(pth))
+        config_out_pth = os.path.join(constants.ir_output_dir, puzzle_name, "config.json" )
         if not os.path.exists(os.path.dirname(config_out_pth)):
             os.makedirs(os.path.dirname(config_out_pth))
         to_json(config.__dict__, config_out_pth)

@@ -16,13 +16,13 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![fork19.jpg](/natscene_data/images/fork19.jpg)
+`Candidate 0`![fork16.jpg](/natscene_data/images/fork16.jpg)
 <--->
 `Candidate 1`![fork10.jpg](/natscene_data/images/fork10.jpg)
 <--->
-`Candidate 2`![fork3.jpg](/natscene_data/images/fork3.jpg)
+`Candidate 2`![fork19.jpg](/natscene_data/images/fork19.jpg)
 <--->
-`Candidate 3`![fork16.jpg](/natscene_data/images/fork16.jpg)
+`Candidate 3`![fork3.jpg](/natscene_data/images/fork3.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ Neatly arranged place settings (complete with cutlery and wine glasses).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 3` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: knife. Exists q1: spoon. Exists q2: fork. True
+Exists q0: diningtable. Exists q1: fork. Exists q2: spoon. True
 ```
 {{< /expand >}}

@@ -7,22 +7,22 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![teddy8.jpg](/natscene_data/images/teddy8.jpg)
+`Example 0`![teddy2.jpg](/natscene_data/images/teddy2.jpg)
 <--->
-`Example 1`![teddy2.jpg](/natscene_data/images/teddy2.jpg)
+`Example 1`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
 <--->
 `Example 2`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
 <--->
-`Example 3`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
+`Example 3`![teddy8.jpg](/natscene_data/images/teddy8.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![teddy9.jpg](/natscene_data/images/teddy9.jpg)
+`Candidate 0`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
 <--->
-`Candidate 1`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
+`Candidate 1`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
 <--->
-`Candidate 2`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
+`Candidate 2`![teddy9.jpg](/natscene_data/images/teddy9.jpg)
 <--->
 `Candidate 3`![teddy5.jpg](/natscene_data/images/teddy5.jpg)
 {{< /columns >}}
@@ -42,7 +42,7 @@ Every teddy bear is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: sofa. Forall q1: teddy bear. within(q1,q0)
 ```

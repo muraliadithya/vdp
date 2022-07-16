@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![131.jpg](/natscene_data/images/131.jpg)
+`Example 0`![122.jpg](/natscene_data/images/122.jpg)
 <--->
-`Example 1`![122.jpg](/natscene_data/images/122.jpg)
+`Example 1`![123.jpg](/natscene_data/images/123.jpg)
 <--->
-`Example 2`![123.jpg](/natscene_data/images/123.jpg)
+`Example 2`![131.jpg](/natscene_data/images/131.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![126.jpg](/natscene_data/images/126.jpg)
+`Candidate 0`![128.jpg](/natscene_data/images/128.jpg)
 <--->
-`Candidate 1`![128.jpg](/natscene_data/images/128.jpg)
+`Candidate 1`![125.jpg](/natscene_data/images/125.jpg)
 <--->
-`Candidate 2`![125.jpg](/natscene_data/images/125.jpg)
+`Candidate 2`![126.jpg](/natscene_data/images/126.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ A bus with people in it.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: person. Exists q1: bus. within(q0,q1)
 ```
 {{< /expand >}}

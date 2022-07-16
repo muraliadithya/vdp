@@ -16,13 +16,13 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![57.jpg](/natscene_data/images/57.jpg)
+`Candidate 0`![61.jpg](/natscene_data/images/61.jpg)
 <--->
-`Candidate 1`![62.jpg](/natscene_data/images/62.jpg)
+`Candidate 1`![59.jpg](/natscene_data/images/59.jpg)
 <--->
-`Candidate 2`![61.jpg](/natscene_data/images/61.jpg)
+`Candidate 2`![62.jpg](/natscene_data/images/62.jpg)
 <--->
-`Candidate 3`![59.jpg](/natscene_data/images/59.jpg)
+`Candidate 3`![57.jpg](/natscene_data/images/57.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ Desktop computer.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 3` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: mouse. True
 ```
 {{< /expand >}}

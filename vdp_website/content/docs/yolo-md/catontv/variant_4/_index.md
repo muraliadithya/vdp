@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![39.jpg](/natscene_data/images/39.jpg)
+`Example 0`![48.jpg](/natscene_data/images/48.jpg)
 <--->
-`Example 1`![48.jpg](/natscene_data/images/48.jpg)
+`Example 1`![39.jpg](/natscene_data/images/39.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![47.jpg](/natscene_data/images/47.jpg)
+`Candidate 0`![44.jpg](/natscene_data/images/44.jpg)
 <--->
 `Candidate 1`![49.jpg](/natscene_data/images/49.jpg)
 <--->
-`Candidate 2`![44.jpg](/natscene_data/images/44.jpg)
+`Candidate 2`![47.jpg](/natscene_data/images/47.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -36,8 +36,8 @@ There is a cat displayed on the TV.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: cat. True
 ```
 {{< /expand >}}

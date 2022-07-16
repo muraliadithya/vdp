@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![fork4.jpg](/natscene_data/images/fork4.jpg)
+`Example 0`![fork3.jpg](/natscene_data/images/fork3.jpg)
 <--->
 `Example 1`![fork2.jpg](/natscene_data/images/fork2.jpg)
 <--->
-`Example 2`![fork3.jpg](/natscene_data/images/fork3.jpg)
+`Example 2`![fork4.jpg](/natscene_data/images/fork4.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
 `Candidate 0`![fork1.jpg](/natscene_data/images/fork1.jpg)
 <--->
-`Candidate 1`![fork16.jpg](/natscene_data/images/fork16.jpg)
+`Candidate 1`![fork11.jpg](/natscene_data/images/fork11.jpg)
 <--->
-`Candidate 2`![fork11.jpg](/natscene_data/images/fork11.jpg)
+`Candidate 2`![fork16.jpg](/natscene_data/images/fork16.jpg)
 <--->
 `Candidate 3`![fork18.jpg](/natscene_data/images/fork18.jpg)
 {{< /columns >}}

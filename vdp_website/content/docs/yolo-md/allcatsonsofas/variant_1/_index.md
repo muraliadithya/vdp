@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![15.jpg](/natscene_data/images/15.jpg)
+`Example 0`![24.jpg](/natscene_data/images/24.jpg)
 <--->
-`Example 1`![24.jpg](/natscene_data/images/24.jpg)
+`Example 1`![14.jpg](/natscene_data/images/14.jpg)
 <--->
-`Example 2`![14.jpg](/natscene_data/images/14.jpg)
+`Example 2`![15.jpg](/natscene_data/images/15.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![17.jpg](/natscene_data/images/17.jpg)
+`Candidate 0`![25.jpg](/natscene_data/images/25.jpg)
 <--->
-`Candidate 1`![25.jpg](/natscene_data/images/25.jpg)
+`Candidate 1`![17.jpg](/natscene_data/images/17.jpg)
 <--->
 `Candidate 2`![18.jpg](/natscene_data/images/18.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ Every cat is on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sofa. Forall q1: cat. within(q1,q0)
 ```
 {{< /expand >}}

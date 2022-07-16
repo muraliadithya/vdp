@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![28.jpg](/natscene_data/images/28.jpg)
+`Example 0`![27.jpg](/natscene_data/images/27.jpg)
 <--->
-`Example 1`![35.jpg](/natscene_data/images/35.jpg)
+`Example 1`![28.jpg](/natscene_data/images/28.jpg)
 <--->
-`Example 2`![27.jpg](/natscene_data/images/27.jpg)
+`Example 2`![35.jpg](/natscene_data/images/35.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![31.jpg](/natscene_data/images/31.jpg)
+`Candidate 0`![34.jpg](/natscene_data/images/34.jpg)
 <--->
-`Candidate 1`![34.jpg](/natscene_data/images/34.jpg)
+`Candidate 1`![31.jpg](/natscene_data/images/31.jpg)
 <--->
 `Candidate 2`![33.jpg](/natscene_data/images/33.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ Every dog is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sofa. Exists q1: dog. within(q1,q0)
 ```
 {{< /expand >}}

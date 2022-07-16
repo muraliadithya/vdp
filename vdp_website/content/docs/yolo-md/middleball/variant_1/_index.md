@@ -7,11 +7,11 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
+`Example 0`![middleball3.jpg](/natscene_data/images/middleball3.jpg)
 <--->
-`Example 1`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
+`Example 1`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
 <--->
-`Example 2`![middleball3.jpg](/natscene_data/images/middleball3.jpg)
+`Example 2`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -42,6 +42,6 @@ There is a football in between two people (kickoff position).
 {{< expand "Click to view our tool's prediction" "..." >}}
 Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: person. Exists q1: sports ball. Exists q2: person. right(q1,q2) AND left(q1,q0)
+Exists q0: sports ball. Exists q1: person. Exists q2: person. left(q0,q1) AND right(q0,q2)
 ```
 {{< /expand >}}

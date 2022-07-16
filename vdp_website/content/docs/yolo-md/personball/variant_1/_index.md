@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![111.jpg](/natscene_data/images/111.jpg)
+`Example 0`![110.jpg](/natscene_data/images/110.jpg)
 <--->
-`Example 1`![110.jpg](/natscene_data/images/110.jpg)
+`Example 1`![112.jpg](/natscene_data/images/112.jpg)
 <--->
-`Example 2`![112.jpg](/natscene_data/images/112.jpg)
+`Example 2`![111.jpg](/natscene_data/images/111.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![116.jpg](/natscene_data/images/116.jpg)
+`Candidate 0`![117.jpg](/natscene_data/images/117.jpg)
 <--->
-`Candidate 1`![113.jpg](/natscene_data/images/113.jpg)
+`Candidate 1`![116.jpg](/natscene_data/images/116.jpg)
 <--->
-`Candidate 2`![117.jpg](/natscene_data/images/117.jpg)
+`Candidate 2`![113.jpg](/natscene_data/images/113.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ There is a person playing with a ball.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sports ball. Exists q1: person. True
 ```
 {{< /expand >}}

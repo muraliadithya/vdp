@@ -16,9 +16,9 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![129.jpg](/natscene_data/images/129.jpg)
+`Candidate 0`![125.jpg](/natscene_data/images/125.jpg)
 <--->
-`Candidate 1`![125.jpg](/natscene_data/images/125.jpg)
+`Candidate 1`![129.jpg](/natscene_data/images/129.jpg)
 <--->
 `Candidate 2`![128.jpg](/natscene_data/images/128.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ A bus with people in it.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: bus. Exists q1: person. within(q1,q0)
 ```
 {{< /expand >}}

@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![14.jpg](/natscene_data/images/14.jpg)
+`Example 0`![16.jpg](/natscene_data/images/16.jpg)
 <--->
-`Example 1`![16.jpg](/natscene_data/images/16.jpg)
+`Example 1`![15.jpg](/natscene_data/images/15.jpg)
 <--->
-`Example 2`![15.jpg](/natscene_data/images/15.jpg)
+`Example 2`![14.jpg](/natscene_data/images/14.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![18.jpg](/natscene_data/images/18.jpg)
+`Candidate 0`![17.jpg](/natscene_data/images/17.jpg)
 <--->
-`Candidate 1`![17.jpg](/natscene_data/images/17.jpg)
+`Candidate 1`![18.jpg](/natscene_data/images/18.jpg)
 <--->
 `Candidate 2`![20.jpg](/natscene_data/images/20.jpg)
 {{< /columns >}}
@@ -40,6 +40,6 @@ Every cat is on a sofa.
 {{< expand "Click to view our tool's prediction" "..." >}}
 Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: sofa. Forall q1: teddy bear. within(q1,q0)
+Exists q0: cat. Exists q1: sofa. left(q0,q1)
 ```
 {{< /expand >}}

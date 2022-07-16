@@ -18,11 +18,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![teddy5.jpg](/natscene_data/images/teddy5.jpg)
+`Candidate 0`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
 <--->
 `Candidate 1`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
 <--->
-`Candidate 2`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
+`Candidate 2`![teddy5.jpg](/natscene_data/images/teddy5.jpg)
 <--->
 `Candidate 3`![teddy6.jpg](/natscene_data/images/teddy6.jpg)
 {{< /columns >}}
@@ -42,7 +42,7 @@ Every teddy bear is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: sofa. Forall q1: teddy bear. within(q1,q0)
 ```

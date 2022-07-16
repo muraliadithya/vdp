@@ -11,18 +11,18 @@ weight: 3
 <--->
 `Example 1`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
 <--->
-`Example 2`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
+`Example 2`![teddy10.jpg](/natscene_data/images/teddy10.jpg)
 <--->
-`Example 3`![teddy10.jpg](/natscene_data/images/teddy10.jpg)
+`Example 3`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
+`Candidate 0`![teddy5.jpg](/natscene_data/images/teddy5.jpg)
 <--->
 `Candidate 1`![teddy6.jpg](/natscene_data/images/teddy6.jpg)
 <--->
-`Candidate 2`![teddy5.jpg](/natscene_data/images/teddy5.jpg)
+`Candidate 2`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
 <--->
 `Candidate 3`![teddy4.jpg](/natscene_data/images/teddy4.jpg)
 {{< /columns >}}

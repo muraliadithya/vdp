@@ -9,18 +9,18 @@ weight: 3
 {{< columns >}}
 `Example 0`![134.jpg](/natscene_data/images/134.jpg)
 <--->
-`Example 1`![136.jpg](/natscene_data/images/136.jpg)
+`Example 1`![135.jpg](/natscene_data/images/135.jpg)
 <--->
-`Example 2`![135.jpg](/natscene_data/images/135.jpg)
+`Example 2`![136.jpg](/natscene_data/images/136.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![138.jpg](/natscene_data/images/138.jpg)
+`Candidate 0`![137.jpg](/natscene_data/images/137.jpg)
 <--->
-`Candidate 1`![137.jpg](/natscene_data/images/137.jpg)
+`Candidate 1`![140.jpg](/natscene_data/images/140.jpg)
 <--->
-`Candidate 2`![140.jpg](/natscene_data/images/140.jpg)
+`Candidate 2`![138.jpg](/natscene_data/images/138.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ There is a person and a tie in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: tie. True
 ```
 {{< /expand >}}

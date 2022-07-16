@@ -16,13 +16,13 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![81.jpg](/natscene_data/images/81.jpg)
+`Candidate 0`![84.jpg](/natscene_data/images/84.jpg)
 <--->
-`Candidate 1`![84.jpg](/natscene_data/images/84.jpg)
+`Candidate 1`![82.jpg](/natscene_data/images/82.jpg)
 <--->
-`Candidate 2`![82.jpg](/natscene_data/images/82.jpg)
+`Candidate 2`![78.jpg](/natscene_data/images/78.jpg)
 <--->
-`Candidate 3`![78.jpg](/natscene_data/images/78.jpg)
+`Candidate 3`![81.jpg](/natscene_data/images/81.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ There is a dog herding some sheep.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sheep. Exists q1: dog. True
 ```
 {{< /expand >}}

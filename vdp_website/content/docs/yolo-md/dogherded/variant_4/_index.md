@@ -7,9 +7,9 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![73.jpg](/natscene_data/images/73.jpg)
+`Example 0`![74.jpg](/natscene_data/images/74.jpg)
 <--->
-`Example 1`![74.jpg](/natscene_data/images/74.jpg)
+`Example 1`![73.jpg](/natscene_data/images/73.jpg)
 <--->
 `Example 2`![75.jpg](/natscene_data/images/75.jpg)
 {{< /columns >}}
@@ -40,8 +40,8 @@ There is a dog herding some sheep.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: dog. Exists q1: sheep. True
 ```
 {{< /expand >}}

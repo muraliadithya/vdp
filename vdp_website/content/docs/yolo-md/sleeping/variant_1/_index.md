@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![169.jpg](/natscene_data/images/169.jpg)
+`Example 0`![168.jpg](/natscene_data/images/168.jpg)
 <--->
 `Example 1`![170.jpg](/natscene_data/images/170.jpg)
 <--->
-`Example 2`![168.jpg](/natscene_data/images/168.jpg)
+`Example 2`![169.jpg](/natscene_data/images/169.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![175.jpg](/natscene_data/images/175.jpg)
+`Candidate 0`![174.jpg](/natscene_data/images/174.jpg)
 <--->
-`Candidate 1`![174.jpg](/natscene_data/images/174.jpg)
+`Candidate 1`![175.jpg](/natscene_data/images/175.jpg)
 <--->
 `Candidate 2`![177.jpg](/natscene_data/images/177.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ Person sleeping on a bench.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: person. True
 ```
 {{< /expand >}}

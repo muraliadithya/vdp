@@ -9,9 +9,9 @@ weight: 3
 {{< columns >}}
 `Example 0`![15.jpg](/natscene_data/images/15.jpg)
 <--->
-`Example 1`![14.jpg](/natscene_data/images/14.jpg)
+`Example 1`![24.jpg](/natscene_data/images/24.jpg)
 <--->
-`Example 2`![24.jpg](/natscene_data/images/24.jpg)
+`Example 2`![14.jpg](/natscene_data/images/14.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -38,8 +38,8 @@ Every cat is on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sofa. Exists q1: cat. left(q1,q0)
 ```
 {{< /expand >}}

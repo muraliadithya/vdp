@@ -7,11 +7,11 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![51.jpg](/natscene_data/images/51.jpg)
+`Example 0`![52.jpg](/natscene_data/images/52.jpg)
 <--->
-`Example 1`![53.jpg](/natscene_data/images/53.jpg)
+`Example 1`![51.jpg](/natscene_data/images/51.jpg)
 <--->
-`Example 2`![52.jpg](/natscene_data/images/52.jpg)
+`Example 2`![53.jpg](/natscene_data/images/53.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -40,8 +40,8 @@ Desktop computer.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: mouse. True
 ```
 {{< /expand >}}

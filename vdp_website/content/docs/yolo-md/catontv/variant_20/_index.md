@@ -14,11 +14,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![50.jpg](/natscene_data/images/50.jpg)
+`Candidate 0`![41.jpg](/natscene_data/images/41.jpg)
 <--->
-`Candidate 1`![42.jpg](/natscene_data/images/42.jpg)
+`Candidate 1`![50.jpg](/natscene_data/images/50.jpg)
 <--->
-`Candidate 2`![41.jpg](/natscene_data/images/41.jpg)
+`Candidate 2`![42.jpg](/natscene_data/images/42.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

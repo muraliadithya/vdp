@@ -16,13 +16,13 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![fork2.jpg](/natscene_data/images/fork2.jpg)
+`Candidate 0`![fork12.jpg](/natscene_data/images/fork12.jpg)
 <--->
-`Candidate 1`![fork12.jpg](/natscene_data/images/fork12.jpg)
+`Candidate 1`![fork16.jpg](/natscene_data/images/fork16.jpg)
 <--->
-`Candidate 2`![fork17.jpg](/natscene_data/images/fork17.jpg)
+`Candidate 2`![fork2.jpg](/natscene_data/images/fork2.jpg)
 <--->
-`Candidate 3`![fork16.jpg](/natscene_data/images/fork16.jpg)
+`Candidate 3`![fork17.jpg](/natscene_data/images/fork17.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

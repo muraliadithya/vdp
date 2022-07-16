@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
+`Candidate 0`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
 <--->
-`Candidate 1`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
+`Candidate 1`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
 <--->
-`Candidate 2`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
+`Candidate 2`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ Cars are travelling in the onward direction.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: car. Exists q1: person. right(q1,q0)
+Exists q0: person. Exists q1: car. left(q1,q0)
 ```
 {{< /expand >}}

@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
+`Candidate 0`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
 <--->
-`Candidate 1`![cargoing2.jpg](/natscene_data/images/cargoing2.jpg)
+`Candidate 1`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
 <--->
-`Candidate 2`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
+`Candidate 2`![cargoing2.jpg](/natscene_data/images/cargoing2.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,7 +38,7 @@ There is a truck (SUV) in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: truck. True
 ```

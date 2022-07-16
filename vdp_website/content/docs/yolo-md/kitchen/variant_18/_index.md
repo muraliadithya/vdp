@@ -7,11 +7,11 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![88.jpg](/natscene_data/images/88.jpg)
+`Example 0`![87.jpg](/natscene_data/images/87.jpg)
 <--->
 `Example 1`![86.jpg](/natscene_data/images/86.jpg)
 <--->
-`Example 2`![87.jpg](/natscene_data/images/87.jpg)
+`Example 2`![88.jpg](/natscene_data/images/88.jpg)
 {{< /columns >}}
 
 ## Candidate Images

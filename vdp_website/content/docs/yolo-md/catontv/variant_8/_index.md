@@ -7,16 +7,16 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![48.jpg](/natscene_data/images/48.jpg)
+`Example 0`![39.jpg](/natscene_data/images/39.jpg)
 <--->
-`Example 1`![39.jpg](/natscene_data/images/39.jpg)
+`Example 1`![48.jpg](/natscene_data/images/48.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![42.jpg](/natscene_data/images/42.jpg)
+`Candidate 0`![45.jpg](/natscene_data/images/45.jpg)
 <--->
-`Candidate 1`![45.jpg](/natscene_data/images/45.jpg)
+`Candidate 1`![42.jpg](/natscene_data/images/42.jpg)
 <--->
 `Candidate 2`![49.jpg](/natscene_data/images/49.jpg)
 {{< /columns >}}

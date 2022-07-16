@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![134.jpg](/natscene_data/images/134.jpg)
+`Example 0`![144.jpg](/natscene_data/images/144.jpg)
 <--->
-`Example 1`![144.jpg](/natscene_data/images/144.jpg)
+`Example 1`![135.jpg](/natscene_data/images/135.jpg)
 <--->
-`Example 2`![135.jpg](/natscene_data/images/135.jpg)
+`Example 2`![134.jpg](/natscene_data/images/134.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![143.jpg](/natscene_data/images/143.jpg)
+`Candidate 0`![145.jpg](/natscene_data/images/145.jpg)
 <--->
-`Candidate 1`![145.jpg](/natscene_data/images/145.jpg)
+`Candidate 1`![143.jpg](/natscene_data/images/143.jpg)
 <--->
 `Candidate 2`![141.jpg](/natscene_data/images/141.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ There is a person and a tie in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: tie. True
 ```
 {{< /expand >}}

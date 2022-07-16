@@ -9,18 +9,18 @@ weight: 3
 {{< columns >}}
 `Example 0`![carcoming4.jpg](/natscene_data/images/carcoming4.jpg)
 <--->
-`Example 1`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
+`Example 1`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
 <--->
-`Example 2`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
+`Example 2`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
+`Candidate 0`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
 <--->
-`Candidate 1`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
+`Candidate 1`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
 <--->
-`Candidate 2`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
+`Candidate 2`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,7 +38,7 @@ There is a truck (SUV) in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: truck. True
 ```

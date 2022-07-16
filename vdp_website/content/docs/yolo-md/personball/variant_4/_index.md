@@ -7,9 +7,9 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![110.jpg](/natscene_data/images/110.jpg)
+`Example 0`![112.jpg](/natscene_data/images/112.jpg)
 <--->
-`Example 1`![112.jpg](/natscene_data/images/112.jpg)
+`Example 1`![110.jpg](/natscene_data/images/110.jpg)
 <--->
 `Example 2`![111.jpg](/natscene_data/images/111.jpg)
 {{< /columns >}}
@@ -18,9 +18,9 @@ weight: 3
 {{< columns >}}
 `Candidate 0`![114.jpg](/natscene_data/images/114.jpg)
 <--->
-`Candidate 1`![113.jpg](/natscene_data/images/113.jpg)
+`Candidate 1`![116.jpg](/natscene_data/images/116.jpg)
 <--->
-`Candidate 2`![116.jpg](/natscene_data/images/116.jpg)
+`Candidate 2`![113.jpg](/natscene_data/images/113.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ There is a person playing with a ball.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: person. Exists q1: sports ball. True
 ```
 {{< /expand >}}

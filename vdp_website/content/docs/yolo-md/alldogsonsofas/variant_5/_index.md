@@ -38,8 +38,8 @@ Every dog is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Forall q0: dog. Exists q1: sofa. within(q0,q1)
 ```
 {{< /expand >}}

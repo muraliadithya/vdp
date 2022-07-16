@@ -9,18 +9,18 @@ weight: 3
 {{< columns >}}
 `Example 0`![202.jpg](/natscene_data/images/202.jpg)
 <--->
-`Example 1`![203.jpg](/natscene_data/images/203.jpg)
+`Example 1`![204.jpg](/natscene_data/images/204.jpg)
 <--->
-`Example 2`![204.jpg](/natscene_data/images/204.jpg)
+`Example 2`![203.jpg](/natscene_data/images/203.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![207.jpg](/natscene_data/images/207.jpg)
+`Candidate 0`![205.jpg](/natscene_data/images/205.jpg)
 <--->
 `Candidate 1`![211.jpg](/natscene_data/images/211.jpg)
 <--->
-`Candidate 2`![205.jpg](/natscene_data/images/205.jpg)
+`Candidate 2`![207.jpg](/natscene_data/images/207.jpg)
 <--->
 `Candidate 3`![208.jpg](/natscene_data/images/208.jpg)
 {{< /columns >}}
@@ -40,8 +40,8 @@ There is an umbrella in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 3` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: umbrella. True
 ```
 {{< /expand >}}

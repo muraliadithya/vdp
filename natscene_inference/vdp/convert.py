@@ -57,15 +57,14 @@ class YOLOConvert(Pipe):
     def filter_images(self, config):
         for pth in config.train + config.test:
             img = os.path.basename(pth)
-            print("img", img)
+            to_process = (not self.use_cache) or (self.use_cache and (img not in self.cache or 'yolo_ir' not in self.cache[img]))
             # process an image if either we are disregarding the cache
             # or if we are using the cache and the image isn't part of it or 
-            to_process = (not self.use_cache) or (self.use_cache and (img not in self.cache or 'yolo_ir' not in self.cache[img]))
             if to_process:
                 if img not in self.cache:
                     self.cache[img] = dict()
                 self.cache[img]['yolo_ir'] = dict()
-            yield pth
+                yield pth
 
 
     def make_yolo_set(self, imgs_to_run):

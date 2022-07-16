@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![27.jpg](/natscene_data/images/27.jpg)
+`Example 0`![37.jpg](/natscene_data/images/37.jpg)
 <--->
-`Example 1`![37.jpg](/natscene_data/images/37.jpg)
+`Example 1`![28.jpg](/natscene_data/images/28.jpg)
 <--->
-`Example 2`![28.jpg](/natscene_data/images/28.jpg)
+`Example 2`![27.jpg](/natscene_data/images/27.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![36.jpg](/natscene_data/images/36.jpg)
+`Candidate 0`![31.jpg](/natscene_data/images/31.jpg)
 <--->
 `Candidate 1`![30.jpg](/natscene_data/images/30.jpg)
 <--->
-`Candidate 2`![31.jpg](/natscene_data/images/31.jpg)
+`Candidate 2`![36.jpg](/natscene_data/images/36.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ Every dog is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Forall q0: dog. Exists q1: sofa. within(q0,q1)
 ```
 {{< /expand >}}

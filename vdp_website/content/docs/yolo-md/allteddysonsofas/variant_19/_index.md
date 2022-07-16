@@ -7,13 +7,13 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
+`Example 0`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
 <--->
-`Example 1`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
+`Example 1`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
 <--->
-`Example 2`![teddy10.jpg](/natscene_data/images/teddy10.jpg)
+`Example 2`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
 <--->
-`Example 3`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
+`Example 3`![teddy10.jpg](/natscene_data/images/teddy10.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -22,9 +22,9 @@ weight: 3
 <--->
 `Candidate 1`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
 <--->
-`Candidate 2`![teddy6.jpg](/natscene_data/images/teddy6.jpg)
+`Candidate 2`![teddy9.jpg](/natscene_data/images/teddy9.jpg)
 <--->
-`Candidate 3`![teddy9.jpg](/natscene_data/images/teddy9.jpg)
+`Candidate 3`![teddy6.jpg](/natscene_data/images/teddy6.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

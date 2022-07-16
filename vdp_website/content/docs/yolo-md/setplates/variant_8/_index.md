@@ -7,11 +7,11 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![fork2.jpg](/natscene_data/images/fork2.jpg)
+`Example 0`![fork4.jpg](/natscene_data/images/fork4.jpg)
 <--->
-`Example 1`![fork1.jpg](/natscene_data/images/fork1.jpg)
+`Example 1`![fork2.jpg](/natscene_data/images/fork2.jpg)
 <--->
-`Example 2`![fork4.jpg](/natscene_data/images/fork4.jpg)
+`Example 2`![fork1.jpg](/natscene_data/images/fork1.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -20,9 +20,9 @@ weight: 3
 <--->
 `Candidate 1`![fork18.jpg](/natscene_data/images/fork18.jpg)
 <--->
-`Candidate 2`![fork17.jpg](/natscene_data/images/fork17.jpg)
+`Candidate 2`![fork16.jpg](/natscene_data/images/fork16.jpg)
 <--->
-`Candidate 3`![fork16.jpg](/natscene_data/images/fork16.jpg)
+`Candidate 3`![fork17.jpg](/natscene_data/images/fork17.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

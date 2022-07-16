@@ -7,11 +7,11 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![1.jpg](/natscene_data/images/1.jpg)
+`Example 0`![9.jpg](/natscene_data/images/9.jpg)
 <--->
-`Example 1`![9.jpg](/natscene_data/images/9.jpg)
+`Example 1`![0.jpg](/natscene_data/images/0.jpg)
 <--->
-`Example 2`![0.jpg](/natscene_data/images/0.jpg)
+`Example 2`![1.jpg](/natscene_data/images/1.jpg)
 {{< /columns >}}
 
 ## Candidate Images
@@ -42,6 +42,6 @@ There are two cats on the same sofa.
 {{< expand "Click to view our tool's prediction" "..." >}}
 Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle (TIMEOUT)
+The tool did not solve this puzzle
 ```
 {{< /expand >}}

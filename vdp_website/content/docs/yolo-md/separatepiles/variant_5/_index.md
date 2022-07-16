@@ -11,20 +11,20 @@ weight: 3
 <--->
 `Example 1`![apple5.jpg](/natscene_data/images/apple5.jpg)
 <--->
-`Example 2`![apple2.jpg](/natscene_data/images/apple2.jpg)
+`Example 2`![apple4.jpg](/natscene_data/images/apple4.jpg)
 <--->
-`Example 3`![apple4.jpg](/natscene_data/images/apple4.jpg)
+`Example 3`![apple2.jpg](/natscene_data/images/apple2.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![apple7.jpg](/natscene_data/images/apple7.jpg)
+`Candidate 0`![apple8.jpg](/natscene_data/images/apple8.jpg)
 <--->
-`Candidate 1`![apple6.jpg](/natscene_data/images/apple6.jpg)
+`Candidate 1`![apple7.jpg](/natscene_data/images/apple7.jpg)
 <--->
 `Candidate 2`![apple3.jpg](/natscene_data/images/apple3.jpg)
 <--->
-`Candidate 3`![apple8.jpg](/natscene_data/images/apple8.jpg)
+`Candidate 3`![apple6.jpg](/natscene_data/images/apple6.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

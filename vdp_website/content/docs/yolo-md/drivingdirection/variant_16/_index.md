@@ -16,9 +16,9 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
+`Candidate 0`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
 <--->
-`Candidate 1`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
+`Candidate 1`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
 <--->
 `Candidate 2`![carcoming4.jpg](/natscene_data/images/carcoming4.jpg)
 {{< /columns >}}
@@ -38,7 +38,7 @@ Cars are travelling in the onward direction.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: car. Exists q1: person. left(q0,q1)
 ```

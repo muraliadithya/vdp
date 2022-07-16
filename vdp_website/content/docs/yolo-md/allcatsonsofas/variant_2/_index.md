@@ -16,9 +16,9 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![21.jpg](/natscene_data/images/21.jpg)
+`Candidate 0`![18.jpg](/natscene_data/images/18.jpg)
 <--->
-`Candidate 1`![18.jpg](/natscene_data/images/18.jpg)
+`Candidate 1`![21.jpg](/natscene_data/images/21.jpg)
 <--->
 `Candidate 2`![17.jpg](/natscene_data/images/17.jpg)
 {{< /columns >}}
@@ -38,8 +38,8 @@ Every cat is on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: sofa. True
+Exists q0: sofa. Forall q1: cat. within(q1,q0)
 ```
 {{< /expand >}}

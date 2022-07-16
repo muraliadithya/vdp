@@ -7,9 +7,9 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
+`Example 0`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
 <--->
-`Example 1`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
+`Example 1`![carcoming1.jpg](/natscene_data/images/carcoming1.jpg)
 <--->
 `Example 2`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
 {{< /columns >}}

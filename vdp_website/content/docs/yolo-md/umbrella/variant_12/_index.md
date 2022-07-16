@@ -20,9 +20,9 @@ weight: 3
 <--->
 `Candidate 1`![208.jpg](/natscene_data/images/208.jpg)
 <--->
-`Candidate 2`![211.jpg](/natscene_data/images/211.jpg)
+`Candidate 2`![207.jpg](/natscene_data/images/207.jpg)
 <--->
-`Candidate 3`![207.jpg](/natscene_data/images/207.jpg)
+`Candidate 3`![211.jpg](/natscene_data/images/211.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ There is an umbrella in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: umbrella. True
 ```
 {{< /expand >}}

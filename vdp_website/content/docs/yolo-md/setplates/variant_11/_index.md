@@ -18,9 +18,9 @@ weight: 3
 {{< columns >}}
 `Candidate 0`![fork18.jpg](/natscene_data/images/fork18.jpg)
 <--->
-`Candidate 1`![fork13.jpg](/natscene_data/images/fork13.jpg)
+`Candidate 1`![fork3.jpg](/natscene_data/images/fork3.jpg)
 <--->
-`Candidate 2`![fork3.jpg](/natscene_data/images/fork3.jpg)
+`Candidate 2`![fork13.jpg](/natscene_data/images/fork13.jpg)
 <--->
 `Candidate 3`![fork16.jpg](/natscene_data/images/fork16.jpg)
 {{< /columns >}}
@@ -40,8 +40,8 @@ Neatly arranged place settings (complete with cutlery and wine glasses).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: knife. Exists q1: diningtable. right(q0,q1)
+Exists q0: knife. Exists q1: diningtable. left(q1,q0)
 ```
 {{< /expand >}}

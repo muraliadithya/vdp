@@ -7,22 +7,22 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![83.jpg](/natscene_data/images/83.jpg)
+`Example 0`![75.jpg](/natscene_data/images/75.jpg)
 <--->
-`Example 1`![75.jpg](/natscene_data/images/75.jpg)
+`Example 1`![73.jpg](/natscene_data/images/73.jpg)
 <--->
-`Example 2`![73.jpg](/natscene_data/images/73.jpg)
+`Example 2`![83.jpg](/natscene_data/images/83.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![82.jpg](/natscene_data/images/82.jpg)
+`Candidate 0`![85.jpg](/natscene_data/images/85.jpg)
 <--->
-`Candidate 1`![85.jpg](/natscene_data/images/85.jpg)
+`Candidate 1`![77.jpg](/natscene_data/images/77.jpg)
 <--->
-`Candidate 2`![77.jpg](/natscene_data/images/77.jpg)
+`Candidate 2`![78.jpg](/natscene_data/images/78.jpg)
 <--->
-`Candidate 3`![78.jpg](/natscene_data/images/78.jpg)
+`Candidate 3`![82.jpg](/natscene_data/images/82.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ There is a dog herding some sheep.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: dog. Exists q1: sheep. True
 ```
 {{< /expand >}}

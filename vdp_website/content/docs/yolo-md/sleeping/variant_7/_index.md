@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![171.jpg](/natscene_data/images/171.jpg)
+`Candidate 0`![175.jpg](/natscene_data/images/175.jpg)
 <--->
-`Candidate 1`![174.jpg](/natscene_data/images/174.jpg)
+`Candidate 1`![171.jpg](/natscene_data/images/171.jpg)
 <--->
-`Candidate 2`![175.jpg](/natscene_data/images/175.jpg)
+`Candidate 2`![174.jpg](/natscene_data/images/174.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ Person sleeping on a bench.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: person. True
 ```
 {{< /expand >}}

@@ -9,20 +9,20 @@ weight: 3
 {{< columns >}}
 `Example 0`![202.jpg](/natscene_data/images/202.jpg)
 <--->
-`Example 1`![203.jpg](/natscene_data/images/203.jpg)
+`Example 1`![204.jpg](/natscene_data/images/204.jpg)
 <--->
-`Example 2`![204.jpg](/natscene_data/images/204.jpg)
+`Example 2`![203.jpg](/natscene_data/images/203.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![206.jpg](/natscene_data/images/206.jpg)
+`Candidate 0`![209.jpg](/natscene_data/images/209.jpg)
 <--->
-`Candidate 1`![205.jpg](/natscene_data/images/205.jpg)
+`Candidate 1`![206.jpg](/natscene_data/images/206.jpg)
 <--->
-`Candidate 2`![209.jpg](/natscene_data/images/209.jpg)
+`Candidate 2`![207.jpg](/natscene_data/images/207.jpg)
 <--->
-`Candidate 3`![207.jpg](/natscene_data/images/207.jpg)
+`Candidate 3`![205.jpg](/natscene_data/images/205.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ There is an umbrella in the image.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: umbrella. True
 ```
 {{< /expand >}}

@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
+`Candidate 0`![middleball9.jpg](/natscene_data/images/middleball9.jpg)
 <--->
 `Candidate 1`![middleball7.jpg](/natscene_data/images/middleball7.jpg)
 <--->
-`Candidate 2`![middleball9.jpg](/natscene_data/images/middleball9.jpg)
+`Candidate 2`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
 <--->
 `Candidate 3`![middleball8.jpg](/natscene_data/images/middleball8.jpg)
 {{< /columns >}}
@@ -40,8 +40,8 @@ There is a football in between two people (kickoff position).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: sports ball. Exists q1: person. Exists q2: person. right(q0,q1) AND right(q2,q0)
+Exists q0: person. Exists q1: person. Exists q2: sports ball. left(q1,q2) AND left(q2,q0)
 ```
 {{< /expand >}}

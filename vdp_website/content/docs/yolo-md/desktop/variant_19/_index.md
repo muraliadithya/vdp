@@ -7,22 +7,22 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![52.jpg](/natscene_data/images/52.jpg)
+`Example 0`![53.jpg](/natscene_data/images/53.jpg)
 <--->
 `Example 1`![51.jpg](/natscene_data/images/51.jpg)
 <--->
-`Example 2`![53.jpg](/natscene_data/images/53.jpg)
+`Example 2`![52.jpg](/natscene_data/images/52.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![55.jpg](/natscene_data/images/55.jpg)
+`Candidate 0`![56.jpg](/natscene_data/images/56.jpg)
 <--->
 `Candidate 1`![58.jpg](/natscene_data/images/58.jpg)
 <--->
 `Candidate 2`![54.jpg](/natscene_data/images/54.jpg)
 <--->
-`Candidate 3`![56.jpg](/natscene_data/images/56.jpg)
+`Candidate 3`![55.jpg](/natscene_data/images/55.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,8 +40,8 @@ Desktop computer.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: tvmonitor. Exists q1: mouse. True
 ```
 {{< /expand >}}

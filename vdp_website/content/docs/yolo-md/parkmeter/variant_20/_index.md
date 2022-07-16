@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![106.jpg](/natscene_data/images/106.jpg)
+`Candidate 0`![104.jpg](/natscene_data/images/104.jpg)
 <--->
 `Candidate 1`![103.jpg](/natscene_data/images/103.jpg)
 <--->
-`Candidate 2`![104.jpg](/natscene_data/images/104.jpg)
+`Candidate 2`![106.jpg](/natscene_data/images/106.jpg)
 <--->
 `Candidate 3`![102.jpg](/natscene_data/images/102.jpg)
 {{< /columns >}}
@@ -40,8 +40,8 @@ This is a parking spot (indicated by meter).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: parking meter. True
 ```
 {{< /expand >}}

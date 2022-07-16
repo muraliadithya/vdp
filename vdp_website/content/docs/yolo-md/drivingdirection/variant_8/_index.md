@@ -40,6 +40,6 @@ Cars are travelling in the onward direction.
 {{< expand "Click to view our tool's prediction" "..." >}}
 Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: person. Exists q1: car. left(q1,q0)
+Exists q0: car. Exists q1: person. right(q1,q0)
 ```
 {{< /expand >}}

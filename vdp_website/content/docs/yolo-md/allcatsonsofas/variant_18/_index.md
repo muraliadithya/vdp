@@ -16,11 +16,11 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![18.jpg](/natscene_data/images/18.jpg)
+`Candidate 0`![22.jpg](/natscene_data/images/22.jpg)
 <--->
-`Candidate 1`![22.jpg](/natscene_data/images/22.jpg)
+`Candidate 1`![25.jpg](/natscene_data/images/25.jpg)
 <--->
-`Candidate 2`![25.jpg](/natscene_data/images/25.jpg)
+`Candidate 2`![18.jpg](/natscene_data/images/18.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -38,8 +38,8 @@ Every cat is on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate ?` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-The tool did not solve this puzzle
+Exists q0: sofa. Forall q1: cat. within(q1,q0)
 ```
 {{< /expand >}}

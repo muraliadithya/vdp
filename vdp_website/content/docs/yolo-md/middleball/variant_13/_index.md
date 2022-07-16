@@ -16,13 +16,13 @@ weight: 3
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![middleball7.jpg](/natscene_data/images/middleball7.jpg)
+`Candidate 0`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
 <--->
-`Candidate 1`![middleball5.jpg](/natscene_data/images/middleball5.jpg)
+`Candidate 1`![middleball9.jpg](/natscene_data/images/middleball9.jpg)
 <--->
-`Candidate 2`![middleball9.jpg](/natscene_data/images/middleball9.jpg)
+`Candidate 2`![middleball7.jpg](/natscene_data/images/middleball7.jpg)
 <--->
-`Candidate 3`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
+`Candidate 3`![middleball5.jpg](/natscene_data/images/middleball5.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -40,7 +40,7 @@ There is a football in between two people (kickoff position).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 3` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: person. Exists q1: sports ball. right(q0,q1)
 ```

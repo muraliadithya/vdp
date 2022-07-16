@@ -7,18 +7,18 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
+`Example 0`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
 <--->
-`Example 1`![middleball1.jpg](/natscene_data/images/middleball1.jpg)
+`Example 1`![middleball3.jpg](/natscene_data/images/middleball3.jpg)
 <--->
-`Example 2`![middleball3.jpg](/natscene_data/images/middleball3.jpg)
+`Example 2`![middleball4.jpg](/natscene_data/images/middleball4.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![middleball2.jpg](/natscene_data/images/middleball2.jpg)
+`Candidate 0`![middleball8.jpg](/natscene_data/images/middleball8.jpg)
 <--->
-`Candidate 1`![middleball8.jpg](/natscene_data/images/middleball8.jpg)
+`Candidate 1`![middleball2.jpg](/natscene_data/images/middleball2.jpg)
 <--->
 `Candidate 2`![middleball5.jpg](/natscene_data/images/middleball5.jpg)
 <--->
@@ -40,8 +40,8 @@ There is a football in between two people (kickoff position).
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 1` as being the most similar to the example images with the discriminator:
 ```plaintext
-Exists q0: person. Exists q1: sports ball. Exists q2: person. left(q0,q1) AND left(q1,q2)
+Exists q0: person. Exists q1: sports ball. Exists q2: person. right(q1,q0) AND right(q2,q1)
 ```
 {{< /expand >}}

@@ -28,12 +28,3 @@
 {{ with $script.Content }}
   <script>{{ . | safeJS }}</script>
 {{ end }}
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-
-<script language="javascript" type="text/javascript"  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<!-- <script language="javascript" type="text/javascript"  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script> -->
-<script language="javascript" type="text/javascript"  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-<!-- <script language="javascript" type="text/javascript"  src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script> -->
-<script defer language="javascript" type="text/javascript"  src="{{ "/js/formstuff.js" | urlize | relURL }}"></script>

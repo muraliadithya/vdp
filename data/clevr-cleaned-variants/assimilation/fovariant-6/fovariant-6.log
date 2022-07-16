@@ -1,7 +1,7 @@
 Started Logging. 2022-07-09 19:24:29.238665
 
-found bundled python: /home/ubuntu/vdp/data/blender-2.78c-linux-glibc219-x86_64/2.78/python
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+found bundled python: /home/ubuntu/vdp-tool-chain/data/blender-2.78c-linux-glibc219-x86_64/2.78/python
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 Fra:1 Mem:13.89M (0.00M, Peak 13.89M) | Time:00:00.00 | Preparing Scene data
@@ -99,7 +99,7 @@ Fra:1 Mem:14.08M (0.00M, Peak 33.11M) | Time:00:14.36 | Sce: Scene Ve:0 Fa:0 La:
 Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR_val_000000.png'
  Time: 00:14.40 (Saving: 00:00.03)
 
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
@@ -200,7 +200,7 @@ Fra:1 Mem:18.35M (0.00M, Peak 49.95M) | Time:00:14.70 | Sce: Scene Ve:0 Fa:0 La:
 Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR_val_000001.png'
  Time: 00:14.74 (Saving: 00:00.04)
 
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
@@ -301,7 +301,7 @@ Fra:1 Mem:14.60M (0.00M, Peak 35.02M) | Time:00:14.97 | Sce: Scene Ve:0 Fa:0 La:
 Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR_val_000002.png'
  Time: 00:15.01 (Saving: 00:00.03)
 
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
@@ -403,7 +403,7 @@ Fra:1 Mem:15.10M (0.00M, Peak 36.92M) | Time:00:13.75 | Sce: Scene Ve:0 Fa:0 La:
 Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR_val_000003.png'
  Time: 00:13.79 (Saving: 00:00.03)
 
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
@@ -506,7 +506,7 @@ Fra:1 Mem:16.57M (0.00M, Peak 42.71M) | Time:00:15.56 | Sce: Scene Ve:0 Fa:0 La:
 Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR_val_000004.png'
  Time: 00:15.60 (Saving: 00:00.03)
 
-read blend: /home/ubuntu/vdp/data/clevr_scene_data/base_scene.blend
+read blend: /home/ubuntu/vdp-tool-chain/data/clevr_scene_data/base_scene.blend
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
 convertViewVec: called in an invalid context
@@ -611,13 +611,13 @@ Saved: 'data/clevr-cleaned-variants/assimilation/fovariant-6/render/images/CLEVR
 Blender quit
 
 INFO test_net.py:  81: Called with args:
-INFO test_net.py:  82: Namespace(cfg_file='clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml', clevr_comp_cat=1, dataset='clevr_original_val', grab_conv=False, images_dir='data/clevr-cleaned-variants/assimilation/fovariant-6/render/images', load_ckpt='/home/ubuntu/vdp/data/ns-vqa-data/pretrained/object_detector.pt', load_detectron=None, multi_gpu_testing=False, name=None, output_dir='data/clevr-cleaned-variants/assimilation/fovariant-6/infer/mask_rcnn', range=None, rendersummary_path='data/clevr-cleaned-variants/assimilation/fovariant-6/render/summary.json', set_cfgs=[], vis=False)
+INFO test_net.py:  82: Namespace(cfg_file='clevr_inference/scene_parse/mask_rcnn/configs/baselines/e2e_mask_rcnn_R-50-FPN_1x.yaml', clevr_comp_cat=1, dataset='clevr_original_val', grab_conv=False, images_dir='data/clevr-cleaned-variants/assimilation/fovariant-6/render/images', load_ckpt='/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt', load_detectron=None, multi_gpu_testing=False, name=None, output_dir='data/clevr-cleaned-variants/assimilation/fovariant-6/infer/mask_rcnn', range=None, rendersummary_path='data/clevr-cleaned-variants/assimilation/fovariant-6/render/summary.json', set_cfgs=[], vis=False)
 INFO test_net.py: 125: Testing with config:
 INFO test_net.py: 126: {'BBOX_XFORM_CLIP': 4.135166556742356,
  'CLEVR': {'COMP_CAT': True},
  'CROP_RESIZE_WITH_MAX_POOL': True,
  'CUDA': False,
- 'DATA_DIR': '/home/ubuntu/vdp/data/ns-vqa-data/mask_rcnn',
+ 'DATA_DIR': '/home/ubuntu/vdp-tool-chain/data/ns-vqa-data/mask_rcnn',
  'DATA_LOADER': {'NUM_THREADS': 4},
  'DEBUG': False,
  'DEDUP_BOXES': 0.0625,
@@ -735,7 +735,7 @@ INFO test_net.py: 126: {'BBOX_XFORM_CLIP': 4.135166556742356,
                'SOFTMAX': False},
  'RFCN': {'PS_GRID_SIZE': 3},
  'RNG_SEED': 3,
- 'ROOT_DIR': '/home/ubuntu/vdp/clevr_inference/scene_parse/mask_rcnn',
+ 'ROOT_DIR': '/home/ubuntu/vdp-tool-chain/clevr_inference/scene_parse/mask_rcnn',
  'RPN': {'ASPECT_RATIOS': (0.5, 1, 2),
          'CLS_ACTIVATION': 'sigmoid',
          'OUT_DIM': 512,
@@ -852,9 +852,9 @@ INFO test_net.py: 126: {'BBOX_XFORM_CLIP': 4.135166556742356,
            'USE_FLIPPED': False},
  'VIS': False,
  'VIS_TH': 0.9}
-INFO test_engine.py: 352: loading checkpoint /home/ubuntu/vdp/data/ns-vqa-data/pretrained/object_detector.pt
+INFO test_engine.py: 352: loading checkpoint /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/object_detector.pt
 INFO test_engine.py: 286: im_detect: range [1, 6] of 6: 1/6 1.124s + 0.003s (eta: 0:00:05)
-INFO test_engine.py: 336: Wrote detections to: /home/ubuntu/vdp/data/clevr-cleaned-variants/assimilation/fovariant-6/infer/mask_rcnn/detections.pkl
+INFO test_engine.py: 336: Wrote detections to: /home/ubuntu/vdp-tool-chain/data/clevr-cleaned-variants/assimilation/fovariant-6/infer/mask_rcnn/detections.pkl
 INFO test_engine.py: 164: Total inference time: 5.685s
 
 
@@ -870,10 +870,10 @@ INFO test_engine.py: 164: Total inference time: 5.685s
 | options
 run_dir: data/clevr-cleaned-variants/assimilation/fovariant-6/solver_ir
 dataset: clevr
-load_checkpoint_path: /home/ubuntu/vdp/data/ns-vqa-data/pretrained/attribute_net.pt
+load_checkpoint_path: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/attribute_net.pt
 gpu_ids: [0]
-clevr_mini_img_dir: /home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_mini/images
-clevr_mini_ann_path: /home/ubuntu/vdp/data/ns-vqa-data/attr_net/objects/clevr_mini_objs.json
+clevr_mini_img_dir: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_mini/images
+clevr_mini_ann_path: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/attr_net/objects/clevr_mini_objs.json
 concat_img: 1
 split_id: 3500
 batch_size: 50
@@ -882,11 +882,11 @@ learning_rate: 0.002
 split: val
 output_path: data/clevr-cleaned-variants/assimilation/fovariant-6/solver_ir/results.json
 clevr_val_ann_path: data/clevr-cleaned-variants/assimilation/fovariant-6/infer/attrnet/predictions.json
-clevr_val_img_dir: /home/ubuntu/vdp/data/ns-vqa-data/raw/CLEVR_v1.0/images/val
+clevr_val_img_dir: /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/raw/CLEVR_v1.0/images/val
 shuffle_data: 0
 use_cat_label: 1
 name: fovariant-6
-| loading checkpoint from /home/ubuntu/vdp/data/ns-vqa-data/pretrained/attribute_net.pt
+| loading checkpoint from /home/ubuntu/vdp-tool-chain/data/ns-vqa-data/pretrained/attribute_net.pt
 clevr_object.py: CLEVR_val_000000.png val 0 0
 clevr_object.py: CLEVR_val_000000.png val 0 1
 clevr_object.py: CLEVR_val_000001.png val 1 2

@@ -7,24 +7,24 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![teddy1.jpg](/natscene-data/images/teddy1.jpg)
+`Example 0`![teddy1.jpg](/natscene_data/images/teddy1.jpg)
 <--->
-`Example 1`![teddy10.jpg](/natscene-data/images/teddy10.jpg)
+`Example 1`![teddy11.jpg](/natscene_data/images/teddy11.jpg)
 <--->
-`Example 2`![teddy11.jpg](/natscene-data/images/teddy11.jpg)
+`Example 2`![teddy3.jpg](/natscene_data/images/teddy3.jpg)
 <--->
-`Example 3`![teddy3.jpg](/natscene-data/images/teddy3.jpg)
+`Example 3`![teddy10.jpg](/natscene_data/images/teddy10.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![teddy12.jpg](/natscene-data/images/teddy12.jpg)
+`Candidate 0`![teddy13.jpg](/natscene_data/images/teddy13.jpg)
 <--->
-`Candidate 1`![teddy6.jpg](/natscene-data/images/teddy6.jpg)
+`Candidate 1`![teddy9.jpg](/natscene_data/images/teddy9.jpg)
 <--->
-`Candidate 2`![teddy13.jpg](/natscene-data/images/teddy13.jpg)
+`Candidate 2`![teddy6.jpg](/natscene_data/images/teddy6.jpg)
 <--->
-`Candidate 3`![teddy9.jpg](/natscene-data/images/teddy9.jpg)
+`Candidate 3`![teddy12.jpg](/natscene_data/images/teddy12.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*
@@ -42,7 +42,7 @@ Every teddy bear is sitting on a sofa.
 ## Our Tool's Prediction
 
 {{< expand "Click to view our tool's prediction" "..." >}}
-Our tool selected `Candidate 2` as being the most similar to the example images with the discriminator:
+Our tool selected `Candidate 0` as being the most similar to the example images with the discriminator:
 ```plaintext
 Exists q0: teddy bear. Exists q1: sofa. left(q1,q0)
 ```

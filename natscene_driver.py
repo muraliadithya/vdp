@@ -59,9 +59,10 @@ def run_pipeline(pipeline : vdp.pipeline.Pipeline, configs : list, constants : N
         to_json(config.__dict__, config_out_pth)
         solver_out_path = os.path.join(constants.output_dir, puzzle_name + ".out")
         inference_path = os.path.join(constants.ir_output_dir, puzzle_name)
-        if puzzle_name in yolo_threshold:
-            n_quantifiers = yolo_threshold[puzzle_name.split("_")[0]][0]
-            if puzzle_name.split("_")[0] == "setplates": n_quantifiers = "3 -E"
+        puzzle_class = puzzle_name.split("_")[0]
+        if puzzle_class in yolo_threshold:
+            n_quantifiers = yolo_threshold[puzzle_class][0]
+            if puzzle_class == "setplates": n_quantifiers = "3 -E"
             vdp_flags = f"- {n_quantifiers} --autotune"
         else:
             assert args.vdp_flags is not None, "--vdp_flags must be specified for custom puzzle: " + puzzle_name

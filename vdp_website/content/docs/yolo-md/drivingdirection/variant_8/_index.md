@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![cargoing2.jpg](/natscene-data/images/cargoing2.jpg)
+`Example 0`![cargoing2.jpg](/natscene_data/images/cargoing2.jpg)
 <--->
-`Example 1`![cargoing3.jpg](/natscene-data/images/cargoing3.jpg)
+`Example 1`![cargoing3.jpg](/natscene_data/images/cargoing3.jpg)
 <--->
-`Example 2`![cargoing4.jpg](/natscene-data/images/cargoing4.jpg)
+`Example 2`![cargoing4.jpg](/natscene_data/images/cargoing4.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![cargoing1.jpg](/natscene-data/images/cargoing1.jpg)
+`Candidate 0`![cargoing1.jpg](/natscene_data/images/cargoing1.jpg)
 <--->
-`Candidate 1`![carcoming2.jpg](/natscene-data/images/carcoming2.jpg)
+`Candidate 1`![carcoming3.jpg](/natscene_data/images/carcoming3.jpg)
 <--->
-`Candidate 2`![carcoming3.jpg](/natscene-data/images/carcoming3.jpg)
+`Candidate 2`![carcoming2.jpg](/natscene_data/images/carcoming2.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

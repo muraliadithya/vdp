@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import random
 
 ############### CONSTANTS START ###############
-in_dir  = "/home/ubuntu/vdp/vdp_website/static/natscene-data/"
+in_dir  = "/home/ubuntu/vdp/vdp_website/static/natscene_data/"
 md_dir  = "/home/ubuntu/vdp/vdp_website/content/docs/yolo-md"
 img_dir = "/home/ubuntu/vdp/vdp_website/static/output/natscene_images"
 html_dir = "/home/ubuntu/vdp/vdp_website/static/naturalscenesdataset/"
@@ -144,8 +144,8 @@ if __name__ == '__main__':
 
         md_pth = osp.join(md_dir, puzzle_name, f"variant_{variant_num}", "_index.md")
         puzzle_config = read_json(osp.join(out_pth, "config.json"))
-        train_imgs = list(map(lambda pth : osp.join( "/natscene-data/images/" + osp.basename(pth)), puzzle_config['train']))
-        test_imgs = list(enumerate(map(lambda pth : osp.join( "/natscene-data/images/" + osp.basename(pth)), puzzle_config['test'])))
+        train_imgs = list(map(lambda pth : osp.join( "/natscene_data/images/" + osp.basename(pth)), puzzle_config['train']))
+        test_imgs = list(enumerate(map(lambda pth : osp.join( "/natscene_data/images/" + osp.basename(pth)), puzzle_config['test'])))
         english_desc = yolo_pzname_to_name
 
 

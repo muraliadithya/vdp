@@ -7,20 +7,20 @@ weight: 3
 
 ## Example Images
 {{< columns >}}
-`Example 0`![88.jpg](/natscene-data/images/88.jpg)
+`Example 0`![87.jpg](/natscene_data/images/87.jpg)
 <--->
-`Example 1`![86.jpg](/natscene-data/images/86.jpg)
+`Example 1`![88.jpg](/natscene_data/images/88.jpg)
 <--->
-`Example 2`![87.jpg](/natscene-data/images/87.jpg)
+`Example 2`![86.jpg](/natscene_data/images/86.jpg)
 {{< /columns >}}
 
 ## Candidate Images
 {{< columns >}}
-`Candidate 0`![92.jpg](/natscene-data/images/92.jpg)
+`Candidate 0`![90.jpg](/natscene_data/images/90.jpg)
 <--->
-`Candidate 1`![90.jpg](/natscene-data/images/90.jpg)
+`Candidate 1`![89.jpg](/natscene_data/images/89.jpg)
 <--->
-`Candidate 2`![89.jpg](/natscene-data/images/89.jpg)
+`Candidate 2`![92.jpg](/natscene_data/images/92.jpg)
 {{< /columns >}}
 
 *Which candidate among the above candidates is most similar to all the example images? Explain why.*

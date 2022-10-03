@@ -4,7 +4,7 @@ Composing Neural Learning and Symbolic Reasoning with an Application to Visual D
 
 This repository serves as an entry point into processing/running visual discrimination puzzles (VDPs). To get started:
 
-* Read our paper [here](https://atharvas.github.io/static/VDP22.pdf)!
+* Read our paper [here](https://arxiv.org/abs/1907.05878)!
 * Try the demo notebook (`demo_vdp.ipynb`) to run/make your own natural scenes VDP puzzles in <5 minutes here: <a href="https://colab.research.google.com/github/muraliadithya/vdp/blob/master/demo_vdp.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 !
 * To replicate our results and use a wide selection of object detectors, follow the instructions in `## Installation` section.

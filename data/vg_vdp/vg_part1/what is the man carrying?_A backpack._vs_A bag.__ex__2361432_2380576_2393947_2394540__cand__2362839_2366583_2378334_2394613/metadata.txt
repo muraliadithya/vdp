@@ -1,0 +1,2 @@
+question: what is the man carrying?; A backpack. versus A bag.
+intended: 2366583

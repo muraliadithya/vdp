@@ -1,0 +1,2 @@
+question: what is man holding?; Bat. versus Racket.
+intended: 2367998

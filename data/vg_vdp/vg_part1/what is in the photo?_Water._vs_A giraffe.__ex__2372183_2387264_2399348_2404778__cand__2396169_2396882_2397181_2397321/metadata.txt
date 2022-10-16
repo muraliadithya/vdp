@@ -1,0 +1,2 @@
+question: what is in the photo?; Water. versus A giraffe.
+intended: 2396882

@@ -1,0 +1,2 @@
+question: Are any doors visible?
+intended: 2389361

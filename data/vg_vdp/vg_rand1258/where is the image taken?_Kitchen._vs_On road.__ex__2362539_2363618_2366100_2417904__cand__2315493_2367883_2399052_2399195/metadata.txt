@@ -1,0 +1,2 @@
+question: where is the image taken?; Kitchen. versus On road.
+intended: 2315493

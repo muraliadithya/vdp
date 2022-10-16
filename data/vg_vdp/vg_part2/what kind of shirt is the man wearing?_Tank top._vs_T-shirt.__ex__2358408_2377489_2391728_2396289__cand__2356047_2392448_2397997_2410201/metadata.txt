@@ -1,0 +1,2 @@
+question: what kind of shirt is the man wearing?; Tank top. versus T-shirt.
+intended: 2397997

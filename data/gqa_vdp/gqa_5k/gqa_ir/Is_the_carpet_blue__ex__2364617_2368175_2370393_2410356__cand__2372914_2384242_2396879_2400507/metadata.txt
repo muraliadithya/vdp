@@ -1,0 +1,2 @@
+question: Is the carpet blue?
+intended: 2400507

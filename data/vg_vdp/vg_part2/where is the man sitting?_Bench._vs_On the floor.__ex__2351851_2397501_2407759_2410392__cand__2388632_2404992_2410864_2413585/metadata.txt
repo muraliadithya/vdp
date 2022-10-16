@@ -1,0 +1,2 @@
+question: where is the man sitting?; Bench. versus On the floor.
+intended: 2404992

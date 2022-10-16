@@ -1,0 +1,2 @@
+question: Do the shorts seem to be white?
+intended: 2387087

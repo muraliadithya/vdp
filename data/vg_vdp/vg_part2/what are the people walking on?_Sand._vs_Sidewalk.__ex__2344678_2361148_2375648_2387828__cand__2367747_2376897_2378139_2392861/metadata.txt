@@ -1,0 +1,2 @@
+question: what are the people walking on?; Sand. versus Sidewalk.
+intended: 2378139

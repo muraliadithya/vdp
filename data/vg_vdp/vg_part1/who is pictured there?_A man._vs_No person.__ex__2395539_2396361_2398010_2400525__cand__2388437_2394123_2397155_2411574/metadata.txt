@@ -1,0 +1,2 @@
+question: who is pictured there?; A man. versus No person.
+intended: 2388437

@@ -1,0 +1,2 @@
+question: Do the shorts have red color?
+intended: 2326013

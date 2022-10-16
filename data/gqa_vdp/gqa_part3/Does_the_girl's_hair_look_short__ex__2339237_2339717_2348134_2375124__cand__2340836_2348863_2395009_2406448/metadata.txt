@@ -1,0 +1,2 @@
+question: Does the girl's hair look short?
+intended: 2348863

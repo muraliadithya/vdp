@@ -1,0 +1,2 @@
+question: Does the table appear to be white?
+intended: 61545

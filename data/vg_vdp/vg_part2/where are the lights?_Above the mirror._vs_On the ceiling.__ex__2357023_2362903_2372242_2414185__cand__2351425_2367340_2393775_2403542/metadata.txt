@@ -1,0 +1,2 @@
+question: where are the lights?; Above the mirror. versus On the ceiling.
+intended: 2351425

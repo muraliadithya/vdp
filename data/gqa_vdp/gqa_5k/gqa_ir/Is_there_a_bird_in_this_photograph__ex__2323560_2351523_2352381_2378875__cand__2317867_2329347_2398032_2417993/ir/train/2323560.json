@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "small": ["object"]}, "elements": {"object": ["3510557"], "label": ["bird"]}, "interpretation": {"has_label": [["3510557", "bird"]], "small": [["3510557"]]}}

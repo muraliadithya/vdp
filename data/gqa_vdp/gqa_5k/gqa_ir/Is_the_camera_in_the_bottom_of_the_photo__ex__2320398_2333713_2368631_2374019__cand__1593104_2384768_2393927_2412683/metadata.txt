@@ -1,0 +1,2 @@
+question: Is the camera in the bottom of the photo?
+intended: 2412683

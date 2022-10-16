@@ -1,0 +1,2 @@
+question: what type of flooring is shown?; Tile. versus Hardwood.
+intended: 2375073

@@ -1,0 +1,2 @@
+question: what kind of pants is the man wearing?; Khakis. versus Khaki.
+intended: 2343071

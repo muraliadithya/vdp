@@ -1,0 +1,2 @@
+question: Does the short hair look blond?
+intended: 2318976

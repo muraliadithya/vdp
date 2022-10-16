@@ -1,0 +1,2 @@
+question: where is this photo taken?; Tennis court. versus On a road.
+intended: 2351240

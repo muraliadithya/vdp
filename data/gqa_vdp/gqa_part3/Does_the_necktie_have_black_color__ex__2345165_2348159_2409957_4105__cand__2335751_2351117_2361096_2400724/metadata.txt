@@ -1,0 +1,2 @@
+question: Does the necktie have black color?
+intended: 2335751

@@ -1,0 +1,2 @@
+question: Do the trousers look gray?
+intended: 2345358

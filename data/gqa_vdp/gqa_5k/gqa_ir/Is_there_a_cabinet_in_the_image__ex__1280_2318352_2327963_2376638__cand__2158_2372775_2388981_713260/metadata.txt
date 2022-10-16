@@ -1,0 +1,2 @@
+question: Is there a cabinet in the image?
+intended: 2388981

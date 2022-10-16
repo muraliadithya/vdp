@@ -1,0 +1,2 @@
+question: Are there desks in the image?
+intended: 1520

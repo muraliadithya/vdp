@@ -1,0 +1,2 @@
+question: Is the jacket blue?
+intended: 2371851

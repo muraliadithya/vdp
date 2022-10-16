@@ -1,0 +1,2 @@
+question: Is there a blanket in this picture?
+intended: 2352260

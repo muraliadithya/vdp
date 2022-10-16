@@ -1,0 +1,2 @@
+question: Does that table have white color?
+intended: 2368557

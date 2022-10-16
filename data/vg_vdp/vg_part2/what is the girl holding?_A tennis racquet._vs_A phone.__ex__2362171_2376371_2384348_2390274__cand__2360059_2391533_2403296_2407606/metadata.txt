@@ -1,0 +1,2 @@
+question: what is the girl holding?; A tennis racquet. versus A phone.
+intended: 2403296

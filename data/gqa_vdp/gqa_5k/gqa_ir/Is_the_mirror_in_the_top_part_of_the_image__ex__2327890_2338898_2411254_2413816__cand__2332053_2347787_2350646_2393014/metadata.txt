@@ -1,0 +1,2 @@
+question: Is the mirror in the top part of the image?
+intended: 2393014

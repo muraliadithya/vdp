@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "brown": ["object"], "tall": ["object"], "blurry": ["object"]}, "elements": {"object": ["779241"], "label": ["grass"]}, "interpretation": {"has_label": [["779241", "grass"]], "brown": [["779241"]], "tall": [["779241"]], "blurry": [["779241"]]}}

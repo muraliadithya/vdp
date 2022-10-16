@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "on": ["object", "object"]}, "elements": {"object": ["3007318", "3168345", "3383891"], "label": ["sand", "ocean", "surfboard"]}, "interpretation": {"has_label": [["3007318", "sand"], ["3168345", "ocean"], ["3383891", "surfboard"]], "on": [["3007318", "3007318"]]}}

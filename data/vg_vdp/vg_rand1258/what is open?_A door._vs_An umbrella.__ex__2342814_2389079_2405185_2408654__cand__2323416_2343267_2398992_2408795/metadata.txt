@@ -1,0 +1,2 @@
+question: what is open?; A door. versus An umbrella.
+intended: 2408795

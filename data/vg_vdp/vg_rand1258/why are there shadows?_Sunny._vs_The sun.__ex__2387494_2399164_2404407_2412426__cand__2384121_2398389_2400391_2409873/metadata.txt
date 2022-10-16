@@ -1,0 +1,2 @@
+question: why are there shadows?; Sunny. versus The sun.
+intended: 2409873

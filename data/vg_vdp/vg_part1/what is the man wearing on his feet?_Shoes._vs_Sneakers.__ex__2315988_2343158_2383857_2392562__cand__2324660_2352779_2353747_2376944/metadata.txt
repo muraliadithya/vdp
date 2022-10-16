@@ -1,0 +1,2 @@
+question: what is the man wearing on his feet?; Shoes. versus Sneakers.
+intended: 2352779

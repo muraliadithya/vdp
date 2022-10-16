@@ -1,0 +1,2 @@
+question: where is the image taken?; Tennis court. versus Kitchen.
+intended: 2361310

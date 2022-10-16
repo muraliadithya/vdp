@@ -1,0 +1,2 @@
+question: Is the chair made of wood?
+intended: 2404864

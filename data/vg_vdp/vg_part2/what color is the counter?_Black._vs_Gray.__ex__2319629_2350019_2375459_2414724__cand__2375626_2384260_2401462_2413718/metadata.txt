@@ -1,0 +1,2 @@
+question: what color is the counter?; Black. versus Gray.
+intended: 2401462

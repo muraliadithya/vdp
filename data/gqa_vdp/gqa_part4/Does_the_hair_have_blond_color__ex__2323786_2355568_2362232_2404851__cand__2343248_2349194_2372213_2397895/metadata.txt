@@ -1,0 +1,2 @@
+question: Does the hair have blond color?
+intended: 2397895

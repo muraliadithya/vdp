@@ -1,0 +1,2 @@
+question: Is the picture white?
+intended: 2375295

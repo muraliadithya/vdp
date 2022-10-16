@@ -1,0 +1,2 @@
+question: where can a person sit?; Benches. versus On the bench.
+intended: 2367137

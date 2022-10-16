@@ -1,0 +1,2 @@
+question: Are there any people to the left of the man that is wearing a hat?
+intended: 2319814

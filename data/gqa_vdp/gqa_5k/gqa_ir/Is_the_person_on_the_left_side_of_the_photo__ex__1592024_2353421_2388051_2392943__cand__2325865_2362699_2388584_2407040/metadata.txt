@@ -1,0 +1,2 @@
+question: Is the person on the left side of the photo?
+intended: 2325865

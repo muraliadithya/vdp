@@ -1,0 +1,2 @@
+question: what is in the person's hand?; Tennis racket. versus Cell phone.
+intended: 2326157

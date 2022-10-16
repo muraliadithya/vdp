@@ -1,0 +1,2 @@
+question: Is the clock in the top of the picture?
+intended: 2369995

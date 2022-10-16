@@ -1,0 +1,2 @@
+question: Do the shoes look blue?
+intended: 2361422

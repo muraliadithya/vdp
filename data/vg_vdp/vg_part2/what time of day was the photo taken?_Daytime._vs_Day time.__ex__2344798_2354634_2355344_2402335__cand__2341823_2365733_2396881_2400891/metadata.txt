@@ -1,0 +1,2 @@
+question: what time of day was the photo taken?; Daytime. versus Day time.
+intended: 2365733

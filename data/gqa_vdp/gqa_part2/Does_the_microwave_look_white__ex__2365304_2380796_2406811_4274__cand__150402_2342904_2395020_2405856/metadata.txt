@@ -1,0 +1,2 @@
+question: Does the microwave look white?
+intended: 2405856

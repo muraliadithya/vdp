@@ -1,0 +1,2 @@
+question: Are there chairs in this image?
+intended: 2369183

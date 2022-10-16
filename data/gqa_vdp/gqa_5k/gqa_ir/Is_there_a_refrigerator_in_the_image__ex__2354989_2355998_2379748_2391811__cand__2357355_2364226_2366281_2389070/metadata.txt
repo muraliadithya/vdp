@@ -1,0 +1,2 @@
+question: Is there a refrigerator in the image?
+intended: 2389070

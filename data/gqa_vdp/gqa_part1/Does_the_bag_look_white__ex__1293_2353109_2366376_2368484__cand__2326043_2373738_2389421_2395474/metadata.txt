@@ -1,0 +1,2 @@
+question: Does the bag look white?
+intended: 2395474

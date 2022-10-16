@@ -1,0 +1,2 @@
+question: Is there a cow in the photo?
+intended: 2344167

@@ -1,0 +1,2 @@
+question: how many dogs are in the photo?; One. versus None.
+intended: 2397165

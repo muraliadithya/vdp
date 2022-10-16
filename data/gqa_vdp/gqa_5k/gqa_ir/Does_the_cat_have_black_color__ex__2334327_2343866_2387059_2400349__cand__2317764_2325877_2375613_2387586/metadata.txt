@@ -1,0 +1,2 @@
+question: Does the cat have black color?
+intended: 2387586

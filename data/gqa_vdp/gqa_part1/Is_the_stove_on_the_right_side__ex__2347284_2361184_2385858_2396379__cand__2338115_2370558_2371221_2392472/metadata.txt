@@ -1,0 +1,2 @@
+question: Is the stove on the right side?
+intended: 2392472

@@ -1,0 +1,2 @@
+question: where is the arrow pointing?; Up. versus Left.
+intended: 2330315

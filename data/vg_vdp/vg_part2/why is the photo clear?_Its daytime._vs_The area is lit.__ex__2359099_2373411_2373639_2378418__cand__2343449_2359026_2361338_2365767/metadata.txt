@@ -1,0 +1,2 @@
+question: why is the photo clear?; Its daytime. versus The area is lit.
+intended: 2361338

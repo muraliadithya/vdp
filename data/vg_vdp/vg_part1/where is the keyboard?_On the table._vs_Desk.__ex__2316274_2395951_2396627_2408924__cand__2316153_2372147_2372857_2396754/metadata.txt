@@ -1,0 +1,2 @@
+question: where is the keyboard?; On the table. versus Desk.
+intended: 2372147

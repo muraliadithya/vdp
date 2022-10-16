@@ -1,0 +1,2 @@
+question: Does the kite look blue?
+intended: 2410928

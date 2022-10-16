@@ -1,0 +1,2 @@
+question: Is there a black helmet in the image?
+intended: 2405658

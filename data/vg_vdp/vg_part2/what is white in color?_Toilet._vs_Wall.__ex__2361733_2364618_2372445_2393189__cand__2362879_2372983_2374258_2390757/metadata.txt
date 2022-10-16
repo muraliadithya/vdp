@@ -1,0 +1,2 @@
+question: what is white in color?; Toilet. versus Wall.
+intended: 2362879

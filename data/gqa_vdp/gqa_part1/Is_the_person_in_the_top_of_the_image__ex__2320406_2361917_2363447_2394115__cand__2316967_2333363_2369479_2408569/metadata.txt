@@ -1,0 +1,2 @@
+question: Is the person in the top of the image?
+intended: 2408569

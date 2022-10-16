@@ -1,0 +1,2 @@
+question: Do you see a lamp in the image?
+intended: 2379571

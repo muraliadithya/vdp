@@ -1,0 +1,2 @@
+question: what is the lady holding?; Tennis racket. versus An umbrella.
+intended: 2390091

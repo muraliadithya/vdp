@@ -1,0 +1,2 @@
+question: what color is the man's shorts?; Black. versus Blue.
+intended: 2400867

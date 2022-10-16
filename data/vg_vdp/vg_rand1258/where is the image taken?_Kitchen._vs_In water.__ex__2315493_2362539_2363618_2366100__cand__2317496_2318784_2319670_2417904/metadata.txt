@@ -1,0 +1,2 @@
+question: where is the image taken?; Kitchen. versus In water.
+intended: 2417904

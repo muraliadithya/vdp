@@ -1,0 +1,2 @@
+question: where are the shadows?; Ground. versus On the wall.
+intended: 2414446

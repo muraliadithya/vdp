@@ -1,0 +1,2 @@
+question: who is wearing sunglasses?; The man. versus A woman.
+intended: 2414584

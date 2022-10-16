@@ -1,0 +1,2 @@
+question: how many people in the photo?; Zero. versus Three.
+intended: 2367149

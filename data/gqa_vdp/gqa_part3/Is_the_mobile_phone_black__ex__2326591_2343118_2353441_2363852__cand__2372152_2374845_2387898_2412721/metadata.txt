@@ -1,0 +1,2 @@
+question: Is the mobile phone black?
+intended: 2374845

@@ -1,0 +1,2 @@
+question: what are the people sitting on?; Benches. versus Chairs.
+intended: 2387594

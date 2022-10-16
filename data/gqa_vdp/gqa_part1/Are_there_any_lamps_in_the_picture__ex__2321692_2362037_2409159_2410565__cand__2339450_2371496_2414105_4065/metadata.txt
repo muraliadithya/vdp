@@ -1,0 +1,2 @@
+question: Are there any lamps in the picture?
+intended: 4065

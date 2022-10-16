@@ -1,0 +1,2 @@
+question: Is there a laptop that is not black?
+intended: 1743

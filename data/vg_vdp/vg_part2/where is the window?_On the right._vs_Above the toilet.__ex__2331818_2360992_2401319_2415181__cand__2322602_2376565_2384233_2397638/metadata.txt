@@ -1,0 +1,2 @@
+question: where is the window?; On the right. versus Above the toilet.
+intended: 2376565

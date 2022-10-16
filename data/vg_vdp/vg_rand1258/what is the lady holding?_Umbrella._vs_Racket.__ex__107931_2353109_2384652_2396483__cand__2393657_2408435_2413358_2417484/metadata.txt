@@ -1,0 +1,2 @@
+question: what is the lady holding?; Umbrella. versus Racket.
+intended: 2417484

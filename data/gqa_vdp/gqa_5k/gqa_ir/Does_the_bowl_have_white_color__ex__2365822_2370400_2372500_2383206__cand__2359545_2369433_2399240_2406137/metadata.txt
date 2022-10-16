@@ -1,0 +1,2 @@
+question: Does the bowl have white color?
+intended: 2399240

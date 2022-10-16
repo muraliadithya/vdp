@@ -1,0 +1,2 @@
+question: Does the chair have white color?
+intended: 1199

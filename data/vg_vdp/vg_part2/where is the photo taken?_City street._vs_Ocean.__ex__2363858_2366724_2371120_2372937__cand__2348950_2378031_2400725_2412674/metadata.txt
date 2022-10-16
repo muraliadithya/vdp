@@ -1,0 +1,2 @@
+question: where is the photo taken?; City street. versus Ocean.
+intended: 2378031

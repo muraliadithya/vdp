@@ -1,0 +1,2 @@
+question: Does the skateboard have black color?
+intended: 2316529

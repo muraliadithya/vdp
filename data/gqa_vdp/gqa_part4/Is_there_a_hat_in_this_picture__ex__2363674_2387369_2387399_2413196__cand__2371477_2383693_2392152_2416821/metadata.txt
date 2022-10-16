@@ -1,0 +1,2 @@
+question: Is there a hat in this picture?
+intended: 2392152

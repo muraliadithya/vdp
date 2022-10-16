@@ -1,0 +1,2 @@
+question: Is there a keyboard in this photo?
+intended: 2353299

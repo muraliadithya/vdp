@@ -1,0 +1,2 @@
+question: Are there any cars to the right of the red vehicle?
+intended: 423

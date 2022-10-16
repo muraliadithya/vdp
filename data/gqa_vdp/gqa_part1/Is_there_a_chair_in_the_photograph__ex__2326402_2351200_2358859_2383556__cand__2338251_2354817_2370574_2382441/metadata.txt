@@ -1,0 +1,2 @@
+question: Is there a chair in the photograph?
+intended: 2382441

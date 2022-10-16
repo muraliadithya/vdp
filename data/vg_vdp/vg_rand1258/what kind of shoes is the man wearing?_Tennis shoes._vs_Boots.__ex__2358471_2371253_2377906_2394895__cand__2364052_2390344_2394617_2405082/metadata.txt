@@ -1,0 +1,2 @@
+question: what kind of shoes is the man wearing?; Tennis shoes. versus Boots.
+intended: 2394617

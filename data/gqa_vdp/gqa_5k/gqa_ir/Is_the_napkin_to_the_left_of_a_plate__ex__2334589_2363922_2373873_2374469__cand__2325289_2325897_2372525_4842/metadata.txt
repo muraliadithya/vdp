@@ -1,0 +1,2 @@
+question: Is the napkin to the left of a plate?
+intended: 2325289

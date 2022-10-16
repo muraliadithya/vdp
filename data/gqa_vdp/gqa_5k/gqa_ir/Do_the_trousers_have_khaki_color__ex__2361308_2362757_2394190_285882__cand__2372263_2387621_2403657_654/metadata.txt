@@ -1,0 +1,2 @@
+question: Do the trousers have khaki color?
+intended: 2403657

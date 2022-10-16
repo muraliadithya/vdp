@@ -1,0 +1,2 @@
+question: Is the monitor on the left side?
+intended: 2409850

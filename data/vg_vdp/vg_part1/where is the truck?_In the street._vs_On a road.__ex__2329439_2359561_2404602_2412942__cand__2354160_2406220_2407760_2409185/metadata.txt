@@ -1,0 +1,2 @@
+question: where is the truck?; In the street. versus On a road.
+intended: 2406220

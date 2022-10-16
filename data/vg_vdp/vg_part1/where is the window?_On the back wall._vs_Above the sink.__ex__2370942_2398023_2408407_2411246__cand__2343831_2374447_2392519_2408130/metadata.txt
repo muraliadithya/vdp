@@ -1,0 +1,2 @@
+question: where is the window?; On the back wall. versus Above the sink.
+intended: 2392519

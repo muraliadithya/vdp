@@ -1,0 +1,2 @@
+question: who is holding a racket?; A man. versus A woman.
+intended: 2376736

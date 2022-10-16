@@ -1,0 +1,2 @@
+question: Is the chair made of metal?
+intended: 2380651

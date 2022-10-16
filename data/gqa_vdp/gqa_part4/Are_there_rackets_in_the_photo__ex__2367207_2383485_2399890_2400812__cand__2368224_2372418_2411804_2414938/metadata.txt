@@ -1,0 +1,2 @@
+question: Are there rackets in the photo?
+intended: 2411804

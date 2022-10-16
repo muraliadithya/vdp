@@ -1,0 +1,2 @@
+question: Does the dress have blue color?
+intended: 107925

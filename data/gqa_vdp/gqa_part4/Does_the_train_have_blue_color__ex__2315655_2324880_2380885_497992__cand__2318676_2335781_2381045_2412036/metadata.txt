@@ -1,0 +1,2 @@
+question: Does the train have blue color?
+intended: 2412036

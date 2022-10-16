@@ -1,0 +1,2 @@
+question: Is there a truck that is red?
+intended: 2387496

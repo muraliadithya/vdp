@@ -1,0 +1,2 @@
+question: Is the white vehicle on the right?
+intended: 2343736

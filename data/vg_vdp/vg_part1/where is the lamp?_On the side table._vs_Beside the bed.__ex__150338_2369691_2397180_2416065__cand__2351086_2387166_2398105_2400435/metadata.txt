@@ -1,0 +1,2 @@
+question: where is the lamp?; On the side table. versus Beside the bed.
+intended: 2351086

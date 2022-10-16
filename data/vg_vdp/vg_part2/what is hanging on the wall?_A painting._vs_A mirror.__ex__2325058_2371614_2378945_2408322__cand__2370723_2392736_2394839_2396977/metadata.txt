@@ -1,0 +1,2 @@
+question: what is hanging on the wall?; A painting. versus A mirror.
+intended: 2370723

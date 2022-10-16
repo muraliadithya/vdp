@@ -1,0 +1,2 @@
+question: Is there a helmet in the picture that is not black?
+intended: 2390225

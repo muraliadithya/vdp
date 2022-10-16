@@ -1,0 +1,2 @@
+question: where is the image taken?; In water. versus Near beach.
+intended: 2323688

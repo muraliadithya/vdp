@@ -1,0 +1,2 @@
+question: Is the rug blue?
+intended: 2346820

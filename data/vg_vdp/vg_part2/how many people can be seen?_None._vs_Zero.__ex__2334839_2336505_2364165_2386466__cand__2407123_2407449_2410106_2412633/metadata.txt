@@ -1,0 +1,2 @@
+question: how many people can be seen?; None. versus Zero.
+intended: 2410106

@@ -1,0 +1,2 @@
+question: Is there a helmet in this scene?
+intended: 2336451

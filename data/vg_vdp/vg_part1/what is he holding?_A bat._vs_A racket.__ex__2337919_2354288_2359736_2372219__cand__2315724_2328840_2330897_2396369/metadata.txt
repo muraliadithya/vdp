@@ -1,0 +1,2 @@
+question: what is he holding?; A bat. versus A racket.
+intended: 2328840

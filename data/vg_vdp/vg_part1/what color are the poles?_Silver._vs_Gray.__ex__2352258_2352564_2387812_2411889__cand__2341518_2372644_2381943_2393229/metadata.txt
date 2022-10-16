@@ -1,0 +1,2 @@
+question: what color are the poles?; Silver. versus Gray.
+intended: 2372644

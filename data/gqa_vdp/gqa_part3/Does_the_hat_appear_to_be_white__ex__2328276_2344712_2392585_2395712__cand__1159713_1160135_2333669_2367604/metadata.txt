@@ -1,0 +1,2 @@
+question: Does the hat appear to be white?
+intended: 2333669

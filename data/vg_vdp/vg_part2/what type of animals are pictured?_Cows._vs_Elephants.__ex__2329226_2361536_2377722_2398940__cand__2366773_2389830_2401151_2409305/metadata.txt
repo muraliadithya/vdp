@@ -1,0 +1,2 @@
+question: what type of animals are pictured?; Cows. versus Elephants.
+intended: 2409305

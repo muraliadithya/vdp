@@ -1,0 +1,2 @@
+question: Does the uniform have blue color?
+intended: 2364286

@@ -1,0 +1,2 @@
+question: Is the ring silver?
+intended: 2410468

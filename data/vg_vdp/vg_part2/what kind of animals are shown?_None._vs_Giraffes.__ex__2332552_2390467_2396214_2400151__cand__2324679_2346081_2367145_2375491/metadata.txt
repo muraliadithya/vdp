@@ -1,0 +1,2 @@
+question: what kind of animals are shown?; None. versus Giraffes.
+intended: 2324679

@@ -1,0 +1,2 @@
+question: Is the plate in the bottom of the image?
+intended: 1159794

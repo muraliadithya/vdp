@@ -1,0 +1,2 @@
+question: where is the microwave?; Counter. versus Above the stove.
+intended: 2327587

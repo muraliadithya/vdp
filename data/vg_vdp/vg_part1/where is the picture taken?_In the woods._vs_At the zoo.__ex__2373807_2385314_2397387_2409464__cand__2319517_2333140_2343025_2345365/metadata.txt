@@ -1,0 +1,2 @@
+question: where is the picture taken?; In the woods. versus At the zoo.
+intended: 2319517

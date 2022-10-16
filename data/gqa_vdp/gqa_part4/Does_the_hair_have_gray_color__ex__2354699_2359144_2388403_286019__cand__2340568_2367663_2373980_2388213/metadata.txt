@@ -1,0 +1,2 @@
+question: Does the hair have gray color?
+intended: 2373980

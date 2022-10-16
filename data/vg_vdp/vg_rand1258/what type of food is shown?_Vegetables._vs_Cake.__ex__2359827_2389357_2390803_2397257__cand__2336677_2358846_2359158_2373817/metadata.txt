@@ -1,0 +1,2 @@
+question: what type of food is shown?; Vegetables. versus Cake.
+intended: 2336677

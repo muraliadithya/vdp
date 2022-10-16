@@ -1,0 +1,2 @@
+question: what vehicle is shown?; Truck. versus Airplane.
+intended: 2393918

@@ -1,0 +1,2 @@
+question: Is there a computer mouse in the image?
+intended: 2403066

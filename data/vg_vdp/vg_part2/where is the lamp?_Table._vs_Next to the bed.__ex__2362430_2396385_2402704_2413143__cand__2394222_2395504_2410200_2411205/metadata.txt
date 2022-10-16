@@ -1,0 +1,2 @@
+question: where is the lamp?; Table. versus Next to the bed.
+intended: 2395504

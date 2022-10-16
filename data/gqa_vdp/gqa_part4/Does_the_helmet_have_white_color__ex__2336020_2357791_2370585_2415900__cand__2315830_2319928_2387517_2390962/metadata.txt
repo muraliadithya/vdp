@@ -1,0 +1,2 @@
+question: Does the helmet have white color?
+intended: 2319928

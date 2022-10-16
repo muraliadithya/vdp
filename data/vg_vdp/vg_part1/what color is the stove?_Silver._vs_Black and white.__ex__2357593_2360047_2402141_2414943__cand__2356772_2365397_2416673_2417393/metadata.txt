@@ -1,0 +1,2 @@
+question: what color is the stove?; Silver. versus Black and white.
+intended: 2416673

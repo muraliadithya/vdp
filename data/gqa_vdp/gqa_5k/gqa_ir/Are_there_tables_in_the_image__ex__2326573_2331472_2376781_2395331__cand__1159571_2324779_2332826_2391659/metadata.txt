@@ -1,0 +1,2 @@
+question: Are there tables in the image?
+intended: 2324779

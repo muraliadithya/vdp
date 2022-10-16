@@ -1,0 +1,2 @@
+question: what is the man wearing on his head?; A cap. versus A hat.
+intended: 2338004

@@ -1,0 +1,2 @@
+question: Is there a towel in this scene?
+intended: 2364718

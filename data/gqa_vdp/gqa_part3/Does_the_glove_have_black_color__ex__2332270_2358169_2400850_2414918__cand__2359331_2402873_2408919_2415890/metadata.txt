@@ -1,0 +1,2 @@
+question: Does the glove have black color?
+intended: 2415890

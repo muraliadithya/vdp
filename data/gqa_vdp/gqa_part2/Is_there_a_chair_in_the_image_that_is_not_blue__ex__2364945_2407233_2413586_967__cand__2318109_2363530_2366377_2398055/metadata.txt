@@ -1,0 +1,2 @@
+question: Is there a chair in the image that is not blue?
+intended: 2398055

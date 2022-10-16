@@ -1,0 +1,2 @@
+question: Does the shirt appear to be blue?
+intended: 2391440

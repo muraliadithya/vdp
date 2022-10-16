@@ -1,0 +1,2 @@
+question: where is the light?; On the wall. versus Hanging from the ceiling.
+intended: 2394338

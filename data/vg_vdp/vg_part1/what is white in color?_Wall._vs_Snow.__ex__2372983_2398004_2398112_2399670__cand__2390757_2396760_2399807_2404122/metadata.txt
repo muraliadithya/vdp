@@ -1,0 +1,2 @@
+question: what is white in color?; Wall. versus Snow.
+intended: 2390757

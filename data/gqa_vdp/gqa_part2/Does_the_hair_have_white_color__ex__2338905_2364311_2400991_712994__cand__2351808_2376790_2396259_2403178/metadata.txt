@@ -1,0 +1,2 @@
+question: Does the hair have white color?
+intended: 2376790

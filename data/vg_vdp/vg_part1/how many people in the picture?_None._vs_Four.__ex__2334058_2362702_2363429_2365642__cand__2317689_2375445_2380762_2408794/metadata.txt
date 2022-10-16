@@ -1,0 +1,2 @@
+question: how many people in the picture?; None. versus Four.
+intended: 2380762

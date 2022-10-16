@@ -1,0 +1,2 @@
+question: Is there any grass in this image that is brown?
+intended: 2315378

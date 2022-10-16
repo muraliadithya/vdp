@@ -1,0 +1,2 @@
+question: what kind of animal is in the picture?; Bear. versus A giraffe.
+intended: 2363429

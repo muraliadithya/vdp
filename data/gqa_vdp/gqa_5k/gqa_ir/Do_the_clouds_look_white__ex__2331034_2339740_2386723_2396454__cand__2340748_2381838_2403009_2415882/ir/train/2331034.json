@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "white": ["object"], "blue": ["object"], "in": ["object", "object"]}, "elements": {"object": ["3406503", "3367376"], "label": ["clouds", "sky"]}, "interpretation": {"has_label": [["3406503", "clouds"], ["3367376", "sky"]], "white": [["3406503"]], "blue": [["3367376"]], "in": [["3406503", "3367376"]]}}

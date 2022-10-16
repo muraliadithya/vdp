@@ -1,0 +1,2 @@
+question: Is the bench in the bottom part of the image?
+intended: 2372227

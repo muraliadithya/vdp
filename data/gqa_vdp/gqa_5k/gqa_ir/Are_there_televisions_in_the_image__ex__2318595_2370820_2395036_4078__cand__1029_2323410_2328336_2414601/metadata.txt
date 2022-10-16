@@ -1,0 +1,2 @@
+question: Are there televisions in the image?
+intended: 1029

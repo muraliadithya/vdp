@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "hazy": ["object"], "blue": ["object"]}, "elements": {"object": ["2907714"], "label": ["sky"]}, "interpretation": {"has_label": [["2907714", "sky"]], "hazy": [["2907714"]], "blue": [["2907714"]]}}

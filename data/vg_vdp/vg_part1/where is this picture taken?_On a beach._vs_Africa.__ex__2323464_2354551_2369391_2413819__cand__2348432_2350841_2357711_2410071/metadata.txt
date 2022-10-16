@@ -1,0 +1,2 @@
+question: where is this picture taken?; On a beach. versus Africa.
+intended: 2348432

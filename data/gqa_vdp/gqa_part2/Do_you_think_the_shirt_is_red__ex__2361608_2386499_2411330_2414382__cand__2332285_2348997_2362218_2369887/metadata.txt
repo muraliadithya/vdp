@@ -1,0 +1,2 @@
+question: Do you think the shirt is red?
+intended: 2362218

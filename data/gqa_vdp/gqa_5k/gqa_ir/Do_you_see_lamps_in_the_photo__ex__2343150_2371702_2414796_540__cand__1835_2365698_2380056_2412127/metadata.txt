@@ -1,0 +1,2 @@
+question: Do you see lamps in the photo?
+intended: 2365698

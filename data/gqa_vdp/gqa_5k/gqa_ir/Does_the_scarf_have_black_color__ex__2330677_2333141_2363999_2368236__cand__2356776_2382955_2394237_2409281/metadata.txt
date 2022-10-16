@@ -1,0 +1,2 @@
+question: Does the scarf have black color?
+intended: 2356776

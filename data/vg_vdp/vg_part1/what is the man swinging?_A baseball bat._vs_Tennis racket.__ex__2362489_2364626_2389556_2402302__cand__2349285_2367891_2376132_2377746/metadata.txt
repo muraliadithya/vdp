@@ -1,0 +1,2 @@
+question: what is the man swinging?; A baseball bat. versus Tennis racket.
+intended: 2367891

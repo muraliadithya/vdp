@@ -1,0 +1,2 @@
+question: Does the hair have red color?
+intended: 2327305

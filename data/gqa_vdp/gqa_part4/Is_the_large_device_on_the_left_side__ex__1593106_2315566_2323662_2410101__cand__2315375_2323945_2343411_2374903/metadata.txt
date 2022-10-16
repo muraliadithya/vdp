@@ -1,0 +1,2 @@
+question: Is the large device on the left side?
+intended: 2343411

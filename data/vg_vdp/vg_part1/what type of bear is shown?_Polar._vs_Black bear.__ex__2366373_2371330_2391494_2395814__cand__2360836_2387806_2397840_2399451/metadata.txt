@@ -1,0 +1,2 @@
+question: what type of bear is shown?; Polar. versus Black bear.
+intended: 2397840

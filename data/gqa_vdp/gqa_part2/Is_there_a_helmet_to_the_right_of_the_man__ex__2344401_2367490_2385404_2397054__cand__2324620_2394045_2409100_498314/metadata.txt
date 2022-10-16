@@ -1,0 +1,2 @@
+question: Is there a helmet to the right of the man?
+intended: 2409100

@@ -1,0 +1,2 @@
+question: Does the bag have red color?
+intended: 2366935

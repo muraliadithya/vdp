@@ -1,0 +1,2 @@
+question: what color is the woman's hat?; Black. versus Red.
+intended: 2380240

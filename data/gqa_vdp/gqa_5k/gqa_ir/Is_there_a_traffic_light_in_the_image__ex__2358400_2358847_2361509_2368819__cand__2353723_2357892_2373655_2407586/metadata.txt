@@ -1,0 +1,2 @@
+question: Is there a traffic light in the image?
+intended: 2407586

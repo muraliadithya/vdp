@@ -1,0 +1,2 @@
+question: what kind of animals are in the picture?; Horses. versus Cows.
+intended: 2332072

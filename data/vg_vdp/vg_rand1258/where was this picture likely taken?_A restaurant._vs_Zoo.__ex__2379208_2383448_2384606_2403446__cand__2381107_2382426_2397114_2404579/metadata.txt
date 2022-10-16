@@ -1,0 +1,2 @@
+question: where was this picture likely taken?; A restaurant. versus Zoo.
+intended: 2382426

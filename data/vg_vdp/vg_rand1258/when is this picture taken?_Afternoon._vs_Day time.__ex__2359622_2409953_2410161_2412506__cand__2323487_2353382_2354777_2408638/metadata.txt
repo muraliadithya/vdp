@@ -1,0 +1,2 @@
+question: when is this picture taken?; Afternoon. versus Day time.
+intended: 2408638

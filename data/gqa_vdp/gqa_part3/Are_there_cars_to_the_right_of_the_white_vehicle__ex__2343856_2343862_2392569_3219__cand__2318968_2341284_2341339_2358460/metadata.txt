@@ -1,0 +1,2 @@
+question: Are there cars to the right of the white vehicle?
+intended: 2318968

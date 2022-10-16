@@ -1,0 +1,2 @@
+question: Do the words have white color?
+intended: 2379582

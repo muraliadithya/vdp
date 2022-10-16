@@ -1,0 +1,2 @@
+question: how many people are in the picture?; 3. versus Four.
+intended: 2331923

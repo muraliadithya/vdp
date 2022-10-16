@@ -1,0 +1,2 @@
+question: where is the woman sitting?; On the ground. versus In a chair.
+intended: 2370508

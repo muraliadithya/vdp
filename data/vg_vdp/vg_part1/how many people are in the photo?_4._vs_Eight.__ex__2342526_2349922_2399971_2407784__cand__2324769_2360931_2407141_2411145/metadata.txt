@@ -1,0 +1,2 @@
+question: how many people are in the photo?; 4. versus Eight.
+intended: 2407141

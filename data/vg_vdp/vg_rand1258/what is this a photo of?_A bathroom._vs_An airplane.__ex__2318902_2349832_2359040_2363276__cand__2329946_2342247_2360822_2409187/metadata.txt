@@ -1,0 +1,2 @@
+question: what is this a photo of?; A bathroom. versus An airplane.
+intended: 2342247

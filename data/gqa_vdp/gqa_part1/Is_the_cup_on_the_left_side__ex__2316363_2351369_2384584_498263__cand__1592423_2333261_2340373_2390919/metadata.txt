@@ -1,0 +1,2 @@
+question: Is the cup on the left side?
+intended: 2340373

@@ -1,0 +1,2 @@
+question: what kind of shirt is the man wearing?; Striped. versus A t-shirt.
+intended: 2413635

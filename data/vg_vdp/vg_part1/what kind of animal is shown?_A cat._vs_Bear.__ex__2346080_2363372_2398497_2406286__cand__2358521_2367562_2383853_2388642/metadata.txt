@@ -1,0 +1,2 @@
+question: what kind of animal is shown?; A cat. versus Bear.
+intended: 2388642

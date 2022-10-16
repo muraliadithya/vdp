@@ -1,0 +1,2 @@
+question: Is there a fence in the image that is metallic?
+intended: 2392127

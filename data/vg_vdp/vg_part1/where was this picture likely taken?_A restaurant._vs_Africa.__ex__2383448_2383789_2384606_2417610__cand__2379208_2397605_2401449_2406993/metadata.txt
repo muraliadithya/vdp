@@ -1,0 +1,2 @@
+question: where was this picture likely taken?; A restaurant. versus Africa.
+intended: 2379208

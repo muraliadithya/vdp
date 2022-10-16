@@ -1,0 +1,2 @@
+question: Is there a nightstand in the image?
+intended: 2399235

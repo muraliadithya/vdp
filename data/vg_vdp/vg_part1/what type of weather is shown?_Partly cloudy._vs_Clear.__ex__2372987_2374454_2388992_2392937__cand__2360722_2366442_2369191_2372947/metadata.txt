@@ -1,0 +1,2 @@
+question: what type of weather is shown?; Partly cloudy. versus Clear.
+intended: 2372947

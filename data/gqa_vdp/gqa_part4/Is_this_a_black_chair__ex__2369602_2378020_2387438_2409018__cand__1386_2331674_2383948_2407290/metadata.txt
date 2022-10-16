@@ -1,0 +1,2 @@
+question: Is this a black chair?
+intended: 2407290

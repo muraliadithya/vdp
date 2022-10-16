@@ -1,0 +1,2 @@
+question: what kind of animal is pictured?; Giraffe. versus Dog.
+intended: 2411717

@@ -1,0 +1,2 @@
+question: Are the blinds on the left side?
+intended: 2365709

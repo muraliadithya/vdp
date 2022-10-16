@@ -1,0 +1,2 @@
+question: Does the camera look black?
+intended: 2387652

@@ -1,0 +1,2 @@
+question: Is the logo white?
+intended: 2414601

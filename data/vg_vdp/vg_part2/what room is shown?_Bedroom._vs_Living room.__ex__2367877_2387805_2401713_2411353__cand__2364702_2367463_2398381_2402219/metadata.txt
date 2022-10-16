@@ -1,0 +1,2 @@
+question: what room is shown?; Bedroom. versus Living room.
+intended: 2364702

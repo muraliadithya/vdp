@@ -1,0 +1,2 @@
+question: Does the jacket have gray color?
+intended: 2326764

@@ -1,0 +1,2 @@
+question: Is the man in the top part of the picture?
+intended: 2370176

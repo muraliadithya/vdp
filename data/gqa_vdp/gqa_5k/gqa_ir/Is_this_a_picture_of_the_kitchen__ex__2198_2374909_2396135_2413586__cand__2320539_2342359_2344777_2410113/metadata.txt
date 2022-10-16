@@ -1,0 +1,2 @@
+question: Is this a picture of the kitchen?
+intended: 2410113

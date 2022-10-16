@@ -1,0 +1,2 @@
+question: what type of vehicle is shown?; Truck. versus Motorcycle.
+intended: 61595

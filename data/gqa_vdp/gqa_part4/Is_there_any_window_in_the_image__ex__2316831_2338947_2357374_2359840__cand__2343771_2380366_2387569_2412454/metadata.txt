@@ -1,0 +1,2 @@
+question: Is there any window in the image?
+intended: 2412454

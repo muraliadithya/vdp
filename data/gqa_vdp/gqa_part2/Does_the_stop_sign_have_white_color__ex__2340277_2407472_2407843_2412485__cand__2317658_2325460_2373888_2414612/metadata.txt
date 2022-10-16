@@ -1,0 +1,2 @@
+question: Does the stop sign have white color?
+intended: 2414612

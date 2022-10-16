@@ -1,0 +1,2 @@
+question: who is in the photo?; A person. versus A baby.
+intended: 2362074

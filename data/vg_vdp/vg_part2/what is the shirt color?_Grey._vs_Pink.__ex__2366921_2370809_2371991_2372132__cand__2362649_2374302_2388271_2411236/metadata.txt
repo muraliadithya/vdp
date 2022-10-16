@@ -1,0 +1,2 @@
+question: what is the shirt color?; Grey. versus Pink.
+intended: 2388271

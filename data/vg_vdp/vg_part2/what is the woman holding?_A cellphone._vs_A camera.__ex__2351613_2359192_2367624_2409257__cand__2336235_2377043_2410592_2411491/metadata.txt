@@ -1,0 +1,2 @@
+question: what is the woman holding?; A cellphone. versus A camera.
+intended: 2377043

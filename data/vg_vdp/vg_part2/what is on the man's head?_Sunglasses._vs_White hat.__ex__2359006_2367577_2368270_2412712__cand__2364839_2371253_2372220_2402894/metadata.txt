@@ -1,0 +1,2 @@
+question: what is on the man's head?; Sunglasses. versus White hat.
+intended: 2402894

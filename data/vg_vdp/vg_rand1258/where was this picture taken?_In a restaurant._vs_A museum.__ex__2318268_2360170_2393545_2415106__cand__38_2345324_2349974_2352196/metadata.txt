@@ -1,0 +1,2 @@
+question: where was this picture taken?; In a restaurant. versus A museum.
+intended: 38

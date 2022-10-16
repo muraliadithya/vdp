@@ -1,0 +1,2 @@
+question: what is outside the window?; Trees. versus Buildings.
+intended: 2360525

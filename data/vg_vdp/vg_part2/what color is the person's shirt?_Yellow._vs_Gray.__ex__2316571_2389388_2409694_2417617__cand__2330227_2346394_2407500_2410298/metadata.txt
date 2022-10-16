@@ -1,0 +1,2 @@
+question: what color is the person's shirt?; Yellow. versus Gray.
+intended: 2330227

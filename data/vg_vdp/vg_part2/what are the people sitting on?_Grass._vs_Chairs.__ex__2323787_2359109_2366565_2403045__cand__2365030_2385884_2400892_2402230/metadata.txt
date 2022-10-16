@@ -1,0 +1,2 @@
+question: what are the people sitting on?; Grass. versus Chairs.
+intended: 2365030

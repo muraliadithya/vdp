@@ -1,0 +1,2 @@
+question: Do the shorts seem to be black?
+intended: 2417307

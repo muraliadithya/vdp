@@ -1,0 +1,2 @@
+question: where was the picture taken?; Outside. versus At a parade.
+intended: 2345596

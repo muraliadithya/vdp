@@ -1,0 +1,2 @@
+question: Is there a duck in the picture?
+intended: 2388693

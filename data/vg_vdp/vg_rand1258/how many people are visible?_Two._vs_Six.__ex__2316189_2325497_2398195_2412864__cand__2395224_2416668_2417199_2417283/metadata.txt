@@ -1,0 +1,2 @@
+question: how many people are visible?; Two. versus Six.
+intended: 2417199

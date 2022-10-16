@@ -1,0 +1,2 @@
+question: when was the photo taken?; Yesterday. versus During the daytime.
+intended: 2383198

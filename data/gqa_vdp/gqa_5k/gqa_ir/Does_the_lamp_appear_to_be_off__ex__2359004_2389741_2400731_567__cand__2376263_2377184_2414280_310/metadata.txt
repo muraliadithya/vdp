@@ -1,0 +1,2 @@
+question: Does the lamp appear to be off?
+intended: 2414280

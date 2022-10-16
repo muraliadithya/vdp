@@ -1,0 +1,2 @@
+question: where is the keyboard?; On the desk. versus In front of the monitor.
+intended: 2366376

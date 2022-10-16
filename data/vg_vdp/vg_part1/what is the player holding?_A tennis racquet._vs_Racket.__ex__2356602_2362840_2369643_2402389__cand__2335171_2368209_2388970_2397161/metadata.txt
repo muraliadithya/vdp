@@ -1,0 +1,2 @@
+question: what is the player holding?; A tennis racquet. versus Racket.
+intended: 2335171

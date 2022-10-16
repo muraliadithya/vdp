@@ -1,0 +1,2 @@
+question: what is white?; The walls. versus Clouds.
+intended: 2325671

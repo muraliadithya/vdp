@@ -1,0 +1,2 @@
+question: Is there a mirror in this scene?
+intended: 2383376

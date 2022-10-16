@@ -1,0 +1,2 @@
+question: Is the white vehicle to the right of a car?
+intended: 2316000

@@ -1,0 +1,2 @@
+question: what color is the keyboard?; Gray. versus Silver.
+intended: 14

@@ -1,0 +1,2 @@
+question: Is the chair in the bottom part of the image?
+intended: 7

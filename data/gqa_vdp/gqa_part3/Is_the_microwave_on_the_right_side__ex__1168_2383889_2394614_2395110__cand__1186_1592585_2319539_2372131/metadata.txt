@@ -1,0 +1,2 @@
+question: Is the microwave on the right side?
+intended: 1186

@@ -1,0 +1,2 @@
+question: Is the hat white?
+intended: 2344962

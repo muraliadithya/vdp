@@ -1,0 +1,2 @@
+question: what is the woman doing?; Taking picture. versus Serving.
+intended: 2360075

@@ -1,0 +1,2 @@
+question: what is in the man's hands?; Tennis racket. versus Ski poles.
+intended: 2364464

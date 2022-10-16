@@ -1,0 +1,2 @@
+question: Does the outfit look black?
+intended: 2377120

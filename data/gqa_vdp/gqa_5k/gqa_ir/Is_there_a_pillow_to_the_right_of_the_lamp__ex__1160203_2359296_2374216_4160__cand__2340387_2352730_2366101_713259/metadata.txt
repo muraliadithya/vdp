@@ -1,0 +1,2 @@
+question: Is there a pillow to the right of the lamp?
+intended: 2366101

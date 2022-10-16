@@ -1,0 +1,2 @@
+question: Is the bag pink?
+intended: 2409784

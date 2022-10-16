@@ -1,0 +1,2 @@
+question: what color is the woman's sweater?; Black. versus White.
+intended: 2347132

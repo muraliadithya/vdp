@@ -1,0 +1,2 @@
+question: what type of food is shown?; Doughnuts. versus A sandwich.
+intended: 2401822

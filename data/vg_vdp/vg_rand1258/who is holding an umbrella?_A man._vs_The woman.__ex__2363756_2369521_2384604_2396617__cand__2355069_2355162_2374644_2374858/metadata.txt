@@ -1,0 +1,2 @@
+question: who is holding an umbrella?; A man. versus The woman.
+intended: 2374644

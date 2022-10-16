@@ -1,0 +1,2 @@
+question: where is the tv?; In the corner. versus On the wall.
+intended: 2347081

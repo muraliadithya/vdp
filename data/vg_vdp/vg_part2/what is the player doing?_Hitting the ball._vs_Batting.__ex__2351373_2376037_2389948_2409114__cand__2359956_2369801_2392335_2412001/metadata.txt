@@ -1,0 +1,2 @@
+question: what is the player doing?; Hitting the ball. versus Batting.
+intended: 2392335

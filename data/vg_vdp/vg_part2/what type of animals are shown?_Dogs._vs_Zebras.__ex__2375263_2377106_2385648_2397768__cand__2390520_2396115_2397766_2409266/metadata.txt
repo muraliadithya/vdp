@@ -1,0 +1,2 @@
+question: what type of animals are shown?; Dogs. versus Zebras.
+intended: 2397766

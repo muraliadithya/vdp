@@ -1,0 +1,2 @@
+question: where is the light coming from?; The lamp. versus Window.
+intended: 2401374

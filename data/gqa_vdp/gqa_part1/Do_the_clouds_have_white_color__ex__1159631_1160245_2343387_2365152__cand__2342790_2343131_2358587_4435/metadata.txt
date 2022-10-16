@@ -1,0 +1,2 @@
+question: Do the clouds have white color?
+intended: 2358587

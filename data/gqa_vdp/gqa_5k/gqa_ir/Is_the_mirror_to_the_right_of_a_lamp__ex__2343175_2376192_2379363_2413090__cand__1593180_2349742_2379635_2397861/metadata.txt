@@ -1,0 +1,2 @@
+question: Is the mirror to the right of a lamp?
+intended: 2397861

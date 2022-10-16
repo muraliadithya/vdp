@@ -1,0 +1,2 @@
+question: what shape is the mirror?; Square. versus Rectangular.
+intended: 2364292

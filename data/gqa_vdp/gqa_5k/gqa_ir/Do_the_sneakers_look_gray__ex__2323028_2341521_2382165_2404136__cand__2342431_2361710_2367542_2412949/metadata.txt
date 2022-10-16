@@ -1,0 +1,2 @@
+question: Do the sneakers look gray?
+intended: 2412949

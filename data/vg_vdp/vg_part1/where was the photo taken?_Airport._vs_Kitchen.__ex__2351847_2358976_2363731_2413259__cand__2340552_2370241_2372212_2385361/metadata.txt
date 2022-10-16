@@ -1,0 +1,2 @@
+question: where was the photo taken?; Airport. versus Kitchen.
+intended: 2370241

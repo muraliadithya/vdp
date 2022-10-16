@@ -1,0 +1,2 @@
+question: Is the microwave to the right of a cabinet?
+intended: 2384956

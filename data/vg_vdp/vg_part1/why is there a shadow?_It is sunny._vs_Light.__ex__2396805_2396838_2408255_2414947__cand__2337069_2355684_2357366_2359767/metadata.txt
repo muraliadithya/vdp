@@ -1,0 +1,2 @@
+question: why is there a shadow?; It is sunny. versus Light.
+intended: 2355684

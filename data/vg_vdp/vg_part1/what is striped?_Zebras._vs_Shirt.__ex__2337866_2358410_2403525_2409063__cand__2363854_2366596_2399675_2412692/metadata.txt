@@ -1,0 +1,2 @@
+question: what is striped?; Zebras. versus Shirt.
+intended: 2399675

@@ -1,0 +1,2 @@
+question: Does the backpack look black?
+intended: 2401705

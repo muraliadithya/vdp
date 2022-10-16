@@ -1,0 +1,2 @@
+question: Do you see any letters there that are white?
+intended: 2317108

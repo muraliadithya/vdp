@@ -1,0 +1,2 @@
+question: Is the lamp on the right of the photo?
+intended: 2349921

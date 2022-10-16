@@ -1,0 +1,2 @@
+question: where was this picture taken?; A zoo. versus Africa.
+intended: 2398367

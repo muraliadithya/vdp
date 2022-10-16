@@ -1,0 +1,2 @@
+question: Is there a table in the photograph?
+intended: 2406285

@@ -1,0 +1,2 @@
+question: when is the photo taken?; Winter. versus In the daytime.
+intended: 2369347

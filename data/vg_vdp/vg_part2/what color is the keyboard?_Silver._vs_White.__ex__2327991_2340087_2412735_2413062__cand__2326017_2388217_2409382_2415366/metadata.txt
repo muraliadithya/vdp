@@ -1,0 +1,2 @@
+question: what color is the keyboard?; Silver. versus White.
+intended: 2388217

@@ -1,0 +1,2 @@
+question: where is the lamp?; Nightstand. versus On the wall.
+intended: 2392702

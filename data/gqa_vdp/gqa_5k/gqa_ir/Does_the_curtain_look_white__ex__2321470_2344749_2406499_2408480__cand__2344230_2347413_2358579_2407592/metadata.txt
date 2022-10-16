@@ -1,0 +1,2 @@
+question: Does the curtain look white?
+intended: 2344230

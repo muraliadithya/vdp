@@ -1,0 +1,2 @@
+question: what is the man wearing?; A helmet. versus Shorts.
+intended: 2406568

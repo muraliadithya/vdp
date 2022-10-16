@@ -1,0 +1,2 @@
+question: what color shirt is the man wearing?; White. versus Red.
+intended: 2348621

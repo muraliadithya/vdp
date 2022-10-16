@@ -1,0 +1,2 @@
+question: Is there a surfboard in this scene?
+intended: 2411676

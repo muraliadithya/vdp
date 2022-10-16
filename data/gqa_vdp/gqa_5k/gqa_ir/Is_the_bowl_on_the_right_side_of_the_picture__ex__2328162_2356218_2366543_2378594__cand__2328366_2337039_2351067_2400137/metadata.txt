@@ -1,0 +1,2 @@
+question: Is the bowl on the right side of the picture?
+intended: 2328366

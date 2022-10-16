@@ -1,0 +1,2 @@
+question: Does the bag have black color?
+intended: 2359391

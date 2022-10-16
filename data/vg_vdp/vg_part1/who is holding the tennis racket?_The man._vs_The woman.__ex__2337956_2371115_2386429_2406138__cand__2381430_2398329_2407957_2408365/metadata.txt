@@ -1,0 +1,2 @@
+question: who is holding the tennis racket?; The man. versus The woman.
+intended: 2408365

@@ -1,0 +1,2 @@
+question: Is there a pot in this image?
+intended: 160

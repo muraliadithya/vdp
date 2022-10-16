@@ -1,0 +1,2 @@
+question: how many players are in the picture?; 1. versus Two.
+intended: 2408913

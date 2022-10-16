@@ -1,0 +1,2 @@
+question: where is the photo taken?; Airport. versus In a park.
+intended: 2392098

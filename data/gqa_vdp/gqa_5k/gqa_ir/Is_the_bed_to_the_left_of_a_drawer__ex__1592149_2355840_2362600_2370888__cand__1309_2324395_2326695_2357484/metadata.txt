@@ -1,0 +1,2 @@
+question: Is the bed to the left of a drawer?
+intended: 2326695

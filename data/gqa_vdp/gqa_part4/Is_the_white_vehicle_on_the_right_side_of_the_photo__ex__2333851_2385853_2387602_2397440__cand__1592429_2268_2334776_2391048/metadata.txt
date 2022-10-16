@@ -1,0 +1,2 @@
+question: Is the white vehicle on the right side of the photo?
+intended: 2391048

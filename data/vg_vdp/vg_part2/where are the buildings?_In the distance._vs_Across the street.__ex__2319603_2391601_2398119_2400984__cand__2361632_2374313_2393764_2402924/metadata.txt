@@ -1,0 +1,2 @@
+question: where are the buildings?; In the distance. versus Across the street.
+intended: 2374313

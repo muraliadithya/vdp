@@ -1,0 +1,2 @@
+question: what kind of shoes is the woman wearing?; Boots. versus High heels.
+intended: 2358642

@@ -1,0 +1,2 @@
+question: what is in the background of the picture?; A mountain. versus Buildings.
+intended: 2411983

@@ -1,0 +1,2 @@
+question: how many giraffes are pictured?; One. versus Two.
+intended: 2396667

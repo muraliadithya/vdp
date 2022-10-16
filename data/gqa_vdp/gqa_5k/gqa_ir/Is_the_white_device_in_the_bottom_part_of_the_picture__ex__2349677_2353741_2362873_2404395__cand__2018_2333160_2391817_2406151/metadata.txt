@@ -1,0 +1,2 @@
+question: Is the white device in the bottom part of the picture?
+intended: 2333160

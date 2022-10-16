@@ -1,0 +1,2 @@
+question: Does the canopy look white?
+intended: 713150

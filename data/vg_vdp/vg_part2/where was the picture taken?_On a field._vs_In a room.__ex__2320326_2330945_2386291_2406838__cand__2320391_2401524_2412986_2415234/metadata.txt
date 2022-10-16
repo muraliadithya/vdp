@@ -1,0 +1,2 @@
+question: where was the picture taken?; On a field. versus In a room.
+intended: 2412986

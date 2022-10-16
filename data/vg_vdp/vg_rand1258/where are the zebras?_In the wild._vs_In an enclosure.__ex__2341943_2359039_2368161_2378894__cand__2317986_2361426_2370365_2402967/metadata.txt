@@ -1,0 +1,2 @@
+question: where are the zebras?; In the wild. versus In an enclosure.
+intended: 2361426

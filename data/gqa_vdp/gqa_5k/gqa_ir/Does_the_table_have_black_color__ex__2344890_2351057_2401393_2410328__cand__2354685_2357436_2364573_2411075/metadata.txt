@@ -1,0 +1,2 @@
+question: Does the table have black color?
+intended: 2411075

@@ -1,0 +1,2 @@
+question: Is the color of the trousers blue?
+intended: 2394380

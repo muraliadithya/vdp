@@ -1,0 +1,2 @@
+question: where is the keyboard?; Desk. versus On the laptop.
+intended: 2316153

@@ -1,0 +1,2 @@
+question: Does the hair have brown color?
+intended: 2323153

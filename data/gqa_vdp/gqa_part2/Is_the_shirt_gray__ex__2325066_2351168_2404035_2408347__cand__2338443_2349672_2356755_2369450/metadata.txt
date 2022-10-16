@@ -1,0 +1,2 @@
+question: Is the shirt gray?
+intended: 2349672

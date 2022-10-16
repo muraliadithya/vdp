@@ -1,0 +1,2 @@
+question: Is the bag to the right of a person?
+intended: 2392768

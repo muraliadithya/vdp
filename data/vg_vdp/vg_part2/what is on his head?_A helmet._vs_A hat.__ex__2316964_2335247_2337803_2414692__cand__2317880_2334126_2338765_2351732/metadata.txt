@@ -1,0 +1,2 @@
+question: what is on his head?; A helmet. versus A hat.
+intended: 2317880

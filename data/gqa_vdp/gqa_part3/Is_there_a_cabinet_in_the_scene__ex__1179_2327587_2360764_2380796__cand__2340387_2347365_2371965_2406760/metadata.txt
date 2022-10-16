@@ -1,0 +1,2 @@
+question: Is there a cabinet in the scene?
+intended: 2347365

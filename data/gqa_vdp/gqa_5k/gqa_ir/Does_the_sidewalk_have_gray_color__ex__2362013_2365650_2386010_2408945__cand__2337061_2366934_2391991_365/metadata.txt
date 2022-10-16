@@ -1,0 +1,2 @@
+question: Does the sidewalk have gray color?
+intended: 2391991

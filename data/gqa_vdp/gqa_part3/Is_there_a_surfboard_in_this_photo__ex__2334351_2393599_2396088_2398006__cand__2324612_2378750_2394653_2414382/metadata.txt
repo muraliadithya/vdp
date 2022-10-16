@@ -1,0 +1,2 @@
+question: Is there a surfboard in this photo?
+intended: 2414382

@@ -1,0 +1,2 @@
+question: Does the hat have gray color?
+intended: 2363384

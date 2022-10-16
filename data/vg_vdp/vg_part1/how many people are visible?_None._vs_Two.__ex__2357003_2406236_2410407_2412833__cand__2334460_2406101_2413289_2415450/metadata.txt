@@ -1,0 +1,2 @@
+question: how many people are visible?; None. versus Two.
+intended: 2413289

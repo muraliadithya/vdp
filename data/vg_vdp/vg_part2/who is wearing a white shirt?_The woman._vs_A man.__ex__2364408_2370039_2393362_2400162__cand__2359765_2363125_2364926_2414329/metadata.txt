@@ -1,0 +1,2 @@
+question: who is wearing a white shirt?; The woman. versus A man.
+intended: 2364926

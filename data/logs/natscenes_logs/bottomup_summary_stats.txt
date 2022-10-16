@@ -1,0 +1,6 @@
+total number of puzzles: 3864
+total solved: 38.48343685300207%
+    intended candidate found: 21.790890269151138%  (56.6% of all solved)
+    unintended candidate found: 16.69254658385093%
+no discriminator found: 4.244306418219462%
+timeout: 57.272256728778466%

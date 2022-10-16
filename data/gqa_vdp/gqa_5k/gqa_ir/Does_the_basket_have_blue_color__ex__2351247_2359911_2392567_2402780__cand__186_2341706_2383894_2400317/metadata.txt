@@ -1,0 +1,2 @@
+question: Does the basket have blue color?
+intended: 2400317

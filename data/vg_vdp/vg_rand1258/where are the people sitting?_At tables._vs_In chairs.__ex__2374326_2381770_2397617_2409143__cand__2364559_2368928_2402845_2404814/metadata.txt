@@ -1,0 +1,2 @@
+question: where are the people sitting?; At tables. versus In chairs.
+intended: 2402845

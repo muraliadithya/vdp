@@ -1,0 +1,2 @@
+question: what color is the keyboard?; White. versus Black.
+intended: 2376706

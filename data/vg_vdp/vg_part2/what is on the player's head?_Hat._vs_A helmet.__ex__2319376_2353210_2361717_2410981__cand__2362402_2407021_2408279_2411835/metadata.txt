@@ -1,0 +1,2 @@
+question: what is on the player's head?; Hat. versus A helmet.
+intended: 2408279

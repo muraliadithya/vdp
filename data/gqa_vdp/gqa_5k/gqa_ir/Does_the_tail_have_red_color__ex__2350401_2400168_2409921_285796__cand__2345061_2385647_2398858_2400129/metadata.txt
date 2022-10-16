@@ -1,0 +1,2 @@
+question: Does the tail have red color?
+intended: 2398858

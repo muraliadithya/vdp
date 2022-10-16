@@ -1,0 +1,2 @@
+question: what is the woman holding?; A umbrella. versus A dog.
+intended: 2405673

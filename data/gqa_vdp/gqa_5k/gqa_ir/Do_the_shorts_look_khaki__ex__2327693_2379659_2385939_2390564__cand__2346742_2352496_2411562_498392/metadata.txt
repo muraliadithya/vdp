@@ -1,0 +1,2 @@
+question: Do the shorts look khaki?
+intended: 2346742

@@ -1,0 +1,2 @@
+question: Does the napkin have white color?
+intended: 2318794

@@ -1,0 +1,2 @@
+question: Is the yellow vehicle on the right side?
+intended: 2353980

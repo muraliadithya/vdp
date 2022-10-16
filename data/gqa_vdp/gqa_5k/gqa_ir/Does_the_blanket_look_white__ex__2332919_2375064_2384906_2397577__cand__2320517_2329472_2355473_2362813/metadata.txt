@@ -1,0 +1,2 @@
+question: Does the blanket look white?
+intended: 2320517

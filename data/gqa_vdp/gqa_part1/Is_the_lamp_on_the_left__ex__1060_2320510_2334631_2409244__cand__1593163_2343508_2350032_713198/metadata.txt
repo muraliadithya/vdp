@@ -1,0 +1,2 @@
+question: Is the lamp on the left?
+intended: 1593163

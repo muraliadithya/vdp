@@ -1,0 +1,2 @@
+question: Is there a truck in the image?
+intended: 2401214

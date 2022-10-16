@@ -1,0 +1,2 @@
+question: Is this a picture of a bathroom?
+intended: 2368078

@@ -1,0 +1,2 @@
+question: Are the people in the bottom part of the image?
+intended: 2362263

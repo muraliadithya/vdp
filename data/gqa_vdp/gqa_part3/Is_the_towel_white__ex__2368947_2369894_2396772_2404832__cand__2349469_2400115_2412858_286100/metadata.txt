@@ -1,0 +1,2 @@
+question: Is the towel white?
+intended: 2349469

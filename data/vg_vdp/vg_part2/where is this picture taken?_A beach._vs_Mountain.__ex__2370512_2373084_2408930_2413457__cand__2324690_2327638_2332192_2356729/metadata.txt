@@ -1,0 +1,2 @@
+question: where is this picture taken?; A beach. versus Mountain.
+intended: 2324690

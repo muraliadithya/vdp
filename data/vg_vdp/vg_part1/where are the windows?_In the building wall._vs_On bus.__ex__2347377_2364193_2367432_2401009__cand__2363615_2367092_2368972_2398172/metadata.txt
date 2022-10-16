@@ -1,0 +1,2 @@
+question: where are the windows?; In the building wall. versus On bus.
+intended: 2367092

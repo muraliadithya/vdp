@@ -1,0 +1,2 @@
+question: what is on the stove?; A pan. versus Pot.
+intended: 2412268

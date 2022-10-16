@@ -1,0 +1,2 @@
+question: Is there a chair in this scene?
+intended: 2389335

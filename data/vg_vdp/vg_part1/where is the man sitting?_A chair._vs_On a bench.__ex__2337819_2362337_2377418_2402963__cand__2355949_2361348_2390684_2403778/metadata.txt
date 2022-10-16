@@ -1,0 +1,2 @@
+question: where is the man sitting?; A chair. versus On a bench.
+intended: 2355949

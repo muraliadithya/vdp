@@ -1,0 +1,2 @@
+question: Is the dog white?
+intended: 2417648

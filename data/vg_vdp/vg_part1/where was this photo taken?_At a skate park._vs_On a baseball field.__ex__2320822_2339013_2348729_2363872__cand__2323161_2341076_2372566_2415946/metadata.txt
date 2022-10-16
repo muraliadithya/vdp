@@ -1,0 +1,2 @@
+question: where was this photo taken?; At a skate park. versus On a baseball field.
+intended: 2341076

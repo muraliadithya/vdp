@@ -1,0 +1,2 @@
+question: Does the tennis racket look white?
+intended: 2399129

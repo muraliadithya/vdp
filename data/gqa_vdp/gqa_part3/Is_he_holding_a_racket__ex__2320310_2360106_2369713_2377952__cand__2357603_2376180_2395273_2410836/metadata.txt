@@ -1,0 +1,2 @@
+question: Is he holding a racket?
+intended: 2376180

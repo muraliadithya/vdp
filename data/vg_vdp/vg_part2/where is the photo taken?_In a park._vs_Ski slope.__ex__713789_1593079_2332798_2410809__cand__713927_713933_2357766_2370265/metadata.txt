@@ -1,0 +1,2 @@
+question: where is the photo taken?; In a park. versus Ski slope.
+intended: 713933

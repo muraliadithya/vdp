@@ -1,0 +1,2 @@
+question: Are there mirrors in the scene?
+intended: 2319880

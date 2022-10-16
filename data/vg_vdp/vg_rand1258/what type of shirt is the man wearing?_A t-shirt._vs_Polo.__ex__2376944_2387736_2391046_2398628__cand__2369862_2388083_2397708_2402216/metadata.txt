@@ -1,0 +1,2 @@
+question: what type of shirt is the man wearing?; A t-shirt. versus Polo.
+intended: 2369862

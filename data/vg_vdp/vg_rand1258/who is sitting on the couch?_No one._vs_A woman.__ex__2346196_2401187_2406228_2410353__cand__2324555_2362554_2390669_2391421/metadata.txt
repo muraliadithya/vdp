@@ -1,0 +1,2 @@
+question: who is sitting on the couch?; No one. versus A woman.
+intended: 2324555

@@ -1,0 +1,2 @@
+question: what kind of shirt is the man wearing?; T-shirt. versus A dress shirt.
+intended: 2361716

@@ -1,0 +1,2 @@
+question: Does the boat have white color?
+intended: 2372709

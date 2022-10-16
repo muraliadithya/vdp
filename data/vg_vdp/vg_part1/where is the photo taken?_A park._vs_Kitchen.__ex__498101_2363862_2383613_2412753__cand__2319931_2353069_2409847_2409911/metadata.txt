@@ -1,0 +1,2 @@
+question: where is the photo taken?; A park. versus Kitchen.
+intended: 2353069

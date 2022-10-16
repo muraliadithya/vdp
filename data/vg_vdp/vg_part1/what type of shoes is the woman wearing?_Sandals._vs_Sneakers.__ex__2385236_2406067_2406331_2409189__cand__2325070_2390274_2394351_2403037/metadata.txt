@@ -1,0 +1,2 @@
+question: what type of shoes is the woman wearing?; Sandals. versus Sneakers.
+intended: 2403037

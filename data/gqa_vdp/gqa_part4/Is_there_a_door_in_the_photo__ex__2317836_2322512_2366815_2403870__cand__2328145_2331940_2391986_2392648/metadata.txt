@@ -1,0 +1,2 @@
+question: Is there a door in the photo?
+intended: 2392648

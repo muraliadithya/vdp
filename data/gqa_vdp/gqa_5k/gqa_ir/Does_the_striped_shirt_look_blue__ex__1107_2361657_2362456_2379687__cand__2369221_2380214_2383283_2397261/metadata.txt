@@ -1,0 +1,2 @@
+question: Does the striped shirt look blue?
+intended: 2369221

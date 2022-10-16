@@ -1,0 +1,2 @@
+question: Does the shoe have brown color?
+intended: 2324993

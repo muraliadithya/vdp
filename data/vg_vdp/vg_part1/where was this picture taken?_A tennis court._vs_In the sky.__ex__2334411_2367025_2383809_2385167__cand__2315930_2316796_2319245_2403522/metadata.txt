@@ -1,0 +1,2 @@
+question: where was this picture taken?; A tennis court. versus In the sky.
+intended: 2319245

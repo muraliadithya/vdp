@@ -1,0 +1,2 @@
+question: what room is shown?; A bathroom. versus Kitchen.
+intended: 2369440

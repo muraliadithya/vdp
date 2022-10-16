@@ -1,0 +1,2 @@
+question: where was the picture taken?; In a parking lot. versus In the living room.
+intended: 2333910

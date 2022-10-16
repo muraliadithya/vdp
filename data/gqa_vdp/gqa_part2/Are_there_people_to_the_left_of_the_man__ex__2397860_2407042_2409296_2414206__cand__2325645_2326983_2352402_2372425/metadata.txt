@@ -1,0 +1,2 @@
+question: Are there people to the left of the man?
+intended: 2352402

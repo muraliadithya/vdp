@@ -1,0 +1,2 @@
+question: Is the hat pink?
+intended: 2325660

@@ -1,0 +1,2 @@
+question: Does the floor have red color?
+intended: 2404975

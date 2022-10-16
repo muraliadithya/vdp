@@ -1,0 +1,2 @@
+question: what type of pants is the man wearing?; Shorts. versus Jeans.
+intended: 2397445

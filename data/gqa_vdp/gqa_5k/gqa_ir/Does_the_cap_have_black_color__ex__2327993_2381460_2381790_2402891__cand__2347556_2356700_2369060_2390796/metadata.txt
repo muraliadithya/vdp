@@ -1,0 +1,2 @@
+question: Does the cap have black color?
+intended: 2390796

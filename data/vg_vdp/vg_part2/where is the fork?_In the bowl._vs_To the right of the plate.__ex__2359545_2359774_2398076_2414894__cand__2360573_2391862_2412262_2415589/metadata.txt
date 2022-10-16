@@ -1,0 +1,2 @@
+question: where is the fork?; In the bowl. versus To the right of the plate.
+intended: 2391862

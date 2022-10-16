@@ -1,0 +1,2 @@
+question: what animal is pictured?; Elephant. versus A bear.
+intended: 2399580

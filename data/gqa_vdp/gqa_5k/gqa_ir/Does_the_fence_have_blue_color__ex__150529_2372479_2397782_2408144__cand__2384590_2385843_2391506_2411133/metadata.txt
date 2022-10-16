@@ -1,0 +1,2 @@
+question: Does the fence have blue color?
+intended: 2384590

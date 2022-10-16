@@ -1,0 +1,2 @@
+question: Is the fence on the right of the image?
+intended: 2378430

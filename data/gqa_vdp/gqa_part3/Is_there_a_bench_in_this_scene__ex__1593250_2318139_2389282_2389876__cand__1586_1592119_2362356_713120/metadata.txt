@@ -1,0 +1,2 @@
+question: Is there a bench in this scene?
+intended: 713120

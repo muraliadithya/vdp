@@ -1,0 +1,2 @@
+question: what is on the building?; A sign. versus Many windows.
+intended: 2370376

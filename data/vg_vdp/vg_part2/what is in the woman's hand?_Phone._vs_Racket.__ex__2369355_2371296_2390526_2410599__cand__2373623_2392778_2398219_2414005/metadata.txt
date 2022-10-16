@@ -1,0 +1,2 @@
+question: what is in the woman's hand?; Phone. versus Racket.
+intended: 2414005

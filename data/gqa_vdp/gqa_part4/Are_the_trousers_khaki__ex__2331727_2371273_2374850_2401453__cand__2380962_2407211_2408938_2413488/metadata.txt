@@ -1,0 +1,2 @@
+question: Are the trousers khaki?
+intended: 2407211

@@ -1,0 +1,2 @@
+question: Are the trousers pink?
+intended: 2345043

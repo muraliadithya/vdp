@@ -1,0 +1,2 @@
+question: Is this a yellow bus?
+intended: 2377201

@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "smiling": ["object"], "happy": ["object"]}, "elements": {"object": ["1262774", "1262775"], "label": ["woman", "pond"]}, "interpretation": {"has_label": [["1262774", "woman"], ["1262775", "pond"]], "smiling": [["1262774"]], "happy": [["1262774"]]}}

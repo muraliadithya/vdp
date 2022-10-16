@@ -1,0 +1,2 @@
+question: Is there a truck that is not red?
+intended: 2329889

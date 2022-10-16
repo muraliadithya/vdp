@@ -1,0 +1,2 @@
+question: Does the shirt have gray color?
+intended: 2336180

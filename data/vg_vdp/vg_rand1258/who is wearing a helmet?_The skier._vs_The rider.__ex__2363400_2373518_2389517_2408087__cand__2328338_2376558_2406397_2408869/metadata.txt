@@ -1,0 +1,2 @@
+question: who is wearing a helmet?; The skier. versus The rider.
+intended: 2376558

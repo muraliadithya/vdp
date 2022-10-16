@@ -1,0 +1,2 @@
+question: what is in the background?; A building. versus Bushes.
+intended: 2374484

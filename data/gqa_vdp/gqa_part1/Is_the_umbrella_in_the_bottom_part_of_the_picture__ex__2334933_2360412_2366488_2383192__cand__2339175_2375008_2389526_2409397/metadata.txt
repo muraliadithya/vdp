@@ -1,0 +1,2 @@
+question: Is the umbrella in the bottom part of the picture?
+intended: 2409397

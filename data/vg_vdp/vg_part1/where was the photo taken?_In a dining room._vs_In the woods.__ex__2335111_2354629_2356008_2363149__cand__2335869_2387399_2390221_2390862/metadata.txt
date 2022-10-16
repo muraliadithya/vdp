@@ -1,0 +1,2 @@
+question: where was the photo taken?; In a dining room. versus In the woods.
+intended: 2390221

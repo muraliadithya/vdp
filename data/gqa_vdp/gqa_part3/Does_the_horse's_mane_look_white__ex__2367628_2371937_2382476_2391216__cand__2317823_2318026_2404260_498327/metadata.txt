@@ -1,0 +1,2 @@
+question: Does the horse's mane look white?
+intended: 2404260

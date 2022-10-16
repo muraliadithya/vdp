@@ -1,0 +1,2 @@
+question: what type of flooring is shown?; Carpet. versus Wood.
+intended: 2372868

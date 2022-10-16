@@ -1,0 +1,2 @@
+question: what is covering the window?; A curtain. versus Curtains.
+intended: 2344216

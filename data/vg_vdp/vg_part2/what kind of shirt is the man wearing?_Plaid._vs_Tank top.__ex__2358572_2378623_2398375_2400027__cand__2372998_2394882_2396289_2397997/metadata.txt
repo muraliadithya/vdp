@@ -1,0 +1,2 @@
+question: what kind of shirt is the man wearing?; Plaid. versus Tank top.
+intended: 2394882

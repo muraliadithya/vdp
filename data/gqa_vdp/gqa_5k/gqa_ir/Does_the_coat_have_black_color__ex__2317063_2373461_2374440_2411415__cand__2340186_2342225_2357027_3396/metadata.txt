@@ -1,0 +1,2 @@
+question: Does the coat have black color?
+intended: 2342225

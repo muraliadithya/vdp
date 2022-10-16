@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"]}, "interpretation": {}, "elements": {"object": [], "label": []}, "image": {"id": 2392996, "url": "https://cs.stanford.edu/people/rak248/VG_100K_2/2392996.jpg", "width": 362, "height": 500, "coco_id": 289229, "flickr_id": 3373399078}}

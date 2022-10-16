@@ -1,0 +1,2 @@
+question: what color is the man's pants?; White. versus Blue.
+intended: 2368886

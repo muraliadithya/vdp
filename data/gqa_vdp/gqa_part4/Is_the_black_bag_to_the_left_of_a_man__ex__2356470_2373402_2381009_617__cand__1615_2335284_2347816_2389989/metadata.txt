@@ -1,0 +1,2 @@
+question: Is the black bag to the left of a man?
+intended: 1615

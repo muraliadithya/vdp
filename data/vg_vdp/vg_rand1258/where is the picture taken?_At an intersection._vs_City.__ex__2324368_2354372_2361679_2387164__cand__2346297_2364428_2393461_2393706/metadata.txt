@@ -1,0 +1,2 @@
+question: where is the picture taken?; At an intersection. versus City.
+intended: 2364428

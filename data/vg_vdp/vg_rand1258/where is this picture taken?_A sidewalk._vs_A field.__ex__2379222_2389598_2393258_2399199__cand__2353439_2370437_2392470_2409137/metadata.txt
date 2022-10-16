@@ -1,0 +1,2 @@
+question: where is this picture taken?; A sidewalk. versus A field.
+intended: 2370437

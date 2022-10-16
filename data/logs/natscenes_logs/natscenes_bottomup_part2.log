@@ -1,0 +1,4361 @@
+
+
+Puzzle 2on1_10
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_10/test/5.json
+
+Puzzle 2on1_102
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_102/test/4.json
+
+Puzzle 2on1_105
+TIMEOUT: 060 sec
+
+Puzzle 2on1_108
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_108/test/0.json
+
+Puzzle 2on1_110
+Concept: Exists x1. (Exists x0. ((left(x0, x1)) /\ (sofa(x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_110/test/16.json
+
+Puzzle 2on1_113
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_113/test/4.json
+
+Puzzle 2on1_116
+No discriminator found for puzzle 2on1_116
+
+Puzzle 2on1_119
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_119/test/3.json
+
+Puzzle 2on1_121
+TIMEOUT: 060 sec
+
+Puzzle 2on1_124
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_124/test/9.json
+
+Puzzle 2on1_127
+No discriminator found for puzzle 2on1_127
+
+Puzzle 2on1_13
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_13/test/4.json
+
+Puzzle 2on1_132
+No discriminator found for puzzle 2on1_132
+
+Puzzle 2on1_135
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_135/test/3.json
+
+Puzzle 2on1_138
+TIMEOUT: 060 sec
+
+Puzzle 2on1_140
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_140/test/4.json
+
+Puzzle 2on1_143
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_143/test/2.json
+
+Puzzle 2on1_146
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_146/test/2.json
+
+Puzzle 2on1_149
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_149/test/2.json
+
+Puzzle 2on1_151
+TIMEOUT: 060 sec
+
+Puzzle 2on1_154
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_154/test/9.json
+
+Puzzle 2on1_157
+TIMEOUT: 060 sec
+
+Puzzle 2on1_16
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_16/test/4.json
+
+Puzzle 2on1_162
+Concept: Exists x1. (Exists x0. ((right(x0, x1)) /\ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_162/test/8.json
+
+Puzzle 2on1_165
+TIMEOUT: 060 sec
+
+Puzzle 2on1_168
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_168/test/0.json
+
+Puzzle 2on1_170
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_170/test/5.json
+
+Puzzle 2on1_173
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_173/test/2.json
+
+Puzzle 2on1_176
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_176/test/5.json
+
+Puzzle 2on1_179
+No discriminator found for puzzle 2on1_179
+
+Puzzle 2on1_181
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_181/test/5.json
+
+Puzzle 2on1_184
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_184/test/2.json
+
+Puzzle 2on1_187
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_187/test/3.json
+
+Puzzle 2on1_19
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_19/test/9.json
+
+Puzzle 2on1_192
+No discriminator found for puzzle 2on1_192
+
+Puzzle 2on1_195
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_195/test/5.json
+
+Puzzle 2on1_198
+TIMEOUT: 060 sec
+
+Puzzle 2on1_20
+No discriminator found for puzzle 2on1_20
+
+Puzzle 2on1_202
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_202/test/3.json
+
+Puzzle 2on1_205
+TIMEOUT: 060 sec
+
+Puzzle 2on1_208
+TIMEOUT: 060 sec
+
+Puzzle 2on1_210
+TIMEOUT: 060 sec
+
+Puzzle 2on1_213
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_213/test/2.json
+
+Puzzle 2on1_216
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_216/test/9.json
+
+Puzzle 2on1_219
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_219/test/16.json
+
+Puzzle 2on1_221
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_221/test/5.json
+
+Puzzle 2on1_224
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_224/test/9.json
+
+Puzzle 2on1_227
+TIMEOUT: 060 sec
+
+Puzzle 2on1_23
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_23/test/4.json
+
+Puzzle 2on1_232
+Concept: Exists x1. (Exists x0. ((right(x0, x1)) /\ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_232/test/8.json
+
+Puzzle 2on1_235
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_235/test/3.json
+
+Puzzle 2on1_238
+TIMEOUT: 060 sec
+
+Puzzle 2on1_240
+Concept: Exists x1. (Forall x0. ((sofa(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_240/test/3.json
+
+Puzzle 2on1_243
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_243/test/2.json
+
+Puzzle 2on1_246
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_246/test/0.json
+
+Puzzle 2on1_249
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_249/test/5.json
+
+Puzzle 2on1_251
+TIMEOUT: 060 sec
+
+Puzzle 2on1_254
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_254/test/3.json
+
+Puzzle 2on1_257
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_257/test/0.json
+
+Puzzle 2on1_26
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_26/test/0.json
+
+Puzzle 2on1_262
+TIMEOUT: 060 sec
+
+Puzzle 2on1_265
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_265/test/3.json
+
+Puzzle 2on1_268
+Concept: Exists x1. (Exists x0. ((right(x0, x1)) /\ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_268/test/8.json
+
+Puzzle 2on1_270
+TIMEOUT: 060 sec
+
+Puzzle 2on1_273
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_273/test/3.json
+
+Puzzle 2on1_276
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_276/test/2.json
+
+Puzzle 2on1_279
+No discriminator found for puzzle 2on1_279
+
+Puzzle 2on1_281
+No discriminator found for puzzle 2on1_281
+
+Puzzle 2on1_284
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_284/test/0.json
+
+Puzzle 2on1_287
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_287/test/9.json
+
+Puzzle 2on1_29
+TIMEOUT: 060 sec
+
+Puzzle 2on1_292
+No discriminator found for puzzle 2on1_292
+
+Puzzle 2on1_295
+Concept: Exists x1. (Exists x0. ((left(x0, x1)) /\ (sofa(x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_295/test/16.json
+
+Puzzle 2on1_298
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_298/test/3.json
+
+Puzzle 2on1_30
+No discriminator found for puzzle 2on1_30
+
+Puzzle 2on1_32
+No discriminator found for puzzle 2on1_32
+
+Puzzle 2on1_35
+TIMEOUT: 060 sec
+
+Puzzle 2on1_38
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_38/test/4.json
+
+Puzzle 2on1_40
+No discriminator found for puzzle 2on1_40
+
+Puzzle 2on1_43
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_43/test/2.json
+
+Puzzle 2on1_46
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_46/test/5.json
+
+Puzzle 2on1_49
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_49/test/4.json
+
+Puzzle 2on1_51
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_51/test/4.json
+
+Puzzle 2on1_54
+TIMEOUT: 060 sec
+
+Puzzle 2on1_57
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_57/test/3.json
+
+Puzzle 2on1_6
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_6/test/3.json
+
+Puzzle 2on1_62
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_62/test/5.json
+
+Puzzle 2on1_65
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_65/test/3.json
+
+Puzzle 2on1_68
+TIMEOUT: 060 sec
+
+Puzzle 2on1_70
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_70/test/2.json
+
+Puzzle 2on1_73
+TIMEOUT: 060 sec
+
+Puzzle 2on1_76
+Concept: Exists x1. (Forall x0. ((sofa(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_76/test/5.json
+
+Puzzle 2on1_79
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/2on1_79/test/2.json
+
+Puzzle 2on1_81
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_81/test/2.json
+
+Puzzle 2on1_84
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_84/test/4.json
+
+Puzzle 2on1_87
+TIMEOUT: 060 sec
+
+Puzzle 2on1_9
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/2on1_9/test/2.json
+
+Puzzle 2on1_92
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_92/test/3.json
+
+Puzzle 2on1_95
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_95/test/2.json
+
+Puzzle 2on1_98
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/2on1_98/test/3.json
+
+Puzzle allcatsonsofas_10
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_10/test/0.json
+
+Puzzle allcatsonsofas_102
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_105
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_105/test/3.json
+
+Puzzle allcatsonsofas_108
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_108/test/4.json
+
+Puzzle allcatsonsofas_110
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_113
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_113/test/3.json
+
+Puzzle allcatsonsofas_116
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_116/test/3.json
+
+Puzzle allcatsonsofas_119
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_121
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_124
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_124/test/5.json
+
+Puzzle allcatsonsofas_127
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_13
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_132
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_135
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_138
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_140
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_143
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_146
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_146/test/5.json
+
+Puzzle allcatsonsofas_149
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_149/test/9.json
+
+Puzzle allcatsonsofas_151
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_151/test/3.json
+
+Puzzle allcatsonsofas_154
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_154/test/5.json
+
+Puzzle allcatsonsofas_157
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_16
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_16/test/3.json
+
+Puzzle allcatsonsofas_162
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_165
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_168
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_168/test/7.json
+
+Puzzle allcatsonsofas_170
+Concept: Exists x1. (Exists x0. ((right(x1, x0)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_170/test/16.json
+
+Puzzle allcatsonsofas_173
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_176
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_176/test/5.json
+
+Puzzle allcatsonsofas_179
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_179/test/3.json
+
+Puzzle allcatsonsofas_181
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_184
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_184/test/5.json
+
+Puzzle allcatsonsofas_187
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_187/test/5.json
+
+Puzzle allcatsonsofas_19
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_192
+Concept: Exists x1. (Exists x0. ((left(x0, x1)) /\ (sofa(x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_192/test/16.json
+
+Puzzle allcatsonsofas_195
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_195/test/0.json
+
+Puzzle allcatsonsofas_198
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_198/test/5.json
+
+Puzzle allcatsonsofas_20
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_202
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_205
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_205/test/5.json
+
+Puzzle allcatsonsofas_208
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_210
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_210/test/3.json
+
+Puzzle allcatsonsofas_213
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_216
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_219
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_219/test/10.json
+
+Puzzle allcatsonsofas_221
+Concept: Forall x1. (Forall x0. ((not(book(x0))) /\ (not(pottedplant(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_221/test/10.json
+
+Puzzle allcatsonsofas_224
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_227
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_227/test/3.json
+
+Puzzle allcatsonsofas_23
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_232
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_232/test/5.json
+
+Puzzle allcatsonsofas_235
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_235/test/4.json
+
+Puzzle allcatsonsofas_238
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_238/test/9.json
+
+Puzzle allcatsonsofas_240
+Concept: Forall x1. (Forall x0. ((not(book(x1))) /\ (not(chair(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_240/test/10.json
+
+Puzzle allcatsonsofas_243
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_246
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_246/test/9.json
+
+Puzzle allcatsonsofas_249
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_251
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_251/test/5.json
+
+Puzzle allcatsonsofas_254
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_254/test/9.json
+
+Puzzle allcatsonsofas_257
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_26
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_262
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_265
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_265/test/9.json
+
+Puzzle allcatsonsofas_268
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_270
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_273
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_276
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_279
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_279/test/5.json
+
+Puzzle allcatsonsofas_281
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_284
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_287
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_287/test/3.json
+
+Puzzle allcatsonsofas_29
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_29/test/9.json
+
+Puzzle allcatsonsofas_292
+Concept: Forall x1. (Exists x0. ((sofa(x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_292/test/2.json
+
+Puzzle allcatsonsofas_295
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_298
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_30
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_32
+Concept: Forall x1. (Exists x0. ((cat(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_32/test/7.json
+
+Puzzle allcatsonsofas_35
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_35/test/2.json
+
+Puzzle allcatsonsofas_38
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_40
+Concept: Forall x1. (Forall x0. ((not(book(x0))) /\ (not(pottedplant(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_40/test/10.json
+
+Puzzle allcatsonsofas_43
+Concept: Forall x1. (Exists x0. ((sofa(x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_43/test/2.json
+
+Puzzle allcatsonsofas_46
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_46/test/10.json
+
+Puzzle allcatsonsofas_49
+Concept: Exists x1. (Exists x0. ((left(x1, x0)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_49/test/16.json
+
+Puzzle allcatsonsofas_51
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_51/test/4.json
+
+Puzzle allcatsonsofas_54
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_57
+Concept: Exists x1. (Exists x0. ((left(x1, x0)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_57/test/16.json
+
+Puzzle allcatsonsofas_6
+Concept: Forall x1. (Exists x0. ((sofa(x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_6/test/5.json
+
+Puzzle allcatsonsofas_62
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_62/test/3.json
+
+Puzzle allcatsonsofas_65
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_65/test/5.json
+
+Puzzle allcatsonsofas_68
+Concept: Forall x1. (Forall x0. ((not(book(x0))) /\ (not(pottedplant(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_68/test/10.json
+
+Puzzle allcatsonsofas_70
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_70/test/2.json
+
+Puzzle allcatsonsofas_73
+Concept: Exists x1. (Exists x0. ((left(x1, x0)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_73/test/16.json
+
+Puzzle allcatsonsofas_76
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_76/test/9.json
+
+Puzzle allcatsonsofas_79
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_79/test/2.json
+
+Puzzle allcatsonsofas_81
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_84
+Concept: Exists x1. (Exists x0. ((left(x1, x0)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_84/test/16.json
+
+Puzzle allcatsonsofas_87
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_9
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_9/test/0.json
+
+Puzzle allcatsonsofas_92
+TIMEOUT: 060 sec
+
+Puzzle allcatsonsofas_95
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_95/test/2.json
+
+Puzzle allcatsonsofas_98
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allcatsonsofas_98/test/3.json
+
+Puzzle alldogsonsofas_10
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_13
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_16
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_19
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_21
+Concept: Forall x1. (Exists x0. ((right(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_21/test/15.json
+
+Puzzle alldogsonsofas_24
+Concept: Exists x1. (Forall x0. ((dog(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_24/test/17.json
+
+Puzzle alldogsonsofas_27
+Concept: Forall x1. (Forall x0. ((not(bowl(x1))) /\ (not(cake(x0)))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_27/test/15.json
+
+Puzzle alldogsonsofas_3
+Concept: Exists x1. (Forall x0. ((dog(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_3/test/15.json
+
+Puzzle alldogsonsofas_32
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_35
+Concept: Exists x1. (Forall x0. ((dog(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_35/test/15.json
+
+Puzzle alldogsonsofas_38
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_40
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_43
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_46
+Concept: Exists x1. (Forall x0. ((dog(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/alldogsonsofas_46/test/15.json
+
+Puzzle alldogsonsofas_5
+TIMEOUT: 060 sec
+
+Puzzle alldogsonsofas_8
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_10
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_10/test/teddy4.json
+
+Puzzle allteddysonsofas_102
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_105
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_105/test/teddy2.json
+
+Puzzle allteddysonsofas_108
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_108/test/teddy12.json
+
+Puzzle allteddysonsofas_110
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_113
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_113/test/teddy1.json
+
+Puzzle allteddysonsofas_116
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_116/test/teddy4.json
+
+Puzzle allteddysonsofas_119
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_121
+Concept: Forall x1. ((sofa(x1)) \/ (teddy bear(x1)))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_121/test/teddy12.json
+
+Puzzle allteddysonsofas_124
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_124/test/teddy12.json
+
+Puzzle allteddysonsofas_127
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_127/test/teddy2.json
+
+Puzzle allteddysonsofas_13
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_132
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_132/test/teddy6.json
+
+Puzzle allteddysonsofas_135
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_138
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_138/test/teddy8.json
+
+Puzzle allteddysonsofas_140
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_140/test/teddy4.json
+
+Puzzle allteddysonsofas_143
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_143/test/teddy12.json
+
+Puzzle allteddysonsofas_146
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_146/test/teddy6.json
+
+Puzzle allteddysonsofas_149
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_149/test/teddy4.json
+
+Puzzle allteddysonsofas_151
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_151/test/teddy7.json
+
+Puzzle allteddysonsofas_154
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_154/test/teddy2.json
+
+Puzzle allteddysonsofas_157
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_157/test/teddy5.json
+
+Puzzle allteddysonsofas_16
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_16/test/teddy12.json
+
+Puzzle allteddysonsofas_162
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_162/test/teddy5.json
+
+Puzzle allteddysonsofas_165
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_165/test/teddy1.json
+
+Puzzle allteddysonsofas_168
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_168/test/teddy5.json
+
+Puzzle allteddysonsofas_170
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_170/test/teddy9.json
+
+Puzzle allteddysonsofas_173
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_173/test/teddy4.json
+
+Puzzle allteddysonsofas_176
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_179
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_181
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_181/test/teddy9.json
+
+Puzzle allteddysonsofas_184
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_187
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_19
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_19/test/teddy6.json
+
+Puzzle allteddysonsofas_192
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_192/test/teddy6.json
+
+Puzzle allteddysonsofas_195
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_198
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_20
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_202
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_205
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_208
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_210
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_213
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_213/test/teddy2.json
+
+Puzzle allteddysonsofas_216
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_219
+Concept: Forall x1. (Forall x0. ((not(chair(x1))) /\ (not(pottedplant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_219/test/teddy12.json
+
+Puzzle allteddysonsofas_221
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_224
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_227
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_227/test/teddy6.json
+
+Puzzle allteddysonsofas_23
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_232
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_235
+Concept: Exists x1. (Forall x0. ((teddy bear(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_235/test/teddy9.json
+
+Puzzle allteddysonsofas_238
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_240
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_240/test/teddy7.json
+
+Puzzle allteddysonsofas_243
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_243/test/teddy7.json
+
+Puzzle allteddysonsofas_246
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_246/test/teddy8.json
+
+Puzzle allteddysonsofas_249
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_251
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (sofa(x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_251/test/teddy2.json
+
+Puzzle allteddysonsofas_254
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_254/test/teddy4.json
+
+Puzzle allteddysonsofas_257
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_257/test/teddy4.json
+
+Puzzle allteddysonsofas_26
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_26/test/teddy8.json
+
+Puzzle allteddysonsofas_262
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_265
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_265/test/teddy4.json
+
+Puzzle allteddysonsofas_268
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_268/test/teddy8.json
+
+Puzzle allteddysonsofas_270
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_273
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_276
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_276/test/teddy5.json
+
+Puzzle allteddysonsofas_279
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_281
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_281/test/teddy4.json
+
+Puzzle allteddysonsofas_284
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_287
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_287/test/teddy2.json
+
+Puzzle allteddysonsofas_29
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_29/test/teddy5.json
+
+Puzzle allteddysonsofas_292
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_292/test/teddy5.json
+
+Puzzle allteddysonsofas_295
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_295/test/teddy6.json
+
+Puzzle allteddysonsofas_298
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_30
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_32
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_35
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_35/test/teddy6.json
+
+Puzzle allteddysonsofas_38
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_38/test/teddy5.json
+
+Puzzle allteddysonsofas_40
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_40/test/teddy6.json
+
+Puzzle allteddysonsofas_43
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_46
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_49
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_49/test/teddy6.json
+
+Puzzle allteddysonsofas_51
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(teddy bear(x0)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_51/test/teddy7.json
+
+Puzzle allteddysonsofas_54
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_57
+Concept: Exists x1. (Exists x0. ((bowl(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_57/test/teddy4.json
+
+Puzzle allteddysonsofas_6
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_6/test/teddy5.json
+
+Puzzle allteddysonsofas_62
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_65
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_65/test/teddy4.json
+
+Puzzle allteddysonsofas_68
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_70
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_73
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_73/test/teddy7.json
+
+Puzzle allteddysonsofas_76
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_79
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_81
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_81/test/teddy6.json
+
+Puzzle allteddysonsofas_84
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_84/test/teddy5.json
+
+Puzzle allteddysonsofas_87
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_9
+Concept: Exists x1. (Exists x0. ((sofa(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_9/test/teddy6.json
+
+Puzzle allteddysonsofas_92
+TIMEOUT: 060 sec
+
+Puzzle allteddysonsofas_95
+Concept: Forall x1. (Exists x0. ((within(x1, x0)) \/ (not(teddy bear(x1)))))
+Candidate Name: /home/ubuntu/natscenes/allteddysonsofas_95/test/teddy4.json
+
+Puzzle allteddysonsofas_98
+TIMEOUT: 060 sec
+
+Puzzle catontv_10
+Concept: Forall x1. (Forall x0. ((cat(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_10/test/19.json
+
+Puzzle catontv_102
+Concept: Forall x1. (Forall x0. ((pottedplant(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_102/test/23.json
+
+Puzzle catontv_105
+Concept: Exists x1. (Forall x0. ((remote(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_105/test/24.json
+
+Puzzle catontv_108
+Concept: Forall x1. (Forall x0. ((tvmonitor(x0)) \/ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_108/test/25.json
+
+Puzzle catontv_110
+Concept: Forall x1. (Exists x0. ((right(x0, x1)) \/ (tvmonitor(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_110/test/26.json
+
+Puzzle catontv_113
+Concept: Exists x1. (Forall x0. ((remote(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_113/test/24.json
+
+Puzzle catontv_116
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_116/test/26.json
+
+Puzzle catontv_119
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_119/test/26.json
+
+Puzzle catontv_13
+Concept: Exists x1. (Forall x0. ((remote(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_13/test/24.json
+
+Puzzle catontv_16
+Concept: Forall x1. (Forall x0. ((not(right(x1, x0))) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_16/test/19.json
+
+Puzzle catontv_19
+Concept: Forall x1. (Forall x0. ((not(right(x1, x0))) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_19/test/19.json
+
+Puzzle catontv_21
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (keyboard(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_21/test/23.json
+
+Puzzle catontv_24
+Concept: Exists x1. (Exists x0. ((dog(x1)) \/ (mouse(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_24/test/23.json
+
+Puzzle catontv_27
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (remote(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_27/test/24.json
+
+Puzzle catontv_3
+Concept: Exists x1. (Forall x0. ((pottedplant(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_3/test/23.json
+
+Puzzle catontv_32
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_32/test/24.json
+
+Puzzle catontv_35
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_35/test/20.json
+
+Puzzle catontv_38
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_38/test/20.json
+
+Puzzle catontv_40
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_40/test/25.json
+
+Puzzle catontv_43
+Concept: Exists x1. (Exists x0. ((book(x0)) \/ (keyboard(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_43/test/23.json
+
+Puzzle catontv_46
+Concept: Exists x1. (Exists x0. ((book(x1)) \/ (remote(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_46/test/24.json
+
+Puzzle catontv_49
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_49/test/19.json
+
+Puzzle catontv_51
+Concept: Exists x1. (Exists x0. ((book(x1)) \/ (remote(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_51/test/24.json
+
+Puzzle catontv_54
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_54/test/19.json
+
+Puzzle catontv_57
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_57/test/19.json
+
+Puzzle catontv_6
+Concept: Exists x1. (Forall x0. ((remote(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_6/test/24.json
+
+Puzzle catontv_62
+Concept: Forall x1. (Forall x0. ((not(book(x1))) /\ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_62/test/23.json
+
+Puzzle catontv_65
+Concept: Forall x1. (Forall x0. ((not(book(x1))) /\ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_65/test/24.json
+
+Puzzle catontv_68
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (dog(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_68/test/21.json
+
+Puzzle catontv_70
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (dog(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_70/test/21.json
+
+Puzzle catontv_73
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_73/test/24.json
+
+Puzzle catontv_76
+Concept: Exists x1. (Exists x0. ((left(x0, x1)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_76/test/27.json
+
+Puzzle catontv_79
+Concept: Exists x1. (Forall x0. ((cat(x0)) \/ (dog(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_79/test/21.json
+
+Puzzle catontv_81
+Concept: Exists x1. (Exists x0. ((book(x1)) \/ (mouse(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_81/test/23.json
+
+Puzzle catontv_84
+Concept: Exists x1. (Exists x0. ((book(x0)) \/ (keyboard(x1))))
+Candidate Name: /home/ubuntu/natscenes/catontv_84/test/23.json
+
+Puzzle catontv_87
+Concept: Exists x1. (Exists x0. ((book(x1)) \/ (remote(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_87/test/24.json
+
+Puzzle catontv_9
+Concept: Forall x1. (Forall x0. ((cat(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/catontv_9/test/19.json
+
+Puzzle catontv_92
+Concept: Exists x1. (Exists x0. ((dog(x1)) \/ (remote(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_92/test/24.json
+
+Puzzle catontv_95
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_95/test/20.json
+
+Puzzle catontv_98
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (tvmonitor(x0))))
+Candidate Name: /home/ubuntu/natscenes/catontv_98/test/20.json
+
+Puzzle desktop_10
+TIMEOUT: 060 sec
+
+Puzzle desktop_102
+TIMEOUT: 060 sec
+
+Puzzle desktop_105
+TIMEOUT: 060 sec
+
+Puzzle desktop_108
+TIMEOUT: 060 sec
+
+Puzzle desktop_110
+TIMEOUT: 060 sec
+
+Puzzle desktop_113
+TIMEOUT: 060 sec
+
+Puzzle desktop_116
+TIMEOUT: 060 sec
+
+Puzzle desktop_119
+TIMEOUT: 060 sec
+
+Puzzle desktop_121
+TIMEOUT: 060 sec
+
+Puzzle desktop_124
+TIMEOUT: 060 sec
+
+Puzzle desktop_127
+Concept: Forall x1. (Forall x0. ((chair(x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/desktop_127/test/30.json
+
+Puzzle desktop_13
+Concept: Exists x1. (Forall x0. ((keyboard(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/desktop_13/test/29.json
+
+Puzzle desktop_132
+TIMEOUT: 060 sec
+
+Puzzle desktop_135
+TIMEOUT: 060 sec
+
+Puzzle desktop_138
+TIMEOUT: 060 sec
+
+Puzzle desktop_140
+TIMEOUT: 060 sec
+
+Puzzle desktop_143
+TIMEOUT: 060 sec
+
+Puzzle desktop_146
+TIMEOUT: 060 sec
+
+Puzzle desktop_149
+TIMEOUT: 060 sec
+
+Puzzle desktop_151
+TIMEOUT: 060 sec
+
+Puzzle desktop_154
+TIMEOUT: 060 sec
+
+Puzzle desktop_157
+TIMEOUT: 060 sec
+
+Puzzle desktop_16
+TIMEOUT: 060 sec
+
+Puzzle desktop_162
+TIMEOUT: 060 sec
+
+Puzzle desktop_165
+TIMEOUT: 060 sec
+
+Puzzle desktop_168
+TIMEOUT: 060 sec
+
+Puzzle desktop_170
+TIMEOUT: 060 sec
+
+Puzzle desktop_173
+TIMEOUT: 060 sec
+
+Puzzle desktop_176
+TIMEOUT: 060 sec
+
+Puzzle desktop_179
+TIMEOUT: 060 sec
+
+Puzzle desktop_181
+TIMEOUT: 060 sec
+
+Puzzle desktop_184
+TIMEOUT: 060 sec
+
+Puzzle desktop_187
+TIMEOUT: 060 sec
+
+Puzzle desktop_19
+TIMEOUT: 060 sec
+
+Puzzle desktop_192
+TIMEOUT: 060 sec
+
+Puzzle desktop_195
+TIMEOUT: 060 sec
+
+Puzzle desktop_198
+TIMEOUT: 060 sec
+
+Puzzle desktop_20
+TIMEOUT: 060 sec
+
+Puzzle desktop_202
+TIMEOUT: 060 sec
+
+Puzzle desktop_205
+TIMEOUT: 060 sec
+
+Puzzle desktop_208
+TIMEOUT: 060 sec
+
+Puzzle desktop_210
+TIMEOUT: 060 sec
+
+Puzzle desktop_213
+TIMEOUT: 060 sec
+
+Puzzle desktop_216
+TIMEOUT: 060 sec
+
+Puzzle desktop_219
+TIMEOUT: 060 sec
+
+Puzzle desktop_221
+TIMEOUT: 060 sec
+
+Puzzle desktop_224
+TIMEOUT: 060 sec
+
+Puzzle desktop_227
+TIMEOUT: 060 sec
+
+Puzzle desktop_23
+TIMEOUT: 060 sec
+
+Puzzle desktop_232
+TIMEOUT: 060 sec
+
+Puzzle desktop_235
+TIMEOUT: 060 sec
+
+Puzzle desktop_238
+TIMEOUT: 060 sec
+
+Puzzle desktop_240
+TIMEOUT: 060 sec
+
+Puzzle desktop_243
+TIMEOUT: 060 sec
+
+Puzzle desktop_246
+TIMEOUT: 060 sec
+
+Puzzle desktop_249
+TIMEOUT: 060 sec
+
+Puzzle desktop_251
+TIMEOUT: 060 sec
+
+Puzzle desktop_254
+TIMEOUT: 060 sec
+
+Puzzle desktop_257
+TIMEOUT: 060 sec
+
+Puzzle desktop_26
+TIMEOUT: 060 sec
+
+Puzzle desktop_262
+TIMEOUT: 060 sec
+
+Puzzle desktop_265
+Concept: Exists x1. (Exists x0. ((book(x0)) \/ (cup(x1))))
+Candidate Name: /home/ubuntu/natscenes/desktop_265/test/34.json
+
+Puzzle desktop_268
+TIMEOUT: 060 sec
+
+Puzzle desktop_270
+TIMEOUT: 060 sec
+
+Puzzle desktop_273
+TIMEOUT: 060 sec
+
+Puzzle desktop_276
+TIMEOUT: 060 sec
+
+Puzzle desktop_279
+TIMEOUT: 060 sec
+
+Puzzle desktop_281
+TIMEOUT: 060 sec
+
+Puzzle desktop_284
+TIMEOUT: 060 sec
+
+Puzzle desktop_287
+TIMEOUT: 060 sec
+
+Puzzle desktop_29
+TIMEOUT: 060 sec
+
+Puzzle desktop_292
+TIMEOUT: 060 sec
+
+Puzzle desktop_295
+TIMEOUT: 060 sec
+
+Puzzle desktop_298
+TIMEOUT: 060 sec
+
+Puzzle desktop_30
+TIMEOUT: 060 sec
+
+Puzzle desktop_32
+TIMEOUT: 060 sec
+
+Puzzle desktop_35
+TIMEOUT: 060 sec
+
+Puzzle desktop_38
+TIMEOUT: 060 sec
+
+Puzzle desktop_40
+TIMEOUT: 060 sec
+
+Puzzle desktop_43
+TIMEOUT: 060 sec
+
+Puzzle desktop_46
+TIMEOUT: 060 sec
+
+Puzzle desktop_49
+TIMEOUT: 060 sec
+
+Puzzle desktop_51
+TIMEOUT: 060 sec
+
+Puzzle desktop_54
+TIMEOUT: 060 sec
+
+Puzzle desktop_57
+TIMEOUT: 060 sec
+
+Puzzle desktop_6
+TIMEOUT: 060 sec
+
+Puzzle desktop_62
+TIMEOUT: 060 sec
+
+Puzzle desktop_65
+Concept: Exists x1. (Exists x0. ((keyboard(x1)) /\ (not(left(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/desktop_65/test/30.json
+
+Puzzle desktop_68
+TIMEOUT: 060 sec
+
+Puzzle desktop_70
+TIMEOUT: 060 sec
+
+Puzzle desktop_73
+TIMEOUT: 060 sec
+
+Puzzle desktop_76
+TIMEOUT: 060 sec
+
+Puzzle desktop_79
+Concept: Exists x1. (Exists x0. ((book(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/desktop_79/test/37.json
+
+Puzzle desktop_81
+TIMEOUT: 060 sec
+
+Puzzle desktop_84
+TIMEOUT: 060 sec
+
+Puzzle desktop_87
+TIMEOUT: 060 sec
+
+Puzzle desktop_9
+TIMEOUT: 060 sec
+
+Puzzle desktop_92
+TIMEOUT: 060 sec
+
+Puzzle desktop_95
+TIMEOUT: 060 sec
+
+Puzzle desktop_98
+TIMEOUT: 060 sec
+
+Puzzle dogherded_10
+TIMEOUT: 060 sec
+
+Puzzle dogherded_102
+Concept: Exists x1. (Forall x0. ((car(x1)) \/ (not(sheep(x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_102/test/44.json
+
+Puzzle dogherded_105
+TIMEOUT: 060 sec
+
+Puzzle dogherded_108
+TIMEOUT: 060 sec
+
+Puzzle dogherded_110
+TIMEOUT: 060 sec
+
+Puzzle dogherded_113
+Concept: Forall x1. (Exists x0. ((umbrella(x0)) \/ (not(person(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_113/test/46.json
+
+Puzzle dogherded_116
+TIMEOUT: 060 sec
+
+Puzzle dogherded_119
+TIMEOUT: 060 sec
+
+Puzzle dogherded_121
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (not(sheep(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_121/test/44.json
+
+Puzzle dogherded_124
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (not(dog(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_124/test/45.json
+
+Puzzle dogherded_127
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (not(dog(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_127/test/46.json
+
+Puzzle dogherded_13
+TIMEOUT: 060 sec
+
+Puzzle dogherded_132
+Concept: Exists x1. (Exists x0. ((car(x0)) \/ (dog(x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_132/test/40.json
+
+Puzzle dogherded_135
+TIMEOUT: 060 sec
+
+Puzzle dogherded_138
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (not(sheep(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_138/test/49.json
+
+Puzzle dogherded_140
+TIMEOUT: 060 sec
+
+Puzzle dogherded_143
+Concept: Exists x1. (Exists x0. ((dog(x0)) /\ (left(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_143/test/44.json
+
+Puzzle dogherded_146
+Concept: Exists x1. (Forall x0. ((left(x1, x0)) \/ (not(sheep(x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_146/test/44.json
+
+Puzzle dogherded_149
+TIMEOUT: 060 sec
+
+Puzzle dogherded_151
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_151/test/42.json
+
+Puzzle dogherded_154
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_154/test/42.json
+
+Puzzle dogherded_157
+Concept: Exists x1. (Forall x0. ((dog(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_157/test/42.json
+
+Puzzle dogherded_16
+TIMEOUT: 060 sec
+
+Puzzle dogherded_162
+Concept: Forall x1. (Forall x0. ((not(person(x1))) /\ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_162/test/44.json
+
+Puzzle dogherded_165
+TIMEOUT: 060 sec
+
+Puzzle dogherded_168
+TIMEOUT: 060 sec
+
+Puzzle dogherded_170
+Concept: Exists x1. (Exists x0. ((not(dog(x0))) /\ (not(person(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_170/test/48.json
+
+Puzzle dogherded_173
+Concept: Exists x1. (Forall x0. ((not(person(x0))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_173/test/46.json
+
+Puzzle dogherded_176
+Concept: Forall x1. (Forall x0. ((not(person(x1))) \/ (not(sheep(x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_176/test/49.json
+
+Puzzle dogherded_179
+Concept: Forall x1. (Exists x0. ((not(left(x1, x0))) /\ (not(person(x1)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_179/test/46.json
+
+Puzzle dogherded_181
+TIMEOUT: 060 sec
+
+Puzzle dogherded_184
+Concept: Exists x1. (Forall x0. ((cow(x1)) \/ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_184/test/44.json
+
+Puzzle dogherded_187
+TIMEOUT: 060 sec
+
+Puzzle dogherded_19
+TIMEOUT: 060 sec
+
+Puzzle dogherded_192
+TIMEOUT: 060 sec
+
+Puzzle dogherded_195
+TIMEOUT: 060 sec
+
+Puzzle dogherded_198
+TIMEOUT: 060 sec
+
+Puzzle dogherded_20
+TIMEOUT: 060 sec
+
+Puzzle dogherded_202
+TIMEOUT: 060 sec
+
+Puzzle dogherded_205
+TIMEOUT: 060 sec
+
+Puzzle dogherded_208
+TIMEOUT: 060 sec
+
+Puzzle dogherded_210
+Concept: Exists x1. (Exists x0. ((cow(x0)) \/ (umbrella(x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_210/test/48.json
+
+Puzzle dogherded_213
+TIMEOUT: 060 sec
+
+Puzzle dogherded_216
+TIMEOUT: 060 sec
+
+Puzzle dogherded_219
+TIMEOUT: 060 sec
+
+Puzzle dogherded_221
+TIMEOUT: 060 sec
+
+Puzzle dogherded_224
+TIMEOUT: 060 sec
+
+Puzzle dogherded_227
+TIMEOUT: 060 sec
+
+Puzzle dogherded_23
+TIMEOUT: 060 sec
+
+Puzzle dogherded_232
+TIMEOUT: 060 sec
+
+Puzzle dogherded_235
+TIMEOUT: 060 sec
+
+Puzzle dogherded_238
+TIMEOUT: 060 sec
+
+Puzzle dogherded_240
+TIMEOUT: 060 sec
+
+Puzzle dogherded_27
+TIMEOUT: 060 sec
+
+Puzzle dogherded_3
+TIMEOUT: 060 sec
+
+Puzzle dogherded_32
+TIMEOUT: 060 sec
+
+Puzzle dogherded_35
+TIMEOUT: 060 sec
+
+Puzzle dogherded_38
+TIMEOUT: 060 sec
+
+Puzzle dogherded_40
+TIMEOUT: 060 sec
+
+Puzzle dogherded_43
+TIMEOUT: 060 sec
+
+Puzzle dogherded_46
+Concept: Forall x1. (Exists x0. ((car(x0)) \/ (sheep(x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_46/test/46.json
+
+Puzzle dogherded_49
+TIMEOUT: 060 sec
+
+Puzzle dogherded_51
+TIMEOUT: 060 sec
+
+Puzzle dogherded_54
+TIMEOUT: 060 sec
+
+Puzzle dogherded_57
+TIMEOUT: 060 sec
+
+Puzzle dogherded_6
+TIMEOUT: 060 sec
+
+Puzzle dogherded_62
+TIMEOUT: 060 sec
+
+Puzzle dogherded_65
+TIMEOUT: 060 sec
+
+Puzzle dogherded_68
+TIMEOUT: 060 sec
+
+Puzzle dogherded_70
+TIMEOUT: 060 sec
+
+Puzzle dogherded_73
+TIMEOUT: 060 sec
+
+Puzzle dogherded_76
+Concept: Exists x1. (Exists x0. ((cow(x0)) \/ (umbrella(x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_76/test/48.json
+
+Puzzle dogherded_79
+Concept: Exists x1. (Exists x0. ((cow(x0)) \/ (umbrella(x1))))
+Candidate Name: /home/ubuntu/natscenes/dogherded_79/test/48.json
+
+Puzzle dogherded_81
+TIMEOUT: 060 sec
+
+Puzzle dogherded_84
+TIMEOUT: 060 sec
+
+Puzzle dogherded_87
+TIMEOUT: 060 sec
+
+Puzzle dogherded_9
+TIMEOUT: 060 sec
+
+Puzzle dogherded_92
+TIMEOUT: 060 sec
+
+Puzzle dogherded_95
+TIMEOUT: 060 sec
+
+Puzzle dogherded_98
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_10
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_13
+Concept: Exists x1. (Forall x0. ((car(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_13/test/cargoing1.json
+
+Puzzle drivingdirection_16
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (not(person(x1)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_16/test/cargoing1.json
+
+Puzzle drivingdirection_19
+Concept: Forall x1. (Forall x0. ((not(handbag(x0))) /\ (not(pottedplant(x1)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_19/test/carcoming3.json
+
+Puzzle drivingdirection_21
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_24
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_27
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_3
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_32
+Concept: Exists x1. (Forall x0. ((left(x1, x0)) \/ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_32/test/cargoing3.json
+
+Puzzle drivingdirection_35
+Concept: Exists x1. (Exists x0. ((within(x1, x0)) /\ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_35/test/carcoming4.json
+
+Puzzle drivingdirection_38
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_40
+Concept: Exists x1. (Forall x0. ((right(x0, x1)) \/ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_40/test/cargoing2.json
+
+Puzzle drivingdirection_43
+Concept: Forall x1. (Exists x0. ((car(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_43/test/cargoing3.json
+
+Puzzle drivingdirection_46
+TIMEOUT: 060 sec
+
+Puzzle drivingdirection_5
+Concept: Forall x1. (Forall x0. ((not(handbag(x1))) /\ (not(pottedplant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_5/test/carcoming3.json
+
+Puzzle drivingdirection_8
+Concept: Forall x1. (Forall x0. ((not(handbag(x1))) /\ (not(pottedplant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/drivingdirection_8/test/carcoming3.json
+
+Puzzle kitchen_10
+TIMEOUT: 060 sec
+
+Puzzle kitchen_102
+Concept: Exists x1. (Exists x0. ((bottle(x1)) \/ (oven(x0))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_102/test/56.json
+
+Puzzle kitchen_105
+TIMEOUT: 060 sec
+
+Puzzle kitchen_108
+TIMEOUT: 060 sec
+
+Puzzle kitchen_110
+TIMEOUT: 060 sec
+
+Puzzle kitchen_113
+TIMEOUT: 060 sec
+
+Puzzle kitchen_116
+TIMEOUT: 060 sec
+
+Puzzle kitchen_119
+TIMEOUT: 060 sec
+
+Puzzle kitchen_121
+TIMEOUT: 060 sec
+
+Puzzle kitchen_124
+TIMEOUT: 060 sec
+
+Puzzle kitchen_127
+TIMEOUT: 060 sec
+
+Puzzle kitchen_13
+TIMEOUT: 060 sec
+
+Puzzle kitchen_132
+TIMEOUT: 060 sec
+
+Puzzle kitchen_135
+TIMEOUT: 060 sec
+
+Puzzle kitchen_138
+TIMEOUT: 060 sec
+
+Puzzle kitchen_140
+TIMEOUT: 060 sec
+
+Puzzle kitchen_143
+Concept: Exists x1. (Forall x0. ((oven(x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_143/test/59.json
+
+Puzzle kitchen_146
+TIMEOUT: 060 sec
+
+Puzzle kitchen_149
+TIMEOUT: 060 sec
+
+Puzzle kitchen_151
+TIMEOUT: 060 sec
+
+Puzzle kitchen_154
+TIMEOUT: 060 sec
+
+Puzzle kitchen_157
+TIMEOUT: 060 sec
+
+Puzzle kitchen_16
+TIMEOUT: 060 sec
+
+Puzzle kitchen_162
+TIMEOUT: 060 sec
+
+Puzzle kitchen_165
+TIMEOUT: 060 sec
+
+Puzzle kitchen_168
+TIMEOUT: 060 sec
+
+Puzzle kitchen_170
+TIMEOUT: 060 sec
+
+Puzzle kitchen_173
+TIMEOUT: 060 sec
+
+Puzzle kitchen_176
+TIMEOUT: 060 sec
+
+Puzzle kitchen_179
+TIMEOUT: 060 sec
+
+Puzzle kitchen_181
+TIMEOUT: 060 sec
+
+Puzzle kitchen_184
+TIMEOUT: 060 sec
+
+Puzzle kitchen_187
+TIMEOUT: 060 sec
+
+Puzzle kitchen_19
+TIMEOUT: 060 sec
+
+Puzzle kitchen_192
+TIMEOUT: 060 sec
+
+Puzzle kitchen_195
+TIMEOUT: 060 sec
+
+Puzzle kitchen_198
+TIMEOUT: 060 sec
+
+Puzzle kitchen_20
+TIMEOUT: 060 sec
+
+Puzzle kitchen_22
+TIMEOUT: 060 sec
+
+Puzzle kitchen_25
+TIMEOUT: 060 sec
+
+Puzzle kitchen_28
+TIMEOUT: 060 sec
+
+Puzzle kitchen_30
+TIMEOUT: 060 sec
+
+Puzzle kitchen_33
+Concept: Exists x1. (Forall x0. ((oven(x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_33/test/59.json
+
+Puzzle kitchen_36
+TIMEOUT: 060 sec
+
+Puzzle kitchen_39
+TIMEOUT: 060 sec
+
+Puzzle kitchen_41
+Concept: Exists x1. (Forall x0. ((chair(x0)) \/ (oven(x1))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_41/test/50.json
+
+Puzzle kitchen_44
+TIMEOUT: 060 sec
+
+Puzzle kitchen_47
+TIMEOUT: 060 sec
+
+Puzzle kitchen_5
+TIMEOUT: 060 sec
+
+Puzzle kitchen_52
+TIMEOUT: 060 sec
+
+Puzzle kitchen_55
+TIMEOUT: 060 sec
+
+Puzzle kitchen_58
+TIMEOUT: 060 sec
+
+Puzzle kitchen_60
+TIMEOUT: 060 sec
+
+Puzzle kitchen_63
+Concept: Exists x1. (Forall x0. ((banana(x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_63/test/59.json
+
+Puzzle kitchen_66
+TIMEOUT: 060 sec
+
+Puzzle kitchen_69
+TIMEOUT: 060 sec
+
+Puzzle kitchen_71
+Concept: Exists x1. (Forall x0. ((oven(x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_71/test/54.json
+
+Puzzle kitchen_74
+TIMEOUT: 060 sec
+
+Puzzle kitchen_77
+TIMEOUT: 060 sec
+
+Puzzle kitchen_8
+TIMEOUT: 060 sec
+
+Puzzle kitchen_82
+TIMEOUT: 060 sec
+
+Puzzle kitchen_85
+TIMEOUT: 060 sec
+
+Puzzle kitchen_88
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (refrigerator(x0))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_88/test/59.json
+
+Puzzle kitchen_90
+Concept: Exists x1. (Exists x0. ((bowl(x1)) \/ (oven(x0))))
+Candidate Name: /home/ubuntu/natscenes/kitchen_90/test/50.json
+
+Puzzle kitchen_93
+TIMEOUT: 060 sec
+
+Puzzle kitchen_96
+TIMEOUT: 060 sec
+
+Puzzle kitchen_99
+TIMEOUT: 060 sec
+
+Puzzle middleball_100
+No discriminator found for puzzle middleball_100
+
+Puzzle middleball_103
+No discriminator found for puzzle middleball_103
+
+Puzzle middleball_106
+No discriminator found for puzzle middleball_106
+
+Puzzle middleball_109
+No discriminator found for puzzle middleball_109
+
+Puzzle middleball_111
+No discriminator found for puzzle middleball_111
+
+Puzzle middleball_114
+No discriminator found for puzzle middleball_114
+
+Puzzle middleball_117
+No discriminator found for puzzle middleball_117
+
+Puzzle middleball_12
+No discriminator found for puzzle middleball_12
+
+Puzzle middleball_14
+No discriminator found for puzzle middleball_14
+
+Puzzle middleball_17
+No discriminator found for puzzle middleball_17
+
+Puzzle middleball_2
+No discriminator found for puzzle middleball_2
+
+Puzzle middleball_22
+No discriminator found for puzzle middleball_22
+
+Puzzle middleball_25
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/middleball_25/test/middleball3.json
+
+Puzzle middleball_28
+No discriminator found for puzzle middleball_28
+
+Puzzle middleball_30
+No discriminator found for puzzle middleball_30
+
+Puzzle middleball_33
+No discriminator found for puzzle middleball_33
+
+Puzzle middleball_36
+No discriminator found for puzzle middleball_36
+
+Puzzle middleball_39
+No discriminator found for puzzle middleball_39
+
+Puzzle middleball_41
+No discriminator found for puzzle middleball_41
+
+Puzzle middleball_44
+No discriminator found for puzzle middleball_44
+
+Puzzle middleball_47
+No discriminator found for puzzle middleball_47
+
+Puzzle middleball_5
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/middleball_5/test/middleball1.json
+
+Puzzle middleball_52
+No discriminator found for puzzle middleball_52
+
+Puzzle middleball_55
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/middleball_55/test/middleball4.json
+
+Puzzle middleball_58
+No discriminator found for puzzle middleball_58
+
+Puzzle middleball_60
+No discriminator found for puzzle middleball_60
+
+Puzzle middleball_63
+No discriminator found for puzzle middleball_63
+
+Puzzle middleball_66
+No discriminator found for puzzle middleball_66
+
+Puzzle middleball_69
+No discriminator found for puzzle middleball_69
+
+Puzzle middleball_71
+No discriminator found for puzzle middleball_71
+
+Puzzle middleball_74
+No discriminator found for puzzle middleball_74
+
+Puzzle middleball_77
+No discriminator found for puzzle middleball_77
+
+Puzzle middleball_8
+No discriminator found for puzzle middleball_8
+
+Puzzle middleball_82
+No discriminator found for puzzle middleball_82
+
+Puzzle middleball_85
+Concept: Exists x1. (Forall x0. ((left(x0, x1)) \/ (not(sports ball(x0)))))
+Candidate Name: /home/ubuntu/natscenes/middleball_85/test/middleball4.json
+
+Puzzle middleball_88
+No discriminator found for puzzle middleball_88
+
+Puzzle middleball_90
+No discriminator found for puzzle middleball_90
+
+Puzzle middleball_93
+No discriminator found for puzzle middleball_93
+
+Puzzle middleball_96
+No discriminator found for puzzle middleball_96
+
+Puzzle middleball_99
+No discriminator found for puzzle middleball_99
+
+Puzzle parkmeter_100
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_103
+Concept: Exists x1. (Forall x0. ((parking meter(x1)) \/ (not(car(x0)))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_103/test/61.json
+
+Puzzle parkmeter_106
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_109
+Concept: Forall x1. (Exists x0. ((car(x1)) \/ (parking meter(x0))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_109/test/63.json
+
+Puzzle parkmeter_111
+Concept: Exists x1. (Forall x0. ((parking meter(x1)) \/ (not(car(x0)))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_111/test/63.json
+
+Puzzle parkmeter_114
+Concept: Exists x1. (Forall x0. ((car(x0)) \/ (parking meter(x1))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_114/test/64.json
+
+Puzzle parkmeter_117
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_12
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_14
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_17
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_2
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_22
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_25
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_28
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_30
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_33
+Concept: Exists x1. (Forall x0. ((car(x0)) \/ (parking meter(x1))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_33/test/63.json
+
+Puzzle parkmeter_36
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_39
+Concept: Exists x1. (Forall x0. ((parking meter(x1)) \/ (not(car(x0)))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_39/test/65.json
+
+Puzzle parkmeter_41
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_44
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_47
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_5
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_52
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_55
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (parking meter(x0))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_55/test/64.json
+
+Puzzle parkmeter_58
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_60
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_63
+Concept: Exists x1. (Forall x0. ((parking meter(x1)) \/ (not(car(x0)))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_63/test/60.json
+
+Puzzle parkmeter_66
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_69
+Concept: Exists x1. (Forall x0. ((parking meter(x1)) \/ (not(truck(x0)))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_69/test/63.json
+
+Puzzle parkmeter_71
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (parking meter(x0))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_71/test/63.json
+
+Puzzle parkmeter_74
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_77
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_8
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_82
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_85
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_88
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_90
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_93
+Concept: Exists x1. (Exists x0. ((parking meter(x1)) \/ (pottedplant(x0))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_93/test/64.json
+
+Puzzle parkmeter_96
+TIMEOUT: 060 sec
+
+Puzzle parkmeter_99
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (parking meter(x0))))
+Candidate Name: /home/ubuntu/natscenes/parkmeter_99/test/65.json
+
+Puzzle personball_100
+TIMEOUT: 060 sec
+
+Puzzle personball_103
+TIMEOUT: 060 sec
+
+Puzzle personball_106
+TIMEOUT: 060 sec
+
+Puzzle personball_109
+TIMEOUT: 060 sec
+
+Puzzle personball_111
+TIMEOUT: 060 sec
+
+Puzzle personball_114
+Concept: Exists x1. (Exists x0. ((person(x0)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_114/test/77.json
+
+Puzzle personball_117
+TIMEOUT: 060 sec
+
+Puzzle personball_12
+TIMEOUT: 060 sec
+
+Puzzle personball_122
+TIMEOUT: 060 sec
+
+Puzzle personball_125
+TIMEOUT: 060 sec
+
+Puzzle personball_128
+TIMEOUT: 060 sec
+
+Puzzle personball_130
+Concept: Forall x1. (Exists x0. ((person(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_130/test/77.json
+
+Puzzle personball_133
+TIMEOUT: 060 sec
+
+Puzzle personball_136
+TIMEOUT: 060 sec
+
+Puzzle personball_139
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_139/test/79.json
+
+Puzzle personball_141
+TIMEOUT: 060 sec
+
+Puzzle personball_144
+TIMEOUT: 060 sec
+
+Puzzle personball_147
+TIMEOUT: 060 sec
+
+Puzzle personball_15
+TIMEOUT: 060 sec
+
+Puzzle personball_152
+TIMEOUT: 060 sec
+
+Puzzle personball_155
+TIMEOUT: 060 sec
+
+Puzzle personball_158
+TIMEOUT: 060 sec
+
+Puzzle personball_160
+TIMEOUT: 060 sec
+
+Puzzle personball_163
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/personball_163/test/71.json
+
+Puzzle personball_166
+TIMEOUT: 060 sec
+
+Puzzle personball_169
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/personball_169/test/71.json
+
+Puzzle personball_171
+Concept: Forall x1. (Forall x0. ((left(x1, x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_171/test/75.json
+
+Puzzle personball_174
+Concept: Exists x1. (Forall x0. ((left(x0, x1)) \/ (not(sports ball(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_174/test/77.json
+
+Puzzle personball_177
+TIMEOUT: 060 sec
+
+Puzzle personball_18
+TIMEOUT: 060 sec
+
+Puzzle personball_182
+TIMEOUT: 060 sec
+
+Puzzle personball_185
+TIMEOUT: 060 sec
+
+Puzzle personball_188
+TIMEOUT: 060 sec
+
+Puzzle personball_190
+TIMEOUT: 060 sec
+
+Puzzle personball_193
+TIMEOUT: 060 sec
+
+Puzzle personball_196
+TIMEOUT: 060 sec
+
+Puzzle personball_199
+TIMEOUT: 060 sec
+
+Puzzle personball_200
+Concept: Exists x1. (Exists x0. ((left(x1, x0)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_200/test/77.json
+
+Puzzle personball_23
+TIMEOUT: 060 sec
+
+Puzzle personball_26
+TIMEOUT: 060 sec
+
+Puzzle personball_29
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_29/test/79.json
+
+Puzzle personball_31
+TIMEOUT: 060 sec
+
+Puzzle personball_34
+TIMEOUT: 060 sec
+
+Puzzle personball_37
+TIMEOUT: 060 sec
+
+Puzzle personball_4
+Concept: Forall x1. (Exists x0. ((person(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_4/test/77.json
+
+Puzzle personball_42
+TIMEOUT: 060 sec
+
+Puzzle personball_45
+TIMEOUT: 060 sec
+
+Puzzle personball_48
+Concept: Forall x1. (Forall x0. ((not(bottle(x1))) /\ (not(tennis racket(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_48/test/79.json
+
+Puzzle personball_50
+Concept: Forall x1. (Exists x0. ((person(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_50/test/77.json
+
+Puzzle personball_53
+Concept: Forall x1. (Forall x0. ((not(bottle(x1))) /\ (not(dog(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_53/test/71.json
+
+Puzzle personball_56
+TIMEOUT: 060 sec
+
+Puzzle personball_59
+TIMEOUT: 060 sec
+
+Puzzle personball_61
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_61/test/75.json
+
+Puzzle personball_64
+TIMEOUT: 060 sec
+
+Puzzle personball_67
+TIMEOUT: 060 sec
+
+Puzzle personball_7
+Concept: Forall x1. (Exists x0. ((person(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/personball_7/test/77.json
+
+Puzzle personball_72
+TIMEOUT: 060 sec
+
+Puzzle personball_75
+TIMEOUT: 060 sec
+
+Puzzle personball_78
+TIMEOUT: 060 sec
+
+Puzzle personball_80
+Concept: Exists x1. (Exists x0. ((within(x1, x0)) /\ (not(elephant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_80/test/77.json
+
+Puzzle personball_83
+TIMEOUT: 060 sec
+
+Puzzle personball_86
+Concept: Exists x1. (Forall x0. ((left(x0, x1)) \/ (not(sports ball(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_86/test/79.json
+
+Puzzle personball_89
+Concept: Forall x1. (Forall x0. ((right(x1, x0)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/personball_89/test/79.json
+
+Puzzle personball_91
+Concept: Forall x1. (Forall x0. ((not(bottle(x1))) /\ (not(dog(x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_91/test/71.json
+
+Puzzle personball_94
+TIMEOUT: 060 sec
+
+Puzzle personball_97
+Concept: Forall x1. (Forall x0. ((person(x0)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/personball_97/test/71.json
+
+Puzzle populatedbus_1
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_12
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_15
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_18
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_20
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_23
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_26
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_29
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_31
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_34
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_37
+Concept: Exists x1. (Forall x0. ((within(x1, x0)) \/ (not(bus(x0)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_37/test/80.json
+
+Puzzle populatedbus_4
+Concept: Exists x1. (Exists x0. ((right(x0, x1)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_4/test/81.json
+
+Puzzle populatedbus_42
+Concept: Exists x1. (Forall x0. ((within(x1, x0)) \/ (not(bus(x0)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_42/test/82.json
+
+Puzzle populatedbus_45
+Concept: Exists x1. (Forall x0. ((within(x1, x0)) \/ (not(bus(x0)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_45/test/83.json
+
+Puzzle populatedbus_48
+TIMEOUT: 060 sec
+
+Puzzle populatedbus_50
+Concept: Exists x1. (Exists x0. ((right(x1, x0)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_50/test/81.json
+
+Puzzle populatedbus_53
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_53/test/82.json
+
+Puzzle populatedbus_56
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_56/test/83.json
+
+Puzzle populatedbus_59
+Concept: Exists x1. (Exists x0. ((bus(x1)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_59/test/84.json
+
+Puzzle populatedbus_7
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/populatedbus_7/test/82.json
+
+Puzzle pplwearingties_1
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_101
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_104
+Concept: Exists x1. (Exists x0. ((person(x1)) /\ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_104/test/91.json
+
+Puzzle pplwearingties_107
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_11
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_112
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_115
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_118
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_120
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_123
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_126
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_129
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_131
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_134
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_137
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_14
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_142
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_145
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_148
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_150
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_153
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_156
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_159
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_161
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_164
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_167
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_17
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_172
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_175
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_178
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_180
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_183
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_186
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_189
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_191
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_194
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_197
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_2
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_201
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_204
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (tie(x0))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_204/test/92.json
+
+Puzzle pplwearingties_207
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_21
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_212
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_215
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_218
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_220
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_223
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_226
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_229
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_231
+Concept: Exists x1. (Forall x0. ((tie(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_231/test/91.json
+
+Puzzle pplwearingties_234
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_237
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_24
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_242
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_245
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_248
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_250
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_253
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_256
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_259
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_261
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_264
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_267
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_27
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_272
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_275
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_278
+Concept: Forall x0. ((person(x0)) \/ (tie(x0)))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_278/test/102.json
+
+Puzzle pplwearingties_280
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_283
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_286
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_289
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_291
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (tie(x1))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_291/test/94.json
+
+Puzzle pplwearingties_294
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_297
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_3
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_31
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_34
+Concept: Exists x1. (Exists x0. ((person(x1)) /\ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_34/test/96.json
+
+Puzzle pplwearingties_37
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_4
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_4/test/100.json
+
+Puzzle pplwearingties_42
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_45
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_48
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_50
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_53
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_56
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_59
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_61
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_64
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_67
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_7
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_72
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_75
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_78
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_80
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_83
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_86
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_89
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_91
+TIMEOUT: 060 sec
+
+Puzzle pplwearingties_94
+Concept: Exists x1. (Forall x0. ((left(x1, x0)) \/ (tie(x1))))
+Candidate Name: /home/ubuntu/natscenes/pplwearingties_94/test/94.json
+
+Puzzle pplwearingties_97
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_1
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_12
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_15
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_18
+Concept: Exists x1. (Forall x0. ((apple(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_18/test/130.json
+
+Puzzle separatepiles_20
+Concept: Forall x1. (Exists x0. ((apple(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_20/test/130.json
+
+Puzzle separatepiles_23
+No discriminator found for puzzle separatepiles_23
+
+Puzzle separatepiles_26
+Concept: Exists x1. (Exists x0. ((carrot(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_26/test/127.json
+
+Puzzle separatepiles_29
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_31
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_34
+Concept: Exists x1. (Forall x0. ((apple(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_34/test/130.json
+
+Puzzle separatepiles_37
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_4
+Concept: Exists x1. (Forall x0. ((apple(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_4/test/130.json
+
+Puzzle separatepiles_42
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_42/test/127.json
+
+Puzzle separatepiles_45
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_48
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_50
+Concept: Exists x1. (Forall x0. ((apple(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_50/test/130.json
+
+Puzzle separatepiles_53
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_56
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_59
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_61
+Concept: Forall x1. (Forall x0. ((right(x1, x0)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_61/test/128.json
+
+Puzzle separatepiles_64
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_67
+Concept: Forall x1. (Forall x0. ((banana(x1)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_67/test/130.json
+
+Puzzle separatepiles_7
+Concept: Forall x1. (Forall x0. ((not(right(x1, x0))) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/separatepiles_7/test/130.json
+
+Puzzle separatepiles_72
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_75
+TIMEOUT: 060 sec
+
+Puzzle separatepiles_78
+No discriminator found for puzzle separatepiles_78
+
+Puzzle separatepiles_80
+No discriminator found for puzzle separatepiles_80
+
+Puzzle setplates_10
+TIMEOUT: 060 sec
+
+Puzzle setplates_102
+TIMEOUT: 060 sec
+
+Puzzle setplates_105
+TIMEOUT: 060 sec
+
+Puzzle setplates_108
+Concept: Exists x1. (Exists x0. ((not(diningtable(x1))) /\ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_108/test/dirtyplate10.json
+
+Puzzle setplates_110
+TIMEOUT: 060 sec
+
+Puzzle setplates_113
+TIMEOUT: 060 sec
+
+Puzzle setplates_116
+Concept: Exists x1. (Forall x0. ((not(bowl(x0))) /\ (not(left(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_116/test/dirtyplate3.json
+
+Puzzle setplates_119
+TIMEOUT: 060 sec
+
+Puzzle setplates_121
+TIMEOUT: 060 sec
+
+Puzzle setplates_124
+TIMEOUT: 060 sec
+
+Puzzle setplates_127
+TIMEOUT: 060 sec
+
+Puzzle setplates_13
+Concept: Forall x1. (Forall x0. ((diningtable(x1)) \/ (not(within(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_13/test/dirtyplate10.json
+
+Puzzle setplates_132
+TIMEOUT: 060 sec
+
+Puzzle setplates_135
+Concept: Exists x1. (Exists x0. ((cup(x0)) \/ (wine glass(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_135/test/setplate7.json
+
+Puzzle setplates_138
+TIMEOUT: 060 sec
+
+Puzzle setplates_140
+TIMEOUT: 060 sec
+
+Puzzle setplates_143
+TIMEOUT: 060 sec
+
+Puzzle setplates_146
+TIMEOUT: 060 sec
+
+Puzzle setplates_149
+TIMEOUT: 060 sec
+
+Puzzle setplates_151
+TIMEOUT: 060 sec
+
+Puzzle setplates_154
+Concept: Exists x1. (Forall x0. ((right(x1, x0)) \/ (spoon(x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_154/test/setplate9.json
+
+Puzzle setplates_157
+TIMEOUT: 060 sec
+
+Puzzle setplates_16
+TIMEOUT: 060 sec
+
+Puzzle setplates_162
+TIMEOUT: 060 sec
+
+Puzzle setplates_165
+TIMEOUT: 060 sec
+
+Puzzle setplates_168
+TIMEOUT: 060 sec
+
+Puzzle setplates_170
+Concept: Exists x1. (Forall x0. ((knife(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_170/test/setplate4.json
+
+Puzzle setplates_173
+TIMEOUT: 060 sec
+
+Puzzle setplates_176
+TIMEOUT: 060 sec
+
+Puzzle setplates_179
+Concept: Exists x1. (Forall x0. ((cake(x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_179/test/dirtyplate5.json
+
+Puzzle setplates_181
+TIMEOUT: 060 sec
+
+Puzzle setplates_184
+Concept: Exists x1. (Forall x0. ((fork(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_184/test/dirtyplate3.json
+
+Puzzle setplates_187
+Concept: Exists x1. (Forall x0. ((wine glass(x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_187/test/dirtyplate3.json
+
+Puzzle setplates_19
+Concept: Exists x1. (Forall x0. ((knife(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_19/test/setplate9.json
+
+Puzzle setplates_192
+Concept: Exists x1. (Forall x0. ((cake(x1)) \/ (not(cup(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_192/test/dirtyplate5.json
+
+Puzzle setplates_195
+TIMEOUT: 060 sec
+
+Puzzle setplates_198
+TIMEOUT: 060 sec
+
+Puzzle setplates_20
+TIMEOUT: 060 sec
+
+Puzzle setplates_202
+TIMEOUT: 060 sec
+
+Puzzle setplates_205
+Concept: Exists x1. (Forall x0. ((diningtable(x0)) \/ (knife(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_205/test/setplate9.json
+
+Puzzle setplates_208
+Concept: Exists x1. (Forall x0. ((cake(x1)) \/ (not(cup(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_208/test/dirtyplate3.json
+
+Puzzle setplates_210
+Concept: Exists x1. (Forall x0. ((right(x1, x0)) \/ (spoon(x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_210/test/setplate7.json
+
+Puzzle setplates_213
+Concept: Forall x1. (Forall x0. ((not(cup(x0))) \/ (not(diningtable(x1)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_213/test/dirtyplate5.json
+
+Puzzle setplates_216
+TIMEOUT: 060 sec
+
+Puzzle setplates_219
+TIMEOUT: 060 sec
+
+Puzzle setplates_221
+TIMEOUT: 060 sec
+
+Puzzle setplates_224
+TIMEOUT: 060 sec
+
+Puzzle setplates_227
+Concept: Exists x1. (Forall x0. ((within(x0, x1)) \/ (not(bowl(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_227/test/dirtyplate7.json
+
+Puzzle setplates_23
+Concept: Exists x1. (Exists x0. ((cake(x0)) \/ (cup(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_23/test/dirtyplate10.json
+
+Puzzle setplates_232
+TIMEOUT: 060 sec
+
+Puzzle setplates_235
+TIMEOUT: 060 sec
+
+Puzzle setplates_238
+Concept: Exists x1. (Forall x0. ((fork(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_238/test/setplate9.json
+
+Puzzle setplates_240
+TIMEOUT: 060 sec
+
+Puzzle setplates_243
+TIMEOUT: 060 sec
+
+Puzzle setplates_246
+Concept: Exists x1. (Forall x0. ((left(x1, x0)) \/ (not(spoon(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_246/test/dirtyplate3.json
+
+Puzzle setplates_249
+TIMEOUT: 060 sec
+
+Puzzle setplates_251
+Concept: Exists x1. (Exists x0. ((not(diningtable(x1))) /\ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_251/test/dirtyplate7.json
+
+Puzzle setplates_254
+TIMEOUT: 060 sec
+
+Puzzle setplates_257
+TIMEOUT: 060 sec
+
+Puzzle setplates_26
+TIMEOUT: 060 sec
+
+Puzzle setplates_262
+TIMEOUT: 060 sec
+
+Puzzle setplates_265
+TIMEOUT: 060 sec
+
+Puzzle setplates_268
+TIMEOUT: 060 sec
+
+Puzzle setplates_270
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (spoon(x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_270/test/setplate7.json
+
+Puzzle setplates_273
+TIMEOUT: 060 sec
+
+Puzzle setplates_276
+TIMEOUT: 060 sec
+
+Puzzle setplates_279
+TIMEOUT: 060 sec
+
+Puzzle setplates_281
+TIMEOUT: 060 sec
+
+Puzzle setplates_284
+Concept: Exists x1. (Forall x0. ((left(x0, x1)) \/ (spoon(x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_284/test/setplate7.json
+
+Puzzle setplates_287
+TIMEOUT: 060 sec
+
+Puzzle setplates_29
+Concept: Exists x1. (Forall x0. ((knife(x1)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_29/test/setplate4.json
+
+Puzzle setplates_292
+Concept: Exists x1. (Forall x0. ((cup(x1)) \/ (not(diningtable(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_292/test/dirtyplate7.json
+
+Puzzle setplates_295
+TIMEOUT: 060 sec
+
+Puzzle setplates_298
+TIMEOUT: 060 sec
+
+Puzzle setplates_30
+Concept: Forall x1. (Forall x0. ((not(left(x0, x1))) \/ (not(spoon(x0)))))
+Candidate Name: /home/ubuntu/natscenes/setplates_30/test/dirtyplate4.json
+
+Puzzle setplates_32
+TIMEOUT: 060 sec
+
+Puzzle setplates_35
+TIMEOUT: 060 sec
+
+Puzzle setplates_38
+TIMEOUT: 060 sec
+
+Puzzle setplates_40
+TIMEOUT: 060 sec
+
+Puzzle setplates_43
+TIMEOUT: 060 sec
+
+Puzzle setplates_46
+TIMEOUT: 060 sec
+
+Puzzle setplates_49
+Concept: Exists x1. (Forall x0. ((left(x0, x1)) \/ (spoon(x0))))
+Candidate Name: /home/ubuntu/natscenes/setplates_49/test/dirtyplate1.json
+
+Puzzle setplates_51
+TIMEOUT: 060 sec
+
+Puzzle setplates_54
+TIMEOUT: 060 sec
+
+Puzzle setplates_57
+TIMEOUT: 060 sec
+
+Puzzle setplates_6
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (spoon(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_6/test/setplate7.json
+
+Puzzle setplates_62
+TIMEOUT: 060 sec
+
+Puzzle setplates_65
+TIMEOUT: 060 sec
+
+Puzzle setplates_68
+TIMEOUT: 060 sec
+
+Puzzle setplates_70
+TIMEOUT: 060 sec
+
+Puzzle setplates_73
+TIMEOUT: 060 sec
+
+Puzzle setplates_76
+TIMEOUT: 060 sec
+
+Puzzle setplates_79
+TIMEOUT: 060 sec
+
+Puzzle setplates_81
+TIMEOUT: 060 sec
+
+Puzzle setplates_84
+TIMEOUT: 060 sec
+
+Puzzle setplates_87
+Concept: Exists x1. (Forall x0. ((right(x1, x0)) \/ (spoon(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_87/test/setplate3.json
+
+Puzzle setplates_9
+TIMEOUT: 060 sec
+
+Puzzle setplates_92
+Concept: Exists x1. (Forall x0. ((right(x0, x1)) \/ (spoon(x1))))
+Candidate Name: /home/ubuntu/natscenes/setplates_92/test/setplate4.json
+
+Puzzle setplates_95
+TIMEOUT: 060 sec
+
+Puzzle setplates_98
+TIMEOUT: 060 sec
+
+Puzzle sleeping_10
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_10/test/107.json
+
+Puzzle sleeping_102
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_102/test/106.json
+
+Puzzle sleeping_105
+Concept: Exists x1. (Exists x0. ((person(x1)) \/ (pottedplant(x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_105/test/106.json
+
+Puzzle sleeping_108
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_108/test/106.json
+
+Puzzle sleeping_110
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (left(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_110/test/106.json
+
+Puzzle sleeping_113
+TIMEOUT: 060 sec
+
+Puzzle sleeping_116
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_116/test/108.json
+
+Puzzle sleeping_119
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_119/test/109.json
+
+Puzzle sleeping_121
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_121/test/107.json
+
+Puzzle sleeping_124
+Concept: Exists x1. (Exists x0. ((dog(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_124/test/107.json
+
+Puzzle sleeping_127
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(dog(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_127/test/109.json
+
+Puzzle sleeping_13
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_13/test/109.json
+
+Puzzle sleeping_132
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_132/test/108.json
+
+Puzzle sleeping_135
+Concept: Exists x1. (Exists x0. ((bench(x0)) /\ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_135/test/103.json
+
+Puzzle sleeping_138
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_138/test/109.json
+
+Puzzle sleeping_140
+Concept: Exists x1. (Exists x0. ((bench(x0)) /\ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_140/test/103.json
+
+Puzzle sleeping_143
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_143/test/108.json
+
+Puzzle sleeping_146
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_146/test/111.json
+
+Puzzle sleeping_149
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (not(left(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_149/test/105.json
+
+Puzzle sleeping_151
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_151/test/108.json
+
+Puzzle sleeping_154
+Concept: Forall x1. (Exists x0. ((bench(x1)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_154/test/108.json
+
+Puzzle sleeping_157
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_157/test/111.json
+
+Puzzle sleeping_16
+Concept: Exists x1. (Exists x0. ((cat(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_16/test/111.json
+
+Puzzle sleeping_162
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_162/test/106.json
+
+Puzzle sleeping_165
+Concept: Exists x1. (Forall x0. ((person(x1)) \/ (not(bench(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_165/test/106.json
+
+Puzzle sleeping_168
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_168/test/106.json
+
+Puzzle sleeping_170
+Concept: Exists x1. (Exists x0. ((bench(x0)) /\ (not(right(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_170/test/106.json
+
+Puzzle sleeping_173
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (left(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_173/test/131.json
+
+Puzzle sleeping_176
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_176/test/108.json
+
+Puzzle sleeping_179
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_179/test/109.json
+
+Puzzle sleeping_181
+Concept: Forall x1. ((bench(x1)) \/ (person(x1)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_181/test/108.json
+
+Puzzle sleeping_184
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_184/test/107.json
+
+Puzzle sleeping_187
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_187/test/107.json
+
+Puzzle sleeping_19
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_19/test/109.json
+
+Puzzle sleeping_192
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_192/test/108.json
+
+Puzzle sleeping_195
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_195/test/104.json
+
+Puzzle sleeping_198
+TIMEOUT: 060 sec
+
+Puzzle sleeping_20
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_20/test/103.json
+
+Puzzle sleeping_202
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_202/test/108.json
+
+Puzzle sleeping_205
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_205/test/105.json
+
+Puzzle sleeping_208
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_208/test/105.json
+
+Puzzle sleeping_210
+Concept: Exists x1. (Exists x0. ((person(x1)) /\ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_210/test/105.json
+
+Puzzle sleeping_213
+Concept: Forall x1. (Exists x0. ((within(x0, x1)) \/ (not(bench(x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_213/test/109.json
+
+Puzzle sleeping_216
+Concept: Exists x1. (Exists x0. ((bicycle(x1)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_216/test/105.json
+
+Puzzle sleeping_219
+Concept: Forall x1. (Exists x0. ((right(x0, x1)) \/ (not(bench(x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_219/test/109.json
+
+Puzzle sleeping_221
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_221/test/106.json
+
+Puzzle sleeping_224
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (left(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_224/test/106.json
+
+Puzzle sleeping_227
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_227/test/109.json
+
+Puzzle sleeping_23
+Concept: Forall x1. ((bench(x1)) \/ (person(x1)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_23/test/108.json
+
+Puzzle sleeping_232
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (not(bench(x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_232/test/111.json
+
+Puzzle sleeping_235
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_235/test/108.json
+
+Puzzle sleeping_238
+Concept: Exists x1. (Exists x0. ((not(right(x0, x1))) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_238/test/109.json
+
+Puzzle sleeping_240
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_240/test/106.json
+
+Puzzle sleeping_27
+TIMEOUT: 060 sec
+
+Puzzle sleeping_3
+Concept: Exists x1. (Exists x0. ((dog(x1)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_3/test/107.json
+
+Puzzle sleeping_32
+Concept: Forall x0. ((bench(x0)) \/ (person(x0)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_32/test/108.json
+
+Puzzle sleeping_35
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (left(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_35/test/104.json
+
+Puzzle sleeping_38
+Concept: Forall x0. ((bench(x0)) \/ (person(x0)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_38/test/131.json
+
+Puzzle sleeping_40
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (not(right(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_40/test/104.json
+
+Puzzle sleeping_43
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (not(bench(x1)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_43/test/105.json
+
+Puzzle sleeping_46
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_46/test/111.json
+
+Puzzle sleeping_49
+Concept: Exists x1. (Exists x0. ((bench(x1)) /\ (left(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_49/test/105.json
+
+Puzzle sleeping_51
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_51/test/108.json
+
+Puzzle sleeping_54
+Concept: Forall x1. (Exists x0. ((person(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_54/test/105.json
+
+Puzzle sleeping_57
+Concept: Forall x1. (Forall x0. ((person(x1)) \/ (not(within(x1, x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_57/test/111.json
+
+Puzzle sleeping_6
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cup(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_6/test/107.json
+
+Puzzle sleeping_62
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_62/test/107.json
+
+Puzzle sleeping_65
+Concept: Forall x1. (Exists x0. ((left(x1, x0)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_65/test/103.json
+
+Puzzle sleeping_68
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_68/test/107.json
+
+Puzzle sleeping_70
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_70/test/107.json
+
+Puzzle sleeping_73
+Concept: Exists x1. (Exists x0. ((dog(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_73/test/109.json
+
+Puzzle sleeping_76
+Concept: Exists x1. (Exists x0. ((cat(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_76/test/111.json
+
+Puzzle sleeping_79
+Concept: Exists x1. (Exists x0. ((cup(x0)) \/ (within(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_79/test/109.json
+
+Puzzle sleeping_81
+Concept: Forall x0. ((bench(x0)) \/ (person(x0)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_81/test/108.json
+
+Puzzle sleeping_84
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_84/test/108.json
+
+Puzzle sleeping_87
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_87/test/109.json
+
+Puzzle sleeping_9
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(cat(x0)))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_9/test/107.json
+
+Puzzle sleeping_92
+Concept: Forall x0. ((bench(x0)) \/ (person(x0)))
+Candidate Name: /home/ubuntu/natscenes/sleeping_92/test/108.json
+
+Puzzle sleeping_95
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_95/test/108.json
+
+Puzzle sleeping_98
+Concept: Exists x1. (Forall x0. ((bench(x0)) \/ (right(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/sleeping_98/test/109.json
+
+Puzzle truck_10
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (truck(x0))))
+Candidate Name: /home/ubuntu/natscenes/truck_10/test/carcoming3.json
+
+Puzzle truck_13
+Concept: Forall x1. (Forall x0. ((not(pottedplant(x0))) /\ (not(traffic light(x1)))))
+Candidate Name: /home/ubuntu/natscenes/truck_13/test/cargoing3.json
+
+Puzzle truck_16
+Concept: Exists x1. (Exists x0. ((person(x1)) /\ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/truck_16/test/cargoing3.json
+
+Puzzle truck_19
+Concept: Exists x1. (Forall x0. ((handbag(x1)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/truck_19/test/carcoming2.json
+
+Puzzle truck_21
+TIMEOUT: 060 sec
+
+Puzzle truck_24
+Concept: Exists x1. (Exists x0. ((within(x0, x1)) /\ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/truck_24/test/cargoing3.json
+
+Puzzle truck_27
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (truck(x0))))
+Candidate Name: /home/ubuntu/natscenes/truck_27/test/carcoming1.json
+
+Puzzle truck_3
+Concept: Exists x1. (Forall x0. ((truck(x1)) \/ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/truck_3/test/carcoming1.json
+
+Puzzle truck_32
+Concept: Exists x1. (Forall x0. ((truck(x1)) \/ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/truck_32/test/carcoming3.json
+
+Puzzle truck_35
+Concept: Forall x1. (Exists x0. ((truck(x0)) \/ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/truck_35/test/carcoming4.json
+
+Puzzle truck_38
+Concept: Exists x1. (Forall x0. ((left(x1, x0)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/truck_38/test/carcoming2.json
+
+Puzzle truck_40
+Concept: Exists x1. (Forall x0. ((truck(x1)) \/ (not(car(x0)))))
+Candidate Name: /home/ubuntu/natscenes/truck_40/test/carcoming2.json
+
+Puzzle truck_43
+Concept: Exists x1. (Exists x0. ((backpack(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/truck_43/test/cargoing3.json
+
+Puzzle truck_46
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (truck(x1))))
+Candidate Name: /home/ubuntu/natscenes/truck_46/test/carcoming4.json
+
+Puzzle truck_5
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/truck_5/test/carcoming2.json
+
+Puzzle truck_8
+Concept: Forall x1. (Exists x0. ((right(x1, x0)) \/ (not(car(x1)))))
+Candidate Name: /home/ubuntu/natscenes/truck_8/test/carcoming2.json
+
+Puzzle tvon_10
+TIMEOUT: 060 sec
+
+Puzzle tvon_102
+TIMEOUT: 060 sec
+
+Puzzle tvon_105
+TIMEOUT: 060 sec
+
+Puzzle tvon_108
+TIMEOUT: 060 sec
+
+Puzzle tvon_110
+Concept: Exists x1. (Exists x0. ((within(x1, x0)) /\ (not(person(x0)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_110/test/26.json
+
+Puzzle tvon_113
+Concept: Exists x1. (Exists x0. ((within(x1, x0)) /\ (not(right(x0, x1)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_113/test/tvoff1.json
+
+Puzzle tvon_116
+Concept: Exists x1. (Forall x0. ((within(x1, x0)) \/ (not(tvmonitor(x0)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_116/test/22.json
+
+Puzzle tvon_119
+TIMEOUT: 060 sec
+
+Puzzle tvon_121
+TIMEOUT: 060 sec
+
+Puzzle tvon_124
+TIMEOUT: 060 sec
+
+Puzzle tvon_127
+TIMEOUT: 060 sec
+
+Puzzle tvon_13
+Concept: Exists x1. (Exists x0. ((cat(x1)) \/ (sofa(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_13/test/24.json
+
+Puzzle tvon_132
+TIMEOUT: 060 sec
+
+Puzzle tvon_135
+TIMEOUT: 060 sec
+
+Puzzle tvon_138
+TIMEOUT: 060 sec
+
+Puzzle tvon_140
+Concept: Exists x1. (Exists x0. ((cat(x1)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_140/test/tvoff4.json
+
+Puzzle tvon_143
+TIMEOUT: 060 sec
+
+Puzzle tvon_146
+TIMEOUT: 060 sec
+
+Puzzle tvon_149
+TIMEOUT: 060 sec
+
+Puzzle tvon_151
+TIMEOUT: 060 sec
+
+Puzzle tvon_154
+TIMEOUT: 060 sec
+
+Puzzle tvon_157
+TIMEOUT: 060 sec
+
+Puzzle tvon_16
+TIMEOUT: 060 sec
+
+Puzzle tvon_162
+TIMEOUT: 060 sec
+
+Puzzle tvon_165
+Concept: Exists x1. (Exists x0. ((mouse(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/tvon_165/test/tvoff4.json
+
+Puzzle tvon_168
+TIMEOUT: 060 sec
+
+Puzzle tvon_170
+TIMEOUT: 060 sec
+
+Puzzle tvon_173
+TIMEOUT: 060 sec
+
+Puzzle tvon_176
+TIMEOUT: 060 sec
+
+Puzzle tvon_179
+TIMEOUT: 060 sec
+
+Puzzle tvon_181
+TIMEOUT: 060 sec
+
+Puzzle tvon_184
+Concept: Forall x1. (Exists x0. ((not(book(x1))) /\ (not(pottedplant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_184/test/tvoff2.json
+
+Puzzle tvon_187
+TIMEOUT: 060 sec
+
+Puzzle tvon_19
+TIMEOUT: 060 sec
+
+Puzzle tvon_192
+TIMEOUT: 060 sec
+
+Puzzle tvon_195
+TIMEOUT: 060 sec
+
+Puzzle tvon_198
+TIMEOUT: 060 sec
+
+Puzzle tvon_20
+TIMEOUT: 060 sec
+
+Puzzle tvon_202
+TIMEOUT: 060 sec
+
+Puzzle tvon_205
+TIMEOUT: 060 sec
+
+Puzzle tvon_208
+TIMEOUT: 060 sec
+
+Puzzle tvon_210
+Concept: Exists x1. (Exists x0. ((remote(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/tvon_210/test/tvoff1.json
+
+Puzzle tvon_213
+TIMEOUT: 060 sec
+
+Puzzle tvon_216
+TIMEOUT: 060 sec
+
+Puzzle tvon_219
+Concept: Exists x1. (Forall x0. ((within(x1, x0)) \/ (not(tvmonitor(x0)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_219/test/25.json
+
+Puzzle tvon_221
+TIMEOUT: 060 sec
+
+Puzzle tvon_224
+TIMEOUT: 060 sec
+
+Puzzle tvon_227
+TIMEOUT: 060 sec
+
+Puzzle tvon_23
+TIMEOUT: 060 sec
+
+Puzzle tvon_232
+TIMEOUT: 060 sec
+
+Puzzle tvon_235
+TIMEOUT: 060 sec
+
+Puzzle tvon_238
+TIMEOUT: 060 sec
+
+Puzzle tvon_240
+Concept: Forall x1. (Forall x0. ((not(book(x0))) /\ (not(vase(x1)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_240/test/26.json
+
+Puzzle tvon_243
+TIMEOUT: 060 sec
+
+Puzzle tvon_246
+TIMEOUT: 060 sec
+
+Puzzle tvon_249
+TIMEOUT: 060 sec
+
+Puzzle tvon_251
+Concept: Exists x1. (Exists x0. ((mouse(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/tvon_251/test/tvoff4.json
+
+Puzzle tvon_254
+TIMEOUT: 060 sec
+
+Puzzle tvon_257
+Concept: Forall x1. (Forall x0. ((not(dog(x1))) /\ (not(pottedplant(x0)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_257/test/tvoff4.json
+
+Puzzle tvon_26
+TIMEOUT: 060 sec
+
+Puzzle tvon_262
+TIMEOUT: 060 sec
+
+Puzzle tvon_265
+TIMEOUT: 060 sec
+
+Puzzle tvon_268
+TIMEOUT: 060 sec
+
+Puzzle tvon_270
+TIMEOUT: 060 sec
+
+Puzzle tvon_273
+TIMEOUT: 060 sec
+
+Puzzle tvon_276
+TIMEOUT: 060 sec
+
+Puzzle tvon_279
+TIMEOUT: 060 sec
+
+Puzzle tvon_281
+TIMEOUT: 060 sec
+
+Puzzle tvon_284
+TIMEOUT: 060 sec
+
+Puzzle tvon_287
+TIMEOUT: 060 sec
+
+Puzzle tvon_29
+TIMEOUT: 060 sec
+
+Puzzle tvon_292
+TIMEOUT: 060 sec
+
+Puzzle tvon_295
+Concept: Exists x1. (Exists x0. ((within(x1, x0)) /\ (not(cat(x1)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_295/test/tvoff1.json
+
+Puzzle tvon_298
+TIMEOUT: 060 sec
+
+Puzzle tvon_30
+No discriminator found for puzzle tvon_30
+
+Puzzle tvon_32
+TIMEOUT: 060 sec
+
+Puzzle tvon_35
+TIMEOUT: 060 sec
+
+Puzzle tvon_38
+TIMEOUT: 060 sec
+
+Puzzle tvon_40
+TIMEOUT: 060 sec
+
+Puzzle tvon_43
+TIMEOUT: 060 sec
+
+Puzzle tvon_46
+TIMEOUT: 060 sec
+
+Puzzle tvon_49
+TIMEOUT: 060 sec
+
+Puzzle tvon_51
+TIMEOUT: 060 sec
+
+Puzzle tvon_54
+Concept: Exists x1. (Exists x0. ((cat(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/tvon_54/test/tvoff4.json
+
+Puzzle tvon_57
+TIMEOUT: 060 sec
+
+Puzzle tvon_6
+TIMEOUT: 060 sec
+
+Puzzle tvon_62
+TIMEOUT: 060 sec
+
+Puzzle tvon_65
+Concept: Exists x1. (Exists x0. ((cat(x1)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_65/test/25.json
+
+Puzzle tvon_68
+Concept: Exists x1. (Exists x0. ((cat(x0)) \/ (within(x0, x1))))
+Candidate Name: /home/ubuntu/natscenes/tvon_68/test/tvoff1.json
+
+Puzzle tvon_70
+TIMEOUT: 060 sec
+
+Puzzle tvon_73
+Concept: Exists x1. (Exists x0. ((dog(x1)) \/ (person(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_73/test/tvoff4.json
+
+Puzzle tvon_76
+TIMEOUT: 060 sec
+
+Puzzle tvon_79
+Concept: Exists x1. (Exists x0. ((cat(x1)) \/ (mouse(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_79/test/23.json
+
+Puzzle tvon_81
+TIMEOUT: 060 sec
+
+Puzzle tvon_84
+TIMEOUT: 060 sec
+
+Puzzle tvon_87
+TIMEOUT: 060 sec
+
+Puzzle tvon_9
+Concept: Exists x1. (Exists x0. ((cat(x1)) \/ (pottedplant(x0))))
+Candidate Name: /home/ubuntu/natscenes/tvon_9/test/tvoff1.json
+
+Puzzle tvon_92
+TIMEOUT: 060 sec
+
+Puzzle tvon_95
+Concept: Forall x1. (Forall x0. ((not(book(x0))) /\ (not(sofa(x1)))))
+Candidate Name: /home/ubuntu/natscenes/tvon_95/test/tvoff2.json
+
+Puzzle tvon_98
+TIMEOUT: 060 sec
+
+Puzzle umbrella_10
+TIMEOUT: 060 sec
+
+Puzzle umbrella_102
+TIMEOUT: 060 sec
+
+Puzzle umbrella_105
+TIMEOUT: 060 sec
+
+Puzzle umbrella_108
+TIMEOUT: 060 sec
+
+Puzzle umbrella_110
+TIMEOUT: 060 sec
+
+Puzzle umbrella_113
+TIMEOUT: 060 sec
+
+Puzzle umbrella_116
+TIMEOUT: 060 sec
+
+Puzzle umbrella_119
+TIMEOUT: 060 sec
+
+Puzzle umbrella_121
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (handbag(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_121/test/112.json
+
+Puzzle umbrella_124
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (stop sign(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_124/test/112.json
+
+Puzzle umbrella_127
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (cell phone(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_127/test/121.json
+
+Puzzle umbrella_13
+TIMEOUT: 060 sec
+
+Puzzle umbrella_132
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (baseball glove(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_132/test/118.json
+
+Puzzle umbrella_135
+TIMEOUT: 060 sec
+
+Puzzle umbrella_138
+TIMEOUT: 060 sec
+
+Puzzle umbrella_140
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (cell phone(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_140/test/121.json
+
+Puzzle umbrella_143
+Concept: Exists x1. (Exists x0. ((handbag(x0)) \/ (laptop(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_143/test/114.json
+
+Puzzle umbrella_146
+TIMEOUT: 060 sec
+
+Puzzle umbrella_149
+TIMEOUT: 060 sec
+
+Puzzle umbrella_151
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (umbrella(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_151/test/114.json
+
+Puzzle umbrella_154
+Concept: Forall x1. (Exists x0. ((left(x0, x1)) \/ (umbrella(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_154/test/114.json
+
+Puzzle umbrella_157
+TIMEOUT: 060 sec
+
+Puzzle umbrella_16
+TIMEOUT: 060 sec
+
+Puzzle umbrella_162
+Concept: Exists x1. (Exists x0. ((chair(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_162/test/116.json
+
+Puzzle umbrella_165
+Concept: Exists x1. (Exists x0. ((chair(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_165/test/116.json
+
+Puzzle umbrella_168
+Concept: Exists x1. (Exists x0. ((chair(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_168/test/116.json
+
+Puzzle umbrella_170
+TIMEOUT: 060 sec
+
+Puzzle umbrella_173
+Concept: Forall x1. (Exists x0. ((handbag(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_173/test/121.json
+
+Puzzle umbrella_176
+Concept: Exists x1. (Exists x0. ((bus(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_176/test/121.json
+
+Puzzle umbrella_179
+TIMEOUT: 060 sec
+
+Puzzle umbrella_181
+TIMEOUT: 060 sec
+
+Puzzle umbrella_184
+TIMEOUT: 060 sec
+
+Puzzle umbrella_187
+TIMEOUT: 060 sec
+
+Puzzle umbrella_19
+TIMEOUT: 060 sec
+
+Puzzle umbrella_192
+TIMEOUT: 060 sec
+
+Puzzle umbrella_195
+TIMEOUT: 060 sec
+
+Puzzle umbrella_198
+TIMEOUT: 060 sec
+
+Puzzle umbrella_20
+TIMEOUT: 060 sec
+
+Puzzle umbrella_202
+Concept: Exists x1. (Exists x0. ((sports ball(x0)) \/ (tie(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_202/test/117.json
+
+Puzzle umbrella_205
+Concept: Exists x1. (Exists x0. ((backpack(x1)) \/ (handbag(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_205/test/114.json
+
+Puzzle umbrella_208
+TIMEOUT: 060 sec
+
+Puzzle umbrella_210
+TIMEOUT: 060 sec
+
+Puzzle umbrella_213
+TIMEOUT: 060 sec
+
+Puzzle umbrella_216
+TIMEOUT: 060 sec
+
+Puzzle umbrella_219
+Concept: Exists x1. (Exists x0. ((baseball glove(x1)) \/ (tie(x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_219/test/118.json
+
+Puzzle umbrella_221
+Concept: Exists x1. (Exists x0. ((bench(x0)) \/ (handbag(x1))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_221/test/117.json
+
+Puzzle umbrella_224
+TIMEOUT: 060 sec
+
+Puzzle umbrella_227
+TIMEOUT: 060 sec
+
+Puzzle umbrella_23
+TIMEOUT: 060 sec
+
+Puzzle umbrella_232
+Concept: Exists x1. (Forall x0. ((person(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_232/test/118.json
+
+Puzzle umbrella_235
+TIMEOUT: 060 sec
+
+Puzzle umbrella_238
+TIMEOUT: 060 sec
+
+Puzzle umbrella_240
+TIMEOUT: 060 sec
+
+Puzzle umbrella_27
+TIMEOUT: 060 sec
+
+Puzzle umbrella_3
+Concept: Forall x1. (Exists x0. ((handbag(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_3/test/112.json
+
+Puzzle umbrella_32
+TIMEOUT: 060 sec
+
+Puzzle umbrella_35
+TIMEOUT: 060 sec
+
+Puzzle umbrella_38
+TIMEOUT: 060 sec
+
+Puzzle umbrella_40
+TIMEOUT: 060 sec
+
+Puzzle umbrella_43
+Concept: Forall x1. (Exists x0. ((handbag(x0)) \/ (right(x1, x0))))
+Candidate Name: /home/ubuntu/natscenes/umbrella_43/test/114.json
+
+Puzzle umbrella_46
+TIMEOUT: 060 sec
+
+Puzzle umbrella_49
+TIMEOUT: 060 sec
+
+Puzzle umbrella_51
+TIMEOUT: 060 sec
+
+Puzzle umbrella_54
+TIMEOUT: 060 sec
+
+Puzzle umbrella_57
+TIMEOUT: 060 sec
+
+Puzzle umbrella_6
+TIMEOUT: 060 sec
+
+Puzzle umbrella_62
+TIMEOUT: 060 sec
+
+Puzzle umbrella_65
+TIMEOUT: 060 sec
+
+Puzzle umbrella_68
+TIMEOUT: 060 sec
+
+Puzzle umbrella_70
+TIMEOUT: 060 sec
+
+Puzzle umbrella_73
+TIMEOUT: 060 sec
+
+Puzzle umbrella_76
+TIMEOUT: 060 sec
+
+Puzzle umbrella_79
+TIMEOUT: 060 sec
+
+Puzzle umbrella_81
+TIMEOUT: 060 sec
+
+Puzzle umbrella_84
+TIMEOUT: 060 sec
+
+Puzzle umbrella_87
+TIMEOUT: 060 sec
+
+Puzzle umbrella_9
+TIMEOUT: 060 sec
+
+Puzzle umbrella_92
+TIMEOUT: 060 sec
+
+Puzzle umbrella_95
+TIMEOUT: 060 sec
+
+Puzzle umbrella_98
+TIMEOUT: 060 sec

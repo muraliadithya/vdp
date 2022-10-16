@@ -1,0 +1,2 @@
+question: what is the man throwing?; A frisbee. versus A baseball.
+intended: 2403570

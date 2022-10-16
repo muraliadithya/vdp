@@ -1,0 +1,2 @@
+question: Does the door have blue color?
+intended: 2402304

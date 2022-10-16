@@ -1,0 +1,2 @@
+question: Does the mane have brown color?
+intended: 2340782

@@ -1,0 +1,2 @@
+question: Are the cars in the bottom of the image?
+intended: 2403388

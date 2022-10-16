@@ -1,0 +1,2 @@
+question: Does the racket look white?
+intended: 150307

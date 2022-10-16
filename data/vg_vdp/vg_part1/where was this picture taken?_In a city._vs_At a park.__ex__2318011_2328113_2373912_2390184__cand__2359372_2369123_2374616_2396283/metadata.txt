@@ -1,0 +1,2 @@
+question: where was this picture taken?; In a city. versus At a park.
+intended: 2369123

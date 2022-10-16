@@ -1,0 +1,2 @@
+question: Does the jacket have black color?
+intended: 2377700

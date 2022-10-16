@@ -1,0 +1,2 @@
+question: where was picture taken?; In a zoo. versus On the street.
+intended: 2361667

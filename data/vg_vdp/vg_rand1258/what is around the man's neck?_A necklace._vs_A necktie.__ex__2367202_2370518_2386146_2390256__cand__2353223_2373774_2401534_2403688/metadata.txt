@@ -1,0 +1,2 @@
+question: what is around the man's neck?; A necklace. versus A necktie.
+intended: 2353223

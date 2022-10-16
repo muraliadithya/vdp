@@ -1,0 +1,2 @@
+question: Does the large vehicle look white?
+intended: 2392140

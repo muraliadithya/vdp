@@ -1,0 +1,2 @@
+question: Is the shelf on the right side of the photo?
+intended: 2357484

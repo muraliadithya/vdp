@@ -1,0 +1,2 @@
+question: what animals are in the photo?; Cows. versus Zebras.
+intended: 2326506

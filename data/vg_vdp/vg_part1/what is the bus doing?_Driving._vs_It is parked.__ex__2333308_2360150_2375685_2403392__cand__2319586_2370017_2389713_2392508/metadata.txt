@@ -1,0 +1,2 @@
+question: what is the bus doing?; Driving. versus It is parked.
+intended: 2319586

@@ -1,0 +1,2 @@
+question: Does the truck have red color?
+intended: 2400643

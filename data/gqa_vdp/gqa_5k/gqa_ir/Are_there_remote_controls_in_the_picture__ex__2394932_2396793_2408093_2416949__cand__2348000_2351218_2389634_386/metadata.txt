@@ -1,0 +1,2 @@
+question: Are there remote controls in the picture?
+intended: 2351218

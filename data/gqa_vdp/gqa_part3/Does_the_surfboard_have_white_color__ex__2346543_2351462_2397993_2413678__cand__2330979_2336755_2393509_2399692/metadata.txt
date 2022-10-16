@@ -1,0 +1,2 @@
+question: Does the surfboard have white color?
+intended: 2336755

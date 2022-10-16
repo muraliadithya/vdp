@@ -1,0 +1,2 @@
+question: what kind of animal is in the picture?; Elephants. versus A cat.
+intended: 2406847

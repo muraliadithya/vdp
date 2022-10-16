@@ -1,0 +1,2 @@
+question: Does the sweater look white?
+intended: 2330404

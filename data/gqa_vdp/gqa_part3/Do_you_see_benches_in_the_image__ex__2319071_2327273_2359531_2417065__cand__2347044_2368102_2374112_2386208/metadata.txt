@@ -1,0 +1,2 @@
+question: Do you see benches in the image?
+intended: 2374112

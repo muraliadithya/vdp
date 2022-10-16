@@ -1,0 +1,2 @@
+question: Does the speaker look black?
+intended: 2344622

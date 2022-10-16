@@ -1,0 +1,2 @@
+question: what color is the man's jacket?; Black. versus Blue.
+intended: 2328616

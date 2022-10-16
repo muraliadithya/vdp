@@ -1,0 +1,2 @@
+question: what is the dog wearing?; A collar. versus A sweater.
+intended: 2344922

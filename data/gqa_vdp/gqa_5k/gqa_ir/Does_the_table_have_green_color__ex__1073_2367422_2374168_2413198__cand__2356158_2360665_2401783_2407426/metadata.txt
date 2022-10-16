@@ -1,0 +1,2 @@
+question: Does the table have green color?
+intended: 2407426

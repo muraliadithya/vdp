@@ -1,0 +1,2 @@
+question: Are there any doors in the photograph?
+intended: 2366246

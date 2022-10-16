@@ -1,0 +1,2 @@
+question: Is there a pillow to the left of the blanket?
+intended: 2396592

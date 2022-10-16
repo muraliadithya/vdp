@@ -1,0 +1,2 @@
+question: Is the player wearing a glove?
+intended: 2413876

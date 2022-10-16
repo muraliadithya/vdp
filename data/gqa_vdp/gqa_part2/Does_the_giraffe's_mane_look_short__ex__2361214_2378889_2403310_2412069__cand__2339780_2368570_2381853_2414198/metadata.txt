@@ -1,0 +1,2 @@
+question: Does the giraffe's mane look short?
+intended: 2414198

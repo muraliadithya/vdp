@@ -1,0 +1,2 @@
+question: Is there any plate in this picture?
+intended: 2374683

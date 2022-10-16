@@ -1,0 +1,2 @@
+question: Is the skirt white?
+intended: 2397647

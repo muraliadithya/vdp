@@ -1,0 +1,2 @@
+question: what is the person holding?; Racket. versus A kite.
+intended: 2398721

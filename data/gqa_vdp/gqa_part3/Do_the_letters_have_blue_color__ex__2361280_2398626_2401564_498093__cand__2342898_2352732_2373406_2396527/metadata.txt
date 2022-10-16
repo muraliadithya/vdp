@@ -1,0 +1,2 @@
+question: Do the letters have blue color?
+intended: 2373406

@@ -1,0 +1,2 @@
+question: what is the player holding?; Baseball bat. versus A racket.
+intended: 2392865

@@ -1,0 +1,2 @@
+question: Is there a tablecloth in the photo?
+intended: 1592222

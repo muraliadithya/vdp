@@ -1,0 +1,2 @@
+question: Do the clothes have white color?
+intended: 2401348

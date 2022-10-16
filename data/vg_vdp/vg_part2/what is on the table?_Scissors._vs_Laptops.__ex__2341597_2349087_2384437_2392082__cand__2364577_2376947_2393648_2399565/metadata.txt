@@ -1,0 +1,2 @@
+question: what is on the table?; Scissors. versus Laptops.
+intended: 2376947

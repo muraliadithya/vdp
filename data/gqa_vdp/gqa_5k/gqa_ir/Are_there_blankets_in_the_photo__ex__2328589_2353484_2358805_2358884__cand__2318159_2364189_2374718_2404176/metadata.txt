@@ -1,0 +1,2 @@
+question: Are there blankets in the photo?
+intended: 2404176

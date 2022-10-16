@@ -1,0 +1,2 @@
+question: what color are the curtains?; Blue. versus Beige.
+intended: 2417106

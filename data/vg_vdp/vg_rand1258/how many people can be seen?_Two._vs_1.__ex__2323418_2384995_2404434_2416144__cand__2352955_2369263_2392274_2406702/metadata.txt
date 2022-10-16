@@ -1,0 +1,2 @@
+question: how many people can be seen?; Two. versus 1.
+intended: 2392274

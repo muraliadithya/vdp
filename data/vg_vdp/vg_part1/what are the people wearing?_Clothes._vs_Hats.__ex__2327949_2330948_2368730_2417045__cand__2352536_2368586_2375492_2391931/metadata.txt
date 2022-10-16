@@ -1,0 +1,2 @@
+question: what are the people wearing?; Clothes. versus Hats.
+intended: 2368586

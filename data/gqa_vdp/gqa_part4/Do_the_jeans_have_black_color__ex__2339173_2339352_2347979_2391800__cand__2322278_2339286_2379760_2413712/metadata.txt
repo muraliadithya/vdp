@@ -1,0 +1,2 @@
+question: Do the jeans have black color?
+intended: 2322278

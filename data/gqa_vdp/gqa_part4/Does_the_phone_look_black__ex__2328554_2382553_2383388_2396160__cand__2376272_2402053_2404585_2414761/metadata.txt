@@ -1,0 +1,2 @@
+question: Does the phone look black?
+intended: 2404585

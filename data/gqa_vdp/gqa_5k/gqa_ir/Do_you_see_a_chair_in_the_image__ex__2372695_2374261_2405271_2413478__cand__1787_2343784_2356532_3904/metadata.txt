@@ -1,0 +1,2 @@
+question: Do you see a chair in the image?
+intended: 3904

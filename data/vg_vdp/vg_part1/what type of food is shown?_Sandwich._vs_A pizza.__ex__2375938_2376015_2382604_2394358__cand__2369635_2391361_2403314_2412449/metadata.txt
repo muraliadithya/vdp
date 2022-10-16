@@ -1,0 +1,2 @@
+question: what type of food is shown?; Sandwich. versus A pizza.
+intended: 2412449

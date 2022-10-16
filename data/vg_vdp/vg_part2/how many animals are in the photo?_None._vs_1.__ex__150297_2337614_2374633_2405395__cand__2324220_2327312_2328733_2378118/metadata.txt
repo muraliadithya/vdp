@@ -1,0 +1,2 @@
+question: how many animals are in the photo?; None. versus 1.
+intended: 2378118

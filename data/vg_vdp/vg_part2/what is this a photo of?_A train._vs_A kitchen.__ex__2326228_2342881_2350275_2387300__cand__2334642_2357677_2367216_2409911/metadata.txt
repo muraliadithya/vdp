@@ -1,0 +1,2 @@
+question: what is this a photo of?; A train. versus A kitchen.
+intended: 2357677

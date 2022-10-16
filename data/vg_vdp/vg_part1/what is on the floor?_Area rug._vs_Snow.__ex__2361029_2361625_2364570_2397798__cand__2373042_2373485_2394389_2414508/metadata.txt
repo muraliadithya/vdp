@@ -1,0 +1,2 @@
+question: what is on the floor?; Area rug. versus Snow.
+intended: 2373485

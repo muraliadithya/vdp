@@ -1,0 +1,2 @@
+question: Is the racket on the left side?
+intended: 2381505

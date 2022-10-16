@@ -1,0 +1,2 @@
+question: Is there a table that is not black?
+intended: 2405572

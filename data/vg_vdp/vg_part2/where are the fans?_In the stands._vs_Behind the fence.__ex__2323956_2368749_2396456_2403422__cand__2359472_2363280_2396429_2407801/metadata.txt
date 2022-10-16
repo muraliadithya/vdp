@@ -1,0 +1,2 @@
+question: where are the fans?; In the stands. versus Behind the fence.
+intended: 2359472

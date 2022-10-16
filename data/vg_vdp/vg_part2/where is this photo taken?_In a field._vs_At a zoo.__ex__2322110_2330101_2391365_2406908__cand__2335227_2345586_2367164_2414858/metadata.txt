@@ -1,0 +1,2 @@
+question: where is this photo taken?; In a field. versus At a zoo.
+intended: 2367164

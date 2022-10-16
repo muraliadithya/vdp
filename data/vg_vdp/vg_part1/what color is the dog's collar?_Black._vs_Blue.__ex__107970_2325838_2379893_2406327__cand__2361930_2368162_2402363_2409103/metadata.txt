@@ -1,0 +1,2 @@
+question: what color is the dog's collar?; Black. versus Blue.
+intended: 2361930

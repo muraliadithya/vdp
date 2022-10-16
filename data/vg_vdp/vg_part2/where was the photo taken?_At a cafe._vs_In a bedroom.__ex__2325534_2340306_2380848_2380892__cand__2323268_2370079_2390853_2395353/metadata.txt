@@ -1,0 +1,2 @@
+question: where was the photo taken?; At a cafe. versus In a bedroom.
+intended: 2323268

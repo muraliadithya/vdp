@@ -1,0 +1,2 @@
+question: Is the blanket red?
+intended: 2393673

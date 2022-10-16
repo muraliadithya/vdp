@@ -1,0 +1,2 @@
+question: Does the window have black color?
+intended: 2330110

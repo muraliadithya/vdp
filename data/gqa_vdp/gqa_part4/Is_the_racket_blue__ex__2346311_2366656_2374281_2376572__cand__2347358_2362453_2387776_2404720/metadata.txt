@@ -1,0 +1,2 @@
+question: Is the racket blue?
+intended: 2387776

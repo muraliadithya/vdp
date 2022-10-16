@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "baseball": ["object"]}, "elements": {"object": ["4215482", "4215481"], "label": ["head", "player"]}, "interpretation": {"has_label": [["4215482", "head"], ["4215481", "player"]], "baseball": [["4215481"]]}}

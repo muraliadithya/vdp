@@ -1,0 +1,2 @@
+question: what is the person holding?; A cell phone. versus Poles.
+intended: 2402755

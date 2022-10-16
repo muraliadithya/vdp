@@ -1,0 +1,2 @@
+question: Is the white vehicle on the left side?
+intended: 285831

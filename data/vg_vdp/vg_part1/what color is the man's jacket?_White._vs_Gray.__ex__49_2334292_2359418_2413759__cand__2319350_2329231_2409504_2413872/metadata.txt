@@ -1,0 +1,2 @@
+question: what color is the man's jacket?; White. versus Gray.
+intended: 2413872

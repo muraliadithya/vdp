@@ -1,0 +1,2 @@
+question: Is there a cup in this photo?
+intended: 2381404

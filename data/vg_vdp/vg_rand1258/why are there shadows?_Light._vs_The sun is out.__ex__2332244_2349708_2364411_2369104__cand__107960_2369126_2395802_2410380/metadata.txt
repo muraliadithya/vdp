@@ -1,0 +1,2 @@
+question: why are there shadows?; Light. versus The sun is out.
+intended: 2369126

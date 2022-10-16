@@ -1,0 +1,2 @@
+question: why is it bright?; It is daytime. versus The lighting.
+intended: 2337086

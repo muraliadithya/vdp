@@ -1,0 +1,2 @@
+question: Is the chair on the left side of the image?
+intended: 2328959

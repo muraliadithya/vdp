@@ -1,0 +1,2 @@
+question: Is there a cell phone in the image?
+intended: 2413342

@@ -1,0 +1,2 @@
+question: Do the sneakers have white color?
+intended: 2356181

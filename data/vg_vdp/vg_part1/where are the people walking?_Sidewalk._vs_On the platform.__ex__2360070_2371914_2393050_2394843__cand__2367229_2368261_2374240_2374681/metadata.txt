@@ -1,0 +1,2 @@
+question: where are the people walking?; Sidewalk. versus On the platform.
+intended: 2368261

@@ -1,0 +1,2 @@
+question: Is the person on the left of the image?
+intended: 2412221

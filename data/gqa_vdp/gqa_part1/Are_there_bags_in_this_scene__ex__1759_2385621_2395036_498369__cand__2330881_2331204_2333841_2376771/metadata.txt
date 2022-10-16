@@ -1,0 +1,2 @@
+question: Are there bags in this scene?
+intended: 2331204

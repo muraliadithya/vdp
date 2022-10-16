@@ -1,0 +1,2 @@
+question: Does the logo have red color?
+intended: 2387468

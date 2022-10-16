@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "overcast": ["object"], "cloudy": ["object"]}, "elements": {"object": ["2667289", "2529801"], "label": ["sky", "pizza"]}, "interpretation": {"has_label": [["2667289", "sky"], ["2529801", "pizza"]], "overcast": [["2667289"]], "cloudy": [["2667289"]]}}

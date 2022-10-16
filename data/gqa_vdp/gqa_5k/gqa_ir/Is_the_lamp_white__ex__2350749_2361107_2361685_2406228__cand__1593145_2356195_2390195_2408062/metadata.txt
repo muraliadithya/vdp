@@ -1,0 +1,2 @@
+question: Is the lamp white?
+intended: 1593145

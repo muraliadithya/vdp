@@ -1,0 +1,2 @@
+question: when was this picture taken?; At meal time. versus On a sunny day.
+intended: 2394396

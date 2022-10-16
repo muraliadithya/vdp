@@ -1,0 +1,2 @@
+question: who is in the photo?; No one. versus A man and a woman.
+intended: 2387982

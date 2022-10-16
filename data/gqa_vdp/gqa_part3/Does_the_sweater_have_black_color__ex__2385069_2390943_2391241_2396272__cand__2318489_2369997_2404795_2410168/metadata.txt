@@ -1,0 +1,2 @@
+question: Does the sweater have black color?
+intended: 2369997

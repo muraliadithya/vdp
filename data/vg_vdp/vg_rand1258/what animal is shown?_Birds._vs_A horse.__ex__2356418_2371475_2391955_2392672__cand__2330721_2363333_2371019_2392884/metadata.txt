@@ -1,0 +1,2 @@
+question: what animal is shown?; Birds. versus A horse.
+intended: 2330721

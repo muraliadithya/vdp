@@ -1,0 +1,2 @@
+question: Are there any chairs in the scene?
+intended: 3981

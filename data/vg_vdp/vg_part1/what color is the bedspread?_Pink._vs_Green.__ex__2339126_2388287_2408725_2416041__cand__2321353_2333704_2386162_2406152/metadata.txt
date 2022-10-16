@@ -1,0 +1,2 @@
+question: what color is the bedspread?; Pink. versus Green.
+intended: 2386162

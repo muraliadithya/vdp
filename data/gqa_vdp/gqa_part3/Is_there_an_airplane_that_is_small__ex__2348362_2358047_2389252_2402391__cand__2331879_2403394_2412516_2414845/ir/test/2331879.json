@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "large": ["object"], "white": ["object"]}, "elements": {"object": ["4140101", "4140100"], "label": ["airplane", "wing"]}, "interpretation": {"has_label": [["4140101", "airplane"], ["4140100", "wing"]], "large": [["4140101"]], "white": [["4140101"]]}}

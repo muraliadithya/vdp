@@ -1,0 +1,2 @@
+question: Does the keyboard have white color?
+intended: 2397167

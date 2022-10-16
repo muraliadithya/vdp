@@ -1,0 +1,2 @@
+question: Is this a blue blanket?
+intended: 2317461

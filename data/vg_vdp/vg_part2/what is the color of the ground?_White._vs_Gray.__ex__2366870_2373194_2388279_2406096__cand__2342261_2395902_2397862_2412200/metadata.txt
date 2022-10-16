@@ -1,0 +1,2 @@
+question: what is the color of the ground?; White. versus Gray.
+intended: 2342261

@@ -1,0 +1,2 @@
+question: Are the blinds white?
+intended: 2386459

@@ -1,0 +1,2 @@
+question: Is the stove on the right?
+intended: 1160175

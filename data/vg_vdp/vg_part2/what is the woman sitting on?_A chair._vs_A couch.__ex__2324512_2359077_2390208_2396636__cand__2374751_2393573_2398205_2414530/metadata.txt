@@ -1,0 +1,2 @@
+question: what is the woman sitting on?; A chair. versus A couch.
+intended: 2414530

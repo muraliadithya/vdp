@@ -1,0 +1,2 @@
+question: Does the bench have brown color?
+intended: 2382850

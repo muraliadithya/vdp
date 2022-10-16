@@ -1,0 +1,2 @@
+question: where is the computer?; On a table. versus Desk.
+intended: 2351750

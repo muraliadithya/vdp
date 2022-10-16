@@ -1,0 +1,2 @@
+question: Is the outfit white?
+intended: 2316332

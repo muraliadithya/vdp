@@ -1,0 +1,2 @@
+question: who is wearing a hat?; The woman. versus The skateboarder.
+intended: 2376566

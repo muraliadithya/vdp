@@ -1,0 +1,2 @@
+question: Do the socks have black color?
+intended: 2373361

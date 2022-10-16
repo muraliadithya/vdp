@@ -1,0 +1,2 @@
+question: Are the blinds closed?
+intended: 2386647

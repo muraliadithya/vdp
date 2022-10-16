@@ -1,0 +1,2 @@
+question: who is sitting at the table?; A woman. versus A man.
+intended: 2391289

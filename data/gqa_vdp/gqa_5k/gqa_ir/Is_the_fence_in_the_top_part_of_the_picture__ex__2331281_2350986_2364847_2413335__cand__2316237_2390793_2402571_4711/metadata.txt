@@ -1,0 +1,2 @@
+question: Is the fence in the top part of the picture?
+intended: 2402571

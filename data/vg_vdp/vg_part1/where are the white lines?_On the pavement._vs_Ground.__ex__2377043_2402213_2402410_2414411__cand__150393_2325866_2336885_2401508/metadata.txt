@@ -1,0 +1,2 @@
+question: where are the white lines?; On the pavement. versus Ground.
+intended: 2401508

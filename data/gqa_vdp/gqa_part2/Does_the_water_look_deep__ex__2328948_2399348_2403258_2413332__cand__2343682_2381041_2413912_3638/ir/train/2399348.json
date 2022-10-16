@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "deep": ["object"]}, "elements": {"object": ["4305365", "4305370", "4305347"], "label": ["water", "person", "fish"]}, "interpretation": {"has_label": [["4305365", "water"], ["4305370", "person"], ["4305347", "fish"]], "deep": [["4305365"]]}}

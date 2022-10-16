@@ -1,0 +1,2 @@
+question: where is the picture taken?; In a house. versus In the bedroom.
+intended: 2402121

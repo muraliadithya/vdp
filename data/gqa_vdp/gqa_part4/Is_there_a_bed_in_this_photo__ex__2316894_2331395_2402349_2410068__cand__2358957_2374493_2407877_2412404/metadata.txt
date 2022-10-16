@@ -1,0 +1,2 @@
+question: Is there a bed in this photo?
+intended: 2407877

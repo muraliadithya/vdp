@@ -1,0 +1,2 @@
+question: where is the man sitting?; On the bench. versus At a table.
+intended: 2327843

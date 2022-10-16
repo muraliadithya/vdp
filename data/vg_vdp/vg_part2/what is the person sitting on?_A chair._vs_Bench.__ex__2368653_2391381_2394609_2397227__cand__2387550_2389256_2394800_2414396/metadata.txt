@@ -1,0 +1,2 @@
+question: what is the person sitting on?; A chair. versus Bench.
+intended: 2389256

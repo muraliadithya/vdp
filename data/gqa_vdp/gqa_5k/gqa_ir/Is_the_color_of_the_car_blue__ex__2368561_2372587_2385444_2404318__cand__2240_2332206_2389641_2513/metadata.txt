@@ -1,0 +1,2 @@
+question: Is the color of the car blue?
+intended: 2240

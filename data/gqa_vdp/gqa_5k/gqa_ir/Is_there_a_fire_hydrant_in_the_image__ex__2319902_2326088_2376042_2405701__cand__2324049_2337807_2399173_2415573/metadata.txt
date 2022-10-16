@@ -1,0 +1,2 @@
+question: Is there a fire hydrant in the image?
+intended: 2337807

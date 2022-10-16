@@ -1,0 +1,2 @@
+question: where is the tv?; On stand. versus In the corner.
+intended: 2412903

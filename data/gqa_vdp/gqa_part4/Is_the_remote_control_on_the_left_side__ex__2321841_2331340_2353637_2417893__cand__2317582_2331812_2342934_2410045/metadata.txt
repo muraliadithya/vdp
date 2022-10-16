@@ -1,0 +1,2 @@
+question: Is the remote control on the left side?
+intended: 2410045

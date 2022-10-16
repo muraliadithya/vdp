@@ -1,0 +1,2 @@
+question: Is there a lamp in this scene?
+intended: 4918

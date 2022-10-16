@@ -1,0 +1,2 @@
+question: what type of fence is shown?; Chain link. versus Barbed wire.
+intended: 2408840

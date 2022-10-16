@@ -1,0 +1,2 @@
+question: Are there windows in this scene?
+intended: 1593192

@@ -1,0 +1,2 @@
+question: Is there a bag in this photograph?
+intended: 2351232

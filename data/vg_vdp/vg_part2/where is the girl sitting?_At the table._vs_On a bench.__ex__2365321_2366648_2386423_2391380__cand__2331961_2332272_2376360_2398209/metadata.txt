@@ -1,0 +1,2 @@
+question: where is the girl sitting?; At the table. versus On a bench.
+intended: 2332272

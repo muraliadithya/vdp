@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "closed": ["object"]}, "elements": {"object": ["4273437", "4647081", "4273438"], "label": ["fence", "door", "ground"]}, "interpretation": {"has_label": [["4273437", "fence"], ["4647081", "door"], ["4273438", "ground"]], "closed": [["4647081"]]}}

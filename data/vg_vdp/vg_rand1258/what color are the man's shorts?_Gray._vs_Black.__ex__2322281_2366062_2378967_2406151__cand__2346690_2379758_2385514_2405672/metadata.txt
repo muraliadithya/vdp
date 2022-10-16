@@ -1,0 +1,2 @@
+question: what color are the man's shorts?; Gray. versus Black.
+intended: 2405672

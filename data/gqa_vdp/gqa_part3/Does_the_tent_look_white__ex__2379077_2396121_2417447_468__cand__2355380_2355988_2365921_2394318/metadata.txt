@@ -1,0 +1,2 @@
+question: Does the tent look white?
+intended: 2355380

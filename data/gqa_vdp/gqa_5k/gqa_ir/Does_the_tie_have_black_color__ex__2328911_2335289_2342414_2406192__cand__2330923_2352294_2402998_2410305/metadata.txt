@@ -1,0 +1,2 @@
+question: Does the tie have black color?
+intended: 2402998

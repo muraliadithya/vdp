@@ -1,0 +1,2 @@
+question: Is the pot in the bottom of the image?
+intended: 2370939

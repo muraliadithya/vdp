@@ -1,0 +1,2 @@
+question: what is this a photo of?; An airplane. versus A kitchen.
+intended: 2329946

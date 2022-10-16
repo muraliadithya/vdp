@@ -1,0 +1,2 @@
+question: Does the tail have white color?
+intended: 2404021

@@ -1,0 +1,2 @@
+question: Do the trousers have black color?
+intended: 817

@@ -1,0 +1,2 @@
+question: where is the woman sitting?; On the couch. versus A bench.
+intended: 2393164

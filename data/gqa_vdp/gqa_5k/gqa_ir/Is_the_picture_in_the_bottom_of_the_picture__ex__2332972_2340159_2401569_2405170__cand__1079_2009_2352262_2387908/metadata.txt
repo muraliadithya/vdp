@@ -1,0 +1,2 @@
+question: Is the picture in the bottom of the picture?
+intended: 2387908

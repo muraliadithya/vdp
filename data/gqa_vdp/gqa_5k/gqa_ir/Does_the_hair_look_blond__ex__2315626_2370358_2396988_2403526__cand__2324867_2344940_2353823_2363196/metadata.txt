@@ -1,0 +1,2 @@
+question: Does the hair look blond?
+intended: 2324867

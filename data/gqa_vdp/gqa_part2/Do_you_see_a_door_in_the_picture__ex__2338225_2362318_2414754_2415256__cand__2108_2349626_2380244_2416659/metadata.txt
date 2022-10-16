@@ -1,0 +1,2 @@
+question: Do you see a door in the picture?
+intended: 2416659

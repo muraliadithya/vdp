@@ -1,0 +1,2 @@
+question: Does the dress have black color?
+intended: 2316785

@@ -1,0 +1,2 @@
+question: how many horses are shown?; 2. versus 1.
+intended: 2408180

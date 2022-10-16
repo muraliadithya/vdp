@@ -1,0 +1,2 @@
+question: Is the jacket pink?
+intended: 2408960

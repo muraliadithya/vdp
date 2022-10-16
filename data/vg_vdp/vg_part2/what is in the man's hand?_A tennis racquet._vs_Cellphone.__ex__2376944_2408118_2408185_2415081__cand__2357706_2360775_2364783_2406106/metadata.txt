@@ -1,0 +1,2 @@
+question: what is in the man's hand?; A tennis racquet. versus Cellphone.
+intended: 2406106

@@ -1,0 +1,2 @@
+question: how many people are in the photo?; Seven. versus Six.
+intended: 2373424

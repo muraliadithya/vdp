@@ -1,0 +1,2 @@
+question: Is the bench white?
+intended: 4572

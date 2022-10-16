@@ -1,0 +1,2 @@
+question: Is the logo black?
+intended: 2371714

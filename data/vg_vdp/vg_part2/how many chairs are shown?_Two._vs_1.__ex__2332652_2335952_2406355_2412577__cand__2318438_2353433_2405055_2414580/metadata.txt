@@ -1,0 +1,2 @@
+question: how many chairs are shown?; Two. versus 1.
+intended: 2353433

@@ -1,0 +1,2 @@
+question: Is there a giraffe in this scene?
+intended: 2350048

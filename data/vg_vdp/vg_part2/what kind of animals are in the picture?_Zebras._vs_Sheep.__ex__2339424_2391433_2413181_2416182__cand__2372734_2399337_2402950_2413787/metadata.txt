@@ -1,0 +1,2 @@
+question: what kind of animals are in the picture?; Zebras. versus Sheep.
+intended: 2402950

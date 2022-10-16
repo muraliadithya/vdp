@@ -1,0 +1,2 @@
+question: Are there trucks in this picture?
+intended: 2378088

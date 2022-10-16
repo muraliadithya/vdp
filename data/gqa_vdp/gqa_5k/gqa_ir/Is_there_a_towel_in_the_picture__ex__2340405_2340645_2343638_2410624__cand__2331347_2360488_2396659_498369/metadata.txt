@@ -1,0 +1,2 @@
+question: Is there a towel in the picture?
+intended: 2396659

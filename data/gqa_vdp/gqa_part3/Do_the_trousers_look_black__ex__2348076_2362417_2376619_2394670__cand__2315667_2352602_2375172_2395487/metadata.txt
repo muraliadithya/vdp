@@ -1,0 +1,2 @@
+question: Do the trousers look black?
+intended: 2395487

@@ -1,0 +1,2 @@
+question: Does the fan look white?
+intended: 2396129

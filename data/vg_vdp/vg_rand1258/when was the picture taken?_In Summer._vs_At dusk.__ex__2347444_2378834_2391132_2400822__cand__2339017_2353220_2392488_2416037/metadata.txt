@@ -1,0 +1,2 @@
+question: when was the picture taken?; In Summer. versus At dusk.
+intended: 2392488

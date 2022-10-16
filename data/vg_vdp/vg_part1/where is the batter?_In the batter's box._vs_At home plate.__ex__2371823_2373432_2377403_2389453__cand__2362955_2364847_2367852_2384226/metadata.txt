@@ -1,0 +1,2 @@
+question: where is the batter?; In the batter's box. versus At home plate.
+intended: 2384226

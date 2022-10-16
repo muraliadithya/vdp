@@ -1,0 +1,2 @@
+question: Is there any snow in this image?
+intended: 2388706

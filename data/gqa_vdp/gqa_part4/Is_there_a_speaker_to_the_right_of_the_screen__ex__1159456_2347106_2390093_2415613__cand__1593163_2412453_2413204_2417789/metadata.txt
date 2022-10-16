@@ -1,0 +1,2 @@
+question: Is there a speaker to the right of the screen?
+intended: 2413204

@@ -1,0 +1,2 @@
+question: Is the girl wearing a hat?
+intended: 2392311

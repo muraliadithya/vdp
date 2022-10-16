@@ -1,0 +1,2 @@
+question: Does the logo look black?
+intended: 2399693

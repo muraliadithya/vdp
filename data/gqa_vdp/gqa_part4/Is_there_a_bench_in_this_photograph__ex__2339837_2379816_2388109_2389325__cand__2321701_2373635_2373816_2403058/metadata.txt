@@ -1,0 +1,2 @@
+question: Is there a bench in this photograph?
+intended: 2373816

@@ -1,0 +1,2 @@
+question: how many people are wearing hats?; Three. versus 1.
+intended: 2406987

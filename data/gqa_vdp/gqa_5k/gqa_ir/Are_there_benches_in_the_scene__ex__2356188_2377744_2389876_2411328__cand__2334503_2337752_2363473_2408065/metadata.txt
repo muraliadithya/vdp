@@ -1,0 +1,2 @@
+question: Are there benches in the scene?
+intended: 2363473

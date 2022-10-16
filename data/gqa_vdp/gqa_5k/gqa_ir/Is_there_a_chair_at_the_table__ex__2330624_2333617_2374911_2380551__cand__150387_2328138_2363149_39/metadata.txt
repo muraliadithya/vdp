@@ -1,0 +1,2 @@
+question: Is there a chair at the table?
+intended: 39

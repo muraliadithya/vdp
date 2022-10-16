@@ -1,0 +1,2 @@
+question: how many animals are visible?; 1. versus Two.
+intended: 2414932

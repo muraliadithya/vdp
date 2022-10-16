@@ -1,0 +1,2 @@
+question: how many animals are shown?; Zero. versus Three.
+intended: 2408050

@@ -1,0 +1,2 @@
+question: Is the black bag in the bottom of the image?
+intended: 2367112

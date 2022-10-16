@@ -1,0 +1,2 @@
+question: Do you see fences in this photo?
+intended: 3388

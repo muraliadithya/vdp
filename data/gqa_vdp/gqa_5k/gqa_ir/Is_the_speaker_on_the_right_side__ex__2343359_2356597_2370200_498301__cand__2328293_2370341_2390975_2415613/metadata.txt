@@ -1,0 +1,2 @@
+question: Is the speaker on the right side?
+intended: 2415613

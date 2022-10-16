@@ -1,0 +1,2 @@
+question: what type of flooring is shown?; Wood. versus Tile.
+intended: 2319202

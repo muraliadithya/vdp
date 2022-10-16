@@ -1,0 +1,2 @@
+question: where was the photo taken?; Mountains. versus In a living room.
+intended: 2400418

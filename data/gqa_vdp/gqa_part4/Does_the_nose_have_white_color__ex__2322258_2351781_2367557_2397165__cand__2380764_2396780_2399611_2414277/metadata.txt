@@ -1,0 +1,2 @@
+question: Does the nose have white color?
+intended: 2396780

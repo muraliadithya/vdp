@@ -1,0 +1,2 @@
+question: Is there a table in the image that is not white?
+intended: 2376539

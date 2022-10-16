@@ -1,0 +1,2 @@
+question: Is the coat gray?
+intended: 2326833

@@ -1,0 +1,2 @@
+question: where was the photo taken?; Restaurant. versus Bedroom.
+intended: 2396646

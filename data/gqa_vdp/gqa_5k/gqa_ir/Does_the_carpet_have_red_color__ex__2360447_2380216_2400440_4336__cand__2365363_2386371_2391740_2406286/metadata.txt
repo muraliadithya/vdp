@@ -1,0 +1,2 @@
+question: Does the carpet have red color?
+intended: 2365363

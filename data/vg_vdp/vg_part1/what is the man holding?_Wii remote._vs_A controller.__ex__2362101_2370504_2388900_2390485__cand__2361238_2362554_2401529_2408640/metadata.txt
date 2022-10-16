@@ -1,0 +1,2 @@
+question: what is the man holding?; Wii remote. versus A controller.
+intended: 2401529

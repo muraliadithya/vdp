@@ -1,0 +1,2 @@
+question: Does the cloudy sky have blue color?
+intended: 1160101

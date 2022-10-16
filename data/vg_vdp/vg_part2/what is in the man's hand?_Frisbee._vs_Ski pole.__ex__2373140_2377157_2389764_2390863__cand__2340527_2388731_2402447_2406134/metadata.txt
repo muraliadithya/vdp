@@ -1,0 +1,2 @@
+question: what is in the man's hand?; Frisbee. versus Ski pole.
+intended: 2388731

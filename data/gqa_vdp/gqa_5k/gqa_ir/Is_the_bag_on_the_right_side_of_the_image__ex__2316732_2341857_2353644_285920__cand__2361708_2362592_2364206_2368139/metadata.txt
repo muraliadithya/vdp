@@ -1,0 +1,2 @@
+question: Is the bag on the right side of the image?
+intended: 2361708

@@ -1,0 +1,2 @@
+question: Is the counter white?
+intended: 2406938

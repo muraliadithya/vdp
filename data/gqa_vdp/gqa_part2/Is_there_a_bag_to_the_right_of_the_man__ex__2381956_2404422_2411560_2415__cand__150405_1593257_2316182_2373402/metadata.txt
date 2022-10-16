@@ -1,0 +1,2 @@
+question: Is there a bag to the right of the man?
+intended: 2316182

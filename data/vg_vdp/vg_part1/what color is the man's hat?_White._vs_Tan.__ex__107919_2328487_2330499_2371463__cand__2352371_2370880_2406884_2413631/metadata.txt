@@ -1,0 +1,2 @@
+question: what color is the man's hat?; White. versus Tan.
+intended: 2370880

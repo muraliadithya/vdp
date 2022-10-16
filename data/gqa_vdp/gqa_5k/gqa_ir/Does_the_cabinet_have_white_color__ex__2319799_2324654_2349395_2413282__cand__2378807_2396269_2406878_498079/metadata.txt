@@ -1,0 +1,2 @@
+question: Does the cabinet have white color?
+intended: 2378807

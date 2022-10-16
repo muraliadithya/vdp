@@ -1,0 +1,2 @@
+question: Is the black bag to the right of a man?
+intended: 2322663

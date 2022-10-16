@@ -1,0 +1,2 @@
+question: what is the man wearing?; A red shirt. versus A suit and tie.
+intended: 2370554

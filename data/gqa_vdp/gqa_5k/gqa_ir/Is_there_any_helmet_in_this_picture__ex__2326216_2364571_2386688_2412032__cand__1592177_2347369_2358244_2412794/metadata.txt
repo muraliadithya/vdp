@@ -1,0 +1,2 @@
+question: Is there any helmet in this picture?
+intended: 1592177

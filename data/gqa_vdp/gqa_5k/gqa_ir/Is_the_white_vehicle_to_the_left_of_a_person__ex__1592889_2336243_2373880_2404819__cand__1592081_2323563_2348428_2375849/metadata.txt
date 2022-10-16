@@ -1,0 +1,2 @@
+question: Is the white vehicle to the left of a person?
+intended: 2323563

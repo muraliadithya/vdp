@@ -1,0 +1,2 @@
+question: where was this photo taken?; In the snow. versus Near the water.
+intended: 2343134

@@ -1,0 +1,2 @@
+question: Do the shoes have black color?
+intended: 2352236

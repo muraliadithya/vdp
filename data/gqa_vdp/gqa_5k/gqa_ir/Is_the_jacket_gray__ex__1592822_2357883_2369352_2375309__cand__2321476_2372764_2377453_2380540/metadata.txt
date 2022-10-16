@@ -1,0 +1,2 @@
+question: Is the jacket gray?
+intended: 2380540

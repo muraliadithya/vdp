@@ -1,0 +1,2 @@
+question: what color shirt is the man wearing?; Gray. versus Blue.
+intended: 2391331

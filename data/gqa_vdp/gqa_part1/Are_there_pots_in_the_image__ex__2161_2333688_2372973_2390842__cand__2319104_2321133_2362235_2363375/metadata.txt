@@ -1,0 +1,2 @@
+question: Are there pots in the image?
+intended: 2363375

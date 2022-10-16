@@ -1,0 +1,2 @@
+question: Does the box have white color?
+intended: 2366754

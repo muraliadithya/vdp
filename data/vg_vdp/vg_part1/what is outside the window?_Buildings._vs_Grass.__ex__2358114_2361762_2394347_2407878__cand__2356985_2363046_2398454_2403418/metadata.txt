@@ -1,0 +1,2 @@
+question: what is outside the window?; Buildings. versus Grass.
+intended: 2363046

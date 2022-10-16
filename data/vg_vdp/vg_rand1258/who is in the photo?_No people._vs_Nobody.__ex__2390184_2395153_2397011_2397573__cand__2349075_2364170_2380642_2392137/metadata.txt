@@ -1,0 +1,2 @@
+question: who is in the photo?; No people. versus Nobody.
+intended: 2392137

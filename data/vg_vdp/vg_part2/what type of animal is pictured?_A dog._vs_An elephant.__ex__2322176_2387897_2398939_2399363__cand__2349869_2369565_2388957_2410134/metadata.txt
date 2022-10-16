@@ -1,0 +1,2 @@
+question: what type of animal is pictured?; A dog. versus An elephant.
+intended: 2388957

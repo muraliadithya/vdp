@@ -1,0 +1,2 @@
+question: Does the dress have pink color?
+intended: 2380301

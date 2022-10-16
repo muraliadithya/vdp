@@ -1,0 +1,2 @@
+question: where is the bed?; In the bedroom. versus Against the wall.
+intended: 2365480

@@ -1,0 +1,2 @@
+question: Does the knife have silver color?
+intended: 2401033

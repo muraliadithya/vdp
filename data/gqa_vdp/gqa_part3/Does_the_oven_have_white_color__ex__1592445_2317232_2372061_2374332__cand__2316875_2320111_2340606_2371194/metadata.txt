@@ -1,0 +1,2 @@
+question: Does the oven have white color?
+intended: 2340606

@@ -1,0 +1,2 @@
+question: Does the jacket have yellow color?
+intended: 150430

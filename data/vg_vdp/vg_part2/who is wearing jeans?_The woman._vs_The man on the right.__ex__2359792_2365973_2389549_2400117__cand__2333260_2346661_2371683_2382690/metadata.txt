@@ -1,0 +1,2 @@
+question: who is wearing jeans?; The woman. versus The man on the right.
+intended: 2371683

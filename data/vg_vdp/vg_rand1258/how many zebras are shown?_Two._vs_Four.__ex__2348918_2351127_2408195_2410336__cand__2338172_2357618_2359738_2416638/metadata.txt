@@ -1,0 +1,2 @@
+question: how many zebras are shown?; Two. versus Four.
+intended: 2357618

@@ -1,0 +1,2 @@
+question: Does the logo look yellow?
+intended: 2407428

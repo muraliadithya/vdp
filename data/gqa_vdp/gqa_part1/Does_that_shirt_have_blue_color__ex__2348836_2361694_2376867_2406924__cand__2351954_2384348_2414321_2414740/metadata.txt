@@ -1,0 +1,2 @@
+question: Does that shirt have blue color?
+intended: 2414321

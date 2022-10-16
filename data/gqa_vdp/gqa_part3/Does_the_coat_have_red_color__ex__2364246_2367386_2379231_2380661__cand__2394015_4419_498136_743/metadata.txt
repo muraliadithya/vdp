@@ -1,0 +1,2 @@
+question: Does the coat have red color?
+intended: 743

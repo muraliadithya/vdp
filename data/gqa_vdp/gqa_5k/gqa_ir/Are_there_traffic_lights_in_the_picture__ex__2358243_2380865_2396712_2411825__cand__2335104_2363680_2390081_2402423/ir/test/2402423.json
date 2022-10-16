@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "brown": ["object"]}, "elements": {"object": ["389658", "389657"], "label": ["hair", "woman"]}, "interpretation": {"has_label": [["389658", "hair"], ["389657", "woman"]], "brown": [["389658"]]}}

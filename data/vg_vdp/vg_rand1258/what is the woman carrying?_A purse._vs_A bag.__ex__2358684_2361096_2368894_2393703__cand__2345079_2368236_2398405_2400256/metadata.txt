@@ -1,0 +1,2 @@
+question: what is the woman carrying?; A purse. versus A bag.
+intended: 2368236

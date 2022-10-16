@@ -1,0 +1,2 @@
+question: what is covering the floor?; Carpeting. versus Rug.
+intended: 2372352

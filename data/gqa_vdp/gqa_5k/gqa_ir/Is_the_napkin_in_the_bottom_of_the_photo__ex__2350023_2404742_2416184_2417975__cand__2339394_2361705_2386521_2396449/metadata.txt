@@ -1,0 +1,2 @@
+question: Is the napkin in the bottom of the photo?
+intended: 2396449

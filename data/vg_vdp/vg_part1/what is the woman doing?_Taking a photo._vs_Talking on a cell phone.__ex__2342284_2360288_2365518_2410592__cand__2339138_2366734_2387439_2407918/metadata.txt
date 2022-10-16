@@ -1,0 +1,2 @@
+question: what is the woman doing?; Taking a photo. versus Talking on a cell phone.
+intended: 2387439

@@ -1,0 +1,2 @@
+question: who took the picture?; The photographer. versus Man.
+intended: 2322865

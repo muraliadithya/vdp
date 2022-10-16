@@ -1,0 +1,2 @@
+question: what kind of pants is the man wearing?; White shorts. versus Khaki.
+intended: 2363151

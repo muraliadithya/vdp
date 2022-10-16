@@ -1,0 +1,2 @@
+question: Do the pants have white color?
+intended: 2394641

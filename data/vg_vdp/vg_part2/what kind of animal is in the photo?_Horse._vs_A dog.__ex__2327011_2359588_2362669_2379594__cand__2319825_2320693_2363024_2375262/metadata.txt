@@ -1,0 +1,2 @@
+question: what kind of animal is in the photo?; Horse. versus A dog.
+intended: 2375262

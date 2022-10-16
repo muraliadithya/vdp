@@ -1,0 +1,2 @@
+question: what color is the woman's jacket?; Purple. versus Pink.
+intended: 2395872

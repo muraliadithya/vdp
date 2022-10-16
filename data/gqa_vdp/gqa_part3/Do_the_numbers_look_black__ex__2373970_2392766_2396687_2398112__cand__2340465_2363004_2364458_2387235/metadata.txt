@@ -1,0 +1,2 @@
+question: Do the numbers look black?
+intended: 2387235

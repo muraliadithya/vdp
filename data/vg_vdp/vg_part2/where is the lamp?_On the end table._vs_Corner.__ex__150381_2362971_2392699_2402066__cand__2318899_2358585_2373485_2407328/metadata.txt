@@ -1,0 +1,2 @@
+question: where is the lamp?; On the end table. versus Corner.
+intended: 2358585

@@ -1,0 +1,2 @@
+question: where is the window?; To the left. versus Behind the man.
+intended: 2411075

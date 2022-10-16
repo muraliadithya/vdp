@@ -1,0 +1,2 @@
+question: what are the walls made of?; Tiles. versus Stone.
+intended: 2399257

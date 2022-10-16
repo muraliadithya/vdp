@@ -1,0 +1,2 @@
+question: what is in the woman's hand?; An umbrella. versus Phone.
+intended: 2371732

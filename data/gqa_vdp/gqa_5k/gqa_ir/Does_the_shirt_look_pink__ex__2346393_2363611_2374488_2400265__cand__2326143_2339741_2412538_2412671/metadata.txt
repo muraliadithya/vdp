@@ -1,0 +1,2 @@
+question: Does the shirt look pink?
+intended: 2412671

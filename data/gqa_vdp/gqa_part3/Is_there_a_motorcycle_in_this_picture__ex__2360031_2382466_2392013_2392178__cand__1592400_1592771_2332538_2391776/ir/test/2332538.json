@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "metal": ["object"], "on": ["object", "object"]}, "elements": {"object": ["3270548", "2837320", "3351760"], "label": ["pole", "sign", "sign"]}, "interpretation": {"has_label": [["3270548", "pole"], ["2837320", "sign"], ["3351760", "sign"]], "metal": [["3270548"]], "on": [["3351760", "3270548"]]}}

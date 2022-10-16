@@ -1,0 +1,2 @@
+question: where is the woman sitting?; At the table. versus On a couch.
+intended: 2396636

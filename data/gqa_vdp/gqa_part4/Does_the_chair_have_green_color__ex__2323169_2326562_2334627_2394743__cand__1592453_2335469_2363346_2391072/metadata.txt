@@ -1,0 +1,2 @@
+question: Does the chair have green color?
+intended: 2335469

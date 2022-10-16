@@ -1,0 +1,2 @@
+question: Does the truck have blue color?
+intended: 2392013

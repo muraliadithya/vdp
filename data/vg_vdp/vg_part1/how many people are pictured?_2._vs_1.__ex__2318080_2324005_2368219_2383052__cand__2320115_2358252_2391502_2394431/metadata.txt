@@ -1,0 +1,2 @@
+question: how many people are pictured?; 2. versus 1.
+intended: 2358252

@@ -1,0 +1,2 @@
+question: what type of animals are shown?; Sheep. versus Giraffes.
+intended: 2377925

@@ -1,0 +1,2 @@
+question: who is holding a bat?; A baseball player. versus The man.
+intended: 2371928

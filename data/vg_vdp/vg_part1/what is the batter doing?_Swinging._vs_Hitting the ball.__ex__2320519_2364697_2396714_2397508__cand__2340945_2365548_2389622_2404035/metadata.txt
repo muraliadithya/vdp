@@ -1,0 +1,2 @@
+question: what is the batter doing?; Swinging. versus Hitting the ball.
+intended: 2404035

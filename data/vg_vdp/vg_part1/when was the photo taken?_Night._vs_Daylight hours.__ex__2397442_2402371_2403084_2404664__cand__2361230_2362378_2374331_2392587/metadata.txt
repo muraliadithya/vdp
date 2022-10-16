@@ -1,0 +1,2 @@
+question: when was the photo taken?; Night. versus Daylight hours.
+intended: 2392587

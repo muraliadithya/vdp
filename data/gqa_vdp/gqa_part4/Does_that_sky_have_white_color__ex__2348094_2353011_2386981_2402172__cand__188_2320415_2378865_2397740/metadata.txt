@@ -1,0 +1,2 @@
+question: Does that sky have white color?
+intended: 2378865

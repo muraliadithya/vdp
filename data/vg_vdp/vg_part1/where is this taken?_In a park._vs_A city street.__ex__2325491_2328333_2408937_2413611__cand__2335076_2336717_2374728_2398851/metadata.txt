@@ -1,0 +1,2 @@
+question: where is this taken?; In a park. versus A city street.
+intended: 2374728

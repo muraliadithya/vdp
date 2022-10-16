@@ -1,0 +1,2 @@
+question: Is there any clock in the image?
+intended: 713484

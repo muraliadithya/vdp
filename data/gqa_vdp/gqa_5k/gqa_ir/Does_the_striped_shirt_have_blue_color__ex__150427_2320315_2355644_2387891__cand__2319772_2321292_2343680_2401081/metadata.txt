@@ -1,0 +1,2 @@
+question: Does the striped shirt have blue color?
+intended: 2319772

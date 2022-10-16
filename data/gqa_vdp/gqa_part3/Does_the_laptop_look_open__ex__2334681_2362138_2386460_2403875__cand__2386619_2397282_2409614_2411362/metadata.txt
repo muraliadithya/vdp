@@ -1,0 +1,2 @@
+question: Does the laptop look open?
+intended: 2397282

@@ -1,0 +1,1 @@
+{"sorts": ["object", "label"], "predicates": {"has_label": ["object", "label"], "white": ["object"], "on": ["object", "object"]}, "elements": {"object": ["4175950", "4175949"], "label": ["fire_hydrant", "street"]}, "interpretation": {"has_label": [["4175950", "fire_hydrant"], ["4175949", "street"]], "white": [["4175950"]], "on": [["4175950", "4175949"]]}}

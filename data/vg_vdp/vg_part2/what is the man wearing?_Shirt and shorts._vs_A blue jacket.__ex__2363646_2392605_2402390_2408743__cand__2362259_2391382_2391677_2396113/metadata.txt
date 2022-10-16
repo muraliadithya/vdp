@@ -1,0 +1,2 @@
+question: what is the man wearing?; Shirt and shorts. versus A blue jacket.
+intended: 2396113

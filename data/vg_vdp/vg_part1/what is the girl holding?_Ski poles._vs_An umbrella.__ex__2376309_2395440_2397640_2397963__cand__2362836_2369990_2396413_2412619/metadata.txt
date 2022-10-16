@@ -1,0 +1,2 @@
+question: what is the girl holding?; Ski poles. versus An umbrella.
+intended: 2396413

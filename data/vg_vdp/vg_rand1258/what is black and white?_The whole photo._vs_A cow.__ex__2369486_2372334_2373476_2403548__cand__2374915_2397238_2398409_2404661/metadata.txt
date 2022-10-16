@@ -1,0 +1,2 @@
+question: what is black and white?; The whole photo. versus A cow.
+intended: 2374915

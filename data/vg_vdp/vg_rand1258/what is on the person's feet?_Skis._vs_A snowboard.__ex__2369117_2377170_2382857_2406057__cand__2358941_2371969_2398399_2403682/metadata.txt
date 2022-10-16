@@ -1,0 +1,2 @@
+question: what is on the person's feet?; Skis. versus A snowboard.
+intended: 2358941

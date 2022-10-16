@@ -1,0 +1,2 @@
+question: what color is the countertop?; Black. versus White.
+intended: 2408073

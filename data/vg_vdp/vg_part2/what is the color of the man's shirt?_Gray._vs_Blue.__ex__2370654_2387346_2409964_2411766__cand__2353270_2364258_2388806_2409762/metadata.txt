@@ -1,0 +1,2 @@
+question: what is the color of the man's shirt?; Gray. versus Blue.
+intended: 2388806

@@ -1,0 +1,2 @@
+question: Are there lamps in the image?
+intended: 2394087

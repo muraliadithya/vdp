@@ -1,0 +1,2 @@
+question: what vehicle is shown?; Bus. versus An airplane.
+intended: 2397867

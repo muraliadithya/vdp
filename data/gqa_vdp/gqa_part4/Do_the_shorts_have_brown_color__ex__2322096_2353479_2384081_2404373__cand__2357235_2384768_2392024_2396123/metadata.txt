@@ -1,0 +1,2 @@
+question: Do the shorts have brown color?
+intended: 2384768

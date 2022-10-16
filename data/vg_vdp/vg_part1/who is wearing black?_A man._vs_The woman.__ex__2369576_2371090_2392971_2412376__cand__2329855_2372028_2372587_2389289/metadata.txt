@@ -1,0 +1,2 @@
+question: who is wearing black?; A man. versus The woman.
+intended: 2372587

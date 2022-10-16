@@ -1,0 +1,2 @@
+question: how many windows are shown?; One. versus Four.
+intended: 2414641

@@ -1,0 +1,2 @@
+question: what kind of pants is the man wearing?; Blue jeans. versus Khaki.
+intended: 2359152

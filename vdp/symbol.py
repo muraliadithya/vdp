@@ -44,6 +44,10 @@ class Symbol:
         """Overrides the default implementation"""
         return hash(self.name)
 
+    # Overriding __repr__ method for pretty printing
+    def __repr__(self):
+        return self.name
+
     # Getter methods for attributes
     def get_name(self):
         return self.name

@@ -31,3 +31,33 @@ Same as above until s
 >>> d
 ['of', 'in front of', 'in', 'has', 'behind', 'has_label', 'has_score', 'at']
 
+
+
+for p in data/gqa_ir/*/;do echo "Solving ${p}"; cat $p/metadata.txt; echo ""; time python3 scripts/vdpsolve.py $p/ir/ - 2 --autotune || echo "Symbolic solver failed"; echo ""; done 2>&1 | cat > gqa_rand1000_upto2quant.log
+
+filename = 'gqa_part2'
+import json
+s = open(f'{filename}.log','r').read()
+lines = lambda g: [gg.strip() for gg in g.split('\n') if gg.strip()!= ''] 
+solution = lambda g: [] if 'No discriminator' in g[3] else [g[4].split('Concept:')[1].strip(),g[5].split('/')[-1].split('.json')[0]]
+x = s.split('Solving')[1:]
+question = lambda g: g[1].split('question:')[1].strip()
+id = lambda g: g[0].split('/')[-2]
+intended = lambda g: g[2].split('intended:')[1].strip()
+trcand = lambda g: g[0].split('/')[-2].split('__ex__')[1].split('__cand__')
+tr_cand = lambda g: [trcand(g)[0].split('_'), trcand(g)[1].split('_')]
+tim = lambda g: g[-2].split('user\t')[1]
+res = dict()
+for y in x:
+    xx = lines(y)
+    puzd = dict()
+    puzd['question'] = question(xx)
+    puzd['example_imgs'],puzd['candidate_imgs'] = tr_cand(xx)
+    puzd['intended'] = intended(xx)
+    puzd['solution'] = solution(xx)
+    puzd['time'] = tim(xx)
+    res[id(xx)] = puzd
+
+with open(f'{filename}.json','w') as f:
+    json.dump(res, f)
+

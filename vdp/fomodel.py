@@ -16,7 +16,7 @@ class FOElement(Symbol):
             raise TypeError("The argument {} is not an FOSort object.".format(str(fosort)))
         else:
             super().__init__(name, fosort.get_name())
-        
+
 
 class FOModel:
     """
